@@ -20,7 +20,7 @@ class NaturalBreaksManager extends EventEmitter {
     this.usingNaturalBreaks = true
     desktopIdle.startMonitoring()
     this._checkIdleTime()
-    log.info('Stretchly: starting Idle time monitoring')
+    log.info('Pauza: starting Idle time monitoring')
   }
 
   stop () {
@@ -30,7 +30,7 @@ class NaturalBreaksManager extends EventEmitter {
     clearTimeout(this.timer)
     this.timer = null
     desktopIdle.stopMonitoring()
-    log.info('Stretchly: stopping Idle time monitoring')
+    log.info('Pauza: stopping Idle time monitoring')
   }
 
   get idleTime () {

@@ -25,7 +25,7 @@ class DndManager extends EventEmitter {
   start () {
     this.monitorDnd = true
     this._checkDnd()
-    log.info('Stretchly: starting Do Not Disturb monitoring')
+    log.info('Pauza: starting Do Not Disturb monitoring')
     if (process.platform === 'linux') {
       log.info(`System: Your Desktop seems to be ${this._desktopEnviroment}.`)
     }
@@ -40,7 +40,7 @@ class DndManager extends EventEmitter {
       this.__sessionBus.disconnect()
       this.__sessionBus = null
     }
-    log.info('Stretchly: stopping Do Not Disturb monitoring')
+    log.info('Pauza: stopping Do Not Disturb monitoring')
   }
 
   get _desktopEnviroment () {
@@ -114,7 +114,7 @@ class DndManager extends EventEmitter {
         return await this._getConfigValue('~/.config/lxqt/notifications.conf', 'doNotDisturb')
       default:
         if (!this._unsupDEErrorShown) {
-          log.info(`Stretchly: ${this._desktopEnviroment} not supported for DND detection, yet.`)
+          log.info(`Pauza: ${this._desktopEnviroment} not supported for DND detection, yet.`)
           this._unsupDEErrorShown = true
         }
         return false
@@ -195,7 +195,7 @@ class DndManager extends EventEmitter {
   _logErrorOnce (environment, error) {
     const errorKey = `${environment}-${error.code || error.message.substring(0, 20)}`
     if (!this._errorLogged[errorKey]) {
-      log.error(`Stretchly: DND detection error in ${environment}:`, error)
+      log.error(`Pauza: DND detection error in ${environment}:`, error)
       this._errorLogged[errorKey] = true
     }
   }

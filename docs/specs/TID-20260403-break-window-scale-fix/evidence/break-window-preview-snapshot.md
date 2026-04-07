@@ -1,0 +1,17 @@
+- main [ref=e3]:
+  - generic [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]: 微休息
+      - generic [ref=e7]: 23:10
+    - generic [ref=e9]:
+      - generic [ref=e13]:
+        - img [ref=e14]
+        - generic [ref=e19]: 14秒
+        - paragraph [ref=e20]: 剩余时间
+      - generic [ref=e21]:
+        - heading "微休息" [level=1] [ref=e22]
+        - paragraph [ref=e23]: 起身一下，放松肩颈，离开屏幕看看远处。
+    - generic [ref=e25]:
+      - button "完成" [ref=e26]
+      - button "稍后" [ref=e27]
+      - button "跳过" [ref=e28]

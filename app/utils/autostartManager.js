@@ -16,18 +16,18 @@ class AutostartManager {
     if (this.isFlatpak) {
       this.flatpakPortalManager = new FlatpakPortalManager(settings)
     } else if (process.platform === 'linux') {
-      this.nativeAutoLauncher = new AutoLaunch({ name: 'stretchly' })
+      this.nativeAutoLauncher = new AutoLaunch({ name: 'pauza' })
     } else if (this.isWindowsStore) {
       this.windowsStoreAutoLauncher = new AutoLaunch({
-        name: 'Stretchly',
-        path: '33881JanHovancik.stretchly_24fg4m0zq65je!Stretchly',
+        name: 'Pauza',
+        path: '33881JanHovancik.pauza_24fg4m0zq65je!Pauza',
         isHidden: true
       })
     }
   }
 
   async setAutostartEnabled (value) {
-    log.info(`Stretchly: setting autostart to ${value} on ${process.platform}${this.isWindowsStore ? ' (Windows Store)' : ''}${this.isFlatpak ? ' (Flatpak)' : ''}`)
+    log.info(`Pauza: setting autostart to ${value} on ${process.platform}${this.isWindowsStore ? ' (Windows Store)' : ''}${this.isFlatpak ? ' (Flatpak)' : ''}`)
 
     if (this.isFlatpak) {
       await (value ? this.flatpakPortalManager.enableAutostart() : this.flatpakPortalManager.disableAutostart())

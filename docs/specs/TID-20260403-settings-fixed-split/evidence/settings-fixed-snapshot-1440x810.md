@@ -1,0 +1,105 @@
+- main [ref=e3]:
+  - generic [ref=e5]:
+    - complementary [ref=e6]:
+      - generic [ref=e8]:
+        - generic [ref=e9]:
+          - generic [ref=e10]:
+            - generic [ref=e11]: Pauza
+            - generic [ref=e12]: 已同步
+          - generic [ref=e13]:
+            - paragraph [ref=e14]: 设置分类
+            - heading "概览" [level=2] [ref=e15]
+        - generic [ref=e17]:
+          - button "概览" [ref=e173]:
+            - img [ref=e20]
+            - paragraph [ref=e23]: 概览
+          - button "节奏" [ref=e174]:
+            - img [ref=e27]
+            - paragraph [ref=e30]: 节奏
+          - button "提醒与延后" [ref=e175]:
+            - img [ref=e34]
+            - paragraph [ref=e40]: 提醒与延后
+          - button "打断与显示" [ref=e176]:
+            - img [ref=e44]
+            - paragraph [ref=e48]: 打断与显示
+          - button "智能暂停" [ref=e177]:
+            - img [ref=e52]
+            - paragraph [ref=e55]: 智能暂停
+          - button "通用与快捷键" [ref=e178]:
+            - img [ref=e59]
+            - paragraph [ref=e62]: 通用与快捷键
+    - generic [ref=e64]:
+      - generic [ref=e65]:
+        - generic [ref=e67]:
+          - generic [ref=e68]:
+            - generic [ref=e69]
+            - generic [ref=e74]: 保存更改
+          - generic [ref=e76]: 微休息将在8分钟后开始
+        - generic [ref=e77]:
+          - generic [ref=e78]:
+            - generic [ref=e79]
+            - generic [ref=e86]
+          - generic [ref=e99]:
+            - button "保存" [disabled]
+            - button "撤销" [disabled]
+            - button "默认值" [ref=e100]
+      - generic [ref=e102]:
+        - generic [ref=e103]:
+          - img [ref=e179]
+          - generic [ref=e112]:
+            - paragraph [ref=e181]: 预览
+            - heading "概览" [level=1] [ref=e187]
+        - generic [ref=e183]:
+          - generic [ref=e184]: Pauza
+          - generic [ref=e185]: Browser preview
+          - generic [ref=e186]: 已同步
+      - generic [ref=e116]:
+        - generic [ref=e117]:
+          - paragraph [ref=e118]: 下一个休息
+          - paragraph [ref=e119]: 微休息将在8分钟后开始
+          - paragraph [ref=e120]: 22:01
+        - generic [ref=e121]:
+          - paragraph [ref=e122]: 当前休息
+          - paragraph [ref=e123]: 当前无活动休息
+          - paragraph [ref=e124]: 微休息将在8分钟后开始
+        - generic [ref=e125]:
+          - paragraph [ref=e126]: 最近动作
+          - paragraph [ref=e127]: 当前是浏览器预览模式。
+          - paragraph [ref=e128]: 微休息将在8分钟后开始
+      - generic [ref=e129]:
+        - generic [ref=e131]:
+          - img [ref=e133]
+          - generic [ref=e137]: 快捷动作
+        - generic [ref=e140]:
+          - button "暂停 30 分钟" [ref=e141]:
+            - img
+            - text: 暂停 30 分钟
+          - button "专注保护 45 分钟" [ref=e142]:
+            - img
+            - text: 专注保护 45 分钟
+          - button "恢复" [ref=e143]:
+            - img
+            - text: 恢复
+      - generic [ref=e144]:
+        - generic [ref=e146]:
+          - img [ref=e148]
+          - generic [ref=e151]: 实时概览
+        - generic [ref=e154]:
+          - generic [ref=e155]:
+            - generic [ref=e156]: 运行时
+            - generic [ref=e157]: Browser preview
+          - generic [ref=e158]:
+            - generic [ref=e159]: 平台
+            - generic [ref=e160]: preview
+          - generic [ref=e161]:
+            - generic [ref=e162]: 版本
+            - generic [ref=e163]: 0.1.0
+          - generic [ref=e164]:
+            - generic [ref=e165]: 休息风格
+            - generic [ref=e166]: 轻提醒
+          - generic [ref=e167]:
+            - generic [ref=e168]: 显示位置
+            - generic [ref=e169]: 所有屏幕都显示
+          - generic [ref=e170]:
+            - generic [ref=e171]: 最近动作
+            - generic [ref=e172]: 当前是浏览器预览模式。

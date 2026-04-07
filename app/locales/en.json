@@ -1,6 +1,6 @@
 {
   "main": {
-    "toolTipHeader": "Stretchly - The break time reminder app",
+    "toolTipHeader": "Pauza - The break time reminder app",
     "microbreakIn": "Mini break in $t(utils.seconds, {'count': {{seconds}} })",
     "breakIn": "Long break in $t(utils.seconds, {'count': {{seconds}} })",
     "resumingBreaks": "Resuming breaks",
@@ -10,13 +10,14 @@
     "skipToTheNext": "Skip to the next",
     "resume": "Resume breaks",
     "pause": "Pause breaks",
+    "focusSession": "Protect focus",
     "forHour": "1 hour",
     "for2Hours": "2 hours",
     "for5Hours": "5 hours",
     "untilMorning": "Until morning",
     "indefinitely": "Indefinitely",
     "resetBreaks": "Reset breaks",
-    "quitStretchly": "Quit Stretchly",
+    "quitStretchly": "Quit Pauza",
     "restoreDefaults": "Restore defaults",
     "warning": "This will restore app defaults and all your settings will be lost.",
     "continue": "Continue",
@@ -26,22 +27,22 @@
     "syncPreferences": "Sync Preferences"
   },
   "break": {
-    "postpone": "Postpone this break",
-    "skip": "Skip this break",
+    "postpone": "Back in a few minutes",
+    "skip": "Skip for now",
     "title": "Time to take a break!",
-    "finish": "Finish this break"
+    "finish": "I'm back"
   },
   "preferences": {
-    "title": "Stretchly Preferences",
+    "title": "Pauza Preferences",
     "nav": {
       "settings": "Settings",
       "schedule": "Schedule",
       "theme": "Theme",
       "about": "About",
-      "heart": "Love Stretchly"
+      "heart": "Love Pauza"
     },
     "settings": {
-      "openAtLogin": "Start Stretchly automatically when logging in",
+      "openAtLogin": "Start Pauza automatically when logging in",
       "showBreaksIn": "Shows breaks in:",
       "window": "Window",
       "fullscreen": "Full screen",
@@ -49,6 +50,11 @@
       "allScreens": "Shows breaks on all monitors",
       "monitorIdleTime": "Monitor system idle time (breaks are paused if system is idle).",
       "monitorDnd": "Show breaks even in Do Not Disturb mode",
+      "interruptionStyle": "Interruption style:",
+      "interruptionStyleInfo": "Choose how assertively Pauza appears when a break starts.",
+      "gentle": "Gentle",
+      "balanced": "Balanced",
+      "immersive": "Immersive",
       "language": "Select language:",
       "restoreDefaults": "Restore defaults"
     },
@@ -101,7 +107,7 @@
       "version": "Version ",
       "latestVersion": "Latest version ",
       "checkNewVersion": "Automatically check for app updates",
-      "learnMore": "To learn more about Stretchly features, view a tutorial, download the latest version or contact us for support, ",
+      "learnMore": "To learn more about Pauza features, view a tutorial, download the latest version or contact us for support, ",
       "ourWebsite": "visit our website",
       "dot": ".",
       "developedBy": "Developed by",
@@ -109,9 +115,9 @@
       "designedBy": "Icon and UI design by Colin Shanley"
     },
     "heart": {
-      "loveStretchly": "Love your Stretchly?",
+      "loveStretchly": "Love your Pauza?",
       "desc1": "Taking regular breaks when using a computer is scientifically proven to be important for your physical and mental well-being.",
-      "desc2": "Stretchly is free. But you can lend your support by donating and help us continue to improve Stretchly and release other free software.",
+      "desc2": "Pauza is free. But you can lend your support by donating and help us continue to improve Pauza and release other free software.",
       "becomeContributor": "Become a contributor",
       "alreadyContributor": "I'm already a contributor",
       "authenticateUsing": "Authenticate using:",
@@ -174,7 +180,7 @@
     "primary": "Primary monitor",
     "cursor": "Follow cursor",
     "showTrayIcon": "Show tray icon",
-    "toShowTrayIcon": "Show Stretchly icon in tray",
+    "toShowTrayIcon": "Show Pauza icon in tray",
     "currentTimeInBreaks": "Current time",
     "showCurrentTimeInBreaks": "Show current local time in break window"
   },
@@ -199,7 +205,7 @@
     "newVersionAvailable": "New version is available!"
   },
   "welcome": {
-    "title": "Welcome to Stretchly",
+    "title": "Welcome to Pauza",
     "breakTimeReminderApp": "The break time reminder app",
     "viewTutorial": "View Tutorial",
     "openPreferences": "Open Preferences",

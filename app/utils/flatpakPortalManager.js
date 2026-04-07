@@ -32,9 +32,9 @@ class FlatpakPortalManager {
         '/org/freedesktop/portal/desktop'
       )
       this.initialized = true
-      log.info('Stretchly: XDG Background Portal initialized successfully')
+      log.info('Pauza: XDG Background Portal initialized successfully')
     } catch (error) {
-      log.error('Stretchly: Failed to initialize XDG Background Portal:', error)
+      log.error('Pauza: Failed to initialize XDG Background Portal:', error)
       this.initialized = false
     }
   }
@@ -48,17 +48,17 @@ class FlatpakPortalManager {
     await this.initialize()
 
     if (!this.initialized) {
-      log.error('Stretchly: Cannot set autostart - portal not initialized')
+      log.error('Pauza: Cannot set autostart - portal not initialized')
       return false
     }
 
     try {
       const background = this.portal.getInterface('org.freedesktop.portal.Background')
-      const handleToken = `stretchly_autostart_${Date.now()}_${Math.random().toString(36).substring(7)}`
+      const handleToken = `pauza_autostart_${Date.now()}_${Math.random().toString(36).substring(7)}`
 
       const options = {
         handle_token: new Variant('s', handleToken),
-        reason: new Variant('s', 'Stretchly needs to run in the background to remind you to take breaks'),
+        reason: new Variant('s', 'Pauza needs to run in the background to remind you to take breaks'),
         autostart: new Variant('b', enabled),
         'dbus-activatable': new Variant('b', false)
       }
@@ -68,10 +68,10 @@ class FlatpakPortalManager {
       if (!enabled) {
         try {
           await background.RequestBackground('', options)
-          log.info('Stretchly: Autostart disabled via XDG Portal')
+          log.info('Pauza: Autostart disabled via XDG Portal')
           return true
         } catch (error) {
-          log.error('Stretchly: Failed to disable autostart via XDG Portal:', error)
+          log.error('Pauza: Failed to disable autostart via XDG Portal:', error)
           return false
         }
       }
@@ -81,11 +81,11 @@ class FlatpakPortalManager {
       const responsePromise = this._waitForBusResponse(handleToken, enabled)
 
       const requestPath = await background.RequestBackground('', options)
-      log.info(`Stretchly: RequestBackground called, request path: ${requestPath}`)
+      log.info(`Pauza: RequestBackground called, request path: ${requestPath}`)
 
       return await responsePromise
     } catch (error) {
-      log.error(`Stretchly: Failed to set autostart=${enabled} via XDG Portal:`, error)
+      log.error(`Pauza: Failed to set autostart=${enabled} via XDG Portal:`, error)
       return false
     }
   }
@@ -118,22 +118,22 @@ class FlatpakPortalManager {
 
           cleanup()
 
-          log.info(`Stretchly: Portal Response signal received - response: ${response}, results:`, results)
+          log.info(`Pauza: Portal Response signal received - response: ${response}, results:`, results)
 
           // Response codes: 0 = success, 1 = user cancelled, 2 = other error
           if (response === 0) {
             const autostartGranted = results && results.autostart && results.autostart.value === expectingEnabled
             if (autostartGranted) {
-              log.info('Stretchly: Autostart enabled via XDG Portal')
+              log.info('Pauza: Autostart enabled via XDG Portal')
             } else {
-              log.warn('Stretchly: Autostart status did not match request', results)
+              log.warn('Pauza: Autostart status did not match request', results)
             }
             resolve(autostartGranted)
           } else if (response === 1) {
-            log.warn('Stretchly: User cancelled the portal request')
+            log.warn('Pauza: User cancelled the portal request')
             resolve(false)
           } else {
-            log.error(`Stretchly: Portal request failed with response code: ${response}`)
+            log.error(`Pauza: Portal request failed with response code: ${response}`)
             resolve(false)
           }
         }
@@ -141,7 +141,7 @@ class FlatpakPortalManager {
 
       timeoutId = setTimeout(() => {
         cleanup()
-        log.error(`Stretchly: Portal request timeout after ${this.portalRequestTimeoutMs / 1000} seconds`)
+        log.error(`Pauza: Portal request timeout after ${this.portalRequestTimeoutMs / 1000} seconds`)
         resolve(false)
       }, this.portalRequestTimeoutMs)
 
@@ -157,7 +157,7 @@ class FlatpakPortalManager {
       }
       return success
     } catch (error) {
-      log.error('Stretchly: Failed to set autostart (enable) via XDG Portal', error)
+      log.error('Pauza: Failed to set autostart (enable) via XDG Portal', error)
       return false
     }
   }
@@ -170,7 +170,7 @@ class FlatpakPortalManager {
       }
       return success
     } catch (error) {
-      log.error('Stretchly: Failed to set autostart (disable) via XDG Portal', error)
+      log.error('Pauza: Failed to set autostart (disable) via XDG Portal', error)
       return false
     }
   }
@@ -186,7 +186,7 @@ class FlatpakPortalManager {
       this.bus = null
       this.portal = null
       this.initialized = false
-      log.info('Stretchly: XDG Background Portal disconnected')
+      log.info('Pauza: XDG Background Portal disconnected')
     }
   }
 }

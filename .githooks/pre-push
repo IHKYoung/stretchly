@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+ROOT="$(git rev-parse --show-toplevel)"
+cd "$ROOT"
+
+python3 scripts/validate_agent_configs.py --repo-root "$ROOT"
+python3 scripts/validate_workflow_kit_sync.py --repo-root "$ROOT"
+
+ZERO_SHA="0000000000000000000000000000000000000000"
+RANGES=()
+
+while read -r local_ref local_sha remote_ref remote_sha; do
+  # no update line
+  if [ -z "${local_sha:-}" ]; then
+    continue
+  fi
+  # deletion push: skip validation for this ref
+  if [ "$local_sha" = "$ZERO_SHA" ]; then
+    continue
+  fi
+  # new branch/tag push: validate this commit set
+  if [ "$remote_sha" = "$ZERO_SHA" ]; then
+    RANGES+=("$local_sha")
+  else
+    RANGES+=("$remote_sha..$local_sha")
+  fi
+done
+
+if [ "${#RANGES[@]}" -eq 0 ]; then
+  exit 0
+fi
+
+REV_RANGE="$(IFS=,; echo "${RANGES[*]}")"
+python3 scripts/validate_workflow_docs.py --mode pre-push --rev-range "$REV_RANGE"

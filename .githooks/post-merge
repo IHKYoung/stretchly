@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+ROOT="$(git rev-parse --show-toplevel)"
+cd "$ROOT"
+
+if ! python3 scripts/record_commit_audit.py --type auto --commit HEAD --only-merge; then
+  echo "[post-merge] warning: failed to append merge audit record" >&2
+  exit 0
+fi
+
+COMMIT_DATE="$(git show -s --format=%cs HEAD)"
+AUDIT_FILE="docs/commits/${COMMIT_DATE}.md"
+if [ -f "$AUDIT_FILE" ]; then
+  echo "[post-merge] audit updated: $AUDIT_FILE (not staged automatically)"
+fi

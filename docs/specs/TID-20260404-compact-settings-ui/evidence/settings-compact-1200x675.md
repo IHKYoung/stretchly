@@ -1,0 +1,29 @@
+- main [ref=e3]:
+  - generic [ref=e4]:
+    - complementary [ref=e5]:
+      - generic [ref=e6]:
+        - paragraph [ref=e7]: Pauza
+        - paragraph [ref=e8]: 已同步
+      - navigation [ref=e9]:
+        - button "节奏" [ref=e10]
+        - button "提醒与打断" [ref=e11]
+        - button "智能暂停" [ref=e12]
+        - button "通用" [ref=e13]
+      - generic [ref=e14]:
+        - paragraph [ref=e15]: 预览
+        - paragraph [ref=e16]: 微休息将在8分钟后开始
+    - generic [ref=e17]:
+      - generic [ref=e18]:
+        - generic [ref=e19]:
+          - paragraph [ref=e20]: Settings
+          - heading "节奏" [level=1] [ref=e21]
+        - generic [ref=e22]:
+          - button "撤销" [disabled]
+          - button "保存" [disabled]
+      - generic [ref=e23]:
+        - generic [ref=e24]:
+          - heading "微休息" [level=2] [ref=e26]
+          - generic [ref=e27]
+        - generic [ref=e48]:
+          - heading "长休息" [level=2] [ref=e50]
+          - generic [ref=e51]

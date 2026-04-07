@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+ROOT="$(git rev-parse --show-toplevel)"
+cd "$ROOT"
+
+python3 scripts/validate_agent_configs.py --repo-root "$ROOT"
+python3 scripts/validate_workflow_kit_sync.py --repo-root "$ROOT"
+python3 scripts/validate_workflow_docs.py --mode pre-commit

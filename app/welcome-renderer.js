@@ -16,31 +16,7 @@ window.onload = async (event) => {
 
   setTimeout(() => { eventsAttached = true }, 500)
 
-  if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    const imagesWithDarkVersion = document.querySelectorAll('[data-has-dark-version]')
-    imagesWithDarkVersion.forEach(image => {
-      // replace last occurance https://github.com/electron-userland/electron-builder/issues/5152
-      const newSource = image.src.replace(/.([^.]*)$/, '-dark.' + '$1')
-      image.src = newSource
-    })
-  }
-
-  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (event) => {
-    const imagesWithDarkVersion = document.querySelectorAll('[data-has-dark-version]')
-    if (event.matches) {
-      imagesWithDarkVersion.forEach(image => {
-        const newSource = image.src.replace(/.([^.]*)$/, '-dark.' + '$1')
-        image.src = newSource
-      })
-    } else {
-      imagesWithDarkVersion.forEach(image => {
-        const newSource = image.src.replace('-dark.', '.')
-        image.src = newSource
-      })
-    }
-  })
-
-  window.stretchly.onTranslate(async () => {
+  window.pauza.onTranslate(async () => {
     await new HtmlTranslate(document).translate()
     setTimeout(() => setSameWidths(), 100)
   })
@@ -84,12 +60,12 @@ window.onload = async (event) => {
             window.electronApi.openExternal('https://hovancik.net/stretchly/about')
             break
           case 'preferences':
-            window.stretchly.openPreferences()
+            window.pauza.openPreferences()
             break
           default:
             break
         }
-        window.stretchly.closeWindow()
+        window.pauza.closeWindow()
       }
     }
   })

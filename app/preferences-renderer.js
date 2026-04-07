@@ -8,7 +8,7 @@ const versionChecker = new VersionChecker()
 let eventsAttached = false
 
 window.onload = async (e) => {
-  const bounds = await window.stretchly.getWindowBounds()
+  const bounds = await window.pauza.getWindowBounds()
   const settings = await window.settings.currentSettings()
   if (settings.disableAppUpdateFeatures) {
     document.querySelector('#checkNewVersion').closest('div').classList.add('hidden')
@@ -38,30 +38,6 @@ window.onload = async (e) => {
     document.querySelector('.navigation').parentNode.insertBefore(customMessageDiv, document.querySelector('.navigation').nextSibling)
   }
 
-  if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-    const imagesWithDarkVersion = document.querySelectorAll('[data-has-dark-version]')
-    imagesWithDarkVersion.forEach(image => {
-      // replace last occurance https://github.com/electron-userland/electron-builder/issues/5152
-      const newSource = image.src.replace(/.([^.]*)$/, '-dark.' + '$1')
-      image.src = newSource
-    })
-  }
-
-  window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (event) => {
-    const imagesWithDarkVersion = document.querySelectorAll('[data-has-dark-version]')
-    if (event.matches) {
-      imagesWithDarkVersion.forEach(image => {
-        const newSource = image.src.replace(/.([^.]*)$/, '-dark.' + '$1')
-        image.src = newSource
-      })
-    } else {
-      imagesWithDarkVersion.forEach(image => {
-        const newSource = image.src.replace('-dark.', '.')
-        image.src = newSource
-      })
-    }
-  })
-
   document.ondragover = event =>
     event.preventDefault()
 
@@ -73,7 +49,7 @@ window.onload = async (e) => {
       const [
         reference, timeleft, breaknumber,
         postponesnumber, settingsfile, logsfile, doNotDisturb, imagesfolder
-      ] = await window.stretchly.showDebug()
+      ] = await window.pauza.showDebug()
       const debugInfo = document.querySelector('.debug > :first-child')
       if (!debugInfo.classList.contains('hidden')) {
         debugInfo.classList.add('hidden')
@@ -98,7 +74,7 @@ window.onload = async (e) => {
     }
   }
 
-  window.stretchly.onTranslate(async () => {
+  window.pauza.onTranslate(async () => {
     new HtmlTranslate(document).translate()
     document.querySelectorAll('input[type="range"]').forEach(async range => {
       const settings = await window.settings.currentSettings()
@@ -113,7 +89,7 @@ window.onload = async (e) => {
     setWindowHeight()
   })
 
-  window.stretchly.onEnableContributorPreferences(() => {
+  window.pauza.onEnableContributorPreferences(() => {
     showContributorPreferencesButton()
   })
 
@@ -136,12 +112,12 @@ window.onload = async (e) => {
 
   document.querySelector('[name="contributorPreferences"]').onclick = (event) => {
     event.preventDefault()
-    window.stretchly.openContributorPreferences()
+    window.pauza.openContributorPreferences()
   }
 
   document.querySelector('[name="syncPreferences"]').onclick = (event) => {
     event.preventDefault()
-    window.stretchly.openSyncPreferences()
+    window.pauza.openSyncPreferences()
   }
 
   document.querySelector('.debug button').onclick = async (event) => {
@@ -248,7 +224,7 @@ window.onload = async (e) => {
   document.querySelectorAll('.sounds img').forEach(preview => {
     if (!eventsAttached) {
       preview.onclick = (event) =>
-        window.stretchly.playSound(preview.closest('div').querySelector('input').value)
+        window.pauza.playSound(preview.closest('div').querySelector('input').value)
     }
   })
 
@@ -266,7 +242,7 @@ window.onload = async (e) => {
   })
 
   document.querySelector('.settings > div > button').onclick = (event) => {
-    window.stretchly.restoreDefaults()
+    window.pauza.restoreDefaults()
   }
 
   document.querySelectorAll('.about a').forEach((item) => {
@@ -297,11 +273,11 @@ window.onload = async (e) => {
   document.querySelectorAll('.authenticate a').forEach((button) => {
     button.onclick = (event) => {
       event.preventDefault()
-      window.stretchly.openContributorAuth(button.dataset.provider)
+      window.pauza.openContributorAuth(button.dataset.provider)
     }
   })
 
-  document.querySelector('.version').innerHTML = await window.stretchly.getVersion()
+  document.querySelector('.version').innerHTML = await window.pauza.getVersion()
   if (!settings.disableAppUpdateFeatures) {
     versionChecker.latest()
       .then(version => {
@@ -332,7 +308,7 @@ window.onload = async (e) => {
       }
     }
     if (height) {
-      window.stretchly.setWindowSize(bounds.width, height)
+      window.pauza.setWindowSize(bounds.width, height)
     }
   }
 

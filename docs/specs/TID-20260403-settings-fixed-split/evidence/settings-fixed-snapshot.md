@@ -1,0 +1,111 @@
+- main [ref=e3]:
+  - generic [ref=e5]:
+    - complementary [ref=e6]:
+      - generic [ref=e8]:
+        - generic [ref=e9]:
+          - generic [ref=e10]:
+            - generic [ref=e11]: Pauza
+            - generic [ref=e12]: 已同步
+          - generic [ref=e13]:
+            - paragraph [ref=e14]: 设置分类
+            - heading "概览" [level=2] [ref=e15]
+            - paragraph [ref=e16]: 左侧切换类别，右侧查看当前分类下的全部设置与保存状态。
+        - generic [ref=e17]:
+          - button "概览 状态摘要、最近动作和快捷操作。" [ref=e18]:
+            - img [ref=e20]
+            - generic [ref=e22]
+          - button "节奏 默认只保留你每天真正会调整的节奏。" [ref=e25]:
+            - img [ref=e27]
+            - generic [ref=e29]
+          - button "提醒与延后 把提前提醒和延后策略集中在一处查看。" [ref=e32]:
+            - img [ref=e34]
+            - generic [ref=e39]
+          - button "打断与显示 控制休息窗口的打断强度、呈现位置和严格策略。" [ref=e42]:
+            - img [ref=e44]
+            - generic [ref=e47]
+          - button "智能暂停 让 Pauza 根据空闲、专注模式和应用名单自动收敛。" [ref=e50]:
+            - img [ref=e52]
+            - generic [ref=e54]
+          - button "通用与快捷键 管理语言、开机启动和全局键盘入口。" [ref=e57]:
+            - img [ref=e59]
+            - generic [ref=e61]
+    - generic [ref=e64]:
+      - generic [ref=e65]:
+        - generic [ref=e67]:
+          - generic [ref=e68]:
+            - generic [ref=e69]
+            - generic [ref=e73]
+          - generic [ref=e76]: 微休息将在8分钟后开始
+        - generic [ref=e77]:
+          - generic [ref=e78]:
+            - generic [ref=e79]
+            - generic [ref=e86]
+          - generic [ref=e99]:
+            - button "保存" [disabled]
+            - button "撤销" [disabled]
+            - button "默认值" [ref=e100]
+      - generic [ref=e103]:
+        - generic [ref=e104]:
+          - img [ref=e106]
+          - generic [ref=e108]:
+            - paragraph [ref=e109]: 预览
+            - heading "用更安静的界面守住工作节奏" [level=1] [ref=e110]
+            - paragraph [ref=e111]: 把最高频的设置留在前排，把强控制和兼容项收进高级区。 当前是浏览器预览
+        - generic [ref=e112]:
+          - generic [ref=e113]: Pauza
+          - generic [ref=e114]: Browser preview
+          - generic [ref=e115]: 已同步
+      - generic [ref=e116]:
+        - generic [ref=e117]:
+          - paragraph [ref=e118]: 下一个休息
+          - paragraph [ref=e119]: 微休息将在8分钟后开始
+          - paragraph [ref=e120]: 21:51
+        - generic [ref=e121]:
+          - paragraph [ref=e122]: 当前休息
+          - paragraph [ref=e123]: 当前无活动休息
+          - paragraph [ref=e124]: 微休息将在8分钟后开始
+        - generic [ref=e125]:
+          - paragraph [ref=e126]: 最近动作
+          - paragraph [ref=e127]: 当前是浏览器预览模式。
+          - paragraph [ref=e128]: 微休息将在8分钟后开始
+      - generic [ref=e129]:
+        - generic [ref=e131]:
+          - img [ref=e133]
+          - generic [ref=e136]:
+            - generic [ref=e137]: 快捷动作
+            - generic [ref=e138]: 这些操作会直接作用于当前正在运行的节奏。
+        - generic [ref=e140]:
+          - button "暂停 30 分钟" [ref=e141]:
+            - img
+            - text: 暂停 30 分钟
+          - button "专注保护 45 分钟" [ref=e142]:
+            - img
+            - text: 专注保护 45 分钟
+          - button "恢复" [ref=e143]:
+            - img
+            - text: 恢复
+      - generic [ref=e144]:
+        - generic [ref=e146]:
+          - img [ref=e148]
+          - generic [ref=e150]:
+            - generic [ref=e151]: 实时概览
+            - generic [ref=e152]: 当前节奏、宿主状态和休息表面都集中在这里。
+        - generic [ref=e154]:
+          - generic [ref=e155]:
+            - generic [ref=e156]: 运行时
+            - generic [ref=e157]: Browser preview
+          - generic [ref=e158]:
+            - generic [ref=e159]: 平台
+            - generic [ref=e160]: preview
+          - generic [ref=e161]:
+            - generic [ref=e162]: 版本
+            - generic [ref=e163]: 0.1.0
+          - generic [ref=e164]:
+            - generic [ref=e165]: 休息风格
+            - generic [ref=e166]: 轻提醒
+          - generic [ref=e167]:
+            - generic [ref=e168]: 显示位置
+            - generic [ref=e169]: 所有屏幕都显示
+          - generic [ref=e170]:
+            - generic [ref=e171]: 最近动作
+            - generic [ref=e172]: 当前是浏览器预览模式。

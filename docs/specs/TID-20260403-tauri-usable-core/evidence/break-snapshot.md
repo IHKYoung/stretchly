@@ -1,0 +1,9 @@
+- main [ref=e3]:
+  - generic [ref=e4]:
+    - generic [ref=e5]: Pauza
+    - heading "No active break" [level=1] [ref=e6]
+    - paragraph [ref=e7]: The prompt was already cleared by the scheduler.
+    - generic [ref=e8]: 0m
+    - generic [ref=e9]:
+      - button "Done" [disabled] [ref=e10]
+      - button "Skip" [disabled] [ref=e11]

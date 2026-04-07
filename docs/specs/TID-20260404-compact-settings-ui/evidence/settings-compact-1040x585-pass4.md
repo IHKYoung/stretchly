@@ -1,0 +1,24 @@
+- main [ref=e3]:
+  - generic [ref=e4]:
+    - complementary [ref=e5]:
+      - paragraph [ref=e7]: Pauza
+      - navigation [ref=e8]:
+        - button "节奏" [ref=e9]
+        - button "提醒与打断" [ref=e10]
+        - button "智能暂停" [ref=e11]
+        - button "通用" [ref=e12]
+    - generic [ref=e13]:
+      - heading "节奏" [level=1] [ref=e16]
+      - generic [ref=e20]:
+        - generic [ref=e21]:
+          - paragraph [ref=e23]: 微休息
+          - generic [ref=e24]:
+            - switch "微休息" [checked] [ref=e25] [cursor=pointer]
+            - generic [ref=e27]
+            - generic [ref=e32]
+        - generic [ref=e37]:
+          - paragraph [ref=e39]: 长休息
+          - generic [ref=e40]:
+            - switch "长休息" [checked] [ref=e41] [cursor=pointer]
+            - generic [ref=e43]
+            - generic [ref=e48]

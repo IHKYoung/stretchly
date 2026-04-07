@@ -1,0 +1,44 @@
+# 节奏页 preset 快照
+
+- navigation
+  - button `节奏`
+  - button `偏好`
+- 微休息
+  - switch `微休息` `[checked]`
+  - 间隔
+    - group `微休息 间隔`
+      - button `5`
+      - button `10` `[pressed]`
+      - button `15`
+      - button `20`
+      - button `30`
+    - unit `分钟`
+  - 时长
+    - group `微休息 时长`
+      - button `15`
+      - button `20` `[pressed]`
+      - button `30`
+      - button `60`
+    - unit `秒`
+- 长休息
+  - switch `长休息` `[checked]`
+  - 频率
+    - group `长休息 频率`
+      - button `2`
+      - button `3` `[pressed]`
+      - button `4`
+      - button `5`
+    - unit `轮`
+  - 时长
+    - group `长休息 时长`
+      - button `3`
+      - button `5` `[pressed]`
+      - button `10`
+      - button `15`
+    - unit `分钟`
+- 提前提醒
+  - 微休息 `spinbutton` `10` `秒前`
+  - 长休息 `spinbutton` `30` `秒前`
+- 延后
+  - 微休息 `spinbutton` `2` `分钟`
+  - 长休息 `spinbutton` `5` `分钟`

@@ -14,7 +14,7 @@
   <link rel="stylesheet" type="text/css" href="css/preferences.css">
 </head>
 
-<body>
+<body class="preferences-page">
   <nav class="navigation">
     <a href="#" class="active" data-section="settings">
       <div>
@@ -47,7 +47,7 @@
       </div>
     </a>
   </nav>
-  <div class="settings">
+  <div class="settings page-section">
     <div class="store-hidden portable-hidden">
       <input type="checkbox" value="openAtLogin" id="openAtLogin">
       <label data-i18next="preferences.settings.openAtLogin" for="openAtLogin"></label>
@@ -76,6 +76,26 @@
     <div>
       <input type="checkbox" class="negative" value="monitorDnd" id="monitorDnd">
       <label data-i18next="preferences.settings.monitorDnd" for="monitorDnd"></label>
+    </div>
+    <div class="setting-copy">
+      <span data-i18next="preferences.settings.interruptionStyle"></span>
+    </div>
+    <div class="interruption-style">
+      <div>
+        <input type="radio" value="gentle" name="breakPromptStyle" id="breakPromptGentle">
+        <label data-i18next="preferences.settings.gentle" for="breakPromptGentle"></label>
+      </div>
+      <div>
+        <input type="radio" value="balanced" name="breakPromptStyle" id="breakPromptBalanced">
+        <label data-i18next="preferences.settings.balanced" for="breakPromptBalanced"></label>
+      </div>
+      <div>
+        <input type="radio" value="immersive" name="breakPromptStyle" id="breakPromptImmersive">
+        <label data-i18next="preferences.settings.immersive" for="breakPromptImmersive"></label>
+      </div>
+    </div>
+    <div class="setting-copy">
+      <p data-i18next="preferences.settings.interruptionStyleInfo"></p>
     </div>
     <div>
       <hr />
@@ -146,7 +166,7 @@
       <button type="button" data-i18next="preferences.settings.restoreDefaults"></button>
     </div>
   </div>
-  <div class="schedule hidden">
+  <div class="schedule page-section hidden">
     <div>
       <span data-i18next="preferences.schedule.miniBreaks">
       </span>
@@ -277,7 +297,7 @@
       <label data-i18next="preferences.schedule.enableStrictLong" for="enableStrictLong"></label>
     </div>
   </div>
-  <div class="theme hidden">
+  <div class="theme page-section hidden">
     <div>
       <span data-i18next="preferences.theme.appearance">
       </span>
@@ -375,8 +395,8 @@
   <div class="about hidden">
     <div>
       <div>
-        <img src="images/stretchly.svg" data-has-dark-version alt="Stretchy logo">
-        <span>Stretchly</span>
+        <img src="images/pauza.svg" data-has-dark-version alt="Pauza logo">
+        <span>Pauza</span>
       </div>
       <span data-i18next="preferences.about.tagline"></span>
     </div>
@@ -437,7 +457,7 @@
   </div>
   <div class="heart hidden">
     <div>
-      <img src="images/stretchly.svg" data-has-dark-version alt="Stretchy logo">
+        <img src="images/pauza.svg" data-has-dark-version alt="Pauza logo">
     </div>
     <div>
       <span data-i18next="preferences.heart.loveStretchly"></span>

@@ -1,6 +1,6 @@
 {
   "main": {
-    "toolTipHeader": "Stretchly - Pamätá si prestávky za vás",
+    "toolTipHeader": "Pauza - Pamätá si prestávky za vás",
     "microbreakIn": "Mini prestávka za $t(utils.seconds, {'count': {{seconds}} })",
     "breakIn": "Dlhá prestávka za $t(utils.seconds, {'count': {{seconds}} })",
     "resumingBreaks": "Obnovenie prestávok",
@@ -16,7 +16,7 @@
     "untilMorning": "Do rána",
     "indefinitely": "Na neurčito",
     "resetBreaks": "Resetovať prestávky",
-    "quitStretchly": "Ukončiť Stretchly",
+    "quitStretchly": "Ukončiť Pauza",
     "restoreDefaults": "Obnoviť pôvodné nastavenia",
     "areYouSure": "Táto akcia obnoví pôvodné nastavenia a všetky vaše zmeny budú stratené.",
     "continue": "Pokračovať",
@@ -33,16 +33,16 @@
     "finish": "Dokončiť túto prestávku"
   },
   "preferences": {
-    "title": "Nastavenia Stretchly",
+    "title": "Nastavenia Pauza",
     "nav": {
       "settings": "Nastavenia",
       "schedule": "Časovanie",
       "theme": "Téma",
       "about": "Informácie",
-      "heart": "Pomôcť Stretchly"
+      "heart": "Pomôcť Pauza"
     },
     "settings": {
-      "openAtLogin": "Spustiť Stretchly automaticky po prihlásení",
+      "openAtLogin": "Spustiť Pauza automaticky po prihlásení",
       "showBreaksIn": "Ukázať prestávky ako:",
       "window": "Okno",
       "fullscreen": "Celá obrazovka",
@@ -102,7 +102,7 @@
       "version": "Verzia ",
       "latestVersion": "Najnovšia verzia ",
       "notifyNewVersion": "Automaticky ma upozorni na novú verziu",
-      "learnMore": "Ak sa chcete dozvedieť viac o funkciách Stretchly, prezrieť tutoriál, stiahnuť najnovšiu verziu alebo nás kontaktovať kvôli podpore, ",
+      "learnMore": "Ak sa chcete dozvedieť viac o funkciách Pauza, prezrieť tutoriál, stiahnuť najnovšiu verziu alebo nás kontaktovať kvôli podpore, ",
       "ourWebsite": "navštívte našu webstránku",
       "dot": ".",
       "developedBy": "Vyvinul",
@@ -111,9 +111,9 @@
       "checkNewVersion": "Automaticky kontrolovať aktualizácie aplikácie"
     },
     "heart": {
-      "loveStretchly": "Chcete pomôcť Stretchly?",
+      "loveStretchly": "Chcete pomôcť Pauza?",
       "desc1": "Prestávky počas práce s počítačom sú vedecky overenou metódou na zlepšenie fyzického a psychického zdravia.",
-      "desc2": "Stretchly je zdarma. Môžete však darovať svoj čas alebo peniaze a pomôcť tak k zlepšeniu Stretchly a ďalších programov.",
+      "desc2": "Pauza je zdarma. Môžete však darovať svoj čas alebo peniaze a pomôcť tak k zlepšeniu Pauza a ďalších programov.",
       "becomeContributor": "Stante sa Patrónom",
       "alreadyContributor": "Už som prispel",
       "authenticateUsing": "Autentifikovať pomocou:",
@@ -180,7 +180,7 @@
     "showCurrentTimeInBreaks": "Ukázať aktuálny lokálny čas v okne Prestávky",
     "currentTimeInBreaks": "Aktuálny čas",
     "showTrayIcon": "Zobraziť ikonu",
-    "toShowTrayIcon": "Zobraziť ikonu Stretchly"
+    "toShowTrayIcon": "Zobraziť ikonu Pauza"
   },
   "utils": {
     "remaining": "{{count}} do konca",
@@ -209,7 +209,7 @@
     "newVersionAvailable": "Je dostupná nová verzia!"
   },
   "welcome": {
-    "title": "Vitajte v Stretchly",
+    "title": "Vitajte v Pauza",
     "breakTimeReminderApp": "Pamätá si prestávky za vás",
     "viewTutorial": "Prezrieť Tutoriál",
     "openPreferences": "Otvoriť Nastavenia",

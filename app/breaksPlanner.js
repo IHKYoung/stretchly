@@ -32,14 +32,14 @@ class BreaksPlanner extends EventEmitter {
     this.naturalBreaksManager.on('clearBreakScheduler', () => {
       if (!this.isPaused && this.scheduler.reference !== 'finishMicrobreak' && this.scheduler.reference !== 'finishBreak' && this.scheduler.reference !== null) {
         this.clear()
-        log.info('Stretchly: pausing breaks because of idle time')
+        log.info('Pauza: pausing breaks because of idle time')
       }
     })
 
     this.naturalBreaksManager.on('naturalBreakFinished', () => {
       if (!this.isPaused && this.scheduler.reference !== 'finishMicrobreak' && this.scheduler.reference !== 'finishBreak' && !this.dndManager.isOnDnd) {
         this.reset()
-        log.info('Stretchly: resuming breaks after idle time')
+        log.info('Pauza: resuming breaks after idle time')
         this.emit('updateToolTip')
       }
     })
@@ -47,7 +47,7 @@ class BreaksPlanner extends EventEmitter {
     this.dndManager.on('dndStarted', () => {
       if (!this.isPaused && this.scheduler.reference !== 'finishMicrobreak' && this.scheduler.reference !== 'finishBreak' && this.scheduler.reference !== null) {
         this.clear()
-        log.info('Stretchly: pausing breaks for Do Not Distrub')
+        log.info('Pauza: pausing breaks for Do Not Distrub')
         this.emit('updateToolTip')
       } else {
         this.dndManager.isOnDnd = false
@@ -57,7 +57,7 @@ class BreaksPlanner extends EventEmitter {
     this.dndManager.on('dndFinished', () => {
       if (!this.isPaused && this.scheduler.reference !== 'finishMicrobreak' && this.scheduler.reference !== 'finishBreak') {
         this.reset()
-        log.info('Stretchly: resuming breaks for Do Not Distrub')
+        log.info('Pauza: resuming breaks for Do Not Distrub')
         this.emit('updateToolTip')
       }
     })
@@ -66,17 +66,17 @@ class BreaksPlanner extends EventEmitter {
       if (rule === 'pause') {
         if (!this.isPaused && this.scheduler.reference !== 'finishMicrobreak' && this.scheduler.reference !== 'finishBreak' && this.scheduler.reference !== null) {
           this.clear()
-          log.info(`Stretchly: pausing breaks as 'pause' exclusion found running: '${exclusion}'`)
+          log.info(`Pauza: pausing breaks as 'pause' exclusion found running: '${exclusion}'`)
           this.emit('updateToolTip')
         } else if (!this.isPaused && this.scheduler.reference === 'finishBreak') {
           this.emit('finishBreak', false, false)
           this.clear()
-          log.info(`Stretchly: closing current and pausing breaks as 'pause' exclusion found running: '${exclusion}'`)
+          log.info(`Pauza: closing current and pausing breaks as 'pause' exclusion found running: '${exclusion}'`)
           this.emit('updateToolTip')
         } else if (!this.isPaused && this.scheduler.reference === 'finishMicrobreak') {
           this.emit('finishMicrobreak', false, false)
           this.clear()
-          log.info(`Stretchly: closing current and pausing breaks as 'pause' exclusion found running: '${exclusion}'`)
+          log.info(`Pauza: closing current and pausing breaks as 'pause' exclusion found running: '${exclusion}'`)
           this.emit('updateToolTip')
         } else {
           this.appExclusionsManager.inOnException = false
@@ -84,7 +84,7 @@ class BreaksPlanner extends EventEmitter {
       } else if (rule === 'resume') {
         if (!this.isPaused && this.scheduler.reference !== 'finishMicrobreak' && this.scheduler.reference !== 'finishBreak') {
           this.reset()
-          log.info(`Stretchly: resuming breaks as 'resume' exclusion found running: '${exclusion}'`)
+          log.info(`Pauza: resuming breaks as 'resume' exclusion found running: '${exclusion}'`)
           this.emit('updateToolTip')
         }
       }
@@ -94,13 +94,13 @@ class BreaksPlanner extends EventEmitter {
       if (rule === 'pause') {
         if (!this.isPaused && this.scheduler.reference !== 'finishMicrobreak' && this.scheduler.reference !== 'finishBreak') {
           this.reset()
-          log.info("Stretchly: resuming breaks as no 'pause' exclusion found running")
+          log.info("Pauza: resuming breaks as no 'pause' exclusion found running")
           this.emit('updateToolTip')
         }
       } else if (rule === 'resume') {
         if (!this.isPaused && this.scheduler.reference !== 'finishMicrobreak' && this.scheduler.reference !== 'finishBreak' && this.scheduler.reference !== null) {
           this.clear()
-          log.info("Stretchly: pausing breaks as no 'resume' exclusion found running")
+          log.info("Pauza: pausing breaks as no 'resume' exclusion found running")
           this.emit('updateToolTip')
         } else {
           this.appExclusionsManager.inOnException = true

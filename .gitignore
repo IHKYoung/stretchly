@@ -3,6 +3,9 @@ npm-debug.log
 .DS_Store
 dist
 coverage
+.playwright-mcp/
+output/playwright/
+scripts/__pycache__/
 .history
 .vscode
 .idea

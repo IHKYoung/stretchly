@@ -203,16 +203,16 @@
       "checkNewVersion": "Rakenduse uuenduste automaatne kontroll",
       "version": "Versioon ",
       "latestVersion": "Uusim versioon ",
-      "learnMore": "Et rohkem teada saada Stretchly funktsioonidest, vaata õpetust, laadi alla uusim versioon või võta meiega ühendust toe saamiseks, ",
+      "learnMore": "Et rohkem teada saada Pauza funktsioonidest, vaata õpetust, laadi alla uusim versioon või võta meiega ühendust toe saamiseks, ",
       "janH": "Jan Hovancik"
     },
-    "title": "Stretchly Seaded",
+    "title": "Pauza Seaded",
     "heart": {
       "becomeContributor": "Hakka toetajaks",
       "desc1": "On teaduslikult tõestatud, et arvutit kasutades on regulaarsed pausid olulised nii sinu füüsilise kui ka vaimse heaolu jaoks.",
       "authenticateUsing": "Autentimine toimub kasutades:",
-      "loveStretchly": "Kas armastad oma Stretchlyt?",
-      "desc2": "Stretchly on tasuta. Kuid sa saad toetada meie arendust, tehes annetuse ja aidates meil jätkata Stretchly täiustamist ning välja anda teisi tasuta tarkvaratooteid.",
+      "loveStretchly": "Kas armastad oma Pauzat?",
+      "desc2": "Pauza on tasuta. Kuid sa saad toetada meie arendust, tehes annetuse ja aidates meil jätkata Pauza täiustamist ning välja anda teisi tasuta tarkvaratooteid.",
       "contributorPreferences": "Kaasautori seaded",
       "alreadyContributor": "Olen juba kaasautor",
       "syncPreferences": "Sünkroniseerimise seaded"
@@ -224,7 +224,7 @@
       "allScreens": "Kuvab pause kõigil ekraanidel",
       "restoreDefaults": "Taasta vaikeseaded",
       "monitorIdleTime": "Monitoorib süsteemi passiivset aega (pausid on peatatud, kui süsteem on passiivne).",
-      "openAtLogin": "Käivita Stretchly automaatselt sisselogimisel",
+      "openAtLogin": "Käivita Pauza automaatselt sisselogimisel",
       "showIdeas": "Näita pauside ajal harjutuste soovitusi",
       "fullscreen": "Täisekraanil",
       "showBreaksIn": "Pause näidatakse:"
@@ -232,7 +232,7 @@
     "nav": {
       "theme": "Kujundus",
       "schedule": "Ajakava",
-      "heart": "Armastan Stretchlyt",
+      "heart": "Armastan Pauzat",
       "settings": "Seaded",
       "about": "Info"
     }
@@ -257,7 +257,7 @@
     "dark": "Tume",
     "2": "Kolmas monitor",
     "longBreaks": "Suured pausid:",
-    "toShowTrayIcon": "Kuva menüüribal Stretchly ikoon",
+    "toShowTrayIcon": "Kuva menüüribal Pauza ikoon",
     "naturalBreaksInfo": "Kui peamistes eelistustes on süsteemi passiivsuse jälgimine lubatud, saate määrata, mis aja möödudes pausid peatada.",
     "timeToBreakInTray": "Aeg paus teha",
     "3": "Neljas monitor",
@@ -470,8 +470,8 @@
     "cancel": "Katkesta",
     "toMicrobreak": "Väike paus",
     "contributorPreferences": "Kaasautorite eelistused",
-    "quitStretchly": "Sulge Stretchly",
-    "toolTipHeader": "Stretchly - Puhkehetkede meeldetuletusrakendus",
+    "quitStretchly": "Sulge Pauza",
+    "toolTipHeader": "Pauza - Puhkehetkede meeldetuletusrakendus",
     "breakIn": "Suure pausini $t(utils.seconds, {'count': {{seconds}} })",
     "resetBreaks": "Lähtesta pausid",
     "resumingBreaks": "Pauside jätkamine",
@@ -495,7 +495,7 @@
   },
   "welcome": {
     "getStarted": "Alusta",
-    "title": "Teretulemast Stretchlysse",
+    "title": "Teretulemast Pauzasse",
     "viewTutorial": "Vaata õpetust",
     "breakTimeReminderApp": "Puhkepauside meeldetuletuse rakendus",
     "openPreferences": "Ava seaded"

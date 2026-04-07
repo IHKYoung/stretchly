@@ -29,6 +29,7 @@ import { registerBreakShortcuts } from './utils/breakShortcuts.js'
 import defaultSettings from './utils/defaultSettings.js'
 import StatusMessages from './utils/statusMessages.js'
 import DisplayManager from './utils/displayManager.js'
+import { getBreakWindowProfile } from './utils/breakWindowProfile.js'
 
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
@@ -37,8 +38,8 @@ process.on('uncaughtException', (err, _) => {
   log.error(err)
   const dialogOpts = {
     type: 'error',
-    title: 'Stretchly',
-    message: 'An error occured while running Stretchly and it will now quit. To report the issue, click Report.',
+    title: 'Pauza',
+    message: 'An error occured while running Pauza and it will now quit. To report the issue, click Report.',
     buttons: ['Report', 'OK']
   }
   dialog.showMessageBox(dialogOpts).then((returnValue) => {
@@ -69,7 +70,7 @@ let preferencesWin = null
 let welcomeWin = null
 let contributorPreferencesWin = null
 let syncPreferencesWin = null
-let myStretchlyWin = null
+let myPauzaWin = null
 let settings
 let pausedForSuspendOrLock = false
 let nextIdea = null
@@ -91,7 +92,7 @@ log.initialize({ preload: true })
 
 // https://stackoverflow.com/questions/65859634/notification-from-electron-shows-electron-app-electron/65863174#65863174
 if (process.platform === 'win32') {
-  app.setAppUserModelId('Stretchly')
+  app.setAppUserModelId('Pauza')
 }
 
 const global = {
@@ -118,7 +119,7 @@ if (!gotTheLock) {
   app.quit()
 } else {
   app.on('second-instance', (event, commandLine, workingDirectory, commandLineArguments) => {
-    log.info(`Stretchly: arguments received from second instance: ${commandLineArguments}`)
+    log.info(`Pauza: arguments received from second instance: ${commandLineArguments}`)
     const cmd = new Command(commandLineArguments, app.getVersion())
 
     if (!cmd.hasSupportedCommand) {
@@ -126,21 +127,21 @@ if (!gotTheLock) {
     }
 
     if (!cmd.checkInMain()) {
-      log.info(`Stretchly: command '${cmd.command}' executed in second instance, dropped in main instance`)
+      log.info(`Pauza: command '${cmd.command}' executed in second instance, dropped in main instance`)
       return
     }
 
     switch (cmd.command) {
       case 'reset':
-        log.info('Stretchly: resetting breaks (requested by second instance)')
+        log.info('Pauza: resetting breaks (requested by second instance)')
         resetBreaks()
         break
 
       case 'mini': {
-        log.info('Stretchly: skip to Mini break (requested by second instance)')
+        log.info('Pauza: skip to Mini break (requested by second instance)')
         const delay = cmd.waitToMs()
         if (delay === -1) {
-          log.error('Stretchly: error parsing wait interval to ms because of invalid value')
+          log.error('Pauza: error parsing wait interval to ms because of invalid value')
           return
         }
         if (cmd.options.title) nextIdea = [cmd.options.title]
@@ -149,10 +150,10 @@ if (!gotTheLock) {
       }
 
       case 'long': {
-        log.info('Stretchly: skip to Long break (requested by second instance)')
+        log.info('Pauza: skip to Long break (requested by second instance)')
         const delay = cmd.waitToMs()
         if (delay === -1) {
-          log.error('Stretchly: error parsing wait interval to ms because of invalid value')
+          log.error('Pauza: error parsing wait interval to ms because of invalid value')
           return
         }
         nextIdea = [cmd.options.title ? cmd.options.title : null, cmd.options.text ? cmd.options.text : null]
@@ -161,22 +162,22 @@ if (!gotTheLock) {
       }
 
       case 'resume':
-        log.info('Stretchly: resume Breaks (requested by second instance)')
+        log.info('Pauza: resume Breaks (requested by second instance)')
         if (breakPlanner.isPaused) resumeBreaks(false)
         break
 
       case 'toggle':
-        log.info('Stretchly: toggle Breaks (requested by second instance)')
+        log.info('Pauza: toggle Breaks (requested by second instance)')
         if (breakPlanner.isPaused) resumeBreaks(false)
         else pauseBreaks(1)
         break
 
       case 'pause': {
-        log.info('Stretchly: pause Breaks (requested by second instance)')
+        log.info('Pauza: pause Breaks (requested by second instance)')
         const duration = cmd.durationToMs(settings)
         // -1 indicates an invalid value
         if (duration === -1) {
-          log.error('Stretchly: error when parsing duration to ms because of invalid value')
+          log.error('Pauza: error when parsing duration to ms because of invalid value')
           return
         }
         pauseBreaks(duration)
@@ -184,7 +185,7 @@ if (!gotTheLock) {
       }
 
       case 'preferences':
-        log.info('Stretchly: open Preferences window (requested by second instance)')
+        log.info('Pauza: open Preferences window (requested by second instance)')
         createPreferencesWindow()
         break
     }
@@ -199,7 +200,7 @@ app.on('before-quit', (event) => {
   if ((breakPlanner.scheduler.reference === 'finishMicrobreak' && settings.get('microbreakStrictMode')) ||
       (breakPlanner.scheduler.reference === 'finishBreak' && settings.get('breakStrictMode'))
   ) {
-    log.info('Stretchly: preventing app closure (in break with strict mode)')
+    log.info('Pauza: preventing app closure (in break with strict mode)')
     event.preventDefault()
   } else {
     globalShortcut.unregisterAll()
@@ -216,45 +217,45 @@ async function initialize (isAppStart = true) {
     return
   }
   // TODO maybe we should not reinitialize but handle everything when we save new values for preferences
-  log.info(`Stretchly: ${isAppStart ? '' : 're'}initializing...`)
+  log.info(`Pauza: ${isAppStart ? '' : 're'}initializing...`)
 
   EventEmitter.setMaxListeners(200) // for watching Store changes
   if (!settings) {
     settings = new Store({
       defaults: defaultSettings,
       beforeEachMigration: (store, context) => {
-        log.info(`Stretchly: migrating preferences from Stretchly v${context.fromVersion} to v${context.toVersion}`)
+        log.info(`Pauza: migrating preferences from Pauza v${context.fromVersion} to v${context.toVersion}`)
       },
       migrations: {
         '1.13.0': store => {
           if (store.has('pauseBreaksShortcut')) {
             store.set('pauseBreaksToggleShortcut', store.get('pauseBreaksShortcut'))
-            log.info(`Stretchly: settings pauseBreaksToggleShortcut to "${store.get('pauseBreaksShortcut')}"`)
+            log.info(`Pauza: settings pauseBreaksToggleShortcut to "${store.get('pauseBreaksShortcut')}"`)
             store.delete('pauseBreaksShortcut')
-            log.info('Stretchly: removing pauseBreaksShortcut')
+            log.info('Pauza: removing pauseBreaksShortcut')
           } else {
-            log.info('Stretchly: not migrating pauseBreaksShortcut')
+            log.info('Pauza: not migrating pauseBreaksShortcut')
           }
           if (store.has('pauseBreaksShortcut')) {
             store.delete('resumeBreaksShortcut')
-            log.info('Stretchly: removing resumeBreaksShortcut')
+            log.info('Pauza: removing resumeBreaksShortcut')
           }
         },
         '1.17.0': store => {
           if (store.has('showBreakActionsInStrictMode')) {
             store.set('showTrayMenuInStrictMode', store.get('showBreakActionsInStrictMode'))
-            log.info(`Stretchly: settings showTrayMenuInStrictMode to "${store.get('showBreakActionsInStrictMode')}"`)
+            log.info(`Pauza: settings showTrayMenuInStrictMode to "${store.get('showBreakActionsInStrictMode')}"`)
             store.delete('showBreakActionsInStrictMode')
-            log.info('Stretchly: removing showBreakActionsInStrictMode')
+            log.info('Pauza: removing showBreakActionsInStrictMode')
           } else {
-            log.info('Stretchly: not migrating showBreakActionsInStrictMode')
+            log.info('Pauza: not migrating showBreakActionsInStrictMode')
           }
         },
         '1.18.2': store => {
           if (insideFlatpak() || insideWindowsStore() || insideSnap()) {
             if (!store.get('disableAppUpdateFeatures')) {
               store.set('disableAppUpdateFeatures', true)
-              log.info('Stretchly: setting disableAppUpdateFeatures to true because we are in Flatpak/Windows Store/Snap build')
+              log.info('Pauza: setting disableAppUpdateFeatures to true because we are in Flatpak/Windows Store/Snap build')
             }
           }
         },
@@ -262,39 +263,39 @@ async function initialize (isAppStart = true) {
           if (store.has('audio')) {
             const legacyAudio = store.get('audio')
             store.set('longBreakAudio', legacyAudio)
-            log.info(`Stretchly: migrating audio to longBreakAudio with value "${legacyAudio}"`)
+            log.info(`Pauza: migrating audio to longBreakAudio with value "${legacyAudio}"`)
             store.delete('audio')
-            log.info('Stretchly: removing audio')
+            log.info('Pauza: removing audio')
           } else {
-            log.info('Stretchly: not migrating audio to longBreakAudio')
+            log.info('Pauza: not migrating audio to longBreakAudio')
           }
           if (store.has('microbreakStartSoundPlaying')) {
             const val = store.get('microbreakStartSoundPlaying') ? store.get('miniBreakAudio') : 'silence'
             store.set('miniBreakStartSound', val)
-            log.info(`Stretchly: migrating microbreakStartSoundPlaying to miniBreakStartSound with value "${val}"`)
+            log.info(`Pauza: migrating microbreakStartSoundPlaying to miniBreakStartSound with value "${val}"`)
             store.delete('microbreakStartSoundPlaying')
-            log.info('Stretchly: removing microbreakStartSoundPlaying')
+            log.info('Pauza: removing microbreakStartSoundPlaying')
           } else {
-            log.info('Stretchly: not migrating microbreakStartSoundPlaying')
+            log.info('Pauza: not migrating microbreakStartSoundPlaying')
           }
           if (store.has('breakStartSoundPlaying')) {
             const val = store.get('breakStartSoundPlaying') ? store.get('longBreakAudio') : 'silence'
             store.set('longBreakStartSound', val)
-            log.info(`Stretchly: migrating breakStartSoundPlaying to longBreakStartSound with value "${val}"`)
+            log.info(`Pauza: migrating breakStartSoundPlaying to longBreakStartSound with value "${val}"`)
             store.delete('breakStartSoundPlaying')
-            log.info('Stretchly: removing breakStartSoundPlaying')
+            log.info('Pauza: removing breakStartSoundPlaying')
           } else {
-            log.info('Stretchly: not migrating breakStartSoundPlaying')
+            log.info('Pauza: not migrating breakStartSoundPlaying')
           }
         },
         '1.20.0': store => {
           if (store.has('timeToBreakInTray')) {
             if (store.get('timeToBreakInTray')) {
               store.set('trayIconStyle', 'time')
-              log.info('Stretchly: migrating timeToBreakInTray to trayIconStyle="time"')
+              log.info('Pauza: migrating timeToBreakInTray to trayIconStyle="time"')
             } else {
               store.set('trayIconStyle', 'default')
-              log.info('Stretchly: migrating tray settings to trayIconStyle="default"')
+              log.info('Pauza: migrating tray settings to trayIconStyle="default"')
             }
             store.delete('timeToBreakInTray')
           }
@@ -302,11 +303,11 @@ async function initialize (isAppStart = true) {
       },
       watch: true
     })
-    log.info('Stretchly: loading preferences')
+    log.info('Pauza: loading preferences')
     Store.initRenderer()
     Object.entries(settings.store).forEach(([key, _]) => {
       settings.onDidChange(key, (newValue, oldValue) => {
-        log.info(`Stretchly: setting '${key}' to '${JSON.stringify(newValue)}' (was '${JSON.stringify(oldValue)}')`)
+        log.info(`Pauza: setting '${key}' to '${JSON.stringify(newValue)}' (was '${JSON.stringify(oldValue)}')`)
       })
     })
   }
@@ -354,7 +355,7 @@ async function initialize (isAppStart = true) {
     // one time migration with 1.20 or after
     settings.set('openAtLogin', await autostartManager.autoLaunchStatus())
     settings.set('_migratedOpenAtLogin', true)
-    log.info('Stretchly: Migrated to openAtLogin')
+    log.info('Pauza: Migrated to openAtLogin')
   }
 
   const currentAutostartValue = await autostartManager.autoLaunchStatus()
@@ -362,20 +363,20 @@ async function initialize (isAppStart = true) {
   if (openAtLogin !== currentAutostartValue) {
     autostartManager.setAutostartEnabled(openAtLogin)
   }
-  log.info(`Stretchly: attempting to set autostart to ${openAtLogin}`)
+  log.info(`Pauza: attempting to set autostart to ${openAtLogin}`)
 
   const imagesDir = join(app.getPath('userData'), 'images')
   if (!existsSync(imagesDir)) {
     try {
       mkdirSync(imagesDir, { recursive: true })
     } catch (error) {
-      log.error('Stretchly: error creating images directory', error)
+      log.error('Pauza: error creating images directory', error)
     }
   }
   // Initialize portal early for Flatpak so it's ready when user opens preferences
   if (insideFlatpak()) {
     autostartManager.flatpakPortalManager.initialize().catch(err => {
-      log.error('Stretchly: Failed to initialize portal manager during startup:', err)
+      log.error('Pauza: Failed to initialize portal manager during startup:', err)
     })
   }
 
@@ -392,7 +393,7 @@ async function initialize (isAppStart = true) {
     }
     if (DateTime.fromISO(data).month === DateTime.now().month) {
       global.isContributor = true
-      log.info('Stretchly: Thanks for your contributions!')
+      log.info('Pauza: Thanks for your contributions!')
       if (preferencesWin) {
         preferencesWin.webContents.send('enable-contributor-preferences')
       }
@@ -457,14 +458,14 @@ function onSuspendOrLock () {
     if (breakPlanner.isPaused || breakPlanner.dndManager.isOnDnd ||
       breakPlanner.naturalBreaksManager.isSchedulerCleared ||
       breakPlanner.appExclusionsManager.isSchedulerCleared) {
-      log.info('Stretchly: not pausing for suspendOrLock because paused already')
+      log.info('Pauza: not pausing for suspendOrLock because paused already')
     } else {
       pausedForSuspendOrLock = true
       pauseBreaks(1)
       updateTray()
     }
   } else {
-    log.info('Stretchly: not pausing for suspendOrLock because setting is disabled')
+    log.info('Pauza: not pausing for suspendOrLock because setting is disabled')
   }
 }
 
@@ -567,14 +568,14 @@ function createWelcomeWindow (isAppStart = true) {
   if (settings.get('isFirstRun') && isAppStart) {
     const modalPath = 'file://' + join(__dirname, '/welcome.html')
     welcomeWin = new BrowserWindow({
-      x: displayManager.getDisplayX(-1, 1000),
-      y: displayManager.getDisplayY(-1, 750),
-      width: 1000,
-      height: 750,
+      x: displayManager.getDisplayX(-1, 1040),
+      y: displayManager.getDisplayY(-1, 720),
+      width: 1040,
+      height: 720,
       show: false,
       autoHideMenuBar: true,
       icon: windowIconPath(),
-      backgroundColor: 'EDEDED',
+      backgroundColor: '#F3EFE8',
       webPreferences: {
         preload: join(__dirname, './welcome-preload.mjs'),
         sandbox: false
@@ -676,14 +677,14 @@ function checkVersion () {
 
 function startMicrobreakNotification () {
   showNotification(i18next.t('main.microbreakIn', { seconds: settings.get('microbreakNotificationInterval') / 1000 }))
-  log.info('Stretchly: showing Mini break notification')
+  log.info('Pauza: showing Mini break notification')
   breakPlanner.nextBreakAfterNotification()
   updateTray()
 }
 
 function startBreakNotification () {
   showNotification(i18next.t('main.breakIn', { seconds: settings.get('breakNotificationInterval') / 1000 }))
-  log.info('Stretchly: showing Long break notification')
+  log.info('Pauza: showing Long break notification')
   breakPlanner.nextBreakAfterNotification()
   updateTray()
 }
@@ -704,10 +705,22 @@ function getBlurredBackgroundWindowOptions () {
   }
 }
 
+function currentBreakWindowProfile (breakType, displayID) {
+  return getBreakWindowProfile({
+    breakType,
+    bounds: displayManager.getDisplayBounds(displayID),
+    breakPromptStyle: settings.get('breakPromptStyle'),
+    breakWindowWidth: settings.get('breakWindowWidth'),
+    breakWindowHeight: settings.get('breakWindowHeight'),
+    fullscreen: settings.get('fullscreen'),
+    showBreaksAsRegularWindows: settings.get('showBreaksAsRegularWindows')
+  })
+}
+
 function startMicrobreak () {
   // don't start another break if break running
   if (microbreakWins) {
-    log.warn('Stretchly: Mini break already running, not starting Mini break')
+    log.warn('Pauza: Mini break already running, not starting Mini break')
     return
   }
 
@@ -717,7 +730,7 @@ function startMicrobreak () {
   const postponableDurationPercent = settings.get('microbreakPostponableDurationPercent')
   const postponable = settings.get('microbreakPostpone') &&
     breakPlanner.postponesNumber < postponesLimit && postponesLimit > 0
-  const showBreaksAsRegularWindows = settings.get('showBreaksAsRegularWindows')
+  const breakPromptStyle = settings.get('breakPromptStyle')
 
   const modalPath = 'file://' + join(__dirname, '/microbreak.html')
   microbreakWins = []
@@ -753,43 +766,37 @@ function startMicrobreak () {
     }
     return [idea, startTime, breakDuration, strictMode,
       postponable, postponableDurationPercent,
-      calculateBackgroundColor(settings.get('miniBreakColor')), danger, settings.get('breakHealthMode')]
+      calculateBackgroundColor(settings.get('miniBreakColor')), danger, settings.get('breakHealthMode'),
+      breakPromptStyle]
   })
 
   for (let localDisplayId = 0; localDisplayId < displayManager.getDisplayCount(); localDisplayId++) {
+    const profile = currentBreakWindowProfile('microbreak', localDisplayId)
     const windowOptions = {
-      width: Math.floor(displayManager.getDisplayWidth(localDisplayId) * settings.get('breakWindowWidth')),
-      height: Math.floor(displayManager.getDisplayHeight(localDisplayId) * settings.get('breakWindowHeight')),
+      width: profile.width,
+      height: profile.height,
       autoHideMenuBar: true,
       icon: windowIconPath(),
       resizable: false,
-      frame: showBreaksAsRegularWindows,
+      frame: profile.frame,
       show: false,
       backgroundThrottling: false,
-      transparent: !showBreaksAsRegularWindows,
+      transparent: profile.transparent,
       ...getBlurredBackgroundWindowOptions(),
       backgroundColor: calculateBackgroundColor(settings.get('miniBreakColor')),
-      skipTaskbar: !showBreaksAsRegularWindows,
-      focusable: showBreaksAsRegularWindows,
-      alwaysOnTop: !showBreaksAsRegularWindows,
+      skipTaskbar: profile.skipTaskbar,
+      focusable: profile.focusable,
+      alwaysOnTop: profile.alwaysOnTop,
       hasShadow: false,
-      title: 'Stretchly',
-      titleBarStyle: process.platform === 'darwin' ? (showBreaksAsRegularWindows ? 'default' : 'hidden') : undefined,
-      titleBarOverlay: process.platform === 'darwin' ? !showBreaksAsRegularWindows : undefined,
+      title: 'Pauza',
+      titleBarStyle: process.platform === 'darwin' ? (profile.frame ? 'default' : 'hidden') : undefined,
+      titleBarOverlay: process.platform === 'darwin' ? !profile.frame : undefined,
+      x: profile.x,
+      y: profile.y,
       webPreferences: {
         preload: join(__dirname, './microbreak-preload.mjs'),
         sandbox: false
       }
-    }
-
-    if (settings.get('fullscreen') && process.platform !== 'darwin') {
-      windowOptions.width = displayManager.getDisplayWidth(localDisplayId)
-      windowOptions.height = displayManager.getDisplayHeight(localDisplayId)
-      windowOptions.x = displayManager.getDisplayX(localDisplayId, 0, true)
-      windowOptions.y = displayManager.getDisplayY(localDisplayId, 0, true)
-    } else if (!(settings.get('fullscreen') && process.platform === 'win32')) {
-      windowOptions.x = displayManager.getDisplayX(localDisplayId, windowOptions.width, false)
-      windowOptions.y = displayManager.getDisplayY(localDisplayId, windowOptions.height, false)
     }
 
     let microbreakWinLocal = new BrowserWindow(windowOptions)
@@ -797,32 +804,32 @@ function startMicrobreak () {
     microbreakWinLocal.setSize(windowOptions.width, windowOptions.height)
 
     microbreakWinLocal.once('ready-to-show', () => {
-      log.info('Stretchly: ready-to-show fired')
+      log.info('Pauza: ready-to-show fired')
     })
 
     ipcMain.once('mini-break-loaded', () => {
-      log.info('Stretchly: Mini break window loaded')
-      if (showBreaksAsRegularWindows) {
-        microbreakWinLocal.show()
-      } else {
+      log.info('Pauza: Mini break window loaded')
+      if (profile.showInactive) {
         microbreakWinLocal.showInactive()
+      } else {
+        microbreakWinLocal.show()
       }
 
-      log.info(`Stretchly: showing window ${localDisplayId + 1} of ${displayManager.getDisplayCount()}`)
+      log.info(`Pauza: showing window ${localDisplayId + 1} of ${displayManager.getDisplayCount()}`)
       if (process.platform === 'darwin') {
-        if (showBreaksAsRegularWindows) {
-          microbreakWinLocal.setFullScreen(settings.get('fullscreen'))
+        if (profile.frame) {
+          microbreakWinLocal.setFullScreen(profile.fullscreen)
         } else {
           microbreakWinLocal.setMinimizable(false)
           microbreakWinLocal.setClosable(false)
-          microbreakWinLocal.setKiosk(settings.get('fullscreen'))
+          microbreakWinLocal.setKiosk(profile.kiosk)
         }
       }
       if (localDisplayId === 0) {
         breakPlanner.emit('microbreakStarted', true)
-        log.info('Stretchly: starting Mini break')
+        log.info('Pauza: starting Mini break')
       }
-      if (!settings.get('fullscreen') && process.platform !== 'darwin') {
+      if (!profile.fullscreen && process.platform !== 'darwin' && profile.style === 'immersive') {
         setTimeout(() => {
           microbreakWinLocal.center()
         }, 0)
@@ -832,11 +839,11 @@ function startMicrobreak () {
 
     microbreakWinLocal.loadURL(modalPath)
     microbreakWinLocal.setVisibleOnAllWorkspaces(true)
-    microbreakWinLocal.setAlwaysOnTop(!showBreaksAsRegularWindows, 'pop-up-menu')
+    microbreakWinLocal.setAlwaysOnTop(profile.alwaysOnTop, 'pop-up-menu')
     if (microbreakWinLocal) {
       microbreakWinLocal.on('close', (e) => {
         if (breakPlanner.scheduler.timeLeft > 0 && settings.get('microbreakStrictMode')) {
-          log.info('Stretchly: preventing closing break window as in strict mode')
+          log.info('Pauza: preventing closing break window as in strict mode')
           e.preventDefault()
         }
       })
@@ -848,7 +855,7 @@ function startMicrobreak () {
 
     if (!settings.get('allScreens')) {
       if (displayManager.getDisplayCount() > 1) {
-        log.info('Stretchly: not showing on more Monitors as it is disabled.')
+        log.info('Pauza: not showing on more Monitors as it is disabled.')
       }
       break
     }
@@ -862,7 +869,7 @@ function startMicrobreak () {
 
 function startBreak () {
   if (breakWins) {
-    log.warn('Stretchly: Long break already running, not starting Long break')
+    log.warn('Pauza: Long break already running, not starting Long break')
     return
   }
 
@@ -872,7 +879,7 @@ function startBreak () {
   const postponableDurationPercent = settings.get('breakPostponableDurationPercent')
   const postponable = settings.get('breakPostpone') &&
     breakPlanner.postponesNumber < postponesLimit && postponesLimit > 0
-  const showBreaksAsRegularWindows = settings.get('showBreaksAsRegularWindows')
+  const breakPromptStyle = settings.get('breakPromptStyle')
 
   const modalPath = 'file://' + join(__dirname, '/break.html')
   breakWins = []
@@ -909,43 +916,37 @@ function startBreak () {
     }
     return [idea, startTime, breakDuration, strictMode,
       postponable, postponableDurationPercent,
-      calculateBackgroundColor(settings.get('mainColor')), danger, settings.get('breakHealthMode')]
+      calculateBackgroundColor(settings.get('mainColor')), danger, settings.get('breakHealthMode'),
+      breakPromptStyle]
   })
 
   for (let localDisplayId = 0; localDisplayId < displayManager.getDisplayCount(); localDisplayId++) {
+    const profile = currentBreakWindowProfile('break', localDisplayId)
     const windowOptions = {
-      width: Math.floor(displayManager.getDisplayWidth(localDisplayId) * settings.get('breakWindowWidth')),
-      height: Math.floor(displayManager.getDisplayHeight(localDisplayId) * settings.get('breakWindowHeight')),
+      width: profile.width,
+      height: profile.height,
       autoHideMenuBar: true,
       icon: windowIconPath(),
       resizable: false,
-      frame: showBreaksAsRegularWindows,
+      frame: profile.frame,
       show: false,
       backgroundThrottling: false,
-      transparent: !showBreaksAsRegularWindows,
+      transparent: profile.transparent,
       ...getBlurredBackgroundWindowOptions(),
       backgroundColor: calculateBackgroundColor(settings.get('mainColor')),
-      skipTaskbar: !showBreaksAsRegularWindows,
-      focusable: showBreaksAsRegularWindows,
-      alwaysOnTop: !showBreaksAsRegularWindows,
+      skipTaskbar: profile.skipTaskbar,
+      focusable: profile.focusable,
+      alwaysOnTop: profile.alwaysOnTop,
       hasShadow: false,
-      title: 'Stretchly',
-      titleBarStyle: process.platform === 'darwin' ? (showBreaksAsRegularWindows ? 'default' : 'hidden') : undefined,
-      titleBarOverlay: process.platform === 'darwin' ? !showBreaksAsRegularWindows : undefined,
+      title: 'Pauza',
+      titleBarStyle: process.platform === 'darwin' ? (profile.frame ? 'default' : 'hidden') : undefined,
+      titleBarOverlay: process.platform === 'darwin' ? !profile.frame : undefined,
+      x: profile.x,
+      y: profile.y,
       webPreferences: {
         preload: join(__dirname, './break-preload.mjs'),
         sandbox: false
       }
-    }
-
-    if (settings.get('fullscreen') && process.platform !== 'darwin') {
-      windowOptions.width = displayManager.getDisplayWidth(localDisplayId)
-      windowOptions.height = displayManager.getDisplayHeight(localDisplayId)
-      windowOptions.x = displayManager.getDisplayX(localDisplayId, 0, true)
-      windowOptions.y = displayManager.getDisplayY(localDisplayId, 0, true)
-    } else if (!(settings.get('fullscreen') && process.platform === 'win32')) {
-      windowOptions.x = displayManager.getDisplayX(localDisplayId, windowOptions.width, false)
-      windowOptions.y = displayManager.getDisplayY(localDisplayId, windowOptions.height, false)
     }
 
     let breakWinLocal = new BrowserWindow(windowOptions)
@@ -953,33 +954,33 @@ function startBreak () {
     breakWinLocal.setSize(windowOptions.width, windowOptions.height)
 
     breakWinLocal.once('ready-to-show', () => {
-      log.info('Stretchly: ready-to-show fired')
+      log.info('Pauza: ready-to-show fired')
     })
 
     ipcMain.once('long-break-loaded', () => {
-      log.info('Stretchly: Long break window loaded')
-      if (showBreaksAsRegularWindows) {
-        breakWinLocal.show()
-      } else {
+      log.info('Pauza: Long break window loaded')
+      if (profile.showInactive) {
         breakWinLocal.showInactive()
+      } else {
+        breakWinLocal.show()
       }
 
-      log.info(`Stretchly: showing window ${localDisplayId + 1} of ${displayManager.getDisplayCount()}`)
+      log.info(`Pauza: showing window ${localDisplayId + 1} of ${displayManager.getDisplayCount()}`)
       if (process.platform === 'darwin') {
-        if (showBreaksAsRegularWindows) {
-          breakWinLocal.setFullScreen(settings.get('fullscreen'))
+        if (profile.frame) {
+          breakWinLocal.setFullScreen(profile.fullscreen)
         } else {
           breakWinLocal.setMinimizable(false)
           breakWinLocal.setClosable(false)
-          breakWinLocal.setKiosk(settings.get('fullscreen'))
+          breakWinLocal.setKiosk(profile.kiosk)
         }
       }
       if (localDisplayId === 0) {
         breakPlanner.emit('breakStarted', true)
-        log.info('Stretchly: starting Long break')
+        log.info('Pauza: starting Long break')
       }
 
-      if (!settings.get('fullscreen') && process.platform !== 'darwin') {
+      if (!profile.fullscreen && process.platform !== 'darwin' && profile.style === 'immersive') {
         setTimeout(() => {
           breakWinLocal.center()
         }, 0)
@@ -989,11 +990,11 @@ function startBreak () {
 
     breakWinLocal.loadURL(modalPath)
     breakWinLocal.setVisibleOnAllWorkspaces(true)
-    breakWinLocal.setAlwaysOnTop(!showBreaksAsRegularWindows, 'pop-up-menu')
+    breakWinLocal.setAlwaysOnTop(profile.alwaysOnTop, 'pop-up-menu')
     if (breakWinLocal) {
       breakWinLocal.on('close', (e) => {
         if (breakPlanner.scheduler.timeLeft > 0 && settings.get('breakStrictMode')) {
-          log.info('Stretchly: preventing closing break window as in strict mode')
+          log.info('Pauza: preventing closing break window as in strict mode')
           e.preventDefault()
         }
       })
@@ -1005,7 +1006,7 @@ function startBreak () {
 
     if (!settings.get('allScreens')) {
       if (displayManager.getDisplayCount() > 1) {
-        log.info('Stretchly: not showing on more Monitors as it is disabled.')
+        log.info('Pauza: not showing on more Monitors as it is disabled.')
       }
       break
     }
@@ -1037,7 +1038,7 @@ function increaseDanger (amount) {
     return
   }
   danger = Math.min(danger + amount, 10)
-  log.info(`Stretchly: danger increased to ${danger}`)
+  log.info(`Pauza: danger increased to ${danger}`)
 }
 
 function decreaseDanger (amount) {
@@ -1045,7 +1046,7 @@ function decreaseDanger (amount) {
     return
   }
   danger = Math.max(danger - amount, 0)
-  log.info(`Stretchly: danger decreased to ${danger}`)
+  log.info(`Pauza: danger decreased to ${danger}`)
 }
 
 function enterManualAwaitPhase (type, shouldPlaySound) {
@@ -1064,7 +1065,7 @@ function enterManualAwaitPhase (type, shouldPlaySound) {
       }
     })
   }
-  log.info('Stretchly: entering manual finish phase (' + (isMini ? 'Mini' : 'Long') + ' break)')
+  log.info('Pauza: entering manual finish phase (' + (isMini ? 'Mini' : 'Long') + ' break)')
 }
 
 const enterMiniBreakManualContinuation = (shouldPlaySound) => enterManualAwaitPhase('mini', shouldPlaySound)
@@ -1072,7 +1073,7 @@ const enterLongBreakManualContinuation = (shouldPlaySound) => enterManualAwaitPh
 
 function finishMicrobreak (shouldPlaySound = true, shouldPlanNext = true) {
   microbreakWins = breakComplete(shouldPlaySound, microbreakWins, 'mini')
-  log.info(`Stretchly: finishing Mini break (shouldPlanNext: ${shouldPlanNext})`)
+  log.info(`Pauza: finishing Mini break (shouldPlanNext: ${shouldPlanNext})`)
   if (shouldPlanNext) {
     breakPlanner.nextBreak()
   } else {
@@ -1083,7 +1084,7 @@ function finishMicrobreak (shouldPlaySound = true, shouldPlanNext = true) {
 
 function finishBreak (shouldPlaySound = true, shouldPlanNext = true) {
   breakWins = breakComplete(shouldPlaySound, breakWins, 'long')
-  log.info(`Stretchly: finishing Long break (shouldPlanNext: ${shouldPlanNext})`)
+  log.info(`Pauza: finishing Long break (shouldPlanNext: ${shouldPlanNext})`)
   if (shouldPlanNext) {
     breakPlanner.nextBreak()
   } else {
@@ -1096,7 +1097,7 @@ function postponeMicrobreak () {
   increaseDanger(1)
   microbreakWins = breakComplete(false, microbreakWins, 'mini')
   breakPlanner.postponeCurrentBreak()
-  log.info('Stretchly: postponing Mini break')
+  log.info('Pauza: postponing Mini break')
   updateTray()
 }
 
@@ -1104,7 +1105,7 @@ function postponeBreak () {
   increaseDanger(1)
   breakWins = breakComplete(false, breakWins, 'long')
   breakPlanner.postponeCurrentBreak()
-  log.info('Stretchly: postponing Long break')
+  log.info('Pauza: postponing Long break')
   updateTray()
 }
 
@@ -1119,10 +1120,10 @@ function skipToMicrobreak (delay) {
   }
   if (delay) {
     breakPlanner.skipToMicrobreak(delay)
-    log.info(`Stretchly: skipping to Mini break in ${delay}ms`)
+    log.info(`Pauza: skipping to Mini break in ${delay}ms`)
   } else {
     breakPlanner.skipToMicrobreak()
-    log.info('Stretchly: skipping to Mini break')
+    log.info('Pauza: skipping to Mini break')
   }
   updateTray()
 }
@@ -1138,10 +1139,10 @@ function skipToBreak (delay) {
   }
   if (delay) {
     breakPlanner.skipToBreak(delay)
-    log.info(`Stretchly: skipping to Long break in ${delay}ms`)
+    log.info(`Pauza: skipping to Long break in ${delay}ms`)
   } else {
     breakPlanner.skipToBreak()
-    log.info('Stretchly: skipping to Long break')
+    log.info('Pauza: skipping to Long break')
   }
   updateTray()
 }
@@ -1154,9 +1155,9 @@ function resetBreaks () {
     breakWins = breakComplete(false, breakWins)
   }
   danger = 0
-  log.info(`Stretchly: danger reset to ${danger}`)
+  log.info(`Pauza: danger reset to ${danger}`)
   breakPlanner.reset()
-  log.info('Stretchly: resetting breaks')
+  log.info('Pauza: resetting breaks')
   updateTray()
 }
 
@@ -1174,7 +1175,7 @@ function loadIdeas () {
   if (settings.get('useIdeasFromSettings')) {
     longBreakIdeasData = settings.get('breakIdeas')
     miniBreakIdeasData = settings.get('microbreakIdeas')
-    log.info('Stretchly: loading custom break ideas from preferences file')
+    log.info('Pauza: loading custom break ideas from preferences file')
   } else {
     const t = i18next.getFixedT('en')
     miniBreakIdeasData = Object.keys(t('miniBreakIdeas',
@@ -1188,7 +1189,7 @@ function loadIdeas () {
       .map((item) => {
         return { data: [i18next.t(`longBreakIdeas.${item}.title`), i18next.t(`longBreakIdeas.${item}.text`)], enabled: true }
       })
-    log.info('Stretchly: loading default break ideas')
+    log.info('Pauza: loading default break ideas')
   }
 
   breakIdeas = new IdeasLoader(longBreakIdeasData).ideas()
@@ -1205,16 +1206,16 @@ function pauseBreaks (milliseconds) {
     finishBreak(false)
   }
   breakPlanner.pause(milliseconds)
-  log.info(`Stretchly: pausing breaks for ${milliseconds}ms`)
+  log.info(`Pauza: pausing breaks for ${milliseconds}ms`)
   updateTray()
 }
 
 function resumeBreaks (notify = true) {
   if (breakPlanner.dndManager.isOnDnd) {
-    log.info('Stretchly: not resuming breaks because in Do Not Disturb')
+    log.info('Pauza: not resuming breaks because in Do Not Disturb')
   } else {
     breakPlanner.resume()
-    log.info('Stretchly: resuming breaks')
+    log.info('Pauza: resuming breaks')
     if (notify) {
       showNotification(i18next.t('main.resumingBreaks'))
     }
@@ -1236,12 +1237,12 @@ function createPreferencesWindow () {
     show: false,
     backgroundThrottling: false,
     icon: windowIconPath(),
-    width: 600,
-    height: 530,
+    width: 960,
+    height: 680,
     maxHeight: Math.round(maxHeight),
-    x: displayManager.getDisplayX(-1, 600),
-    y: displayManager.getDisplayY(-1, 530),
-    backgroundColor: '#EDEDED',
+    x: displayManager.getDisplayX(-1, 960),
+    y: displayManager.getDisplayY(-1, 680),
+    backgroundColor: '#F3EFE8',
     webPreferences: {
       preload: join(__dirname, './preferences-preload.mjs'),
       sandbox: false
@@ -1375,6 +1376,26 @@ function getTrayMenuTemplate () {
     })
   } else if (!(breakPlanner.dndManager.isOnDnd || breakPlanner.appExclusionsManager.isSchedulerCleared)) {
     trayMenu.push({
+      label: i18next.t('main.focusSession'),
+      submenu: [
+        {
+          label: i18next.t('utils.minutes', { count: 25 }),
+          click: function () {
+            pauseBreaks(25 * 60 * 1000)
+          }
+        }, {
+          label: i18next.t('utils.minutes', { count: 45 }),
+          click: function () {
+            pauseBreaks(45 * 60 * 1000)
+          }
+        }, {
+          label: i18next.t('utils.minutes', { count: 60 }),
+          click: function () {
+            pauseBreaks(60 * 60 * 1000)
+          }
+        }
+      ]
+    }, {
       label: i18next.t('main.pause'),
       submenu: [
         {
@@ -1551,7 +1572,7 @@ ipcMain.on('save-setting', function (event, key, value) {
 
   if (key === 'breakHealthMode' && !value) {
     danger = 0
-    log.info('Stretchly: danger reset after disabling breakHealthMode')
+    log.info('Pauza: danger reset after disabling breakHealthMode')
   }
 
   settings.set(key, value)
@@ -1572,7 +1593,7 @@ ipcMain.on('restore-defaults', (event) => {
   }
   dialog.showMessageBox(dialogOpts).then(async (returnValue) => {
     if (returnValue.response === 0) {
-      log.info('Stretchly: restoring default settings')
+      log.info('Pauza: restoring default settings')
       settings.store = Object.assign(defaultSettings, { isFirstRun: false, __internal__: settings.get('__internal__') })
       initialize(false)
       event.sender.reload()
@@ -1597,9 +1618,9 @@ ipcMain.handle('show-debug', (event) => {
   let logsFile = log.transports.file.getFile().path
   let imagesFolder = join(app.getPath('userData'), 'images')
   if (insideWindowsStore()) {
-    settingsFile = settingsFile.replace('Roaming', 'Local\\Packages\\33881JanHovancik.stretchly_24fg4m0zq65je\\LocalCache\\Roaming')
-    logsFile = logsFile.replace('Roaming', 'Local\\Packages\\33881JanHovancik.stretchly_24fg4m0zq65je\\LocalCache\\Roaming')
-    imagesFolder = imagesFolder.replace('Roaming', 'Local\\Packages\\33881JanHovancik.stretchly_24fg4m0zq65je\\LocalCache\\Roaming')
+    settingsFile = settingsFile.replace('Roaming', 'Local\\Packages\\33881JanHovancik.pauza_24fg4m0zq65je\\LocalCache\\Roaming')
+    logsFile = logsFile.replace('Roaming', 'Local\\Packages\\33881JanHovancik.pauza_24fg4m0zq65je\\LocalCache\\Roaming')
+    imagesFolder = imagesFolder.replace('Roaming', 'Local\\Packages\\33881JanHovancik.pauza_24fg4m0zq65je\\LocalCache\\Roaming')
   }
   return [
     reference,
@@ -1622,7 +1643,7 @@ ipcMain.on('set-contributor', function (event) {
   const contributorStampFile = `${dir}/stamp`
   writeFile(contributorStampFile, DateTime.now().toString(), () => { })
   global.isContributor = true
-  log.info('Stretchly: Logged in. Thanks for your contributions!')
+  log.info('Pauza: Logged in. Thanks for your contributions!')
   if (preferencesWin) {
     preferencesWin.webContents.send('enable-contributor-preferences')
   }
@@ -1634,12 +1655,12 @@ ipcMain.on('open-contributor-preferences', function () {
 })
 
 ipcMain.on('open-contributor-auth', function (event, provider) {
-  if (myStretchlyWin) {
-    myStretchlyWin.show()
+  if (myPauzaWin) {
+    myPauzaWin.show()
     return
   }
-  const myStretchlyUrl = `https://my.stretchly.net/app/v1?provider=${provider}`
-  myStretchlyWin = new BrowserWindow({
+  const myPauzaUrl = `https://my.stretchly.net/app/v1?provider=${provider}`
+  myPauzaWin = new BrowserWindow({
     autoHideMenuBar: true,
     show: false,
     width: 1000,
@@ -1653,15 +1674,15 @@ ipcMain.on('open-contributor-auth', function (event, provider) {
       sandbox: false
     }
   })
-  myStretchlyWin.webContents.loadURL(myStretchlyUrl)
+  myPauzaWin.webContents.loadURL(myPauzaUrl)
 
-  myStretchlyWin.once('closed', () => {
-    myStretchlyWin = null
+  myPauzaWin.once('closed', () => {
+    myPauzaWin = null
   })
 
-  myStretchlyWin.once('ready-to-show', () => {
-    myStretchlyWin.center()
-    myStretchlyWin.show()
+  myPauzaWin.once('ready-to-show', () => {
+    myPauzaWin.center()
+    myPauzaWin.show()
   })
 })
 
@@ -1674,7 +1695,7 @@ ipcMain.handle('current-settings', (event) => {
 })
 
 ipcMain.handle('restore-remote-settings', (event, remoteSettings) => {
-  log.info('Stretchly: restoring remote settings')
+  log.info('Pauza: restoring remote settings')
   settings.store = remoteSettings
   initialize(false)
 })

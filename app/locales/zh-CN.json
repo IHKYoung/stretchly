@@ -1,6 +1,6 @@
 {
   "main": {
-    "toolTipHeader": "Stretchly - 休息提醒应用",
+    "toolTipHeader": "Pauza - 休息提醒应用",
     "microbreakIn": "距离下次小憩约 $t(utils.seconds, {'count': {{seconds}} })",
     "breakIn": "距离下次休息约 $t(utils.seconds, {'count': {{seconds}} })",
     "resumingBreaks": "正在恢复休息",
@@ -10,13 +10,14 @@
     "skipToTheNext": "跳到下一次",
     "resume": "恢复休息",
     "pause": "暂停休息",
+    "focusSession": "保护心流",
     "forHour": "1 小时",
     "for2Hours": "2 小时",
     "for5Hours": "5 小时",
     "untilMorning": "直至早晨",
     "indefinitely": "无限期",
     "resetBreaks": "重置休息",
-    "quitStretchly": "退出 Stretchly",
+    "quitStretchly": "退出 Pauza",
     "restoreDefaults": "还原至默认值",
     "warning": "即将恢复默认值，所有已有设置会被清除。",
     "continue": "继续",
@@ -26,22 +27,22 @@
     "syncPreferences": "同步偏好设置"
   },
   "break": {
-    "postpone": "延后此次休息",
-    "skip": "跳过此次休息",
+    "postpone": "几分钟后再提醒我",
+    "skip": "这次先跳过",
     "title": "该休息一下了！",
-    "finish": "完成本次休息"
+    "finish": "我回来了"
   },
   "preferences": {
-    "title": "Stretchly 偏好设置",
+    "title": "Pauza 偏好设置",
     "nav": {
       "settings": "设置",
       "schedule": "计划",
       "theme": "主题",
       "about": "关于",
-      "heart": "喜欢 Stretchly"
+      "heart": "喜欢 Pauza"
     },
     "settings": {
-      "openAtLogin": "登录后自动启动 Stretchly",
+      "openAtLogin": "登录后自动启动 Pauza",
       "showBreaksIn": "休息提示画面：",
       "window": "窗口",
       "fullscreen": "全屏",
@@ -49,6 +50,11 @@
       "allScreens": "在所有显示器显示休息提示画面",
       "monitorIdleTime": "监控系统的闲置时间（系统闲置时暂停计时）。",
       "monitorDnd": "即使处于「勿扰」模式，仍显示休息画面",
+      "interruptionStyle": "打断风格：",
+      "interruptionStyleInfo": "选择 Pauza 在休息开始时出现得有多克制。",
+      "gentle": "温和",
+      "balanced": "平衡",
+      "immersive": "沉浸",
       "language": "选择语言：",
       "restoreDefaults": "还原至默认值"
     },
@@ -101,7 +107,7 @@
       "version": "版本 ",
       "latestVersion": "最新版本 ",
       "notifyNewVersion": "新版本提醒",
-      "learnMore": "如需深入了解 Stretchly 的功能，查看教程，下载最新版本或联系我们寻求支持，请 ",
+      "learnMore": "如需深入了解 Pauza 的功能，查看教程，下载最新版本或联系我们寻求支持，请 ",
       "ourWebsite": "访问我们的网站",
       "dot": "。",
       "developedBy": "开发者",
@@ -110,9 +116,9 @@
       "checkNewVersion": "自动检查更新"
     },
     "heart": {
-      "loveStretchly": "喜欢 Stretchly?",
+      "loveStretchly": "喜欢 Pauza?",
       "desc1": "科学研究表明，使用电脑时定时休息有利于身心健康。",
-      "desc2": "Stretchly 是免费的。但是您可以通过捐赠来帮助我们改进 Stretchly 并发布其他免费软件。",
+      "desc2": "Pauza 是免费的。但是您可以通过捐赠来帮助我们改进 Pauza 并发布其他免费软件。",
       "becomeContributor": "捐助",
       "alreadyContributor": "我已经是贡献者了",
       "authenticateUsing": "通过下列方法认证：",
@@ -179,7 +185,7 @@
     "showCurrentTimeInBreaks": "在休息画面显示当前时间",
     "currentTimeInBreaks": "当前时间",
     "showTrayIcon": "显示托盘图标",
-    "toShowTrayIcon": "在托盘中显示 Stretchly 图标"
+    "toShowTrayIcon": "在托盘中显示 Pauza 图标"
   },
   "utils": {
     "none_other": "{{count}}",
@@ -196,7 +202,7 @@
     "newVersionAvailable": "有新的版本！"
   },
   "welcome": {
-    "title": "欢迎使用 Stretchly",
+    "title": "欢迎使用 Pauza",
     "breakTimeReminderApp": "休息提醒应用",
     "viewTutorial": "查看教程",
     "openPreferences": "打开偏好设置",

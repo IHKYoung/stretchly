@@ -1,0 +1,49 @@
+- main [ref=e3]:
+  - generic [ref=e5]:
+    - complementary [ref=e6]:
+      - generic [ref=e8]:
+        - generic [ref=e10]:
+          - paragraph [ref=e11]: Pauza
+          - generic [ref=e12]: 已同步
+        - navigation [ref=e13]:
+          - button "节奏" [ref=e14]
+          - button "提醒与打断" [active] [ref=e15]
+          - button "智能暂停" [ref=e16]
+          - button "通用" [ref=e17]
+        - generic [ref=e18]:
+          - paragraph [ref=e19]: 预览
+          - paragraph [ref=e20]: 微休息将在8分钟后开始
+    - generic [ref=e22]:
+      - generic [ref=e23]:
+        - generic [ref=e24]:
+          - generic [ref=e25]: 已同步
+          - heading "提醒与打断" [level=1] [ref=e77]
+        - generic [ref=e27]:
+          - button "撤销" [disabled]
+          - button "保存" [disabled]
+      - generic [ref=e28]:
+        - generic [ref=e29]:
+          - heading "提前提醒" [level=2] [ref=e78]
+          - generic [ref=e32]:
+            - generic [ref=e33]
+            - generic [ref=e39]
+        - generic [ref=e53]:
+          - heading "延后" [level=2] [ref=e87]
+          - generic [ref=e56]:
+            - generic [ref=e57]
+            - generic [ref=e63]
+        - generic [ref=e97]:
+          - heading "严格模式" [level=2] [ref=e99]
+          - generic [ref=e100]:
+            - generic [ref=e101]
+            - generic [ref=e107]
+        - generic [ref=e113]:
+          - heading "休息窗口" [level=2] [ref=e115]
+          - generic [ref=e117]:
+            - paragraph [ref=e119]: 显示方式
+            - tablist "显示方式" [ref=e121]
+        - generic [ref=e124]:
+          - heading "休息风格" [level=2] [ref=e126]
+          - generic [ref=e128]:
+            - paragraph [ref=e130]: 休息窗口
+            - tablist "休息风格" [ref=e132]

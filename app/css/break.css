@@ -4,23 +4,22 @@ body {
 }
 
 body {
+  --break-surface: rgba(249, 246, 240, 0.98);
+  --break-surface-strong: rgba(255, 252, 247, 0.98);
+  --break-border: rgba(24, 19, 14, 0.08);
+  --break-text: #17130F;
+  --break-muted: #695F54;
+  --break-soft: #8B8176;
+  margin: 0;
   overflow: hidden;
-}
-
-.breaks {
-  align-items: center;
-  box-sizing: border-box;
-  color: #FFFFFF;
-  display: grid;
-  font-family: 'Noto Sans Light', 'Noto Sans Arabic Light',
-    'Noto Sans CJK KR Light',
-    'Noto Sans Devanagari Light',
-    'Noto Sans Gujarati Light', 'Noto Sans Gurmukhi Light',
-    'Noto Sans Hebrew Light';
-  font-weight: 300;
-  grid-template: 85vh 10vh / 100px auto 100px;
-  justify-items: center;
-  min-height: 100%;
+  background: transparent;
+  color: var(--break-text);
+  font-family: 'Noto Sans Regular', 'Noto Sans Arabic Regular',
+    'Noto Sans CJK KR Regular',
+    'Noto Sans Devanagari Regular',
+    'Noto Sans Gujarati Regular', 'Noto Sans Gurmukhi Regular',
+    'Noto Sans Hebrew Regular',
+    'Noto Sans JP Regular';
 }
 
 body.break-health-mode {
@@ -28,100 +27,276 @@ body.break-health-mode {
   transition: box-shadow 450ms ease-out;
 }
 
-.breaks > * {
-  grid-column: 2 / span 1;
+.break-shell {
+  display: flex;
+  min-height: 100%;
+  padding: 16px;
+  box-sizing: border-box;
 }
 
-.breaks > :nth-child(1) {
-  text-align: center;
+.break-shell--micro {
+  align-items: flex-end;
+  justify-content: flex-end;
 }
 
-.breaks > :nth-child(1) > progress {
-  margin-top: 50px;
+.break-shell--long {
+  align-items: center;
+  justify-content: center;
 }
 
-.breaks > :nth-child(1) >  .microbreak-idea {
-  font-size: 30px;
-  letter-spacing: 0.44px;
-  line-height: 46px;
+.break-ambient {
+  display: none;
 }
 
-.breaks > :nth-child(1) >  .break-idea {
-  font-size: 36px;
-  letter-spacing: 0.52px;
-  line-height: 49px;
+.break-card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: min(100%, 720px);
+  min-height: auto;
+  padding: 28px 30px 24px;
+  border: 1px solid var(--break-border);
+  border-radius: 26px;
+  background:
+    linear-gradient(180deg, var(--break-surface-strong) 0%, var(--break-surface) 100%);
+  box-shadow:
+    0 18px 44px rgba(35, 28, 20, 0.12),
+    0 2px 8px rgba(35, 28, 20, 0.06);
 }
 
-.breaks > :nth-child(1) >  .break-text {
-  font-size: 24px;
-  letter-spacing: 0.35px;
-  line-height: 33px;
-  margin-top: 60px;
+.break-shell--micro .break-card {
+  width: min(100%, 380px);
+  padding: 24px 24px 20px;
+  border-radius: 22px;
 }
 
-.breaks > :nth-child(2) {
-  font-size: 18px;
-  letter-spacing: 0.26px;
-  line-height: 18px;
+.break-head {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.breaks > :nth-child(2) > a:hover {
-  color: #FFFF00;
+.break-kind {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  align-self: flex-start;
+  padding: 0;
+  background: transparent;
+  color: #50645E;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
 }
 
-.breaks > :nth-child(2) > a img {
-  /* https://codepen.io/sosuke/pen/Pjoqqp */
-  filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(288deg) brightness(102%) contrast(102%);
-  height: 20px;
-  padding-left: 20px;
-  width: 20px;
+.break-kind::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  background: var(--break-accent-color);
 }
 
-body[dir=rtl] .breaks > :nth-child(2) > a img {
-  padding-left: 0;
-  padding-right: 20px;
+.break-heading {
+  margin: 0;
+  max-width: 14ch;
+  font-family: 'Noto Sans Light', 'Noto Sans Arabic Light',
+    'Noto Sans CJK KR Light',
+    'Noto Sans Devanagari Light',
+    'Noto Sans Gujarati Light', 'Noto Sans Gurmukhi Light',
+    'Noto Sans Hebrew Light',
+    'Noto Sans JP Light';
+  font-size: clamp(28px, 4vw, 44px);
+  font-weight: 300;
+  letter-spacing: -0.05em;
+  line-height: 1.04;
 }
 
-.breaks > :nth-child(2) > a:hover img {
-  filter: invert(87%) sepia(71%) saturate(3206%) hue-rotate(359deg) brightness(101%) contrast(103%);
+.break-shell--micro .break-heading {
+  display: none;
+}
+
+.break-content {
+  display: flex;
+  flex: 1;
+  align-items: flex-start;
+}
+
+.break-content--long {
+  flex-direction: column;
+  justify-content: center;
+  gap: 18px;
+}
+
+.break-copy,
+.break-idea,
+.break-text {
+  margin: 0;
+}
+
+.microbreak-idea {
+  max-width: 14ch;
+  font-family: 'Noto Sans Light', 'Noto Sans Arabic Light',
+    'Noto Sans CJK KR Light',
+    'Noto Sans Devanagari Light',
+    'Noto Sans Gujarati Light', 'Noto Sans Gurmukhi Light',
+    'Noto Sans Hebrew Light',
+    'Noto Sans JP Light';
+  font-size: clamp(28px, 4.6vw, 38px);
+  font-weight: 300;
+  letter-spacing: -0.045em;
+  line-height: 1.14;
+}
+
+.break-idea {
+  max-width: 12ch;
+  font-family: 'Noto Sans Light', 'Noto Sans Arabic Light',
+    'Noto Sans CJK KR Light',
+    'Noto Sans Devanagari Light',
+    'Noto Sans Gujarati Light', 'Noto Sans Gurmukhi Light',
+    'Noto Sans Hebrew Light',
+    'Noto Sans JP Light';
+  font-size: clamp(36px, 5vw, 54px);
+  font-weight: 300;
+  letter-spacing: -0.055em;
+  line-height: 1.02;
+}
+
+.break-text {
+  max-width: 34ch;
+  color: var(--break-muted);
+  font-size: clamp(16px, 2vw, 20px);
+  letter-spacing: -0.01em;
+  line-height: 1.68;
+}
+
+.break-copy a,
+.break-idea a,
+.break-text a {
+  color: inherit;
+}
+
+.break-meter {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+progress {
+  width: 100%;
+  height: 4px;
+}
+
+progress[value]::-webkit-progress-bar {
+  background: rgba(23, 19, 15, 0.08);
+  border: 0;
+  border-radius: 999px;
+}
+
+progress[value]::-webkit-progress-value {
+  background: rgba(23, 19, 15, 0.72);
+  border-radius: 999px;
 }
 
 #progress-time {
   display: block;
-  font-size: 15px;
-  padding-top: 20px;
+  color: var(--break-muted);
+  font-size: 12px;
+  letter-spacing: 0.01em;
 }
 
-.ffffff .breaks {
-  color: #000000;
-}
-.ffffff .breaks > :nth-child(2) > a:hover {
-  color: #ffffff;
-}
-
-.ffffff .breaks > :nth-child(2) > a:hover img,
-.ffffff .breaks > :nth-child(2) > a:hover {
-  color: #000000;
+.break-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
 }
 
-.ffffff .breaks > :nth-child(2) .tiptext,
-.ffffff .breaks > :nth-child(2) .tiptext  {
-  color: #000000;
-  background-color: #ffffff;
-  border: 1px solid #000000;
+.action-button {
+  min-height: 40px;
+  padding: 0 16px;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  background: #1F2926;
+  box-shadow: none;
+  color: #F8F5EE;
+  font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  transition: background 160ms ease, border-color 160ms ease, color 160ms ease;
 }
 
-.ffffff .breaks > :nth-child(2) > a img {
-  filter: hue-rotate(288deg) brightness(102%) contrast(102%);
+.action-button:hover {
+  background: #16201D;
+  box-shadow: none;
+  transform: none;
 }
 
-.ffffff .breaks > :nth-child(2) > a:hover img {
-  filter: hue-rotate(359deg) brightness(101%) contrast(103%);
+.action-button:focus {
+  outline: 2px solid rgba(31, 41, 38, 0.18);
+  outline-offset: 2px;
 }
 
-.breaks > :last-child {
-  bottom: 12px;
-  font-size: 28px;
-  position: absolute;
-  right: 12px;
+.action-button:active {
+  transform: none;
+}
+
+.action-button--secondary {
+  border-color: rgba(23, 19, 15, 0.1);
+  background: rgba(255, 255, 255, 0.84);
+  color: var(--break-text);
+}
+
+.action-button--secondary:hover {
+  background: #FFFFFF;
+}
+
+.action-button--ghost {
+  padding: 0 8px;
+  border-color: transparent;
+  background: transparent;
+  color: var(--break-muted);
+}
+
+.action-button--ghost:hover {
+  background: transparent;
+  color: var(--break-text);
+}
+
+.break-foot {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(23, 19, 15, 0.06);
+  color: var(--break-soft);
+  font-size: 12px;
+  letter-spacing: 0.01em;
+}
+
+.tiptext {
+  position: static;
+  visibility: visible;
+  padding: 0;
+  background: transparent;
+  box-shadow: none;
+  color: inherit;
+}
+
+.tiptext::after {
+  content: none;
+}
+
+.break-clock {
+  text-align: right;
+}
+
+body[data-break-prompt-style="gentle"][data-break-type="microbreak"] .break-card {
+  gap: 16px;
+}
+
+.ffffff {
+  --break-surface: rgba(252, 250, 246, 0.99);
+  --break-surface-strong: rgba(255, 255, 255, 0.99);
 }

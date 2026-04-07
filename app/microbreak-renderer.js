@@ -4,12 +4,15 @@ import './platform.js'
 
 window.onload = async (event) => {
   const [idea, started, duration, strictMode, postpone,
-    postponePercent, backgroundColor, danger, breakHealthMode] = await window.breaks.sendBreakData()
+    postponePercent, backgroundColor, danger, breakHealthMode, breakPromptStyle] = await window.breaks.sendBreakData()
 
   const mainColor = await window.settings.get('mainColor')
 
   new HtmlTranslate(document).translate()
   applyBreakHealthEffect(danger, breakHealthMode, mainColor)
+  document.body.dataset.breakPromptStyle = breakPromptStyle
+  document.body.dataset.breakType = 'microbreak'
+  document.body.style.setProperty('--break-accent-color', backgroundColor)
 
   document.ondragover = event =>
     event.preventDefault()
@@ -47,12 +50,12 @@ window.onload = async (event) => {
   const postponeElement = document.querySelector('#postpone')
   const closeElement = document.querySelector('#close')
   const manualFinishElement = document.querySelector('#finish')
+  const breakClock = document.querySelector('.break-clock')
   document.body.classList.add(mainColor.substring(1))
-  document.body.style.backgroundColor = backgroundColor
 
   document.querySelectorAll('.tiptext').forEach(async tt => {
     const keyboardShortcut = await window.settings.get('endBreakShortcut')
-    tt.innerHTML = window.utils.formatKeyboardShortcut(keyboardShortcut)
+    tt.innerHTML = keyboardShortcut ? window.utils.formatKeyboardShortcut(keyboardShortcut) : ''
   })
 
   let manualAwaiting = false
@@ -65,7 +68,9 @@ window.onload = async (event) => {
 
   setInterval(async () => {
     if (await window.settings.get('currentTimeInBreaks')) {
-      document.querySelector('.breaks > :last-child').innerHTML = (new Date()).toLocaleTimeString()
+      breakClock.innerHTML = (new Date()).toLocaleTimeString()
+    } else {
+      breakClock.innerHTML = ''
     }
     const now = Date.now()
     const passed = now - started
