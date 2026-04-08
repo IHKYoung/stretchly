@@ -10,7 +10,7 @@
 - `build/`：打包所需图标与安装器资源。
 - `docs/`：变更日志、项目理解文档、任务 specs、plans 与 logs。
 - `examples/`：平台服务集成示例。
-- `graphics/`：应用图标源文件与生成脚本。
+- `graphics/`：应用图标源文件与生成脚本；其中 `app-icon.svg` 面向 Dock / bundle，`tray-icon.svg` 面向 macOS tray，小尺寸几何单独维护，`generate_icon_assets.py` 负责把两者展开为打包资源。
 - `scripts/`：工作流脚本、校验器与任务脚手架。
 - `test/`：Vitest 测试用例与测试辅助资源。
 - `package.json`：根级 npm scripts；默认入口现已切换到 Tauri，同时仍保留 Electron legacy scripts 与 electron-builder 配置。
@@ -47,7 +47,7 @@
 - `apps/desktop/src-tauri/src/commands.rs`：设置、pause/focus、break actions、autostart 与主窗口命令边界。
 - `apps/desktop/src-tauri/src/engine.rs`：后台 tick 循环，驱动调度状态机、通知与 break window。
 - `apps/desktop/src-tauri/src/platform.rs`：idle / DND / app exclusion 的跨平台轻量探测层。
-- `apps/desktop/src-tauri/src/shell.rs`：tray 菜单、托盘点击、全局快捷键与 break/main window 生命周期。
+- `apps/desktop/src-tauri/src/shell.rs`：tray 菜单、托盘点击、全局快捷键与 break/main window 生命周期；macOS 下还负责定向 patch Pauza 自己的 `NSStatusItem` tray image，并在开发态兜底 Dock icon。
 - `apps/desktop/src-tauri/src/state.rs`：`PauzaSettings`、`RuntimeState`、`DesktopSnapshot` 的运行时真源，现已覆盖通知、postpone、strict/manual finish、break surface 与 shortcut 配置，并通过 i18n 层输出本地化状态文案。
 
 ## app/utils/

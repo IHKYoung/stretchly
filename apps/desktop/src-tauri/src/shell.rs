@@ -282,10 +282,11 @@ pub fn refresh_shortcuts<R: Runtime>(app: &AppHandle<R>) -> Result<(), String> {
 fn build_tray<R: Runtime>(app: &AppHandle<R>) -> tauri::Result<()> {
     let menu = create_tray_menu(app)?;
 
-    let tray_icon = app.default_window_icon().cloned();
+    let tray_icon = tauri::include_image!("icons/tray-iconTemplate@2x.png");
     let mut builder = TrayIconBuilder::with_id(TRAY_ID)
         .menu(&menu)
         .show_menu_on_left_click(false)
+        .icon(tray_icon)
         .on_menu_event(|app, event| {
             let handle = app.clone();
             let action = event.id.as_ref().to_string();
@@ -308,12 +309,134 @@ fn build_tray<R: Runtime>(app: &AppHandle<R>) -> tauri::Result<()> {
             }
         });
 
-    if let Some(icon) = tray_icon {
-        builder = builder.icon(icon);
+    #[cfg(target_os = "macos")]
+    {
+        builder = builder.icon_as_template(true);
     }
 
-    builder.build(app)?;
+    let tray = builder.build(app)?;
+
+    #[cfg(target_os = "macos")]
+    {
+        if !is_running_from_app_bundle() {
+            let _ = std::panic::catch_unwind(std::panic::AssertUnwindSafe(|| unsafe {
+                patch_macos_dock_icon();
+            }));
+        }
+        let _ = patch_macos_tray_icon(&tray);
+    }
+
     Ok(())
+}
+
+/// Keep unbundled dev runs from showing the oversized fallback icon.
+#[cfg(target_os = "macos")]
+unsafe fn patch_macos_dock_icon() {
+    use objc2::{class, exception, msg_send};
+    use objc2::runtime::AnyObject;
+    use std::ffi::c_void;
+
+    let icon_bytes: &[u8] = include_bytes!("../icons/icon.icns");
+
+    let result = exception::catch(|| {
+        let data: *mut AnyObject = msg_send![class!(NSData),
+            dataWithBytes: icon_bytes.as_ptr() as *const c_void,
+            length: icon_bytes.len()
+        ];
+        if data.is_null() {
+            return;
+        }
+        let image: *mut AnyObject = msg_send![class!(NSImage), alloc];
+        let image: *mut AnyObject = msg_send![image, initWithData: data];
+        if image.is_null() {
+            return;
+        }
+        let app: *mut AnyObject = msg_send![class!(NSApplication), sharedApplication];
+        if !app.is_null() {
+            let _: () = msg_send![app, setApplicationIconImage: image];
+        }
+    });
+    let _ = result;
+}
+
+#[cfg(target_os = "macos")]
+fn is_running_from_app_bundle() -> bool {
+    std::env::current_exe()
+        .ok()
+        .map(|path| {
+            path.ancestors().any(|ancestor| {
+                ancestor
+                    .extension()
+                    .and_then(|ext| ext.to_str())
+                    == Some("app")
+            })
+        })
+        .unwrap_or(false)
+}
+
+#[cfg(target_os = "macos")]
+fn patch_macos_tray_icon<R: Runtime>(tray: &tauri::tray::TrayIcon<R>) -> tauri::Result<()> {
+    use objc2::msg_send;
+    use objc2::runtime::AnyObject;
+
+    tray.with_inner_tray_icon(|inner| unsafe {
+        let Some(status_item) = inner.ns_status_item() else {
+            return;
+        };
+        let status_item_obj: &AnyObject = AsRef::<AnyObject>::as_ref(&status_item);
+        let button: *mut AnyObject = msg_send![status_item_obj, button];
+        if button.is_null() {
+            return;
+        }
+        let image = build_retina_template_tray_image(
+            include_bytes!("../icons/tray-iconTemplate.png"),
+            include_bytes!("../icons/tray-iconTemplate@2x.png"),
+        );
+        if image.is_null() {
+            return;
+        }
+        let _: () = msg_send![button, setImage: image];
+    })
+}
+
+#[cfg(target_os = "macos")]
+unsafe fn build_retina_template_tray_image(
+    base_bytes: &[u8],
+    retina_bytes: &[u8],
+) -> *mut objc2::runtime::AnyObject {
+    use objc2::{class, exception, msg_send};
+    use objc2::runtime::AnyObject;
+    use objc2_foundation::NSSize;
+    use std::ffi::c_void;
+
+    let result = exception::catch(|| {
+        let image: *mut AnyObject = msg_send![class!(NSImage), alloc];
+        let image: *mut AnyObject = msg_send![image, initWithSize: NSSize::new(18.0, 18.0)];
+        if image.is_null() {
+            return std::ptr::null_mut();
+        }
+        for bytes in [base_bytes, retina_bytes] {
+            let data: *mut AnyObject = msg_send![class!(NSData),
+                dataWithBytes: bytes.as_ptr() as *const c_void,
+                length: bytes.len()
+            ];
+            if data.is_null() {
+                continue;
+            }
+            let rep: *mut AnyObject = msg_send![class!(NSBitmapImageRep), imageRepWithData: data];
+            if rep.is_null() {
+                continue;
+            }
+            let _: () = msg_send![rep, setSize: NSSize::new(18.0, 18.0)];
+            let _: () = msg_send![image, addRepresentation: rep];
+        }
+        let _: () = msg_send![image, setTemplate: true];
+        image
+    });
+    match result {
+        Ok(image) => image,
+        Err(_) => std::ptr::null_mut(),
+    }
 }
 
 fn handle_tray_action<R: Runtime>(app: &AppHandle<R>, action: &str) {

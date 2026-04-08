@@ -47,6 +47,9 @@
 - 修复 `apps/desktop` 的 tray 菜单会在后台 1s tick 中被反复重建的问题；tray 现在只在菜单内容有效变化时刷新，不再让已展开的原生菜单一闪即逝
 - 修复 `apps/desktop` fullscreen 休息窗口在点击 `跳过` 后可能残留黑屏的问题：break close path 现在会先退出 fullscreen，再销毁窗口实例，不再只隐藏 fullscreen break
 - 修复 `apps/desktop` break prompt 点击 `完成休息 / 稍后 / 跳过` 时可能直接退出应用的问题：break CTA 现先返回 `DesktopSnapshot`，再异步销毁当前 break webview，避免在 `invoke` 回包过程中同步 teardown 当前窗口
+- 修复 `apps/desktop` 在 macOS 上顶部 tray icon 发糊且偏大的问题：tray 现直接 patch Pauza 自己的 `NSStatusItem`，并使用 1x/2x template image；同时重画了小尺寸 tray SVG，避免 glyph 贴满菜单栏槽位
+- 修复 `apps/desktop` 在 macOS 上 Dock icon 偏大的问题：应用图标现为更保守的安全边距构图，release `.app` 也不再执行额外的 Dock runtime patch，优先使用系统 bundle icon
+- 修复图标生成链中的两个真实故障：`graphics/generate_icon_assets.py` 不再对同一路径做 ffmpeg 原地覆盖，`ensure_srgb` 也恢复兼容输出路径参数，图标资源可重新稳定生成
 
 ### 文档
 
