@@ -2,7 +2,6 @@
   "name": "Pauza",
   "version": "1.20.0",
   "description": "The break time reminder app",
-  "main": "app/main.js",
   "type": "module",
   "scripts": {
     "start": "npm run desktop:dev",
@@ -11,13 +10,9 @@
     "desktop:install": "npm --prefix apps/desktop install",
     "desktop:dev": "npm --prefix apps/desktop run tauri:dev",
     "desktop:build": "npm --prefix apps/desktop run tauri:build",
-    "legacy:start": "electron .",
-    "legacy:dev": "cross-env NODE_ENV=development electron . --trace-warnings --trace-deprecation --enable-logging --remote-debugging-port=9222",
     "postinstall": "npm run desktop:install",
     "pack": "npm run desktop:build",
     "dist": "npm run desktop:build",
-    "legacy:pack": "electron-builder build --dir",
-    "legacy:dist": "electron-builder build",
     "test": "vitest run",
     "test-single": "vitest run $1",
     "coverage": "vitest run --coverage",
@@ -37,7 +32,7 @@
     "time",
     "reminder"
   ],
-  "author": "Jan Hovancik <jan@hovancik.net>",
+  "author": "Clarke Young",
   "license": "BSD-2-Clause",
   "bugs": {
     "url": "https://github.com/hovancik/stretchly/issues"
@@ -101,7 +96,7 @@
     "appx": {
       "identityName": "33881JanHovancik.pauza",
       "publisher": "CN=35004EDA-CCDD-4304-A014-784D754E043F",
-      "publisherDisplayName": "Jan Hovancik",
+      "publisherDisplayName": "Clarke Young",
       "applicationId": "Pauza",
       "displayName": "Pauza"
     },

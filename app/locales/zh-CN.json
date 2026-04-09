@@ -1,12 +1,12 @@
 {
   "main": {
     "toolTipHeader": "Pauza - 休息提醒应用",
-    "microbreakIn": "距离下次小憩约 $t(utils.seconds, {'count': {{seconds}} })",
+    "microbreakIn": "距离下次微休息约 $t(utils.seconds, {'count': {{seconds}} })",
     "breakIn": "距离下次休息约 $t(utils.seconds, {'count': {{seconds}} })",
     "resumingBreaks": "正在恢复休息",
     "downloadLatestVersion": "下载最新版本",
     "toBreak": "休息",
-    "toMicrobreak": "小憩",
+    "toMicrobreak": "微休息",
     "skipToTheNext": "跳到下一次",
     "resume": "恢复休息",
     "pause": "暂停休息",
@@ -59,13 +59,13 @@
       "restoreDefaults": "还原至默认值"
     },
     "schedule": {
-      "miniBreaks": "小憩：",
-      "miniBreaksInfo": "「小憩」是频率较高的短暂休息，您可以用来伸展和放松。",
-      "enableMiniBreaks": "启用「小憩」",
+      "miniBreaks": "微休息：",
+      "miniBreaksInfo": "「微休息」是频率较高的短暂休息，您可以用来伸展和放松。",
+      "enableMiniBreaks": "启用「微休息」",
       "breakFor": "持续时间：",
       "every": "每：",
-      "showNotificationBeforeMiniBreak": "小憩前弹出通知",
-      "enablePostponeMini": "允许延后小憩",
+      "showNotificationBeforeMiniBreak": "微休息前弹出通知",
+      "enablePostponeMini": "允许延后微休息",
       "longBreaks": "休息：",
       "longBreaksInfo": "「休息」频率较低，但持续时间更长，让您能够从工作中得到长时间的休息。",
       "enableLongBreaks": "启用「休息」",
@@ -73,7 +73,7 @@
       "enablePostponeLong": "允许延后休息",
       "strictMode": "严格模式：",
       "strictModeInfo": "「严格模式」下不能跳过任何休息类型，目的是帮助自律。",
-      "enableStrictMini": "启用「小憩」的严格模式",
+      "enableStrictMini": "启用「微休息」的严格模式",
       "enableStrictLong": "启用「休息」的严格模式",
       "cantDisableBoth": "不能同时停用两种休息类型"
     },
@@ -111,7 +111,7 @@
       "ourWebsite": "访问我们的网站",
       "dot": "。",
       "developedBy": "开发者",
-      "janH": "Jan Hovancik",
+      "janH": "Clarke Young",
       "designedBy": "图标和用户界面由 Colin Shanley 设计",
       "checkNewVersion": "自动检查更新"
     },
@@ -136,7 +136,7 @@
     "notifications": "休息通知：",
     "notificationsInfo": "在休息前弹出系统通知，让您做好准备。",
     "beforeLongBreak": "休息：",
-    "beforeMiniBreak": "小憩：",
+    "beforeMiniBreak": "微休息：",
     "newVersion": "新版本：",
     "newVersionNotification": "新版本提醒",
     "customIdeas": "自定义理念：",
@@ -144,7 +144,7 @@
     "useIdeasFromSettings": "使用配置文件中的休息理念",
     "breakPostpone": "延后休息：",
     "breakPostponeInfo": "若在偏好设置启用，就能延后休息。以下设置让您能够指定延后休息的具体配置。",
-    "miniBreaks": "小憩：",
+    "miniBreaks": "微休息：",
     "postponableFor": "延后情况：",
     "postponeFor": "延后多久：",
     "maxPostpones": "最大延后次数：",
@@ -163,7 +163,7 @@
     "breakWindowHeight": "高：",
     "sounds": "音效：",
     "volume": "音量：",
-    "miniBreakStartSound": "小憩开始时播放的音效",
+    "miniBreakStartSound": "微休息开始时播放的音效",
     "longBreakStartSound": "休息开始时播放的音效",
     "naturalBreaks": "自然休息：",
     "naturalBreaksInfo": "若在偏好设置中启用监视空闲时间，您可以指定什么时候暂停倒数。",
@@ -213,8 +213,8 @@
     "indefinitely": "无限期",
     "dndMode": "已启用「勿扰」",
     "nextLongBreak": "下次休息",
-    "nextMiniBreak": "下次小憩",
-    "afterMiniBreak_other": "{{count}} 次小憩后",
+    "nextMiniBreak": "下次微休息",
+    "afterMiniBreak_other": "{{count}} 次微休息后",
     "resuming": "继续",
     "appExclusion": "应用程序排除规则"
   },
@@ -391,7 +391,7 @@
       "text": "你是否曾注意到自己的大脑可以独立解决问题？只需要远离电脑，休息一下，思考一些完全无关的事情。"
     },
     "aac": {
-      "title": "小憩",
+      "title": "微休息",
       "text": "休息是确保肌肉骨骼系统性能的关键组成部分。 经常休息可以缩短任务的持续时间，并有助于降低人体工程学伤害风险。"
     },
     "aad": {

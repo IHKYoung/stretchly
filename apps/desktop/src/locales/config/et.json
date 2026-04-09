@@ -1,0 +1,8 @@
+{
+  "code": "et",
+  "label": "Eesti keel",
+  "nativeLabel": "Eesti keel",
+  "fallback": "en",
+  "direction": "ltr",
+  "desktopReady": false
+}

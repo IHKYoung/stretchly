@@ -1,0 +1,8 @@
+{
+  "code": "np",
+  "label": "नेपाली",
+  "nativeLabel": "नेपाली",
+  "fallback": "en",
+  "direction": "ltr",
+  "desktopReady": false
+}

@@ -1,5 +1,5 @@
 import {
-  app, nativeTheme, BrowserWindow, Menu, ipcMain,
+  app, nativeTheme, nativeImage, BrowserWindow, Menu, ipcMain,
   screen, shell, dialog, globalShortcut, Tray,
   powerMonitor
 } from 'electron'
@@ -76,7 +76,7 @@ let pausedForSuspendOrLock = false
 let nextIdea = null
 let danger = 0
 let updateChecker
-let currentTrayIconPath = null
+let currentTrayIconName = null
 let currentTrayMenuTemplate = null
 let trayUpdateIntervalObj = null
 
@@ -506,7 +506,7 @@ function closeWindows (windowArray) {
   return null
 }
 
-function trayIconPath () {
+function trayIconImage () {
   const params = {
     paused:
       breakPlanner.isPaused ||
@@ -524,7 +524,7 @@ function trayIconPath () {
   }
   const trayIconFileName = new AppIcon(params).trayIconFileName
   const pathToTrayIcon = join(__dirname, '/images/app-icons/', trayIconFileName)
-  return pathToTrayIcon
+  return { image: nativeImage.createFromPath(pathToTrayIcon), name: trayIconFileName }
 }
 
 function windowIconPath () {
@@ -1271,7 +1271,8 @@ function updateTray () {
 
   if (settings.get('showTrayIcon')) {
     if (!appIcon) {
-      appIcon = new Tray(trayIconPath())
+      const { image } = trayIconImage()
+      appIcon = new Tray(image)
       appIcon.on('double-click', () => {
         createPreferencesWindow()
       })
@@ -1285,10 +1286,10 @@ function updateTray () {
 
     updateToolTip()
 
-    const newTrayIconPath = trayIconPath()
-    if (newTrayIconPath !== currentTrayIconPath) {
-      appIcon.setImage(newTrayIconPath)
-      currentTrayIconPath = newTrayIconPath
+    const { image: newTrayImage, name: newTrayIconName } = trayIconImage()
+    if (newTrayIconName !== currentTrayIconName) {
+      appIcon.setImage(newTrayImage)
+      currentTrayIconName = newTrayIconName
     }
 
     const newTrayMenuTemplate = getTrayMenuTemplate()

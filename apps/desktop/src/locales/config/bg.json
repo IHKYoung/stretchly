@@ -1,0 +1,8 @@
+{
+  "code": "bg",
+  "label": "Български",
+  "nativeLabel": "Български",
+  "fallback": "en",
+  "direction": "ltr",
+  "desktopReady": false
+}

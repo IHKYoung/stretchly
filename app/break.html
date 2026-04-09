@@ -12,14 +12,9 @@
   </head>
   <body>
     <div class="break-shell break-shell--long">
-      <div class="break-ambient break-ambient--one"></div>
-      <div class="break-ambient break-ambient--two"></div>
+      <div class="break-bg" aria-hidden="true"></div>
       <section class="break-card">
-        <div class="break-head">
-          <span class="break-kind" data-i18next="main.toBreak"></span>
-          <h1 class="break-heading" data-i18next="break.title"></h1>
-        </div>
-        <div class="break-content break-content--long">
+        <div class="break-content">
           <div class="break-idea" dir="auto"></div>
           <div class="break-text" dir="auto"></div>
         </div>
@@ -31,16 +26,9 @@
           <button id="postpone" class="action-button action-button--secondary hidden" type="button">
             <span data-i18next="break.postpone"></span>
           </button>
-          <button id="close" class="action-button action-button--ghost hidden" type="button">
-            <span data-i18next="break.skip"></span>
-          </button>
           <button id="finish" class="action-button hidden" type="button">
             <span data-i18next="break.finish"></span>
           </button>
-        </div>
-        <div class="break-foot">
-          <span class="tiptext"></span>
-          <span class="break-clock"></span>
         </div>
       </section>
     </div>

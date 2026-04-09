@@ -1,9 +1,9 @@
 import { vi } from 'vitest'
 import 'chai/register-should'
 import { join } from 'path'
-import AppExclusionsManager from '../app/utils/appExclusionsManager'
+import AppExclusionsManager from '../apps/desktop/legacy-utils/appExclusionsManager'
 import Store from 'electron-store'
-import defaultSettings from '../app/utils/defaultSettings'
+import defaultSettings from '../apps/desktop/legacy-utils/defaultSettings'
 import psList from 'ps-list'
 import { unlinkSync } from 'node:fs'
 

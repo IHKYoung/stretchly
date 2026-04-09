@@ -1,0 +1,8 @@
+{
+  "code": "zh-TW",
+  "label": "正體中文",
+  "nativeLabel": "正體中文",
+  "fallback": "zh-CN",
+  "direction": "ltr",
+  "desktopReady": false
+}

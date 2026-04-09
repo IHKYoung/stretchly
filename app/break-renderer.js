@@ -3,7 +3,7 @@ import applyBreakHealthEffect from './utils/breakHealthEffect.js'
 import './platform.js'
 
 window.onload = async (event) => {
-  const [idea, started, duration, strictMode, postpone,
+  const [idea, started, duration, , postpone,
     postponePercent, backgroundColor, danger, breakHealthMode, breakPromptStyle] = await window.breaks.sendBreakData()
 
   const mainColor = await window.settings.get('mainColor')
@@ -19,9 +19,6 @@ window.onload = async (event) => {
 
   document.ondrop = event =>
     event.preventDefault()
-
-  document.querySelector('#close').onclick = async event =>
-    await window.breaks.finishBreak(manualAwaiting)
 
   document.querySelector('#postpone').onclick = async event =>
     await window.breaks.postponeBreak()
@@ -49,15 +46,8 @@ window.onload = async (event) => {
   const progress = document.querySelector('#progress')
   const progressTime = document.querySelector('#progress-time')
   const postponeElement = document.querySelector('#postpone')
-  const closeElement = document.querySelector('#close')
   const manualFinishElement = document.querySelector('#finish')
-  const breakClock = document.querySelector('.break-clock')
   document.body.classList.add(mainColor.substring(1))
-
-  document.querySelectorAll('.tiptext').forEach(async tt => {
-    const keyboardShortcut = await window.settings.get('endBreakShortcut')
-    tt.innerHTML = keyboardShortcut ? window.utils.formatKeyboardShortcut(keyboardShortcut) : ''
-  })
 
   let manualAwaiting = false
 
@@ -68,11 +58,6 @@ window.onload = async (event) => {
   }
 
   setInterval(async () => {
-    if (await window.settings.get('currentTimeInBreaks')) {
-      breakClock.innerHTML = (new Date()).toLocaleTimeString()
-    } else {
-      breakClock.innerHTML = ''
-    }
     const now = Date.now()
     const passed = now - started
     if (!manualAwaiting) {
@@ -82,11 +67,6 @@ window.onload = async (event) => {
           postponeElement.classList.remove('hidden')
         } else {
           postponeElement.classList.add('hidden')
-        }
-        if (window.utils.canSkip(strictMode, postpone, passedPercent, postponePercent)) {
-          closeElement.classList.remove('hidden')
-        } else {
-          closeElement.classList.add('hidden')
         }
         progress.value = (100 - passedPercent) * progress.max / 100
         progressTime.innerHTML = await window.utils.formatTimeRemaining(duration - passed, locale)
@@ -100,9 +80,7 @@ window.onload = async (event) => {
     if (which !== 'break' || manualAwaiting) return
     manualAwaiting = true
     progress.value = 0
-    progressTime.classList.remove('hidden')
     postponeElement.classList.add('hidden')
-    closeElement.classList.add('hidden')
     manualFinishElement.classList.remove('hidden')
     progressTime.innerHTML = await window.utils.formatElapsedDuration(Date.now() - started, locale)
   })

@@ -1,6 +1,6 @@
 import { vi } from 'vitest'
 import { expect } from 'chai'
-import { calculateInterval, registerBreakShortcuts, setupBreak, onShortcut } from '../app/utils/breakShortcuts'
+import { calculateInterval, registerBreakShortcuts, setupBreak, onShortcut } from '../apps/desktop/legacy-utils/breakShortcuts'
 
 describe('pauseBreaksShortcut', () => {
   describe('calculateInterval', () => {

@@ -1,0 +1,8 @@
+{
+  "code": "nl",
+  "label": "Nederlands",
+  "nativeLabel": "Nederlands",
+  "fallback": "en",
+  "direction": "ltr",
+  "desktopReady": false
+}

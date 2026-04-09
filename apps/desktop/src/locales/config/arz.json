@@ -1,0 +1,8 @@
+{
+  "code": "arz",
+  "label": "العربية المصرية",
+  "nativeLabel": "العربية المصرية",
+  "fallback": "en",
+  "direction": "rtl",
+  "desktopReady": false
+}

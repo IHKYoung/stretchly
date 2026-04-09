@@ -1,14 +1,45 @@
+use serde::Deserialize;
 use serde_json::Value;
+use std::collections::{HashMap, HashSet};
 use std::sync::OnceLock;
 
-static EN_BUNDLE: OnceLock<Value> = OnceLock::new();
-static ZH_BUNDLE: OnceLock<Value> = OnceLock::new();
+#[derive(Debug, Deserialize)]
+#[serde(rename_all = "camelCase")]
+struct LanguageConfig {
+    code: String,
+    fallback: String,
+    desktop_ready: bool,
+}
+
+#[derive(Debug, Deserialize)]
+#[serde(rename_all = "camelCase")]
+struct LocaleRegistry {
+    default_language: String,
+    languages: Vec<LanguageConfig>,
+    bundles: HashMap<String, Value>,
+}
+
+static REGISTRY: OnceLock<LocaleRegistry> = OnceLock::new();
 
 pub fn normalize_language(language: &str) -> &'static str {
-    match language {
-        "en" => "en",
-        "zh" | "zh-CN" | "zh_CN" | "zh-Hans" | "zh-Hans-CN" => "zh-CN",
-        _ => "zh-CN",
+    let Some(default) = default_config() else {
+        return "zh-CN";
+    };
+
+    let mut current = config_for_code(canonical_language(language)).unwrap_or(default);
+    let mut seen = HashSet::new();
+
+    while !current.desktop_ready && seen.insert(current.code.as_str()) {
+        let Some(next) = config_for_code(&current.fallback) else {
+            break;
+        };
+        current = next;
+    }
+
+    if current.desktop_ready {
+        current.code.as_str()
+    } else {
+        default.code.as_str()
     }
 }
 
@@ -28,36 +59,32 @@ pub fn text2(
     second_name: &str,
     second_value: impl AsRef<str>,
 ) -> String {
-    text1(
-        language,
-        key,
-        first_name,
-        first_value.as_ref(),
-    )
-    .replace(&placeholder(second_name), second_value.as_ref())
+    text1(language, key, first_name, first_value.as_ref())
+        .replace(&placeholder(second_name), second_value.as_ref())
 }
 
 pub fn duration(language: &str, ms: u64) -> String {
+    let normalized_language = normalize_language(language);
     let total_seconds = (ms / 1000).max(1);
     let minutes = total_seconds / 60;
     let seconds = total_seconds % 60;
 
     if minutes == 0 {
-        return text1(language, "duration.seconds", "value", seconds.to_string());
+        return text1(normalized_language, "duration.seconds", "value", seconds.to_string());
     }
 
     if seconds == 0 {
-        return text1(language, "duration.minutes", "value", minutes.to_string());
+        return text1(normalized_language, "duration.minutes", "value", minutes.to_string());
     }
 
-    let seconds_value = if normalize_language(language) == "zh-CN" {
+    let seconds_value = if normalized_language == "zh-CN" {
         format!("{seconds:02}")
     } else {
         format!("{seconds}s")
     };
 
     text2(
-        language,
+        normalized_language,
         "duration.minutesSeconds",
         "minutes",
         minutes.to_string(),
@@ -66,25 +93,77 @@ pub fn duration(language: &str, ms: u64) -> String {
     )
 }
 
+fn registry() -> &'static LocaleRegistry {
+    REGISTRY.get_or_init(|| {
+        serde_json::from_str(include_str!("../../src/locales/registry.generated.json"))
+            .expect("valid locale registry")
+    })
+}
+
+fn config_for_code(code: &str) -> Option<&'static LanguageConfig> {
+    registry().languages.iter().find(|config| config.code == code)
+}
+
+fn default_config() -> Option<&'static LanguageConfig> {
+    config_for_code(&registry().default_language)
+        .or_else(|| registry().languages.first())
+}
+
+fn canonical_language(language: &str) -> &str {
+    match language {
+        "zh" | "zh_CN" | "zh-Hans" | "zh-Hans-CN" => "zh-CN",
+        _ => language,
+    }
+}
+
+fn bundle_chain(language: &str) -> Vec<&'static Value> {
+    let registry = registry();
+    let Some(default) = default_config() else {
+        return Vec::new();
+    };
+
+    let mut chain = Vec::new();
+    let mut seen = HashSet::new();
+    let mut current = Some(config_for_code(canonical_language(language)).unwrap_or(default));
+
+    while let Some(config) = current {
+        if !seen.insert(config.code.as_str()) {
+            break;
+        }
+
+        if let Some(bundle) = registry.bundles.get(&config.code) {
+            chain.push(bundle);
+        }
+
+        current = if config.fallback.is_empty() {
+            None
+        } else {
+            config_for_code(&config.fallback)
+        };
+    }
+
+    let normalized = normalize_language(language);
+    if seen.insert(normalized) {
+        if let Some(bundle) = registry.bundles.get(normalized) {
+            chain.push(bundle);
+        }
+    }
+
+    chain
+}
+
 fn placeholder(name: &str) -> String {
     format!("{{{{{name}}}}}")
 }
 
 fn template(language: &str, key: &str) -> String {
-    lookup(bundle(language), key).unwrap_or_else(|| key.to_string())
-}
-
-fn bundle(language: &str) -> &'static Value {
-    match normalize_language(language) {
-        "en" => EN_BUNDLE.get_or_init(|| {
-            serde_json::from_str(include_str!("../../src/locales/en.json"))
-                .expect("valid English locale bundle")
-        }),
-        _ => ZH_BUNDLE.get_or_init(|| {
-            serde_json::from_str(include_str!("../../src/locales/zh-CN.json"))
-                .expect("valid Chinese locale bundle")
-        }),
+    for bundle in bundle_chain(language) {
+        if let Some(template) = lookup(bundle, key) {
+            return template;
+        }
     }
+
+    key.to_string()
 }
 
 fn lookup(bundle: &Value, key: &str) -> Option<String> {

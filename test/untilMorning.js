@@ -1,10 +1,10 @@
-import { UntilMorning } from '../app/utils/untilMorning'
+import { UntilMorning } from '../apps/desktop/legacy-utils/untilMorning'
 import { vi } from 'vitest'
 import 'chai/register-should'
 import Store from 'electron-store'
 import { join } from 'path'
 import { Settings, DateTime } from 'luxon'
-import defaultSettings from '../app/utils/defaultSettings'
+import defaultSettings from '../apps/desktop/legacy-utils/defaultSettings'
 import { unlinkSync } from 'node:fs'
 
 const timeout = process.env.CI ? 30000 : 10000

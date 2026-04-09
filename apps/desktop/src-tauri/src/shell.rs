@@ -1,6 +1,6 @@
 use crate::{
     i18n,
-    state::{BreakKind, BreakPromptStyle, DesktopSnapshot, PauzaSettings, PauzaState, ShortcutAction},
+    state::{BreakKind, DesktopSnapshot, PauzaSettings, PauzaState, ShortcutAction},
 };
 use std::{
     sync::{mpsc, Mutex, OnceLock},
@@ -195,9 +195,7 @@ pub fn show_break_window<R: Runtime>(app: &AppHandle<R>) -> Result<(), String> {
 pub fn close_break_window<R: Runtime>(app: &AppHandle<R>) -> Result<(), String> {
     run_on_main_thread(app, |handle| {
         for (_, window) in break_windows(&handle) {
-            if window.is_fullscreen().unwrap_or(false) {
-                let _ = window.set_fullscreen(false);
-            }
+            let _ = set_break_window_fullscreen(&window, false);
             let _ = window.hide();
             let _ = window.destroy();
         }
@@ -1001,6 +999,9 @@ fn configure_break_window<R: Runtime>(
     profile: BreakWindowProfile,
     focusable: bool,
 ) -> Result<(), String> {
+    if !profile.fullscreen {
+        set_break_window_fullscreen(window, false)?;
+    }
     window
         .set_size(Size::Physical(PhysicalSize::new(profile.width, profile.height)))
         .map_err(app_error)?;
@@ -1017,11 +1018,32 @@ fn configure_break_window<R: Runtime>(
     window
         .set_skip_taskbar(profile.skip_taskbar)
         .map_err(app_error)?;
-    window.set_fullscreen(profile.fullscreen).map_err(app_error)?;
+    set_break_window_fullscreen(window, profile.fullscreen)?;
     window
         .set_visible_on_all_workspaces(true)
         .map_err(app_error)?;
     Ok(())
+}
+
+fn set_break_window_fullscreen<R: Runtime>(
+    window: &WebviewWindow<R>,
+    fullscreen: bool,
+) -> Result<(), String> {
+    #[cfg(target_os = "macos")]
+    {
+        if fullscreen {
+            window.set_simple_fullscreen(true).map_err(app_error)?;
+        } else {
+            let _ = window.set_simple_fullscreen(false);
+            window.set_fullscreen(false).map_err(app_error)?;
+        }
+        Ok(())
+    }
+
+    #[cfg(not(target_os = "macos"))]
+    {
+        window.set_fullscreen(fullscreen).map_err(app_error)
+    }
 }
 
 fn break_window_targets<R: Runtime>(
@@ -1039,12 +1061,10 @@ fn break_window_targets<R: Runtime>(
         vec![selected_monitor(app, settings)?.unwrap_or_else(|| fallback_monitor(app))]
     };
 
-    let kind = active_break_kind(app);
     let profiles = selected_monitors
         .into_iter()
         .map(|monitor| {
-            let profile =
-                break_window_profile(kind, &monitor, settings.break_prompt_style, settings.fullscreen);
+            let profile = break_window_profile(&monitor, settings.fullscreen);
             (monitor, profile)
         })
         .collect();
@@ -1078,25 +1098,7 @@ fn fallback_monitor<R: Runtime>(app: &AppHandle<R>) -> Monitor {
         })
 }
 
-fn active_break_kind<R: Runtime>(app: &AppHandle<R>) -> BreakKind {
-    let autostart_enabled = app.autolaunch().is_enabled().unwrap_or(false);
-    app.state::<PauzaState>()
-        .snapshot(
-            std::env::consts::OS.to_string(),
-            app.package_info().version.to_string(),
-            autostart_enabled,
-        )
-        .current_break
-        .map(|current| current.kind)
-        .unwrap_or(BreakKind::Microbreak)
-}
-
-fn break_window_profile(
-    kind: BreakKind,
-    monitor: &Monitor,
-    style: BreakPromptStyle,
-    fullscreen_mode: bool,
-) -> BreakWindowProfile {
+fn break_window_profile(monitor: &Monitor, fullscreen_mode: bool) -> BreakWindowProfile {
     let work_area = Bounds {
         x: monitor.work_area().position.x,
         y: monitor.work_area().position.y,
@@ -1109,8 +1111,6 @@ fn break_window_profile(
         width: monitor.size().width,
         height: monitor.size().height,
     };
-    let is_microbreak = kind == BreakKind::Microbreak;
-
     if fullscreen_mode {
         return BreakWindowProfile {
             width: full_bounds.width,
@@ -1125,94 +1125,30 @@ fn break_window_profile(
         };
     }
 
-    match style {
-        BreakPromptStyle::Gentle => {
-            let width = if is_microbreak {
-                clamp((work_area.width as f64 * 0.36) as i32, 420, 560) as u32
-            } else {
-                clamp((work_area.width as f64 * 0.58) as i32, 680, 940) as u32
-            };
-            let height = if is_microbreak {
-                clamp((work_area.height as f64 * 0.34) as i32, 320, 420) as u32
-            } else {
-                clamp((work_area.height as f64 * 0.62) as i32, 520, 720) as u32
-            };
-            let (x, y) = if is_microbreak {
-                bottom_right_position(work_area, width, height, 28)
-            } else {
-                centered_position(work_area, width, height)
-            };
+    let max_width = work_area.width as i32;
+    let max_height = work_area.height as i32;
+    let preferred_width_limit = clamp((work_area.width as f64 * 0.84).round() as i32, 1, max_width);
+    let preferred_height_limit =
+        clamp((work_area.height as f64 * 0.84).round() as i32, 1, max_height);
+    let min_width_limit = 800.min(max_width);
+    let min_height_limit = 450.min(max_height);
+    let (preferred_width, preferred_height) =
+        fit_aspect_ratio(preferred_width_limit, preferred_height_limit, 16.0 / 9.0);
+    let (min_width, min_height) = fit_aspect_ratio(min_width_limit, min_height_limit, 16.0 / 9.0);
+    let width = preferred_width.max(min_width);
+    let height = preferred_height.max(min_height);
+    let (x, y) = centered_position(work_area, width, height);
 
-            BreakWindowProfile {
-                width,
-                height,
-                x,
-                y,
-                decorations: false,
-                focusable: false,
-                always_on_top: true,
-                fullscreen: false,
-                skip_taskbar: true,
-            }
-        }
-        BreakPromptStyle::Balanced => {
-            let width = if is_microbreak {
-                clamp((work_area.width as f64 * 0.58) as i32, 620, 860) as u32
-            } else {
-                clamp((work_area.width as f64 * 0.72) as i32, 840, 1120) as u32
-            };
-            let height = if is_microbreak {
-                clamp((work_area.height as f64 * 0.42) as i32, 360, 520) as u32
-            } else {
-                clamp((work_area.height as f64 * 0.72) as i32, 620, 860) as u32
-            };
-            let (x, y) = centered_position(work_area, width, height);
-
-            BreakWindowProfile {
-                width,
-                height,
-                x,
-                y,
-                decorations: false,
-                focusable: false,
-                always_on_top: true,
-                fullscreen: false,
-                skip_taskbar: true,
-            }
-        }
-        BreakPromptStyle::Immersive => {
-            let width = if is_microbreak {
-                clamp((work_area.width as f64 * 0.76) as i32, 760, 1080) as u32
-            } else {
-                clamp(
-                    (work_area.width as f64 * 0.88) as i32,
-                    920,
-                    work_area.width as i32,
-                ) as u32
-            };
-            let height = if is_microbreak {
-                clamp((work_area.height as f64 * 0.62) as i32, 460, 760) as u32
-            } else {
-                clamp(
-                    (work_area.height as f64 * 0.88) as i32,
-                    680,
-                    work_area.height as i32,
-                ) as u32
-            };
-            let (x, y) = centered_position(work_area, width, height);
-
-            BreakWindowProfile {
-                width,
-                height,
-                x,
-                y,
-                decorations: false,
-                focusable: true,
-                always_on_top: true,
-                fullscreen: false,
-                skip_taskbar: true,
-            }
-        }
+    BreakWindowProfile {
+        width,
+        height,
+        x,
+        y,
+        decorations: false,
+        focusable: false,
+        always_on_top: true,
+        fullscreen: false,
+        skip_taskbar: true,
     }
 }
 
@@ -1220,17 +1156,21 @@ fn clamp(value: i32, min: i32, max: i32) -> i32 {
     value.clamp(min, max)
 }
 
+fn fit_aspect_ratio(width_limit: i32, height_limit: i32, aspect_ratio: f64) -> (u32, u32) {
+    let width_from_height = (height_limit as f64 * aspect_ratio).round() as i32;
+
+    if width_from_height <= width_limit {
+        return (width_from_height.max(1) as u32, height_limit.max(1) as u32);
+    }
+
+    let height_from_width = (width_limit as f64 / aspect_ratio).round() as i32;
+    (width_limit.max(1) as u32, height_from_width.max(1) as u32)
+}
+
 fn centered_position(bounds: Bounds, width: u32, height: u32) -> (i32, i32) {
     (
         bounds.x + ((bounds.width as i32 - width as i32) / 2),
         bounds.y + ((bounds.height as i32 - height as i32) / 2),
-    )
-}
-
-fn bottom_right_position(bounds: Bounds, width: u32, height: u32, offset: i32) -> (i32, i32) {
-    (
-        bounds.x + bounds.width as i32 - width as i32 - offset,
-        bounds.y + bounds.height as i32 - height as i32 - offset,
     )
 }
 

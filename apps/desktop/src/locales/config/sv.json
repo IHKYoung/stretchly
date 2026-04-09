@@ -1,0 +1,8 @@
+{
+  "code": "sv",
+  "label": "Svenska",
+  "nativeLabel": "Svenska",
+  "fallback": "en",
+  "direction": "ltr",
+  "desktopReady": false
+}

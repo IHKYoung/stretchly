@@ -1,52 +1,55 @@
 # UI
 
 ## 窗口与入口
-- `welcome.html`：首次启动引导，现已采用更现代的双栏卡片布局，承载语言选择与主要 CTA。
-- `preferences.html`：主设置界面，现以顶部卡片导航 + 内容面板组织休息时长、通知、干预风格、主题与关于信息。
-- `microbreak.html`：短休息窗口，现为紧凑的现代卡片，Gentle 模式下默认以更轻的角落卡片显示。
-- `break.html`：长休息窗口，现为居中的现代卡片，支持标题、正文、倒计时与柔和动作按钮。
-- `process.html`：隐藏后台页，用于播放声音、版本检查和系统通知代理。
-- `contributor-preferences.html` 与远程 auth/sync 窗口：Contributor 扩展功能。
-- `apps/desktop/src/App.tsx`：新的 Tauri 前台，已成为默认入口；当前设置页已收敛为更紧凑的工具窗口，主窗口下是窄 sidebar categories + 单一主面板，`?window=break` 下是独立 break prompt。
+- `apps/desktop/src/App.tsx`：当前唯一有效的桌面端前台入口；默认渲染主设置页，`?window=break` 下渲染独立 break prompt。
+- `apps/desktop/src/components/ui/*`：主设置页和 break prompt 共用的基础控件。
+- `apps/desktop/src/styles.css`：主界面的设计 token、布局和动效。
+- `apps/desktop/src/locales/messages/*.json`：通用 UI 文案真源。
+- `apps/desktop/src/locales/break-message-copy.json`：break 消息页专属提示语真源。
 
 ## 前端实现模式
-- 每个窗口基本都采用 `HTML + preload + renderer` 三件套。
-- preload 只负责暴露受控能力，真正的窗口交互和 DOM 操作都在 renderer 内完成。
-- 没有组件框架和全局前端状态管理；状态变更以 IPC、DOM 查询和当前设置快照为主。
+- 当前桌面端前台采用 `React + TypeScript + Tauri command` 模式，不再以旧 Electron 的 `html + preload + renderer` 作为默认实现。
+- 前台只消费 `DesktopSnapshot`，不自行维护另一份运行时真源。
+- 浏览器 preview 和原生 runtime 共用同一套 React UI，避免“网页可看、原生才会用”的双实现。
 
 ## 主要用户路径
-1. 首次启动进入 Welcome，看到现代化欢迎页，设置语言或直接进入 Preferences。
-2. 常规运行时主要通过托盘菜单操作暂停、恢复、进入 Focus session、跳转到下一个休息和打开 Preferences。
-3. 休息触发后显示 Mini/Long Break 卡片；用户可根据 `breakPromptStyle` 的强度、严格模式、推迟时机和快捷键决定推迟、跳过或完成。
-4. Contributor 用户额外看到 Contributor Preferences 与 Sync Preferences 入口。
-5. 新 Tauri 壳中，用户可通过偏好页、tray 和全局快捷键直接管理节奏、pause/focus、skip/reset 和 launch on login；休息开始时会弹出独立 break prompt，可执行 Done / Postpone / Skip，并在 manual finish 开启后进入 `manualAwaiting` 状态；tray 在 macOS 下已改为用原生 `Submenu` 作为右键菜单根节点，并移除后台秒级无条件菜单重建，以避免菜单刚展开就一闪即逝，前后端文案统一走共享 locale 资源。
+1. 用户进入主设置页，按 `节奏 / 偏好` 两个主分类调整提醒、显示方式、智能暂停、声音、语言与启动项。
+2. 常规运行时主要通过 tray、快捷键和设置页管理 pause / focus / reset。
+3. break 到点后，`?window=break` 对应的前台会展示独立 break prompt；`智能提醒` 下先等空档，`强制提醒` 下到点直接进入 break。
+4. break prompt 提供 Done / Later / Skip，并在 manual finish 开启后进入 `manualAwaiting` 状态。
 
 ## Tauri 设置页结构
 - 主设置页现为固定双栏工具窗口：左侧导航区约 `168px`，右侧为单一主面板。
-- 左侧导航只保留 4 个分类：`节奏`、`提醒与打断`、`智能暂停`、`通用`。
-- `节奏`：microbreak、long break 的开关，以及顶部四个核心时间字段的 preset 芯片选择。
-- `提醒与打断`：pre-break notification、postpone、strict mode、break prompt style。
-- `提醒与打断` 现重新包含 `显示方式：窗口 / 全屏`，用于决定休息提示是以窗口还是铺满目标显示器出现。
-- `智能暂停`：natural breaks、DND、app exclusions。
-- `通用`：开机自启动、语言。
-- overview、quick actions、快捷键编辑、运行时动作与额外第三列 save rail 已从设置页主结构移除。
+- 左侧导航当前只保留 2 个分类：`节奏`、`偏好`。
+- 当运行时处于 pause / focus 时，主窗口内容区顶部会出现一张 `当前状态` 卡：pause 态只显示 `恢复提醒`，focus 态只显示 `结束专注`；普通运行态不显示恢复动作。
+- `节奏`：顶部先放独立的 `节奏控制` 区，只保留 `重置节奏`，并明确“只重算计时，不自动解除暂停”；下方再是 microbreak、break 的开关与 preset 芯片，以及 pre-break notification 与 postpone。
+- `偏好`：`显示方式：窗口 / 全屏`、`提醒方式：智能提醒 / 强制提醒`、natural breaks、DND、app exclusions、开机自启动、语言。
+- `偏好` 中的 break surface 现已重新接回更强的体验配置：背景主题、自定义壁纸上传与完整预览、交互语开关、当前时间显示，以及微休息 / 休息的开始音、结束音和共享音量。
+- break style 与独立 strict mode 已从设置页移除，不再暴露给用户。
+- overview、常驻 quick actions、快捷键编辑与额外第三列 save rail 已从设置页主结构移除；保留在设置窗口中的运行时入口只剩与当前状态直接相关的上下文动作和独立的节奏重置。
 - 页面视觉已继续收紧为偏桌面工具的平面风格：暖灰背景、纯白主面板、浅边框、小圆角、几乎无装饰背景，并移除侧栏状态区与重复标题。
 - 基础控件（button / select / segmented control / number input）统一压平为更小的圆角和更紧的高度，不再强调悬浮卡片感。
 - 设置页现已改为自动保存，顶部只在保存中或刚发生变更时显示轻量状态，不再保留显式保存按钮。
-- `节奏` 分类已进一步压成两张紧凑 preset 卡：微休息与长休息顶部直接用芯片选择间隔/频率与时长，下方“提前提醒 / 延后”继续保留 stepper 作为低频细调。
-- Tauri 主窗口默认尺寸调整为 `1040x585`，最小尺寸为 `960x540`，让设置页更接近“一个很小的偏好窗口”。
+- `节奏` 分类已进一步压成两张紧凑 preset 卡：微休息与休息顶部直接用芯片选择间隔/频率与时长，下方“提前提醒 / 延后”继续保留 stepper 作为低频细调。
+- 当前设置页未直接暴露 `idle_opportunity_seconds` 阈值；提醒策略默认采用“智能提醒等空档 / 强制提醒到点严格开始”的 host 侧策略。
+- Tauri 主窗口默认尺寸调整为 `960x640`，最小尺寸为 `800x600`，避免设置页继续被压到不可用尺寸。
 
 ## Tauri Break Prompt
 - break 页面现在直接填满宿主窗口本身，不再在 break window 里再套一张固定宽度的小卡片。
-- 中心为环形倒计时，顶部展示当前时间和 break kind，底部保持清晰的主副 CTA。
+- window 模式下，break 宿主窗口现统一居中，窗口比例按 16:9 收敛，并优先以内聚的大窗呈现；不再为 microbreak 保留右下角小浮窗分支。
+- break prompt 现进一步收敛为单列纯净布局：中央只保留一条交互语、数字倒计时和细条形进度，不再保留双栏、cue card、break kind 标签或环形倒计时；玻璃卡片也改得更轻、更通透。
+- break 背景不再只有单层浅色底，现支持 `paper / dawn / forest / night` 预设主题，以及用户上传的自定义壁纸；自定义图在前端压缩后存入本地设置，后续 break 可直接复用。
+- 顶部仅在 `currentTimeInBreaks` 打开时显示当前时间；底部保持 Done / Later / Skip 这组必要 CTA。
+- fullscreen break 的宿主层现在按平台处理：macOS 使用 simple fullscreen，避免 native fullscreen/titlebar 语义造成顶部空白；其他平台继续沿用标准 fullscreen。
 - 主 CTA 在普通态显示 `Done`，在 `manualAwaiting` 态显示 `Resume work`。
 - 次操作按钮按能力显示：允许 postpone 才显示 `Later`，允许 skip 才显示 `Skip`。
-- `currentTimeInBreaks` 打开时，在顶部 eyebrow 显示当前时间。
+- `currentTimeInBreaks` 打开时，在右上角显示当前时间。
+- `breakIdeasEnabled` 打开时，break prompt 会按语言和 break kind 轮播 `apps/desktop/src/locales/break-message-copy.json` 中维护的交互语；关闭后回退到同文件里的默认 prompt。
+- `microbreakStartSound` / `longBreakStartSound` / `microbreakEndSound` / `longBreakEndSound` 与 `breakSoundVolume` 控制休息开始/结束时的一次性提示音；`silence` 或音量为 `0` 时不播放。
+- break prompt 的触发时机已从“到点立即出现”调整为由 reminder mode 决定：`智能提醒` 下若仍在连续输入，则先等待空档再出现；`强制提醒` 下则到点直接出现，并且 break 期间不可跳过、不可延后、不可通过关窗绕过。
 
 ## UI 个性化开发建议
-- 改欢迎页或偏好页文案/布局时，优先从 `app/preferences-renderer.js`、`app/welcome-renderer.js` 和对应 HTML/CSS 入手。
-- 改休息窗口视觉表现时，优先检查 `app/break-renderer.js`、`app/microbreak-renderer.js` 以及 `app/css/break.css`。
-- 调整 break 强度时，同时审查 `app/utils/defaultSettings.js`、`app/utils/breakWindowProfile.js` 与 `app/main.js` 的窗口创建策略。
-- 改系统图标、托盘提示或菜单结构时，入口仍在主进程 `app/main.js`，不是 renderer。
-- 改 preload 接口时，同时审查 `app/utils/context-bridge-exposers.js` 与对应窗口脚本，避免 IPC 名称漂移。
-- 设计新产品壳时，优先在 `apps/desktop/src/App.tsx`、`apps/desktop/src/styles.css`、`apps/desktop/src/components/ui/*`、`apps/desktop/src/locales/*.json` 与 `apps/desktop/src-tauri/src/{state,shell,commands}.rs` 上演进，不要继续把 Electron settings 页面或迁移展示页当作最终产品主工作台。
+- 调整设置页与 break prompt 时，优先改 `apps/desktop/src/App.tsx`、`apps/desktop/src/styles.css`、`apps/desktop/src/components/ui/*`。
+- 修改 break 文案时，通用文案改 `apps/desktop/src/locales/messages/*.json`；消息页专属提示语改 `apps/desktop/src/locales/break-message-copy.json`。
+- 修改托盘、快捷键、调度和窗口行为时，优先改 `apps/desktop/src-tauri/src/{state,engine,platform,shell,commands}.rs`。
+- 如果需要追溯历史行为，只把 `app/**` 当作只读参考，不要重新把当前实现接回旧 Electron 链路。

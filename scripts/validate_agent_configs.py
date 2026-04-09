@@ -89,7 +89,7 @@ ROLE_BOUNDARY_SNIPPETS: Dict[str, Sequence[str]] = {
     ),
     "tester": (
         "允许：tests/, __tests__/, e2e/, testutils/, fixtures/",
-        "禁止：src/, app/, lib/ 等生产代码路径",
+        "禁止：应用源码路径（如 apps/desktop/src/, src/, lib/）",
         "run_role_guard.py --role tester",
         "validate_role_file_scope.py --role tester",
         "code-shaped tests",

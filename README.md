@@ -4,7 +4,7 @@
 
 > **The break time reminder app**
 
-*Pauza* is a cross-platform [Electron](https://www.electronjs.org/) app that reminds you to take breaks when working on your computer.
+*Pauza* is a cross-platform desktop app that reminds you to take breaks when working on your computer.
 
 [![Become a Sponsor!](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub&color=success)](https://github.com/sponsors/hovancik) [![Become a Patron!](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=Patreon&color=success)](https://www.patreon.com/hovancik)
 
@@ -22,7 +22,7 @@
 
 ## Install [![GitHub All Releases](https://img.shields.io/github/downloads/hovancik/stretchly/total)](https://github.com/hovancik/stretchly/releases) [![Packaging status](https://repology.org/badge/tiny-repos/stretchly.svg)](https://repology.org/project/stretchly/versions)
 
-The latest official **installers** and **portable versions** for macOS, Windows and Linux can be found at [Github Releases](https://github.com/hovancik/stretchly/releases) page. For supported versions of your OS check [Electron's supported versions](https://github.com/electron/electron/blob/main/README.md#platform-support). Read on for details of specific OSes.
+The latest official **installers** and **portable versions** for macOS, Windows and Linux can be found at [Github Releases](https://github.com/hovancik/stretchly/releases) page. Read on for details of specific OSes.
 
 ### macOS
 
@@ -98,7 +98,7 @@ For Debian/Ubuntu and derivates you could also try this `apt` repository: `deb [
 
 #### Linux note
 
-Please see [http://electron.atom.io/docs/api/tray/](http://electron.atom.io/docs/api/tray/) for Electron's Tray Linux specifics.
+Linux tray, notification, idle-time and portal behavior may vary by desktop environment and compositor.
 
 For Natural breaks, you might need some packages too (`libxss-dev`).
 
@@ -113,11 +113,11 @@ If you're on Wayland and you would like to be able to monitor idle time, you'll 
 
 ### Running from source
 
-To run *Pauza* from source you will need [Node.js](https://nodejs.org/), ideally the one specified in `package.json`. Clone the repo, run `npm install` and then simply run `npm start` to start *Pauza*.
+To run *Pauza* from source you will need [Node.js](https://nodejs.org/) and the Rust toolchain required by Tauri. Clone the repo, run `npm install` and then run `npm start` to launch the desktop shell from `apps/desktop`.
 
 ### Custom installer
 
-You can create a custom installer by running `npm run pack` or `npm run dist` after `npm install --no-save`.
+You can create a local desktop build by running `npm run build`, `npm run pack` or `npm run dist` after `npm install --no-save`.
 
 ## Default behavior
 
@@ -129,15 +129,15 @@ When you run *Pauza* for the first time, you are presented with a Welcome window
 
 <img src="minibreak.png" height="340">
 
-By default, there is a 20 second Mini break every 10 minutes and a 5 minute Long break every 30 minutes (after 2 Mini breaks).
+By default, there is a 20 second Microbreak every 10 minutes and a 5 minute Break every 30 minutes (after 2 Microbreaks).
 
 <img src="longbreak.png" height="340">
 
-You'll be notified 10 seconds before a Mini break (and 30 seconds before a Long break) so that you can prepare to pause your work.
+You'll be notified 10 seconds before a Microbreak (and 30 seconds before a Break) so that you can prepare to pause your work.
 
 <img src="notification.png" height="90">
 
-When a break starts, you can postpone it once for 2 minutes (Mini breaks) or 5 minutes (Long breaks). Then, after a specific time interval passes, you can skip the break. Both actions are available by clicking on the link at the bottom of window or by using the `Ctrl/Cmd + X` keyboard shortcut.
+When a break starts, you can postpone it once for 2 minutes (Microbreaks) or 5 minutes (Breaks). Then, after a specific time interval passes, you can skip the break. Both actions are available by clicking on the link at the bottom of window or by using the `Ctrl/Cmd + X` keyboard shortcut.
 
 <img src="skip.png" height="340">
 
@@ -185,27 +185,27 @@ Some of the extra preferences are available in Contributor Preferences for [Cont
 
 Preferences marked with ![Not Reliable](https://img.shields.io/badge/Not_Reliable-β-yellow) might not work correctly and might break *Pauza*. Use at own risk.
 
-**Note:** Before 1.0, Mini breaks and Long breaks were called Microbreaks and Breaks, respectively. To keep the upgrade smooth they still use that name in preferences file and in code.
+**Note:** The product UI uses the terms Microbreaks and Breaks. For compatibility, some preference keys and internal code paths still use older names such as `break*`, `longBreak*` or `miniBreak*`.
 
 #### Preferences editable in the app
 
 Here are the preferences editable via the app. If values in the app does not suite your style, you could edit them maually:
 
-- `microbreakDuration` - duration of Mini break (ms)
-- `microbreakInterval` - interval of Mini break (ms)
-- `breakDuration` - duration of Long break (ms)
-- `breakInterval` - interval of Long break (Mini breaks)
-- `breakNotification` - show notification before Mini break
-- `microbreakNotification` - show notification before Long break
-- `microbreak` - enable Mini breaks
-- `break` - enable Long breaks
-- `microbreakStrictMode` - enable strict mode for Mini breaks
-- `breakStrictMode` - enable strict mode for Long breaks
-- `mainColor` - theme color code (for Long breaks),
-- `miniBreakColor` - theme color code (for Mini breaks),
+- `microbreakDuration` - duration of Microbreak (ms)
+- `microbreakInterval` - interval of Microbreak (ms)
+- `breakDuration` - duration of Break (ms)
+- `breakInterval` - interval of Break (Microbreaks)
+- `breakNotification` - show notification before Microbreak
+- `microbreakNotification` - show notification before Break
+- `microbreak` - enable Microbreaks
+- `break` - enable Breaks
+- `microbreakStrictMode` - enable strict mode for Microbreaks
+- `breakStrictMode` - enable strict mode for Breaks
+- `mainColor` - theme color code (for Breaks),
+- `miniBreakColor` - theme color code (for Microbreaks),
 - `transparentMode` - show break windows as transparent
-- `longBreakAudio` - sound theme name (for Long breaks)
-- `miniBreakAudio` - sound theme name (for Mini breaks)
+- `longBreakAudio` - sound theme name (for Breaks)
+- `miniBreakAudio` - sound theme name (for Microbreaks)
 - `fullscreen` - show breaks in fullscreen mode
 - `ideas` - show break ideas
 - `naturalBreaks` - monitor idle time
@@ -262,7 +262,7 @@ Supported image formats: PNG, JPEG, WebP, GIF. Only images from the local `image
 Pauza sanitizes all HTML to keep break windows secure by removing any unsupported tags or unsafe content.
 
 #### Editing break notification interval [![Contributor Preferences](https://img.shields.io/badge/Contributor_Preferences-✔-success)](#contributor-preferences)
-In the preferences file, change `breakNotificationInterval: 30000,` to whatever value you want. 30000 is 30 seconds. Same goes for Mini breaks.
+In the preferences file, change `breakNotificationInterval: 30000,` to whatever value you want. 30000 is 30 seconds. Same goes for Microbreaks.
 
 #### Editing sunrise time to pause breaks until morning
 In the preferences file you can set the `morningHour` setting to pause until that hour today or the next day
@@ -282,11 +282,11 @@ In the preferences file, set `notifyNewVersion: false,` to disable new version n
 #### Sounds at the start of breaks [![Contributor Preferences](https://img.shields.io/badge/Contributor_Preferences-✔-success)](#contributor-preferences)
 To configure the sound when a break starts, set for example `"miniBreakStartSound": "crystal-glass"`. Same for `longBreakStartSound`. Accepted values: `silence`, `crystal-glass`, `wind-chime`, `tic-toc`, `reverie`. Setting the value to `silence` means no sound will be played.
 
-#### Different sound for Mini and Long breaks
-To play different sound for Mini breaks, set `miniBreakAudio` to desired value (`crystal-glass`, `silence`, `tic-toc`, `wind-chime`).
+#### Different sound for Microbreaks and Breaks
+To play different sound for Microbreaks, set `miniBreakAudio` to desired value (`crystal-glass`, `silence`, `tic-toc`, `wind-chime`).
 
-#### Different color theme for Mini and Long breaks
-To have different theme for Mini breaks, set `miniBreakColor` to desired value, ie `#123456`.
+#### Different color theme for Microbreaks and Breaks
+To have different theme for Microbreaks, set `miniBreakColor` to desired value, ie `#123456`.
 
 #### Natural breaks inactivity time [![Contributor Preferences](https://img.shields.io/badge/Contributor_Preferences-✔-success)](#contributor-preferences)
 In the preferences file, set `naturalBreaksInactivityResetTime` to your preferred value (in milliseconds greater than than 20000ms). This is an idle time length, after which *Pauza* breaks will be paused until the user resumes activity.
@@ -583,7 +583,7 @@ You can help to translate Pauza on [Weblate](https://hosted.weblate.org/engage/s
 
 ## Contributors
 
-- Jan Hovancik, @hovancik, [hovancik.net](https://hovancik.net)
+- Clarke Young
 - Martina Mocinecova, (pre-1.0 *Pauza* logo), color schemes
 - Jason Barry, @JCBarry, [jcbarry.com](http://jcbarry.com)
 - Alex Alekseyenko, @alexalekseyenko

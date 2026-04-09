@@ -12,7 +12,7 @@ describe('sanitizeIdea', () => {
     global.document = window.document
     global.Node = window.Node
     documentRef = window.document
-    sanitizeIdea = (await import('../app/utils/sanitizeIdea.js')).default
+    sanitizeIdea = (await import('../apps/desktop/legacy-utils/sanitizeIdea.js')).default
   })
 
   it('keeps allowed markup intact', () => {

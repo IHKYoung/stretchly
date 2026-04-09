@@ -1,0 +1,8 @@
+{
+  "code": "th",
+  "label": "ภาษาไทย",
+  "nativeLabel": "ภาษาไทย",
+  "fallback": "en",
+  "direction": "ltr",
+  "desktopReady": false
+}

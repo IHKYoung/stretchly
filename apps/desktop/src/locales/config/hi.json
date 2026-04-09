@@ -1,0 +1,8 @@
+{
+  "code": "hi",
+  "label": "हिन्दी",
+  "nativeLabel": "हिन्दी",
+  "fallback": "en",
+  "direction": "ltr",
+  "desktopReady": false
+}

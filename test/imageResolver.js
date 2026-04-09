@@ -1,4 +1,4 @@
-import { isAllowedImageFilename, resolveLocalImage } from '../app/utils/imageResolver'
+import { isAllowedImageFilename, resolveLocalImage } from '../apps/desktop/legacy-utils/imageResolver'
 import { beforeEach, afterEach } from 'vitest'
 import { should as chaiShould } from 'chai'
 import { join } from 'path'

@@ -1,4 +1,4 @@
-import { dangerColorForTheme } from '../app/utils/breakHealthEffect'
+import { dangerColorForTheme } from '../apps/desktop/legacy-utils/breakHealthEffect'
 import 'chai/register-should'
 
 describe('dangerColorForTheme', function () {

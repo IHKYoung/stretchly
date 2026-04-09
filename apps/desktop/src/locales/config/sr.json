@@ -1,0 +1,8 @@
+{
+  "code": "sr",
+  "label": "српски језик",
+  "nativeLabel": "српски језик",
+  "fallback": "en",
+  "direction": "ltr",
+  "desktopReady": false
+}

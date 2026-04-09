@@ -1,0 +1,8 @@
+{
+  "code": "ta",
+  "label": "தமிழ்",
+  "nativeLabel": "தமிழ்",
+  "fallback": "en",
+  "direction": "ltr",
+  "desktopReady": false
+}

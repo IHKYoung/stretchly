@@ -1,6 +1,6 @@
 import { vi } from 'vitest'
 import { expect } from 'chai'
-import VersionChecker from '../app/utils/versionChecker'
+import VersionChecker from '../apps/desktop/legacy-utils/versionChecker'
 
 describe('VersionChecker', () => {
   describe('latest', () => {

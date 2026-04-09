@@ -1,4 +1,4 @@
-import { formatTimeRemaining, formatElapsedDuration, formatTimeIn, canSkip, canPostpone, formatKeyboardShortcut, minutesRemaining, shouldShowNotificationTitle, formatUnitAndValue } from '../app/utils/utils'
+import { formatTimeRemaining, formatElapsedDuration, formatTimeIn, canSkip, canPostpone, formatKeyboardShortcut, minutesRemaining, shouldShowNotificationTitle, formatUnitAndValue } from '../apps/desktop/legacy-utils/utils'
 import { beforeAll, afterAll, vi } from 'vitest'
 import 'chai/register-should'
 import i18next from 'i18next'
@@ -13,7 +13,7 @@ describe('Times formatters', function () {
       lng: 'en',
       fallbackLng: 'en',
       backend: {
-        loadPath: join(__dirname, '/../app/locales/{{lng}}.json'),
+        loadPath: join(__dirname, '/../apps/desktop/src/locales/messages/{{lng}}.json'),
         jsonIndent: 2
       }
     })

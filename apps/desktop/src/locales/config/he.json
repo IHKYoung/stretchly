@@ -1,0 +1,8 @@
+{
+  "code": "he",
+  "label": "עברית",
+  "nativeLabel": "עברית",
+  "fallback": "en",
+  "direction": "rtl",
+  "desktopReady": false
+}

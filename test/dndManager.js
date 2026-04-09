@@ -1,9 +1,9 @@
 import { vi } from 'vitest'
 import 'chai/register-should'
 import { join } from 'path'
-import DndManager from '../app/utils/dndManager'
+import DndManager from '../apps/desktop/legacy-utils/dndManager'
 import Store from 'electron-store'
-import defaultSettings from '../app/utils/defaultSettings'
+import defaultSettings from '../apps/desktop/legacy-utils/defaultSettings'
 import { unlink } from 'node:fs'
 
 const timeout = process.env.CI ? 30000 : 10000

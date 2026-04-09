@@ -1,0 +1,8 @@
+{
+  "code": "sl",
+  "label": "Slovenščina",
+  "nativeLabel": "Slovenščina",
+  "fallback": "en",
+  "direction": "ltr",
+  "desktopReady": false
+}

@@ -2,7 +2,7 @@ import { readFileSync, readdirSync } from 'node:fs'
 import { join } from 'path'
 import { expect } from 'vitest'
 
-const jsonDirectory = join(__dirname, '../app/locales')
+const jsonDirectory = join(__dirname, '../apps/desktop/src/locales/messages')
 
 function getJsonFiles (dir) {
   return readdirSync(dir).filter(file => file.endsWith('.json'))

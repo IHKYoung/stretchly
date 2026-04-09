@@ -1,5 +1,5 @@
 import 'chai/register-should'
-import { getBreakWindowProfile, normalizeBreakPromptStyle } from '../app/utils/breakWindowProfile.js'
+import { getBreakWindowProfile, normalizeBreakPromptStyle } from '../apps/desktop/legacy-utils/breakWindowProfile.js'
 
 describe('breakWindowProfile', function () {
   const bounds = { x: 0, y: 0, width: 1920, height: 1080 }

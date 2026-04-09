@@ -1,0 +1,8 @@
+{
+  "code": "ko",
+  "label": "한국어",
+  "nativeLabel": "한국어",
+  "fallback": "en",
+  "direction": "ltr",
+  "desktopReady": false
+}

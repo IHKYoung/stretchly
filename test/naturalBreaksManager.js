@@ -1,8 +1,8 @@
 import 'chai/register-should'
 import { join } from 'path'
-import NaturalBreaksManager from '../app/utils/naturalBreaksManager'
+import NaturalBreaksManager from '../apps/desktop/legacy-utils/naturalBreaksManager'
 import Store from 'electron-store'
-import defaultSettings from '../app/utils/defaultSettings'
+import defaultSettings from '../apps/desktop/legacy-utils/defaultSettings'
 import { unlink } from 'node:fs'
 
 describe('naturalBreaksManager', function () {

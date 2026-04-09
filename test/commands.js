@@ -1,5 +1,5 @@
 import 'chai/register-should'
-import Command from '../app/utils/commands'
+import Command from '../apps/desktop/legacy-utils/commands'
 
 describe('commands', () => {
   it('should parse a valid simple command', () => {

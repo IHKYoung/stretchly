@@ -1,0 +1,8 @@
+{
+  "code": "fa",
+  "label": "فارسی",
+  "nativeLabel": "فارسی",
+  "fallback": "en",
+  "direction": "rtl",
+  "desktopReady": false
+}

@@ -1,0 +1,8 @@
+{
+  "code": "uk",
+  "label": "Українська",
+  "nativeLabel": "Українська",
+  "fallback": "en",
+  "direction": "ltr",
+  "desktopReady": false
+}

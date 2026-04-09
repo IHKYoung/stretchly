@@ -1,0 +1,8 @@
+{
+  "code": "hu",
+  "label": "Magyar",
+  "nativeLabel": "Magyar",
+  "fallback": "en",
+  "direction": "ltr",
+  "desktopReady": false
+}

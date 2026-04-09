@@ -25,11 +25,7 @@ impl Default for PlatformMonitor {
 impl PlatformMonitor {
     pub fn probe(&mut self, settings: &PauzaSettings) -> PlatformSignals {
         PlatformSignals {
-            idle_ms: if settings.natural_breaks {
-                detect_idle_ms()
-            } else {
-                0
-            },
+            idle_ms: resolve_idle_ms(detect_idle_ms),
             dnd_active: if settings.monitor_dnd {
                 detect_dnd()
             } else {
@@ -69,6 +65,13 @@ impl PlatformMonitor {
 
         None
     }
+}
+
+fn resolve_idle_ms<F>(detect_idle: F) -> u64
+where
+    F: FnOnce() -> u64,
+{
+    detect_idle()
 }
 
 fn contains_case_insensitive(source: &str, query: &str) -> bool {
@@ -212,4 +215,14 @@ fn powershell_value(script: &str) -> u64 {
         .trim()
         .parse::<u64>()
         .unwrap_or(0)
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+
+    #[test]
+    fn idle_signal_is_available_even_without_natural_breaks() {
+        assert_eq!(resolve_idle_ms(|| 12_345), 12_345);
+    }
 }

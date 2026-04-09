@@ -14,10 +14,10 @@
       {
         "label": "main",
         "title": "Pauza",
-        "width": 580,
-        "height": 520,
-        "minWidth": 480,
-        "minHeight": 440,
+        "width": 960,
+        "height": 640,
+        "minWidth": 800,
+        "minHeight": 600,
         "center": true,
         "visible": true
       }

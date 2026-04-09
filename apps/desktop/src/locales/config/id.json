@@ -1,0 +1,8 @@
+{
+  "code": "id",
+  "label": "Bahasa Indonesia",
+  "nativeLabel": "Bahasa Indonesia",
+  "fallback": "en",
+  "direction": "ltr",
+  "desktopReady": false
+}

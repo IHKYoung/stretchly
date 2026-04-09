@@ -1,0 +1,8 @@
+{
+  "code": "ajp",
+  "label": "اللهجة الأردنية",
+  "nativeLabel": "اللهجة الأردنية",
+  "fallback": "en",
+  "direction": "rtl",
+  "desktopReady": false
+}

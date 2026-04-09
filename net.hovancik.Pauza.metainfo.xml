@@ -9,7 +9,7 @@
   <project_license>BSD-2-Clause</project_license>
   <content_rating type="oars-1.1" />
   <name>Pauza</name>
-  <developer_name>Jan Hovancik</developer_name>
+  <developer_name>Clarke Young</developer_name>
   <summary>The break time reminder app</summary>
   <description>
     <p>
@@ -24,7 +24,7 @@
   <screenshots>
     <screenshot type="default">
       <image>https://hovancik.net/stretchly/img/flathub/minibreak.png</image>
-      <caption>Pauza Mini break screen</caption>
+      <caption>Pauza Microbreak screen</caption>
     </screenshot>
     <screenshot>
       <image>https://hovancik.net/stretchly/img/flathub/welcome.png</image>

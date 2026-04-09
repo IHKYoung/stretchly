@@ -4,12 +4,13 @@ body {
 }
 
 body {
-  --break-surface: rgba(249, 246, 240, 0.98);
-  --break-surface-strong: rgba(255, 252, 247, 0.98);
-  --break-border: rgba(24, 19, 14, 0.08);
-  --break-text: #17130F;
-  --break-muted: #695F54;
-  --break-soft: #8B8176;
+  --break-surface: rgba(252, 250, 248, 0.97);
+  --break-surface-strong: rgba(255, 254, 252, 0.98);
+  --break-border: rgba(20, 16, 12, 0.07);
+  --break-text: #17130f;
+  --break-muted: #6a6058;
+  --break-soft: #9b928a;
+  --break-bg-image: none;
   margin: 0;
   overflow: hidden;
   background: transparent;
@@ -30,8 +31,9 @@ body.break-health-mode {
 .break-shell {
   display: flex;
   min-height: 100%;
-  padding: 16px;
+  padding: 20px;
   box-sizing: border-box;
+  position: relative;
 }
 
 .break-shell--micro {
@@ -44,36 +46,43 @@ body.break-health-mode {
   justify-content: center;
 }
 
-.break-ambient {
-  display: none;
+.break-bg {
+  position: absolute;
+  inset: 0;
+  background-image: var(--break-bg-image);
+  background-size: cover;
+  background-position: center;
+  pointer-events: none;
 }
 
 .break-card {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  width: min(100%, 720px);
-  min-height: auto;
-  padding: 28px 30px 24px;
+  gap: 24px;
+  width: min(100%, 660px);
+  padding: 38px 42px 32px;
   border: 1px solid var(--break-border);
-  border-radius: 26px;
+  border-radius: 24px;
   background:
-    linear-gradient(180deg, var(--break-surface-strong) 0%, var(--break-surface) 100%);
+    linear-gradient(160deg, var(--break-surface-strong) 0%, var(--break-surface) 100%);
   box-shadow:
-    0 18px 44px rgba(35, 28, 20, 0.12),
-    0 2px 8px rgba(35, 28, 20, 0.06);
+    0 22px 60px rgba(24, 18, 10, 0.12),
+    0 3px 12px rgba(24, 18, 10, 0.06);
+  position: relative;
+  z-index: 1;
 }
 
 .break-shell--micro .break-card {
   width: min(100%, 380px);
-  padding: 24px 24px 20px;
-  border-radius: 22px;
+  padding: 22px 24px 18px;
+  border-radius: 20px;
+  gap: 14px;
 }
 
 .break-head {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 8px;
 }
 
 .break-kind {
@@ -83,7 +92,7 @@ body.break-health-mode {
   align-self: flex-start;
   padding: 0;
   background: transparent;
-  color: #50645E;
+  color: #4e6259;
   font-size: 10px;
   font-weight: 600;
   letter-spacing: 0.16em;
@@ -92,25 +101,25 @@ body.break-health-mode {
 
 .break-kind::before {
   content: "";
-  width: 8px;
-  height: 8px;
+  width: 7px;
+  height: 7px;
   border-radius: 999px;
   background: var(--break-accent-color);
 }
 
 .break-heading {
   margin: 0;
-  max-width: 14ch;
+  max-width: 16ch;
   font-family: 'Noto Sans Light', 'Noto Sans Arabic Light',
     'Noto Sans CJK KR Light',
     'Noto Sans Devanagari Light',
     'Noto Sans Gujarati Light', 'Noto Sans Gurmukhi Light',
     'Noto Sans Hebrew Light',
     'Noto Sans JP Light';
-  font-size: clamp(28px, 4vw, 44px);
+  font-size: clamp(24px, 3.2vw, 38px);
   font-weight: 300;
-  letter-spacing: -0.05em;
-  line-height: 1.04;
+  letter-spacing: -0.045em;
+  line-height: 1.06;
 }
 
 .break-shell--micro .break-heading {
@@ -119,14 +128,9 @@ body.break-health-mode {
 
 .break-content {
   display: flex;
-  flex: 1;
-  align-items: flex-start;
-}
-
-.break-content--long {
   flex-direction: column;
-  justify-content: center;
-  gap: 18px;
+  align-items: flex-start;
+  gap: 14px;
 }
 
 .break-copy,
@@ -136,21 +140,21 @@ body.break-health-mode {
 }
 
 .microbreak-idea {
-  max-width: 14ch;
+  max-width: 16ch;
   font-family: 'Noto Sans Light', 'Noto Sans Arabic Light',
     'Noto Sans CJK KR Light',
     'Noto Sans Devanagari Light',
     'Noto Sans Gujarati Light', 'Noto Sans Gurmukhi Light',
     'Noto Sans Hebrew Light',
     'Noto Sans JP Light';
-  font-size: clamp(28px, 4.6vw, 38px);
+  font-size: clamp(26px, 4vw, 36px);
   font-weight: 300;
-  letter-spacing: -0.045em;
-  line-height: 1.14;
+  letter-spacing: -0.04em;
+  line-height: 1.16;
 }
 
 .break-idea {
-  max-width: 12ch;
+  max-width: 14ch;
   font-family: 'Noto Sans Light', 'Noto Sans Arabic Light',
     'Noto Sans CJK KR Light',
     'Noto Sans Devanagari Light',
@@ -159,16 +163,16 @@ body.break-health-mode {
     'Noto Sans JP Light';
   font-size: clamp(36px, 5vw, 54px);
   font-weight: 300;
-  letter-spacing: -0.055em;
-  line-height: 1.02;
+  letter-spacing: -0.05em;
+  line-height: 1.03;
 }
 
 .break-text {
-  max-width: 34ch;
+  max-width: 38ch;
   color: var(--break-muted);
-  font-size: clamp(16px, 2vw, 20px);
-  letter-spacing: -0.01em;
-  line-height: 1.68;
+  font-size: clamp(15px, 1.8vw, 18px);
+  letter-spacing: -0.008em;
+  line-height: 1.74;
 }
 
 .break-copy a,
@@ -185,23 +189,25 @@ body.break-health-mode {
 
 progress {
   width: 100%;
-  height: 4px;
+  height: 3px;
+  appearance: none;
+  border: none;
 }
 
 progress[value]::-webkit-progress-bar {
-  background: rgba(23, 19, 15, 0.08);
+  background: rgba(20, 16, 12, 0.08);
   border: 0;
   border-radius: 999px;
 }
 
 progress[value]::-webkit-progress-value {
-  background: rgba(23, 19, 15, 0.72);
+  background: rgba(20, 16, 12, 0.60);
   border-radius: 999px;
 }
 
 #progress-time {
   display: block;
-  color: var(--break-muted);
+  color: var(--break-soft);
   font-size: 12px;
   letter-spacing: 0.01em;
 }
@@ -210,31 +216,32 @@ progress[value]::-webkit-progress-value {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
 }
 
 .action-button {
-  min-height: 40px;
-  padding: 0 16px;
+  height: 40px;
+  padding: 0 18px;
   border: 1px solid transparent;
-  border-radius: 12px;
-  background: #1F2926;
+  border-radius: 11px;
+  background: #1e2820;
   box-shadow: none;
-  color: #F8F5EE;
+  color: #f4f0e8;
   font-size: 13px;
   font-weight: 500;
   letter-spacing: 0.01em;
-  transition: background 160ms ease, border-color 160ms ease, color 160ms ease;
+  cursor: pointer;
+  transition: background 140ms ease, border-color 140ms ease, color 140ms ease;
 }
 
 .action-button:hover {
-  background: #16201D;
+  background: #141d16;
   box-shadow: none;
   transform: none;
 }
 
 .action-button:focus {
-  outline: 2px solid rgba(31, 41, 38, 0.18);
+  outline: 2px solid rgba(30, 40, 32, 0.16);
   outline-offset: 2px;
 }
 
@@ -243,17 +250,17 @@ progress[value]::-webkit-progress-value {
 }
 
 .action-button--secondary {
-  border-color: rgba(23, 19, 15, 0.1);
-  background: rgba(255, 255, 255, 0.84);
+  border-color: rgba(20, 16, 12, 0.10);
+  background: rgba(255, 255, 255, 0.78);
   color: var(--break-text);
 }
 
 .action-button--secondary:hover {
-  background: #FFFFFF;
+  background: rgba(255, 255, 255, 0.95);
 }
 
 .action-button--ghost {
-  padding: 0 8px;
+  padding: 0 10px;
   border-color: transparent;
   background: transparent;
   color: var(--break-muted);
@@ -268,8 +275,8 @@ progress[value]::-webkit-progress-value {
   display: flex;
   justify-content: space-between;
   gap: 12px;
-  padding-top: 12px;
-  border-top: 1px solid rgba(23, 19, 15, 0.06);
+  padding-top: 10px;
+  border-top: 1px solid rgba(20, 16, 12, 0.06);
   color: var(--break-soft);
   font-size: 12px;
   letter-spacing: 0.01em;
@@ -293,7 +300,7 @@ progress[value]::-webkit-progress-value {
 }
 
 body[data-break-prompt-style="gentle"][data-break-type="microbreak"] .break-card {
-  gap: 16px;
+  gap: 14px;
 }
 
 .ffffff {

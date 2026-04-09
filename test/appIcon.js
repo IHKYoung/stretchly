@@ -1,5 +1,5 @@
 import 'chai/register-should'
-import AppIcon from '../app/utils/appIcon'
+import AppIcon from '../apps/desktop/legacy-utils/appIcon'
 
 describe('appIcon', function () {
   it('trayIconFileName works for dark mode on macOS', function () {

@@ -1,0 +1,8 @@
+{
+  "code": "cs",
+  "label": "Čeština",
+  "nativeLabel": "Čeština",
+  "fallback": "en",
+  "direction": "ltr",
+  "desktopReady": false
+}

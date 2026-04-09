@@ -1,0 +1,8 @@
+{
+  "code": "ja",
+  "label": "日本語",
+  "nativeLabel": "日本語",
+  "fallback": "en",
+  "direction": "ltr",
+  "desktopReady": false
+}

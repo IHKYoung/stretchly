@@ -1,0 +1,8 @@
+{
+  "code": "da",
+  "label": "Dansk",
+  "nativeLabel": "Dansk",
+  "fallback": "en",
+  "direction": "ltr",
+  "desktopReady": false
+}

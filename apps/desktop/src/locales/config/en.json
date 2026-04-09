@@ -1,0 +1,8 @@
+{
+  "code": "en",
+  "label": "English",
+  "nativeLabel": "English",
+  "fallback": "en",
+  "direction": "ltr",
+  "desktopReady": true
+}

@@ -1,6 +1,6 @@
 import { vi } from 'vitest'
 import 'chai/register-should'
-import Scheduler from '../app/utils/scheduler'
+import Scheduler from '../apps/desktop/legacy-utils/scheduler'
 
 const timeout = process.env.CI ? 30000 : 10000
 

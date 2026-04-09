@@ -24,12 +24,12 @@
 - 将原根目录英文 `CHANGELOG.md` 归档到 `docs/archive/CHANGELOG.upstream.en.md`
 - 新增 `Interruption style`（gentle / balanced / immersive），默认采用更温和的 break 展示策略
 - 托盘新增 `Focus session` 入口，允许用户主动保护 25 / 45 / 60 分钟心流
-- 重做 welcome / preferences / mini break / long break 的视觉样式，统一为更克制的暖白桌面工具风格，减少发光感和过度装饰
+- 重做 welcome / preferences / microbreak / break 的视觉样式，统一为更克制的暖白桌面工具风格，减少发光感和过度装饰
 - 删除仓库中与产品主体无关的第一批外围资产，包括 Docker/Snap 辅助壳文件与调试页，降低二次开发噪音
 - 新增 `apps/desktop` Tauri 2 桌面基础壳，用 Rust host 接管 tray / shortcut / notification / autostart，并提供可浏览器预览的新 dashboard
 - 将 `apps/desktop` 从迁移展示页推进为可用核心闭环：Tauri host 现已接管设置持久化、调度、pause/focus、自然休息、DND、应用排除与 break prompt，前台改为极简设置页
 - 将 `apps/desktop` 的多语言管理重构为共享 locale 资源层，恢复语言切换并默认使用中文；tray、break prompt 与运行时状态文案不再以内联 if/else 维护
-- 将根目录默认 `start/dev/build/pack/dist/postinstall` 脚本切换到 `apps/desktop` Tauri 2 runtime，Electron 入口降级为 `legacy:*` 保留；同时补齐 Tauri host 的 pre-break notification、strict/manual finish、skip/reset、tray submenu 与快捷键能力
+- 将根目录默认 `start/dev/build/pack/dist/postinstall` 脚本切换到 `apps/desktop` Tauri 2 runtime；同时补齐 Tauri host 的 pre-break notification、strict/manual finish、skip/reset、tray submenu 与快捷键能力
 - 根据用户反馈，将 Tauri 设置页从控制台/展示页语言继续收敛为更像现代 macOS 小工具的偏好页：默认可见内容仅保留节奏、信号、通用三组，高级项折叠；视觉语言改为安静的 grouped settings、segmented control、switch、setting-card 与更简洁的 break prompt
 - 将 `apps/desktop` 前台进一步重构为 Tailwind CSS v4 + shadcn 风格组件基座，并按 Apple HIG 收敛为 overview hero、grouped settings、sticky save rail 与环形倒计时 break prompt
 - 将 `apps/desktop` 设置页进一步改为侧边栏分类布局：左侧切换 `概览 / 节奏 / 提醒与延后 / 打断与显示 / 智能暂停 / 通用与快捷键`，中间查看当前分类详情，右侧固定保存与状态栏；现有 Tauri 设置项全部保留，不再折叠进单一高级 accordion
@@ -37,19 +37,36 @@
 - 同步收紧 `apps/desktop` 前台组件的圆角并裁掉设置页里偏介绍性的冗长文案，让整体更接近克制的桌面工具
 - 将 `apps/desktop` 设置页继续极简化：主结构只保留 `节奏 / 提醒与打断 / 智能暂停 / 通用` 四个分类与单一主面板，设置内容只暴露核心真设置；overview、快捷动作、快捷键编辑和多余卡片感已从页面主结构移除
 - 将 `apps/desktop` 节奏页顶部四个核心时间输入改为 preset 芯片，保留“提前提醒 / 延后”两组 stepper，降低高频时间设置的输入负担
-- 恢复 `apps/desktop` 休息提示的 `窗口 / 全屏` 设置：Tauri `PauzaSettings` 重新持久化 `fullscreen`，设置页在“提醒与打断”中重新暴露该入口，window 模式下 immersive long break 不再被强制全屏
+- 恢复 `apps/desktop` 休息提示的 `窗口 / 全屏` 设置：Tauri `PauzaSettings` 重新持久化 `fullscreen`，设置页在“提醒与打断”中重新暴露该入口，window 模式下 immersive break 不再被强制全屏
+- 将当前用户界面术语统一为 `微休息 / 休息`（英文：`Microbreak / Break`），内部兼容保留 `miniBreak*` / `longBreak*` 等既有标识
 - 修复 `apps/desktop` 休息窗口过小和双层卡片的问题：break 页面现在直接使用宿主窗口空间，window 模式下各档默认尺寸整体拉大，不再出现“窗口里再塞一个小窗”的观感
 - 根据最新反馈，将 `apps/desktop` 主设置窗口继续压缩为更像桌面工具的紧凑偏好页：默认主窗口调整为 `1040x585`、最小 `960x540`，侧栏收窄为约 `168px`，按钮/选择器/分段控件/开关/多行输入统一改为更平直的小圆角样式，页面移除大卡片壳、重复标题、侧栏状态区与展示型背景，并将设置改为自动保存
+- 将 `apps/desktop` 的默认提醒投递策略改为低打断状态机：break 到点后若检测到用户仍在持续输入/操作，会先进入“等待空档”，在检测到短暂停顿后再开始；若等待过久，只发送一次温和提醒，不再固定时间硬插入当前工作流
+- 进一步收敛 `apps/desktop` 的提醒模型：设置页现只保留 `智能提醒 / 强制提醒 / 自然休息`；`强制提醒` 直接吸收原 strict mode 语义，host 侧 soft nudge 已移除，`idle_ms` 也不再依赖 `natural_breaks` 开关
+- 继续做减法：`apps/desktop` 主实现已移除 `breakPromptStyle / break_prompt_style` 设置真源，window 模式下改用单一默认 break window profile，只保留 `窗口 / 全屏` 这根显示轴
+- 将 `apps/desktop` 主设置窗口的宿主边界收敛为默认 `960x640`、最小 `800x600`，避免当前 Tauri 配置继续把窗口压到不可用尺寸
+- 将 `apps/desktop` break prompt 向原版体验补齐：偏好页已接回背景主题、自定义壁纸、随机交互语、微休息/休息开始音与音量；break 窗口也恢复 cue card、线性倒计时和更完整的氛围背景
+- 根据最新反馈，将 `apps/desktop` break prompt 从“展示型双栏 + cue card + 环形倒计时”重新收敛为纯净单列界面：主视觉只保留一条交互语、数字倒计时和细条形进度，文案统一改由 locale JSON 管理
+- 继续收敛 `apps/desktop` 的休息体验：break 卡片进一步改成更通透的玻璃材质，window 模式比例收敛到 16:9，自定义壁纸在设置页改为完整预览，并补上微休息 / 休息的结束提示音
+- 将 `apps/desktop` 的多语言结构升级为“每语言一份消息文件 + 每语言一份配置文件 + 自动生成共享 registry”：legacy `app/locales/*.json` 现会同步到 `apps/desktop/src/locales/messages/`，前端和 Rust host 共用 `registry.generated.json`，不再手写 `zh-CN/en` 双分支
+- 将 `apps/desktop` 的 locale 真源进一步切到桌面端目录本身：`scripts/sync_desktop_locales.py` 不再从 legacy `app/locales` 或 `app/preferences.html` 回灌，桌面端改为直接维护 `apps/desktop/src/locales/{messages,config}` 并生成共享 registry
+- 将 `apps/desktop` break 消息页的提示语单独收口到 `apps/desktop/src/locales/break-message-copy.json`，不再混在通用 locale 资源里分散维护
+- 将根级测试和迁移期 JS 领域辅助模块统一搬到 `apps/desktop/legacy-utils`，并让默认运行、构建、测试链路彻底停止依赖 `app/`
+- 整理 `apps/desktop` 设置页中的运行时动作边界：顶部 `恢复提醒` 现仅在暂停态出现，focus 态改为独立的 `结束专注`，`重置节奏` 单独收进 `节奏控制` 区并明确不会自动解除暂停
 
 ### 修复
 
 - 修复 `apps/desktop` 在 macOS 上顶部菜单栏 tray icon 右键时的原生菜单闪退；tray 根 context menu 现按平台分支为 macOS 使用 `Submenu`，避免在 root `Menu` 上直接挂普通 `MenuItem`
 - 修复 `apps/desktop` 的 tray 菜单会在后台 1s tick 中被反复重建的问题；tray 现在只在菜单内容有效变化时刷新，不再让已展开的原生菜单一闪即逝
+- 修复 `apps/desktop` break 在 window 模式下仍缩成右下角小浮窗的问题：windowed 宿主 profile 现统一居中，并约占当前工作区 `80% x 80%`，不再保留 microbreak 角落卡片逻辑
 - 修复 `apps/desktop` fullscreen 休息窗口在点击 `跳过` 后可能残留黑屏的问题：break close path 现在会先退出 fullscreen，再销毁窗口实例，不再只隐藏 fullscreen break
 - 修复 `apps/desktop` break prompt 点击 `完成休息 / 稍后 / 跳过` 时可能直接退出应用的问题：break CTA 现先返回 `DesktopSnapshot`，再异步销毁当前 break webview，避免在 `invoke` 回包过程中同步 teardown 当前窗口
+- 修复 `apps/desktop` fullscreen break 在 macOS 上可能出现顶部空白的问题：break 宿主 fullscreen 现统一经由 helper 处理，macOS 改走 simple fullscreen，close path 也会同步兜底退出 simple/native fullscreen
 - 修复 `apps/desktop` 在 macOS 上顶部 tray icon 发糊且偏大的问题：tray 现直接 patch Pauza 自己的 `NSStatusItem`，并使用 1x/2x template image；同时重画了小尺寸 tray SVG，避免 glyph 贴满菜单栏槽位
 - 修复 `apps/desktop` 在 macOS 上 Dock icon 偏大的问题：应用图标现为更保守的安全边距构图，release `.app` 也不再执行额外的 Dock runtime patch，优先使用系统 bundle icon
 - 修复图标生成链中的两个真实故障：`graphics/generate_icon_assets.py` 不再对同一路径做 ffmpeg 原地覆盖，`ensure_srgb` 也恢复兼容输出路径参数，图标资源可重新稳定生成
+- 修复 `apps/desktop` 设置页里开始音下拉直接露出 `ui.microbreakStartSound` / `ui.longBreakStartSound` 字段名的问题：相关 locale key 已补齐
+- 修复 `apps/desktop` 设置页里的中文文案混入 `break window` / `break prompt` 等英文术语的问题，相关提示改回用户向中文表达
 
 ### 文档
 

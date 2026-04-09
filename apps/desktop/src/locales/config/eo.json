@@ -1,0 +1,8 @@
+{
+  "code": "eo",
+  "label": "Esperanto",
+  "nativeLabel": "Esperanto",
+  "fallback": "en",
+  "direction": "ltr",
+  "desktopReady": false
+}

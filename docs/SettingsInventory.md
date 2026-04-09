@@ -10,35 +10,50 @@
 - `apps/desktop/src/App.tsx`
 - `apps/desktop/src-tauri/src/state.rs`
 - `apps/desktop/src-tauri/src/commands.rs`
-- `app/utils/defaultSettings.js`
+- `apps/desktop/legacy-utils/defaultSettings.js`
 
 ## 1. 当前设置页已经提供的设置
 
-当前前端设置页实际露出的，是下面这 26 项。
+当前前端设置页已经把 break 体验相关的核心设置重新暴露出来，不再只剩基础节奏项。
 
 ### 节奏
 
+- 节奏控制：`重置节奏`（运行时动作，非持久化设置；只重算下一次微休息/休息，不自动解除暂停）
 - 微休息开关
 - 微休息间隔分钟数
 - 微休息时长秒数
-- 长休息开关
-- 长休息每几次微休息触发
-- 长休息时长分钟数
+- 休息开关
+- 休息每几次微休息触发
+- 休息时长分钟数
+
+### 设置窗口中的上下文运行时控制（非持久化设置）
+
+- 暂停态顶部出现 `恢复提醒`
+- 专注态顶部出现 `结束专注`
+- 普通运行态不显示恢复类动作
 
 ### 提醒与打断
 
 - 微休息提前提醒开关
 - 微休息提前提醒秒数
-- 长休息提前提醒开关
-- 长休息提前提醒秒数
+- 休息提前提醒开关
+- 休息提前提醒秒数
 - 微休息允许延后
 - 微休息每次延后分钟数
-- 长休息允许延后
-- 长休息每次延后分钟数
-- 微休息严格模式
-- 长休息严格模式
+- 休息允许延后
+- 休息每次延后分钟数
+- 提醒方式：`smart / forced`
 - 休息显示方式：窗口 / 全屏
-- 打断风格：`gentle / balanced / immersive`
+- 背景主题：`paper / dawn / forest / night / custom`
+- 自定义壁纸上传与移除
+- 自定义壁纸完整预览
+- 交互语开关（控制 break prompt 是否轮播 locale 中维护的交互语）
+- 休息窗口显示当前时间
+- 微休息开始音
+- 微休息结束音
+- 休息开始音
+- 休息结束音
+- 提示音音量
 
 ### 智能暂停
 
@@ -61,16 +76,19 @@
 ### 延后与完成策略
 
 - 微休息延后次数上限：`microbreak_postpones_limit`
-- 长休息延后次数上限：`long_break_postpones_limit`
+- 休息延后次数上限：`long_break_postpones_limit`
 - 微休息手动结束：`microbreak_manual_finish`
-- 长休息手动结束：`long_break_manual_finish`
+- 休息手动结束：`long_break_manual_finish`
 
 ### 多屏与显示细节
 
 - 所有屏幕都显示：`show_breaks_on_all_screens`
 - 目标屏幕：`target_screen`
-- 休息窗口显示当前时间：`current_time_in_breaks`
-- 严格模式下仍允许 tray menu：`show_tray_menu_in_strict_mode`
+- 强制提醒下仍允许 tray menu：`show_tray_menu_in_strict_mode`
+
+### 智能提醒策略
+
+- 等待空档阈值秒数：`idle_opportunity_seconds`
 
 ### 快捷键
 
@@ -83,17 +101,18 @@
 - 暂停 300 分钟：`pause_300_shortcut`
 - 跳到下一个计划休息：`skip_next_scheduled_shortcut`
 - 跳到下一个微休息：`skip_next_microbreak_shortcut`
-- 跳到下一个长休息：`skip_next_long_break_shortcut`
+- 跳到下一个休息：`skip_next_long_break_shortcut`
 - 重置节奏：`reset_breaks_shortcut`
 
 ### 说明
 
 - 这些项已经存在于 `PauzaSettings`，或者已经被 `shortcut_bindings()` 读取。
 - 也就是说，如果你决定把它们重新加回设置页，主要是前端信息架构和交互表达的问题，不是后端能力缺失的问题。
+- 当前 `breakBackdrop`、`breakCustomBackdrop*`、`breakIdeasEnabled`、`microbreakStartSound`、`microbreakEndSound`、`longBreakStartSound`、`longBreakEndSound`、`breakSoundVolume` 和 `current_time_in_breaks` 都已经是前台可见设置；`idle_opportunity_seconds` 仍保持 hidden setting，不直接暴露给用户。
 
-## 3. 旧版 Electron 有过，但当前 Tauri 还没接回来的候选设置
+## 3. 历史设置基线里有过，但当前 Tauri 还没接回来的候选设置
 
-下面这些项在旧版 `defaultSettings.js` 里存在，但当前 Tauri `PauzaSettings` 没有对应真源。它们不是“直接加 UI”就能生效的项，而是“要先恢复或重写后端能力”的候选项。
+下面这些项在迁移副本 `apps/desktop/legacy-utils/defaultSettings.js` 里仍能看到，但当前 Tauri `PauzaSettings` 没有对应真源。它们不是“直接加 UI”就能生效的项，而是“要先恢复或重写后端能力”的候选项。
 
 ### 外观与主题
 
@@ -105,18 +124,12 @@
 
 ### 声音与通知体验
 
-- 长休息提示音：`longBreakAudio`
-- 微休息提示音：`miniBreakAudio`
-- 微休息开始音：`miniBreakStartSound`
-- 长休息开始音：`longBreakStartSound`
-- 音量：`volume`
 - 静音通知：`silentNotifications`
 
 ### 休息内容与想法
 
-- 是否显示 ideas：`ideas`
 - 是否使用设置里的 ideas：`useIdeasFromSettings`
-- 长休息 ideas：`breakIdeas`
+- 休息 ideas：`breakIdeas`
 - 微休息 ideas：`microbreakIdeas`
 
 ### 更新与系统行为
@@ -149,7 +162,15 @@
 
 ## 4. 不建议放进“设置”的运行时动作
 
-这些在当前 Tauri 里是命令，不是设置。它们更适合放在 tray、快捷操作、快捷键或 break window CTA，而不是主设置页。
+这些在当前 Tauri 里是命令，不是设置。它们原则上更适合放在 tray、快捷操作、快捷键或 break window CTA，而不是主设置页。
+
+当前设置窗口只保留了最小化的例外：
+
+- `恢复提醒`：只在暂停态作为上下文动作出现
+- `清除专注 session`：只在 focus 态作为上下文动作出现
+- `重置节奏`：独立放在 `节奏控制` 区，明确它不是“恢复提醒”的别名
+
+其余运行时动作仍不建议重新塞回主设置页。
 
 - 暂停提醒
 - 恢复提醒
@@ -160,7 +181,7 @@
 - 延后当前休息
 - 跳到下一个计划休息
 - 跳到下一个微休息
-- 跳到下一个长休息
+- 跳到下一个休息
 - 重置节奏
 
 ## 5. 如果要继续做设置页，建议优先级
@@ -169,15 +190,15 @@
 
 ### 第一优先级
 
-- 微休息 / 长休息延后次数上限
-- 微休息 / 长休息手动结束
+- 微休息 / 休息延后次数上限
+- 微休息 / 休息手动结束
 - 所有屏幕都显示
 - 目标屏幕
 
 ### 第二优先级
 
 - 休息窗口显示当前时间
-- 严格模式下仍允许 tray menu
+- 强制提醒下仍允许 tray menu
 - 快捷键设置
 
 ### 第三优先级

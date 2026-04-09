@@ -1,0 +1,105 @@
+- main [ref=e3]:
+  - navigation [ref=e5]:
+    - button "节奏" [ref=e6]
+    - button "偏好" [ref=e7]
+  - generic [ref=e9]:
+    - generic [ref=e10]:
+      - heading "节奏控制" [level=3] [ref=e11]
+      - generic [ref=e14]:
+        - generic [ref=e15]:
+          - paragraph [ref=e16]: 重置节奏
+          - paragraph [ref=e17]: 从现在重新计算下一次微休息和休息；如果你当前处于暂停中，暂停状态不会被自动恢复。
+        - button "重置节奏" [ref=e19]
+    - generic [ref=e20]:
+      - generic [ref=e21]:
+        - paragraph [ref=e22]: 微休息
+        - switch "微休息" [checked] [ref=e23] [cursor=pointer]
+      - generic [ref=e25]:
+        - generic [ref=e26]:
+          - generic [ref=e27]: 间隔
+          - group "微休息 间隔" [ref=e28]:
+            - button "5" [ref=e29]
+            - button "10" [pressed] [ref=e30]
+            - button "15" [ref=e31]
+            - button "20" [ref=e32]
+            - button "30" [ref=e33]
+            - spinbutton [ref=e34]: "10"
+          - generic [ref=e35]: 分钟
+        - generic [ref=e36]:
+          - generic [ref=e37]: 时长
+          - group "微休息 时长" [ref=e38]:
+            - button "15" [ref=e39]
+            - button "20" [pressed] [ref=e40]
+            - button "30" [ref=e41]
+            - button "60" [ref=e42]
+            - spinbutton [ref=e43]: "20"
+          - generic [ref=e44]: 秒
+    - generic [ref=e45]:
+      - generic [ref=e46]:
+        - paragraph [ref=e47]: 休息
+        - switch "休息" [checked] [ref=e48] [cursor=pointer]
+      - generic [ref=e50]:
+        - generic [ref=e51]:
+          - generic [ref=e52]: 频率
+          - group "休息 频率" [ref=e53]:
+            - button "2" [ref=e54]
+            - button "3" [pressed] [ref=e55]
+            - button "4" [ref=e56]
+            - button "5" [ref=e57]
+            - spinbutton [ref=e58]: "3"
+          - generic [ref=e59]: 轮
+        - generic [ref=e60]:
+          - generic [ref=e61]: 时长
+          - group "休息 时长" [ref=e62]:
+            - button "3" [ref=e63]
+            - button "5" [pressed] [ref=e64]
+            - button "10" [ref=e65]
+            - button "15" [ref=e66]
+            - spinbutton [ref=e67]: "5"
+          - generic [ref=e68]: 分钟
+    - generic [ref=e69]:
+      - heading "提前提醒" [level=3] [ref=e70]
+      - generic [ref=e72]:
+        - generic [ref=e73]:
+          - paragraph [ref=e75]: 微休息
+          - generic [ref=e76]:
+            - generic [ref=e77]:
+              - generic [ref=e78]:
+                - button "decrease" [ref=e79]: −
+                - spinbutton [ref=e80]: "10"
+                - button "increase" [ref=e81]: +
+              - generic [ref=e82]: 秒前
+            - switch "微休息" [checked] [ref=e83] [cursor=pointer]
+        - generic [ref=e85]:
+          - paragraph [ref=e87]: 休息
+          - generic [ref=e88]:
+            - generic [ref=e89]:
+              - generic [ref=e90]:
+                - button "decrease" [ref=e91]: −
+                - spinbutton [ref=e92]: "30"
+                - button "increase" [ref=e93]: +
+              - generic [ref=e94]: 秒前
+            - switch "休息" [checked] [ref=e95] [cursor=pointer]
+    - generic [ref=e97]:
+      - heading "延后" [level=3] [ref=e98]
+      - generic [ref=e100]:
+        - generic [ref=e101]:
+          - paragraph [ref=e103]: 微休息
+          - generic [ref=e104]:
+            - generic [ref=e105]:
+              - generic [ref=e106]:
+                - button "decrease" [ref=e107]: −
+                - spinbutton [ref=e108]: "2"
+                - button "increase" [ref=e109]: +
+              - generic [ref=e110]: 分钟
+            - switch "微休息" [checked] [ref=e111] [cursor=pointer]
+        - generic [ref=e113]:
+          - paragraph [ref=e115]: 休息
+          - generic [ref=e116]:
+            - generic [ref=e117]:
+              - generic [ref=e118]:
+                - button "decrease" [ref=e119]: −
+                - spinbutton [ref=e120]: "5"
+                - button "increase" [ref=e121]: +
+              - generic [ref=e122]: 分钟
+            - switch "休息" [checked] [ref=e123] [cursor=pointer]

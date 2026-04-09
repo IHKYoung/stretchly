@@ -1,7 +1,7 @@
 import { vi, describe, it, beforeEach, expect } from 'vitest'
 import 'chai/register-should'
 import { screen } from 'electron'
-import DisplayManager from '../app/utils/displayManager.js'
+import DisplayManager from '../apps/desktop/legacy-utils/displayManager.js'
 
 vi.mock('electron', () => {
   const mockScreen = {
