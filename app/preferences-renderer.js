@@ -86,6 +86,13 @@ window.onload = async (e) => {
       document.querySelector('#longBreakEvery').closest('div').querySelector('output')
         .innerHTML = await window.i18next.t('utils.minutes', { count: parseInt(realBreakInterval()) })
     })
+    const freshSettings = await window.settings.currentSettings()
+    document.querySelectorAll('input.duration-input').forEach(async input => {
+      const divisor = input.dataset.divisor
+      input.value = freshSettings[input.name] / divisor
+      await updateDurationOutput(input)
+      updatePresetChips(input)
+    })
     setWindowHeight()
   })
 
@@ -217,6 +224,72 @@ window.onload = async (e) => {
         output.innerHTML = await window.utils.formatUnitAndValue(unit, range.value)
         document.querySelector('#longBreakEvery').closest('div').querySelector('output')
           .innerHTML = await window.i18next.t('utils.minutes', { count: parseInt(realBreakInterval()) })
+      }
+    }
+  })
+
+  function updatePresetChips (inputEl) {
+    const val = parseFloat(inputEl.value)
+    const container = inputEl.closest('.duration-picker')
+    if (!container) return
+    container.querySelectorAll('.duration-preset').forEach(btn => {
+      const presetVal = parseFloat(btn.dataset.value)
+      btn.classList.toggle('is-active', presetVal === val)
+    })
+  }
+
+  async function updateDurationOutput (inputEl) {
+    const container = inputEl.closest('.has-duration-picker') || inputEl.closest('div')
+    const output = container ? container.querySelector('output.duration-unit') : null
+    if (!output) return
+    const unit = output.dataset.unit
+    if (!unit) {
+      output.innerHTML = await window.i18next.t('utils.minutes', { count: parseInt(realBreakInterval()) })
+    } else {
+      output.innerHTML = await window.utils.formatUnitAndValue(unit, inputEl.value)
+    }
+  }
+
+  document.querySelectorAll('input.duration-input').forEach(async input => {
+    const divisor = input.dataset.divisor
+    input.value = settings[input.name] / divisor
+    await updateDurationOutput(input)
+    updatePresetChips(input)
+
+    if (!eventsAttached) {
+      input.onchange = async event => {
+        const val = parseFloat(input.value)
+        if (!isNaN(val) && val >= parseFloat(input.min) && val <= parseFloat(input.max)) {
+          window.settings.saveSettings(input.name, val * divisor)
+          updatePresetChips(input)
+          await updateDurationOutput(input)
+          if (input.id === 'miniBreakEvery' || input.id === 'longBreakEvery') {
+            const longEvery = document.querySelector('#longBreakEvery')
+            if (longEvery) await updateDurationOutput(longEvery)
+          }
+        }
+      }
+      input.oninput = async event => {
+        updatePresetChips(input)
+      }
+    }
+  })
+
+  document.querySelectorAll('.duration-preset').forEach(btn => {
+    if (!eventsAttached) {
+      btn.onclick = async event => {
+        const targetId = btn.dataset.for
+        const input = document.querySelector(`#${targetId}`)
+        if (!input) return
+        input.value = btn.dataset.value
+        const divisor = input.dataset.divisor
+        window.settings.saveSettings(input.name, parseFloat(btn.dataset.value) * parseFloat(divisor))
+        updatePresetChips(input)
+        await updateDurationOutput(input)
+        if (input.id === 'miniBreakEvery' || input.id === 'longBreakEvery') {
+          const longEvery = document.querySelector('#longBreakEvery')
+          if (longEvery) await updateDurationOutput(longEvery)
+        }
       }
     }
   })

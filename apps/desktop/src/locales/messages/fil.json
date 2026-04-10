@@ -36,7 +36,7 @@
       "developedBy": "Binuo ni",
       "designedBy": "Icon at design ng UI ni Colin Shanley",
       "tagline": "Ang app para sa pagpapaalala ng pagpahinga",
-      "janH": "Clarke Young"
+      "clarkeY": "Clarke Young"
     },
     "theme": {
       "morningSwim": "Morning swim",
@@ -205,261 +205,752 @@
   },
   "miniBreakIdeas": {
     "aaa": {
-      "text": "Kumuha ka ng isang basong tubig."
+      "text": "Uminom ng isang basong tubig ngayon."
     },
     "aab": {
-      "text": "Dahan-dahang tumingin sa kaliwa, pagkatapos ay sa kanan."
-    },
-    "aad": {
-      "text": "Ipikit ang iyong mga mata at huminga ng malalim."
-    },
-    "aae": {
-      "text": "Ipikit ang iyong mga mata at magpahinga."
-    },
-    "aaf": {
-      "text": "Iunat ang iyong mga binti."
-    },
-    "aai": {
-      "text": "Dahan-dahang lumiko sa gilid at humawak ng 10 segundo."
-    },
-    "aaj": {
-      "text": "Dahan-dahang ikiling ang ulo sa gilid at hawakan ng 5-10 segundo."
-    },
-    "aak": {
-      "text": "Tumayo mula sa iyong upuan at mag-inat."
-    },
-    "aal": {
-      "text": "Itutok muli ang iyong mga mata sa isang bagay na hindi bababa sa 20 metro ang layo."
-    },
-    "aam": {
-      "text": "Maglaan ng ilang sandali upang mag-isip tungkol sa isang bagay na iyong pinahahalagahan."
-    },
-    "aan": {
-      "text": "Maglaan ng ilang sandali upang ngumiti sa pagiging buhay."
-    },
-    "aap": {
-      "text": "Ipikit ang iyong mga mata at bilangin ang iyong mga hininga."
-    },
-    "aar": {
-      "text": "Ilagay ang iyong mga daliri sa iyong mga balikat. Igulong ang iyong mga balikat pasulong sa loob ng 10 segundo, pagkatapos ay pabalik."
-    },
-    "aat": {
-      "text": "Gamit ang iyong kanang kamay, hawakan ang bawat daliri ng iyong kaliwang kamay paisaisa at pisilin. Ulitin sa kabilang panig."
-    },
-    "aau": {
-      "text": "Tumayo at gumawa ng lunge. Humawak ng 10 segundo, pagkatapos ay gawin ang kabilang binti."
-    },
-    "aav": {
-      "text": "Ipikit ang iyong mga mata at pansinin lamang kung ano ang nangyayari sa kasalukuyang sandali, nang walang paghatol."
-    },
-    "aax": {
-      "text": "Kung kailangan mo ng tulong, humingi."
-    },
-    "aag": {
-      "text": "Iunat ang iyong mga braso."
-    },
-    "aah": {
-      "text": "Tama ba ang postura ng iyong pag-upo?"
-    },
-    "aao": {
-      "text": "Ang isang tunay na ergonomic na workstation ay isa na palagi mong itinutulak palayo."
-    },
-    "aaw": {
-      "text": "Tumutok tuwing 20 minuto sa loob ng 20 segundo sa isang bagay na may layong 20 talampakan."
+      "text": "Magpahinga ng mata — tumingin sa malayo ng 20 segundo."
     },
     "aac": {
-      "text": "Dahan-dahang tumingin sa itaas, pagkatapos ay pababa."
+      "text": "Huminga nang malalim tatlong beses."
+    },
+    "aad": {
+      "text": "Ituwid ang likod mo at umupo nang tama."
+    },
+    "aae": {
+      "text": "Igalaw ang leeg mo — ikiling sa kaliwa at kanan."
+    },
+    "aaf": {
+      "text": "Ikibot ang mga balikat mo pataas at pababa."
+    },
+    "aag": {
+      "text": "I-stretch ang mga daliri at pulso mo."
+    },
+    "aah": {
+      "text": "Tumayo at mag-stretch ng likod."
+    },
+    "aai": {
+      "text": "Igalaw ang mga paa mo kahit nakaupo ka."
+    },
+    "aaj": {
+      "text": "Mag-stretch ng buong katawan — abutin ang kisame."
+    },
+    "aak": {
+      "text": "I-relax ang mga muscles ng mukha mo."
+    },
+    "aal": {
+      "text": "Bumaba ng tingin mula sa screen at mag-focus sa kahit anong berde."
+    },
+    "aam": {
+      "text": "Huminga nang malalim at dahan-dahang i-exhale."
+    },
+    "aan": {
+      "text": "Ikot-ikutin ang mga balikat mo paharap at palikod."
+    },
+    "aao": {
+      "text": "I-stretch ang mga braso mo sa harapan at itulak ang mga palad paalis."
+    },
+    "aap": {
+      "text": "Ipikit ang mga mata mo at huminga ng tatlong beses."
     },
     "aaq": {
-      "text": "Ipikit ang iyong mga mata at pangalanan ang mga bagay na iyong naririnig."
+      "text": "Mag-roll ng leeg — dahan-dahang ikot."
+    },
+    "aar": {
+      "text": "I-flex at i-point ang mga paa mo ng ilang beses."
     },
     "aas": {
-      "text": "Itaas ang iyong kanang braso, iunat ito sa iyong ulo pakaliwa, at hawakan ng 10 segundo. Ulitin sa kabilang panig."
+      "text": "Mag-shoulder shrugs — itaas ang balikat sa tenga."
     },
-    "aaz": {
-      "text": "Ginagamit mo ba ang iyong atensyon nang maayos?"
+    "aat": {
+      "text": "I-stretch ang mga kamay — buksan at sara ang mga daliri."
     },
-    "abh": {
-      "text": "Gumawa ng isang kamao at pagkatapos ay i-fan ang iyong mga daliri at iunat ang mga ito sa abot ng iyong makakaya."
+    "aau": {
+      "text": "Tumayo saglit at umindak kahit kaunti."
     },
-    "aba": {
-      "text": "Baguhin ang iyong postura sa pag-upo."
+    "aav": {
+      "text": "I-check ang postura mo — tuwid ba ang likod mo?"
     },
-    "abc": {
-      "text": "Habang nakapikit, dahan-dahang iangat ang iyong mga mata sa kisame at bumalik sa sahig."
+    "aaw": {
+      "text": "Mag-wrist circles — ikot-ikutin ang pulso."
     },
-    "abd": {
-      "text": "Habang nakapikit, dahan-dahang igalaw ang iyong mga mata sa kaliwa, pagkatapos ay dahan-dahan sa kanan."
-    },
-    "abf": {
-      "text": "Isa-isang pindutin ang dulo ng bawat daliri sa dulo ng iyong hinlalaki upang makagawa sila ng O-shape."
+    "aax": {
+      "text": "Tumingin sa bintana at hayaang magpahinga ang mata."
     },
     "aay": {
-      "text": "Gawin ang bagay ng paisa-isa lamang."
+      "text": "Igalaw ang mga tuhod mo pataas-baba habang nakaupo."
     },
-    "abj": {
-      "text": "Tumayo nang matangkad at dahan-dahang ikiling ang iyong ulo patungo sa balikat gamit ang parehong kamay hanggang sa makaramdam ka ng kahabaan."
+    "aaz": {
+      "text": "Kumuha ng tubig — hydration is key, bes!"
+    },
+    "aba": {
+      "text": "I-relax ang jaw mo — baka naka-clench ka."
     },
     "abb": {
-      "text": "Ilantad ang iyong mga mata sa natural na liwanag."
+      "text": "Ilipat ang tingin mo sa malayo at bumalik — 20-20-20 rule."
+    },
+    "abc": {
+      "text": "Igalaw ang mga daliri ng paa mo sa loob ng sapatos."
+    },
+    "abd": {
+      "text": "Mag-neck tilt — dahan-dahang ikiling ang ulo sa balikat."
     },
     "abe": {
-      "text": "Kalogin ang iyong mga kamay upang makakuha ng kaunting ginhawa."
+      "text": "Huminga sa tiyan — pahabain ang exhale."
+    },
+    "abf": {
+      "text": "I-stretch ang mga hita — itaas ang isang tuhod sa dibdib."
     },
     "abg": {
-      "text": "Gumawa ng isang kamao at pagkatapos ay padulasin ang iyong mga daliri hanggang sa nakaturo sila sa kisame, na parang sinasabi mo sa isang tao na huminto."
+      "text": "Mag-desk push-up o kaya mag-wall push-up."
+    },
+    "abh": {
+      "text": "I-shake ang mga kamay na parang sinasabi mong 'wala na, finish na.'"
     },
     "abi": {
-      "text": "Umupo nang matangkad, nakabitin ang mga braso sa iyong tagiliran, at dahan-dahang iikot ang leeg sa isang direksyon sa isang malaking bilog."
+      "text": "I-massage ang mga temples mo ng daliri."
+    },
+    "abj": {
+      "text": "Mag-ankle circles — ikutin ang mga bukong-bukong."
     },
     "abk": {
-      "text": "Tumayo nang mataas gamit ang iyong mga braso sa iyong tagiliran. Pagdikitin ang iyong mga talim sa balikat at hawakan."
+      "text": "Tingnan ang isang bagay na nakakatawa sa paligid — pa-smile naman!"
     },
     "abl": {
-      "text": "Tumayo nang mataas habang nakataas ang iyong mga braso sa iyong mga balikat. Ilipat nang bahagya ang mga kamay sa likod ng iyong likod, hawakan ng isang segundo at bumalik."
+      "text": "I-relax ang mga balikat — ibaba mo, baka nakaangat na naman."
+    },
+    "abm": {
+      "text": "Gumawa ng tatlong malalim na hininga — inhale 4, hold 4, exhale 4."
+    },
+    "abn": {
+      "text": "I-check kung kumportable ka ba — ayusin ang upuan mo."
+    },
+    "abo": {
+      "text": "Mag-calf raises habang nakatayo — itaas ang sarili sa talampakan."
+    },
+    "abp": {
+      "text": "I-roll ang bola ng paa mo gamit ang bote ng tubig."
+    },
+    "abq": {
+      "text": "Kumurap ng maraming beses — mag-refresh ng mata."
+    },
+    "abr": {
+      "text": "I-stretch ang trapezius — hilahin ang ulo sa gilid gamit ang kamay."
+    },
+    "abs": {
+      "text": "Igalaw ang mga kamay mo — mag-jazz hands!"
+    },
+    "abt": {
+      "text": "Huminga nang malalim at ngumiti kahit walang dahilan."
+    },
+    "abu": {
+      "text": "Ilayo ang tingin sa screen at mag-count ng limang bagay na nakikita mo."
+    },
+    "abv": {
+      "text": "I-massage ang mga kamay mo — pindutin ang mga pressure points."
+    },
+    "abw": {
+      "text": "Mag-side bend — iabot ang kamay sa taas at kumiling sa gilid."
+    },
+    "abx": {
+      "text": "Mag-chin tuck — itulak ang baba paatras."
+    },
+    "aby": {
+      "text": "Iwagayway ang mga braso mo parang cheerleader."
+    },
+    "abz": {
+      "text": "I-rotate ang mga pulso mo — clockwise at counter-clockwise."
+    },
+    "aca": {
+      "text": "Tignan ang mga nails mo — kailangan mo na bang mag-trim?"
+    },
+    "acb": {
+      "text": "Mag-seated spinal twist — ikot ang katawan sa kaliwa at kanan."
+    },
+    "acc": {
+      "text": "Subukan ang box breathing: inhale 4, hold 4, exhale 4, hold 4."
+    },
+    "acd": {
+      "text": "I-relax lahat ng tension sa katawan mo ngayon."
+    },
+    "ace": {
+      "text": "Mag-leg extension habang nakaupo — ituwid ang tuhod."
+    },
+    "acf": {
+      "text": "I-stretch ang mga daliri — gumawa ng star shape gamit ang kamay."
+    },
+    "acg": {
+      "text": "I-adjust ang monitor mo para pantay sa mata."
+    },
+    "ach": {
+      "text": "Uminom ng tubig — ang hustle culture hindi dapat dry."
+    },
+    "aci": {
+      "text": "Mag-chest opener — pagdikitin ang mga shoulder blade."
+    },
+    "acj": {
+      "text": "I-count ang limang bagay na pinapasalamatan mo ngayon."
+    },
+    "ack": {
+      "text": "Gumawa ng mga maliliit na circles gamit ang braso."
+    },
+    "acl": {
+      "text": "I-tap ang mga daliri sa mesa parang nagd-drum."
+    },
+    "acm": {
+      "text": "Mag-deep breath at isipin ang isang masayang alaala."
+    },
+    "acn": {
+      "text": "I-check ang liwanag ng screen mo — baka sobrang bright."
+    },
+    "aco": {
+      "text": "Mag-standing figure-four stretch kung kaya."
+    },
+    "acp": {
+      "text": "I-relax ang mga mata — palming technique."
+    },
+    "acq": {
+      "text": "Igalaw ang mga braso parang gumagawa ng snow angel."
+    },
+    "acr": {
+      "text": "Kumain ng prutas o healthy snack."
+    },
+    "acs": {
+      "text": "I-stretch ang mga forearm — buksan ang braso at i-pull ang daliri paatras."
+    },
+    "act": {
+      "text": "I-massage ang batok mo ng ilang segundo."
+    },
+    "acu": {
+      "text": "Mag-pelvic tilt habang nakaupo — igalaw ang hips."
+    },
+    "acv": {
+      "text": "Mag-isip ng isang bagay na inaabangan mo."
+    },
+    "acw": {
+      "text": "I-stretch ang mga hamstring — itulak ang paa paharap habang nakaupo."
+    },
+    "acx": {
+      "text": "Kumuha ng fresh air — bukas ang bintana kahit saglit."
+    },
+    "acy": {
+      "text": "Mag-face yoga — gumawa ng nakakatawang mukha!"
+    },
+    "acz": {
+      "text": "I-adjust ang upuan mo para comfortable ang likod."
+    },
+    "ada": {
+      "text": "Mag-gratitude check — sino ang gusto mong pasalamatan ngayon?"
+    },
+    "adb": {
+      "text": "I-squeeze at i-release ang isang stress ball o kahit unan."
+    },
+    "adc": {
+      "text": "Magbilang ng bawat hininga — isa hanggang sampu."
+    },
+    "add": {
+      "text": "I-check kung nakainom ka na ng sapat na tubig ngayong araw."
+    },
+    "ade": {
+      "text": "Mag-eye circles — igalaw ang mata sa clockwise at counter-clockwise."
+    },
+    "adf": {
+      "text": "I-pat ang sarili sa likod — magaling ka, laban lang!"
+    },
+    "adg": {
+      "text": "I-stretch ang ilalim ng paa — tumayo at umunat ng talampakan."
+    },
+    "adh": {
+      "text": "Mag-mindful pause — ano ang nararamdaman mo ngayon?"
+    },
+    "adi": {
+      "text": "Mag-ear-to-shoulder stretch — dahan-dahang ikiling ang ulo."
+    },
+    "adj": {
+      "text": "I-wiggle ang lahat ng daliri — kamay at paa."
+    },
+    "adk": {
+      "text": "Mag-quick body scan — saan ka may tension?"
+    },
+    "adl": {
+      "text": "Ngumiti at magpasalamat na gumagana pa ang katawan mo."
+    },
+    "adm": {
+      "text": "Petsa de peligro man o hindi, mag-pahinga ka muna."
     }
   },
   "longBreakIdeas": {
-    "aab": {
-      "title": "Lumayo",
-      "text": "Napapansin mo ba kung paano naiisip ng iyong utak ang mga bagay nang mag-isa? Ang kailangan lang ay lumayo sa computer at magpahinga para mag-isip tungkol sa isang bagay na ganap na walang kaugnayan."
-    },
-    "aae": {
-      "title": "Kumurap",
-      "text": "Ang pagtingin sa mga screen sa loob ng mahabang panahon ay nagdudulot sa iyo ng mas kaunting pagpikit, kaya nalalantad ang iyong mga mata sa hangin. Mabilis na kumurap sa loob ng ilang segundo upang pasariwain ang tear film at alisin ang alikabok sa ibabaw ng mata."
-    },
-    "aaf": {
-      "title": "Ergonomics",
-      "text": "Ang hindi tamang taas at anggulo ng keyboard, mouse, monitor o working surface ay maaaring magdulot ng mga problema sa kalusugan. Maglaan ng ilang oras upang magbasa tungkol sa desk ergonomics."
-    },
-    "aag": {
-      "title": "Gumalaw",
-      "text": "Mayroong maraming mga paraan na maaari kang mag-ehersisyo sa loob ng iyong opisina. Subukang magmartsa sa lugar o magpush-up sa mesa."
-    },
-    "aah": {
-      "title": "Baguhin",
-      "text": "Mayroon ka bang stability ball o standing work desk? Pag-isipang palitan ang iyong upuan sa mesa sa kanila nang ilang sandali."
-    },
-    "aai": {
-      "title": "Pansinin",
-      "text": "Ikaw ba ay nanaginip ng gising o nahihirapang mag-focus? Ito ay isang senyales na kailangan mong magpahinga."
-    },
-    "aaj": {
-      "title": "Tech",
-      "text": "Paano kung maglakad ng walang teknolohiya?"
-    },
-    "aak": {
-      "title": "Metabolismo",
-      "text": "Ipinapakita ng umuusbong na pananaliksik na ang pag-upo ng matagal na panahon ay nag-aambag sa panganib ng metabolic syndrome, atake sa puso at panganib sa stroke at pangkalahatang panganib sa kamatayan, bukod sa iba pa. Ang regular na mga pahinga sa paglalakad ay makakatulong sa iyong sirkulasyon, na nagsisikap na malabanan ang ilan sa mga problemang iyon."
-    },
-    "aal": {
-      "text": "Paano ilipat ang mga pulong mula sa conference room patungo sa concourse? Ang paglalakad ay hindi lamang nagsusunog ng mga calorie ngunit maaari pa itong magsulong ng pakiramdam ng pakikipagtulungan.",
-      "title": "Aktibong Pagpupulong"
-    },
-    "aam": {
-      "title": "Prutas",
-      "text": "Maglaan ng oras at kumain ng ilang prutas. Dahan-dahan. Pansinin ang lasa, ang texture, ang pagiging bago."
-    },
-    "aan": {
-      "title": "Mga banyo",
-      "text": "Maglakad sa pinakamalayong banyo sa pasilidad ng lugar ng trabaho kapag pupunta sa banyo."
-    },
-    "aao": {
-      "text": "Pupunta sa coffee break? Isaalang-alang ang paggawa ng 5 minutong lakad sa tuwing pupunta ka para sa isa.",
-      "title": "Magkape"
-    },
-    "aap": {
-      "title": "Mga kasamahan",
-      "text": "Huwag mag-email o magmensahe sa mga kasamahan sa opisina, pumunta sa kanilang mga mesa upang makipag-usap sa kanila."
-    },
-    "aaq": {
-      "title": "Pag-aaral",
-      "text": "Sa isang pag-aaral ng mga malulusog na boluntaryo, natuklasan ng mga mananaliksik ng NIH na ang pagkuha ng mga maikling pahinga, maaga at madalas, ay maaaring makatulong sa ating utak na matuto ng mga bagong kasanayan."
-    },
-    "aar": {
-      "title": "Mag-ehersisyo",
-      "text": "Ang katibayan ay nagmumungkahi na ang maliit na halaga ng regular na ehersisyo ay maaaring magdala ng mga makabuluhang benepisyo sa kalusugan, kabilang ang masusukat na pagbawas ng stress."
-    },
-    "aas": {
-      "title": "Ulitin",
-      "text": "Nahanap mo na ba ang iyong stretch-ly-routine? Huwag kalimutang ulitin ito nang higit sa isang beses upang mas mahusay na labanan ang mga epekto ng matagal na pag-upo."
-    },
-    "aba": {
-      "title": "Ayusin ang kalat",
-      "text": "Ang malinis na paligid ay nakakatulong para sa iyong pokus sa trabaho at kalimitang dinudugtong sa positibong emosyon katulad ng kasiyahan."
-    },
-    "abb": {
-      "title": "Magtanghalian sa labas",
-      "text": "Ang kalikasan ay dinudugtong sa positibong emosyon at nakakapagpababa ng stress at pagkabalisa. Habang maaari, subukang dalhin sa labas ang pahinga sa tanghali sa labas, na napapalibutan ng mga halamanan."
-    },
-    "abc": {
-      "title": "Pampublikong transportasyon",
-      "text": "Kung regular kang gagamit ng pampublikong transportasyon, pwede kang tumayo sa halip na nakaupo. Kung posible, subukan mong palitan ang iyong araw araw na byahe sa pamamagitan ng paglalakad o pagbibisikleta."
-    },
-    "abd": {
-      "title": "Hikab",
-      "text": "Ang paghikab ay maaaring higit na nakakatulong, dahil sa pamamagitan nito ay lumalabas ang luha para tulungang mabasa ang mga mata."
-    },
-    "abe": {
-      "title": "Pagbabago ng pokus",
-      "text": "Ilagay ang isang daliri malapit sa mata at magpokus dito. Dahan dahang igalaw ang daliri palayo, mag pokus palayo at bumalik sa daliri. Ibalik ang daliri at mag pokus sa isang bagay sa malayo."
-    },
-    "abg": {
-      "title": "Pinipisil ang kamay",
-      "text": "Pisilin ang pares ng binolang medyas o ang malambot na bolang goma, hawakan ng 5 segundo. Ulit ulitin ang buong proseso ng maraming beses."
-    },
-    "abh": {
-      "title": "Paghinga ng Mabagal",
-      "text": "Ang umuusbong na pananaliksik ay nagmumungkahi ng potensyal para sa paggamit ng mga kinokontrol na pamamaraan ng mabagal na paghinga bilang isang paraan ng pag-optimize ng mga parameter ng physiological na lumilitaw na nauugnay sa kalusugan at kahabaan ng buhay."
-    },
-    "aaw": {
-      "title": "7 Minutong Pag-eehersisyo",
-      "text": "Ang pag-eehersisyo na ito ay nakaimpake sa isang nakagawiang ehersisyo sa buong katawan sa isang bahagi ng oras. Ngunit tulad ng anumang ehersisyo, mag-ingat. Maraming app para makapagsimula ka."
-    },
-    "aau": {
-      "title": "Pag-inat ng likod",
-      "text": "Pagsamahin ang iyong mga kamay sa likod ng iyong ulo, pagkatapos ay itaas ang mga ito nang magkasama sa itaas ng iyong ulo na nagtatapos sa iyong mga palad na nakaharap paitaas."
-    },
-    "aav": {
-      "title": "Pakilusin",
-      "text": "Para sa bawat tatlumpung minuto ng pagwawalang-kilos, dapat kang magkaroon ng hindi bababa sa isang minuto ng pagpapasigla."
-    },
-    "aax": {
-      "title": "Pulso",
-      "text": "Itaas ang iyong pulso sa 120 pulso bawat minuto sa loob ng 20 diretsong minuto apat o limang beses sa isang linggo na ginagawa ang anumang bagay na iyong ikinatutuwa. Ang regular na pagtaas ng iyong rate ng puso ay nagreresulta sa pinabuting kalusugan ng cardiovascular."
-    },
-    "aay": {
-      "title": "Gamitin ang hagdan",
-      "text": "Ipinakita ng mga pag-aaral na ang pag-akyat ng hagdan, na itinuturing na masiglang pisikal na aktibidad, ay nagsusunog ng mas maraming calorie kada minuto kaysa sa pag-jogging."
-    },
-    "aaz": {
-      "title": "Gumawa ng sining",
-      "text": "Ang art therapy ay kilala na may magagandang benepisyo sa kalusugan ng isip, lalo na pagdating sa pamamahala ng stress. Paano kung magsulat ng isang mabilis na tula, pagkuha ng larawan o pagpipinta ng isang maliit na bagay?"
-    },
-    "abf": {
-      "text": "Habang nakaupo, i-brace ang mga siko sa mesa at malapit sa gilid ng mesa. Hayaang bumagsak ang iyong timbang at i-cup ang mga kamay sa mga mata. Ipikit ang iyong mga mata at huminga nang dahan-dahan sa pamamagitan ng ilong at humawak ng ilang segundo. Ipagpatuloy ang malalim na paghinga.",
-      "title": "Palming"
-    },
-    "aad": {
-      "title": "Pagninilay",
-      "text": "Iminumungkahi ng mga pag-aaral sa pananaliksik na ang mga pagsasanay na nakabatay sa pag-iisip ay nakakatulong na mabawasan ang pagkabalisa, depresyon, stress, at sakit. At ito ay nakakatulong na mapabuti ang pangkalahatang kalusugan, kalusugan ng isip, at kalidad ng buhay. Hindi sigurado kung paano magsisimula? Maraming apps na tutulong sa iyo."
-    },
     "aaa": {
-      "title": "Hindi nag-iisa",
-      "text": "Nahihirapan ka bang magpahinga nang mag-isa? Subukang gawin ito sa isang katrabaho. Bukod sa mas madaling manatili sa mga pahinga, magkakaroon ka ng pagkakataong mas makilala sila. Ang sama-samang pahinga ay nagpapataas ng produktibidad."
+      "title": "Pomodoro Power Break",
+      "text": "Tapos na ang isang Pomodoro cycle! Tumayo, mag-stretch, at mag-reward ng sarili — kahit isang sip ng kape lang."
+    },
+    "aab": {
+      "title": "Power Nap Time",
+      "text": "Mag-power nap ng 10-15 minuto. I-set ang alarm — huwag maging tulog-mantika!"
     },
     "aac": {
-      "title": "Microbreaks",
-      "text": "Ang pahinga ay isang mahalagang bahagi sa pagtiyak ng pagganap ng musculoskeletal system. Maaaring bawasan ng madalas na mga pahinga ang tagal ng isang gawain at makakatulong na mapababa ang pagkakalantad sa panganib ng ergonomic na pinsala."
+      "title": "Doodle Break",
+      "text": "Kumuha ng papel at mag-doodle ng kahit ano — bahay, pusa, o ang mukha ng boss mo (biro lang)."
+    },
+    "aad": {
+      "title": "Tugtugin Mo Na",
+      "text": "Mag-play ng paboritong kanta at mag-headbang, mag-air guitar, o kumanta nang malakas."
+    },
+    "aae": {
+      "title": "Gratitude Journal",
+      "text": "Isulat ang tatlong bagay na pinapasalamatan mo ngayon. Makakatulong ito para sa mental health mo."
+    },
+    "aaf": {
+      "title": "Malamig na Tubig",
+      "text": "Maghilamos ng malamig na tubig sa mukha o maglagay ng cold compress sa mata — refresh agad!"
+    },
+    "aag": {
+      "title": "Alagaan ang Halaman",
+      "text": "Diligan ang mga halaman mo o kaya mag-re-pot ng succulent. Green therapy!"
+    },
+    "aah": {
+      "title": "Brain Dump",
+      "text": "Isulat lahat ng nasa isip mo sa papel — walang filter, walang judgment. Linisin ang utak."
+    },
+    "aai": {
+      "title": "Pet Therapy",
+      "text": "Kung may alagang hayop ka, laruin mo sila ngayon. Kung wala, panoorin mo ang cute animal videos."
+    },
+    "aaj": {
+      "title": "Tawa Break",
+      "text": "Panoorin ang isang nakakatawang video o alalahanin ang pinakamalupet na joke na narinig mo."
+    },
+    "aak": {
+      "title": "Fresh Air Moment",
+      "text": "Lumabas ng bahay o opisina at huminga ng fresh air. Hayaang dumampi ang hangin sa mukha mo."
+    },
+    "aal": {
+      "title": "Body Scan Meditation",
+      "text": "Mula ulo hanggang paa, dahan-dahang i-check ang bawat bahagi ng katawan. I-release ang mga tension."
+    },
+    "aam": {
+      "title": "Desk Yoga Session",
+      "text": "Gumawa ng mga simpleng yoga pose sa desk mo — seated cat-cow, seated pigeon, at forward fold."
+    },
+    "aan": {
+      "title": "Magbasa ng Ilang Pahina",
+      "text": "Kumuha ng libro at magbasa ng kahit 5 pahina. Fiction, non-fiction, kahit ano."
+    },
+    "aao": {
+      "title": "90-Minute Cycle Check",
+      "text": "Kung nasa 90-minute focus cycle ka, ito na ang tamang oras para mag-reset ng utak."
+    },
+    "aap": {
+      "title": "Curiosity Break",
+      "text": "Mag-search ng isang random na katotohanan o trivia. Bagong araw, bagong kaalaman!"
+    },
+    "aaq": {
+      "title": "Box Breathing Exercise",
+      "text": "Inhale 4 counts, hold 4, exhale 4, hold 4. Ulitin ng 4 na beses para sa kalmadong isip."
+    },
+    "aar": {
+      "title": "Dance Break!",
+      "text": "I-play ang paboritong dance song mo at sumayaw na parang walang nakakakita!"
+    },
+    "aas": {
+      "title": "Tawagan ang Kaibigan",
+      "text": "Tumawag o mag-text sa isang kaibigan o kapamilya. Connection is self-care din."
     },
     "aat": {
-      "title": "Pulso at Bisig",
-      "text": "Iunat ang iyong mga braso nang nakaharap ang mga palad sa iyo, pagkatapos ay dahan-dahang iikot ang mga kamay nang apat na beses pakanan, pagkatapos ay apat na beses na counter-clockwise."
+      "title": "Sunlight Therapy",
+      "text": "Lumabas at magpa-araw ng 5-10 minuto. Vitamin D loading!"
+    },
+    "aau": {
+      "title": "Progressive Relaxation",
+      "text": "I-tense ang bawat muscle group ng 5 segundo tapos i-release. Mula paa hanggang ulo."
+    },
+    "aav": {
+      "title": "Barefoot Grounding",
+      "text": "Mag-lakad ng walang sapatos sa sahig o lupa — feel the earth under your feet."
+    },
+    "aaw": {
+      "title": "Sulat sa Future Self",
+      "text": "Sumulat ng maikling liham sa sarili mo sa hinaharap — anong gusto mong sabihin?"
+    },
+    "aax": {
+      "title": "Digital Detox",
+      "text": "Ilagay ang phone sa ibang kwarto ng 10 minuto. Wala kang mamimiiss, promise."
+    },
+    "aay": {
+      "title": "2-Minute Rule",
+      "text": "May maliit na task na iniiwasan mo? Kung kaya sa 2 minuto, gawin mo na ngayon."
+    },
+    "aaz": {
+      "title": "Posture Reset",
+      "text": "Tumayo, i-stretch ang buong katawan, at umupo ulit nang tama. Bago ka na."
+    },
+    "aba": {
+      "title": "Amoy-Amoy Therapy",
+      "text": "Amuyin ang essential oil, kape, o kahit isang bulaklak. Hayaang mag-relax ang senses mo."
+    },
+    "abb": {
+      "title": "Ulap Gazing",
+      "text": "Tumingin sa mga ulap at mag-imagine ng mga hugis — dragon? Siopao? Ikaw ang bahala."
+    },
+    "abc": {
+      "title": "Full Body Stretch",
+      "text": "Mag-stretch ng buong katawan mula ulo hanggang paa. Abutin ang kisame at sahig."
+    },
+    "abd": {
+      "title": "Mindful na Kape o Tsaa",
+      "text": "Gumawa ng mainit na inumin at i-enjoy ito nang dahan-dahan — walang multitasking."
+    },
+    "abe": {
+      "title": "Lakad-lakad sa Labas",
+      "text": "Lumabas at maglakad ng 5-10 minuto. Hindi mo kailangan ng destination."
+    },
+    "abf": {
+      "title": "Paglilinis ng Workspace",
+      "text": "Ayusin ang mesa mo — itapon ang basura, i-organize ang gamit. Clean space, clear mind."
+    },
+    "abg": {
+      "title": "Paghahanda ng Meryenda",
+      "text": "Maghanda ng masustansyang meryenda — prutas, nuts, o kahit pandesal."
+    },
+    "abh": {
+      "title": "Pag-stretch ng Buo",
+      "text": "Gumawa ng full stretching routine — neck, shoulders, back, legs. Lahat kasama."
+    },
+    "abi": {
+      "title": "Journaling Time",
+      "text": "Isulat ang mga nangyari ngayong araw o ang mga plano mo bukas."
+    },
+    "abj": {
+      "title": "Paghinga at Pag-iisip",
+      "text": "Umupo ng tahimik, pumikit, at hayaang walang iniisip ng 5 minuto."
+    },
+    "abk": {
+      "title": "Musikang Nakakarelax",
+      "text": "Mag-play ng calming music — lo-fi, classical, o tunog ng ulan."
+    },
+    "abl": {
+      "title": "Galaw ng Katawan",
+      "text": "Gumawa ng jumping jacks, squats, o kahit mag-march in place ng 3 minuto."
+    },
+    "abm": {
+      "title": "Eye Spa",
+      "text": "Takpan ang mga mata mo ng warm towel o palms ng 3 minuto. Eye spa sa bahay!"
+    },
+    "abn": {
+      "title": "Hydration Check",
+      "text": "Uminom ng dalawang basong tubig at mag-refill ng bote. Hydrated = Happy."
+    },
+    "abo": {
+      "title": "Gratitude Moment",
+      "text": "Mag-isip ng limang tao na nagpapasaya sa buhay mo at pasalamatan sila mentally."
+    },
+    "abp": {
+      "title": "Social Connection",
+      "text": "Mag-chat o tumawag sa isang tao na matagal mo nang hindi nakausap."
+    },
+    "abq": {
+      "title": "Creative Break",
+      "text": "Mag-sketch, magsulat ng tula, o gumawa ng origami — kahit panget, okay lang!"
+    },
+    "abr": {
+      "title": "Meditation Break",
+      "text": "Gumawa ng 5-minute guided meditation — maraming libre sa YouTube."
+    },
+    "abs": {
+      "title": "Neck at Shoulder Release",
+      "text": "Dahan-dahang i-roll ang leeg at balikat para alisin ang tension."
+    },
+    "abt": {
+      "title": "Leg Day Mini",
+      "text": "Mag-wall sit o calf raises ng 1 minuto — leg day kahit sa opisina."
+    },
+    "abu": {
+      "title": "Breathing Ladder",
+      "text": "Huminga: inhale 2 counts, exhale 2. Tapos 3-3, 4-4, hanggang 8-8."
+    },
+    "abv": {
+      "title": "Paa Break",
+      "text": "Tanggalin ang sapatos at i-massage ang mga paa mo. Deserve mo yan."
+    },
+    "abw": {
+      "title": "Window Gazing",
+      "text": "Tumingin sa labas ng bintana at hayaang mag-wander ang isip mo ng ilang minuto."
+    },
+    "abx": {
+      "title": "Quick Declutter",
+      "text": "Piliin ang isang drawer o folder at i-organize — 5 minuto lang."
+    },
+    "aby": {
+      "title": "Arm at Wrist Care",
+      "text": "I-stretch ang mga braso at pulso — lalo na kung maraming typing."
+    },
+    "abz": {
+      "title": "Spine Mobility",
+      "text": "Gumawa ng cat-cow stretches — igalaw ang spine pataas at pababa."
+    },
+    "aca": {
+      "title": "Mindful Eating",
+      "text": "Kung kumakain ka, i-enjoy ang bawat subo — pansinin ang lasa at texture."
+    },
+    "acb": {
+      "title": "Hip Opener",
+      "text": "Gumawa ng seated figure-four o standing hip circles — lalo kung matagal kang nakaupo."
+    },
+    "acc": {
+      "title": "Balance Challenge",
+      "text": "Tumayo sa isang paa ng 30 segundo bawat side — balance training!"
+    },
+    "acd": {
+      "title": "Temperature Check",
+      "text": "Mainit ba o malamig ang pakiramdam mo? I-adjust ang environment mo para comfortable ka."
+    },
+    "ace": {
+      "title": "Celebrate Small Wins",
+      "text": "Ano ang nagawa mo ngayong araw? Kahit maliit, i-celebrate mo!"
+    },
+    "acf": {
+      "title": "Sigaw ng Pagmamahal",
+      "text": "Sabihin sa sarili mo: 'Magaling ako. Deserve ko ang pahinga na ito.'"
+    },
+    "acg": {
+      "title": "Maglaro Saglit",
+      "text": "Maglaro ng simpleng laro — puzzle, Wordle, o kahit bato-bato-pick sa hangin."
+    },
+    "ach": {
+      "title": "Tahimik na Pag-iisip",
+      "text": "Mag-reflect: Ano ang lesson na natutunan mo ngayong linggo?"
+    },
+    "aci": {
+      "title": "Hustle Mo, Pahinga Mo",
+      "text": "Ang pahinga ay hindi katamaran — ito ang secret weapon ng mga hustle champion."
     }
   },
   "break": {
     "skip": "Ipagpaliban ang pahingang ito",
     "postpone": "Itigil ang pahingang ito",
     "title": "Oras na para magpahinga!"
+  },
+  "ui": {
+    "loading": "Nilo-load ang Pauza…",
+    "preview": {
+      "status": "Preview",
+      "detail": "Preview sa browser",
+      "action": "Na-activate ang preview mode."
+    },
+    "title": "Pauza",
+    "heroHeadline": "Protektahan ang ritmo ng trabaho gamit ang mahinahong interface",
+    "heroSubtitle": "Mga madalas na setting sa harap, advanced na kontrol sa likod.",
+    "settingsCategories": "Mga Kategorya ng Setting",
+    "settingsCategoriesHint": "Lumipat ng kategorya sa kaliwa, tingnan ang setting sa kanan.",
+    "currentCategory": "Kasalukuyang kategorya",
+    "overview": "Pangkalahatang-tanaw",
+    "overviewHint": "Buod ng status, kamakailang aktibidad, at mabilisang access.",
+    "liveOverview": "Live na pangkalahatang-tanaw",
+    "liveOverviewHint": "Tingnan ang kasalukuyang ritmo, status ng app, at break window.",
+    "quickActions": "Mabilisang aksyon",
+    "quickActionsHint": "Ang mga aksyon na ito ay direktang nakakaapekto sa kasalukuyang ritmo.",
+    "savePanel": "I-save ang mga pagbabago",
+    "savePanelHint": "Magkakabisa lang ang mga pagbabago pagkatapos i-save.",
+    "nextBreakLabel": "Susunod na break",
+    "currentBreakLabel": "Kasalukuyang break",
+    "lastActionLabel": "Huling aksyon",
+    "runtimeLabel": "Runtime",
+    "platformLabel": "Platform",
+    "versionLabel": "Bersyon",
+    "breakFeelLabel": "Estilo ng break",
+    "placementLabel": "Posisyon ng window",
+    "pendingChanges": "Hindi pa nase-save na pagbabago",
+    "synced": "Naka-sync",
+    "saving": "Sine-save…",
+    "allSet": "Handa na",
+    "noCurrentBreak": "Walang aktibong break",
+    "liveSignals": "Live na signal",
+    "general": "Pangkalahatan",
+    "preferences": "Mga Kagustuhan",
+    "currentStatus": "Kasalukuyang status",
+    "language": "Wika",
+    "languageChinese": "Simplified Chinese",
+    "languageEnglish": "Ingles",
+    "launchOnLogin": "Simulan sa pag-login",
+    "enabled": "Naka-on",
+    "disabled": "Naka-off",
+    "schedule": "Iskedyul",
+    "interruptions": "Abiso at Pagkaantala",
+    "sectionScheduleHint": "Ipinapakita lang ang mga setting ng ritmo na inaayos mo araw-araw.",
+    "microbreaks": "Micro break",
+    "microbreaksHint": "Maikling pahinga habang nagtatrabaho.",
+    "longBreaks": "Mahabang break",
+    "longBreaksHint": "Kumpletong pahinga pagkatapos ng ilang siklo.",
+    "interval": "Pagitan",
+    "every": "Dalas",
+    "durationLabel": "Tagal",
+    "behavior": "Pag-uugali",
+    "allowPostpone": "Payagan ang pag-postpone",
+    "signals": "Mga signal",
+    "sectionSignalsHint": "Tulungan ang Pauza na pumili ng tamang oras ng pag-abiso.",
+    "naturalBreaks": "Natural na break",
+    "naturalBreaksHint": "Auto-reset kapag matagal kang nawala.",
+    "resetAfter": "I-reset pagkatapos ng",
+    "dnd": "Huwag Gambalain",
+    "dndHint": "I-pause kapag aktibo ang focus mode ng system",
+    "sectionSurfaceHint": "Kontrolin ang intensity ng pagkaantala at posisyon ng break window.",
+    "sectionGeneralHint": "Minimal na pangkalahatang kagustuhan.",
+    "notificationsCategory": "Abiso at Postpone",
+    "notificationsCategoryHint": "Pamahalaan ang pre-notification timing at postpone rules.",
+    "surfaceCategory": "Pagkaantala at Layout",
+    "surfaceCategoryHint": "Kontrolin ang paraan ng pagpapakita, posisyon, at strictness.",
+    "smartPause": "Smart na pause",
+    "smartPauseHint": "Hinahanap muna ng Pauza ang natural na sandali, pagkatapos ay unti-unting nire-relax.",
+    "generalAndShortcuts": "Pangkalahatan at Shortcut",
+    "generalAndShortcutsHint": "Pamahalaan ang wika, auto-start, at mga shortcut.",
+    "advanced": "Advanced",
+    "sectionAdvancedHint": "Mas malalim na kontrol, compatibility options, at shortcut.",
+    "appExclusions": "Mga app exclusion",
+    "appExclusionsHint": "Mga app na nagpa-pause o nagpa-resume ng abiso.",
+    "appExclusionsEnable": "I-enable",
+    "appRulePause": "I-pause kapag nag-match",
+    "appRuleResume": "I-resume kapag nag-match lang",
+    "pause30": "I-pause ng 30 min",
+    "focus45": "Focus 45 min",
+    "resume": "Ituloy",
+    "clearFocus": "Tapusin ang focus",
+    "save": "I-save",
+    "revert": "Ibalik",
+    "defaults": "Default",
+    "preBreakNotifications": "Pre-notification",
+    "beforeLabel": "bago",
+    "postpone": "Mamaya",
+    "scheduleControl": "Kontrol ng iskedyul",
+    "resetScheduleHint": "Simulan muli ang timer mula ngayon.",
+    "postponeCategoryHint": "Magtakda ng hiwalay na postpone time at limitasyon para sa micro at mahabang break.",
+    "limitLabel": "Limitasyon",
+    "breakSurface": "Break window",
+    "breakDisplayMode": "Display mode",
+    "breakBackdrop": "Tema ng background",
+    "breakBackdropHint": "Pumili ng atmospheric background para sa break window.",
+    "breakBackdropPaper": "Papel",
+    "breakBackdropDawn": "Bukang-liwayway",
+    "breakBackdropForest": "Kagubatan",
+    "breakBackdropNight": "Gabi",
+    "breakBackdropCustom": "Custom",
+    "customWallpaper": "Custom na wallpaper",
+    "customWallpaperHint": "Mag-upload ng lokal na imahe bilang break background.",
+    "customWallpaperChoose": "Pumili ng imahe",
+    "customWallpaperReplace": "Palitan ang imahe",
+    "customWallpaperRemove": "Alisin",
+    "customWallpaperEmpty": "Walang napiling custom na wallpaper",
+    "customWallpaperEmptyHint": "Kapag walang imahe, gagamitin ang default na tema.",
+    "customWallpaperReady": "Ang imahe ay naka-compress at naka-save nang lokal bilang break background.",
+    "breakIdeas": "Mga tip sa break",
+    "breakIdeasHint": "Magpakita ng maikling tip sa bawat break.",
+    "breakSounds": "Mga tunog ng break",
+    "breakSoundsHint": "Mag-play ng tunog bago magsimula ang break at kapag natapos.",
+    "microbreakStartSound": "Tunog ng simula ng micro break",
+    "microbreakEndSound": "Tunog ng tapos ng micro break",
+    "longBreakStartSound": "Tunog ng simula ng mahabang break",
+    "longBreakEndSound": "Tunog ng tapos ng mahabang break",
+    "breakSoundVolume": "Volume",
+    "breakSoundSilence": "Tahimik",
+    "breakSoundCrystalGlass": "Crystal glass",
+    "breakSoundWindChime": "Wind chime",
+    "breakSoundTicToc": "Tic toc",
+    "breakSoundReverie": "Pangarap",
+    "reminderMode": "Reminder mode",
+    "reminderModeHint": "Smart ay naghahanap ng natural na sandali, forced ay agad na nag-interrupt.",
+    "reminderModeSmart": "Smart",
+    "reminderModeForced": "Forced",
+    "window": "Window",
+    "fullscreen": "Fullscreen",
+    "promptStyleGentle": "Malumanay",
+    "promptStyleBalanced": "Balanse",
+    "promptStyleImmersive": "Immersive",
+    "allScreens": "Lahat ng screen",
+    "screenPrimary": "Pangunahing screen",
+    "screenCursor": "Screen na may cursor",
+    "showTimeToBreakInTray": "Ipakita ang oras hanggang break sa status bar",
+    "currentTimeInBreaks": "Ipakita ang kasalukuyang oras sa break window",
+    "currentTimeInBreaksHint": "Ipakita ang system time sa kanang itaas.",
+    "strictModes": "Strict mode",
+    "strictModesHint": "Kontrolin kung maaaring i-skip ang break.",
+    "microbreakStrict": "Strict na micro break",
+    "longBreakStrict": "Strict na mahabang break",
+    "manualFinish": "Manual na pagtapos pagkatapos ng timer",
+    "showTrayMenuInStrictMode": "Ipakita ang menu sa strict mode",
+    "shortcuts": "Mga shortcut",
+    "shortcutsHint": "Iwanang blangko para i-disable. Hal.: CmdOrCtrl+Shift+P",
+    "shortcutReveal": "Buksan ang settings",
+    "shortcutFocus45": "Focus 45 min",
+    "shortcutPauseToggle": "Toggle pause",
+    "shortcutPause30": "Pause 30 min",
+    "shortcutPause60": "Pause 1 oras",
+    "shortcutPause120": "Pause 2 oras",
+    "shortcutPause300": "Pause 5 oras",
+    "shortcutSkipScheduled": "Laktawan sa susunod na break",
+    "shortcutSkipMicrobreak": "Laktawan sa micro break",
+    "shortcutSkipLongBreak": "Laktawan sa mahabang break",
+    "shortcutReset": "I-reset ang iskedyul",
+    "suffix": {
+      "secondsLong": "segundo",
+      "secondsBefore": "segundo bago",
+      "minutesApart": "minuto",
+      "cycles": "siklo",
+      "minutesLong": "minuto",
+      "minutesShortPostpone": "min",
+      "minutesLongPostpone": "min",
+      "minutesAway": "minuto",
+      "minutes": "min",
+      "times": "beses"
+    },
+    "status": {
+      "noBreakScheduled": "Walang naka-iskedyul na break",
+      "microbreak": "Micro break",
+      "longBreak": "Mahabang break",
+      "nextBreak": "{{label}} sa {{duration}}",
+      "focus": "Focus {{duration}}",
+      "pause": "Naka-pause {{duration}}",
+      "pauseForever": "Naka-pause nang walang hanggan",
+      "blockedBy": "Naka-pause dahil sa {{match}}",
+      "appRuleActive": "Aktibo ang app rule",
+      "dndActive": "Aktibo ang huwag gambalain"
+    },
+    "error": {
+      "loadState": "Hindi ma-load ang Pauza status"
+    },
+    "breakCopy": {
+      "clearedDetail": "Walang aktibong break ngayon.",
+      "manualAwaiting": "Tapos na ang oras. Tapusin muna ang break na ito bago bumalik sa trabaho.",
+      "awaitingFinish": "Naghihintay ng pagtapos",
+      "actions": {
+        "resumeWork": "Bumalik sa trabaho",
+        "done": "Tapos na",
+        "later": "Mamaya",
+        "skip": "Laktawan"
+      },
+      "defaultPrompt": {
+        "microbreak": "Tumayo, i-stretch ang balikat at leeg, tumingin sa malayo.",
+        "longBreak": "Umalis sa mesa ng ilang minuto para magpahinga ang katawan at isipan."
+      }
+    },
+    "previewAction": {
+      "save": "Preview: Na-update ang settings.",
+      "pause": "Preview: Naka-pause ng 30 min.",
+      "pauseForever": "Preview: Naka-pause nang walang hanggan.",
+      "focus": "Preview: Na-activate ang focus.",
+      "focusCleared": "Preview: Natapos ang focus.",
+      "resume": "Preview: Naituloy.",
+      "reset": "Preview: Na-reset ang iskedyul.",
+      "autostartOn": "Preview: Na-on ang auto-start.",
+      "autostartOff": "Preview: Na-off ang auto-start.",
+      "done": "Preview: Natapos ang break.",
+      "later": "Preview: Na-postpone ang break.",
+      "skip": "Preview: Na-skip ang break."
+    },
+    "preBreakSoundHint": "Malumanay na tunog bago matapos ang timer para matapos mo ang ginagawa.",
+    "previewSound": "Pakinggan",
+    "appExclusionsSearch": "Maghanap sa mga tumatakbong app",
+    "appExclusionsSearchPlaceholder": "Pangalan ng app…",
+    "appExclusionsSearchLoading": "Nilo-load…",
+    "appExclusionsSearchEmpty": "Walang resulta",
+    "appExclusionsManualHint": "I-type ang pangalan ng proseso (isa bawat linya)",
+    "appExclusionsAdd": "I-click para idagdag sa exclusion list"
   }
 }

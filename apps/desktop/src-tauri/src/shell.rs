@@ -21,6 +21,8 @@ const BREAK_WINDOW_PREFIX: &str = "break";
 const TRAY_ID: &str = "pauza-tray";
 const BREAK_WINDOW_DESTROY_DELAY_MS: u64 = 75;
 static LAST_TRAY_REFRESH_KEY: OnceLock<Mutex<Option<TrayRefreshKey>>> = OnceLock::new();
+static LAST_TRAY_MENU_TEXT_UPDATER: OnceLock<Mutex<Option<Box<dyn TrayMenuTextUpdater>>>> =
+    OnceLock::new();
 
 trait TrayMenuContainer<R: Runtime> {
     fn append_item(&self, item: &dyn IsMenuItem<R>) -> tauri::Result<()>;
@@ -35,6 +37,22 @@ impl<R: Runtime> TrayMenuContainer<R> for Menu<R> {
 impl<R: Runtime> TrayMenuContainer<R> for Submenu<R> {
     fn append_item(&self, item: &dyn IsMenuItem<R>) -> tauri::Result<()> {
         self.append(item)
+    }
+}
+
+trait TrayMenuTextUpdater: Send {
+    fn sync(&self, status: &str, detail: &str) -> Result<(), String>;
+}
+
+struct LiveTrayMenuTextUpdater<R: Runtime> {
+    status_item: MenuItem<R>,
+    detail_item: MenuItem<R>,
+}
+
+impl<R: Runtime> TrayMenuTextUpdater for LiveTrayMenuTextUpdater<R> {
+    fn sync(&self, status: &str, detail: &str) -> Result<(), String> {
+        self.status_item.set_text(status).map_err(app_error)?;
+        self.detail_item.set_text(detail).map_err(app_error)
     }
 }
 
@@ -183,6 +201,8 @@ pub fn show_break_window<R: Runtime>(app: &AppHandle<R>) -> Result<(), String> {
             let _ = window.unminimize();
             window.set_title(&title).map_err(app_error)?;
             window.show().map_err(app_error)?;
+            configure_break_window_native_behavior(&window, profile)?;
+            let _ = present_break_window(&window);
             if focusable {
                 let _ = window.set_focus();
             }
@@ -222,7 +242,8 @@ pub fn refresh_tray<R: Runtime>(app: &AppHandle<R>) -> Result<(), String> {
         }
 
         build_tray(&handle).map_err(app_error)
-    })
+    })?;
+    sync_tray_text(app)
 }
 
 pub fn refresh_tray_if_needed<R: Runtime>(app: &AppHandle<R>) -> Result<(), String> {
@@ -251,7 +272,7 @@ pub fn refresh_tray_if_needed<R: Runtime>(app: &AppHandle<R>) -> Result<(), Stri
         })?;
     }
 
-    Ok(())
+    sync_tray_text(app)
 }
 
 pub fn refresh_shortcuts<R: Runtime>(app: &AppHandle<R>) -> Result<(), String> {
@@ -323,6 +344,8 @@ fn build_tray<R: Runtime>(app: &AppHandle<R>) -> tauri::Result<()> {
         }
         let _ = patch_macos_tray_icon(&tray);
     }
+
+    let _ = sync_tray_text(app);
 
     Ok(())
 }
@@ -591,15 +614,87 @@ fn sync_tray_refresh_key<R: Runtime>(app: &AppHandle<R>) -> Result<(), String> {
     Ok(())
 }
 
-fn tray_refresh_key<R: Runtime>(app: &AppHandle<R>) -> TrayRefreshKey {
+fn sync_tray_text<R: Runtime>(app: &AppHandle<R>) -> Result<(), String> {
+    let Some(tray) = app.tray_by_id(TRAY_ID) else {
+        return Ok(());
+    };
+
+    let snapshot = tray_snapshot(app);
+    sync_tray_menu_text(&snapshot)?;
+    apply_tray_title(&tray, &snapshot)?;
+    apply_tray_tooltip(&tray, &snapshot)?;
+    Ok(())
+}
+
+fn register_tray_menu_text_updater<R: Runtime + 'static>(
+    status_item: MenuItem<R>,
+    detail_item: MenuItem<R>,
+) {
+    let cache = LAST_TRAY_MENU_TEXT_UPDATER.get_or_init(|| Mutex::new(None));
+    let mut updater = cache.lock().expect("tray menu text updater lock poisoned");
+    *updater = Some(Box::new(LiveTrayMenuTextUpdater {
+        status_item,
+        detail_item,
+    }));
+}
+
+fn sync_tray_menu_text(snapshot: &DesktopSnapshot) -> Result<(), String> {
+    let cache = LAST_TRAY_MENU_TEXT_UPDATER.get_or_init(|| Mutex::new(None));
+    let updater = cache.lock().expect("tray menu text updater lock poisoned");
+    if let Some(updater) = updater.as_ref() {
+        updater.sync(&snapshot.status, &snapshot.status_detail)?;
+    }
+    Ok(())
+}
+
+fn tray_snapshot<R: Runtime>(app: &AppHandle<R>) -> DesktopSnapshot {
     let state = app.state::<PauzaState>();
-    let settings = state.settings();
     let autostart_enabled = app.autolaunch().is_enabled().unwrap_or(false);
-    let snapshot = state.snapshot(
+    state.snapshot(
         std::env::consts::OS.to_string(),
         app.package_info().version.to_string(),
         autostart_enabled,
-    );
+    )
+}
+
+#[cfg(not(target_os = "windows"))]
+fn apply_tray_title<R: Runtime>(
+    tray: &tauri::tray::TrayIcon<R>,
+    snapshot: &DesktopSnapshot,
+) -> Result<(), String> {
+    tray.set_title(tray_title(snapshot, current_time_ms()))
+        .map_err(app_error)
+}
+
+#[cfg(target_os = "windows")]
+fn apply_tray_title<R: Runtime>(
+    _tray: &tauri::tray::TrayIcon<R>,
+    _snapshot: &DesktopSnapshot,
+) -> Result<(), String> {
+    Ok(())
+}
+
+#[cfg(not(target_os = "linux"))]
+fn apply_tray_tooltip<R: Runtime>(
+    tray: &tauri::tray::TrayIcon<R>,
+    snapshot: &DesktopSnapshot,
+) -> Result<(), String> {
+    tray.set_tooltip(Some(tray_tooltip(snapshot)))
+        .map_err(app_error)
+}
+
+#[cfg(target_os = "linux")]
+fn apply_tray_tooltip<R: Runtime>(
+    _tray: &tauri::tray::TrayIcon<R>,
+    _snapshot: &DesktopSnapshot,
+) -> Result<(), String> {
+    Ok(())
+}
+
+fn tray_refresh_key<R: Runtime>(app: &AppHandle<R>) -> TrayRefreshKey {
+    let snapshot = tray_snapshot(app);
+    let settings = snapshot.settings.clone();
+    let autostart_enabled = snapshot.autostart_enabled;
 
     TrayRefreshKey {
         status: snapshot.status.clone(),
@@ -676,6 +771,67 @@ fn natural_break_active(snapshot: &DesktopSnapshot) -> bool {
 
 fn duration_minute_bucket(ms: u64) -> u64 {
     ms.max(1).div_ceil(60_000)
+}
+
+fn tray_title(snapshot: &DesktopSnapshot, now: u64) -> Option<String> {
+    if !snapshot.settings.show_time_to_break_in_tray {
+        return None;
+    }
+
+    tray_countdown_ms(snapshot, now).map(format_tray_countdown)
+}
+
+fn tray_countdown_ms(snapshot: &DesktopSnapshot, now: u64) -> Option<u64> {
+    if let Some(current) = &snapshot.current_break {
+        if current.manual_awaiting {
+            return Some(0);
+        }
+
+        return Some(current.ends_at_ms.saturating_sub(now));
+    }
+
+    if let Some(remaining) = snapshot
+        .focus_until_ms
+        .map(|until| until.saturating_sub(now))
+        .filter(|remaining| *remaining > 0)
+    {
+        return Some(remaining);
+    }
+
+    if let Some(remaining) = snapshot
+        .pause_until_ms
+        .map(|until| until.saturating_sub(now))
+        .filter(|remaining| *remaining > 0)
+    {
+        return Some(remaining);
+    }
+
+    if snapshot.app_exclusion_active || snapshot.dnd_active || natural_break_active(snapshot) {
+        return None;
+    }
+
+    snapshot.next_break_in_ms.filter(|remaining| *remaining > 0)
+}
+
+fn format_tray_countdown(ms: u64) -> String {
+    let total_seconds = ms.div_ceil(1_000);
+    let hours = total_seconds / 3_600;
+    let minutes = (total_seconds % 3_600) / 60;
+    let seconds = total_seconds % 60;
+
+    if hours > 0 {
+        return format!("{hours}:{minutes:02}:{seconds:02}");
+    }
+
+    format!("{minutes}:{seconds:02}")
+}
+
+fn tray_tooltip(snapshot: &DesktopSnapshot) -> String {
+    if snapshot.status_detail.trim().is_empty() || snapshot.status == snapshot.status_detail {
+        return snapshot.status.clone();
+    }
+
+    format!("{}\n{}", snapshot.status, snapshot.status_detail)
 }
 
 fn current_time_ms() -> u64 {
@@ -794,7 +950,7 @@ fn create_tray_menu<R: Runtime>(app: &AppHandle<R>) -> tauri::Result<Menu<R>> {
     Ok(menu)
 }
 
-fn populate_tray_menu<R: Runtime, M: TrayMenuContainer<R>>(
+fn populate_tray_menu<R: Runtime + 'static, M: TrayMenuContainer<R>>(
     menu: &M,
     app: &AppHandle<R>,
     settings: &PauzaSettings,
@@ -812,6 +968,7 @@ fn populate_tray_menu<R: Runtime, M: TrayMenuContainer<R>>(
     )?;
     menu.append_item(&status_item)?;
     menu.append_item(&detail_item)?;
+    register_tray_menu_text_updater(status_item.clone(), detail_item.clone());
     menu.append_item(&PredefinedMenuItem::separator(app)?)?;
 
     let strict_locked = snapshot
@@ -1046,6 +1203,102 @@ fn set_break_window_fullscreen<R: Runtime>(
     }
 }
 
+#[cfg(target_os = "macos")]
+const BREAK_WINDOW_COLLECTION_BEHAVIOR_BITS: usize = (1 << 0) | (1 << 1) | (1 << 8);
+#[cfg(target_os = "macos")]
+const BREAK_WINDOW_LEVEL_HIGHEST: isize = 1000;
+
+#[cfg(target_os = "macos")]
+fn break_window_level(profile: BreakWindowProfile) -> isize {
+    let _ = profile;
+    BREAK_WINDOW_LEVEL_HIGHEST
+}
+
+#[cfg(target_os = "macos")]
+fn run_macos_native_break_window_patch<R: Runtime>(
+    window: &WebviewWindow<R>,
+    context: &'static str,
+    patch: impl FnOnce(*mut objc2::runtime::AnyObject) -> Result<(), String>,
+) -> Result<(), String> {
+    use objc2::{exception, runtime::AnyObject};
+    use std::panic::AssertUnwindSafe;
+
+    match exception::catch(AssertUnwindSafe(|| {
+        let ns_window = window.ns_window().map_err(app_error)? as *mut AnyObject;
+        if ns_window.is_null() {
+            return Ok(());
+        }
+        patch(ns_window)
+    })) {
+        Ok(result) => result,
+        Err(Some(exception)) => {
+            eprintln!(
+                "pauza: skipped macOS break window native patch during {context}: {exception:?}"
+            );
+            Ok(())
+        }
+        Err(None) => {
+            eprintln!(
+                "pauza: skipped macOS break window native patch during {context}: nil Objective-C exception"
+            );
+            Ok(())
+        }
+    }
+}
+
+#[cfg(target_os = "macos")]
+fn configure_break_window_native_behavior<R: Runtime>(
+    window: &WebviewWindow<R>,
+    profile: BreakWindowProfile,
+) -> Result<(), String> {
+    use objc2::{msg_send, runtime::AnyObject};
+    run_macos_native_break_window_patch(
+        window,
+        "configure_break_window_native_behavior",
+        move |ns_window: *mut AnyObject| {
+            unsafe {
+                let collection_behavior: usize = msg_send![ns_window, collectionBehavior];
+                let _: () = msg_send![
+                    ns_window,
+                    setCollectionBehavior: collection_behavior | BREAK_WINDOW_COLLECTION_BEHAVIOR_BITS
+                ];
+                let _: () = msg_send![ns_window, setLevel: break_window_level(profile)];
+            }
+
+            Ok(())
+        },
+    )
+}
+
+#[cfg(not(target_os = "macos"))]
+fn configure_break_window_native_behavior<R: Runtime>(
+    _window: &WebviewWindow<R>,
+    _profile: BreakWindowProfile,
+) -> Result<(), String> {
+    Ok(())
+}
+
+#[cfg(target_os = "macos")]
+fn present_break_window<R: Runtime>(window: &WebviewWindow<R>) -> Result<(), String> {
+    use objc2::{msg_send, runtime::AnyObject};
+    run_macos_native_break_window_patch(
+        window,
+        "present_break_window",
+        |ns_window: *mut AnyObject| {
+            unsafe {
+                let _: () = msg_send![ns_window, orderFrontRegardless];
+            }
+
+            Ok(())
+        },
+    )
+}
+
+#[cfg(not(target_os = "macos"))]
+fn present_break_window<R: Runtime>(_window: &WebviewWindow<R>) -> Result<(), String> {
+    Ok(())
+}
+
 fn break_window_targets<R: Runtime>(
     app: &AppHandle<R>,
     settings: &PauzaSettings,
@@ -1183,4 +1436,109 @@ fn break_windows<R: Runtime>(app: &AppHandle<R>) -> Vec<(String, WebviewWindow<R
         .into_iter()
         .filter(|(label, _)| label.starts_with(BREAK_WINDOW_PREFIX))
         .collect()
+}
+
+#[cfg(test)]
+mod tests {
+    use super::{
+        format_tray_countdown, tray_countdown_ms, tray_title, BreakWindowProfile,
+    };
+    use crate::state::{BreakKind, CurrentBreakSnapshot, DesktopSnapshot, PauzaSettings};
+
+    fn base_snapshot() -> DesktopSnapshot {
+        DesktopSnapshot {
+            product_name: "Pauza",
+            runtime: "Tauri 2".into(),
+            platform: "macos".into(),
+            app_version: "0.1.0".into(),
+            autostart_enabled: false,
+            settings: PauzaSettings::default(),
+            status: "Running".into(),
+            status_detail: "Next break soon".into(),
+            next_break_kind: Some(BreakKind::Microbreak),
+            next_break_due_ms: Some(1_000),
+            next_break_in_ms: Some(1_000),
+            current_break: None,
+            pause_until_ms: None,
+            paused_indefinitely: false,
+            focus_until_ms: None,
+            idle_ms: 0,
+            dnd_active: false,
+            app_exclusion_active: false,
+            app_exclusion_match: None,
+            last_action: String::new(),
+        }
+    }
+
+    #[test]
+    fn format_tray_countdown_uses_live_seconds() {
+        assert_eq!(format_tray_countdown(59_000), "0:59");
+        assert_eq!(format_tray_countdown(3_661_000), "1:01:01");
+    }
+
+    #[test]
+    fn tray_title_prefers_current_break_remaining() {
+        let mut snapshot = base_snapshot();
+        snapshot.next_break_in_ms = Some(120_000);
+        snapshot.current_break = Some(CurrentBreakSnapshot {
+            kind: BreakKind::Microbreak,
+            title: "Microbreak".into(),
+            detail: String::new(),
+            started_at_ms: 1_000,
+            ends_at_ms: 91_000,
+            duration_ms: 90_000,
+            strict_mode: false,
+            manual_awaiting: false,
+            can_postpone: true,
+            can_skip: true,
+            show_clock: false,
+        });
+
+        assert_eq!(tray_title(&snapshot, 1_000).as_deref(), Some("1:30"));
+    }
+
+    #[test]
+    fn blocked_states_hide_schedule_countdown() {
+        let mut snapshot = base_snapshot();
+        snapshot.next_break_in_ms = Some(45_000);
+        snapshot.dnd_active = true;
+
+        assert_eq!(tray_countdown_ms(&snapshot, 0), None);
+        assert_eq!(tray_title(&snapshot, 0), None);
+    }
+
+    #[test]
+    fn tray_title_respects_setting_toggle() {
+        let mut snapshot = base_snapshot();
+        snapshot.settings.show_time_to_break_in_tray = false;
+
+        assert_eq!(tray_title(&snapshot, 0), None);
+    }
+
+    #[cfg(target_os = "macos")]
+    #[test]
+    fn macos_break_window_native_overlay_policy_uses_expected_levels() {
+        let fullscreen = BreakWindowProfile {
+            width: 0,
+            height: 0,
+            x: 0,
+            y: 0,
+            decorations: false,
+            focusable: true,
+            always_on_top: true,
+            fullscreen: true,
+            skip_taskbar: true,
+        };
+        let windowed = BreakWindowProfile {
+            fullscreen: false,
+            ..fullscreen
+        };
+
+        assert_eq!(
+            super::BREAK_WINDOW_COLLECTION_BEHAVIOR_BITS,
+            (1 << 0) | (1 << 1) | (1 << 8)
+        );
+        assert_eq!(super::break_window_level(fullscreen), super::BREAK_WINDOW_LEVEL_HIGHEST);
+        assert_eq!(super::break_window_level(windowed), super::BREAK_WINDOW_LEVEL_HIGHEST);
+    }
 }

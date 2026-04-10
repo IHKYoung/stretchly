@@ -4,5 +4,5 @@
   "nativeLabel": "नेपाली",
   "fallback": "en",
   "direction": "ltr",
-  "desktopReady": false
+  "desktopReady": true
 }

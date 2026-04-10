@@ -36,13 +36,21 @@
 
 #### 智能提醒
 - 超过久坐时间后，如果用户还在操作电脑，先不打断。
-- 等到出现一个短空档后，再开始 break。
+- 先等一个更明显的空档；如果一直没有，再逐步放宽阈值，最后在 deadline 到达时开始 break。
 
 #### 强制提醒
 - 超过久坐时间后，立即开始 break。
 - 不看当前是否还在操作电脑。
 - 它同时代表“严格打断”。
 - 也就是：一旦开始，不再单独提供一个额外的“严格模式”概念给用户。
+
+### 2.1 提前提示（heads-up cue）
+- 提前提示不是第三种提醒方式，也不是另一个 break 状态机。
+- 它只是在 `due_at` 之前的短时间窗口里，给用户一个“快开始了”的可见 cue。
+- 对当前桌面端来说，它的主表面应该是：
+  - 设置页运行时状态
+  - tray 菜单 / tooltip / 状态文本
+- 系统通知可以保留为辅助，但不应成为唯一有效出口；否则一旦系统层抑制或用户没看到，就会退化成“设置存在但功能像死了一样”。
 
 ### 3. 自然休息
 - 自然休息也不是提醒方式。
@@ -93,12 +101,13 @@ stateDiagram-v2
     Timing --> Blocked: pause / focus / DND / app exclusion
     Timing --> NaturalBreak: natural breaks enabled\nidle_ms >= natural_break_threshold
     Timing --> BreakActive: due && forced
-    Timing --> BreakActive: due && smart && idle_ms >= opportunity_threshold
-    Timing --> WaitingForOpportunity: due && smart && idle_ms < opportunity_threshold
+    Timing --> BreakActive: due && smart && idle_ms >= current_opportunity_threshold
+    Timing --> WaitingForOpportunity: due && smart && idle_ms < current_opportunity_threshold
 
     WaitingForOpportunity --> Blocked: pause / focus / DND / app exclusion
     WaitingForOpportunity --> NaturalBreak: idle_ms >= natural_break_threshold
-    WaitingForOpportunity --> BreakActive: idle_ms >= opportunity_threshold
+    WaitingForOpportunity --> BreakActive: idle_ms >= current_opportunity_threshold
+    WaitingForOpportunity --> BreakActive: smart_wait_deadline_reached
 
     Blocked --> Timing: blocker cleared && schedule still valid
     Blocked --> NaturalBreak: blocker cleared && idle_ms >= natural_break_threshold
@@ -124,7 +133,7 @@ flowchart TD
     E -- no --> E1[保持 Timing]
     E -- yes --> F{提醒方式}
     F -- 强制提醒 --> G[立即开始 BreakActive]
-    F -- 智能提醒 --> H{idle_ms >= opportunity_threshold ?}
+    F -- 智能提醒 --> H{idle_ms >= current_opportunity_threshold ?}
     H -- yes --> G
     H -- no --> I[进入 WaitingForOpportunity]
 ```
@@ -160,7 +169,7 @@ tick(now):
     start_break()
     return
 
-  if idle_ms >= opportunity_threshold:
+  if idle_ms >= current_opportunity_threshold:
     start_break()
     return
 
@@ -175,23 +184,28 @@ if user_input_resumed():
   state = Timing
 ```
 
-## 推荐阈值
-为了先做减法，第一版建议只保留两类阈值：
+## 当前内置阈值曲线
+当前实现不再使用单一 `opportunity_threshold`，而是用“递减阈值 + 最终截止”的曲线：
 
-- `opportunity_threshold`
-  - 推荐默认值：`12s`
-  - 用途：判断用户是不是刚刚停下来，可以接受提醒。
+- 微休息：
+  - 等待 `0~15s`：要求连续空闲 `6s`
+  - 等待 `15~30s`：要求连续空闲 `3s`
+  - 等待 `30~45s`：要求连续空闲 `1s`
+  - 等待超过 `45s`：直接开始
+- 休息：
+  - 等待 `0~30s`：要求连续空闲 `8s`
+  - 等待 `30~60s`：要求连续空闲 `4s`
+  - 等待 `60~90s`：要求连续空闲 `1s`
+  - 等待超过 `90s`：直接开始
 - `natural_break_threshold`
   - 推荐默认值：`5min`
   - 用途：判断这段离开是否应该直接算作一次已完成休息。
 
-第一版建议：
+这样做的目标是：
 
-- 不区分 microbreak / long break 的不同机会阈值。
-- 不引入 soft nudge。
-- 不新增“连续等待多久再轻提醒一次”的第二层策略。
-
-如果以后需要更细化，再在这个最小模型之上追加，而不是一开始就把状态机做复杂。
+- 刚到点时先尽量等一个更自然的空档
+- 如果一直等不到，就逐步放宽条件
+- 但无论如何都不会无限等待
 
 ## 设置层建议
 
@@ -203,7 +217,7 @@ if user_input_resumed():
   - 保留开关语义
 
 ### 暂不暴露的设置
-- `opportunity_threshold`
+- `smart reminder` 的递减阈值曲线
 - `natural_break_threshold`
 
 第一版先固定默认值，先验证体验，不急着把所有阈值做进设置页。
@@ -228,8 +242,9 @@ if user_input_resumed():
 ## 两种提醒方式的用户语义
 
 ### 智能提醒
-- 到点后先等空档。
-- 目标是尽量少打断用户正在进行中的输入和操作。
+- 到点后先等更明显的空档。
+- 如果一直没有空档，就逐步放宽阈值。
+- 目标是尽量少打断用户正在进行中的输入和操作，同时避免提醒无限拖延。
 
 ### 强制提醒
 - 到点直接开始 break。
@@ -256,8 +271,9 @@ if user_input_resumed():
 1. 微休息到点。
 2. `idle_ms = 2s`，说明用户仍在持续操作。
 3. 系统进入 `WaitingForOpportunity`，不立刻弹窗。
-4. 用户停下来喝口水，`idle_ms = 14s`。
-5. 系统开始 break。
+4. 前 15 秒里，系统优先要求更明显的空档，例如连续空闲 `6s`。
+5. 如果一直没有出现，系统会把要求逐步放宽到 `3s`、再到 `1s`。
+6. 一旦达到当前阶段要求，或最终 deadline 到达，系统开始 break。
 
 ### 场景 2：强制提醒，用户正在连续输入
 1. 微休息到点。

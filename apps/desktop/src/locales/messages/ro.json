@@ -61,7 +61,7 @@
       "ourWebsite": "vizitați site-ul nostru",
       "dot": ".",
       "checkNewVersion": "Verificați automat actualizările aplicației",
-      "janH": "Clarke Young",
+      "clarkeY": "Clarke Young",
       "learnMore": "Pentru a afla mai multe despre funcțiile Pauza, vizualizați un tutorial, descărcați cea mai recentă versiune sau contactați-ne pentru asistență, "
     },
     "heart": {
@@ -220,86 +220,748 @@
     "afterMiniBreak_other": "după {{count}} pauze scurte"
   },
   "miniBreakIdeas": {
-    "aak": {
-      "text": "Ridică-te de pe scaun și întinde-te."
-    },
-    "aam": {
-      "text": "Ia-ți oportunitatea de a te gândi la ceva ce apreciezi."
-    },
-    "aaq": {
-      "text": "Închide ochii , identifică și numește lucrurile pe care le auzi."
-    },
-    "aad": {
-      "text": "Închide ochii, inspiră și expiră adânc de câteva ori."
-    },
-    "aae": {
-      "text": "Închide ochii și relaxează-te."
-    },
-    "aaf": {
-      "text": "Dezmorțeșteți picioarele."
-    },
-    "aag": {
-      "text": "Dezmorțeșteți mâinile."
-    },
-    "aah": {
-      "text": "Ești într-o postură corectă?"
-    },
-    "aai": {
-      "text": "Întoarce încet capul într-o parte și menține poziția pentru 10 secunde."
-    },
-    "aaj": {
-      "text": "Înclină încet capul într-o parte și menține poziția pentru 5-10 secunde."
-    },
-    "aal": {
-      "text": "Focalizează-ți privirea pe un obiect aflat la 20 de metri distanță de tine."
-    },
-    "aap": {
-      "text": "Închide ochii și numără frecvența respirațiilor."
-    },
     "aaa": {
-      "text": "Du-te bea un pahar cu apă."
+      "text": "Du-te și ia un pahar cu apă."
     },
     "aab": {
-      "text": "Uită-te lent cât de mult poți la stânga, apoi la dreapta."
+      "text": "Sticla de apă te judecă. Ia o gură."
     },
     "aac": {
-      "text": "Uită-te încet în sus cât de mult poți, apoi în jos."
+      "text": "Verificare hidratare: când ai băut apă ultima dată?"
+    },
+    "aad": {
+      "text": "Privește încet la stânga, apoi la dreapta."
+    },
+    "aae": {
+      "text": "Privește încet în sus, apoi în jos."
+    },
+    "aaf": {
+      "text": "Uită-te la ceva la 6 metri distanță timp de 20 de secunde — regula 20-20-20."
+    },
+    "aag": {
+      "text": "Clipește rapid de 20 de ori. Ochii tăi uscați îți mulțumesc."
+    },
+    "aah": {
+      "text": "Închide ochii și rotește ușor globii oculari în cercuri."
+    },
+    "aai": {
+      "text": "Cu ochii închiși — privește încet în sus spre tavan, apoi în jos."
+    },
+    "aaj": {
+      "text": "Cu ochii închiși — privește încet la stânga, apoi la dreapta."
+    },
+    "aak": {
+      "text": "Freacă palmele până se încălzesc, apoi pune-le ușor peste ochii închiși."
+    },
+    "aal": {
+      "text": "Privește pe fereastră 30 de secunde. Îți mai amintești de lumea de afară?"
+    },
+    "aam": {
+      "text": "Privește departe de ecran și focalizează pe ceva verde. Ochii adoră verdele."
     },
     "aan": {
-      "text": "Oferă-ți un moment de a zâmbi pentru că ești în viață."
+      "text": "Lasă puțină lumină naturală să-ți ajungă la ochi."
     },
     "aao": {
-      "text": "O stație de lucru cu adevărat ergonomică este una de care te îndepărtezi periodic."
+      "text": "Închide ochii și respiră adânc de câteva ori."
+    },
+    "aap": {
+      "text": "Închide ochii și relaxează-te."
+    },
+    "aaq": {
+      "text": "Închide ochii și numără-ți respirațiile."
     },
     "aar": {
-      "text": "Pune-ți vârful degetelor pe umeri. Rotește-ți umerii înainte timp de 10 secunde, apoi înapoi."
-    },
-    "aax": {
-      "text": "Dacă ai nevoie de ajutor, cere-l."
-    },
-    "aay": {
-      "text": "Fă un singur lucru la un moment dat."
-    },
-    "aba": {
-      "text": "Schimbă-ți postura de ședere."
+      "text": "Inspiră pe 4 timpi, ține 7, expiră pe 8. Tehnica clasică 4-7-8."
     },
     "aas": {
-      "text": "Ridică mâna dreaptă, întinde-o spre stânga folosindu-ți capul drept sprijin și menține poziția de întindere timp de 10 secunde. Apoi întinde la fel și mâna stângă."
+      "text": "Fă 3 respirații lente. Pe nas înăuntru, pe gură afară."
     },
     "aat": {
-      "text": "Cu mâna dreaptă, prindeți pe rând fiecare deget de la mâna stângă și aplicație presiune. Faceți același lucru și pentru degetele de la mâna dreaptă."
-    },
-    "aav": {
-      "text": "Închideți ochii și fii atent la orice îți vine în minte, fără critică."
+      "text": "Inspiră adânc până ți se umflă burta. Asta-i respirația diafragmatică."
     },
     "aau": {
-      "text": "Ridică-te și fă o fandare. Menține poziția timp de 10 secunde, apoi mai fă una cu celălalt picior."
+      "text": "Nu face absolut nimic timp de 20 de secunde. Mai greu decât pare."
+    },
+    "aav": {
+      "text": "Verifică-ți postura — umeri înapoi, picioare pe podea."
     },
     "aaw": {
-      "text": "Din 20 în 20 de minute, concentrează-ți privirea pe un obiect aflat la o distanță de 20 ft. (6 m)."
+      "text": "Schimbă-ți poziția de ședere."
+    },
+    "aax": {
+      "text": "Lasă umerii în jos. Au stat la urechi tot acest timp."
+    },
+    "aay": {
+      "text": "Relaxează maxilarul. Nu știai că era încleștat, nu-i așa?"
+    },
+    "aaz": {
+      "text": "Dreaptă-ți spatele. Imaginează-ți un fir care te trage în sus din creștetul capului."
+    },
+    "aba": {
+      "text": "Statul pe scaun e noul fumat. Ridică-te un minut."
     },
     "abb": {
-      "text": "Expuneți ochii luminii naturale."
+      "text": "Întoarce încet capul într-o parte și ține 10 secunde. Schimbă."
+    },
+    "abc": {
+      "text": "Înclină încet capul lateral și ține 5-10 secunde."
+    },
+    "abd": {
+      "text": "Trage ușor o ureche spre umăr. Simte întinderea gâtului."
+    },
+    "abe": {
+      "text": "Rotește gâtul într-un cerc lent și ușor."
+    },
+    "abf": {
+      "text": "Înclină capul în față, spate, stânga, dreapta. Reset complet."
+    },
+    "abg": {
+      "text": "Rotește umerii înainte 10 secunde, apoi înapoi."
+    },
+    "abh": {
+      "text": "Ridică umerii la urechi și lasă-i să cadă. Repetă de 5 ori."
+    },
+    "abi": {
+      "text": "Strânge omoplații și ține 5 secunde."
+    },
+    "abj": {
+      "text": "Ridică brațul drept peste cap, înclină-te la stânga, ține 10 secunde. Schimbă."
+    },
+    "abk": {
+      "text": "Trece un braț peste piept și trage-l cu cealaltă mână. Schimbă."
+    },
+    "abl": {
+      "text": "Ține un braț drept în sus, cu celălalt împinge ușor cotul înapoi. Ține 10 secunde. Schimbă."
+    },
+    "abm": {
+      "text": "Împletește degetele la spate și deschide pieptul."
+    },
+    "abn": {
+      "text": "Împletește degetele și împinge palmele spre tavan. Întinde-te!"
+    },
+    "abo": {
+      "text": "Ține brațele drept în laterale. Fă cercuri mici. Arde mai repede decât crezi."
+    },
+    "abp": {
+      "text": "Scutură mâinile pentru a elibera tensiunea."
+    },
+    "abq": {
+      "text": "Atinge fiecare vârf de deget de degetul mare, formând un O."
+    },
+    "abr": {
+      "text": "Strânge pumnul, apoi deschide și întinde degetele."
+    },
+    "abs": {
+      "text": "Strânge pumnul, apoi deschide palma ca și cum ai spune stop."
+    },
+    "abt": {
+      "text": "Apasă fiecare deget de la mâna stângă cu dreapta. Schimbă."
+    },
+    "abu": {
+      "text": "Întinde-ți încheieturile — întinde brațul și trage ușor degetele înapoi."
+    },
+    "abv": {
+      "text": "Rotește încheieturile de 10 ori în sensul acelor de ceas, apoi invers."
+    },
+    "abw": {
+      "text": "Pune palma plat pe birou și desfă ușor degetele."
+    },
+    "abx": {
+      "text": "Bate cu degetele pe birou unul câte unul, de la degetul mic la degetul mare. Acum invers."
+    },
+    "aby": {
+      "text": "Fă-ți un masaj la mâini. Ai meritat."
+    },
+    "abz": {
+      "text": "Ridică-te și întinde-te. Coloana ta a așteptat."
+    },
+    "aca": {
+      "text": "Stai pe marginea scaunului, rotește trunchiul într-o parte, ține 10 secunde. Schimbă."
+    },
+    "acb": {
+      "text": "Arcuiește spatele ca o pisică, apoi lasă-l să cadă. Stretching pisică-vacă, ediția de birou."
+    },
+    "acc": {
+      "text": "Pune ambele mâini în spatele taliei și arcuiește-te ușor înapoi."
+    },
+    "acd": {
+      "text": "Stai cu spatele la perete și alunecă încet brațele sus și jos — îngeri de perete."
+    },
+    "ace": {
+      "text": "Întinde-ți picioarele."
+    },
+    "acf": {
+      "text": "Ridică-te și fă un fandare. Ține 10 secunde pe fiecare picior."
+    },
+    "acg": {
+      "text": "Ridică-te și fă câteva genuflexiuni. Scaunul e chiar în spatele tău dacă merge prost."
+    },
+    "ach": {
+      "text": "Fă 10 ridicări pe vârfuri la birou. Fitness stealth."
+    },
+    "aci": {
+      "text": "Întinde un picior drept înainte stând pe scaun. Ține 10 secunde. Schimbă."
+    },
+    "acj": {
+      "text": "Rotește gleznele în cercuri — în sensul acelor de ceas, apoi invers."
+    },
+    "ack": {
+      "text": "Flexează și întinde picioarele de 10 ori. Gleznele tale au fost neglijate."
+    },
+    "acl": {
+      "text": "Stai pe un picior 30 de secunde. Schimbă. Echilibrul e o abilitate."
+    },
+    "acm": {
+      "text": "Mișcă degetele de la picioare în pantofi. Da, pe toate."
+    },
+    "acn": {
+      "text": "Ridică-te și marșează pe loc 30 de secunde."
+    },
+    "aco": {
+      "text": "Fă câteva flotări de perete. Nu se uită nimeni. Probabil."
+    },
+    "acp": {
+      "text": "Fă 5 dips pe marginea scaunului."
+    },
+    "acq": {
+      "text": "Contractă și relaxează fiecare mușchi de la degete la frunte. Reset complet."
+    },
+    "acr": {
+      "text": "Strânge fața 5 secunde, apoi relaxează. Tensiunea facială: dispărută."
+    },
+    "acs": {
+      "text": "Stai într-un cadru de ușă și apleacă-te ușor înainte pentru a întinde pieptul."
+    },
+    "act": {
+      "text": "Închide ochii și denumește sunetele pe care le auzi."
+    },
+    "acu": {
+      "text": "Închide ochii și observă ce-ți vine în minte, fără să judeci."
+    },
+    "acv": {
+      "text": "Gândește-te la ceva pentru care ești recunoscător acum."
+    },
+    "acw": {
+      "text": "Zâmbește. Ești în viață, și asta-i destul de mișto."
+    },
+    "acx": {
+      "text": "Fă o poză mentală a felului în care se simte corpul tău. Locuri tensionate?"
+    },
+    "acy": {
+      "text": "Gândește-te la ceva drăguț pe care i-ai spune unui prieten, apoi spune-ți-o ție."
+    },
+    "acz": {
+      "text": "Observă 5 lucruri din cameră la care nu ai mai fost atent niciodată."
+    },
+    "ada": {
+      "text": "Închide ochii și imaginează-ți locul tău fericit timp de 20 de secunde."
+    },
+    "adb": {
+      "text": "Pune telefonul cu ecranul în jos 60 de secunde. Nu se întâmplă nimic. Promit."
+    },
+    "adc": {
+      "text": "Tastatura nu te va duce dorul. Ridică-te."
+    },
+    "add": {
+      "text": "Spatele tău tocmai a depus o plângere oficială. E timpul să te întinzi."
+    },
+    "ade": {
+      "text": "Privește în sus de la ecran. Plot twist: lumea e 3D."
+    },
+    "adf": {
+      "text": "Cască. Chiar și un căscat fals declanșează unul real. Încearcă."
+    },
+    "adg": {
+      "text": "Deschide gura larg, apoi închide-o încet. Tensiunea maxilarului: eliberată."
+    },
+    "adh": {
+      "text": "Îmbrățișează-te. Încrucișează brațele și strânge. Nu e ciudat, e self-care."
+    },
+    "adi": {
+      "text": "Mini pauză de dans — doar 10 secunde. Știi că vrei."
+    },
+    "adj": {
+      "text": "Fă ca și cum tragi de o funie deasupra capului. Întindere laterală activată."
+    },
+    "adk": {
+      "text": "Apasă palmele una de alta în fața pieptului și ține. Namaste, programatorule."
+    },
+    "adl": {
+      "text": "Masează-ți tâmplele în cercuri mici timp de 10 secunde. Calm instant."
+    },
+    "adm": {
+      "text": "Monitorul tău a sunat. Zice că ai stat prea aproape prea mult timp."
     }
+  },
+  "longBreakIdeas": {
+    "aaa": {
+      "title": "Mai bine împreună",
+      "text": "Ți-e greu să iei pauze singur? Încearcă să faci pauza cu un coleg. Veți respecta mai bine programul — și vă puteți plânge împreună de deadlines. Studiile arată că pauzele sociale cresc productivitatea."
+    },
+    "aab": {
+      "title": "Pași departe",
+      "text": "Ai observat vreodată că cele mai bune idei vin sub duș? Asta pentru că creierul rezolvă probleme în fundal. Îndepărtează-te de ecran și gândește-te la ceva complet diferit."
+    },
+    "aac": {
+      "title": "Micropauze",
+      "text": "Pauzele scurte și frecvente reduc leziunile de suprasolicitare și mențin sistemul musculoscheletal sănătos. Gândește-te la ele ca la întreținerea mașinăriei umane."
+    },
+    "aad": {
+      "title": "Meditație",
+      "text": "Meditația mindfulness reduce anxietatea, stresul și chiar durerea fizică. Nu știi de unde să începi? Chiar și 5 minute de respirație concentrată contează. Există zeci de aplicații gratuite."
+    },
+    "aae": {
+      "title": "Clipește mai mult",
+      "text": "Clipești cu până la 66% mai puțin când te uiți la ecrane, iar asta îți usucă ochii. Clipește rapid de câteva ori pentru a reîmprospăta filmul lacrimal. Ochii tăi fac atâtea pentru tine — întoarce-le favoarea."
+    },
+    "aaf": {
+      "title": "Ergonomia biroului",
+      "text": "Monitor la nivelul ochilor, tastatură la înălțimea cotului, picioare pe podea. Ergonomia proastă produce daune reale în timp. Petrece 2 minute verificându-ți setup-ul."
+    },
+    "aag": {
+      "title": "Workout de birou",
+      "text": "Nu ai nevoie de sală ca să te miști. Marșează pe loc, fă flotări de birou sau câteva genuflexiuni. Chiar și 60 de secunde de mișcare îți resetează nivelul de energie."
+    },
+    "aah": {
+      "title": "Schimbă poziția",
+      "text": "Ai un birou reglabil sau o minge de echilibru? Acum e un moment bun să schimbi. Alternarea între stat jos și în picioare reduce oboseala și activează mușchii."
+    },
+    "aai": {
+      "title": "Citește semnele",
+      "text": "Visezi cu ochii deschiși? Greu de concentrat? Recitești aceeași linie? E modul politicos al creierului de a spune: ia o pauză deja."
+    },
+    "aaj": {
+      "title": "Plimbare fără tech",
+      "text": "Lasă telefonul și fă o plimbare scurtă. Fără podcasturi, fără muzică — doar tu și gândurile tale. Surprinzător de revigorant într-o lume de input constant."
+    },
+    "aak": {
+      "title": "Problema statului",
+      "text": "Statul prelungit crește riscul de boli cardiace, diabet și probleme de spate. O plimbare de 5 minute la fiecare oră poate contracara semnificativ aceste efecte. Corpul tău a fost construit să se miște."
+    },
+    "aal": {
+      "title": "Ședințe pe jos",
+      "text": "Data viitoare când ai un one-on-one, propune o plimbare în loc să stați. Cercetările Stanford arată că ședințele pe jos cresc creativitatea cu până la 60%."
+    },
+    "aam": {
+      "title": "Gustare conștientă",
+      "text": "Ia o bucată de fruct și mănânc-o încet. Observă gustul, textura și prospețimea. E o mini-meditație deghizată în gustare."
+    },
+    "aan": {
+      "title": "Pauza de cafea",
+      "text": "Mergi după cafea? Transformă-o într-o plimbare de 5 minute. Două muște dintr-o lovitură — cu o cafea în mână, bineînțeles."
+    },
+    "aao": {
+      "title": "Creierul tău în pauze",
+      "text": "Un studiu NIH a descoperit că creierul nostru repetă și consolidează abilitățile noi în timpul odihnei — nu în timpul exersării. Pauzele te fac literalmente mai bun la ceea ce faci."
+    },
+    "aap": {
+      "title": "Mișcă-te puțin, câștigă mult",
+      "text": "Chiar și cantități mici de exerciții regulate reduc dramatic stresul și îmbunătățesc dispoziția. Nu ai nevoie de o oră — 10 minute de mișcare îți pot schimba toată ziua."
+    },
+    "aaq": {
+      "title": "Rutină de stretching",
+      "text": "Ai găsit un set de exerciții de stretching care-ți plac? Repetă-le de mai multe ori pe parcursul zilei. Constanța bate intensitatea când combați efectele statului prelungit."
+    },
+    "aar": {
+      "title": "Cercuri cu încheieturile",
+      "text": "Întinde brațele cu palmele spre tine, apoi rotește încet mâinile — de 4 ori în sens orar, de 4 ori invers. Încheieturile tale suportă mai mult stres decât crezi."
+    },
+    "aas": {
+      "title": "Întindere peste cap",
+      "text": "Împletește degetele la ceafă, apoi ridică-le deasupra capului cu palmele spre tavan. Ține 10 secunde. Simte cum spatele se trezește."
+    },
+    "aat": {
+      "title": "Regula 30/1",
+      "text": "La fiecare 30 de minute stat jos, mișcă-te cel puțin 1 minut. Pune un cronometru dacă e nevoie. Obiceiurile mici se acumulează în beneficii mari pentru sănătate."
+    },
+    "aau": {
+      "title": "Antrenament de 7 minute",
+      "text": "Un antrenament pentru tot corpul în doar 7 minute. E susținut de știință și nu necesită echipament. Există multe aplicații gratuite care te ghidează."
+    },
+    "aav": {
+      "title": "Ridică-ți pulsul",
+      "text": "Țintește 20 de minute de puls ridicat (în jur de 120 bpm), de 4-5 ori pe săptămână. Nu contează ce faci — dans, alergat, joacă cu câinele. Inima ta nu judecă."
+    },
+    "aaw": {
+      "title": "Ia scările",
+      "text": "Urcatul scărilor e clasificat ca exercițiu intens și arde mai multe calorii pe minut decât joggingul. Data viitoare, sari peste lift. Picioarele se plâng, dar inima sărbătorește."
+    },
+    "aax": {
+      "title": "Creează ceva",
+      "text": "Art terapia e dovedită că reduce stresul. Scrie un haiku, desenează un monstru, fotografiază ceva frumos. Creativitatea e un buton de reset pentru creier."
+    },
+    "aay": {
+      "title": "Fă ordine",
+      "text": "Un birou dezordonat se corelează cu stres mai mare. Petrece 5 minute organizându-ți spațiul de lucru. Birou curat, minte limpede."
+    },
+    "aaz": {
+      "title": "Mănâncă afară",
+      "text": "Natura reduce cortizolul, hormonul stresului. Ia pauza de prânz afară când e posibil. Chiar și a sta lângă o fereastră cu vedere la verdeață ajută."
+    },
+    "aba": {
+      "title": "Puterea căscatului",
+      "text": "Căscatul nu e doar plictiseală — răcește creierul și produce lacrimi care lubrifică ochii. Hai, fă un căscat fals mare. Corpul îl va face real."
+    },
+    "abb": {
+      "title": "Schimbarea focusului",
+      "text": "Ține un deget aproape de față și focalizează. Mișcă-l încet departe, privește în depărtare, apoi înapoi. Asta exercită mușchii care controlează lentila ochiului."
+    },
+    "abc": {
+      "title": "Palming ocular",
+      "text": "Pune palmele calde peste ochii închiși și sprijină coatele pe birou. Respiră lent. Chiar 30 de secunde de întuneric dau sistemului vizual un reset."
+    },
+    "abd": {
+      "title": "Strânge ceva",
+      "text": "Ia o minge antistres, o pereche de șosete, sau orice se poate strânge. Ține 5 secunde, eliberează, repetă. Eliberează tensiunea din mâini și e surprinzător de satisfăcător."
+    },
+    "abe": {
+      "title": "Respirație lentă",
+      "text": "Respirația controlată lentă (aproximativ 6 respirații pe minut) activează sistemul nervos parasimpatic, reducând tensiunea arterială și anxietatea. E ca un update de software pentru sistemul nervos."
+    },
+    "abf": {
+      "title": "Vizualizare",
+      "text": "Închide ochii și imaginează-ți un loc liniștit — o plajă, o pădure, un vârf de munte. Concentrează-te pe sunete, mirosuri și senzații. Mini vacanță mentală, zero costuri de călătorie."
+    },
+    "abg": {
+      "title": "5-4-3-2-1 grounding",
+      "text": "Te simți copleșit? Numește 5 lucruri pe care le vezi, 4 pe care le poți atinge, 3 pe care le auzi, 2 pe care le miroși, 1 pe care-l guști. Tehnica de grounding te readuce în prezent."
+    },
+    "abh": {
+      "title": "Știința power nap",
+      "text": "Un pui de somn de 10-20 de minute crește vigilența și performanța fără somnolență. NASA a descoperit că piloții care au dormit 26 de minute și-au îmbunătățit performanța cu 34%. Destul de bun pentru astronauți, destul de bun pentru tine."
+    },
+    "abi": {
+      "title": "Resetul Pomodoro",
+      "text": "Lucrează 25 de minute, pauză 5. După patru runde, ia o pauză mai lungă. Tehnica Pomodoro nu e doar un hack de productivitate — e o strategie de conservare a sănătății mintale."
+    },
+    "abj": {
+      "title": "Pauza de desen",
+      "text": "Desenatul în timpul pauzelor îmbunătățește concentrarea și memoria cu până la 29%, conform unui studiu din Applied Cognitive Psychology. Ia un pix și lasă mâna să se plimbe."
+    },
+    "abk": {
+      "title": "Pauza de o melodie",
+      "text": "Pune melodia ta preferată și ascult-o cu adevărat — nu ca zgomot de fundal, ci ca evenimentul principal. Muzica activează sistemul de recompensă al creierului și reduce cortizolul."
+    },
+    "abl": {
+      "title": "Moment de recunoștință",
+      "text": "Scrie 3 lucruri pentru care ești recunoscător chiar acum. Studiile arată că practica regulată a recunoștinței reprogramează creierul pentru pozitivitate și reduce hormonii de stres."
+    },
+    "abm": {
+      "title": "Reset cu apă rece",
+      "text": "Stropește-te pe față cu apă rece sau ține un pahar rece la încheieturi. Frigul declanșează reflexul de scufundare, care scade pulsul și calmează sistemul nervos instant."
+    },
+    "abn": {
+      "title": "Vorbește cu o plantă",
+      "text": "Ai o plantă pe birou? Verifică-o. Udă-o, întoarce-o. Dacă nu ai una, poate-i timpul. Plantele reduc stresul și îmbunătățesc calitatea aerului. Colegii tăcuți perfecți."
+    },
+    "abo": {
+      "title": "Brain dump",
+      "text": "Ia o foaie și scrie tot ce ai pe suflet — sarcini, griji, gânduri aleatorii. Scoaterea din cap pe hârtie eliberează RAM-ul mental."
+    },
+    "abp": {
+      "title": "Mângâie-ți animalul",
+      "text": "Lucrezi de acasă cu un animal de companie? Ia un minut să-l mângâi. Mângâiatul animalelor scade cortizolul și crește oxitocina. E stres-relief aprobat de știință."
+    },
+    "abq": {
+      "title": "Terapia râsului",
+      "text": "Uită-te la un video amuzant de 2 minute sau citește câteva glume. Râsul declanșează endorfine, scade hormonii de stres și relaxează mușchii până la 45 de minute."
+    },
+    "abr": {
+      "title": "Aer proaspăt",
+      "text": "Deschide o fereastră sau ieși afară 60 de secunde. Aerul proaspăt crește oxigenul din creier, îmbunătățind concentrarea, serotonina și energia."
+    },
+    "abs": {
+      "title": "Scanare corporală",
+      "text": "Începe de la degete și mută-ți încet atenția în sus prin corp. Observă unde ții tensiune. Recunoaște, respiră adânc, și lasă-o să plece."
+    },
+    "abt": {
+      "title": "Yoga de birou",
+      "text": "Pisică-vacă pe scaun, răsucire spinală, aplecarea înainte — poți face yoga fără să părăsești scaunul. Coloana ta nu se interesează de ținută, vrea doar să se miște."
+    },
+    "abu": {
+      "title": "Citește o pagină",
+      "text": "Ține o carte aproape și citește o singură pagină în pauză. Ficțiunea îți transportă mintea altundeva. Non-ficțiunea o hrănește cu ceva nou. Oricum câștigi."
+    },
+    "abv": {
+      "title": "Ciclul de 90 de minute",
+      "text": "Creierul funcționează în cicluri ultradiene de 90 de minute cu energie înaltă și scăzută. Lucrul cu aceste ritmuri naturale, nu împotriva lor, te face mai productiv și mai puțin epuizat."
+    },
+    "abw": {
+      "title": "Pauza de curiozitate",
+      "text": "Caută un fapt aleatoriu despre ceva ce te interesează. A învăța ceva nou în pauză activează circuitele de recompensă ale creierului diferit față de muncă."
+    },
+    "abx": {
+      "title": "Respirație box",
+      "text": "Inspiră pe 4 timpi, ține 4, expiră pe 4, ține 4. Folosită de Navy SEALs pentru a rămâne calmi sub presiune. Dacă funcționează pentru ei, funcționează și pentru inbox-ul tău."
+    },
+    "aby": {
+      "title": "Dansează",
+      "text": "Pune o melodie și dansează tot numărul. Închide ușa dacă trebuie. Dansul eliberează endorfine, îmbunătățește coordonarea și te face să te simți viu. Nimeni nu arată cool dansând singur, și ăsta-i tot farmecul."
+    },
+    "abz": {
+      "title": "Sună pe cineva",
+      "text": "Folosește pauza ca să suni pe cineva drag — doar ca să spui bună. Conexiunea socială e unul din cei mai puternici predictori ai fericirii și longevității."
+    },
+    "aca": {
+      "title": "Doză de soare",
+      "text": "Ia 10-15 minute de soare când e posibil. Reglează ritmul circadian, crește producția de vitamina D și îmbunătățește dispoziția. Și corpul tău funcționează cu energie solară."
+    },
+    "acb": {
+      "title": "Relaxare progresivă",
+      "text": "Tensionează fiecare grup muscular 5 secunde, apoi eliberează. Începe cu picioarele, urcă la gambe, coapse, abdomen, mâini, brațe, umeri și față. Eliberare totală a tensiunii în sub 3 minute."
+    },
+    "acc": {
+      "title": "Moment desculț",
+      "text": "Scoate-ți pantofii și simte podeaua sub picioare. Dacă poți, calcă pe iarbă. Grounding-ul s-a dovedit că reduce inflamația și îmbunătățește somnul."
+    },
+    "acd": {
+      "title": "Scrie-i viitorului tău eu",
+      "text": "Scrie o notă rapidă viitorului tău — un obiectiv, o dorință, un reminder. Construiește continuitatea sinelui și te ține conectat la ce contează dincolo de lista de azi."
+    },
+    "ace": {
+      "title": "Declutter digital",
+      "text": "Închide toate tab-urile pe care nu le folosești. Notificări necitite? Șterge-le. Dezordinea digitală creează sarcină cognitivă, la fel ca dezordinea fizică."
+    },
+    "acf": {
+      "title": "Regula de 2 minute",
+      "text": "Dacă ceva la care te gândești durează mai puțin de 2 minute, fă-o acum. Rezolvarea sarcinilor mici elimină greutatea mentală a treburilor neterminate."
+    },
+    "acg": {
+      "title": "Audit de postură",
+      "text": "Stai lângă un perete cu călcâiele, fesele, umerii și capul atingând-ul. Așa se simte postura bună. Încearcă să recreezi senzația când te așezi înapoi."
+    },
+    "ach": {
+      "title": "Pauza de miros",
+      "text": "Miroase ceva plăcut — boabe de cafea, o lumânare, uleiuri esențiale sau aer proaspăt. Mirosul e conectat direct la creierul emoțional și îți poate schimba starea instant."
+    },
+    "aci": {
+      "title": "Privitul norilor",
+      "text": "Dacă poți vedea cerul, petrece un minut urmărind norii. E screensaver-ul original — și dă creierului tău acel focus moale care promovează gândirea creativă."
+    }
+  },
+  "ui": {
+    "loading": "Se încarcă Pauza…",
+    "preview": {
+      "status": "Previzualizare",
+      "detail": "Previzualizare browser",
+      "action": "Mod de previzualizare activ."
+    },
+    "title": "Pauza",
+    "heroHeadline": "Menține ritmul de lucru cu o interfață liniștită",
+    "heroSubtitle": "Cele mai importante setări în față, opțiunile avansate în spate.",
+    "settingsCategories": "Categorii de setări",
+    "settingsCategoriesHint": "Schimbă categoria din stânga, vezi setările din dreapta.",
+    "currentCategory": "Categoria curentă",
+    "overview": "Prezentare generală",
+    "overviewHint": "Rezumat stare, acțiuni recente și acces rapid.",
+    "liveOverview": "Prezentare în timp real",
+    "liveOverviewHint": "Ritmul curent, starea aplicației și fereastra de pauză dintr-o privire.",
+    "quickActions": "Acțiuni rapide",
+    "quickActionsHint": "Aceste acțiuni afectează direct ritmul în curs.",
+    "savePanel": "Salvează modificările",
+    "savePanelHint": "Modificările se aplică doar după salvare.",
+    "nextBreakLabel": "Următoarea pauză",
+    "currentBreakLabel": "Pauza curentă",
+    "lastActionLabel": "Ultima acțiune",
+    "runtimeLabel": "Mediu",
+    "platformLabel": "Platformă",
+    "versionLabel": "Versiune",
+    "breakFeelLabel": "Stilul pauzei",
+    "placementLabel": "Poziția ferestrei",
+    "pendingChanges": "Modificări nesalvate",
+    "synced": "Sincronizat",
+    "saving": "Se salvează…",
+    "allSet": "Gata",
+    "noCurrentBreak": "Nicio pauză activă",
+    "liveSignals": "Semnale în timp real",
+    "general": "General",
+    "preferences": "Preferințe",
+    "currentStatus": "Stare curentă",
+    "language": "Limbă",
+    "languageChinese": "Chineză simplificată",
+    "languageEnglish": "Engleză",
+    "launchOnLogin": "Pornire la autentificare",
+    "enabled": "Activat",
+    "disabled": "Dezactivat",
+    "schedule": "Ritm",
+    "interruptions": "Memento-uri și întreruperi",
+    "sectionScheduleHint": "Doar setările de ritm pe care le ajustezi zilnic.",
+    "microbreaks": "Micropauze",
+    "microbreaksHint": "Scurte întreruperi în timpul lucrului.",
+    "longBreaks": "Pauze",
+    "longBreaksHint": "Pauză completă de ecran după mai multe cicluri.",
+    "interval": "Interval",
+    "every": "Frecvență",
+    "durationLabel": "Durată",
+    "behavior": "Comportament",
+    "allowPostpone": "Permite amânarea",
+    "signals": "Semnale",
+    "sectionSignalsHint": "Lasă Pauza să decidă mai inteligent când să afișeze memento-urile.",
+    "naturalBreaks": "Pauze naturale",
+    "naturalBreaksHint": "Resetare automată după o absență suficient de lungă.",
+    "resetAfter": "Resetează după",
+    "dnd": "Nu deranja",
+    "dndHint": "Suspendă memento-urile când acest mod este activ",
+    "sectionSurfaceHint": "Controlează intensitatea întreruperii și poziția ferestrei de pauză.",
+    "sectionGeneralHint": "Câteva preferințe globale. Minimalist în mod implicit.",
+    "notificationsCategory": "Memento-uri și amânare",
+    "notificationsCategoryHint": "Sunet înainte de pauză. Opțiuni de amânare aici.",
+    "surfaceCategory": "Întrerupere și afișare",
+    "surfaceCategoryHint": "Intensitatea, poziția și strictețea ferestrei de pauză.",
+    "smartPause": "Pauză inteligentă",
+    "smartPauseHint": "Pauza caută mai întâi un moment evident și scade treptat pragul.",
+    "generalAndShortcuts": "General și comenzi rapide",
+    "generalAndShortcutsHint": "Gestionează limba, pornirea automată și comenzile rapide globale.",
+    "advanced": "Avansat",
+    "sectionAdvancedHint": "Mai mult control, opțiuni de compatibilitate și comenzi rapide.",
+    "appExclusions": "Excepții aplicații",
+    "appExclusionsHint": "Aplicații pentru care memento-urile sunt suspendate sau reluate.",
+    "appExclusionsEnable": "Activare",
+    "appRulePause": "Suspendă la potrivire",
+    "appRuleResume": "Reia doar la potrivire",
+    "pause30": "Pauză 30 min",
+    "focus45": "Concentrare 45 min",
+    "resume": "Reia",
+    "clearFocus": "Termină concentrarea",
+    "save": "Salvare",
+    "revert": "Anulare",
+    "defaults": "Valori implicite",
+    "preBreakNotifications": "Sunet de avertizare",
+    "beforeLabel": "Înainte",
+    "postpone": "Amână",
+    "scheduleControl": "Control ritm",
+    "resetScheduleHint": "Recalculează următoarele pauze de acum.",
+    "postponeCategoryHint": "Setează separat durata și limita amânărilor.",
+    "limitLabel": "Limită",
+    "breakSurface": "Fereastra de pauză",
+    "breakDisplayMode": "Mod afișare",
+    "breakBackdrop": "Temă de fundal",
+    "breakBackdropHint": "Alege un fundal atmosferic pentru fereastra de pauză.",
+    "breakBackdropPaper": "Hârtie",
+    "breakBackdropDawn": "Zori",
+    "breakBackdropForest": "Pădure",
+    "breakBackdropNight": "Noapte",
+    "breakBackdropCustom": "Fundal personalizat",
+    "customWallpaper": "Fundal personalizat",
+    "customWallpaperHint": "Încarcă o imagine locală ca fundal al ferestrei de pauză.",
+    "customWallpaperChoose": "Alege imagine",
+    "customWallpaperReplace": "Înlocuiește imagine",
+    "customWallpaperRemove": "Elimină",
+    "customWallpaperEmpty": "Niciun fundal personalizat selectat",
+    "customWallpaperEmptyHint": "Fără imagine, tema implicită va fi folosită.",
+    "customWallpaperReady": "Imaginea este comprimată și salvată local ca fundal de pauză.",
+    "breakIdeas": "Sfaturi de pauză",
+    "breakIdeasHint": "Afișează un sfat scurt la fiecare pauză.",
+    "breakSounds": "Sunete de pauză",
+    "breakSoundsHint": "Sunet de avertizare înainte de pauză și sunet de final după.",
+    "microbreakStartSound": "Avertizare micropauză",
+    "microbreakEndSound": "Sfârșit micropauză",
+    "longBreakStartSound": "Avertizare pauză",
+    "longBreakEndSound": "Sfârșit pauză",
+    "breakSoundVolume": "Volum",
+    "breakSoundSilence": "Silențios",
+    "breakSoundCrystalGlass": "Pahar de cristal",
+    "breakSoundWindChime": "Clopoțel de vânt",
+    "breakSoundTicToc": "Tic-tac",
+    "breakSoundReverie": "Reverie",
+    "reminderMode": "Mod memento",
+    "reminderModeHint": "Inteligent caută un moment natural; Forțat întrerupe imediat.",
+    "reminderModeSmart": "Inteligent",
+    "reminderModeForced": "Forțat",
+    "window": "Fereastră",
+    "fullscreen": "Ecran complet",
+    "promptStyleGentle": "Blând",
+    "promptStyleBalanced": "Echilibrat",
+    "promptStyleImmersive": "Captivant",
+    "allScreens": "Toate ecranele",
+    "screenPrimary": "Ecranul principal",
+    "screenCursor": "Ecranul cu cursorul",
+    "showTimeToBreakInTray": "Afișează următoarea pauză în bara de sistem",
+    "currentTimeInBreaks": "Afișează ora în fereastra de pauză",
+    "currentTimeInBreaksHint": "Ora sistemului în colțul din dreapta sus al ferestrei de pauză.",
+    "strictModes": "Moduri stricte",
+    "strictModesHint": "Controlează dacă pauzele pot fi omise și dacă este necesară confirmarea manuală.",
+    "microbreakStrict": "Micropauză strictă",
+    "longBreakStrict": "Pauză strictă",
+    "manualFinish": "Terminare manuală după temporizator",
+    "showTrayMenuInStrictMode": "Meniu bară de sistem în modul strict",
+    "shortcuts": "Comenzi rapide",
+    "shortcutsHint": "Gol = neînregistrat. Format ex.: CmdOrCtrl+Shift+P",
+    "shortcutReveal": "Deschide setările",
+    "shortcutFocus45": "Concentrare 45 min",
+    "shortcutPauseToggle": "Comută pauza",
+    "shortcutPause30": "Pauză 30 min",
+    "shortcutPause60": "Pauză 1 oră",
+    "shortcutPause120": "Pauză 2 ore",
+    "shortcutPause300": "Pauză 5 ore",
+    "shortcutSkipScheduled": "Salt la următoarea pauză programată",
+    "shortcutSkipMicrobreak": "Salt la micropauză",
+    "shortcutSkipLongBreak": "Salt la pauză",
+    "shortcutReset": "Resetează ritmul",
+    "suffix": {
+      "secondsLong": "s",
+      "secondsBefore": "s înainte",
+      "minutesApart": "min la",
+      "cycles": "cicluri",
+      "minutesLong": "min",
+      "minutesShortPostpone": "min",
+      "minutesLongPostpone": "min",
+      "minutesAway": "min",
+      "minutes": "min",
+      "times": "×"
+    },
+    "status": {
+      "noBreakScheduled": "Nicio pauză programată",
+      "microbreak": "Micropauză",
+      "longBreak": "Pauză",
+      "nextBreak": "{{label}} în {{duration}}",
+      "focus": "Concentrare {{duration}}",
+      "pause": "Suspendat {{duration}}",
+      "pauseForever": "Suspendat pe termen nedefinit",
+      "blockedBy": "Suspendat de {{match}}",
+      "appRuleActive": "Regulă aplicație activă",
+      "dndActive": "Nu deranja activ"
+    },
+    "error": {
+      "loadState": "Nu s-a putut încărca starea Pauza"
+    },
+    "breakCopy": {
+      "clearedDetail": "Nicio pauză activă.",
+      "manualAwaiting": "Timpul a expirat. Finalizează această pauză înainte de a te întoarce la lucru.",
+      "awaitingFinish": "Se așteaptă finalizarea",
+      "actions": {
+        "resumeWork": "Înapoi la lucru",
+        "done": "Gata",
+        "later": "Mai târziu",
+        "skip": "Omite"
+      },
+      "defaultPrompt": {
+        "microbreak": "Ridică-te, relaxează umerii și gâtul, privește în depărtare.",
+        "longBreak": "Îndepărtează-te de birou câteva minute pentru a lăsa corpul și mintea să se odihnească."
+      }
+    },
+    "previewAction": {
+      "save": "Previzualizare: setări actualizate.",
+      "pause": "Previzualizare: suspendat 30 min.",
+      "pauseForever": "Previzualizare: suspendat pe termen nedefinit.",
+      "focus": "Previzualizare: concentrare activată.",
+      "focusCleared": "Previzualizare: concentrare terminată.",
+      "resume": "Previzualizare: reluat.",
+      "reset": "Previzualizare: ritm resetat.",
+      "autostartOn": "Previzualizare: pornire automată activată.",
+      "autostartOff": "Previzualizare: pornire automată dezactivată.",
+      "done": "Previzualizare: pauză finalizată.",
+      "later": "Previzualizare: pauză amânată.",
+      "skip": "Previzualizare: pauză omisă."
+    },
+    "preBreakSoundHint": "Sunet blând înainte de expirarea temporizatorului pentru a-ți finaliza sarcina.",
+    "previewSound": "Ascultă",
+    "appExclusionsSearch": "Caută printre aplicațiile active",
+    "appExclusionsSearchPlaceholder": "Numele aplicației…",
+    "appExclusionsSearchLoading": "Se încarcă…",
+    "appExclusionsSearchEmpty": "Niciun rezultat",
+    "appExclusionsManualHint": "Sau introdu manual un nume de proces (câte unul pe linie)",
+    "appExclusionsAdd": "Click pentru a adăuga la lista de excepții"
   }
 }

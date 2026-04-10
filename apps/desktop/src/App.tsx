@@ -1,7 +1,8 @@
 import { invoke } from '@tauri-apps/api/core'
-import { useEffect, useRef, useState, type ChangeEvent, type ReactNode } from 'react'
+import { useEffect, useEffectEvent, useRef, useState, type ChangeEvent, type ReactNode } from 'react'
 
 import { Button } from '@/components/ui/button'
+import { pickBreakPromptEntry } from '@/lib/break-ideas'
 import {
   Select,
   SelectContent,
@@ -17,19 +18,29 @@ import {
   BREAK_SOUND_OPTIONS,
   getBreakScene,
   getBreakSoundUrl,
-  pickBreakPrompt,
   prepareCustomBackdrop,
+  resolveBreakContrastMode,
   type BreakBackdrop,
+  type BreakContrastMode,
   type BreakKind,
   type BreakSound,
 } from '@/lib/break-prompt'
-import { getBreakMessageCopy } from '@/locales/break-message-copy'
+import {
+  commitDraftNumber,
+  isNumericDraft,
+  LONGBREAK_DURATION_PRESETS,
+  LONGBREAK_EVERY_PRESETS,
+  MICROBREAK_DURATION_PRESETS,
+  MICROBREAK_INTERVAL_PRESETS,
+} from '@/lib/settings-controls'
 import { cn } from '@/lib/utils'
 import {
   DESKTOP_LANGUAGE_CONFIGS,
   formatCountdown,
   formatDuration,
+  getLanguageConfig,
   normalizeLanguage,
+  resolveUiLanguage,
   t,
   type AppLanguage,
 } from './i18n'
@@ -76,6 +87,7 @@ type PauzaSettings = {
   showBreaksOnAllScreens: boolean
   targetScreen: TargetScreen
   currentTimeInBreaks: boolean
+  showTimeToBreakInTray: boolean
   microbreakStartSound: BreakSound
   microbreakEndSound: BreakSound
   longBreakStartSound: BreakSound
@@ -139,11 +151,6 @@ type CommandFn = (
   previewTransform?: (current: DesktopSnapshot) => DesktopSnapshot,
 ) => Promise<void>
 
-const MICROBREAK_INTERVAL_PRESETS = [5, 10, 15, 20, 30]
-const MICROBREAK_DURATION_PRESETS = [15, 20, 30, 60]
-const LONGBREAK_EVERY_PRESETS = [2, 3, 4, 5]
-const LONGBREAK_DURATION_PRESETS = [3, 5, 10, 15]
-
 function defaultSettings(): PauzaSettings {
   return {
     language: 'zh-CN',
@@ -156,7 +163,7 @@ function defaultSettings(): PauzaSettings {
     microbreakPostponeMinutes: 2,
     microbreakPostponesLimit: 1,
     reminderMode: 'smart',
-    idleOpportunitySeconds: 12,
+    idleOpportunitySeconds: 6,
     microbreakManualFinish: false,
     longBreakEnabled: true,
     longBreakEvery: 3,
@@ -181,6 +188,7 @@ function defaultSettings(): PauzaSettings {
     showBreaksOnAllScreens: true,
     targetScreen: 'primary',
     currentTimeInBreaks: false,
+    showTimeToBreakInTray: true,
     microbreakStartSound: 'silence',
     microbreakEndSound: 'crystal-glass',
     longBreakStartSound: 'silence',
@@ -417,12 +425,25 @@ function PresetChipGroup({
 }: {
   ariaLabel: string
   value: number
-  options: number[]
+  options: readonly number[]
   min: number
   max: number
   onChange: (next: number) => void
 }) {
   const isPreset = options.includes(value)
+  const [draft, setDraft] = useState(String(value))
+
+  useEffect(() => {
+    setDraft(String(value))
+  }, [value])
+
+  const commitDraft = () => {
+    const nextValue = commitDraftNumber(draft, value, min, max)
+    setDraft(String(nextValue))
+    if (nextValue !== value) {
+      onChange(nextValue)
+    }
+  }
 
   return (
     <div role="group" aria-label={ariaLabel} className="flex flex-wrap items-center gap-1.5">
@@ -447,13 +468,32 @@ function PresetChipGroup({
         )
       })}
       <input
-        type="number"
-        min={min}
-        max={max}
-        value={value}
-        onChange={(e) => onChange(clampNumber(e.target.value, min, max))}
+        type="text"
+        inputMode="numeric"
+        pattern="[0-9]*"
+        value={draft}
+        onChange={(event) => {
+          const nextDraft = event.target.value
+          if (isNumericDraft(nextDraft)) {
+            setDraft(nextDraft)
+          }
+        }}
+        onBlur={commitDraft}
+        onKeyDown={(event) => {
+          if (event.key === 'Enter') {
+            event.preventDefault()
+            commitDraft()
+            event.currentTarget.blur()
+          }
+          if (event.key === 'Escape') {
+            event.preventDefault()
+            setDraft(String(value))
+            event.currentTarget.blur()
+          }
+        }}
+        aria-label={`${ariaLabel} custom`}
         className={cn(
-          'w-12 rounded-lg border py-1 text-center text-[13px] font-medium tabular-nums outline-none transition-all [appearance:textfield] [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none',
+          'w-14 rounded-lg border py-1 text-center text-[13px] font-medium tabular-nums outline-none transition-all',
           isPreset
             ? 'border-transparent bg-transparent text-muted-foreground/40 hover:border-black/[0.06] hover:text-muted-foreground'
             : 'border-black/[0.08] bg-white text-foreground shadow-sm',
@@ -478,7 +518,7 @@ function PresetChipRow({
   unit: string
   ariaLabel: string
   value: number
-  options: number[]
+  options: readonly number[]
   min: number
   max: number
   onChange: (next: number) => void
@@ -568,6 +608,107 @@ function SettingsRow({
   )
 }
 
+type BreakPromptCopy = {
+  eyebrow: string
+  title: string
+  body: string
+}
+
+function resolveBreakPromptCopy({
+  currentBreak,
+  language,
+  settings,
+}: {
+  currentBreak: CurrentBreakSnapshot | null
+  language: AppLanguage
+  settings: PauzaSettings
+}): BreakPromptCopy {
+  if (!currentBreak) {
+    return {
+      eyebrow: '',
+      title: '',
+      body: t(language, 'ui.breakCopy.clearedDetail'),
+    }
+  }
+
+  if (currentBreak.manualAwaiting) {
+    return {
+      eyebrow: currentBreak.title,
+      title: t(language, 'ui.breakCopy.manualAwaiting'),
+      body: '',
+    }
+  }
+
+  const promptEntry = settings.breakIdeasEnabled
+    ? pickBreakPromptEntry(language, currentBreak.kind, currentBreak.startedAtMs)
+    : null
+  const fallbackBody = t(language, `ui.breakCopy.defaultPrompt.${currentBreak.kind}`)
+  if (promptEntry?.title) {
+    return {
+      eyebrow: promptEntry.title === currentBreak.title ? '' : currentBreak.title,
+      title: promptEntry.title,
+      body: promptEntry.text,
+    }
+  }
+
+  return {
+    eyebrow: currentBreak.title,
+    title: promptEntry?.text ?? fallbackBody,
+    body: '',
+  }
+}
+
+function buildBreakPresentationPalette(
+  contrastMode: BreakContrastMode,
+  scene: ReturnType<typeof getBreakScene>,
+) {
+  if (contrastMode === 'dark') {
+    return {
+      overlayVeil:
+        'radial-gradient(circle at 18% 24%, rgba(15,23,42,0.12) 0%, rgba(15,23,42,0) 36%), linear-gradient(180deg, rgba(8,15,28,0.34) 0%, rgba(8,15,28,0.14) 34%, rgba(8,15,28,0.46) 100%)',
+      contentGlow:
+        'radial-gradient(circle at 22% 32%, rgba(8,15,28,0.42) 0%, rgba(8,15,28,0.14) 38%, rgba(8,15,28,0) 68%)',
+      textPrimary: '#f8fafc',
+      textSecondary: 'rgba(241,245,249,0.82)',
+      chipBackground: 'rgba(255,255,255,0.1)',
+      chipBorder: 'rgba(255,255,255,0.18)',
+      chipText: 'rgba(255,255,255,0.88)',
+      textShadow: '0 14px 36px rgba(8,15,28,0.24)',
+      bodyShadow: '0 10px 28px rgba(8,15,28,0.22)',
+      actionBorder: 'rgba(255,255,255,0.18)',
+      actionGlass: 'rgba(255,255,255,0.1)',
+      actionGlassHover: 'rgba(255,255,255,0.16)',
+      actionText: '#f8fafc',
+      primaryText: '#08111f',
+      countdownGlow: '0 16px 40px rgba(8,15,28,0.28)',
+      meterTrack: 'rgba(255,255,255,0.2)',
+      meterFill: scene.meterFill,
+    }
+  }
+
+  return {
+    overlayVeil:
+      'radial-gradient(circle at 18% 24%, rgba(255,255,255,0.38) 0%, rgba(255,255,255,0.14) 34%, rgba(255,255,255,0) 66%), linear-gradient(180deg, rgba(255,255,255,0.18) 0%, rgba(255,255,255,0.02) 30%, rgba(248,250,252,0.26) 100%)',
+    contentGlow:
+      'radial-gradient(circle at 24% 28%, rgba(255,255,255,0.42) 0%, rgba(255,255,255,0.18) 30%, rgba(255,255,255,0) 64%)',
+    textPrimary: '#0f172a',
+    textSecondary: 'rgba(15,23,42,0.74)',
+    chipBackground: 'rgba(255,255,255,0.42)',
+    chipBorder: 'rgba(15,23,42,0.08)',
+    chipText: 'rgba(15,23,42,0.74)',
+    textShadow: '0 12px 26px rgba(255,255,255,0.16)',
+    bodyShadow: '0 8px 20px rgba(255,255,255,0.12)',
+    actionBorder: 'rgba(15,23,42,0.1)',
+    actionGlass: 'rgba(255,255,255,0.32)',
+    actionGlassHover: 'rgba(255,255,255,0.48)',
+    actionText: '#0f172a',
+    primaryText: '#ffffff',
+    countdownGlow: '0 14px 32px rgba(255,255,255,0.18)',
+    meterTrack: 'rgba(15,23,42,0.08)',
+    meterFill: scene.meterFill,
+  }
+}
+
 /* ------------------------------------------------------------------ */
 /*  Break window                                                      */
 /* ------------------------------------------------------------------ */
@@ -594,23 +735,20 @@ function BreakWindow({
   const hasCustomBackdrop =
     settings.breakBackdrop === 'custom' && Boolean(settings.breakCustomBackdropDataUrl)
   const scene = getBreakScene(hasCustomBackdrop ? 'custom' : settings.breakBackdrop)
-  const lastStartSoundRef = useRef<string | null>(null)
+  const [contrastMode, setContrastMode] = useState<BreakContrastMode>(scene.contrastMode)
   const lastEndSoundRef = useRef<string | null>(null)
   const endSoundTimerRef = useRef<number | null>(null)
   const breakKey = currentBreak ? `${currentBreak.kind}:${currentBreak.startedAtMs}` : null
-  const breakCopy = getBreakMessageCopy(language)
-  const promptText = currentBreak?.manualAwaiting
-    ? breakCopy.manualAwaiting
-    : currentBreak
-      ? settings.breakIdeasEnabled
-        ? pickBreakPrompt(language, currentBreak.kind, currentBreak.startedAtMs) ||
-          breakCopy.defaultPrompt[currentBreak.kind]
-        : breakCopy.defaultPrompt[currentBreak.kind]
-      : breakCopy.clearedDetail
+  const promptCopy = resolveBreakPromptCopy({
+    currentBreak,
+    language,
+    settings,
+  })
   const countdownText = formatCountdown(currentBreak?.manualAwaiting ? 0 : remaining)
+  const palette = buildBreakPresentationPalette(contrastMode, scene)
   const backgroundStyle = hasCustomBackdrop
     ? {
-        backgroundImage: `linear-gradient(140deg, rgba(15,23,42,0.34), rgba(15,23,42,0.12)), url("${settings.breakCustomBackdropDataUrl}")`,
+        backgroundImage: `${palette.overlayVeil}, url("${settings.breakCustomBackdropDataUrl}")`,
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
@@ -620,29 +758,22 @@ function BreakWindow({
       }
 
   useEffect(() => {
-    if (!currentBreak || !hasTauriRuntime() || !breakKey) {
-      return
+    let cancelled = false
+
+    setContrastMode(scene.contrastMode)
+
+    void resolveBreakContrastMode(settings.breakBackdrop, settings.breakCustomBackdropDataUrl).then(
+      (nextMode) => {
+        if (!cancelled) {
+          setContrastMode(nextMode)
+        }
+      },
+    )
+
+    return () => {
+      cancelled = true
     }
-
-    const sound =
-      currentBreak.kind === 'microbreak'
-        ? settings.microbreakStartSound
-        : settings.longBreakStartSound
-    const playKey = `${breakKey}:start`
-
-    if (settings.breakSoundVolume <= 0 || lastStartSoundRef.current === playKey) {
-      return
-    }
-
-    lastStartSoundRef.current = playKey
-    playBreakSound(sound, settings.breakSoundVolume)
-  }, [
-    breakKey,
-    currentBreak?.kind,
-    settings.breakSoundVolume,
-    settings.longBreakStartSound,
-    settings.microbreakStartSound,
-  ])
+  }, [scene.contrastMode, settings.breakBackdrop, settings.breakCustomBackdropDataUrl])
 
   useEffect(() => {
     if (endSoundTimerRef.current !== null) {
@@ -700,48 +831,103 @@ function BreakWindow({
         className="pointer-events-none absolute inset-0 opacity-30"
         style={{ backgroundImage: scene.texture }}
       />
+      <div className="pointer-events-none absolute inset-0" style={{ background: palette.contentGlow }} />
 
-      <section className="relative mx-auto flex min-h-screen w-full max-w-[760px] flex-col items-center justify-center px-6 py-8 text-center sm:px-10 sm:py-10">
+      <section className="relative flex min-h-screen flex-col items-center justify-center px-8 py-12 sm:px-14 sm:py-16">
         {currentBreak?.showClock ? (
-          <div className="absolute right-6 top-6 text-[11px] font-medium tracking-[0.16em] text-slate-500/90 sm:right-8 sm:top-8">
+          <div
+            className="absolute right-6 top-6 rounded-full border px-3 py-1.5 text-[11px] font-medium tracking-[0.16em] sm:right-8 sm:top-8"
+            style={{
+              color: palette.chipText,
+              background: palette.chipBackground,
+              borderColor: palette.chipBorder,
+              backdropFilter: 'blur(18px)',
+            }}
+          >
             {clockLabel(language)}
           </div>
         ) : null}
 
-        <div className="relative w-full overflow-hidden rounded-[36px] border border-white/42 bg-white/24 px-6 py-10 shadow-[0_32px_120px_-52px_rgba(15,23,42,0.42)] backdrop-blur-[28px] sm:px-10 sm:py-12">
-          <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(180deg,rgba(255,255,255,0.42),rgba(255,255,255,0.14))]" />
-
-          <div className="relative">
-            <div className="mx-auto max-w-[22ch] text-balance text-[2rem] font-semibold leading-[1.08] tracking-[-0.06em] text-slate-950 sm:text-[2.8rem]">
-              {promptText}
-            </div>
-
-            <div className="mt-8 text-[3.75rem] font-semibold tracking-[-0.08em] text-slate-950 tabular-nums sm:text-[5.75rem]">
-              {countdownText}
-            </div>
-
+        {/* Text content — centered column */}
+        <div className="flex w-full max-w-[min(86vw,600px)] flex-col items-center gap-4 text-center">
+          {promptCopy.eyebrow ? (
             <div
-              className="mx-auto mt-6 h-[3px] w-full max-w-[360px] overflow-hidden rounded-full"
-              style={{ background: scene.meterTrack }}
+              className="inline-flex rounded-full border px-4 py-1.5 text-[12px] font-medium tracking-[0.18em]"
+              style={{
+                color: palette.chipText,
+                background: palette.chipBackground,
+                borderColor: palette.chipBorder,
+                backdropFilter: 'blur(18px)',
+              }}
             >
-              <div
-                className="h-full rounded-full transition-[width] duration-700 ease-out"
-                style={{
-                  width: `${Math.round(progress * 100)}%`,
-                  background: scene.meterFill,
-                }}
-              />
+              {promptCopy.eyebrow}
             </div>
+          ) : null}
 
+          <div
+            className="type-break text-balance text-[clamp(1.55rem,3.6vw,2.7rem)] leading-[1.4]"
+            style={{
+              color: palette.textPrimary,
+              textShadow: palette.textShadow,
+            }}
+          >
+            {promptCopy.title}
+          </div>
+
+          {promptCopy.body ? (
+            <p
+              className="type-break max-w-[40ch] text-pretty text-[clamp(0.88rem,1.5vw,1.1rem)] leading-[1.85] opacity-75"
+              style={{
+                color: palette.textSecondary,
+                textShadow: palette.bodyShadow,
+              }}
+            >
+              {promptCopy.body}
+            </p>
+          ) : null}
+        </div>
+
+        {/* Countdown + meter + actions */}
+        <div className="mt-12 flex w-full max-w-[min(86vw,480px)] flex-col items-center gap-5 text-center sm:mt-14">
+          <div
+            className="type-break animate-break-breathe text-[clamp(4rem,11vw,7.5rem)] leading-none tabular-nums"
+            style={{
+              color: palette.textPrimary,
+              textShadow: palette.countdownGlow,
+            }}
+          >
+            {countdownText}
+          </div>
+
+          <div
+            className="h-[3px] w-full overflow-hidden rounded-full"
+            style={{ background: palette.meterTrack }}
+          >
+            <div
+              className="h-full rounded-full transition-[width] duration-700 ease-out"
+              style={{
+                width: `${Math.round(progress * 100)}%`,
+                background: palette.meterFill,
+              }}
+            />
+          </div>
+
+          {currentBreak?.manualAwaiting ? (
+            <p className="text-sm font-medium" style={{ color: palette.textSecondary }}>
+              {t(language, 'ui.breakCopy.awaitingFinish')}
+            </p>
+          ) : null}
+
+          <div className="flex w-full flex-col gap-3 sm:items-center">
             {currentBreak?.manualAwaiting ? (
-              <p className="mt-4 text-sm text-slate-600">{breakCopy.awaitingFinish}</p>
-            ) : null}
-
-            <div className="mt-10 flex flex-col gap-3 sm:flex-row">
               <Button
                 type="button"
-                className="flex-1"
-                disabled={!currentBreak || busyAction !== null}
+                className="h-12 w-full rounded-full border-0 px-8 text-base shadow-[0_18px_48px_-28px_rgba(15,23,42,0.45)] sm:w-auto sm:min-w-[220px]"
+                disabled={busyAction !== null}
+                style={{
+                  background: scene.accent,
+                  color: palette.primaryText,
+                }}
                 onClick={() =>
                   void runCommand('finish break', 'finish_current_break', undefined, (current) => ({
                     ...current,
@@ -750,46 +936,39 @@ function BreakWindow({
                   }))
                 }
               >
-                {currentBreak?.manualAwaiting
-                  ? breakCopy.actions.resumeWork
-                  : breakCopy.actions.done}
+                {t(language, 'ui.breakCopy.actions.resumeWork')}
               </Button>
-              {currentBreak?.canPostpone ? (
-                <Button
-                  type="button"
-                  variant="secondary"
-                  className="flex-1"
-                  disabled={busyAction !== null}
-                  onClick={() =>
-                    void runCommand('postpone break', 'postpone_current_break', undefined, (current) => ({
-                      ...current,
-                      currentBreak: null,
-                      nextBreakInMs: 2 * 60_000,
-                      lastAction: t(language, 'ui.previewAction.later'),
-                    }))
-                  }
-                >
-                  {breakCopy.actions.later}
-                </Button>
-              ) : null}
-              {currentBreak?.canSkip ? (
-                <Button
-                  type="button"
-                  variant="outline"
-                  className="flex-1"
-                  disabled={busyAction !== null}
-                  onClick={() =>
-                    void runCommand('skip break', 'skip_current_break', undefined, (current) => ({
-                      ...current,
-                      currentBreak: null,
-                      lastAction: t(language, 'ui.previewAction.skip'),
-                    }))
-                  }
-                >
-                  {breakCopy.actions.skip}
-                </Button>
-              ) : null}
-            </div>
+            ) : null}
+            {currentBreak?.canPostpone ? (
+              <Button
+                type="button"
+                variant="outline"
+                className="h-12 w-full rounded-full px-8 text-base shadow-none sm:w-auto sm:min-w-[220px]"
+                disabled={busyAction !== null}
+                style={{
+                  color: palette.actionText,
+                  background: palette.actionGlass,
+                  borderColor: palette.actionBorder,
+                  backdropFilter: 'blur(18px)',
+                }}
+                onMouseEnter={(event) => {
+                  event.currentTarget.style.background = palette.actionGlassHover
+                }}
+                onMouseLeave={(event) => {
+                  event.currentTarget.style.background = palette.actionGlass
+                }}
+                onClick={() =>
+                  void runCommand('postpone break', 'postpone_current_break', undefined, (current) => ({
+                    ...current,
+                    currentBreak: null,
+                    nextBreakInMs: 2 * 60_000,
+                    lastAction: t(language, 'ui.previewAction.later'),
+                  }))
+                }
+              >
+                {t(language, 'ui.breakCopy.actions.later')}
+              </Button>
+            ) : null}
           </div>
         </div>
       </section>
@@ -809,9 +988,34 @@ function App() {
   const [error, setError] = useState<string | null>(null)
   const [activeCategory, setActiveCategory] = useState<SettingsCategory>('schedule')
   const customBackdropInputRef = useRef<HTMLInputElement | null>(null)
+  const preBreakSoundTimerRef = useRef<number | null>(null)
+  const [runningApps, setRunningApps] = useState<string[] | null>(null)
+  const [appSearchQuery, setAppSearchQuery] = useState('')
+  const [appSearchLoading, setAppSearchLoading] = useState(false)
 
   const breakMode = isBreakWindow()
-  const language = normalizeLanguage(form.language)
+  // Keep copy and document direction on the persisted locale until the save roundtrip completes.
+  const language = resolveUiLanguage(form.language, snapshot?.settings.language)
+  const languageConfig = getLanguageConfig(language)
+  const showTimeToBreakInTrayLabel = (() => {
+    const nextKey = 'ui.showTimeToBreakInTray'
+    const translated = t(language, nextKey)
+    if (translated !== nextKey) {
+      return translated
+    }
+
+    const legacyKey = 'contributorPreferences.showTimeToBreakInTray'
+    const legacyTranslated = t(language, legacyKey)
+    return legacyTranslated !== legacyKey ? legacyTranslated : translated
+  })()
+  const loadStateErrorMessage = useEffectEvent(() => t(language, 'ui.error.loadState'))
+
+  useEffect(() => {
+    document.documentElement.lang = languageConfig.code
+    document.documentElement.dir = languageConfig.direction
+    document.body.setAttribute('lang', languageConfig.code)
+    document.body.setAttribute('dir', languageConfig.direction)
+  }, [languageConfig.code, languageConfig.direction])
 
   useEffect(() => {
     let active = true
@@ -828,7 +1032,7 @@ function App() {
       } catch (loadError) {
         if (!active) return
         setError(
-          loadError instanceof Error ? loadError.message : t(language, 'ui.error.loadState'),
+          loadError instanceof Error ? loadError.message : loadStateErrorMessage(),
         )
       }
     }
@@ -842,13 +1046,57 @@ function App() {
       active = false
       window.clearInterval(timer)
     }
-  }, [language])
+  }, [])
 
   useEffect(() => {
     if (snapshot && !dirty) {
       setForm(snapshot.settings)
     }
   }, [snapshot, dirty])
+
+  // Pre-break sound: schedule a sound X seconds before the next break
+  useEffect(() => {
+    if (preBreakSoundTimerRef.current !== null) {
+      window.clearTimeout(preBreakSoundTimerRef.current)
+      preBreakSoundTimerRef.current = null
+    }
+
+    if (!snapshot?.nextBreakDueMs || !snapshot?.nextBreakKind || !hasTauriRuntime()) return
+
+    const s = snapshot.settings
+    const kind = snapshot.nextBreakKind
+    const enabled = kind === 'microbreak' ? s.microbreakNotificationEnabled : s.longBreakNotificationEnabled
+    if (!enabled || s.breakSoundVolume <= 0) return
+
+    const thresholdMs = kind === 'microbreak'
+      ? s.microbreakNotificationSeconds * 1_000
+      : s.longBreakNotificationSeconds * 1_000
+    const delay = snapshot.nextBreakDueMs - thresholdMs - Date.now()
+    if (delay < 0) return // already past the window; skip retroactive plays
+
+    const sound = kind === 'microbreak' ? s.microbreakStartSound : s.longBreakStartSound
+    preBreakSoundTimerRef.current = window.setTimeout(() => {
+      playBreakSound(sound, s.breakSoundVolume)
+      preBreakSoundTimerRef.current = null
+    }, delay)
+
+    return () => {
+      if (preBreakSoundTimerRef.current !== null) {
+        window.clearTimeout(preBreakSoundTimerRef.current)
+        preBreakSoundTimerRef.current = null
+      }
+    }
+  }, [
+    snapshot?.nextBreakDueMs,
+    snapshot?.nextBreakKind,
+    snapshot?.settings.microbreakNotificationEnabled,
+    snapshot?.settings.microbreakNotificationSeconds,
+    snapshot?.settings.longBreakNotificationEnabled,
+    snapshot?.settings.longBreakNotificationSeconds,
+    snapshot?.settings.breakSoundVolume,
+    snapshot?.settings.microbreakStartSound,
+    snapshot?.settings.longBreakStartSound,
+  ])
 
   useEffect(() => {
     if (breakMode || !dirty) {
@@ -1028,6 +1276,142 @@ function App() {
               }}
             />
             <div>
+              <SectionLabel>{t(language, 'ui.breakSounds')}</SectionLabel>
+              <p className="mb-2 px-1 text-[11.5px] leading-relaxed text-muted-foreground">
+                {t(language, 'ui.breakSoundsHint')}
+              </p>
+              <SettingsCard>
+                <SettingsRow label={t(language, 'ui.microbreakStartSound')}>
+                  <Select
+                    value={form.microbreakStartSound}
+                    onValueChange={(next) =>
+                      updateForm('microbreakStartSound', next as BreakSound)
+                    }
+                  >
+                    <SelectTrigger className="h-7 min-w-[150px] text-[12px]">
+                      <SelectValue />
+                    </SelectTrigger>
+                    <SelectContent>
+                      {BREAK_SOUND_OPTIONS.map((option) => (
+                        <SelectItem key={`micro-${option.value}`} value={option.value}>
+                          {t(language, option.labelKey)}
+                        </SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
+                  <button
+                    type="button"
+                    title={t(language, 'ui.previewSound')}
+                    aria-label={t(language, 'ui.previewSound')}
+                    className="flex h-7 w-7 items-center justify-center rounded-md border border-white/70 bg-white/60 text-[11px] hover:bg-white/90 active:scale-90 transition-transform"
+                    onClick={() => playBreakSound(form.microbreakStartSound, Math.max(form.breakSoundVolume, 50))}
+                  >▶</button>
+                </SettingsRow>
+                <SettingsRow label={t(language, 'ui.microbreakEndSound')}>
+                  <Select
+                    value={form.microbreakEndSound}
+                    onValueChange={(next) =>
+                      updateForm('microbreakEndSound', next as BreakSound)
+                    }
+                  >
+                    <SelectTrigger className="h-7 min-w-[150px] text-[12px]">
+                      <SelectValue />
+                    </SelectTrigger>
+                    <SelectContent>
+                      {BREAK_SOUND_OPTIONS.map((option) => (
+                        <SelectItem key={`micro-end-${option.value}`} value={option.value}>
+                          {t(language, option.labelKey)}
+                        </SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
+                  <button
+                    type="button"
+                    title={t(language, 'ui.previewSound')}
+                    aria-label={t(language, 'ui.previewSound')}
+                    className="flex h-7 w-7 items-center justify-center rounded-md border border-white/70 bg-white/60 text-[11px] hover:bg-white/90 active:scale-90 transition-transform"
+                    onClick={() => playBreakSound(form.microbreakEndSound, Math.max(form.breakSoundVolume, 50))}
+                  >▶</button>
+                </SettingsRow>
+                <SettingsRow label={t(language, 'ui.longBreakStartSound')}>
+                  <Select
+                    value={form.longBreakStartSound}
+                    onValueChange={(next) =>
+                      updateForm('longBreakStartSound', next as BreakSound)
+                    }
+                  >
+                    <SelectTrigger className="h-7 min-w-[150px] text-[12px]">
+                      <SelectValue />
+                    </SelectTrigger>
+                    <SelectContent>
+                      {BREAK_SOUND_OPTIONS.map((option) => (
+                        <SelectItem key={`long-${option.value}`} value={option.value}>
+                          {t(language, option.labelKey)}
+                        </SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
+                  <button
+                    type="button"
+                    title={t(language, 'ui.previewSound')}
+                    aria-label={t(language, 'ui.previewSound')}
+                    className="flex h-7 w-7 items-center justify-center rounded-md border border-white/70 bg-white/60 text-[11px] hover:bg-white/90 active:scale-90 transition-transform"
+                    onClick={() => playBreakSound(form.longBreakStartSound, Math.max(form.breakSoundVolume, 50))}
+                  >▶</button>
+                </SettingsRow>
+                <SettingsRow label={t(language, 'ui.longBreakEndSound')}>
+                  <Select
+                    value={form.longBreakEndSound}
+                    onValueChange={(next) =>
+                      updateForm('longBreakEndSound', next as BreakSound)
+                    }
+                  >
+                    <SelectTrigger className="h-7 min-w-[150px] text-[12px]">
+                      <SelectValue />
+                    </SelectTrigger>
+                    <SelectContent>
+                      {BREAK_SOUND_OPTIONS.map((option) => (
+                        <SelectItem key={`long-end-${option.value}`} value={option.value}>
+                          {t(language, option.labelKey)}
+                        </SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
+                  <button
+                    type="button"
+                    title={t(language, 'ui.previewSound')}
+                    aria-label={t(language, 'ui.previewSound')}
+                    className="flex h-7 w-7 items-center justify-center rounded-md border border-white/70 bg-white/60 text-[11px] hover:bg-white/90 active:scale-90 transition-transform"
+                    onClick={() => playBreakSound(form.longBreakEndSound, Math.max(form.breakSoundVolume, 50))}
+                  >▶</button>
+                </SettingsRow>
+                <div className="px-4 pb-3 pt-1">
+                  <div className="rounded-[16px] border border-white/70 bg-white/70 px-3 py-3">
+                    <div className="mb-2 flex items-center justify-between gap-3 text-[12px] text-muted-foreground">
+                      <span>{t(language, 'ui.breakSoundVolume')}</span>
+                      <span>{form.breakSoundVolume}%</span>
+                    </div>
+                    <input
+                      type="range"
+                      min={0}
+                      max={100}
+                      step={5}
+                      value={form.breakSoundVolume}
+                      onChange={(event) =>
+                        updateForm('breakSoundVolume', Number(event.target.value))
+                      }
+                      aria-label={t(language, 'ui.breakSoundVolume')}
+                      className="slider h-2 w-full rounded-full"
+                      style={{
+                        background: `linear-gradient(90deg, rgba(56,83,137,0.92) ${form.breakSoundVolume}%, rgba(56,83,137,0.14) ${form.breakSoundVolume}%)`,
+                      }}
+                    />
+                  </div>
+                </div>
+              </SettingsCard>
+            </div>
+
+            <div>
               <SectionLabel>{t(language, 'ui.breakSurface')}</SectionLabel>
               <SettingsCard>
                 <SettingsRow label={t(language, 'ui.breakDisplayMode')}>
@@ -1145,113 +1529,6 @@ function App() {
               </SettingsCard>
             </div>
 
-            <div>
-              <SectionLabel>{t(language, 'ui.breakSounds')}</SectionLabel>
-              <SettingsCard>
-                <SettingsRow
-                  label={t(language, 'ui.microbreakStartSound')}
-                  detail={t(language, 'ui.breakSoundsHint')}
-                >
-                  <Select
-                    value={form.microbreakStartSound}
-                    onValueChange={(next) =>
-                      updateForm('microbreakStartSound', next as BreakSound)
-                    }
-                  >
-                    <SelectTrigger className="h-7 min-w-[150px] text-[12px]">
-                      <SelectValue />
-                    </SelectTrigger>
-                    <SelectContent>
-                      {BREAK_SOUND_OPTIONS.map((option) => (
-                        <SelectItem key={`micro-${option.value}`} value={option.value}>
-                          {t(language, option.labelKey)}
-                        </SelectItem>
-                      ))}
-                    </SelectContent>
-                  </Select>
-                </SettingsRow>
-                <SettingsRow label={t(language, 'ui.microbreakEndSound')}>
-                  <Select
-                    value={form.microbreakEndSound}
-                    onValueChange={(next) =>
-                      updateForm('microbreakEndSound', next as BreakSound)
-                    }
-                  >
-                    <SelectTrigger className="h-7 min-w-[150px] text-[12px]">
-                      <SelectValue />
-                    </SelectTrigger>
-                    <SelectContent>
-                      {BREAK_SOUND_OPTIONS.map((option) => (
-                        <SelectItem key={`micro-end-${option.value}`} value={option.value}>
-                          {t(language, option.labelKey)}
-                        </SelectItem>
-                      ))}
-                    </SelectContent>
-                  </Select>
-                </SettingsRow>
-                <SettingsRow label={t(language, 'ui.longBreakStartSound')}>
-                  <Select
-                    value={form.longBreakStartSound}
-                    onValueChange={(next) =>
-                      updateForm('longBreakStartSound', next as BreakSound)
-                    }
-                  >
-                    <SelectTrigger className="h-7 min-w-[150px] text-[12px]">
-                      <SelectValue />
-                    </SelectTrigger>
-                    <SelectContent>
-                      {BREAK_SOUND_OPTIONS.map((option) => (
-                        <SelectItem key={`long-${option.value}`} value={option.value}>
-                          {t(language, option.labelKey)}
-                        </SelectItem>
-                      ))}
-                    </SelectContent>
-                  </Select>
-                </SettingsRow>
-                <SettingsRow label={t(language, 'ui.longBreakEndSound')}>
-                  <Select
-                    value={form.longBreakEndSound}
-                    onValueChange={(next) =>
-                      updateForm('longBreakEndSound', next as BreakSound)
-                    }
-                  >
-                    <SelectTrigger className="h-7 min-w-[150px] text-[12px]">
-                      <SelectValue />
-                    </SelectTrigger>
-                    <SelectContent>
-                      {BREAK_SOUND_OPTIONS.map((option) => (
-                        <SelectItem key={`long-end-${option.value}`} value={option.value}>
-                          {t(language, option.labelKey)}
-                        </SelectItem>
-                      ))}
-                    </SelectContent>
-                  </Select>
-                </SettingsRow>
-                <div className="px-4 pb-3 pt-1">
-                  <div className="rounded-[16px] border border-white/70 bg-white/70 px-3 py-3">
-                    <div className="mb-2 flex items-center justify-between gap-3 text-[12px] text-muted-foreground">
-                      <span>{t(language, 'ui.breakSoundVolume')}</span>
-                      <span>{form.breakSoundVolume}%</span>
-                    </div>
-                    <input
-                      type="range"
-                      min={0}
-                      max={100}
-                      step={5}
-                      value={form.breakSoundVolume}
-                      onChange={(event) =>
-                        updateForm('breakSoundVolume', Number(event.target.value))
-                      }
-                      aria-label={t(language, 'ui.breakSoundVolume')}
-                      className="slider h-2 w-full rounded-full"
-                      style={{
-                        background: `linear-gradient(90deg, rgba(56,83,137,0.92) ${form.breakSoundVolume}%, rgba(56,83,137,0.14) ${form.breakSoundVolume}%)`,
-                      }}
-                    />
-                  </div>
-                </div>
-              </SettingsCard>
-            </div>
 
             <div>
               <SectionLabel>{t(language, 'ui.reminderMode')}</SectionLabel>
@@ -1337,9 +1614,73 @@ function App() {
                     aria-label={t(language, 'ui.appExclusions')}
                   />
                 </SettingsRow>
-                <div className="px-4 pb-3 pt-1">
+                <div className="px-4 pb-3 pt-1 space-y-2">
+                  {/* Running app search */}
+                  <div className="relative flex items-center">
+                    <svg className="pointer-events-none absolute left-2.5 h-3.5 w-3.5 shrink-0 text-muted-foreground/70" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                      <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+                    </svg>
+                    <input
+                      type="text"
+                      placeholder={t(language, 'ui.appExclusionsSearchPlaceholder')}
+                      value={appSearchQuery}
+                      onChange={(e) => setAppSearchQuery(e.target.value)}
+                      onFocus={() => {
+                        if (!runningApps && !appSearchLoading && hasTauriRuntime()) {
+                          setAppSearchLoading(true)
+                          void invoke<string[]>('list_running_app_names').then((names) => {
+                            setRunningApps(names)
+                            setAppSearchLoading(false)
+                          }).catch(() => setAppSearchLoading(false))
+                        }
+                      }}
+                      className="h-8 w-full rounded-md border border-white/80 bg-white/70 pl-7 pr-8 text-[12px] shadow-[inset_0_1px_2px_rgba(0,0,0,0.04)] placeholder:text-muted-foreground/50 focus:bg-white focus:outline-none focus:ring-1 focus:ring-black/10"
+                    />
+                    {appSearchLoading ? (
+                      <span className="absolute right-2.5 text-[10px] text-muted-foreground">{t(language, 'ui.appExclusionsSearchLoading')}</span>
+                    ) : appSearchQuery ? (
+                      <button
+                        type="button"
+                        onClick={() => setAppSearchQuery('')}
+                        className="absolute right-2 flex h-4 w-4 items-center justify-center rounded-full bg-muted-foreground/20 text-[10px] leading-none text-muted-foreground hover:bg-muted-foreground/30"
+                        aria-label="清除"
+                      >✕</button>
+                    ) : null}
+                  </div>
+                  {/* Search results */}
+                  {appSearchQuery.trim().length > 0 && (
+                    <div className="max-h-28 overflow-y-auto rounded-[10px] border border-white/70 bg-white/85 text-[12px] shadow-sm">
+                      {(runningApps ?? [])
+                        .filter(name => name.toLowerCase().includes(appSearchQuery.toLowerCase()))
+                        .slice(0, 20)
+                        .map((name) => (
+                          <button
+                            key={name}
+                            type="button"
+                            title={t(language, 'ui.appExclusionsAdd')}
+                            className="flex w-full items-center gap-2 px-3 py-1.5 text-left hover:bg-black/5 active:bg-black/10"
+                            onClick={() => {
+                              const current = form.appExclusionCommands.trim()
+                              const lines = current ? current.split('\n') : []
+                              if (!lines.includes(name)) {
+                                updateForm('appExclusionCommands', [...lines, name].join('\n'))
+                              }
+                              setAppSearchQuery('')
+                            }}
+                          >
+                            <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-emerald-400/70" />
+                            {name}
+                          </button>
+                        ))}
+                      {(runningApps ?? []).filter(n => n.toLowerCase().includes(appSearchQuery.toLowerCase())).length === 0 && (
+                        <p className="px-3 py-2 text-muted-foreground">{t(language, 'ui.appExclusionsSearchEmpty')}</p>
+                      )}
+                    </div>
+                  )}
+                  {/* Manual textarea */}
+                  <p className="text-[11px] text-muted-foreground">{t(language, 'ui.appExclusionsManualHint')}</p>
                   <Textarea
-                    rows={4}
+                    rows={3}
                     value={form.appExclusionCommands}
                     placeholder={'zoom.us\nmeet.google.com\nobs'}
                     onChange={(event) => updateForm('appExclusionCommands', event.target.value)}
@@ -1372,16 +1713,31 @@ function App() {
                     aria-label={t(language, 'ui.launchOnLogin')}
                   />
                 </SettingsRow>
-                <SettingsRow label={t(language, 'ui.language')}>
-                  <SegmentedControl
-                    ariaLabel={t(language, 'ui.language')}
-                    value={form.language}
-                    options={DESKTOP_LANGUAGE_CONFIGS.map((config) => ({
-                      value: config.code,
-                      label: config.nativeLabel,
-                    }))}
-                    onChange={(next) => updateForm('language', next)}
+                <SettingsRow label={showTimeToBreakInTrayLabel}>
+                  <Switch
+                    checked={form.showTimeToBreakInTray}
+                    onCheckedChange={(next) => updateForm('showTimeToBreakInTray', next)}
+                    aria-label={showTimeToBreakInTrayLabel}
                   />
+                </SettingsRow>
+                <SettingsRow label={t(language, 'ui.language')}>
+                  <Select
+                    value={form.language}
+                    onValueChange={(next) => updateForm('language', next as AppLanguage)}
+                  >
+                    <SelectTrigger className="h-7 min-w-[210px] text-[12px]">
+                      <SelectValue />
+                    </SelectTrigger>
+                    <SelectContent className="max-h-[320px]">
+                      {DESKTOP_LANGUAGE_CONFIGS.map((config) => (
+                        <SelectItem key={config.code} value={config.code}>
+                          {config.nativeLabel === config.label
+                            ? config.nativeLabel
+                            : `${config.nativeLabel} · ${config.label}`}
+                        </SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
                 </SettingsRow>
               </SettingsCard>
             </div>
@@ -1476,40 +1832,6 @@ function App() {
             </SchedulePresetCard>
 
             <div>
-              <SectionLabel>{t(language, 'ui.preBreakNotifications')}</SectionLabel>
-              <SettingsCard>
-                <SettingsRow label={t(language, 'ui.microbreaks')}>
-                  <CompactNumber
-                    value={form.microbreakNotificationSeconds}
-                    min={5}
-                    max={300}
-                    suffix={t(language, 'ui.suffix.secondsBefore')}
-                    onChange={(value) => updateForm('microbreakNotificationSeconds', value)}
-                  />
-                  <Switch
-                    checked={form.microbreakNotificationEnabled}
-                    onCheckedChange={(next) => updateForm('microbreakNotificationEnabled', next)}
-                    aria-label={t(language, 'ui.microbreaks')}
-                  />
-                </SettingsRow>
-                <SettingsRow label={t(language, 'ui.longBreaks')}>
-                  <CompactNumber
-                    value={form.longBreakNotificationSeconds}
-                    min={5}
-                    max={600}
-                    suffix={t(language, 'ui.suffix.secondsBefore')}
-                    onChange={(value) => updateForm('longBreakNotificationSeconds', value)}
-                  />
-                  <Switch
-                    checked={form.longBreakNotificationEnabled}
-                    onCheckedChange={(next) => updateForm('longBreakNotificationEnabled', next)}
-                    aria-label={t(language, 'ui.longBreaks')}
-                  />
-                </SettingsRow>
-              </SettingsCard>
-            </div>
-
-            <div>
               <SectionLabel>{t(language, 'ui.postpone')}</SectionLabel>
               <SettingsCard>
                 <SettingsRow label={t(language, 'ui.microbreaks')}>
@@ -1537,6 +1859,43 @@ function App() {
                   <Switch
                     checked={form.longBreakAllowPostpone}
                     onCheckedChange={(next) => updateForm('longBreakAllowPostpone', next)}
+                    aria-label={t(language, 'ui.longBreaks')}
+                  />
+                </SettingsRow>
+              </SettingsCard>
+            </div>
+
+            <div>
+              <SectionLabel>{t(language, 'ui.preBreakNotifications')}</SectionLabel>
+              <p className="mb-2 px-1 text-[11.5px] leading-relaxed text-muted-foreground">
+                {t(language, 'ui.preBreakSoundHint')}
+              </p>
+              <SettingsCard>
+                <SettingsRow label={t(language, 'ui.microbreaks')}>
+                  <CompactNumber
+                    value={form.microbreakNotificationSeconds}
+                    min={5}
+                    max={300}
+                    suffix={t(language, 'ui.suffix.secondsBefore')}
+                    onChange={(value) => updateForm('microbreakNotificationSeconds', value)}
+                  />
+                  <Switch
+                    checked={form.microbreakNotificationEnabled}
+                    onCheckedChange={(next) => updateForm('microbreakNotificationEnabled', next)}
+                    aria-label={t(language, 'ui.microbreaks')}
+                  />
+                </SettingsRow>
+                <SettingsRow label={t(language, 'ui.longBreaks')}>
+                  <CompactNumber
+                    value={form.longBreakNotificationSeconds}
+                    min={5}
+                    max={600}
+                    suffix={t(language, 'ui.suffix.secondsBefore')}
+                    onChange={(value) => updateForm('longBreakNotificationSeconds', value)}
+                  />
+                  <Switch
+                    checked={form.longBreakNotificationEnabled}
+                    onCheckedChange={(next) => updateForm('longBreakNotificationEnabled', next)}
                     aria-label={t(language, 'ui.longBreaks')}
                   />
                 </SettingsRow>

@@ -106,7 +106,7 @@
       "ourWebsite": "navštívte našu webstránku",
       "dot": ".",
       "developedBy": "Vyvinul",
-      "janH": "Clarke Young",
+      "clarkeY": "Clarke Young",
       "designedBy": "Ikona a UI dizajn Colin Shanley",
       "checkNewVersion": "Automaticky kontrolovať aktualizácie aplikácie"
     },
@@ -228,304 +228,748 @@
     "appExclusion": "Výnimka aplikácie"
   },
   "miniBreakIdeas": {
-    "aaf": {
-      "text": "Natiahnite si nohy."
-    },
-    "aaj": {
-      "text": "Pomaly nakloňte hlavu na stranu a podržte ju 5 až 10 sekúnd."
-    },
-    "aan": {
-      "text": "Usmejte sa na chvíľu na to, že žijete."
-    },
-    "aap": {
-      "text": "Zavrite oči a počítajte dychy."
-    },
-    "abd": {
-      "text": "So zatvorenými očami pomaly a jemne pohybujte očami doľava a potom pomaly doprava."
-    },
-    "abh": {
-      "text": "Vytvorte päsť a potom roztiahnite prsty a natiahnite ich tak ďaleko, ako len môžete."
-    },
-    "abi": {
-      "text": "Sadnite si rovno, ruky zveste po bokoch a pomaly otáčajte krkom jedným smerom vo veľkom kruhu."
-    },
     "aaa": {
-      "text": "Choďte si dať pohár vody."
+      "text": "Choď si po pohár vody."
     },
     "aab": {
-      "text": "Pomaly sa pozrite doľava a potom doprava."
+      "text": "Tvoja fľaša na teba pozerá. Napi sa."
     },
     "aac": {
-      "text": "Pomaly sa pozrite úplne hore, potom dole."
-    },
-    "aae": {
-      "text": "Zatvorte oči a uvoľnite sa."
-    },
-    "aau": {
-      "text": "Postavte sa a urobte výpad. Vydržte 10 sekúnd a potom urobte výpad druhou nohou."
+      "text": "Kontrola hydratácie: kedy si naposledy pil vodu?"
     },
     "aad": {
-      "text": "Zatvorte oči a zhlboka sa nadýchnite."
+      "text": "Čas na dúšok vody. Tvoj mozog je zo 75 % voda."
     },
-    "aao": {
-      "text": "Skutočne ergonomické pracovné miesto je také, od ktorého sa pravidelne vzďaľujete."
+    "aae": {
+      "text": "Voda je palivo pre mozog. Dotankuj."
     },
-    "aar": {
-      "text": "Položte si končeky prstov na ramená. 10 sekúnd krúžte ramenami dopredu a potom dozadu."
-    },
-    "aas": {
-      "text": "Zdvihnite pravú ruku, natiahnite ju cez hlavu doľava a držte 10 sekúnd. Opakujte na druhej strane."
-    },
-    "aam": {
-      "text": "Zamyslite sa na chvíľu nad niečím, čo oceňujete."
-    },
-    "aaq": {
-      "text": "Zavrite oči a pomenujte veci, ktoré počujete."
-    },
-    "aaw": {
-      "text": "Každých 20 minút zaostrite po dobu 20 sekúnd na objekt vzdialený aspoň 20 metrov."
-    },
-    "aax": {
-      "text": "Ak potrebujete pomoc, požiadajte o ňu."
-    },
-    "aay": {
-      "text": "Robte jednu vec naraz."
-    },
-    "aaz": {
-      "text": "Je vaša pozornosť vynaložená rozumne?"
-    },
-    "abb": {
-      "text": "Vystavte oči prirodzenému svetlu."
-    },
-    "aba": {
-      "text": "Zmeňte polohu sedenia."
-    },
-    "abc": {
-      "text": "So zatvorenými očami pomaly a jemne zdvihnite oči k stropu a potom späť na zem."
-    },
-    "abf": {
-      "text": "Postupne sa dotknite špičkou každého prsta špičky palca tak, aby vytvorili tvar písmena O."
-    },
-    "abj": {
-      "text": "Postavte sa rovno a pomaly nakloňte hlavu k ramenu pomocou rovnakej ruky, kým nepocítite natiahnutie."
-    },
-    "abg": {
-      "text": "Zovrite ju v päsť a potom posúvajte prsty nahor, až kým nebudú smerovať k stropu, akoby ste niekomu hovorili, aby prestal."
-    },
-    "abk": {
-      "text": "Postavte sa a vyrovnajte, s rukami vedľa seba. Stlačte lopatky k sebe a držte."
+    "aaf": {
+      "text": "Aj mierna dehydratácia znižuje sústredenosť. Napi sa."
     },
     "aag": {
-      "text": "Natiahnite si ruky."
+      "text": "Vypi pohár vody. Tvoje obličky ti poďakujú."
     },
     "aah": {
-      "text": "Je vaša poloha pri sedení správna?"
-    },
-    "abl": {
-      "text": "Postavte sa a vyrovnajte s rukami zdvihnutými pozdĺž ramien. Posuňte ruky mierne za chrbát, podržte ich na sekundu a vráťte späť."
-    },
-    "aat": {
-      "text": "Pravou rukou postupne uchopte každý prst ľavej ruky a stlačte ho. Zopakujte to aj na druhej strane."
+      "text": "Urob si čaj alebo sa napi vody. Zaslúžiš si to."
     },
     "aai": {
-      "text": "Pomaly otočte hlavu na stranu a podržte ju 10 sekúnd."
+      "text": "Zatvor oči na 20 sekúnd. Nech si oddýchnu."
+    },
+    "aaj": {
+      "text": "Pozri sa z okna na niečo vzdialené. Oči ti poďakujú."
     },
     "aak": {
-      "text": "Vstaňte zo stoličky a pretiahnite sa."
+      "text": "Pravidlo 20-20-20: každých 20 min pozeraj 20 sekúnd na niečo 6 metrov ďaleko."
     },
     "aal": {
-      "text": "Zamerajte zrak na objekt vzdialený aspoň 20 metrov."
+      "text": "Zamrkaj rýchlo 15-krát. Tvoje oči sú suché ako Sahara."
+    },
+    "aam": {
+      "text": "Odvrať pohľad od obrazovky. Nájdi najvzdialenejší bod v miestnosti."
+    },
+    "aan": {
+      "text": "Rozhliadni sa po miestnosti. Obrazovka nie je celý svet."
+    },
+    "aao": {
+      "text": "Zatvor oči a jemne si ich pomasíruj končekmi prstov."
+    },
+    "aap": {
+      "text": "Pozri sa hore, dole, doľava, doprava. Jóga pre oči."
+    },
+    "aaq": {
+      "text": "Zhlboka sa trikrát nadýchni. Nádych nosom, výdych ústami."
+    },
+    "aar": {
+      "text": "Dýchaj 4 sekundy nádych, 4 sekundy výdych. Opakuj 5-krát."
+    },
+    "aas": {
+      "text": "Zastav sa. Vezmi si jeden vedomý nádych. Hotovo."
+    },
+    "aat": {
+      "text": "Dýchaj bránicou, nie hrudníkom. Pocíť ten rozdiel."
+    },
+    "aau": {
+      "text": "Nádych na 4, zadrž na 4, výdych na 4. Škatuľkové dýchanie."
     },
     "aav": {
-      "text": "Zatvorte oči a jednoducho si všimnite čokoľvek, čo sa objaví v aktuálnom okamihu, bez posudzovania."
+      "text": "Výdych dvakrát dlhší ako nádych. Nervový systém sa upokojí."
+    },
+    "aaw": {
+      "text": "Polož ruku na brucho. Cítiš, ako sa dvíha pri nádychu?"
+    },
+    "aax": {
+      "text": "Zívaj. Vážne, zívanie okysličuje mozog. Nehanbi sa."
+    },
+    "aay": {
+      "text": "Vyrovnaj sa. Áno, hovorím na teba."
+    },
+    "aaz": {
+      "text": "Skontroluj si postoj. Ramená dole a dozadu."
+    },
+    "aba": {
+      "text": "Sedíš rovno? Asi nie. Oprav to."
+    },
+    "abb": {
+      "text": "Predstav si, že ťa niekto ťahá za šnúrku na temene hlavy."
+    },
+    "abc": {
+      "text": "Obe nohy na podlahe. Chrbát rovno. Lepšie."
+    },
+    "abd": {
+      "text": "Tvoja chrbtica práve zaslzila. Vyrovnaj sa."
     },
     "abe": {
-      "text": "Potraste rukami, aby sa vám trochu uľavilo."
+      "text": "Stiahni lopatky k sebe. Dýchaj. Pusti."
     },
-    "abn": {
-      "text": "Postavte sa a jednu nohu položte na blízky predmet, napríklad stoličku alebo stupienok. Koleno nechajte pokrčené a vydržte 10-15 sekúnd. Opakujte s druhou nohou."
+    "abf": {
+      "text": "Zdvihni bradu, spusti ramená. Kráľovná držania tela."
     },
-    "abp": {
-      "text": "Postavte sa chrbtom a rukami k stene a potom pomaly pohybujte rukami hore a dole, akoby ste robili snehových anjelov."
+    "abg": {
+      "text": "Pomaly otoč hlavu doprava, potom doľava. Pocíť úľavu."
     },
-    "abq": {
-      "text": "Postavte sa tvárou k stene, položte na ňu ruky a urobte niekoľko klikov."
+    "abh": {
+      "text": "Nakloň hlavu na stranu. Podrž 15 sekúnd. Zmeň stranu."
     },
-    "abr": {
-      "text": "Posaďte sa na okraj stoličky a natiahnite jednu nohu priamo pred seba, držte ju 10-15 sekúnd. Opakujte s druhou nohou."
+    "abi": {
+      "text": "Urob pomalé krúžky hlavou. Tri jedným, tri druhým smerom."
     },
-    "abs": {
-      "text": "Postavte sa čelom k stene, jednu nohu dajte dozadu a druhú dopredu, potom sa oprite o stenu. Opakujte s druhou nohou."
+    "abj": {
+      "text": "Dotkni sa bradou hrudníka. Pocíť natiahnutie šije."
     },
-    "abt": {
-      "text": "Jednu ruku držte vzpriamenú a druhou rukou jemne tlačte lakeť prvej ruky smerom k hlave. Vydržte 10-15 sekúnd. Opakujte s druhou rukou."
+    "abk": {
+      "text": "Zasuň hlavu dozadu, akoby si robil dvojitú bradu. Dobrý strečing."
     },
-    "abu": {
-      "text": "Nakloňte hlavu na jednu stranu, potom na druhú stranu a potom ju jemne nakloňte dopredu a dozadu."
-    },
-    "abv": {
-      "text": "Natiahnite jednu ruku cez hrudník, druhou rukou držte lakeť a jemne ju pritiahnite k hrudi. Opakujte s druhou rukou."
-    },
-    "abw": {
-      "text": "Postavte sa, položte jednu nohu na blízky predmet, napríklad stoličku alebo stupienok, a dotknite sa prstov na nohách. Zopakujte to s druhou nohou."
-    },
-    "abx": {
-      "text": "Postavte sa do dverí a položte jednu ruku na každú stranu dverí, potom sa jemne nakloňte dopredu, kým nepocítite natiahnutie hrudníka."
-    },
-    "aby": {
-      "text": "Posaďte sa na okraj stoličky alebo na zem, chodidlá položte k sebe a jemne zatlačte lakťami, aby ste si natiahli vnútornú stranu stehien."
+    "abl": {
+      "text": "Otoč hlavu a pozri sa za seba. Zmeň stranu."
     },
     "abm": {
-      "text": "Posaďte sa na okraj stoličky, otočte trup na jednu stranu a držte 10-15 sekúnd. Opakujte na druhej strane."
+      "text": "Zdvihni ramená k ušiam, podrž 5 sek., pusti. Opakuj 3×."
+    },
+    "abn": {
+      "text": "Urob krúžky ramenami. 10 dopredu, 10 dozadu."
     },
     "abo": {
-      "text": "Postavte sa s nohami na šírku ramien, spustite telo dole, akoby ste sedeli na stoličke, a potom sa postavte späť. Niekoľkokrát zopakujte."
+      "text": "Stisni lopatky k sebe na 5 sekúnd. Dýchaj."
+    },
+    "abp": {
+      "text": "Ramená napäté? Spusti ich o 5 cm. Tak je to lepšie."
+    },
+    "abq": {
+      "text": "Vytiahni ruky hore a poriadne sa pretiahni."
+    },
+    "abr": {
+      "text": "Chyť sa za lakeť a jemne pritiahni na stranu. Zmeň stranu."
+    },
+    "abs": {
+      "text": "Vytiahni ruku, prsty hore, jemne pritiahni. Zmeň ruku."
+    },
+    "abt": {
+      "text": "Urob krúžky zápästiami. 10 jedným, 10 druhým smerom."
+    },
+    "abu": {
+      "text": "Roztiahni a zovri prsty 10-krát. Rozhýb dlane."
+    },
+    "abv": {
+      "text": "Potras rukami akoby mokrými. 15 sekúnd."
+    },
+    "abw": {
+      "text": "Stlač každý prst palcom. Taká mikro-masáž."
+    },
+    "abx": {
+      "text": "Zlož dlane ako k modlitbe a zatlač proti sebe. Strečing zápästí."
+    },
+    "aby": {
+      "text": "Dotkni sa palcom postupne každého prsta. Rýchlejšie. Ešte rýchlejšie."
+    },
+    "abz": {
+      "text": "Stisni antistresovú loptičku. Alebo si predstav, že ju máš."
+    },
+    "aca": {
+      "text": "Otoč trup doprava, chyť sa operadla. Zmeň stranu."
+    },
+    "acb": {
+      "text": "Vstaň a dotkni sa prstami nôh. Alebo to skús."
+    },
+    "acc": {
+      "text": "Vytiahni ruky pred seba a zaoblí chrbát. Mačací chrbát."
+    },
+    "acd": {
+      "text": "Polož ruky na boky a jemne sa prehni dozadu."
+    },
+    "ace": {
+      "text": "Nakloň sa na stoličke do strán. Pretiahni bočné svaly."
+    },
+    "acf": {
+      "text": "Vstaň, ruky hore, pretiahni sa ako po prebudení."
+    },
+    "acg": {
+      "text": "Vstaň a urob 10 drepov. Alebo 5. Alebo aspoň 1."
+    },
+    "ach": {
+      "text": "Vyrovnaj nohy pod stolom a napni svaly na 10 sekúnd."
+    },
+    "aci": {
+      "text": "Zdvihni sa na špičky 15-krát. Lýtka ti poďakujú."
+    },
+    "acj": {
+      "text": "Vstaň a sprav pár krokov. Krv musí prúdiť."
+    },
+    "ack": {
+      "text": "Skríž nohu, polož členok na koleno. Jemne zatlač. Zmeň."
+    },
+    "acl": {
+      "text": "Vytiahni nohy a otáčaj chodidlami v krúžkoch."
+    },
+    "acm": {
+      "text": "Vstaň a pretiahni sa ako mačka po drienke."
+    },
+    "acn": {
+      "text": "Urob 10 jumping jackov. Áno, pri stole. Nikto nepozerá."
+    },
+    "aco": {
+      "text": "Choď na krátku prechádzku. 2 minúty stačia."
+    },
+    "acp": {
+      "text": "Urob 5 kľukov. Alebo kľuky od steny. Počíta sa."
+    },
+    "acq": {
+      "text": "Vstaň a pochoduj na mieste 30 sekúnd."
+    },
+    "acr": {
+      "text": "Zatancuj si pri stole. Nikto ťa nevidí (pravdepodobne)."
+    },
+    "acs": {
+      "text": "Daj si plank na 20 sekúnd. Alebo na koľko zvládneš."
+    },
+    "act": {
+      "text": "Pobehuj na mieste 30 sekúnd. Krv sa rozprúdi."
+    },
+    "acu": {
+      "text": "Zatvor oči a počúvaj okolie 30 sekúnd."
+    },
+    "acv": {
+      "text": "Vymenuj 3 veci, za ktoré si vďačný. Teraz."
+    },
+    "acw": {
+      "text": "Pocíť svoje nohy na podlahe. Buď tu a teraz."
+    },
+    "acx": {
+      "text": "Usmej sa. Aj nútený úsmev zlepšuje náladu."
+    },
+    "acy": {
+      "text": "Uvoľni čeľusť. Pravdepodobne ju zvieraš."
+    },
+    "acz": {
+      "text": "Uvoľni čelo. Vrásky nepomáhajú pri kódovaní."
+    },
+    "ada": {
+      "text": "Sústreď sa na jeden zvuk okolo seba. 15 sekúnd."
+    },
+    "adb": {
+      "text": "Zisti, kde držíš napätie. Uvoľni to miesto."
+    },
+    "adc": {
+      "text": "Povedz si niečo pekné. Nemusíš nahlas."
+    },
+    "add": {
+      "text": "Pocíť teplotu vzduchu na koži. Buď prítomný."
+    },
+    "ade": {
+      "text": "Kancelárska prestávka: skontroluj, či nemáš priveľa otvorených záložiek. Zatvor 10."
+    },
+    "adf": {
+      "text": "Ako v kancli: choď si po kávu, aj keď pracuješ z domu."
+    },
+    "adg": {
+      "text": "Piatkový mood! A nie, je len utorok... ale prestávka sa počíta."
+    },
+    "adh": {
+      "text": "Tvoja chrbtica má viac výčitiek ako tvoj šéf. Vyrovnaj sa."
+    },
+    "adi": {
+      "text": "Napi sa vody. Nie kávy. Viem, viem, ale aspoň skús."
+    },
+    "adj": {
+      "text": "Pretiahni sa ako pes na slnku. Nehanbi sa."
+    },
+    "adk": {
+      "text": "Urob si čajík. Slovenská tradícia zaväzuje."
+    },
+    "adl": {
+      "text": "Vstaň od stola. Aj Jožko robí prestávky (na bryndzové halušky)."
+    },
+    "adm": {
+      "text": "Zatvor oči na chvíľu. To nie je lenivosť, to je optimalizácia."
     }
   },
   "longBreakIdeas": {
     "aaa": {
-      "title": "Nie sám",
-      "text": "Je pre vás ťažké urobiť si prestávku osamote? Skúste to urobiť s kolegom. Okrem toho, že sa vám bude ľahšie dodržiavať prestávky, budete mať možnosť lepšie ich spoznať. Spoločné prestávky zvyšujú produktivitu."
+      "title": "Spolu to ide lepšie",
+      "text": "Ťažko sa ti robia prestávky osamote? Skús oddychovať s kolegom. Budete sa navzájom motivovať a pri tom si ponariekať na deadliny. Výskumy ukazujú, že spoločné prestávky zvyšujú produktivitu."
     },
     "aab": {
-      "title": "Odstúpte",
-      "text": "Všimli ste si niekedy, ako váš mozog dokáže prísť na veci sám? Všetko, čo potrebujete, je vystúpiť z počítača a dať si pauzu, aby ste premýšľali o niečom úplne nesúvisiacom."
+      "title": "Odstúp od obrazovky",
+      "text": "Všimol si si, že najlepšie nápady prichádzajú v sprche? To preto, lebo mozog rieši problémy na pozadí. Odíď od monitora a mysli na niečo úplne iné."
+    },
+    "aac": {
+      "title": "Mikroprestávky",
+      "text": "Krátke, časté prestávky znižujú opakované zaťaženie a udržujú tvoj pohybový aparát zdravý. Ber ich ako pravidelnú údržbu ľudského stroja."
     },
     "aad": {
       "title": "Meditácia",
-      "text": "Výskumné štúdie naznačujú, že cvičenia založené na meditácii pomáhajú znižovať úzkosť, depresiu, stres a bolesť a pomáhajú zlepšovať celkový zdravotný stav, duševné zdravie a kvalitu života. Nie ste si istí, ako začať? Existuje množstvo aplikácií, ktoré vám pomôžu."
-    },
-    "aag": {
-      "title": "Pohybujte sa",
-      "text": "V kancelárii môžete cvičiť mnohými spôsobmi. Skúste pochodovať na mieste alebo robiť stolové kliky."
-    },
-    "aah": {
-      "title": "Zmena",
-      "text": "Máte stabilizačnú loptu alebo pracovný stôl na státie? Zvážte, či nimi na chvíľu nenahradíte svoju pracovnú stoličku."
-    },
-    "aai": {
-      "title": "Všimnite si",
-      "text": "Snívate alebo máte problémy so sústredením? Je to znamenie, že si potrebujete dať prestávku."
-    },
-    "aaj": {
-      "title": "Technológie",
-      "text": "Čo tak ísť na prechádzku bez akejkoľvek technológie?"
-    },
-    "aak": {
-      "title": "Metabolizmus",
-      "text": "Nové výskumy ukazujú, že dlhé sedenie prispieva okrem iného k riziku metabolického syndrómu, srdcového infarktu a mozgovej príhody a k celkovému riziku úmrtia. Pravidelné prestávky na prechádzku môžu pomôcť vášmu obehu a pôsobiť proti niektorým z týchto problémov."
-    },
-    "aam": {
-      "title": "Ovocie",
-      "text": "Urobte si čas a zjedzte ovocie. Pomaly. Všimnite si chuť, textúru, čerstvosť."
-    },
-    "aat": {
-      "title": "Zápästie a predlaktie",
-      "text": "Natiahnite ruky tak, aby dlane smerovali k vám, a potom pomaly otočte ruky štyrikrát v smere hodinových ručičiek a potom štyrikrát proti smeru hodinových ručičiek."
-    },
-    "aau": {
-      "title": "Naťahovanie chrbta",
-      "text": "Spojte ruky za hlavou a potom ich spoločne zdvihnite nad hlavu, pričom dlane smerujú nahor."
-    },
-    "aav": {
-      "title": "Hýbanie sa",
-      "text": "Za každých 30 minút stagnácie by ste mali mať aspoň jednu minútu pohybu."
-    },
-    "aba": {
-      "title": "Upratovanie",
-      "text": "Čistý priestor pomáha sústrediť sa na prácu a je často spojený s pozitívnymi emóciami, ako je šťastie."
-    },
-    "abd": {
-      "text": "Zívanie môže byť naozaj užitočné, pretože sa pri ňom vytvárajú slzy, ktoré pomáhajú zvlhčovať a mazať oči.",
-      "title": "Zívanie"
-    },
-    "abe": {
-      "title": "Zmena zamerania",
-      "text": "Priložte jeden prst k oku a sústreďte sa naň. Pomaly prst odďaľujte, zaostrite do diaľky a potom sa vráťte späť na prst. Vráťte prst späť a zaostrite na niečo vzdialené."
-    },
-    "abf": {
-      "title": "Dlane",
-      "text": "V sede sa lakťami oprite o stôl a priblížte sa k jeho okraju. Nechajte svoju váhu klesnúť dopredu a zakryte si oči rukami. Zavrite oči, pomaly sa nadýchnite nosom a niekoľko sekúnd vydržte. Pokračujte v hlbokom dýchaní."
-    },
-    "abg": {
-      "title": "Stláčanie rúk",
-      "text": "Stlačte pár zbalených ponožiek alebo mäkkú gumovú loptičku a podržte 5 sekúnd. Celý proces niekoľkokrát zopakujte."
-    },
-    "abh": {
-      "title": "Pomalé dýchanie",
-      "text": "Vznikajúci výskum naznačuje potenciál pre použitie kontrolovaných techník pomalého dýchania ako prostriedku na optimalizáciu fyziologických parametrov, ktoré sa zdajú byť spojené so zdravím a dlhovekosťou."
-    },
-    "abj": {
-      "title": "Pod tlakom?",
-      "text": "Skúste uzemňovaciu techniku 5-4-3-2-1: Nájdite 5 vecí, ktoré vidíte, 4 veci, ktorých sa môžete dotknúť, 3 veci, ktoré počujete, 2 veci, ktoré cítite, a 1 vec, ktorú môžete ochutnať."
+      "text": "Meditácia nie je sedenie v lotosovej pozícii. Stačí 5 minút sústredenia na dych. Výskumy ukazujú, že pravidelná prax znižuje stres a zlepšuje koncentráciu. Skús appku Headspace alebo Calm."
     },
     "aae": {
-      "title": "Žmurkanie",
-      "text": "Dlhodobé sledovanie obrazovky spôsobuje, že menej žmurkáte, a tým vystavujete oči pôsobeniu vzduchu. Niekoľko sekúnd rýchlo žmurkajte, aby ste osviežili slzný film a odstránili prach z povrchu očí."
-    },
-    "aap": {
-      "text": "Neposielajte e-maily ani správy kolegom z kancelárie, choďte k ich stolom a komunikujte s nimi.",
-      "title": "Kolegovia"
-    },
-    "aac": {
-      "title": "Mini Prestávky",
-      "text": "Odpočinok je kľúčovým prvkom pri zabezpečovaní výkonnosti pohybového aparátu. Časté prestávky môžu skrátiť trvanie úlohy a pomôcť znížiť riziko zranenia."
+      "title": "Mrkaj viac",
+      "text": "Pri práci pri obrazovke mrkáme 3-4× menej ako normálne. To vedie k suchým očiam a únave zraku. Mrkaj vedome počas ďalšej minúty. Tvoje oči ti poďakujú."
     },
     "aaf": {
-      "title": "Ergonómia",
-      "text": "Nesprávna výška a uhol klávesnice, myši, monitora alebo pracovného povrchu môžu spôsobiť zdravotné problémy. Nájdite si čas a prečítajte si o ergonómii pracovného stola."
+      "title": "Ergonómia stola",
+      "text": "Horná hrana monitora má byť v úrovni očí. Nohy na podlahe. Lakte v uhle 90°. Venuj 2 minúty nastaveniu svojho miesta. Tvoja chrbtica si to zapamätá."
     },
-    "aan": {
-      "title": "Toalety",
-      "text": "Keď idete na toaletu, prejdite do najvzdialenejšej na pracovisku."
+    "aag": {
+      "title": "Cvičenie v kancelárii",
+      "text": "Urob 10 drepov, 10 kľukov od stola a 10 zdvihnutí na špičky. Zaberie ti to 3 minúty a budeš sa cítiť, akoby si prišiel z posilky. Skoro."
     },
-    "aaz": {
-      "title": "Vytvorte umenie",
-      "text": "Je známe, že arteterapia má veľký prínos pre duševné zdravie, najmä pokiaľ ide o zvládanie stresu. Čo tak napísať krátku báseň, urobiť obrázok alebo namaľovať niečo malé?"
+    "aah": {
+      "title": "Zmeň to",
+      "text": "Pracuješ posediačky? Vstaň. Pracuješ postojačky? Sadni si. Zmena pozície každých 30-60 minút je najjednoduchší spôsob, ako predísť bolesti chrbta a zlepšiť krvný obeh."
+    },
+    "aai": {
+      "title": "Čítaj signály",
+      "text": "Tvoje telo k tebe hovorí: stuhnutý krk, boľavý chrbát, suché oči. Prestaň ignorovať tieto signály. Každý z nich je pozvánka na krátku prestávku."
+    },
+    "aaj": {
+      "title": "Prechádzka bez mobilu",
+      "text": "Choď na 10-minútovú prechádzku BEZ telefónu. Nech si tvoje oči oddýchnu od obrazoviek a mozog od notifikácií. Všimni si farby, zvuky, vône okolo seba."
+    },
+    "aak": {
+      "title": "Problém so sedením",
+      "text": "Sedenie dlhšie ako 8 hodín denne zvyšuje riziko srdcových chorôb o 15 %. Vstávaj každých 30 minút aspoň na minútu. To nie je lenivosť — to je zdravotná prevencia."
     },
     "aal": {
-      "title": "Aktívne stretnutia",
-      "text": "Čo tak presunúť stretnutia z konferenčnej miestnosti do haly? Chôdza nielen spaľuje kalórie, ale môže dokonca podporiť pocit spolupráce."
+      "title": "Prechádzková porada",
+      "text": "Ďalšiu poradu 1-na-1 urob na prechádzke. Pohyb stimuluje kreativitu a bez obrazovky sa ľudia viac otvoria. Steve Jobs to robil a asi to malo niečo do seba."
+    },
+    "aam": {
+      "title": "Vedomé jedenie",
+      "text": "Ďalšiu desiatu zjedz bez obrazovky. Vnímaj chuť, textúru, vôňu. Vedomé jedenie pomáha lepšie tráviť a jesz menej, lebo si všimneš moment nasýtenia."
+    },
+    "aan": {
+      "title": "Prechádzka po kávu",
+      "text": "Namiesto prípravy kávy v kuchyni si zájdi do najbližšej kaviarne. Tých 10 minút chôdze navyše ti dá viac ako dvojitá dávka kofeínu."
     },
     "aao": {
-      "title": "Prestávka na kávu",
-      "text": "Idete na prestávku na kávu? Zvážte 5-minútovú prechádzku zakaždým, keď na ňu pôjdete."
+      "title": "Mozog na prestávke",
+      "text": "Tvoj mozog spotrebuje 20 % energie tela. Po 90 minútach sústredenej práce potrebuje regeneráciu. Prestávka nie je strata času — je to nabíjanie procesora."
     },
-    "aas": {
-      "title": "Opakujte",
-      "text": "Našli ste svoj strečingový program? Nezabudnite ho zopakovať viackrát, aby ste lepšie bojovali proti účinkom dlhodobého sedenia."
-    },
-    "abb": {
-      "title": "Obed vonku",
-      "text": "Príroda je spojená s pozitívnymi emóciami a zníženým stresom a úzkosťou. Vždy, keď je to možné, skúste si vziať svoju každodennú obedňajšiu prestávku vonku, obklopenú nejakou zeleňou."
+    "aap": {
+      "title": "Hýb sa trochu",
+      "text": "5 minút pohybu každú hodinu znižuje riziko cukrovky 2. typu o 30 %. To je menej ako jedno video na TikToku a zdravotný efekt je obrovský."
     },
     "aaq": {
-      "text": "V štúdii na zdravých dobrovoľníkoch vedci z NIH zistili, že krátke prestávky, ktoré sa robia včas a často, môžu pomôcť nášmu mozgu naučiť sa nové zručnosti.",
-      "title": "Učenie"
+      "title": "Strečingová rutina",
+      "text": "Urob kompletné kolo strečingu: krk, ramená, zápästia, chrbát, nohy. 5 minút systematického strečingu znižuje svalové napätie o 40 %."
     },
     "aar": {
-      "title": "Cvičenie",
-      "text": "Dôkazy naznačujú, že malé množstvo pravidelného cvičenia môže priniesť výrazné zdravotné výhody vrátane merateľného zníženia stresu."
+      "title": "Krúžky zápästiami",
+      "text": "Ako niekto, kto trávi hodiny pri klávesnici, si tvoje zápästia zaslúžia špeciálnu starostlivosť. Krúžky, natiahnutie, stisnutie — 3 minúty prevencie syndrómu karpálneho tunela."
+    },
+    "aas": {
+      "title": "Pretiahni sa nahor",
+      "text": "Vstaň, vytiahni ruky nad hlavu a pretiahni sa do strán. Pocíť, ako sa chrbtica predlžuje. Pridaj otočenie trupu. Ako novorodený človek."
+    },
+    "aat": {
+      "title": "Pravidlo 30/1",
+      "text": "Každých 30 minút sedenia vstaň na 1 minútu. Jednoduché pravidlo, ľahko zapamätateľné, a efekt je vedecky dokázaný. Nastav si timer a drž sa toho."
+    },
+    "aau": {
+      "title": "7-minútové cvičenie",
+      "text": "Vedecké 7-minútové cvičenie: 12 cvikov po 30 sekundách s 10-sekundovými prestávkami. Potrebuješ len stoličku a stenu. Vygógluj 'scientific 7-minute workout'."
+    },
+    "aav": {
+      "title": "Zvýš tepovku",
+      "text": "Urob 20 jumping jackov, 10 drepov a 10 burpees. Zvýšený tep na 3-5 minút zlepšuje prietok krvi mozgom a zvyšuje produkciu endorfínov."
     },
     "aaw": {
-      "title": "7-minútové cvičenie",
-      "text": "Toto cvičenie predstavuje cvičenie celého tela za zlomok času. Ale ako pri každom cvičení, buďte opatrní. Existuje množstvo aplikácií, ktoré vám pomôžu začať."
-    },
-    "aay": {
-      "title": "Choďte po schodoch",
-      "text": "Štúdie ukázali, že pri výstupe po schodoch, ktorý sa považuje za intenzívnu fyzickú aktivitu, sa za minútu spáli viac kalórií ako pri behu."
+      "title": "Vezmi schody",
+      "text": "Nabudúce si vyber schody namiesto výťahu. Chôdza do schodov spaľuje 3× viac kalórií ako chôdza po rovine a posilňuje srdce."
     },
     "aax": {
-      "title": "Pulz",
-      "text": "Zvýšte si pulz na 120 úderov za minútu počas 20 minút štyrikrát alebo päťkrát týždenne pri akejkoľvek činnosti, ktorá vás baví. Pravidelné zvyšovanie tepovej frekvencie vedie k zlepšeniu kardiovaskulárneho zdravia."
+      "title": "Vytvor niečo",
+      "text": "Nakresli niečo, napíš báseň, postav vežu z pier. Tvorivá prestávka aktivuje iné oblasti mozgu ako analytická práca a funguje ako reset."
+    },
+    "aay": {
+      "title": "Uprac si",
+      "text": "Uprac pracovný stôl: vyhoď zbytočné papiere, usporiadaj káble, utri monitor. Čisté okolie = čistá myseľ. Výskumy to potvrdzujú."
+    },
+    "aaz": {
+      "title": "Jedz vonku",
+      "text": "Ďalšie jedlo zjedz na čerstvom vzduchu. Aj na balkóne. Prirodzené svetlo a zmena prostredia pomáhajú tráviť a znižujú stres."
+    },
+    "aba": {
+      "title": "Sila zívania",
+      "text": "Zívanie je prirodzený mechanizmus chladenia mozgu a zlepšenia pozornosti. Zívaj zámerne 5-6-krát. Áno, vyzeráš hlúpo. Ale tvoj mozog ti ďakuje."
+    },
+    "abb": {
+      "title": "Zmena zaostrenia",
+      "text": "Pozeraj sa na palec na natiahnutej ruke, potom na vzdialený bod. Opakuj 10-krát. Je to cvičenie očných svalov, ktoré predchádza únave zraku."
     },
     "abc": {
-      "text": "Ak pravidelne využívate verejnú dopravu, môžete namiesto sedenia stáť. Ak je to možné, snažte sa čo najviac svojich každodenných ciest nahradiť chôdzou alebo bicyklom.",
-      "title": "Verejná doprava"
+      "title": "Palmovanie očí",
+      "text": "Rozohrej dlane trením, polož na zatvorené oči. 60 sekúnd tmy a tepla. Oči sa regenerujú rýchlejšie ako po hodine pozerania do obrazovky."
+    },
+    "abd": {
+      "title": "Stlač niečo",
+      "text": "Antistresovú loptičku, gumenú kačičku, vankúš — stlač a uvoľni rytmicky. Uvoľňuje napätie v rukách a znižuje hladinu kortizolu."
+    },
+    "abe": {
+      "title": "Pomalé dýchanie",
+      "text": "Dýchaj 6-krát za minútu (nádych 5 sek., výdych 5 sek.) počas 5 minút. Tento rytmus sa synchronizuje s prirodzeným srdcovým rytmom a znižuje krvný tlak."
+    },
+    "abf": {
+      "title": "Vizualizácia",
+      "text": "Zatvor oči a predstav si miesto, kde sa cítiš najbezpečnejšie. Pláž, hory, babkina kuchyňa. 3 minúty vizualizácie znižujú kortizol ako 30 minút spánku."
+    },
+    "abg": {
+      "title": "Uzemnenie 5-4-3-2-1",
+      "text": "Vymenuj 5 vecí, ktoré vidíš, 4 ktoré počuješ, 3 ktoré cítiš dotykom, 2 ktoré cítiš čuchom, 1 ktorú cítiš chuťou. Uzemňovacia technika, ideálna na chvíle stresu."
+    },
+    "abh": {
+      "title": "Veda o drienke",
+      "text": "Drienko 10-20 minút zvyšuje bdelosť a produktivitu na ďalšie 3 hodiny. Nastav si budík — dlhšie ako 30 minút sa dostaneš do hlbokého spánku a budeš rozlámaný."
     },
     "abi": {
-      "title": "Vizualizácia",
-      "text": "Zavrite oči a predstavte si, že ste na pokojnom a upokojujúcom mieste, napríklad na pláži alebo v lese, a sústreďte sa na výhľad, zvuky a pocity tohto prostredia."
+      "title": "Pomodoro reset",
+      "text": "Technika Pomodoro: 25 minút práce, 5 minút pauza. Po 4 cykloch — dlhšia pauza 15-30 minút. Tvoj mozog má rád rytmus a predvídateľnosť."
+    },
+    "abj": {
+      "title": "Prestávka na čmáranie",
+      "text": "Čmáranice nie sú strata času. Kreslenie pri premýšľaní zlepšuje zapamätanie o 29 %. Vezmi papier a kresli čokoľvek. Aj kolieska a štvorčeky."
+    },
+    "abk": {
+      "title": "Prestávka s hudbou",
+      "text": "Pusti si obľúbenú pesničku a počúvaj so zatvorenými očami. Hudba aktivuje centrá odmeny v mozgu a redukuje stres. Jedna pesnička = 3-4 minúty regenerácie."
+    },
+    "abl": {
+      "title": "Chvíľa vďačnosti",
+      "text": "Zapíš 3 veci, za ktoré si dnes vďačný. Prax vďačnosti zlepšuje spánok, znižuje tlak a zvyšuje psychickú odolnosť. 2 minúty, ktoré zmenia naladenie."
+    },
+    "abm": {
+      "title": "Reset studenou vodou",
+      "text": "Opláchnisi zápästia studenou vodou 30 sekúnd. Stimulácia receptorov chladu prebúdza nervový systém a funguje ako prirodzený kofeínový šok."
+    },
+    "abn": {
+      "title": "Porozprávaj sa s rastlinou",
+      "text": "Polej izbovú rastlinu, prezri si jej listy, povedz jej niečo pekné. Kontakt so zeleňou znižuje krvný tlak. A rastlina potrebuje CO₂, takže obe strany profitujú."
+    },
+    "abo": {
+      "title": "Výplach mozgu",
+      "text": "Vypíš všetko, čo ti beží hlavou — úlohy, obavy, nápady. Vysyp to na papier. Tvoj mozog nie je disk — je to procesor. Uvoľni mu RAM."
+    },
+    "abp": {
+      "title": "Pohlaď domáceho miláčika",
+      "text": "Ak máš domáce zviera — pohlaď ho 5 minút. Kontakt so zvieratami znižuje kortizol a tlak. Ak nemáš — pozri si video s mačkami. Tiež funguje."
+    },
+    "abq": {
+      "title": "Terapia smiechom",
+      "text": "Pozri sa na jeden mém, krátke vtipné video alebo si spomeň na niečo smiešne. Smiech uvoľňuje endorfíny a zvyšuje toleranciu bolesti. Vážne."
+    },
+    "abr": {
+      "title": "Dávka čerstvého vzduchu",
+      "text": "Otvor okno alebo vyjdi na 5 minút von. Zvýšená hladina CO₂ v miestnosti znižuje kognitívne funkcie o 15 %. Čerstvý vzduch je okamžitý upgrade."
+    },
+    "abs": {
+      "title": "Sken tela",
+      "text": "Zatvor oči a mentálne 'preskenuj' telo od nôh po hlavu. Kde cítiš napätie? Vedome uvoľni tie miesta. 3 minúty body scanu sú ako reštart systému."
+    },
+    "abt": {
+      "title": "Stolová jóga",
+      "text": "Otočenie na stoličke, mačka-krava v sede, pretiahnutie paží nad hlavu. 5 jógových pozícií, ktoré zvládneš pri stole. YouTube: 'desk yoga 5 min'."
+    },
+    "abu": {
+      "title": "Prečítaj si stranu",
+      "text": "Vezmi fyzickú knižku a prečítaj si jednu stranu. Čítanie z papiera zapája mozog inak ako obrazovka a dáva očiam prirodzený bod zaostenia."
+    },
+    "abv": {
+      "title": "90-minútový cyklus",
+      "text": "Tvoj mozog pracuje v 90-minútových cykloch (ultradiánny rytmus). Po 90 minútach intenzívnej práce potrebuje 15-20 minút regenerácie. Nebojuj s biológiou — spolupracuj."
+    },
+    "abw": {
+      "title": "Prestávka na zvedavosť",
+      "text": "Vygógluj jednu vec, ktorá ťa fascinuje, ale nemá nič spoločné s prácou. Dinosaury? História vidličky? Vesmír? 5 minút zvedavosti osviežia perspektívu."
+    },
+    "abx": {
+      "title": "Škatuľkové dýchanie",
+      "text": "Nádych 4 sek. → zadrž 4 sek. → výdych 4 sek. → zadrž 4 sek. Opakuj 4 cykly. Technika používaná Navy SEALs na kontrolu stresu."
+    },
+    "aby": {
+      "title": "Vytancuj to",
+      "text": "Pusti si obľúbený song a tancuj 3 minúty. Nemusíš vedieť tancovať — ide o pohyb. Tanec spája cvičenie s hudbou a produkuje serotonín."
+    },
+    "abz": {
+      "title": "Zavolaj niekomu",
+      "text": "Namiesto písania zavolaj niekomu na 5 minút. Hlas druhého človeka stimuluje produkciu oxytocínu. SMS tento efekt nemá. Áno, aj mamke."
+    },
+    "aca": {
+      "title": "Dávka slnka",
+      "text": "Vyjdi na 10 minút na slnko (aj keď je pod mrakom). Prirodzené svetlo reguluje cirkadiánny rytmus a produkciu vitamínu D. Tvoje biologické hodiny sa automaticky kalibrujú."
+    },
+    "acb": {
+      "title": "Progresívna relaxácia",
+      "text": "Napni svaly nôh na 5 sek., uvoľni. Potom lýtka. Potom stehná. Pokračuj nahor. Progresívna svalová relaxácia je overená metóda na zníženie fyzického napätia."
+    },
+    "acc": {
+      "title": "Chvíľa naboso",
+      "text": "Vyzuj sa a pocíť podlahu chodidlami. Ak máš prístup k tráve — ešte lepšie. 'Grounding' znižuje zápaly a zlepšuje kvalitu spánku."
+    },
+    "acd": {
+      "title": "Napíš budúcemu sebe",
+      "text": "Napíš jednovetný list sebe o rok. Čo chceš pamätať z dnešného dňa? Toto cvičenie dáva perspektívu a znižuje stres z maličkostí."
+    },
+    "ace": {
+      "title": "Digitálny upratovanie",
+      "text": "Zatvor 5 zbytočných záložiek. Vyčisti 10 mailov. Vypni 1 notifikáciu. Digitálny poriadok je mentálny poriadok. Menej šumu = viac fokusu."
+    },
+    "acf": {
+      "title": "Pravidlo 2 minút",
+      "text": "Je tu niečo, čo zaberie menej ako 2 minúty? Urob to teraz. Odpíš na mail, odlož hrnček, vyhoď odpadky. Malé víťazstvá poháňajú motiváciu."
+    },
+    "acg": {
+      "title": "Audit postoja",
+      "text": "Skontroluj: je obrazovka v úrovni očí? Nohy na podlahe? Zápästia rovné? Venuj 3 minúty kalibrácii pracovného miesta."
+    },
+    "ach": {
+      "title": "Prestávka na vône",
+      "text": "Privoňaj ku káve, éterickému oleju, krému na ruky — čomukoľvek príjemnému. Čuch je priamo prepojený s centrami emócií a pamäte v mozgu."
+    },
+    "aci": {
+      "title": "Pozorovanie oblakov",
+      "text": "Ak máš okno — pozeraj sa na oblaky 3 minúty. Je to prirodzená forma meditácie. Oblaky sa menia, myšlienky plynú, napätie ustupuje. Ako reboot pre hlavu."
     }
+  },
+  "ui": {
+    "loading": "Načítanie Pauza…",
+    "preview": {
+      "status": "Náhľad",
+      "detail": "Náhľad v prehliadači",
+      "action": "Režim náhľadu aktívny."
+    },
+    "title": "Pauza",
+    "heroHeadline": "Udržujte pracovný rytmus s pokojným rozhraním",
+    "heroSubtitle": "Najdôležitejšie nastavenia vpredu, pokročilé možnosti vzadu.",
+    "settingsCategories": "Kategórie nastavení",
+    "settingsCategoriesHint": "Prepnite kategóriu vľavo, prezerajte nastavenia vpravo.",
+    "currentCategory": "Aktuálna kategória",
+    "overview": "Prehľad",
+    "overviewHint": "Zhrnutie stavu, posledné akcie a rýchly prístup.",
+    "liveOverview": "Živý prehľad",
+    "liveOverviewHint": "Aktuálny rytmus, stav aplikácie a okno prestávky na prvý pohľad.",
+    "quickActions": "Rýchle akcie",
+    "quickActionsHint": "Tieto akcie priamo ovplyvňujú prebiehajúci rytmus.",
+    "savePanel": "Uložiť zmeny",
+    "savePanelHint": "Zmeny sa prejavia až po uložení.",
+    "nextBreakLabel": "Ďalšia prestávka",
+    "currentBreakLabel": "Aktuálna prestávka",
+    "lastActionLabel": "Posledná akcia",
+    "runtimeLabel": "Prostredie",
+    "platformLabel": "Platforma",
+    "versionLabel": "Verzia",
+    "breakFeelLabel": "Štýl prestávky",
+    "placementLabel": "Umiestnenie okna",
+    "pendingChanges": "Neuložené zmeny",
+    "synced": "Synchronizované",
+    "saving": "Ukladanie…",
+    "allSet": "Hotovo",
+    "noCurrentBreak": "Žiadna aktívna prestávka",
+    "liveSignals": "Živé signály",
+    "general": "Všeobecné",
+    "preferences": "Predvoľby",
+    "currentStatus": "Aktuálny stav",
+    "language": "Jazyk",
+    "languageChinese": "Zjednodušená čínština",
+    "languageEnglish": "Angličtina",
+    "launchOnLogin": "Spustiť pri prihlásení",
+    "enabled": "Zapnuté",
+    "disabled": "Vypnuté",
+    "schedule": "Rytmus",
+    "interruptions": "Pripomienky a prerušenia",
+    "sectionScheduleHint": "Iba nastavenia rytmu, ktoré upravujete denne.",
+    "microbreaks": "Mikroprestávky",
+    "microbreaksHint": "Krátke prerušenia počas práce.",
+    "longBreaks": "Prestávky",
+    "longBreaksHint": "Kompletná prestávka po niekoľkých cykloch.",
+    "interval": "Interval",
+    "every": "Frekvencia",
+    "durationLabel": "Trvanie",
+    "behavior": "Správanie",
+    "allowPostpone": "Povoliť odloženie",
+    "signals": "Signály",
+    "sectionSignalsHint": "Nechajte Pauza inteligentnejšie rozhodnúť, kedy zobraziť pripomienky.",
+    "naturalBreaks": "Prirodzené prestávky",
+    "naturalBreaksHint": "Automatický reset po dostatočne dlhej neprítomnosti.",
+    "resetAfter": "Resetovať po",
+    "dnd": "Nerušiť",
+    "dndHint": "Pozastaviť pripomienky, keď je tento režim aktívny",
+    "sectionSurfaceHint": "Ovládajte intenzitu prerušenia a umiestnenie okna prestávky.",
+    "sectionGeneralHint": "Niekoľko globálnych predvolieb. Štandardne minimalistické.",
+    "notificationsCategory": "Pripomienky a odloženie",
+    "notificationsCategoryHint": "Zvuk pred prestávkou. Nastavenia odloženia tu.",
+    "surfaceCategory": "Prerušenie a zobrazenie",
+    "surfaceCategoryHint": "Intenzita, umiestnenie a prísnosť okna prestávky.",
+    "smartPause": "Inteligentná pauza",
+    "smartPauseHint": "Pauza najprv hľadá zjavný moment a postupne znižuje prah.",
+    "generalAndShortcuts": "Všeobecné a skratky",
+    "generalAndShortcutsHint": "Správa jazyka, automatického spustenia a globálnych klávesových skratiek.",
+    "advanced": "Pokročilé",
+    "sectionAdvancedHint": "Viac kontroly, možností kompatibility a skratiek.",
+    "appExclusions": "Výnimky aplikácií",
+    "appExclusionsHint": "Aplikácie, pre ktoré sa pripomienky pozastavia alebo obnovia.",
+    "appExclusionsEnable": "Povoliť",
+    "appRulePause": "Pozastaviť pri zhode",
+    "appRuleResume": "Obnoviť iba pri zhode",
+    "pause30": "Pauza 30 min",
+    "focus45": "Režim sústredenia 45 min",
+    "resume": "Pokračovať",
+    "clearFocus": "Ukončiť sústredenie",
+    "save": "Uložiť",
+    "revert": "Vrátiť",
+    "defaults": "Predvolené hodnoty",
+    "preBreakNotifications": "Upozorňovací zvuk",
+    "beforeLabel": "Pred",
+    "postpone": "Odložiť",
+    "scheduleControl": "Riadenie rytmu",
+    "resetScheduleHint": "Prepočítať ďalšie prestávky od teraz.",
+    "postponeCategoryHint": "Nastavte dobu a limit odloženia zvlášť.",
+    "limitLabel": "Limit",
+    "breakSurface": "Okno prestávky",
+    "breakDisplayMode": "Režim zobrazenia",
+    "breakBackdrop": "Motív pozadia",
+    "breakBackdropHint": "Vyberte atmosférické pozadie pre okno prestávky.",
+    "breakBackdropPaper": "Papier",
+    "breakBackdropDawn": "Svitanie",
+    "breakBackdropForest": "Les",
+    "breakBackdropNight": "Noc",
+    "breakBackdropCustom": "Vlastné pozadie",
+    "customWallpaper": "Vlastné pozadie",
+    "customWallpaperHint": "Nahrajte lokálny obrázok ako pozadie okna prestávky.",
+    "customWallpaperChoose": "Vybrať obrázok",
+    "customWallpaperReplace": "Nahradiť obrázok",
+    "customWallpaperRemove": "Odstrániť",
+    "customWallpaperEmpty": "Žiadne vlastné pozadie nevybrané",
+    "customWallpaperEmptyHint": "Bez obrázka sa použije predvolený motív.",
+    "customWallpaperReady": "Obrázok bude komprimovaný a uložený lokálne ako pozadie prestávky.",
+    "breakIdeas": "Tipy na prestávku",
+    "breakIdeasHint": "Zobraziť krátky tip pri každej prestávke.",
+    "breakSounds": "Zvuky prestávky",
+    "breakSoundsHint": "Upozorňovací zvuk pred prestávkou a zvuk na konci.",
+    "microbreakStartSound": "Upozornenie na mikroprestávku",
+    "microbreakEndSound": "Koniec mikroprestávky",
+    "longBreakStartSound": "Upozornenie na prestávku",
+    "longBreakEndSound": "Koniec prestávky",
+    "breakSoundVolume": "Hlasitosť",
+    "breakSoundSilence": "Ticho",
+    "breakSoundCrystalGlass": "Krištáľový pohár",
+    "breakSoundWindChime": "Zvonkohra",
+    "breakSoundTicToc": "Tik-tak",
+    "breakSoundReverie": "Snenie",
+    "reminderMode": "Režim pripomienky",
+    "reminderModeHint": "Inteligentný hľadá prirodzený moment; Vynútený preruší okamžite.",
+    "reminderModeSmart": "Inteligentný",
+    "reminderModeForced": "Vynútený",
+    "window": "Okno",
+    "fullscreen": "Celá obrazovka",
+    "promptStyleGentle": "Jemný",
+    "promptStyleBalanced": "Vyvážený",
+    "promptStyleImmersive": "Pohlcujúci",
+    "allScreens": "Všetky obrazovky",
+    "screenPrimary": "Hlavná obrazovka",
+    "screenCursor": "Obrazovka s kurzorom",
+    "showTimeToBreakInTray": "Zobraziť ďalšiu prestávku v systémovej lište",
+    "currentTimeInBreaks": "Zobraziť čas v okne prestávky",
+    "currentTimeInBreaksHint": "Systémový čas vpravo hore v okne prestávky.",
+    "strictModes": "Prísne režimy",
+    "strictModesHint": "Určite, či možno prestávky preskočiť a či je nutné ručné potvrdenie.",
+    "microbreakStrict": "Prísna mikroprestávka",
+    "longBreakStrict": "Prísna prestávka",
+    "manualFinish": "Ručne ukončiť po časovači",
+    "showTrayMenuInStrictMode": "Menu systémovej lišty v prísnom režime",
+    "shortcuts": "Klávesové skratky",
+    "shortcutsHint": "Prázdne = neregistrované. Formát napr.: CmdOrCtrl+Shift+P",
+    "shortcutReveal": "Otvoriť nastavenia",
+    "shortcutFocus45": "Režim sústredenia 45 min",
+    "shortcutPauseToggle": "Prepnúť pauzu",
+    "shortcutPause30": "Pauza 30 min",
+    "shortcutPause60": "Pauza 1 hod.",
+    "shortcutPause120": "Pauza 2 hod.",
+    "shortcutPause300": "Pauza 5 hod.",
+    "shortcutSkipScheduled": "Prejsť na ďalšiu naplánovanú prestávku",
+    "shortcutSkipMicrobreak": "Prejsť na mikroprestávku",
+    "shortcutSkipLongBreak": "Prejsť na prestávku",
+    "shortcutReset": "Resetovať rytmus",
+    "suffix": {
+      "secondsLong": "s",
+      "secondsBefore": "s pred",
+      "minutesApart": "min po",
+      "cycles": "cykly",
+      "minutesLong": "min",
+      "minutesShortPostpone": "min",
+      "minutesLongPostpone": "min",
+      "minutesAway": "min",
+      "minutes": "min",
+      "times": "×"
+    },
+    "status": {
+      "noBreakScheduled": "Žiadna prestávka naplánovaná",
+      "microbreak": "Mikroprestávka",
+      "longBreak": "Prestávka",
+      "nextBreak": "{{label}} za {{duration}}",
+      "focus": "Sústredenie {{duration}}",
+      "pause": "Pozastavené {{duration}}",
+      "pauseForever": "Pozastavené na neurčito",
+      "blockedBy": "Pozastavené kvôli {{match}}",
+      "appRuleActive": "Pravidlo aplikácie aktívne",
+      "dndActive": "Nerušiť aktívne"
+    },
+    "error": {
+      "loadState": "Nepodarilo sa načítať stav Pauza"
+    },
+    "breakCopy": {
+      "clearedDetail": "Žiadna aktívna prestávka.",
+      "manualAwaiting": "Čas vypršal. Dokončite túto prestávku pred návratom k práci.",
+      "awaitingFinish": "Čakanie na dokončenie",
+      "actions": {
+        "resumeWork": "Späť do práce",
+        "done": "Hotovo",
+        "later": "Neskôr",
+        "skip": "Preskočiť"
+      },
+      "defaultPrompt": {
+        "microbreak": "Postavte sa, uvoľnite ramená a šiju, pozrite sa do diaľky.",
+        "longBreak": "Odíďte na pár minút od stola a nechajte telo aj myseľ oddýchnuť."
+      }
+    },
+    "previewAction": {
+      "save": "Náhľad: nastavenia aktualizované.",
+      "pause": "Náhľad: pozastavené 30 min.",
+      "pauseForever": "Náhľad: pozastavené na neurčito.",
+      "focus": "Náhľad: sústredenie zapnuté.",
+      "focusCleared": "Náhľad: sústredenie ukončené.",
+      "resume": "Náhľad: pokračovanie.",
+      "reset": "Náhľad: rytmus resetovaný.",
+      "autostartOn": "Náhľad: autoštart zapnutý.",
+      "autostartOff": "Náhľad: autoštart vypnutý.",
+      "done": "Náhľad: prestávka dokončená.",
+      "later": "Náhľad: prestávka odložená.",
+      "skip": "Náhľad: prestávka preskočená."
+    },
+    "preBreakSoundHint": "Jemný zvuk pred koncom časovača, aby ste mohli dokončiť úlohu.",
+    "previewSound": "Vypočuť",
+    "appExclusionsSearch": "Hľadať medzi bežiacimi aplikáciami",
+    "appExclusionsSearchPlaceholder": "Názov aplikácie…",
+    "appExclusionsSearchLoading": "Načítanie…",
+    "appExclusionsSearchEmpty": "Žiadne výsledky",
+    "appExclusionsManualHint": "Alebo zadajte ručne názov procesu (jeden na riadok)",
+    "appExclusionsAdd": "Kliknutím pridáte do zoznamu výnimiek"
   }
 }

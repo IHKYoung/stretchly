@@ -105,7 +105,7 @@
       "ourWebsite": "látogasd meg a weboldalunkat",
       "dot": ".",
       "developedBy": "Fejlesztette",
-      "janH": "Clarke Young",
+      "clarkeY": "Clarke Young",
       "designedBy": "Ikont és kinézetet tervezte Colin Shanley",
       "checkNewVersion": "Frissítés automatikus engedélyezése"
     },
@@ -220,304 +220,748 @@
     "appExclusion": "Alkalmazás kivétel szabály"
   },
   "miniBreakIdeas": {
-    "aac": {
-      "text": "Lassan nézz teljesen felfelé, majd pedig lefelé."
-    },
-    "aam": {
-      "text": "Gondolj egy pillanatig valamire, amit nagyra értékelsz."
-    },
-    "aax": {
-      "text": "Ha segítségre van szükséged, kérj."
-    },
     "aaa": {
-      "text": "Menj és igyál egy pohár vizet."
+      "text": "Igyál egy pohár vizet. A tested most könyörög érte."
     },
     "aab": {
-      "text": "Lassan nézz teljesen balra, majd pedig jobbra."
+      "text": "A vizes palackod ítélkezve néz rád. Kortyolj egyet."
+    },
+    "aac": {
+      "text": "Hidratálás-ellenőrzés: mikor ittál utoljára vizet?"
     },
     "aad": {
-      "text": "Csukd be a szemeidet és vegyél néhány mély levegőt."
+      "text": "Lassan nézz teljesen balra, aztán jobbra."
     },
     "aae": {
-      "text": "Csukd be a szemeidet és relaxálj."
+      "text": "Lassan nézz teljesen felfelé, aztán lefelé."
     },
     "aaf": {
-      "text": "Nyújtsd ki a lábaidat."
+      "text": "Nézz valamire 6 méternyire 20 másodpercig — a 20-20-20 szabály."
     },
     "aag": {
-      "text": "Nyújtsd ki a karjaidat."
+      "text": "Pislogj gyorsan 20-szor. A kiszáradt szemeid hálásak lesznek."
     },
     "aah": {
-      "text": "Megfelelő az ülő testhelyzeted?"
+      "text": "Csukd be a szemed és forgasd lassan a szemgolyóidat körbe."
     },
     "aai": {
-      "text": "Lassan fordítsd el a fejed oldalra és tartsd így 10 másodpercig."
+      "text": "Csukott szemmel lassan nézz fel a plafon felé, aztán le."
     },
     "aaj": {
-      "text": "Lassan döntsd a fejed oldalra és tartsd így 5-10 másodpercig."
+      "text": "Csukott szemmel lassan nézz balra, aztán jobbra."
     },
     "aak": {
-      "text": "Állj fel a székedből és nyújtózkodj egyet."
+      "text": "Dörzsöld össze a tenyereid, amíg melegek nem lesznek, aztán borítsd a csukott szemeidre."
     },
     "aal": {
-      "text": "Fókuszálj a szemeiddel egy legalább 20 méter távolságban lévő tárgyra."
+      "text": "Bámulj ki az ablakon 30 másodpercig. Emlékszel a külvilágra?"
     },
-    "aao": {
-      "text": "Az igazán ergonomikus munkaállomás az, amitől rendszeresen felállsz."
-    },
-    "aap": {
-      "text": "Csukd be a szemeidet és számold a lélegzetvételeidet."
-    },
-    "aar": {
-      "text": "Tedd az ujjhegyeidet a vállaidra. Körözz a vállaiddal előre 10 másodpercig, majd pedig hátra."
-    },
-    "aaq": {
-      "text": "Csukd be a szemeidet és nevezd meg, hogy miket hallasz."
-    },
-    "aaz": {
-      "text": "A megfelelő dolgokra koncentrálsz?"
-    },
-    "aba": {
-      "text": "Változtass az ülő testhelyzeteden."
+    "aam": {
+      "text": "Nézz el a képernyőtől és fókuszálj valami zöldre. A szemed imádja a zöldet."
     },
     "aan": {
-      "text": "Mosolyogj egy pillanatig amiért életben vagy."
+      "text": "Engedd, hogy természetes fény érje a szemedet."
     },
-    "aay": {
-      "text": "Egyszerre csak egy dolgot csinálj."
+    "aao": {
+      "text": "Csukd be a szemed és végy néhány mély lélegzetet."
     },
-    "abe": {
-      "text": "Rázd meg a kezeidet egy kis megkönnyebbülésért."
+    "aap": {
+      "text": "Csukd be a szemed és lazíts."
     },
-    "abf": {
-      "text": "Egyesével érintsd össze a hüvelykujjad hegyét a többi ujjad hegyével úgy, hogy O-alakot formáljanak."
+    "aaq": {
+      "text": "Csukd be a szemed és számold a lélegzeteidet."
+    },
+    "aar": {
+      "text": "Lélegezz be 4-ig, tartsd 7-ig, fújd ki 8-ig. A 4-7-8 technika."
     },
     "aas": {
-      "text": "Emeld fel a jobb karod, nyújtsd a fejed fölött balra, és tartsd így 10 másodpercig. Ismételd meg a másik oldalra is."
-    },
-    "abi": {
-      "text": "Ülj egyenesen, karjaidat lógasd magad mellett, és lassan körözz a nyakaddal egy irányba egy nagy kört leírva."
-    },
-    "abm": {
-      "text": "Ülj a szék szélére, csavard el a törzsed az egyik oldalra, és tartsd úgy 10-15 másodpercig. Ismételd meg a másik irányba is."
-    },
-    "abn": {
-      "text": "Állj fel, és tedd az egyik lábad egy közeli tárgyra, például székre vagy zsámolyra. Behajlított térddel tartsd így a lábad 10-15 másodpercig. Ismételd meg a másik lábbal is."
-    },
-    "abo": {
-      "text": "Állj vállszélességű terpeszben, engedd le a tested, mintha leülnél egy székre, majd egyenesedj ki. Ismételd meg többször."
-    },
-    "abq": {
-      "text": "Állj a fal felé fordulva, tedd a falra a kezeidet, majd csinálj néhány karhajlítást."
-    },
-    "abr": {
-      "text": "Ülj a szék elülső részére, és nyújtsd ki az egyik lábad egyenesen magad elé, tartsd 10-15 másodpercig. Ismételd meg a másik lábaddal."
-    },
-    "abd": {
-      "text": "Csukott szemmel lassan és óvatosan mozgasd a szemed balra, majd lassan jobbra."
+      "text": "Végy 3 lassú lélegzetet. Orron be, szájon ki."
     },
     "aat": {
-      "text": "A jobb kezeddel fogd meg a bal kezed minden ujját egyesével, és szorítsd meg őket. Ismételd meg a másik oldalon."
-    },
-    "abp": {
-      "text": "Állj háttal és kezekkel a falhoz, majd lassan mozgasd fel és le a karjaidat, mintha hóangyalt csinálnál."
-    },
-    "abs": {
-      "text": "Állj a fal felé fordulva, tedd az egyik lábad hátra, a másikat pedig előre, majd dőlj a falnak. Ismételd meg a másik lábaddal is."
+      "text": "Végy egy akkora mély levegőt, hogy a hasad kidülled. Ez a rekeszlégzés."
     },
     "aau": {
-      "text": "Állj fel, lépj előre és csinálj egy kitörést. Tartsd 10 másodpercig, majd ismételd meg a másik lábaddal is."
+      "text": "Csinálj semmit 20 másodpercig. Nehezebb, mint gondolnád."
     },
     "aav": {
-      "text": "Csukd be a szemed, és egyszerűen figyeld meg, ami az aktuális pillanatban történik, ítélkezés nélkül."
+      "text": "Tartásellenőrzés — vállak hátra, lábak a földön."
     },
     "aaw": {
-      "text": "Fókuszálj 20 percenként 20 másodpercig egy 5 méter távolságban lévő tárgyra."
+      "text": "Változtass ülőpozíciót."
+    },
+    "aax": {
+      "text": "Engedd le a vállaidat. Eddig a füleidnél voltak."
+    },
+    "aay": {
+      "text": "Lazítsd el az állkapcsod. Nem is tudtad, hogy össze volt szorítva, ugye?"
+    },
+    "aaz": {
+      "text": "Egyenesítsd ki a gerinced. Képzeld, hogy egy zsinór húz felfelé a fejed tetejéről."
+    },
+    "aba": {
+      "text": "Az ülés az új dohányzás. Állj fel egy percre."
     },
     "abb": {
-      "text": "Tedd ki a szemed természetes fénynek."
+      "text": "Lassan fordítsd a fejed az egyik oldalra és tartsd 10 másodpercig. Cserélj."
     },
     "abc": {
-      "text": "Csukott szemmel lassan és óvatosan mozgasd felfelé a szemed a plafon felé, majd pedig lassan lefelé a padló felé."
+      "text": "Lassan döntsd a fejed oldalra és tartsd 5-10 másodpercig."
+    },
+    "abd": {
+      "text": "Óvatosan húzd az egyik füled a vállad felé. Érezd a nyaknyújtást."
+    },
+    "abe": {
+      "text": "Körkörözd a nyakad lassan és óvatosan."
+    },
+    "abf": {
+      "text": "Döntsd a fejed előre, hátra, balra, jobbra. Teljes iránytű-reset."
     },
     "abg": {
-      "text": "Szorítsd ökölbe a kezeidet, majd nyújtsd ki az ujjaidat a plafon felé, mintha azt mutatnád valakinek, hogy álljon meg."
+      "text": "Körkörözd a vállaidat előrefelé 10 másodpercig, aztán hátrafelé."
     },
     "abh": {
-      "text": "Szorítsd ökölbe a kezeidet, majd nyújtsd ki az ujjaidat amennyire csak tudod."
+      "text": "Húzd a vállaidat a füleidhez és engedd le. Ismételd 5-ször."
     },
-    "abk": {
-      "text": "Állj egyenesen, karjaiddal az oldalad mellett. Szorítsd össze a lapockáidat és tartsd úgy."
+    "abi": {
+      "text": "Szorítsd össze a lapockáidat és tartsd 5 másodpercig."
     },
     "abj": {
-      "text": "Állj egyenesen, majd lassan döntsd oldalra a fejed az azonos oldali kezed segítségével a vállad felé, amíg nyúlást nem érzel a nyakadban."
+      "text": "Emeld a jobb karod a fejed fölé, dőlj balra, tartsd 10 mp-ig. Cserélj oldalt."
+    },
+    "abk": {
+      "text": "Egy kart tedd a mellkasod előtt és óvatosan húzd magadhoz a másikkal. Cserélj."
     },
     "abl": {
-      "text": "Állj egyenesen, karjaidat a vállak mellett emeld fel. Mozgasd a kezeid kissé a hátad mögé, tartsd egy másodpercig, ezután pedig lazítsd el őket."
+      "text": "Tartsd az egyik karod egyenesen fent, a másikkal nyomd a könyököt hátra. Tartsd 10 mp."
+    },
+    "abm": {
+      "text": "Fűzd össze az ujjaidat a hátad mögött és feszítsd ki a mellkasod."
+    },
+    "abn": {
+      "text": "Fűzd össze az ujjaidat és nyomd a tenyereidet a plafon felé. Nyújtás!"
+    },
+    "abo": {
+      "text": "Tartsd a karjaidat egyenesen oldalra. Csinálj kis köröket. Gyorsabban éget, mint hinnéd."
+    },
+    "abp": {
+      "text": "Rázd ki a kezeidet, hogy feloldd a feszültséget."
+    },
+    "abq": {
+      "text": "Érintsd az ujjbegyeidet a hüvelykujjadhoz, egy O-formát csinálva."
+    },
+    "abr": {
+      "text": "Szorítsd ökölbe a kezed, aztán nyisd szét és feszítsd ki az ujjaidat."
+    },
+    "abs": {
+      "text": "Szorítsd ökölbe, aztán nyisd szét, mintha azt mondanád: stop."
     },
     "abt": {
-      "text": "Tartsd az egyik karodat egyenesen felfelé, majd a másik kezeddel gyengéden húzd a kinyújtott karodat könyöknél a fejed irányába. Tartsd így 10-15 másodpercig. Ismételd meg a másik karoddal is."
+      "text": "Nyomd meg a bal kezed minden ujját a jobb kezeddel. Cserélj kezet."
     },
     "abu": {
-      "text": "Döntsd a fejed az egyik oldalra, aztán a másik oldalra, majd óvatosan döntsd előre, aztán hátra."
+      "text": "Nyújtsd a csuklóidat — nyújtsd ki a karod, húzd hátra az ujjaidat óvatosan."
     },
     "abv": {
-      "text": "Nyújtsd az egyik karodat a mellkasod előtt keresztbe, fogd meg a másik kezeddel a könyöködet és gyengéden húzd a mellkasod felé. Ismételd meg a másik karral is."
-    },
-    "aby": {
-      "text": "Ülj a szék elülső részére, vagy a padlóra és rakd össze a talpaidat, majd gyengéden nyomd lefelé a könyököddel a lábaidat, hogy nyújtsd a belső combjaidat."
+      "text": "Forgasd a csuklóidat 10-szer az óramutató járásával, aztán ellene."
     },
     "abw": {
-      "text": "Állj fel, rakd az egyik lábad egy közeli tárgyra, például székre, vagy zsámolyra, nyúlj le és érintsd meg a lábujjaidat. Ismételd meg a másik lábbal is."
+      "text": "Tedd laposra a kezed az asztalon és óvatosan feszítsd szét az ujjaidat."
     },
     "abx": {
-      "text": "Állj egy közeli nyitott ajtóhoz és rakd az egyik karod az egyik ajtófélfához, a másikat a másikhoz, ezután gyengéden dőlj előre amíg a mellkasodban feszülést nem érzel."
+      "text": "Kopogtass az ujjaiddal az asztalon egyenként, kisujjtól hüvelykig. Most fordítva."
+    },
+    "aby": {
+      "text": "Adj magadnak egy kézmasszázst. Megérdemelted."
+    },
+    "abz": {
+      "text": "Állj fel és nyújtózkodj. A gerinced már nagyon várta."
+    },
+    "aca": {
+      "text": "Ülj a szék szélére, csavard a törzsed az egyik oldalra, tartsd 10 mp-ig. Cserélj."
+    },
+    "acb": {
+      "text": "Hajlítsd a hátad macska módra, aztán engedd lefelé. Macska-tehén nyújtás, irodai kiadás."
+    },
+    "acc": {
+      "text": "Tedd mindkét kezed a derekad mögé és óvatosan hajolj hátrafelé."
+    },
+    "acd": {
+      "text": "Állj a fallal szemben, csúsztasd a karjaidat fel-le — fal-angyal mozdulat."
+    },
+    "ace": {
+      "text": "Nyújtsd ki a lábaidat."
+    },
+    "acf": {
+      "text": "Állj fel és csinálj egy kitörést. Tartsd 10 mp-ig minden lábbal."
+    },
+    "acg": {
+      "text": "Állj fel és csinálj néhány guggolást. A széked ott van, ha baj lenne."
+    },
+    "ach": {
+      "text": "Csinálj 10 lábujjhegy-emelést az asztalnál. Lopakodó fitnesz."
+    },
+    "aci": {
+      "text": "Nyújtsd ki az egyik lábad egyenesen ülve. Tartsd 10 mp-ig. Cserélj."
+    },
+    "acj": {
+      "text": "Körkörözd a bokáidat — az óra járásával, aztán ellene."
+    },
+    "ack": {
+      "text": "Hajlítsd és feszítsd a lábfejed 10-szer. A bokáid el lettek hanyagolva."
+    },
+    "acl": {
+      "text": "Állj egy lábon 30 másodpercig. Cserélj. Az egyensúly is egy képesség."
+    },
+    "acm": {
+      "text": "Mozgasd a lábujjaidat a cipődben. Igen, az összeset."
+    },
+    "acn": {
+      "text": "Állj fel és menetelj helyben 30 másodpercig."
+    },
+    "aco": {
+      "text": "Csinálj néhány fal-fekvőtámaszt. Senki sem néz. Valószínűleg."
+    },
+    "acp": {
+      "text": "Csinálj 5 szék-dippet az asztal szélén."
+    },
+    "acq": {
+      "text": "Feszítsd meg és engedd el az összes izmod a lábujjaidtól a homlokodig. Teljes reset."
+    },
+    "acr": {
+      "text": "Ráncold össze az arcod 5 mp-re, aztán engedd el. Arcfeszültség: megszűnt."
+    },
+    "acs": {
+      "text": "Állj egy ajtókeretbe és dőlj előre óvatosan a mellkasod nyújtásához."
+    },
+    "act": {
+      "text": "Csukd be a szemed és nevezd meg a hangokat, amiket hallasz."
+    },
+    "acu": {
+      "text": "Csukd be a szemed és figyeld, mi jut eszedbe, ítélkezés nélkül."
+    },
+    "acv": {
+      "text": "Gondolj valamire, amiért most hálás vagy."
+    },
+    "acw": {
+      "text": "Mosolyogj. Élsz, és ez elég menő."
+    },
+    "acx": {
+      "text": "Készíts egy mentális pillanatfelvételt arról, mit érez a tested. Van feszültség valahol?"
+    },
+    "acy": {
+      "text": "Gondolj egy kedves dolgot, amit egy barátodnak mondanál, aztán mondd magadnak."
+    },
+    "acz": {
+      "text": "Vedd észre 5 dolgot a szobában, amire eddig sosem figyeltel."
+    },
+    "ada": {
+      "text": "Csukd be a szemed és képzeld el a boldog helyed 20 mp-ig."
+    },
+    "adb": {
+      "text": "Tedd le a telefonod képernyővel lefelé 60 mp-re. Nem fog történni semmi. Ígérem."
+    },
+    "adc": {
+      "text": "A billentyűzeted nem fog hiányolni. Állj fel."
+    },
+    "add": {
+      "text": "A hátad épp panaszt nyújtott be. Ideje nyújtózkodni."
+    },
+    "ade": {
+      "text": "Nézz fel a képernyőből. Csavar a történetben: a világ 3D."
+    },
+    "adf": {
+      "text": "Ásíts. Még egy hamis is kiváltja az igazit. Próbáld ki."
+    },
+    "adg": {
+      "text": "Nyisd ki a szád nagyra, aztán csukd be lassan. Állkapocsfeszültség: feloldva."
+    },
+    "adh": {
+      "text": "Öleld meg magad. Kard keresztbe és szorítás. Az öngondoskodás nem fura."
+    },
+    "adi": {
+      "text": "Mini tánc szünet — csak 10 mp. Tudod, hogy akarod."
+    },
+    "adj": {
+      "text": "Tegyél úgy, mintha kötelet húznál a fejed fölött. Oldalsó nyújtás aktiválva."
+    },
+    "adk": {
+      "text": "Nyomd össze a tenyereidet a mellkasod előtt és tartsd. Namaszté, kóder."
+    },
+    "adl": {
+      "text": "Masszírozd a halántékodat kis körökben 10 mp-ig. Azonnali nyugalom."
+    },
+    "adm": {
+      "text": "A monitorod üzent. Azt mondja, túl közelről bámulsz már túl régóta."
     }
   },
   "longBreakIdeas": {
-    "aap": {
-      "text": "Ne e-mailezz vagy chatelj az irodában a kollégákkal, sétálj oda beszélni hozzájuk személyesen.",
-      "title": "Kollégák"
+    "aaa": {
+      "title": "Jobb együtt",
+      "text": "Nehéz egyedül szünetet tartani? Próbálj meg egy kollégával együtt szünetelni — szociális és egészséges egyszerre."
     },
-    "abd": {
-      "title": "Ásítás",
-      "text": "Az ásítás nagyon hasznos lehet, mivel könnyeket termel, ami segít nedvesen tartani a szemeket."
+    "aab": {
+      "title": "Lépj el",
+      "text": "Észrevetted, hogy a legjobb ötleteid a zuhany alatt jönnek? Mert az agyad háttérben dolgozik, amikor nem fókuszálsz. Sétálj egyet."
     },
-    "abi": {
-      "title": "Fantáziadús vizualizáció",
-      "text": "Csukd be a szemeidet és képzeld el magad egy békés és megnyugtatható helyen, például egy tengerparton vagy erdőben, majd fókuszálj a környezet látványára, hangjaira és a kiváltott érzésekre."
-    },
-    "aao": {
-      "text": "Kávészünetre mész? Fontold meg, hogy minden kávészünetben egy 5 perces sétát is beiktatsz.",
-      "title": "Kávészünet"
-    },
-    "aaq": {
-      "title": "Tanulás",
-      "text": "Egy egészséges önkéntesekkel készült kutatásban megállapították, hogy gyakori rövid szünetek tartásával segítjük az agyunkat új készségek megtanulásában."
-    },
-    "aae": {
-      "text": "Ha hosszú ideig bámulod a képernyőt, akkor kevesebbet pislogsz, így a szemed ki van téve a levegőnek. Pislogj gyorsan néhány másodpercig, hogy felfrissítsd a könnyfilmet és eltávolítsd a port a szem felszínéről.",
-      "title": "Pislogás"
-    },
-    "aaf": {
-      "title": "Ergonómia",
-      "text": "A billentyűzet, az egér, a monitor vagy a munkafelület nem megfelelő magassága és dőlésszöge egészségügyi problémákat okozhat. Szánj egy kis időt az munkakörnyezet ergonómiájáról szóló olvasásra."
-    },
-    "aam": {
-      "text": "Szánj rá időt, és egyél gyümölcsöt. Lassan. Figyeld meg az ízét, állagát és a frissességét.",
-      "title": "Gyümölcs"
-    },
-    "aan": {
-      "text": "Sétálj a munkahelyed legtávolabbi mosdójába, amikor használnod kell.",
-      "title": "Mosdók"
-    },
-    "aar": {
-      "title": "Edzés",
-      "text": "Bizonyítékok azt mutatják, hogy a kis mennyiségű rendszeres testmozgás drámai egészségügyi előnyökkel járhat, beleértve a stressz mérhető csökkenését."
-    },
-    "abc": {
-      "title": "Tömegközlekedés",
-      "text": "Ha rendszeresen használsz tömegközlekedést, ülés helyett állhatsz. Ha lehetséges, próbáld meg a lehető legtöbb napi utazást gyaloglással vagy kerékpározással helyettesíteni."
-    },
-    "abe": {
-      "title": "Fókuszváltás",
-      "text": "Tartsd egy ujjadat közel a szemedhez és fókuszálj rá. Lassan vedd el az ujjadat, fókuszálj a távolba, majd újra az ujjadra. Vedd el az ujjadat és fókuszálj újra valamire a távolban."
+    "aac": {
+      "title": "Mikro-szünetek",
+      "text": "A rövid, gyakori szünetek csökkentik az ismétlődő megterhelést és ébren tartanak. Nem luxus — tudomány."
     },
     "aad": {
       "title": "Meditáció",
-      "text": "Tanulmányok azt sugallják, hogy a meditációs gyakorlatok csökkentik a szorongást, depressziót és a fájdalmat, valamint fejlesztik az általános és mentális egészséget, illetve az életminőséget. Nem tudod hogyan kezdj bele? Számost ilyen app áll segítségedre."
+      "text": "A tudatos jelenlét meditáció csökkenti a szorongást, a stresszt, sőt a fizikai fájdalmat is. Már napi 5 perc is számít."
+    },
+    "aae": {
+      "title": "Pislogj többet",
+      "text": "Képernyő előtt akár 66%-kal kevesebbet pislogsz, ami kiszárítja a szemed. Pislogj tudatosan, vagy használj műkönnycseppet."
+    },
+    "aaf": {
+      "title": "Asztal-ergonómia",
+      "text": "Monitor szemmagasságban, billentyűzet könyökmagasságban, lábak a földön. Javíts egy apróságon most."
     },
     "aag": {
-      "title": "Mozgás",
-      "text": "Számos módja van az edzésnek az irodában. Próbáld ki az egy helyben sétát, vagy az asztali fekvőtámaszt."
-    },
-    "aaj": {
-      "title": "Technológia",
-      "text": "Mit szólnál egy technológiáktól mentes sétához?"
-    },
-    "aal": {
-      "title": "Aktív megbeszélések",
-      "text": "Mit szólnál a megbeszélések áthelyezéséhez a tárgyalóból az előtérbe? A gyaloglás nemcsak kalóriákat éget, de még az együttműködés érzését is elősegítheti."
-    },
-    "aax": {
-      "title": "Pulzus",
-      "text": "Emeld fel a pulzusodat 120-ra 20 percig négy vagy öt alkalommal egy héten, tetszőleges tevékenységgel. Rendszeres pulzus emelés hozzájárul a szív- és érrendszer egészségéhez."
-    },
-    "aaw": {
-      "title": "7 perces edzés",
-      "text": "Ez az edzés egy teljes testet megmozgató gyakorlatok sora töredékidő alatt. Azonban mint minden gyakorlatnál, itt is légy óvatos. Számos app létezik, mely segít hogy hozzákezdj."
-    },
-    "aay": {
-      "title": "Lépcsőzés",
-      "text": "Tanulmányok megmutatták, hogy a lépcsőzés, amely erőteljes intenzitású fizikai aktivitásnak számít, több kalóriát éget el percenként, mint a kocogás."
-    },
-    "abb": {
-      "title": "Ebéd a szabadban",
-      "text": "A természet hozzájárul a pozitív érzelmekhez, valamint a stressz és a szorongás csökkentéséhez. Amikor csak lehetséges, próbáld meg a napi ebédszünetet a szabadban tartani, zöldövezetben."
-    },
-    "abh": {
-      "title": "Lassú légzés",
-      "text": "Feltörekvő kutatások azt sugallják, hogy a szabályozott lassú légzési technikák alkalmazásának lehetőségét az egészséggel és a hosszú élettartammal összefüggő élettani paraméterek optimalizálásának eszközeként lehet alkalmazni."
-    },
-    "aac": {
-      "title": "Rövid szünetek",
-      "text": "A pihenés egy kulcsfontosságú összetevő a vázizom rendszer teljesítményének biztosítására. Gyakori szünetek csökkentik a feladatok hosszát és segítik csökkenteni az ergonómiai sérülésveszélyt."
+      "title": "Irodai edzés",
+      "text": "Nem kell edzőterem a mozgáshoz. Menetelj helyben, csinálj fal-fekvőtámaszt vagy széktolódást. A tested hálás lesz."
     },
     "aah": {
-      "title": "Változás",
-      "text": "Van fitness labdád vagy álló munkaasztalod? Vedd fontolóra ezek használatát egy időre a szék helyett."
-    },
-    "aas": {
-      "title": "Ismétlés",
-      "text": "Megtaláltad már a Pauza rutinod? Ne felejtsd el ismételni több alkalommal is, hogy a hosszantartó ülés káros hatásait megelőzd."
-    },
-    "aaa": {
-      "title": "Nem vagy egyedül",
-      "text": "Nehéznek találod egyedül szünetet tartani? Próbáld meg egy munkatárssal. Azon kívül, hogy így könnyebb betartani a szüneteket, nagyobb az esélye, hogy jobban megismerjétek egymást. A közös szünetek növelik a produktivitást."
-    },
-    "aav": {
-      "title": "Mobilizálás",
-      "text": "Minden harminc perc stagnálás után legalább egy percnyi stimulációt kell végezni."
-    },
-    "aak": {
-      "title": "Anyagcsere",
-      "text": "Új kutatások azt mutatják, hogy a hosszú ideig tartó ülés hozzájárul többek között a metabolikus szindróma, a szívroham és az agyvérzés kockázatához, valamint az általános halálozási kockázathoz. A rendszeres gyaloglási szünetek tartása javíthatja a keringést, és ellensúlyozhatja ezeket a problémákat."
-    },
-    "aau": {
-      "title": "Hát nyújtás",
-      "text": "Fogd össze a kezeidet a fejed mögött, majd emeld fel őket a fejed fölé úgy, hogy a végén a tenyereid felfelé nézzenek."
-    },
-    "aba": {
-      "text": "Egy tiszta környezet segít a munkára fókuszálni és gyakran pozitív érzelmeket, például boldogságot vált ki.",
-      "title": "Rendrakás"
-    },
-    "aab": {
-      "title": "Arrébb lépés",
-      "text": "Észrevetted már, hogy az agyad magától ki tud találni dolgokat? Csak annyit kell tenned, hogy arrébb lépsz a számítógéptől és tartasz egy szünetet, hogy valami egészen másra gondolj."
-    },
-    "abg": {
-      "title": "Kéz szorítás",
-      "text": "Szoríts össze a kezedben egy pár összegöngyölt zoknit, vagy egy puha gumilabdát 5 másodpercig. Ismételd meg ezt néhány alkalommal."
+      "title": "Váltsd fel",
+      "text": "Ha van álló asztalod vagy ülőlabdád, most lenne a legjobb pillanat átváltani."
     },
     "aai": {
-      "text": "Álmodozol vagy problémát jelent a fókuszálás? Ez annak a jele, hogy ideje szünetet tartani.",
-      "title": "Figyelem"
+      "title": "Olvasd a jeleket",
+      "text": "Álmodozol? Nehéz koncentrálni? Újraolvasod ugyanazt a sort? Az agyad szünetet kér — hallgass rá."
+    },
+    "aaj": {
+      "title": "Tech-mentes séta",
+      "text": "Hagyd otthon a telefonod és sétálj egy rövid kört. Nincs podcast, nincs zene — csak te és a gondolataid."
+    },
+    "aak": {
+      "title": "Az ülés problémája",
+      "text": "A tartós ülés növeli a szívbetegség, a cukorbetegség és a korai halálozás kockázatát. Rendszeres mozgásszünetekkel mérsékelheted."
+    },
+    "aal": {
+      "title": "Sétáló megbeszélések",
+      "text": "Legközelebb ha négyszemközti meetinged van, javasolj sétát a tárgyaló helyett. Sétálva kreatívabbak vagyunk."
+    },
+    "aam": {
+      "title": "Tudatos nassolás",
+      "text": "Fogj egy gyümölcsöt és edd lassan. Figyeld az ízét, az állagát, az illatát — tudatos evés mini formában."
+    },
+    "aan": {
+      "title": "Kávés séta",
+      "text": "Mész kávéért? Csinálj belőle egy 5 perces sétát is. Két legyet egy csapásra."
+    },
+    "aao": {
+      "title": "Az agyad a szünetekről",
+      "text": "Egy NIH-kutatás szerint az agy a szünetek alatt próbálja meg összefűzni a frissen tanultakat — szóval a szünet a produktivitás része."
+    },
+    "aap": {
+      "title": "Mozdulj egy kicsit, nyerj sokat",
+      "text": "Már a minimális rendszeres mozgás is drámaian csökkenti a korai halálozás kockázatát. Minden perc számít."
+    },
+    "aaq": {
+      "title": "Nyújtórutin",
+      "text": "Találtál egy jó nyújtássort? Ismételd naponta többször. Az ismétlés tartós rugalmasságot épít."
+    },
+    "aar": {
+      "title": "Csuklókörzés",
+      "text": "Nyújtsd ki a karjaidat tenyérrel magad felé, aztán lassan forgasd a csuklóidat mindkét irányba. A kárpáltlagúnásnak ez az ellenszere."
+    },
+    "aas": {
+      "title": "Nyújtás felfelé",
+      "text": "Kulcsold a kezeidet a fejed mögött, aztán emeld fel a kezeidet a fejed fölé. Tartsd a kart egyenesen és érezd a nyújtást az oldalaidban."
     },
     "aat": {
-      "title": "Csukló és alkar",
-      "text": "Nyújtsd ki a karjaidat tenyerekkel magad felé, majd lassan forgasd a kezeidet négyszer órajárásával megegyezően, majd négyszer a másik irányban."
+      "title": "A 30/1 szabály",
+      "text": "Minden 30 perc ülés után mozogj legalább 1 percet. Tarts be ezt az arányt és az izületek hálásak lesznek."
+    },
+    "aau": {
+      "title": "7 perces edzés",
+      "text": "Teljes test edzés mindössze 7 perc alatt. Tudományosan alátámasztott és bárhol elvégezhető."
+    },
+    "aav": {
+      "title": "Emeld a pulzusod",
+      "text": "Naponta 20 perc emelt pulzus (120 bpm körül) csökkenti a szorongást, javítja az alvást és élesíti a gondolkodást."
+    },
+    "aaw": {
+      "title": "Használd a lépcsőt",
+      "text": "A lépcsőzés erőteljes edzésnek számít: percenként több kalóriát éget, mint a futás. Mellőzd a liftet."
+    },
+    "aax": {
+      "title": "Alkoss valamit",
+      "text": "A művészetterápia bizonyítottan csökkenti a stresszt. Írj egy haikut, firkálj, vagy hajtogass origamit. Alkotni = lazítani."
+    },
+    "aay": {
+      "title": "Rakj rendet",
+      "text": "A rendetlen asztal magasabb stresszel jár. Szánj 5 percet a munkaterületed rendezésére — a fejed is kitisztul."
     },
     "aaz": {
-      "title": "Alkotás",
-      "text": "A művészetterápia köztudottan nagy mentális egészségügyi előnyökkel jár, különösen, ha a stresszkezelésről van szó. Mit szólnál, ha írnál egy gyors verset, fényképeznél vagy festenél valami apróságot?"
+      "title": "Egyél a szabadban",
+      "text": "A természetben tartózkodás csökkenti a kortizolt, a stresszhormont. Ha teheted, egyél kint és engedd, hogy a napfény is elérjen."
+    },
+    "aba": {
+      "title": "Az ásítás ereje",
+      "text": "Az ásítás nem csak unalomból van — hűti az agyat és könnyeket termel, ami nedvesen tartja a szemed. Ásíts egyet nyugodtan."
+    },
+    "abb": {
+      "title": "Fókuszváltás",
+      "text": "Tartsd az ujjad közel az arcodhoz és fókuszálj rá. Lassan vidd távolabb, közben fókuszváltás. Ez edzi a szem izomzatát."
+    },
+    "abc": {
+      "title": "Szem-pihentetés",
+      "text": "Borítsd meleg tenyereidet a csukott szemeidre és támaszd a könyököd az asztalon. Ez a sötétség segít feltöltődni."
+    },
+    "abd": {
+      "title": "Nyomkodj valamit",
+      "text": "Fogj egy stresszlabdát, egy zoknipárt, vagy bármit, amit nyomkodhatsz. Az izometrikus feszítés oldja a stresszt."
+    },
+    "abe": {
+      "title": "Lassú légzés",
+      "text": "A kontrollált lassú légzés (percenként 6 lélegzet) aktiválja a nyugtató idegrendszert. Próbáld meg 2 percig."
     },
     "abf": {
-      "title": "Tenyerezés",
-      "text": "Asztalnál ülve könyökölj az asztalra, annak széléhez közel. Engedd a testsúlyodat előre és takard el a szemeidet a kezeiddel. Hunyd le a szemed és lélegezz lassan az orrodon keresztül egy pár másodpercig. Folytasd a mély lélegzetvételeket."
+      "title": "Vizualizáció",
+      "text": "Csukd be a szemed és képzeld el magad egy nyugodt helyen — strand, erdő, hegycsúcs. Az agyadnak ez szinte olyan, mint ott lenni."
+    },
+    "abg": {
+      "title": "5-4-3-2-1 földelés",
+      "text": "Túlterhelve érzed magad? Nevezz meg 5 dolgot, amit látsz, 4-et, amit megérinthetsz, 3-at, amit hallasz, 2-t, amit érzel, 1-et, amit ízlelsz."
+    },
+    "abh": {
+      "title": "Szunyókálás tudománya",
+      "text": "Egy 10-20 perces szundi fokozza az éberséget és a teljesítményt anélkül, hogy bóvli lenne utána. Állíts be időzítőt."
+    },
+    "abi": {
+      "title": "A Pomodoro módszer",
+      "text": "Dolgozz 25 percet, szünetelj 5-öt. Négy kör után tarts 15-30 perces szünetet. Strukturált munka, beépített pihenéssel."
     },
     "abj": {
-      "title": "Túlterhelt?",
-      "text": "Próbáld ki az 5-4-3-2-1 technikát: Nevezz meg 5 dolgot, amit láthatsz, 4 dolgot, amit megtapinthatsz, 3 dolgot, amit hallhatsz, 2 dolgot, amit megszagolhatsz, és 1 dolgot, amit megízlelhetsz."
+      "title": "Firkálj-szünet",
+      "text": "A szünet alatti firkálás javítja a koncentrációt és a memóriát. Fogj egy tollat és rajzolj bármit — nem kell szép legyen."
+    },
+    "abk": {
+      "title": "Egy dal szünet",
+      "text": "Tedd fel a kedvenc dalodat és tényleg hallgasd meg — ne háttérzajként. Egy dal pont elég a mentális újrainduláshoz."
+    },
+    "abl": {
+      "title": "Hála-pillanat",
+      "text": "Írj le 3 dolgot, amiért most hálás vagy. Kutatások szerint ez javítja a hangulatot és csökkenti a szorongást."
+    },
+    "abm": {
+      "title": "Hideg víz reset",
+      "text": "Fröcsköld meg az arcodat hideg vízzel, vagy tarts egy hideg poharat a csuklódhoz. Aktiválja a merülési reflexet és megnyugtat."
+    },
+    "abn": {
+      "title": "Beszélgess egy növénnyel",
+      "text": "Ha van asztali növényed, nézd meg, kell-e víz vagy fény. Ha nincs — fontold meg egyet beszerezni. A növények javítják a levegőt és a hangulatot."
+    },
+    "abo": {
+      "title": "Agy-kiürítés",
+      "text": "Fogj egy papírt és írd le mindent, ami a fejedben van — randoman, szűretlenül. Ez felszabadítja a munkaemlékezeted."
+    },
+    "abp": {
+      "title": "Simogass egy háziállatot",
+      "text": "Ha otthonról dolgozol és van háziállatod, szánj egy percet a simogatására. Az állatsimogatás csökkenti a vérnyomást és a stresszt."
+    },
+    "abq": {
+      "title": "Nevetésterápia",
+      "text": "Nézz meg egy 2 perces vicces videót vagy olvass el pár viccet. A nevetés endorfint szabadít fel és lazítja az izmokat."
+    },
+    "abr": {
+      "title": "Friss levegő adag",
+      "text": "Nyiss ablakot vagy lépj ki 60 mp-re. A friss levegő növeli az oxigénszintet és kitisztítja a fejedet."
+    },
+    "abs": {
+      "title": "Test-szkennelés",
+      "text": "A lábujjaidtól indulva lassan irányítsd a figyelmed felfelé a tested minden részére. Ahol feszültséget találsz, tudatosan engedd el."
+    },
+    "abt": {
+      "title": "Asztal-jóga",
+      "text": "Ülő macska-tehén, gerinc-csavar, előrehajlás — jógázhatsz a székedből is. Nem kell hozzá matrac."
+    },
+    "abu": {
+      "title": "Olvass egy oldalt",
+      "text": "Tarts egy könyvet a közeledben és olvass el egyetlen oldalt a szünetben. A szövegfeldolgozó agyrészt teljesen máshogy aktiválja."
+    },
+    "abv": {
+      "title": "A 90 perces ciklus",
+      "text": "Az agyad 90 perces ultradián ciklusokban dolgozik. A ciklus végén természetesen esik a fókusz — ilyenkor a szünet nem lusta, hanem okos."
+    },
+    "abw": {
+      "title": "Kíváncsiság-szünet",
+      "text": "Keress ki egy random tényt valamiről, ami érdekel. A mikrotanulás frissen tartja az agyat és meglepően jó hangulatjavító."
+    },
+    "abx": {
+      "title": "Doboz-légzés",
+      "text": "Lélegezz be 4-ig, tartsd 4-ig, fújd ki 4-ig, tartsd 4-ig. A katonák és űrhajósok is ezt használják a nyugalomhoz."
+    },
+    "aby": {
+      "title": "Táncolj ki",
+      "text": "Tedd fel a kedvenc dalodat és táncolj végig. Csukd be az ajtót, ha kell. A tested mozogni akar, ne tagadd meg tőle."
+    },
+    "abz": {
+      "title": "Hívj fel valakit",
+      "text": "Használd a szünetedet arra, hogy felhívsz valakit, aki fontos — csak azért, hogy szólj. Ez fontosabb, mint gondolnád."
+    },
+    "aca": {
+      "title": "Napfény-adag",
+      "text": "Tölts 10-15 percet napfényben, ha teheted. Szabályozza a cirkadián ritmusodat, javítja a hangulatot és a D-vitamin szintet."
+    },
+    "acb": {
+      "title": "Progresszív lazítás",
+      "text": "Feszítsd meg az izomcsoportokat 5 mp-re, aztán engedd el. Kezdd a lábujjaknál és haladj felfelé. Meglepően hatékony."
+    },
+    "acc": {
+      "title": "Mezítlábas pillanat",
+      "text": "Vedd le a cipőd és érezd a padlót a lábad alatt. Ha tudsz fűre vagy földre lépni, annál jobb — ez a földelés."
+    },
+    "acd": {
+      "title": "Írj a jövő éned-nek",
+      "text": "Írj egy gyors üzenetet a jövőbeli magadnak — egy célt, egy kívánságot, egy emlékeztetőt. A jövő éned hálás lesz."
+    },
+    "ace": {
+      "title": "Digitális nagytakarítás",
+      "text": "Zárd be az összes fület, amit nem használsz. Az olvasatlan értesítések stresszelnek. Takaríts a digitális tereden is."
+    },
+    "acf": {
+      "title": "A 2 perces szabály",
+      "text": "Ha valami, ami jár a fejedben, 2 percnél kevesebb — csináld meg most. A kis győzelmek felszabadítják a fejedet nagyobb dolgokra."
+    },
+    "acg": {
+      "title": "Tartás-audit",
+      "text": "Állj a falnak háttal, sarkak, fenék, vállak és fej a falon. Ez a semleges tartásod. Jegyezd meg és vidd magaddal a székhez."
+    },
+    "ach": {
+      "title": "Illatszünet",
+      "text": "Szagolj meg valami kellemeset — kávészem, gyertya, illóolaj, vagy friss levegő. A szaglás közvetlenül az érzelmekhez kapcsolódik."
+    },
+    "aci": {
+      "title": "Felhőfigyelés",
+      "text": "Ha látod az eget, tölts egy percet a felhők figyelésével. Költségmentes meditáció, beépített vizuális effektekkel."
     }
+  },
+  "ui": {
+    "loading": "Pauza betöltése…",
+    "preview": {
+      "status": "Előnézet",
+      "detail": "Böngésző előnézet",
+      "action": "Előnézeti mód aktív."
+    },
+    "title": "Pauza",
+    "heroHeadline": "Tartsd a munkaritmusod egy nyugodt felületen",
+    "heroSubtitle": "A legfontosabb beállítások elöl, a haladó opciók hátul.",
+    "settingsCategories": "Beállítás-kategóriák",
+    "settingsCategoriesHint": "Válts kategóriát balra, nézd a beállításokat jobbra.",
+    "currentCategory": "Jelenlegi kategória",
+    "overview": "Áttekintés",
+    "overviewHint": "Állapotösszefoglaló, legutóbbi műveletek és gyorselérés.",
+    "liveOverview": "Élő áttekintés",
+    "liveOverviewHint": "Aktuális ritmus, app állapota és szünetablak egy pillantásra.",
+    "quickActions": "Gyorsműveletek",
+    "quickActionsHint": "Ezek a műveletek közvetlenül hatnak a folyamatban lévő ritmusra.",
+    "savePanel": "Változások mentése",
+    "savePanelHint": "A módosítások csak mentés után lépnek érvénybe.",
+    "nextBreakLabel": "Következő szünet",
+    "currentBreakLabel": "Jelenlegi szünet",
+    "lastActionLabel": "Utolsó művelet",
+    "runtimeLabel": "Futtatókörnyezet",
+    "platformLabel": "Platform",
+    "versionLabel": "Verzió",
+    "breakFeelLabel": "Szünetstílus",
+    "placementLabel": "Megjelenítés pozíciója",
+    "pendingChanges": "Mentetlen változások",
+    "synced": "Szinkronizálva",
+    "saving": "Mentés…",
+    "allSet": "Készen",
+    "noCurrentBreak": "Nincs aktív szünet",
+    "liveSignals": "Élő jelzések",
+    "general": "Általános",
+    "preferences": "Beállítások",
+    "currentStatus": "Jelenlegi állapot",
+    "language": "Nyelv",
+    "languageChinese": "Egyszerűsített kínai",
+    "languageEnglish": "Angol",
+    "launchOnLogin": "Indítás bejelentkezéskor",
+    "enabled": "Bekapcsolva",
+    "disabled": "Kikapcsolva",
+    "schedule": "Ritmus",
+    "interruptions": "Emlékeztetők és megszakítások",
+    "sectionScheduleHint": "Csak azok a ritmusbeállítások, amelyeket naponta módosítasz.",
+    "microbreaks": "Mikroszünetek",
+    "microbreaksHint": "Rövid megszakítások munka közben.",
+    "longBreaks": "Szünetek",
+    "longBreaksHint": "Teljes képernyős szünet több ciklus után.",
+    "interval": "Időköz",
+    "every": "Gyakoriság",
+    "durationLabel": "Időtartam",
+    "behavior": "Viselkedés",
+    "allowPostpone": "Halasztás engedélyezése",
+    "signals": "Jelzések",
+    "sectionSignalsHint": "Hagyd, hogy a Pauza okosabban döntse el, mikor jelenjenek meg emlékeztetők.",
+    "naturalBreaks": "Természetes szünetek",
+    "naturalBreaksHint": "Automatikus visszaállítás kellően hosszú távollét után.",
+    "resetAfter": "Visszaállítás ennyi idő után",
+    "dnd": "Ne zavarjanak",
+    "dndHint": "Emlékeztetők szüneteltetése ebben a módban",
+    "sectionSurfaceHint": "A megszakítás intenzitásának és a szünetablak pozíciójának beállítása.",
+    "sectionGeneralHint": "Néhány globális beállítás. Alapértelmezetten minimalista.",
+    "notificationsCategory": "Emlékeztetők és halasztás",
+    "notificationsCategoryHint": "Hang a szünet előtt. Halasztási beállítások itt.",
+    "surfaceCategory": "Megszakítás és megjelenítés",
+    "surfaceCategoryHint": "A szünetablak intenzitása, pozíciója és szigorúsága.",
+    "smartPause": "Intelligens szünet",
+    "smartPauseHint": "A Pauza először keres egy nyilvánvaló pillanatot, majd fokozatosan csökkenti a küszöböt.",
+    "generalAndShortcuts": "Általános és billentyűparancsok",
+    "generalAndShortcutsHint": "Nyelv, automatikus indítás és globális billentyűparancsok kezelése.",
+    "advanced": "Haladó",
+    "sectionAdvancedHint": "Több kontroll, kompatibilitási beállítások és billentyűparancsok.",
+    "appExclusions": "App-kivételek",
+    "appExclusionsHint": "Alkalmazások, amelyeknél az emlékeztetők szünetelnek vagy folytatódnak.",
+    "appExclusionsEnable": "Engedélyezés",
+    "appRulePause": "Szüneteltetés egyezésnél",
+    "appRuleResume": "Folytatás csak egyezésnél",
+    "pause30": "Szünet 30 perc",
+    "focus45": "Fókusz 45 perc",
+    "resume": "Folytatás",
+    "clearFocus": "Fókusz befejezése",
+    "save": "Mentés",
+    "revert": "Visszavonás",
+    "defaults": "Alapértékek",
+    "preBreakNotifications": "Figyelmeztető hang",
+    "beforeLabel": "Előtte",
+    "postpone": "Halasztás",
+    "scheduleControl": "Ritmuskezelés",
+    "resetScheduleHint": "Következő szünetek újraszámítása mostantól.",
+    "postponeCategoryHint": "Halasztási idő és limit külön beállítása.",
+    "limitLabel": "Korlát",
+    "breakSurface": "Szünetablak",
+    "breakDisplayMode": "Megjelenítési mód",
+    "breakBackdrop": "Háttértéma",
+    "breakBackdropHint": "Válassz hangulatos hátteret a szünetablakhoz.",
+    "breakBackdropPaper": "Papír",
+    "breakBackdropDawn": "Hajnal",
+    "breakBackdropForest": "Erdő",
+    "breakBackdropNight": "Éjszaka",
+    "breakBackdropCustom": "Egyéni háttér",
+    "customWallpaper": "Egyéni háttér",
+    "customWallpaperHint": "Tölts fel helyi képet szünetablak háttérnek.",
+    "customWallpaperChoose": "Kép kiválasztása",
+    "customWallpaperReplace": "Kép cseréje",
+    "customWallpaperRemove": "Eltávolítás",
+    "customWallpaperEmpty": "Nincs egyéni háttér kiválasztva",
+    "customWallpaperEmptyHint": "Kép nélkül az alapértelmezett téma lesz használva.",
+    "customWallpaperReady": "A kép tömörítve és helyben tárolva lesz szünet háttérként.",
+    "breakIdeas": "Szünettippek",
+    "breakIdeasHint": "Rövid tipp megjelenítése minden szünetben.",
+    "breakSounds": "Szünethangok",
+    "breakSoundsHint": "Figyelmeztető hang a szünet előtt és befejező hang utána.",
+    "microbreakStartSound": "Mikroszünet figyelmeztetés",
+    "microbreakEndSound": "Mikroszünet vége",
+    "longBreakStartSound": "Szünet figyelmeztetés",
+    "longBreakEndSound": "Szünet vége",
+    "breakSoundVolume": "Hangerő",
+    "breakSoundSilence": "Néma",
+    "breakSoundCrystalGlass": "Kristálypohár",
+    "breakSoundWindChime": "Szélcsengő",
+    "breakSoundTicToc": "Ketyegés",
+    "breakSoundReverie": "Ábrándozás",
+    "reminderMode": "Emlékeztető mód",
+    "reminderModeHint": "Intelligens megvárja a megfelelő pillanatot; Kényszerített azonnal megszakít.",
+    "reminderModeSmart": "Intelligens",
+    "reminderModeForced": "Kényszerített",
+    "window": "Ablak",
+    "fullscreen": "Teljes képernyő",
+    "promptStyleGentle": "Lágy",
+    "promptStyleBalanced": "Kiegyensúlyozott",
+    "promptStyleImmersive": "Magával ragadó",
+    "allScreens": "Minden képernyő",
+    "screenPrimary": "Fő képernyő",
+    "screenCursor": "Képernyő a kurzorral",
+    "showTimeToBreakInTray": "Következő szünet megjelenítése a tálcán",
+    "currentTimeInBreaks": "Idő megjelenítése a szünetablakban",
+    "currentTimeInBreaksHint": "Rendszeridő a szünetablak jobb felső sarkában.",
+    "strictModes": "Szigorú módok",
+    "strictModesHint": "Szabályozd, hogy átugorhatók-e a szünetek és kell-e kézi megerősítés.",
+    "microbreakStrict": "Szigorú mikroszünet",
+    "longBreakStrict": "Szigorú szünet",
+    "manualFinish": "Kézi befejezés az időzítő után",
+    "showTrayMenuInStrictMode": "Tálcamenü szigorú módban",
+    "shortcuts": "Billentyűparancsok",
+    "shortcutsHint": "Üres = nincs regisztrálva. Formátum pl.: CmdOrCtrl+Shift+P",
+    "shortcutReveal": "Beállítások megnyitása",
+    "shortcutFocus45": "Fókusz 45 perc",
+    "shortcutPauseToggle": "Szünet váltása",
+    "shortcutPause30": "Szünet 30 perc",
+    "shortcutPause60": "Szünet 1 óra",
+    "shortcutPause120": "Szünet 2 óra",
+    "shortcutPause300": "Szünet 5 óra",
+    "shortcutSkipScheduled": "Ugrás a következő ütemezett szünetre",
+    "shortcutSkipMicrobreak": "Ugrás a mikroszünetre",
+    "shortcutSkipLongBreak": "Ugrás a szünetre",
+    "shortcutReset": "Ritmus visszaállítása",
+    "suffix": {
+      "secondsLong": "mp",
+      "secondsBefore": "mp előtte",
+      "minutesApart": "perc után",
+      "cycles": "ciklus",
+      "minutesLong": "perc",
+      "minutesShortPostpone": "perc",
+      "minutesLongPostpone": "perc",
+      "minutesAway": "perc",
+      "minutes": "perc",
+      "times": "×"
+    },
+    "status": {
+      "noBreakScheduled": "Nincs szünet ütemezve",
+      "microbreak": "Mikroszünet",
+      "longBreak": "Szünet",
+      "nextBreak": "{{label}} {{duration}} múlva",
+      "focus": "Fókusz {{duration}}",
+      "pause": "Szüneteltetve {{duration}}",
+      "pauseForever": "Határozatlan ideig szüneteltetve",
+      "blockedBy": "Szüneteltetve: {{match}}",
+      "appRuleActive": "App-szabály aktív",
+      "dndActive": "Ne zavarjanak aktív"
+    },
+    "error": {
+      "loadState": "Nem sikerült betölteni a Pauza állapotát"
+    },
+    "breakCopy": {
+      "clearedDetail": "Nincs aktív szünet.",
+      "manualAwaiting": "Lejárt az idő. Fejezd be ezt a szünetet a munkához való visszatérés előtt.",
+      "awaitingFinish": "Befejezésre vár",
+      "actions": {
+        "resumeWork": "Vissza a munkába",
+        "done": "Kész",
+        "later": "Később",
+        "skip": "Kihagyás"
+      },
+      "defaultPrompt": {
+        "microbreak": "Állj fel, lazítsd el a válladat és a nyakadat, nézz a távolba.",
+        "longBreak": "Lépj el az asztaltól néhány percre, hogy a tested és az elméd pihenjen."
+      }
+    },
+    "previewAction": {
+      "save": "Előnézet: beállítások frissítve.",
+      "pause": "Előnézet: 30 percre szüneteltetve.",
+      "pauseForever": "Előnézet: határozatlan ideig szüneteltetve.",
+      "focus": "Előnézet: fókusz bekapcsolva.",
+      "focusCleared": "Előnézet: fókusz befejezve.",
+      "resume": "Előnézet: folytatva.",
+      "reset": "Előnézet: ritmus visszaállítva.",
+      "autostartOn": "Előnézet: automatikus indítás bekapcsolva.",
+      "autostartOff": "Előnézet: automatikus indítás kikapcsolva.",
+      "done": "Előnézet: szünet befejezve.",
+      "later": "Előnézet: szünet halasztva.",
+      "skip": "Előnézet: szünet kihagyva."
+    },
+    "preBreakSoundHint": "Lágy hang az időzítő vége előtt, hogy befejezhesse a feladatát.",
+    "previewSound": "Meghallgatás",
+    "appExclusionsSearch": "Keresés a futó alkalmazások között",
+    "appExclusionsSearchPlaceholder": "Alkalmazás neve…",
+    "appExclusionsSearchLoading": "Betöltés…",
+    "appExclusionsSearchEmpty": "Nincs találat",
+    "appExclusionsManualHint": "Vagy manuálisan írd be a folyamatnevet (soronként egy)",
+    "appExclusionsAdd": "Kattints a kivételi listához adáshoz"
   }
 }

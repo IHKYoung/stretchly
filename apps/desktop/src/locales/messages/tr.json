@@ -54,8 +54,8 @@
     "about": {
       "tagline": "Mola hatırlatıcı uygulama",
       "designedBy": "Simge ve kullanıcı arayüzü Colin Shanley tarafından tasarlandı",
-      "janH": "Clarke Young",
-      "developedBy": "Gelistirici:",
+      "clarkeY": "Clarke Young",
+      "developedBy": "Geliştirici:",
       "dot": ".",
       "ourWebsite": "internet sitemizi ziyaret edin",
       "learnMore": "Stretchy hakkında daha çok şey öğrenmek istiyorsanız kılavuza göz atabilir, son sürümü indirebilir, veya destek için bizle iletişime geçebilirsiniz, ",
@@ -212,304 +212,740 @@
     "resuming": "Devam ediyor"
   },
   "miniBreakIdeas": {
-    "aaw": {
-      "text": "20 fit mesafedeki bir nesneye 20 saniye boyunca her 20 dakikada bir odaklanın."
-    },
-    "abg": {
-      "text": "Yumruk yapın ve parmaklarınızı, sanki birine durmasını söylüyormuşsunuz gibi tavana bakana kadar yukarı kaydırın."
-    },
-    "abf": {
-      "text": "Birer birer, her parmağınızın ucunu başparmağınızın ucuna dokundurun, böylece bir O şekli oluşturun."
-    },
     "aaa": {
-      "text": "Git bir bardak su al."
+      "text": "Bir bardak su iç."
     },
     "aab": {
-      "text": "Yavaşça tamamen sola, sonra sağa bakın."
+      "text": "Su şişen sana bakıyor. Bir yudum al."
     },
     "aac": {
-      "text": "Yavaşça yukarıya, sonra aşağıya bakın."
+      "text": "Hidrasyon kontrolü: en son ne zaman su içtin?"
     },
     "aad": {
-      "text": "Gözlerinizi kapatın ve birkaç derin nefes alın."
+      "text": "Su iç. Çay sayılmaz… şaka, çay da sayılır ama su da iç."
     },
     "aae": {
-      "text": "Gözlerini kapat ve rahatla."
+      "text": "Su şişeni doldur. Vücudun teşekkür edecek."
     },
     "aaf": {
-      "text": "Bacaklarını esnet."
+      "text": "Su hayat kaynağı. Şimdi bir yudum al."
     },
     "aag": {
-      "text": "Kollarınızı uzatın."
+      "text": "Hatırlatma: vücudunun çoğu sudan oluşuyor. Deponu doldur."
     },
     "aah": {
-      "text": "Oturuş pozisyonunuz doğru mu?"
+      "text": "Bir yudum su mucizeler yaratır. Dene."
     },
     "aai": {
-      "text": "Başınızı yavaşça yana çevirin ve 10 saniye bu şekilde tutun."
+      "text": "Ekrandan 20 saniye uzağa bak."
     },
     "aaj": {
-      "text": "Başınızı yavaşça yana yatırın ve 5-10 saniye bu şekilde tutun."
+      "text": "20-20-20 kuralı: 20 metre uzağa 20 saniye bak."
     },
     "aak": {
-      "text": "Sandalyenizden kalkın ve gerinin."
+      "text": "Gözlerini kapat ve göz kaslarını gevşet."
     },
     "aal": {
-      "text": "Gözlerinizi en az 20 metre uzaktaki bir nesneye odaklayın."
+      "text": "Gözlerini daireler çizerek döndür. Kimse yargılamaz."
     },
     "aam": {
-      "text": "Hoşunuza giden bir şey hakkında düşünmek için bir dakikanızı ayırın."
+      "text": "Pencereden dışarı bak, uzak bir noktaya odaklan."
     },
     "aan": {
-      "text": "Hayatta olduğunuza sevinmek için bir dakikanızı ayırın."
+      "text": "Bilinçli olarak on kez göz kırp. Gözlerin buna ihtiyaç duyuyor."
     },
     "aao": {
-      "text": "Gerçekten ergonomik bir iş istasyonu, düzenli olarak uzak durmanız gereken bir iş istasyonudur."
+      "text": "Avuç içlerini ovala ve gözlerinin üzerine koy."
     },
     "aap": {
-      "text": "Gözlerini kapat ve nefes alıp vermeni say."
+      "text": "Ekrandan başını kaldır ve derin nefes al."
     },
     "aaq": {
-      "text": "Gözlerini kapat ve duyduğun şeyleri adlandır."
+      "text": "Üç derin nefes al. Burundan içeri, ağızdan dışarı."
     },
     "aar": {
-      "text": "Parmak uçlarınızı omuzlarınıza yerleştirin. Omuzlarınızı 10 saniye öne, ardından geriye doğru yuvarlayın."
+      "text": "Dört saniye nefes al, dört saniye tut, dört saniye ver."
     },
     "aas": {
-      "text": "Sağ kolunuzu kaldırın, başınızın üzerinden sola doğru uzatın ve 10 saniye tutun. Diğer tarafta tekrarlayın."
+      "text": "Nefes verirken omuzlarını gevşet."
     },
     "aat": {
-      "text": "Sağ elinizle sol elinizin her parmağını sırayla kavrayın ve sıkın. Diğer tarafta tekrarlayın."
+      "text": "Karnınla nefes al. Karnının yükseldiğini hisset."
     },
     "aau": {
-      "text": "Ayağa kalkıp öne bir hamle yapın. 10 saniye bekleyin, ardından diğer bacağınızla yapın."
+      "text": "Uzun bir nefes verme parasempatik sinir sistemini aktive eder."
     },
     "aav": {
-      "text": "Gözlerinizi kapatın ve o anda ortaya çıkan her şeyi yargılamadan fark edin."
+      "text": "Nefes vermeyi, nefes almadan iki kat yavaş yap."
+    },
+    "aaw": {
+      "text": "Gözlerini kapat ve beş bilinçli nefes al."
     },
     "aax": {
-      "text": "Yardıma ihtiyacınız varsa, isteyin."
+      "text": "Sakin nefes al. Hiçbir şey göründüğü kadar acil değil."
     },
     "aay": {
-      "text": "Her defasında tek bir şey yapın."
+      "text": "Dik otur. Teşekkürler."
     },
     "aaz": {
-      "text": "Dikkatinizi önemli şeylere mi veriyorsunuz?"
+      "text": "Sırtını düzelt. Yine büzüşmüşsün."
     },
     "aba": {
-      "text": "Oturma duruşunuzu değiştirin."
+      "text": "Sandalyeni ayarla, ayakların düz yere bassın."
     },
     "abb": {
-      "text": "Gözlerinizi doğal ışığa maruz bırakın."
+      "text": "Omuzlarını kulaklarından uzaklaştır. Gevşe."
     },
     "abc": {
-      "text": "Gözleriniz kapalıyken, gözlerinizi yavaşça ve nazikçe tavana kaldırın ve tekrar yere indirin."
+      "text": "Başının tepesinden seni yukarı çeken bir ip hayal et."
     },
     "abd": {
-      "text": "Gözleriniz kapalıyken, gözlerinizi yavaşça ve nazikçe sola, sonra yavaşça sağa hareket ettirin."
+      "text": "Duruşunu kontrol et. Rahat ama dik."
     },
     "abe": {
-      "text": "Biraz rahatlamak için ellerinizi sallayın."
+      "text": "Omuzlarını geriye çek ve göğsünü aç."
+    },
+    "abf": {
+      "text": "İki ayağını da yere koy. Teması hisset."
+    },
+    "abg": {
+      "text": "Başını yana eğ ve boyun kaslarını ger."
     },
     "abh": {
-      "text": "Bir yumruk yapın ve ardından parmaklarınızı sallayın ve mümkün olduğunca uzatın."
-    },
-    "abl": {
-      "text": "Kollarınız omuzlarınız boyunca kaldırılmış halde dik durun. Ellerinizi hafifçe arkanızda hareket ettirin, bir saniye bekleyin ve bırakın."
+      "text": "Başını yavaşça yarım daire çiz."
     },
     "abi": {
-      "text": "Kollarınız yanlarınızda olacak şekilde dik oturun ve boynunuzu geniş bir daire şeklinde bir yönde yavaşça döndürün."
-    },
-    "abk": {
-      "text": "Kollarınız yanınızda dik bir şekilde durun. Omuzlarınızı yukarı ve birbirine sıkın ve öyle tutun."
+      "text": "Çeneni göğsüne doğru indir ve boyundaki gerilimi hisset."
     },
     "abj": {
-      "text": "Dik durun ve bir gerginlik hissedene kadar aynı elinizi kullanarak başınızı yavaşça omzunuza doğru eğin."
+      "text": "Yavaşça sola bak, sonra sağa bak."
+    },
+    "abk": {
+      "text": "Başını yumuşak dairelerle döndür. Boynun teşekkür edecek."
+    },
+    "abl": {
+      "text": "Parmaklarınla otuz saniye boyun masajı yap."
     },
     "abm": {
-      "text": "Sandalyenizin kenarına oturun, gövdenizi bir tarafa doğru bükün ve 10-15 saniye öylece durun. Diğer tarafta tekrarlayın."
-    },
-    "abt": {
-      "text": "Bir kolunuzu dik tutun, ardından diğer kolunuzu kullanarak ilk kolunuzun dirseğini başınıza doğru hafifçe itin. 10-15 saniye boyunca tutun. Diğer kolunuzla tekrarlayın."
-    },
-    "abs": {
-      "text": "Duvara dönük durun, bir ayağınızı geriye ve diğer ayağınızı öne atın, ardından duvara doğru eğilin. Diğer bacağınızla tekrarlayın."
-    },
-    "abq": {
-      "text": "Bir duvarın karşısında durun ve ellerinizi duvara koyun, ardından birkaç şınav çekin."
-    },
-    "abr": {
-      "text": "Sandalyenizin kenarına oturun ve bir bacağınızı düz bir şekilde önünüze doğru uzatın, 10-15 saniye tutun. Diğer bacağınızla tekrarlayın."
-    },
-    "abu": {
-      "text": "Başınızı bir tarafa, sonra diğer tarafa eğin ve ardından hafifçe öne ve arkaya doğru eğin."
+      "text": "Omuzlarını kulaklarına doğru kaldır, tut ve bırak."
     },
     "abn": {
-      "text": "Ayağa kalkın ve bir ayağınızı sandalye veya basamaklı tabure gibi yakındaki bir nesnenin üzerine koyun. Dizinizi 10-15 saniye bükülü tutun. Diğer ayağınızla tekrarlayın."
+      "text": "Omuzlarını beş kez geriye doğru döndür."
     },
     "abo": {
-      "text": "Ayaklarınızı omuz genişliğinde açarak ayakta durun, vücudunuzu bir sandalyeye oturur gibi aşağı indirin, sonra tekrar ayağa kalkın. Birkaç kez tekrarlayın."
+      "text": "Omuzlarını beş kez öne doğru döndür."
     },
     "abp": {
-      "text": "Sırtınızı ve ellerinizi duvara dayayın, ardından kollarınızı yavaşça yukarı ve aşağı hareket ettirin."
+      "text": "Kürek kemiklerini birbirine yaklaştır, araya kalem sıkıştırır gibi."
+    },
+    "abq": {
+      "text": "Bir kolunu uzat ve göğsüne doğru çek."
+    },
+    "abr": {
+      "text": "Omuzlarını silkele. Gerginliği bırak."
+    },
+    "abs": {
+      "text": "Parmaklarını aç ve sonra yumruk yap."
+    },
+    "abt": {
+      "text": "Bileklerini her iki yöne daireler çizerek döndür."
+    },
+    "abu": {
+      "text": "Ellerini su silkeliyormuş gibi salla."
     },
     "abv": {
-      "text": "Bir kolunuzu göğsünüze doğru uzatın, diğer elinizle dirseğinizi tutun ve yavaşça göğsünüze doğru çekin. Diğer kolunuzla da tekrarlayın."
+      "text": "Avuç içlerini birbirine bastır ve on saniye tut."
     },
     "abw": {
-      "text": "Ayağa kalkın, bir ayağınızı sandalye veya basamaklı tabure gibi yakındaki bir nesnenin üzerine koyun ve ayak parmaklarınıza dokunmak için eğilin. Diğer bacağınızla tekrarlayın."
+      "text": "Bileğini diğer elinle yukarı ve aşağı bük."
     },
     "abx": {
-      "text": "Kapı aralığında durun ve bir kolunuzu kapı aralığının her iki tarafına yerleştirin, ardından göğsünüzde bir gerilme hissedene kadar hafifçe öne doğru eğilin."
+      "text": "Parmaklarını masada piyano çalar gibi hızlıca vur."
     },
     "aby": {
-      "text": "Bir sandalyenin kenarına veya yere oturun ve ayak tabanlarınızı birleştirin, iç uyluklarınızı esnetmek için dirseklerinizle hafifçe aşağı doğru bastırın."
+      "text": "Avuç içini diğer elin başparmağıyla masaj yap."
+    },
+    "abz": {
+      "text": "Her parmağı tek tek ger. Onlara biraz sevgi göster."
+    },
+    "aca": {
+      "text": "Üst gövdeni bir yana döndür, beş saniye tut."
+    },
+    "acb": {
+      "text": "Sandalyede arkana yaslan ve sırtını ger."
+    },
+    "acc": {
+      "text": "Ayağa kalk ve öne doğru eğilip ayak parmaklarına uzan."
+    },
+    "acd": {
+      "text": "Dik otur ve gövdeni her iki tarafa döndür."
+    },
+    "ace": {
+      "text": "Sandalyede kedi-inek hareketi yap."
+    },
+    "acf": {
+      "text": "Kollarını yukarı uzat ve yana doğru eğil."
+    },
+    "acg": {
+      "text": "Bacaklarını masanın altında uzat."
+    },
+    "ach": {
+      "text": "Ayağa kalk ve beş squat yap."
+    },
+    "aci": {
+      "text": "Ayağa kalk ve otuz saniye yerinde yürü."
+    },
+    "acj": {
+      "text": "Otururken dizlerini sırayla kaldır."
+    },
+    "ack": {
+      "text": "Ayak parmaklarının ucuna kalk ve in, on kez."
+    },
+    "acl": {
+      "text": "Masanın etrafında kısa bir tur at."
+    },
+    "acm": {
+      "text": "Ayağa kalk ve tüm vücudunu ger."
+    },
+    "acn": {
+      "text": "Masaya dayanarak beş şınav çek."
+    },
+    "aco": {
+      "text": "Yerinde beş kez zıpla. Kimse görmüyor."
+    },
+    "acp": {
+      "text": "Ayağa kalk ve tüm vücudunu salla."
+    },
+    "acq": {
+      "text": "Mutfağa kadar kısa bir yürüyüş yap."
+    },
+    "acr": {
+      "text": "Ayağa kalk, kollarını başının üstüne uzat ve esne."
+    },
+    "acs": {
+      "text": "Koridorda kısa bir tur at."
+    },
+    "act": {
+      "text": "Ayağa kalk ve kedi gibi büyük bir esneme yap."
+    },
+    "acu": {
+      "text": "Dur ve etrafındaki üç sesi dinle."
+    },
+    "acv": {
+      "text": "Ayaklarının yere temas ettiğini hisset. Şu anda burada ol."
+    },
+    "acw": {
+      "text": "Nefesini değiştirmeden gözlemle."
+    },
+    "acx": {
+      "text": "Pencereden dışarı bak ve sadece izle."
+    },
+    "acy": {
+      "text": "Şu anda görebildiğin üç şeyi fark et."
+    },
+    "acz": {
+      "text": "Bilinçli bir mola ver. Sadece otuz saniye."
+    },
+    "ada": {
+      "text": "Odanın sıcaklığını hisset. Sıcak mı? Soğuk mu? Tam kıvamında mı?"
+    },
+    "adb": {
+      "text": "Vücudunun şu anda nasıl hissettiğini yargılamadan fark et."
+    },
+    "adc": {
+      "text": "Çay molası zamanı! En azından bir germe hareketi yap."
+    },
+    "add": {
+      "text": "Bir bardak çay koy, demlenirken ger."
+    },
+    "ade": {
+      "text": "Mesai bitmedi ama mola hakkın var. Kullan."
+    },
+    "adf": {
+      "text": "Ofiste en çok oturan sen olma. Kalk biraz."
+    },
+    "adg": {
+      "text": "Patron görmeden bir germe hareketi yap. Ya da görsün."
+    },
+    "adh": {
+      "text": "Ekran başında çöl gibi kurudun. Su iç."
+    },
+    "adi": {
+      "text": "Sandalyeye kök salmış gibisin. Biraz hareket et."
+    },
+    "adj": {
+      "text": "Bir mola al, dünya dönmeye devam eder."
+    },
+    "adk": {
+      "text": "Ofis koltuğu yoga matı değil. Ara sıra kalk."
+    },
+    "adl": {
+      "text": "Klavyene bir mola ver. O da yoruldu."
+    },
+    "adm": {
+      "text": "Kendine bir alkış tut. Kollarını uzatarak."
     }
   },
   "longBreakIdeas": {
-    "aad": {
-      "text": "Araştırmalar, farkındalık temelli egzersizlerin kaygı, depresyon, stres ve ağrıyı azaltmaya yardımcı olduğunu ve genel sağlığı, zihinsel sağlığı ve yaşam kalitesini iyileştirmeye yardımcı olduğunu göstermektedir. Nasıl başlayacağınızdan emin değil misiniz? Size yardımcı olacak çok sayıda uygulama var.",
-      "title": "Meditasyon"
-    },
-    "aaj": {
-      "text": "Teknolojisiz bir yürüyüşe ne dersiniz?",
-      "title": "Teknoloji"
-    },
-    "aai": {
-      "text": "Hayal mi kuruyorsunuz veya odaklanmakta zorlanıyor musunuz? Mola vermeniz gerektiğinin bir işaretidir.",
-      "title": "Fark et"
-    },
-    "aak": {
-      "title": "Metabolizma",
-      "text": "Gelişmekte olan araştırmalar, uzun süre oturmanın diğerlerinin yanı sıra metabolik sendrom riskine, kalp krizi ve felç riskine ve genel ölüm riskine katkıda bulunduğunu göstermektedir. Düzenli yürüyüş molaları vermek, bu sorunlardan bazılarını gidermeye çalışarak dolaşımınıza yardımcı olabilir."
-    },
-    "aat": {
-      "text": "Avuç içleriniz size bakacak şekilde kollarınızı uzatın, ardından ellerinizi yavaşça dört kez saat yönünde, ardından dört kez saat yönünün tersine çevirin.",
-      "title": "Bilek ve önkol"
-    },
-    "aaz": {
-      "text": "Sanat terapisinin, özellikle stres yönetimi söz konusu olduğunda, zihinsel sağlığa büyük faydaları olduğu bilinmektedir. Hızlı bir şiir yazmaya, resim çekmeye veya küçük bir şeyler boyamaya ne dersiniz?",
-      "title": "Sanat yapın"
-    },
-    "abf": {
-      "text": "Otururken dirseklerinizi masaya ve masa kenarına yakın tutun. Ağırlığınızın öne düşmesine izin verin ve ellerinizi gözlerinizin üzerine koyun. Gözlerinizi kapatın ve burnunuzdan yavaşça nefes alın ve birkaç saniye tutun. Derin nefes almaya devam edin.",
-      "title": "Avuç içi"
-    },
     "aaa": {
-      "title": "Yalnız değilsin",
-      "text": "Tek başınıza mola vermek zor mu geliyor? Bir iş arkadaşınızla yapmaya çalışın. Molalara bağlı kalmayı kolaylaştırmanın yanı sıra, onları daha iyi tanıma şansınız olacak. Birlikte mola vermek verimliliği artırır."
+      "title": "Birlikte daha iyi",
+      "text": "Yalnız mola vermek zor mu? Bir iş arkadaşınla birlikte dene. Hem birbirinizi motive edersiniz hem de teslim tarihleri hakkında birlikte yakınırsınız. Araştırmalar sosyal molaların verimliliği artırdığını gösteriyor."
     },
     "aab": {
       "title": "Uzaklaş",
-      "text": "Beyninizin olayları kendi kendine nasıl çözebildiğini hiç fark ettiniz mi? Tek gereken bilgisayardan uzaklaşmak ve tamamen alakasız bir şey hakkında düşünmek için ara vermek."
+      "text": "En iyi fikirlerinin duşta geldiğini fark ettin mi? Bunun nedeni beyninin arka planda sorun çözmesi. Ekrandan uzaklaş ve tamamen farklı bir şey düşün."
     },
     "aac": {
-      "title": "Kısa aralar",
-      "text": "Dinlenme, kas-iskelet sisteminin sağlıklı çalışmasında önemli bir bileşendir. Sık verilen molalar bir işin süresini kısaltabilir ve ergonomik sakatlık riskinin azaltılmasına yardımcı olabilir."
+      "title": "Mikromolalar",
+      "text": "Kısa ve sık molalar tekrarlayan zorlanma yaralanmalarını azaltır ve kas-iskelet sistemini sağlıklı tutar. Bunları insan makinesi için bakım olarak düşün."
+    },
+    "aad": {
+      "title": "Meditasyon",
+      "text": "Meditasyon zihni boşaltmak değildir. Düşünceleri fark edip takılmamaktır. Beş dakikayla başla ve nefese odaklan."
     },
     "aae": {
-      "title": "Göz kırp",
-      "text": "Uzun süre ekranlara bakmak daha az göz kırpmanıza neden olarak gözlerinizi kuru havaya maruz bırakır. Gözyaşı filmini yenilemek ve göz yüzeyindeki tozu temizlemek için birkaç saniye hızlıca göz kırpın."
+      "title": "Daha çok göz kırp",
+      "text": "Ekran karşısında yüzde altmış altı daha az göz kırpıyoruz. Bu kuru ve yorgun gözlere yol açar. Molada bilinçli olarak göz kırp ve gerekirse göz damlası kullan."
     },
     "aaf": {
-      "title": "Ergonomik",
-      "text": "Klavye, fare, monitör veya çalışma yüzeyinin uygun olmayan yüksekliği ve açısı sağlık sorunlarına neden olabilir. Masa ergonomisi hakkında okumak için biraz zaman ayırın."
+      "title": "Masa ergonomisi",
+      "text": "Ekranın üst kenarı göz hizasında, kolların doksan derece açıda olmalı. Şimdi yapacağın küçük bir ayarlama seni aylar sürecek ağrılardan kurtarabilir."
     },
     "aag": {
-      "title": "Hareket et",
-      "text": "Ofisinizde egzersiz yapmanın birçok yolu vardır. Yerinde yürümeyi veya masada şınav çekmeyi deneyin."
+      "title": "Ofis egzersizi",
+      "text": "Masaya dayanarak şınav, sandalyeyle squat veya koridorda hamle yap. Ekipman gerekmez, sadece biraz komik görünme isteği yeter."
     },
     "aah": {
-      "title": "Değişin",
-      "text": "Denge topunuz veya ayakta çalışma masanız var mı? Masa sandalyenizi bir süre onlarla değiştirmeyi düşünün."
+      "title": "Görev değiştir",
+      "text": "Görev veya çalışma alanı değiştirmek beyne yumuşak bir yeniden başlatma verir. Başka bir odaya geç veya farklı türde bir işe dön."
+    },
+    "aai": {
+      "title": "Sinyalleri oku",
+      "text": "Baş ağrısı, gergin omuzlar, bulanık görüş – vücudun sana sinyal veriyor. Kronikleşmeden önce dinle."
+    },
+    "aaj": {
+      "title": "Teknolojisiz yürüyüş",
+      "text": "Telefonu bırak ve kısa bir yürüyüşe çık. Ekransız sadece on dakika stres seviyelerini belirgin şekilde düşürebilir."
+    },
+    "aak": {
+      "title": "Oturma sorunu",
+      "text": "Araştırmalar uzun süreli oturmanın kalp hastalığı, diyabet ve bel sorunları riskini artırdığını gösteriyor. Düzenli olarak ayağa kalk – gelecekteki sen teşekkür edecek."
     },
     "aal": {
-      "title": "Aktif Toplantılar",
-      "text": "Toplantıları konferans salonundan salona taşımaya ne dersiniz? Yürümek sadece kalori yakmakla kalmaz, aynı zamanda bir işbirliği duygusunu bile besleyebilir."
+      "title": "Yürüyüş toplantıları",
+      "text": "Bir sonraki görüşmende yürümeyi dene. Yürüyüş toplantıları yaratıcılığı artırır ve sohbeti daha rahat hale getirir."
     },
     "aam": {
-      "title": "Meyve",
-      "text": "Acele etmeyin ve biraz meyve yiyin. Yavaşça. Tadını, dokusunu, tazeliğini fark edin."
-    },
-    "aao": {
-      "title": "Kahve molası",
-      "text": "Kahve molasına mı çıkıyorsunuz? Her gittiğinizde 5 dakikalık bir yürüyüş yapmayı düşünün."
-    },
-    "aap": {
-      "title": "Arkadaşlar",
-      "text": "Ofis arkadaşlarınıza e-posta veya mesaj göndermeyin, onlarla iletişim kurmak için masalarına gidin."
+      "title": "Bilinçli atıştırma",
+      "text": "Ekran başında yeme. Meyveni veya kuruyemişini al, başka bir yere otur ve yemeğin tadını gerçekten çıkar."
     },
     "aan": {
-      "title": "Tuvaletler",
-      "text": "Tuvalete giderken en uzak olana yürüyün."
+      "title": "Kahve yürüyüşü",
+      "text": "Kahveni masada içmek yerine, elinle bir tur at. Hareket artı kafein kazanan bir kombinasyon."
+    },
+    "aao": {
+      "title": "Beyin ve molalar",
+      "text": "Beyin dinlenme sırasında bilgiyi işler ve pekiştirir. Mola vermek seni tembel yapmaz – daha zeki yapar."
+    },
+    "aap": {
+      "title": "Az hareket, çok kazanç",
+      "text": "Saatte sadece iki dakikalık hareket uzun süreli oturmanın etkilerini azaltabilir. Bir antrenman seansı olması gerekmez."
     },
     "aaq": {
-      "title": "Öğrenmek",
-      "text": "Sağlıklı gönüllüler üzerinde yapılan bir araştırmada, araştırmacılar, erken ve sıklıkla kısa molalar vermenin beynimizin yeni beceriler öğrenmesine yardımcı olabileceğini buldu."
+      "title": "Esneme rutini",
+      "text": "Basit bir esneme rutini izle: boyun, omuzlar, sırt, kalçalar, bacaklar. Beş dakika saatler süren gerginliği çözebilir."
     },
     "aar": {
-      "title": "Egzersiz",
-      "text": "Kanıtlar, küçük miktarlarda düzenli egzersizin, stresi ölçülebilir bir şekilde azaltmak da dahil olmak üzere önemli sağlık yararları sağlayabileceğini göstermektedir."
+      "title": "Bilek döndürme",
+      "text": "Bileklerini her yöne on kez döndür. Sonra parmaklarını aç ve yumruk yap. Bilek ağrısına karşı mükemmel."
     },
     "aas": {
-      "title": "Tekrar et",
-      "text": "Esneme rutininizi buldunuz mu? Uzun süreli oturmanın etkileriyle daha iyi mücadele etmek için bir kereden fazla tekrarlamayı unutmayın."
+      "title": "Yukarı uzan",
+      "text": "Ayağa kalk, kollarını tavana doğru uzat ve parmak uçlarına yüksel. Beş saniye tut. Omurganın uzadığını hisset."
+    },
+    "aat": {
+      "title": "30/1 kuralı",
+      "text": "Her otuz dakikada en az bir dakika hareket et. Zamanlayıcı kur. Küçük bir yatırım, büyük bir getiri."
     },
     "aau": {
-      "title": "Sırt esnetme",
-      "text": "Ellerinizi başınızın arkasında birleştirin, ardından avuçlarınız yukarı bakacak şekilde başınızın üzerinde yukarı kaldırın."
+      "title": "7 dakikalık antrenman",
+      "text": "Bilimsel olarak kanıtlanmış yedi dakikalık antrenmanı dene. On iki egzersiz, her biri otuz saniye. Tek ihtiyacın bir sandalye ve bir duvar."
     },
     "aav": {
-      "title": "Hareket edin",
-      "text": "Her otuz dakikalık durgunluk için, en az bir dakikalık hareketiniz olmalıdır."
+      "title": "Nabzını yükselt",
+      "text": "Birkaç dakikalık hızlı hareket – zıplama, şınav, yerinde koşu – kan akışını artırır ve odaklanmayı keskinleştirir."
     },
     "aaw": {
-      "title": "7 Dakikalık Hareket",
-      "text": "Bu egzersiz, zamanın bir bölümünde tam vücut egzersiz rutini içerir. Ancak herhangi bir egzersizde olduğu gibi, dikkatli olun. Başlamanıza yardımcı olacak çok sayıda uygulama var."
+      "title": "Merdivenleri kullan",
+      "text": "Asansör yerine merdivenleri seç. Ücretsiz egzersiz ve asansör bekleme süresinden de tasarruf edersin."
     },
     "aax": {
-      "title": "Kalp Atışı",
-      "text": "Zevk aldığınız şeyleri yaparak haftada dört veya beş kez 20 dakika boyunca nabzınızı dakikada 120 vuruşa yükseltin. Kalp atış hızınızı düzenli olarak yükseltmek, kardiyovasküler sağlığın iyileşmesine neden olur."
+      "title": "Bir şey yarat",
+      "text": "Çiz, yaz, kağıt katla. Yaratıcı molalar beynin farklı bölgelerini aktive eder ve analitik devrelere dinlenme şansı verir."
     },
     "aay": {
-      "title": "Merdivenleri kullanın",
-      "text": "Araştırmalar, şiddetli fiziksel aktivite olarak kabul edilen merdiven çıkmanın, koşuya göre dakikada daha fazla kalori yaktığını göstermiştir."
+      "title": "Masanı topla",
+      "text": "Temiz bir masa temiz bir zihin gibidir. Beş dakika ayırarak düzenle, çöpleri at ve düzen oluştur."
+    },
+    "aaz": {
+      "title": "Dışarıda ye",
+      "text": "Hava uygunsa öğle yemeğini dışarıda ye. Gün ışığı, temiz hava ve doğal manzara stresi azaltır ve ruh halini iyileştirir."
     },
     "aba": {
-      "title": "Toparlanın",
-      "text": "Temiz bir alan, işinize odaklanmanıza yardımcı olur ve genellikle mutluluk gibi olumlu duygularla bağlantılıdır."
+      "title": "Esnemenin gücü",
+      "text": "Esneme beyni soğutur ve uyanıklığı artırır. Bilinçli olarak esnemeyi tetikle – bu sağlıklı bir şey."
     },
     "abb": {
-      "title": "Dışarıda öğle yemeği",
-      "text": "Doğa, olumlu duygular ve azalan stres ve kaygı ile bağlantılıdır. Mümkün olduğunda, günlük öğle yemeği molanızı biraz yeşilliklerle çevrili olarak dışarıda geçirmeye çalışın."
+      "title": "Odak değiştirme",
+      "text": "Yakınındaki bir nesneye bak, sonra uzaktaki bir şeye. On kez tekrarla. Gözün odaklama yeteneğini eğitir."
     },
     "abc": {
-      "title": "Toplu taşıma",
-      "text": "Düzenli olarak toplu taşıma kullanıyorsanız, oturmak yerine ayakta durabilirsiniz. Mümkünse, günlük gezilerinizin çoğunu yürüyüş veya bisiklete binme ile değiştirmeye çalışın."
+      "title": "Göz avuçlama",
+      "text": "Avuçlarını ovuşturarak ısıt ve bir dakika gözlerinin üzerine koy. Karanlık ve sıcaklık göz kaslarını rahatlatır."
     },
     "abd": {
-      "title": "Esnemek",
-      "text": "Esnemek, gözleri nemlendirmek ve yağlamak için gözyaşı ürettiği için gerçekten yardımcı olabilir."
+      "title": "Bir şeyi sık",
+      "text": "Stres topu veya benzeri bir şey el kaslarını aktive eder ve üst vücuttaki gerginliği azaltabilir. Ritmik olarak sık ve bırak."
     },
     "abe": {
-      "title": "Değişime odaklanın",
-      "text": "Bir parmağınızı göze yakın tutun ve ona odaklanın. Parmağınızı yavaşça uzaklaştırın, mesafeye odaklanın ve ardından tekrar parmağa dönün. Parmağınızı geri getirin ve uzaktaki bir şeye odaklanın."
+      "title": "Yavaş nefes",
+      "text": "Nefes hızını dakikada altı nefese düşür. Bu sakinleştirici sistemi aktive eder ve kan basıncını düşürür."
+    },
+    "abf": {
+      "title": "Görselleştirme",
+      "text": "Gözlerini kapat ve kendini sakin hissettiğin bir yeri hayal et. Deniz, orman, dağlar – neresi olursa. İki dakika orada kal."
     },
     "abg": {
-      "title": "El sıkmak",
-      "text": "Bir çift toplanmış çorabı veya yumuşak bir lastik topu sıkın ve 5 saniye tutun. Tüm işlemi birkaç kez tekrarlayın."
+      "title": "5-4-3-2-1 topraklama",
+      "text": "Beş gördüğün şey, dört dokunabildiğin, üç duyduğun, iki kokladığın, bir tattığın. Topraklama tekniği seni şimdiki ana getirir."
     },
     "abh": {
-      "title": "Yavaş nefes alma",
-      "text": "Gelişmekte olan araştırmalar, sağlık ve uzun ömür ile ilişkili gibi görünen fizyolojik parametreleri optimize etmenin bir yolu olarak kontrollü yavaş nefes alma tekniklerinin kullanım potansiyelini ortaya koymaktadır."
+      "title": "Kısa uyku bilimi",
+      "text": "On ile yirmi dakikalık bir şekerleme uyanıklığı ve performansı artırır. Alarm kur ve dinlen."
     },
     "abi": {
-      "title": "Hayali görselleştirme",
-      "text": "Gözlerinizi kapatın ve kendinizi plaj veya orman gibi huzurlu ve sakinleştirici bir yerde hayal edin, o ortamın görüntülerine, seslerine ve hislerine odaklanın."
+      "title": "Pomodoro sıfırlama",
+      "text": "Pomodoro tekniği: yirmi beş dakika odaklanma, beş dakika mola. Her dört turda uzun mola. Yapılandırılmış molalar dayanıklılığı artırır."
     },
     "abj": {
-      "title": "Bunaldınız mı?",
-      "text": "5-4-3-2-1 Topraklama Tekniğini deneyin: Görebildiğiniz 5 şeyi, dokunabileceğiniz 4 şeyi, duyabileceğiniz 3 şeyi, koklayabileceğiniz 2 şeyi ve tadabileceğiniz 1 şeyi belirleyin."
+      "title": "Karalama molası",
+      "text": "Birkaç dakika serbest karalama yap. Yaratıcılığı uyandırır ve beynin bilgiyi işlemesine yardımcı olur. Sanatçı olmak gerekmez."
+    },
+    "abk": {
+      "title": "Bir şarkılık mola",
+      "text": "Favori şarkını aç ve başka hiçbir şey yapma. Aktif olarak dinle. Müzik kortizolü düşürür ve dopamini yükseltir."
+    },
+    "abl": {
+      "title": "Şükran anı",
+      "text": "Şu anda minnettar olduğun üç şeyi yaz. Otuz saniye sürer ve beynin odağını pozitife kaydırır."
+    },
+    "abm": {
+      "title": "Soğuk su sıfırlama",
+      "text": "Ellerini ve yüzünü soğuk suyla yıka. Dalış refleksini aktive eder, nabzı düşürür ve dikkati keskinleştirir."
+    },
+    "abn": {
+      "title": "Bir bitkiyle konuş",
+      "text": "Saksı çiçeğin var mı? Sula, bak, konuş. Yeşillik stresi azaltır ve hava kalitesini artırır."
+    },
+    "abo": {
+      "title": "Beyin boşaltma",
+      "text": "Aklından geçen her şeyi sansürsüz yaz. Kağıt veya uygulama – sadece boşalt. Zihinsel alan açar."
+    },
+    "abp": {
+      "title": "Evcil hayvanını sev",
+      "text": "Yakınında evcil hayvanın var mı? Bir hayvanı sevmek kan basıncını düşürür ve oksitosin artırır. İkiniz için de kazan-kazan."
+    },
+    "abq": {
+      "title": "Gülme terapisi",
+      "text": "Komik bir video izle veya seni güldüren bir şeyi hatırla. Gülmek oksijen alımını artırır ve endorfin salgılatır."
+    },
+    "abr": {
+      "title": "Temiz hava",
+      "text": "Pencere aç veya bir dakikalığına dışarı çık. Temiz hava oksijen alımını artırır ve zihni temizler."
+    },
+    "abs": {
+      "title": "Vücut taraması",
+      "text": "Gözlerini kapat ve vücudunu tepeden tırnağa tara. Gerginlik hissettiğin yerleri fark et. O bölgeye nefes ver ve bırak."
+    },
+    "abt": {
+      "title": "Masa yogası",
+      "text": "Sandalyede kedi-inek, oturarak bükülme, öne eğilme. Basit masa yogası mat olmadan gerginlikleri çözer."
+    },
+    "abu": {
+      "title": "Bir sayfa oku",
+      "text": "Bir kitaptan bir sayfa oku – kağıt kitap. Gözlerine ekransız zaman verir ve beyne farklı bir uyaran sunar."
+    },
+    "abv": {
+      "title": "90 dakika döngüsü",
+      "text": "Beyin yaklaşık doksan dakikalık ultradian döngülerle çalışır. Molalarını bu ritme göre planla, maksimum verimlilik için."
+    },
+    "abw": {
+      "title": "Merak molası",
+      "text": "Hep merak ettiğin bir şeyi araştır. Veya kısa bir belgesel izle. Merak beynin ödül sistemini aktive eder."
+    },
+    "abx": {
+      "title": "Kutu nefesi",
+      "text": "Dört saniye nefes al, dört saniye tut, dört saniye ver, dört saniye tut. Dört kez tekrarla. Askerler streste bunu kullanır."
+    },
+    "aby": {
+      "title": "Dans et",
+      "text": "Bir şarkı aç ve üç dakika serbest dans et. Fiziksel hareket, müzik ve neşeyi birleştirir. İstersen kapıyı kapat."
+    },
+    "abz": {
+      "title": "Birini ara",
+      "text": "Bir arkadaşını veya aile üyeni ara. Sadece iki dakika. İnsan teması çoğu verimlilik hilesinden daha çok iyilik hissi verir."
+    },
+    "aca": {
+      "title": "Güneş ışığı dozu",
+      "text": "Beş dakikalığına güneşe çık. Güneş ışığı sirkadiyen ritmi düzenler, D vitamini seviyesini yükseltir ve ruh halini iyileştirir."
+    },
+    "acb": {
+      "title": "Kademeli gevşeme",
+      "text": "Her kas grubunu sırayla kas ve gevşet. Ayaklardan başla ve yukarı doğru çalış. Tüm vücut beş dakikada."
+    },
+    "acc": {
+      "title": "Yalınayak an",
+      "text": "Ayakkabılarını çıkar ve ayaklarının altındaki zemini hisset. İç mekanda bile yalınayak yürümek taban sinirlerini uyarır ve dengeyi geliştirir."
+    },
+    "acd": {
+      "title": "Gelecekteki kendine yaz",
+      "text": "Altı ay sonraki kendine kısa bir mesaj yaz. Ne umuyorsun? Neyi hatırlamak istiyorsun? Perspektif verir."
+    },
+    "ace": {
+      "title": "Dijital temizlik",
+      "text": "Gereksiz sekmeleri kapat, eski dosyaları sil, bir bültenden çık. Beş dakikalık dijital temizlik zihinsel gürültüyü azaltır."
+    },
+    "acf": {
+      "title": "İki dakika kuralı",
+      "text": "Bir şey iki dakikadan az sürüyorsa şimdi yap. O e-postayı yanıtla, bardağı yıka, küçük şeyi hallet. Zihinsel enerji açığa çıkarır."
+    },
+    "acg": {
+      "title": "Duruş denetimi",
+      "text": "Bir duvara yaslan: topuklar, kalça, kürek kemikleri ve ense duvara değsin. Bu senin referans duruşun."
+    },
+    "ach": {
+      "title": "Koku molası",
+      "text": "Kahve, limon, lavanta veya favori kokunu koklayın. Koku duyusu beynin duygu merkezine doğrudan bağlanır ve ruh halini anında değiştirebilir."
+    },
+    "aci": {
+      "title": "Bulut seyretme",
+      "text": "Pencereye git ve bulutlara bak. Şekiller bul. Meditasyon yapmak istemeyenler için meditasyon. Ve aynı derecede işe yarıyor."
+    }
+  },
+  "ui": {
+    "loading": "Pauza yükleniyor…",
+    "preview": {
+      "status": "Önizleme",
+      "detail": "Tarayıcı önizlemesi",
+      "action": "Önizleme modu aktif."
+    },
+    "title": "Pauza",
+    "heroHeadline": "Sakin bir arayüzle çalışma ritminizi koruyun",
+    "heroSubtitle": "En önemli ayarlar önde, gelişmiş seçenekler arkada.",
+    "settingsCategories": "Ayar kategorileri",
+    "settingsCategoriesHint": "Sol tarafta kategori değiştirin, sağ tarafta ayarları görüntüleyin.",
+    "currentCategory": "Mevcut kategori",
+    "overview": "Genel bakış",
+    "overviewHint": "Durum özeti, son eylemler ve hızlı erişim.",
+    "liveOverview": "Canlı genel bakış",
+    "liveOverviewHint": "Mevcut ritim, uygulama durumu ve mola penceresi bir bakışta.",
+    "quickActions": "Hızlı eylemler",
+    "quickActionsHint": "Bu eylemler devam eden ritmi doğrudan etkiler.",
+    "savePanel": "Değişiklikleri kaydet",
+    "savePanelHint": "Değişiklikler ancak kaydettikten sonra uygulanır.",
+    "nextBreakLabel": "Sonraki mola",
+    "currentBreakLabel": "Mevcut mola",
+    "lastActionLabel": "Son eylem",
+    "runtimeLabel": "Ortam",
+    "platformLabel": "Platform",
+    "versionLabel": "Sürüm",
+    "breakFeelLabel": "Mola stili",
+    "placementLabel": "Pencere konumu",
+    "pendingChanges": "Kaydedilmemiş değişiklikler",
+    "synced": "Senkronize",
+    "saving": "Kaydediliyor…",
+    "allSet": "Hazır",
+    "noCurrentBreak": "Aktif mola yok",
+    "liveSignals": "Canlı sinyaller",
+    "general": "Genel",
+    "preferences": "Tercihler",
+    "currentStatus": "Mevcut durum",
+    "language": "Dil",
+    "languageChinese": "Basitleştirilmiş Çince",
+    "languageEnglish": "İngilizce",
+    "launchOnLogin": "Oturum açıldığında başlat",
+    "enabled": "Etkin",
+    "disabled": "Devre dışı",
+    "schedule": "Ritim",
+    "interruptions": "Hatırlatmalar ve kesintiler",
+    "sectionScheduleHint": "Yalnızca günlük olarak ayarladığınız ritim ayarları.",
+    "microbreaks": "Mikro molalar",
+    "microbreaksHint": "Çalışma sırasında kısa kesintiler.",
+    "longBreaks": "Molalar",
+    "longBreaksHint": "Birkaç döngü sonra tam ekran molası.",
+    "interval": "Aralık",
+    "every": "Sıklık",
+    "durationLabel": "Süre",
+    "behavior": "Davranış",
+    "allowPostpone": "Ertelemeye izin ver",
+    "signals": "Sinyaller",
+    "sectionSignalsHint": "Pauza'nın hatırlatmaları ne zaman göstereceğine daha akıllıca karar vermesine izin verin.",
+    "naturalBreaks": "Doğal molalar",
+    "naturalBreaksHint": "Yeterince uzun bir yokluktan sonra otomatik sıfırlama.",
+    "resetAfter": "Şu kadar sonra sıfırla",
+    "dnd": "Rahatsız etmeyin",
+    "dndHint": "Bu mod aktifken hatırlatmaları duraklat",
+    "sectionSurfaceHint": "Kesinti yoğunluğunu ve mola penceresinin konumunu kontrol edin.",
+    "sectionGeneralHint": "Birkaç genel tercih. Varsayılan olarak minimalist.",
+    "notificationsCategory": "Hatırlatmalar ve erteleme",
+    "notificationsCategoryHint": "Moladan önce ses. Erteleme ayarları burada.",
+    "surfaceCategory": "Kesinti ve görüntüleme",
+    "surfaceCategoryHint": "Mola penceresinin yoğunluğu, konumu ve katılığı.",
+    "smartPause": "Akıllı mola",
+    "smartPauseHint": "Pauza önce belirgin bir anı arar ve eşiği kademeli olarak düşürür.",
+    "generalAndShortcuts": "Genel ve kısayollar",
+    "generalAndShortcutsHint": "Dil, otomatik başlatma ve genel klavye kısayollarını yönetin.",
+    "advanced": "Gelişmiş",
+    "sectionAdvancedHint": "Daha fazla kontrol, uyumluluk seçenekleri ve kısayollar.",
+    "appExclusions": "Uygulama istisnaları",
+    "appExclusionsHint": "Hatırlatmaların duraklatıldığı veya devam ettirildiği uygulamalar.",
+    "appExclusionsEnable": "Etkinleştir",
+    "appRulePause": "Eşleştiğinde duraklat",
+    "appRuleResume": "Yalnızca eşleştiğinde devam et",
+    "pause30": "30 dk duraklat",
+    "focus45": "45 dk odaklanma",
+    "resume": "Devam et",
+    "clearFocus": "Odaklanmayı bitir",
+    "save": "Kaydet",
+    "revert": "Geri al",
+    "defaults": "Varsayılan değerler",
+    "preBreakNotifications": "Uyarı sesi",
+    "beforeLabel": "Önce",
+    "postpone": "Ertele",
+    "scheduleControl": "Ritim kontrolü",
+    "resetScheduleHint": "Sonraki molaları şu andan itibaren yeniden hesapla.",
+    "postponeCategoryHint": "Erteleme süresini ve limitini ayrı ayrı ayarlayın.",
+    "limitLabel": "Limit",
+    "breakSurface": "Mola penceresi",
+    "breakDisplayMode": "Görüntüleme modu",
+    "breakBackdrop": "Arka plan teması",
+    "breakBackdropHint": "Mola penceresi için atmosferik bir arka plan seçin.",
+    "breakBackdropPaper": "Kâğıt",
+    "breakBackdropDawn": "Şafak",
+    "breakBackdropForest": "Orman",
+    "breakBackdropNight": "Gece",
+    "breakBackdropCustom": "Özel arka plan",
+    "customWallpaper": "Özel arka plan",
+    "customWallpaperHint": "Mola penceresi arka planı olarak yerel bir görüntü yükleyin.",
+    "customWallpaperChoose": "Görüntü seç",
+    "customWallpaperReplace": "Görüntüyü değiştir",
+    "customWallpaperRemove": "Kaldır",
+    "customWallpaperEmpty": "Özel arka plan seçilmedi",
+    "customWallpaperEmptyHint": "Görüntü olmadan varsayılan tema kullanılacaktır.",
+    "customWallpaperReady": "Görüntü sıkıştırılır ve yerel olarak mola arka planı olarak kaydedilir.",
+    "breakIdeas": "Mola ipuçları",
+    "breakIdeasHint": "Her molada kısa bir ipucu göster.",
+    "breakSounds": "Mola sesleri",
+    "breakSoundsHint": "Moladan önce uyarı sesi ve sonunda bitiş sesi.",
+    "microbreakStartSound": "Mikro mola uyarısı",
+    "microbreakEndSound": "Mikro mola sonu",
+    "longBreakStartSound": "Mola uyarısı",
+    "longBreakEndSound": "Mola sonu",
+    "breakSoundVolume": "Ses düzeyi",
+    "breakSoundSilence": "Sessiz",
+    "breakSoundCrystalGlass": "Kristal bardak",
+    "breakSoundWindChime": "Rüzgâr çanları",
+    "breakSoundTicToc": "Tik-tak",
+    "breakSoundReverie": "Hayal",
+    "reminderMode": "Hatırlatma modu",
+    "reminderModeHint": "Akıllı doğal bir anı arar; Zorunlu hemen keser.",
+    "reminderModeSmart": "Akıllı",
+    "reminderModeForced": "Zorunlu",
+    "window": "Pencere",
+    "fullscreen": "Tam ekran",
+    "promptStyleGentle": "Nazik",
+    "promptStyleBalanced": "Dengeli",
+    "promptStyleImmersive": "Sürükleyici",
+    "allScreens": "Tüm ekranlar",
+    "screenPrimary": "Ana ekran",
+    "screenCursor": "İmlecin bulunduğu ekran",
+    "showTimeToBreakInTray": "Sonraki molayı sistem tepsisinde göster",
+    "currentTimeInBreaks": "Mola penceresinde saati göster",
+    "currentTimeInBreaksHint": "Mola penceresinin sağ üst köşesinde sistem saati.",
+    "strictModes": "Katı modlar",
+    "strictModesHint": "Molaların atlanıp atlanamayacağını ve manuel onay gerekip gerekmediğini kontrol edin.",
+    "microbreakStrict": "Katı mikro mola",
+    "longBreakStrict": "Katı mola",
+    "manualFinish": "Zamanlayıcıdan sonra manuel bitirme",
+    "showTrayMenuInStrictMode": "Katı modda sistem tepsisi menüsü",
+    "shortcuts": "Kısayollar",
+    "shortcutsHint": "Boş = kayıtlı değil. Biçim örn.: CmdOrCtrl+Shift+P",
+    "shortcutReveal": "Ayarları aç",
+    "shortcutFocus45": "45 dk odaklanma",
+    "shortcutPauseToggle": "Duraklatmayı değiştir",
+    "shortcutPause30": "30 dk duraklat",
+    "shortcutPause60": "1 saat duraklat",
+    "shortcutPause120": "2 saat duraklat",
+    "shortcutPause300": "5 saat duraklat",
+    "shortcutSkipScheduled": "Sonraki planlanan molaya atla",
+    "shortcutSkipMicrobreak": "Mikro molaya atla",
+    "shortcutSkipLongBreak": "Molaya atla",
+    "shortcutReset": "Ritmi sıfırla",
+    "suffix": {
+      "secondsLong": "sn",
+      "secondsBefore": "sn önce",
+      "minutesApart": "dk arayla",
+      "cycles": "döngü",
+      "minutesLong": "dk",
+      "minutesShortPostpone": "dk",
+      "minutesLongPostpone": "dk",
+      "minutesAway": "dk",
+      "minutes": "dk",
+      "times": "×"
+    },
+    "status": {
+      "noBreakScheduled": "Planlanmış mola yok",
+      "microbreak": "Mikro mola",
+      "longBreak": "Mola",
+      "nextBreak": "{{label}} {{duration}} sonra",
+      "focus": "Odaklanma {{duration}}",
+      "pause": "Duraklatıldı {{duration}}",
+      "pauseForever": "Süresiz duraklatıldı",
+      "blockedBy": "{{match}} nedeniyle duraklatıldı",
+      "appRuleActive": "Uygulama kuralı aktif",
+      "dndActive": "Rahatsız etmeyin aktif"
+    },
+    "error": {
+      "loadState": "Pauza durumu yüklenemedi"
+    },
+    "breakCopy": {
+      "clearedDetail": "Aktif mola yok.",
+      "manualAwaiting": "Süre doldu. İşe dönmeden önce bu molayı tamamlayın.",
+      "awaitingFinish": "Tamamlanma bekleniyor",
+      "actions": {
+        "resumeWork": "İşe dön",
+        "done": "Tamam",
+        "later": "Daha sonra",
+        "skip": "Atla"
+      },
+      "defaultPrompt": {
+        "microbreak": "Ayağa kalkın, omuzlarınızı ve boynunuzu gevşetin, uzaklara bakın.",
+        "longBreak": "Masanızdan birkaç dakika uzaklaşarak bedeninizi ve zihninizi dinlendirin."
+      }
+    },
+    "previewAction": {
+      "save": "Önizleme: ayarlar güncellendi.",
+      "pause": "Önizleme: 30 dk duraklatıldı.",
+      "pauseForever": "Önizleme: süresiz duraklatıldı.",
+      "focus": "Önizleme: odaklanma etkin.",
+      "focusCleared": "Önizleme: odaklanma bitirildi.",
+      "resume": "Önizleme: devam edildi.",
+      "reset": "Önizleme: ritim sıfırlandı.",
+      "autostartOn": "Önizleme: otomatik başlatma etkin.",
+      "autostartOff": "Önizleme: otomatik başlatma devre dışı.",
+      "done": "Önizleme: mola tamamlandı.",
+      "later": "Önizleme: mola ertelendi.",
+      "skip": "Önizleme: mola atlandı."
     }
   }
 }

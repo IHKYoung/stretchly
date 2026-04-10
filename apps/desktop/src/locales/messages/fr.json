@@ -100,7 +100,7 @@
       "ourWebsite": "visitez notre site Web",
       "dot": ".",
       "developedBy": "Développé par",
-      "janH": "Clarke Young",
+      "clarkeY": "Clarke Young",
       "designedBy": "Icône et IU conçues par Colin Shanley",
       "checkNewVersion": "Vérifier automatiquement la présence de mise à jour"
     },
@@ -221,299 +221,748 @@
     "appExclusion": "Appliquer la règle d’exclusion"
   },
   "miniBreakIdeas": {
-    "aah": {
-      "text": "Est-ce que votre position assise est correcte ?"
-    },
-    "aam": {
-      "text": "Prenez un moment pour penser à quelque chose que vous appréciez."
-    },
-    "aaj": {
-      "text": "Penchez doucement la tête sur le côté et maintenez pendant 5 à 10 secondes."
-    },
-    "aad": {
-      "text": "Fermez vos yeux et prenez de longues inspirations."
-    },
-    "aav": {
-      "text": "Fermez vos yeux et prenez conscience de ce qu'il se passe à l'instant, sans jugement."
-    },
-    "abb": {
-      "text": "Exposez vos yeux à la lumière naturelle."
-    },
     "aaa": {
-      "text": "Allez chercher un verre d'eau."
+      "text": "Va chercher un verre d'eau. Ton corps n'est pas un cactus."
     },
     "aab": {
-      "text": "Tournez lentement la tête sur la gauche, puis sur la droite."
+      "text": "Ta bouteille d'eau te juge. Bois une gorgée."
     },
     "aac": {
-      "text": "Levez lentement la tête vers le haut, puis baissez jusqu'au bout."
+      "text": "Check hydratation : c'était quand, ton dernier verre d'eau ?"
+    },
+    "aad": {
+      "text": "Un café c'est bien, mais un verre d'eau en plus, c'est mieux."
     },
     "aae": {
-      "text": "Fermez vos yeux et détendez-vous."
+      "text": "Regarde lentement tout à gauche, puis tout à droite."
     },
     "aaf": {
-      "text": "Étirez vos jambes."
+      "text": "Regarde lentement vers le haut, puis vers le bas."
     },
     "aag": {
-      "text": "Étirez vos bras."
+      "text": "Fixe un point à 6 mètres pendant 20 secondes — la règle 20-20-20."
+    },
+    "aah": {
+      "text": "Cligne rapidement des yeux 20 fois. Tes yeux secs te remercieront."
     },
     "aai": {
-      "text": "Tournez doucement la tête sur le côté et maintenez pendant 10 secondes."
+      "text": "Ferme les yeux et fais doucement rouler tes globes oculaires en cercle."
+    },
+    "aaj": {
+      "text": "Les yeux fermés, regarde lentement vers le plafond, puis vers le sol."
     },
     "aak": {
-      "text": "Levez-vous de votre chaise et étirez-vous."
+      "text": "Les yeux fermés, regarde lentement à gauche, puis à droite."
     },
     "aal": {
-      "text": "Focalisez vos yeux sur un objet situé au moins à 20 mètres."
+      "text": "Frotte tes mains jusqu'à ce qu'elles soient chaudes, puis pose-les sur tes yeux fermés."
+    },
+    "aam": {
+      "text": "Regarde par la fenêtre 30 secondes. Tu te souviens du monde extérieur ?"
     },
     "aan": {
-      "text": "Prenez un moment pour sourire d'être en vie."
+      "text": "Détourne le regard de l'écran et fixe quelque chose de vert. Les yeux adorent le vert."
     },
     "aao": {
-      "text": "Une vraie station de travail ergonomique est une dont on s'éloigne régulièrement."
+      "text": "Laisse un peu de lumière naturelle atteindre tes yeux."
     },
     "aap": {
-      "text": "Fermez vos yeux et comptez vos respirations."
+      "text": "Ton écran t'a envoyé un message : « Tu es beaucoup trop près depuis bien trop longtemps. »"
     },
     "aaq": {
-      "text": "Fermez vos yeux et nommez les choses que vous entendez."
+      "text": "Ferme les yeux et prends quelques respirations profondes."
     },
     "aar": {
-      "text": "Placez le bout de vos doigts sur vos épaules. Roulez vos épaules en avant pendant 10 secondes, puis en arrière."
+      "text": "Ferme les yeux et détends-toi."
     },
     "aas": {
-      "text": "Levez votre bras droit, étirez-le au dessus de votre tête sur la gauche et maintenez pendant 10 secondes. Répétez de l'autre côté."
+      "text": "Ferme les yeux et compte tes respirations."
     },
     "aat": {
-      "text": "Avec votre main droite, attrapez chaque doigt de votre main gauche en les tournant et en les serrant. Répétez de l'autre côté."
+      "text": "Inspire 4 temps, retiens 7, expire 8. La technique 4-7-8."
     },
     "aau": {
-      "text": "Levez-vous et faites une fente. Maintenez pendant 10 secondes puis faites pour l'autre jambe."
+      "text": "Prends 3 respirations lentes. Par le nez, puis par la bouche."
     },
-    "aax": {
-      "text": "Si vous avez besoin d'aide, demandez-en."
-    },
-    "aay": {
-      "text": "Faites une chose à la fois."
-    },
-    "aaz": {
-      "text": "Est-ce que votre attention est bien utilisée ?"
-    },
-    "aba": {
-      "text": "Changez votre posture."
+    "aav": {
+      "text": "Prends une grande inspiration jusqu'à sentir ton ventre se gonfler. C'est la respiration diaphragmatique."
     },
     "aaw": {
-      "text": "Focalisez vos yeux sur un objet à 20 pieds (6 mètres) de vous, toutes les 20 minutes, pendant 20 secondes."
+      "text": "Ne fais absolument rien pendant 20 secondes. Plus dur qu'on ne croit."
+    },
+    "aax": {
+      "text": "Vérifie ta posture — épaules en arrière, pieds à plat au sol."
+    },
+    "aay": {
+      "text": "Change de position assise."
+    },
+    "aaz": {
+      "text": "Baisse tes épaules. Elles étaient remontées jusqu'aux oreilles depuis tout à l'heure."
+    },
+    "aba": {
+      "text": "Desserre ta mâchoire. Tu ne savais même pas qu'elle était crispée, pas vrai ?"
+    },
+    "abb": {
+      "text": "Redresse ta colonne vertébrale. Imagine un fil qui te tire vers le haut depuis le sommet du crâne."
     },
     "abc": {
-      "text": "Les paupières fermées, levez lentement et doucement vos yeux au plafond, puis baissez-les au sol."
+      "text": "Rester assis, c'est le nouveau tabac. Lève-toi une minute."
     },
     "abd": {
-      "text": "Les paupières fermées, déplacez lentement et doucement vos yeux vers la gauche, puis la droite."
+      "text": "Tourne lentement la tête d'un côté et tiens 10 secondes. Change de côté."
     },
     "abe": {
-      "text": "Secouez vos mains pour vous détendre un peu."
+      "text": "Incline doucement la tête sur le côté et tiens 5 à 10 secondes."
     },
     "abf": {
-      "text": "Un après l'autre, touchez le bout de vos doigts avec le bout de votre pouce afin qu'ils forment un cercle."
-    },
-    "abh": {
-      "text": "Formez un poing avec la main, puis déployez et étirez vos doigts le plus possible."
-    },
-    "abj": {
-      "text": "Debout et bien droit, penchez lentement la tête vers une épaule en utilisant la main du même côté; jusqu'à sentir la tension."
-    },
-    "abl": {
-      "text": "Tenez-vous droit, les bras levés au dessus des épaules. Déplacez vos mains légèrement derrière votre dos, maintenez pendant une seconde cette position et revenez en avant."
+      "text": "Tire doucement une oreille vers l'épaule. Sens l'étirement du cou."
     },
     "abg": {
-      "text": "Faites le poing, puis tendez vos doigts vers le haut jusqu'à ce qu'ils pointent vers le plafond, comme si vous disiez à quelqu'un d'arrêter."
+      "text": "Fais une rotation lente et douce du cou en cercle."
+    },
+    "abh": {
+      "text": "Incline la tête en avant, en arrière, à gauche, à droite. Reset complet de la boussole."
     },
     "abi": {
-      "text": "Asseyez-vous bien droit, les bras le long du corps, et tournez lentement le cou dans une direction en décrivant un grand cercle."
+      "text": "Roule tes épaules vers l'avant pendant 10 secondes, puis vers l'arrière."
+    },
+    "abj": {
+      "text": "Monte tes épaules jusqu'aux oreilles et relâche d'un coup. Répète 5 fois."
     },
     "abk": {
-      "text": "Tenez-vous droit, les bras le long du corps. Serrez vos omoplates l'une contre l'autre et gardez cette position."
+      "text": "Serre tes omoplates l'une contre l'autre et tiens 5 secondes."
     },
-    "abo": {
-      "text": "Debout, les pieds écartés de la largeur des épaules, abaissez votre corps comme si vous vous asseyiez sur une chaise, puis remettez-vous debout. Répétez l'exercice plusieurs fois."
-    },
-    "abq": {
-      "text": "Placez-vous face à un mur et placez vos mains dessus, puis faites plusieurs pompes."
-    },
-    "abr": {
-      "text": "Asseyez-vous sur le bord de votre chaise et tendez une jambe devant vous, pendant 10 à 15 secondes. Répétez l'opération avec l'autre jambe."
-    },
-    "abs": {
-      "text": "Placez-vous face à un mur, mettez un pied en arrière et l'autre en avant, puis appuyez-vous sur le mur. Répétez l'opération avec l'autre jambe."
-    },
-    "abu": {
-      "text": "Penchez la tête d'un côté, puis de l'autre, puis inclinez-la doucement vers l'avant et vers l'arrière."
+    "abl": {
+      "text": "Lève le bras droit au-dessus de la tête, penche-toi à gauche, tiens 10 secondes. Change de côté."
     },
     "abm": {
-      "text": "Asseyez-vous sur le bord de votre chaise, tournez votre torse d'un côté et maintenez la position pendant 10 à 15 secondes. Répétez l'opération de l'autre côté."
+      "text": "Croise un bras sur ta poitrine et tire-le doucement avec l'autre main. Change de côté."
     },
     "abn": {
-      "text": "Levez-vous et posez un pied sur un objet à proximité, comme une chaise ou un escabeau. Gardez le genou plié et maintenez la position pendant 10 à 15 secondes. Répétez l'opération avec l'autre pied."
+      "text": "Tends un bras vers le haut, utilise l'autre pour pousser le coude vers l'arrière. Tiens 10 secondes."
+    },
+    "abo": {
+      "text": "Entrelace tes doigts dans le dos et ouvre la poitrine."
     },
     "abp": {
-      "text": "Mettez-vous debout, le dos et les mains contre un mur, puis déplacez lentement vos bras de haut en bas comme si vous faisiez des anges de neige."
+      "text": "Entrelace tes doigts et pousse les paumes vers le plafond. Étire-toi !"
+    },
+    "abq": {
+      "text": "Tends les bras sur les côtés et fais de petits cercles. Ça brûle plus vite qu'on ne pense."
+    },
+    "abr": {
+      "text": "Appuie tes paumes l'une contre l'autre devant la poitrine et maintiens. Namasté, codeur."
+    },
+    "abs": {
+      "text": "Fais semblant de tirer une corde au-dessus de ta tête. Étirement latéral débloqué."
     },
     "abt": {
-      "text": "Tenez un bras droit, puis utilisez l'autre bras pour pousser doucement le coude du premier bras vers votre tête. Maintenez la position pendant 10 à 15 secondes. Répétez avec l'autre bras."
+      "text": "Secoue tes mains pour relâcher la tension."
+    },
+    "abu": {
+      "text": "Touche le bout de chaque doigt avec le pouce, en formant un O."
     },
     "abv": {
-      "text": "Tendez un bras en travers votre poitrine, tenez le coude avec l'autre main et ramenez-le doucement vers votre poitrine. Répétez l'opération avec l'autre bras."
+      "text": "Fais un poing, puis ouvre grand les doigts en éventail."
     },
     "abw": {
-      "text": "Mettez-vous debout, posez un pied sur un objet à proximité, comme une chaise ou un escabeau, et descendez pour toucher vos orteils. Répétez l'opération avec l'autre jambe."
+      "text": "Fais un poing, puis écarte les doigts comme un panneau stop."
     },
     "abx": {
-      "text": "Placez-vous dans l'encadrement d'une porte et placez un bras de chaque côté du cadre, puis penchez-vous doucement vers l'avant jusqu'à ce que vous sentiez un étirement dans votre poitrine."
+      "text": "Presse chaque doigt de la main gauche avec la main droite. Change de main."
     },
     "aby": {
-      "text": "Asseyez-vous sur le bord d'une chaise ou sur le sol et placez la plante de vos pieds l'une contre l'autre, en appuyant doucement avec vos coudes pour étirer l'intérieur de vos cuisses."
+      "text": "Étire tes poignets — tends le bras, tire les doigts vers toi doucement."
+    },
+    "abz": {
+      "text": "Fais tourner tes poignets 10 fois dans un sens, puis dans l'autre."
+    },
+    "aca": {
+      "text": "Pose ta main à plat sur le bureau et écarte doucement les doigts."
+    },
+    "acb": {
+      "text": "Tapote tes doigts sur le bureau un par un, du petit doigt au pouce. Puis à l'envers."
+    },
+    "acc": {
+      "text": "Offre-toi un massage des mains. Tu l'as bien mérité."
+    },
+    "acd": {
+      "text": "Lève-toi et étire-toi. Ta colonne vertébrale n'attendait que ça."
+    },
+    "ace": {
+      "text": "Assis sur le bord de la chaise, tourne le buste d'un côté, tiens 10 secondes. Change."
+    },
+    "acf": {
+      "text": "Arque ton dos comme un chat, puis laisse-le se creuser. Étirement chat-vache, version bureau."
+    },
+    "acg": {
+      "text": "Place tes deux mains derrière le bas du dos et cambre-toi doucement vers l'arrière."
+    },
+    "ach": {
+      "text": "Dos contre le mur, fais lentement glisser tes bras de haut en bas — les « wall angels »."
+    },
+    "aci": {
+      "text": "Étire tes jambes."
+    },
+    "acj": {
+      "text": "Lève-toi et fais une fente. Tiens 10 secondes chaque jambe."
+    },
+    "ack": {
+      "text": "Lève-toi et fais quelques squats. Ta chaise est juste derrière, au cas où."
+    },
+    "acl": {
+      "text": "Fais 10 montées sur la pointe des pieds à ton bureau. Fitness en mode furtif."
+    },
+    "acm": {
+      "text": "Tends une jambe devant toi en position assise. Tiens 10 secondes. Change."
+    },
+    "acn": {
+      "text": "Fais tourner tes chevilles en cercle — dans un sens, puis dans l'autre."
+    },
+    "aco": {
+      "text": "Pointe et fléchis tes pieds 10 fois. Tes chevilles ont été négligées."
+    },
+    "acp": {
+      "text": "Tiens-toi sur un pied 30 secondes. Change. L'équilibre, ça s'entretient."
+    },
+    "acq": {
+      "text": "Remue tes orteils dans tes chaussures. Oui, tous."
+    },
+    "acr": {
+      "text": "Lève-toi et marche sur place pendant 30 secondes."
+    },
+    "acs": {
+      "text": "Fais quelques pompes contre le mur. Personne ne regarde. Probablement."
+    },
+    "act": {
+      "text": "Fais 5 dips sur le bord de ta chaise."
+    },
+    "acu": {
+      "text": "Contracte et relâche chaque muscle, des orteils au front. Reset complet du corps."
+    },
+    "acv": {
+      "text": "Fronce le visage 5 secondes, puis relâche. Tension faciale : éliminée."
+    },
+    "acw": {
+      "text": "Mets-toi dans un cadre de porte et penche-toi doucement en avant pour étirer la poitrine."
+    },
+    "acx": {
+      "text": "Ferme les yeux et nomme les sons que tu entends."
+    },
+    "acy": {
+      "text": "Ferme les yeux et observe ce qui vient à l'esprit, sans jugement."
+    },
+    "acz": {
+      "text": "Pense à quelque chose pour lequel tu es reconnaissant en ce moment."
+    },
+    "ada": {
+      "text": "Souris. Tu es en vie et c'est plutôt cool."
+    },
+    "adb": {
+      "text": "Fais un scan mental de ton corps. Des zones de tension ?"
+    },
+    "adc": {
+      "text": "Pense à un truc sympa que tu dirais à un ami, puis dis-le-toi à toi-même."
+    },
+    "add": {
+      "text": "Repère 5 choses dans la pièce auxquelles tu n'as jamais fait attention."
+    },
+    "ade": {
+      "text": "Ferme les yeux et imagine ton endroit préféré pendant 20 secondes."
+    },
+    "adf": {
+      "text": "Pose ton téléphone écran contre le bureau pendant 60 secondes. Rien ne va se passer. Promis."
+    },
+    "adg": {
+      "text": "Ton clavier ne va pas te manquer. Lève-toi."
+    },
+    "adh": {
+      "text": "Ton dos vient de déposer une réclamation officielle. C'est l'heure de s'étirer."
+    },
+    "adi": {
+      "text": "Regarde ailleurs que l'écran. Plot twist : le monde est en 3D."
+    },
+    "adj": {
+      "text": "Bâille. Même un faux bâillement en déclenche un vrai. Essaie."
+    },
+    "adk": {
+      "text": "Ouvre grand la bouche, puis referme-la doucement. Tension de la mâchoire : relâchée."
+    },
+    "adl": {
+      "text": "Fais-toi un câlin. Croise les bras et serre. Le self-care, c'est pas bizarre."
+    },
+    "adm": {
+      "text": "Mini pause danse — juste 10 secondes. Tu sais que tu en as envie."
     }
   },
   "longBreakIdeas": {
     "aaa": {
-      "text": "Vous avez du mal à faire une pause seul ? Essayez de le faire avec un.e collègue. Outre le fait qu'il vous sera plus facile de respecter vos pauses, vous aurez l'occasion de mieux connaître cette personne. Prendre des pauses ensemble augmente la productivité.",
-      "title": "A plusieurs"
+      "title": "Pause ensemble",
+      "text": "Tu as du mal à faire des pauses tout seul ? Essaie avec un ou une collègue. En plus de mieux respecter tes pauses, tu apprendras à connaître cette personne. Les pauses sociales boostent la productivité — et c'est aussi l'occasion d'un bon café partagé."
+    },
+    "aab": {
+      "title": "S'éloigner",
+      "text": "Tu as remarqué que tes meilleures idées viennent sous la douche ? C'est parce que ton cerveau résout les problèmes en tâche de fond. Éloigne-toi de l'écran et pense à quelque chose de complètement différent."
     },
     "aac": {
-      "title": "Micro-pauses",
-      "text": "Le repos est un élément clé pour assurer la performance du système musculo-squelettique. Des pauses fréquentes peuvent diminuer la durée d'une tâche et contribuer à réduire l'exposition au risque de blessure ergonomique."
-    },
-    "aaf": {
-      "title": "Érgonomie",
-      "text": "Une hauteur et un angle inadéquats du clavier, de la souris, de l'écran ou de la surface de travail peuvent entraîner des problèmes de santé. Prenez le temps de vous informer sur l'ergonomie de votre place de travail."
-    },
-    "aag": {
-      "title": "Bouger",
-      "text": "Il existe de nombreuses façons de faire de l'exercice au bureau. Essayez de marcher sur place ou de faire des pompes appuyé sur votre bureau."
-    },
-    "aah": {
-      "title": "Changement",
-      "text": "Vous avez une balle de stabilité ou un bureau debout ? Envisagez de votre chaise de bureau par l'une d'eux pendant un certain temps."
-    },
-    "aai": {
-      "title": "Perception",
-      "text": "Vous rêvassez ou vous avez du mal à vous concentrer ? C'est un signe que vous avez besoin de faire une pause."
-    },
-    "aaj": {
-      "title": "Technologie",
-      "text": "Que diriez-vous d'une promenade sans technologie ?"
-    },
-    "aak": {
-      "title": "Métabolisme",
-      "text": "De nouvelles recherches montrent que le fait de rester assis pendant de longues périodes contribue, entre autres, au risque de syndrome métabolique, de crise cardiaque et d'accident vasculaire cérébral et au risque global de décès. Faire des pauses régulières pour marcher peut favoriser votre circulation sanguine, ce qui permet de contrer certains de ces problèmes."
-    },
-    "aal": {
-      "title": "Réunions actives",
-      "text": "Que diriez-vous de déplacer les réunions de la salle de conférence au couloir ? Non seulement la marche permet de brûler des calories, mais elle peut aussi favoriser un sentiment de collaboration."
-    },
-    "aam": {
-      "title": "Fruit",
-      "text": "Prenez votre temps et mangez des fruits. Lentement. Remarquez la saveur, la texture, la fraîcheur."
-    },
-    "aan": {
-      "title": "Toilettes",
-      "text": "Lorsque vous allez aux toilettes, dirigez-vous vers la salle de bains la plus éloignée de votre lieu de travail."
-    },
-    "aao": {
-      "title": "Pause café",
-      "text": "Vous faites une pause café ? Envisagez de faire une promenade de 5 minutes à chaque fois que vous en faites une."
-    },
-    "aap": {
-      "title": "Collègues",
-      "text": "Évitez d'envoyer des e-mails ou des messages à vos collègues de bureau, rendez-vous plutôt à leur bureau pour communiquer avec eux."
-    },
-    "aar": {
-      "title": "Exercice",
-      "text": "Il est prouvé que de petites quantités d'exercice régulier peuvent avoir des effets bénéfiques spectaculaires sur la santé, notamment en réduisant le stress de manière mesurable."
-    },
-    "aaq": {
-      "title": "Apprentissage",
-      "text": "Dans une étude menée sur des volontaires en bonne santé, des chercheurs du NIH ont découvert que le fait de faire de courtes pauses, tôt et souvent, peut aider notre cerveau à acquérir de nouvelles compétences."
-    },
-    "aas": {
-      "title": "Répétition",
-      "text": "Avez-vous trouvé votre routine strech-ly ? N'oubliez pas de la répéter plusieurs fois pour mieux combattre les effets de la position assise prolongée."
-    },
-    "aat": {
-      "title": "Poignet et avant-bras",
-      "text": "Tendez les bras, les paumes tournées vers vous, puis faites tourner lentement les mains quatre fois dans le sens des aiguilles d'une montre, puis quatre fois dans le sens inverse."
+      "title": "Science des micro-pauses",
+      "text": "Des pauses courtes et fréquentes réduisent les contraintes répétitives et maintiennent ton système musculo-squelettique en forme. Considère-les comme la maintenance préventive de la machine humaine."
     },
     "aad": {
       "title": "Méditation",
-      "text": "Les études suggèrent que les exercices basés sur la pleine conscience contribuent à réduire l'anxiété, la dépression, le stress et la douleur, et à améliorer l'état de santé général, la santé mentale et la qualité de vie. Vous ne savez pas par où commencer ? Il existe de nombreuses applications pour vous aider."
+      "text": "La méditation de pleine conscience réduit l'anxiété, le stress et même la douleur physique. Tu ne sais pas par où commencer ? Même 5 minutes de respiration consciente comptent. Il existe des dizaines d'applis gratuites pour te guider."
     },
     "aae": {
-      "text": "Le fait de regarder des écrans pendant une longue période vous incite à moins cligner des yeux, ce qui expose vos yeux à l'air. Clignez rapidement des yeux pendant quelques secondes pour rafraîchir le film lacrymal et éliminer la poussière de la surface de l'œil.",
-      "title": "Cligner des yeux"
+      "title": "Clignement des yeux",
+      "text": "Tu clignes jusqu'à 66 % moins des yeux devant un écran, ce qui les dessèche. Cligne rapidement quelques secondes pour renouveler ton film lacrymal. Tes yeux font tellement pour toi — renvoie-leur l'ascenseur."
     },
-    "aab": {
-      "text": "Avez-vous déjà remarqué que votre cerveau peut comprendre des choses seul ? Il suffit de s'éloigner de l'ordinateur et de faire une pause pour penser à quelque chose qui n'a rien à voir.",
-      "title": "Éloignez-vous"
+    "aaf": {
+      "title": "Ergonomie du bureau",
+      "text": "Écran au niveau des yeux, clavier à hauteur des coudes, pieds à plat au sol. Une mauvaise ergonomie cause des dégâts réels au fil du temps. Prends 2 minutes pour vérifier ton installation — ton futur toi te remerciera."
+    },
+    "aag": {
+      "title": "Exercice au bureau",
+      "text": "Pas besoin de salle de sport pour bouger. Marche sur place, fais des pompes contre le bureau, ou tente quelques squats. Même 60 secondes de mouvement rechargent ton niveau d'énergie."
+    },
+    "aah": {
+      "title": "Bureau debout",
+      "text": "Si tu as un bureau réglable ou un ballon d'assise, c'est le bon moment pour changer. Alterner entre assis et debout réduit la fatigue et maintient tes muscles actifs."
+    },
+    "aai": {
+      "title": "Signaux de déconcentration",
+      "text": "Tu rêvasses ? Du mal à te concentrer ? Tu relis la même ligne trois fois ? C'est la façon polie de ton cerveau de dire : fais une pause, sérieusement."
+    },
+    "aaj": {
+      "title": "Marche sans techno",
+      "text": "Laisse ton téléphone et fais une petite marche. Pas de podcast, pas de musique — juste toi et tes pensées. C'est étonnamment rafraîchissant dans un monde de sollicitations permanentes."
+    },
+    "aak": {
+      "title": "Dangers de la sédentarité",
+      "text": "Rester assis trop longtemps augmente les risques de maladies cardiovasculaires, de diabète et de problèmes de dos. Une marche de 5 minutes chaque heure compense significativement ces effets. Ton corps est fait pour bouger."
+    },
+    "aal": {
+      "title": "Réunions en marchant",
+      "text": "La prochaine fois que tu as un tête-à-tête, propose une réunion en marchant. Selon une étude de Stanford, la marche booste la créativité de 60 %. Et c'est plus sympa qu'une salle de réunion sans fenêtre."
+    },
+    "aam": {
+      "title": "Manger en pleine conscience",
+      "text": "Attrape un fruit et mange-le lentement. Remarque la saveur, la texture, la fraîcheur. C'est une mini-méditation déguisée en goûter. Bien mieux qu'un sandwich avalé devant l'écran."
+    },
+    "aan": {
+      "title": "Pause café-marche",
+      "text": "Tu vas te chercher un café ? Fais-en une petite balade de 5 minutes aussi. D'une pierre, deux coups — et un expresso."
+    },
+    "aao": {
+      "title": "Cerveau et pauses",
+      "text": "Une étude du NIH a montré que notre cerveau répète et consolide les nouvelles compétences pendant le repos — pas pendant la pratique. Les pauses te rendent littéralement meilleur dans ce que tu fais."
+    },
+    "aap": {
+      "title": "Bouger un peu, gagner beaucoup",
+      "text": "Même de petites doses d'exercice régulier réduisent considérablement le stress et améliorent l'humeur. Pas besoin d'une heure — 10 minutes de mouvement peuvent changer ta journée."
+    },
+    "aaq": {
+      "title": "Routine d'étirements",
+      "text": "Tu as trouvé des étirements qui te plaisent ? Répète-les plusieurs fois dans la journée. La régularité bat l'intensité quand il s'agit de contrer les effets de la position assise prolongée."
+    },
+    "aar": {
+      "title": "Exercices pour les poignets",
+      "text": "Tends les bras, paumes face à toi, puis fais tourner lentement tes mains — 4 fois dans un sens, 4 fois dans l'autre. Tes poignets encaissent plus de stress que tu ne le penses."
+    },
+    "aas": {
+      "title": "Étirement bras au ciel",
+      "text": "Entrelace les mains derrière la tête, puis lève-les au-dessus avec les paumes vers le plafond. Tiens 10 secondes. Sens ton dos se réveiller."
+    },
+    "aat": {
+      "title": "La règle 30/1",
+      "text": "Pour chaque 30 minutes en position assise, accorde-toi au moins 1 minute de mouvement. Mets un minuteur si besoin. Les petites habitudes s'accumulent en grands bénéfices pour la santé."
     },
     "aau": {
-      "title": "Étirement du dos",
-      "text": "Joignez les mains derrière la tête, puis soulevez-les ensemble au-dessus de la tête, les paumes tournées vers le haut."
-    },
-    "aax": {
-      "title": "Cardio",
-      "text": "Faites monter votre pouls à 120 battements par minute pendant 20 minutes d'affilée, quatre ou cinq fois par semaine, en pratiquant une activité qui vous plaît. L'augmentation régulière de la fréquence cardiaque améliore la santé cardiovasculaire."
-    },
-    "abg": {
-      "title": "Pression des mains",
-      "text": "Pressez une paire de chaussettes ou une balle en caoutchouc souple, maintenez la pression pendant 5 secondes. Répétez l'opération plusieurs fois."
-    },
-    "aaz": {
-      "title": "Pratiquez une activité artistique",
-      "text": "La thérapie par l'art est réputée pour ses effets bénéfiques sur la santé mentale, en particulier en ce qui concerne la gestion du stress. Que diriez-vous d'écrire un petit poème, de prendre une photo ou de peindre quelque chose de petit ?"
-    },
-    "abc": {
-      "title": "Transports en commun",
-      "text": "Si vous utilisez régulièrement les transports en commun, vous pouvez rester debout au lieu de vous asseoir. Si possible, essayez de remplacer le plus grand nombre de vos déplacements quotidiens par la marche ou le vélo."
-    },
-    "abd": {
-      "title": "Bâillement",
-      "text": "Le bâillement peut être très utile, car il produit des larmes qui aident à humidifier et à lubrifier les yeux."
-    },
-    "abh": {
-      "title": "Respiration lente",
-      "text": "Des recherches émergentes suggèrent que les techniques de respiration lente contrôlée peuvent être utilisées pour optimiser les paramètres physiologiques qui semblent être associés à la santé et à la longévité."
-    },
-    "aaw": {
-      "title": "Entraînement de 7 minutes",
-      "text": "Cette séance d'entraînement permet de faire des exercices pour tout le corps en moins de temps que d'ordinaire. Mais comme pour tout exercice, soyez prudent. Il existe de nombreuses applications pour vous aider à démarrer."
-    },
-    "aay": {
-      "title": "Prenez les escaliers",
-      "text": "Des études ont montré que la montée d'escaliers, qui est considérée comme une activité physique d'intensité vigoureuse, brûle plus de calories par minute que le jogging."
-    },
-    "aba": {
-      "title": "Désencombrer",
-      "text": "Un espace propre favorise la concentration au travail et est souvent lié à des émotions positives comme le bonheur."
-    },
-    "abb": {
-      "title": "Déjeuner à l'extérieur",
-      "text": "La nature est associée à des émotions positives et à une diminution du stress et de l'anxiété. Dans la mesure du possible, essayez de prendre votre pause déjeuner à l'extérieur, entouré de verdure."
-    },
-    "abe": {
-      "title": "Mise au point",
-      "text": "Tenez un doigt près de l'œil et faites la netteté sur lui. Éloignez lentement le doigt, fixez un point éloigné, puis revenez au doigt. Retirez votre doigt et concentrez-vous ensuite sur quelque chose de très éloigné."
-    },
-    "abi": {
-      "title": "Visualisation imaginative",
-      "text": "Fermez les yeux et imaginez-vous dans un endroit paisible et apaisant, comme une plage ou une forêt, en vous concentrant sur les images, les sons et les sensations de cet environnement."
-    },
-    "abf": {
-      "text": "En position assise, appuyez vos coudes sur le bureau et près du bord de celui-ci. Laissez votre poids tomber vers l'avant et placez vos mains sur vos yeux. Fermez les yeux et inspirez lentement par le nez pendant quelques secondes. Continuez à respirer profondément."
+      "title": "Entraînement 7 minutes",
+      "text": "Un entraînement complet en seulement 7 minutes. C'est soutenu par la science et ne nécessite aucun matériel. Il existe plein d'applis gratuites pour te guider."
     },
     "aav": {
-      "title": "Mobilité",
-      "text": "Toutes les trente minutes de position statique doivent être suivies d'au moins une minute de mouvement."
+      "title": "Rythme cardiaque",
+      "text": "Vise 20 minutes de rythme cardiaque élevé (autour de 120 bpm), 4-5 fois par semaine. Peu importe l'activité — danse, jogging, jeu avec ton chien. Ton cœur ne juge pas."
+    },
+    "aaw": {
+      "title": "Prendre les escaliers",
+      "text": "Monter les escaliers est classé comme exercice vigoureux et brûle plus de calories par minute que le jogging. La prochaine fois, zappe l'ascenseur. Tes jambes râleront, mais ton cœur applaudira."
+    },
+    "aax": {
+      "title": "Créer quelque chose",
+      "text": "L'art-thérapie réduit le stress. Écris un haïku, gribouille un monstre, prends une photo de quelque chose de beau. La créativité est un bouton reset pour le cerveau."
+    },
+    "aay": {
+      "title": "Ranger",
+      "text": "Un bureau en désordre corrèle avec un stress plus élevé. Prends 5 minutes pour organiser ton espace de travail. Un espace rangé, un esprit clair."
+    },
+    "aaz": {
+      "title": "Déjeuner dehors",
+      "text": "L'exposition à la nature réduit le cortisol, l'hormone du stress. Quand c'est possible, prends ta pause déjeuner dehors. Même s'asseoir près d'une fenêtre avec vue sur de la verdure aide."
+    },
+    "aba": {
+      "title": "Le pouvoir du bâillement",
+      "text": "Bâiller, ce n'est pas que de l'ennui — ça refroidit le cerveau et produit des larmes qui lubrifient les yeux. Vas-y, simule un gros bâillement. Ton corps en fera un vrai."
+    },
+    "abb": {
+      "title": "Changement de focus",
+      "text": "Tiens un doigt près de ton visage et fixe-le. Éloigne-le lentement, puis regarde au loin, puis reviens. Ça fait travailler les muscles qui contrôlent le cristallin de l'œil."
+    },
+    "abc": {
+      "title": "Palming",
+      "text": "Place tes mains chaudes en coupe sur tes yeux fermés, coudes posés sur le bureau. Respire lentement par le nez. Même 30 secondes d'obscurité offrent un reset à ton système visuel."
+    },
+    "abd": {
+      "title": "Compression des mains",
+      "text": "Attrape une balle anti-stress, une paire de chaussettes, ou n'importe quoi de compressible. Serre 5 secondes, relâche, recommence. Ça soulage la tension des mains et c'est bizarrement satisfaisant."
+    },
+    "abe": {
+      "title": "Respiration lente",
+      "text": "La respiration lente contrôlée (environ 6 cycles par minute) active le système nerveux parasympathique, réduisant la tension artérielle et l'anxiété. C'est comme une mise à jour logicielle pour ton système nerveux."
+    },
+    "abf": {
+      "title": "Visualisation",
+      "text": "Ferme les yeux et imagine-toi dans un endroit calme — une plage, une forêt, un sommet de montagne. Concentre-toi sur les sons, les odeurs, les sensations. Mini-vacances mentales, zéro frais de voyage."
+    },
+    "abg": {
+      "title": "Technique 5-4-3-2-1",
+      "text": "Tu te sens submergé ? Nomme 5 choses que tu vois, 4 que tu peux toucher, 3 que tu entends, 2 que tu sens, 1 que tu goûtes. Cette technique d'ancrage te ramène au moment présent."
+    },
+    "abh": {
+      "title": "Micro-sieste",
+      "text": "Une sieste de 10-20 minutes booste la vigilance et la performance sans effet groggy. La NASA a découvert que les pilotes qui faisaient une sieste de 26 minutes amélioraient leurs performances de 34 %. Si c'est bon pour les astronautes, c'est bon pour toi."
+    },
+    "abi": {
+      "title": "Reset Pomodoro",
+      "text": "Travaille 25 minutes, pause 5 minutes. Après quatre rounds, prends une pause plus longue. La technique Pomodoro n'est pas juste un hack de productivité — c'est une stratégie de préservation de la santé mentale."
+    },
+    "abj": {
+      "title": "Pause gribouillage",
+      "text": "Gribouiller pendant les pauses améliore la concentration et la rétention de mémoire jusqu'à 29 %, selon une étude d'Applied Cognitive Psychology. Alors attrape un stylo et laisse ta main vagabonder."
+    },
+    "abk": {
+      "title": "Pause musicale",
+      "text": "Mets ta chanson préférée et écoute-la vraiment — pas en fond sonore, mais comme événement principal. La musique active le système de récompense du cerveau et réduit le cortisol."
+    },
+    "abl": {
+      "title": "Moment de gratitude",
+      "text": "Écris 3 choses pour lesquelles tu es reconnaissant en ce moment. Les études montrent qu'une pratique régulière de gratitude recâble le cerveau vers la positivité et réduit les hormones de stress."
+    },
+    "abm": {
+      "title": "Reset à l'eau froide",
+      "text": "Asperge-toi le visage d'eau froide ou tiens un verre froid contre tes poignets. Le froid déclenche le réflexe de plongée, qui ralentit le rythme cardiaque et calme le système nerveux instantanément."
+    },
+    "abn": {
+      "title": "Parler aux plantes",
+      "text": "Si tu as une plante sur ton bureau, va voir comment elle va. Arrose-la, tourne-la. Si tu n'en as pas, peut-être qu'il est temps. Les plantes réduisent le stress et améliorent la qualité de l'air. Ce sont les collègues silencieux parfaits."
+    },
+    "abo": {
+      "title": "Vidage mental",
+      "text": "Attrape un bout de papier et écris tout ce que tu as en tête — tâches, soucis, pensées random. Sortir ça de ta tête et le mettre sur papier, ça libère de la RAM mentale."
+    },
+    "abp": {
+      "title": "Câlin à ton animal",
+      "text": "Si tu travailles de chez toi avec un animal de compagnie, prends une minute pour le caresser. Caresser un animal réduit le cortisol et augmente l'ocytocine. C'est du soulagement anti-stress validé par la science."
+    },
+    "abq": {
+      "title": "Rire-thérapie",
+      "text": "Regarde une vidéo drôle de 2 minutes ou lis quelques blagues. Le rire déclenche des endorphines, abaisse les hormones de stress et détend les muscles jusqu'à 45 minutes."
+    },
+    "abr": {
+      "title": "Bol d'air frais",
+      "text": "Ouvre une fenêtre ou sors 60 secondes. L'air frais augmente l'oxygène vers ton cerveau, améliorant la concentration, les niveaux de sérotonine et l'énergie."
+    },
+    "abs": {
+      "title": "Scan corporel",
+      "text": "En partant des orteils, remonte lentement ton attention à travers ton corps. Remarque où tu retiens des tensions. Reconnais-les, respire dedans, et laisse aller."
+    },
+    "abt": {
+      "title": "Yoga au bureau",
+      "text": "Chat-vache assis, torsion vertébrale, flexion avant — tu peux faire du yoga sans quitter ta chaise. Ta colonne vertébrale se fiche de ta tenue ou du lieu, elle veut juste bouger."
+    },
+    "abu": {
+      "title": "Une page de lecture",
+      "text": "Garde un livre à portée de main et lis juste une page pendant ta pause. La fiction transporte ton esprit ailleurs. Le non-fiction le nourrit de quelque chose de neuf. Dans les deux cas, tu y gagnes."
+    },
+    "abv": {
+      "title": "Le cycle de 90 minutes",
+      "text": "Ton cerveau fonctionne par cycles ultradiens de 90 minutes, alternant haute et basse énergie. Travailler avec ces rythmes naturels plutôt que contre eux te rend plus productif et moins épuisé."
+    },
+    "abw": {
+      "title": "Pause curiosité",
+      "text": "Cherche un fait random sur un sujet qui t'intéresse. Apprendre quelque chose de nouveau pendant une pause active les circuits de récompense du cerveau différemment du travail."
+    },
+    "abx": {
+      "title": "Respiration en carré",
+      "text": "Inspire 4 temps, retiens 4, expire 4, retiens 4. Utilisée par les Navy SEALs pour rester calmes sous pression. Si ça marche pour eux, ça marchera pour ta boîte mail."
+    },
+    "aby": {
+      "title": "Danse !",
+      "text": "Mets une chanson et danse pendant toute la durée. Ferme la porte si nécessaire. Danser libère des endorphines, améliore la coordination et te fait te sentir vivant. Personne n'est élégant en dansant seul, et c'est justement ça qui est bien."
+    },
+    "abz": {
+      "title": "Appeler quelqu'un",
+      "text": "Profite de ta pause pour appeler quelqu'un que tu apprécies — juste pour dire bonjour. La connexion sociale est l'un des plus puissants prédicteurs de bonheur et de longévité."
+    },
+    "aca": {
+      "title": "Dose de soleil",
+      "text": "Accorde-toi 10-15 minutes de soleil quand c'est possible. Ça régule ton rythme circadien, booste la production de vitamine D et améliore ton humeur. Ton corps aussi fonctionne à l'énergie solaire."
+    },
+    "acb": {
+      "title": "Relaxation progressive",
+      "text": "Contracte chaque groupe musculaire 5 secondes, puis relâche. Commence par les pieds, remonte vers les mollets, cuisses, abdos, mains, bras, épaules et visage. Détente totale en moins de 3 minutes."
+    },
+    "acc": {
+      "title": "Moment pieds nus",
+      "text": "Enlève tes chaussures et sens le sol sous tes pieds. Si tu peux, marche sur l'herbe. Le grounding — ou earthing — a montré des effets sur la réduction de l'inflammation et l'amélioration du sommeil."
+    },
+    "acd": {
+      "title": "Lettre au futur toi",
+      "text": "Écris un petit mot à ton futur toi — un objectif, un souhait, un rappel. Ça renforce la continuité de soi et te relie à ce qui compte au-delà de la to-do list du jour."
+    },
+    "ace": {
+      "title": "Détox numérique",
+      "text": "Ferme tous les onglets que tu n'utilises pas. Des notifs non lues qui s'accumulent ? Nettoie-les. Le désordre numérique crée une charge cognitive, tout comme le désordre physique."
+    },
+    "acf": {
+      "title": "La règle des 2 minutes",
+      "text": "Si un truc qui te trotte dans la tête prend moins de 2 minutes, fais-le maintenant pendant ta pause. Éliminer les petites tâches supprime le poids mental des choses inachevées."
+    },
+    "acg": {
+      "title": "Audit posture",
+      "text": "Mets-toi debout contre un mur, talons, fesses, épaules et tête en contact. C'est ça, la bonne posture. Essaie de recréer cette sensation quand tu te rassieds."
+    },
+    "ach": {
+      "title": "Pause olfactive",
+      "text": "Respire quelque chose d'agréable — grains de café, une bougie, des huiles essentielles, ou simplement l'air frais. L'odorat est directement connecté à ton cerveau émotionnel et peut changer ton humeur instantanément."
+    },
+    "aci": {
+      "title": "Observer les nuages",
+      "text": "Si tu peux voir le ciel, passe une minute à regarder les nuages. C'est l'écran de veille originel — et ça donne à ton cerveau le type d'attention diffuse qui favorise la pensée créative."
     }
+  },
+  "ui": {
+    "loading": "Chargement de Pauza…",
+    "preview": {
+      "status": "Aperçu",
+      "detail": "Aperçu navigateur",
+      "action": "Le mode aperçu est actif."
+    },
+    "title": "Pauza",
+    "heroHeadline": "Tenez votre rythme avec une interface apaisante",
+    "heroSubtitle": "Les réglages essentiels devant, les options avancées derrière.",
+    "settingsCategories": "Catégories de réglages",
+    "settingsCategoriesHint": "Changez de catégorie à gauche, consultez les réglages à droite.",
+    "currentCategory": "Catégorie actuelle",
+    "overview": "Vue d'ensemble",
+    "overviewHint": "Résumé de l'état, dernières actions et accès rapide.",
+    "liveOverview": "Aperçu en direct",
+    "liveOverviewHint": "Rythme actuel, état de l'app et fenêtre de pause en un coup d'œil.",
+    "quickActions": "Actions rapides",
+    "quickActionsHint": "Ces actions agissent directement sur le rythme en cours.",
+    "savePanel": "Enregistrer",
+    "savePanelHint": "Les modifications ne sont appliquées qu'après enregistrement.",
+    "nextBreakLabel": "Prochaine pause",
+    "currentBreakLabel": "Pause en cours",
+    "lastActionLabel": "Dernière action",
+    "runtimeLabel": "Environnement",
+    "platformLabel": "Plateforme",
+    "versionLabel": "Version",
+    "breakFeelLabel": "Style de pause",
+    "placementLabel": "Position d'affichage",
+    "pendingChanges": "Modifications non enregistrées",
+    "synced": "Synchronisé",
+    "saving": "Enregistrement…",
+    "allSet": "Prêt",
+    "noCurrentBreak": "Aucune pause active",
+    "liveSignals": "Signaux en direct",
+    "general": "Général",
+    "preferences": "Préférences",
+    "currentStatus": "État actuel",
+    "language": "Langue",
+    "languageChinese": "Chinois simplifié",
+    "languageEnglish": "Anglais",
+    "launchOnLogin": "Lancer au démarrage",
+    "enabled": "Activé",
+    "disabled": "Désactivé",
+    "schedule": "Rythme",
+    "interruptions": "Rappels et interruptions",
+    "sectionScheduleHint": "Uniquement les réglages de rythme ajustés au quotidien.",
+    "microbreaks": "Micro-pauses",
+    "microbreaksHint": "Courtes interruptions pendant le travail.",
+    "longBreaks": "Pauses",
+    "longBreaksHint": "Pause complète après plusieurs cycles.",
+    "interval": "Intervalle",
+    "every": "Fréquence",
+    "durationLabel": "Durée",
+    "behavior": "Comportement",
+    "allowPostpone": "Autoriser le report",
+    "signals": "Signaux",
+    "sectionSignalsHint": "Rendre Pauza plus intelligent sur quand afficher les rappels.",
+    "naturalBreaks": "Pauses naturelles",
+    "naturalBreaksHint": "Réinitialisation automatique après une absence suffisante.",
+    "resetAfter": "Réinitialiser après",
+    "dnd": "Ne pas déranger",
+    "dndHint": "Suspendre les rappels quand ce mode est actif",
+    "sectionSurfaceHint": "Contrôler l'intensité d'interruption et la position de la fenêtre de pause.",
+    "sectionGeneralHint": "Quelques préférences globales, volontairement minimales.",
+    "notificationsCategory": "Rappels et report",
+    "notificationsCategoryHint": "Son avant la pause. Options de report ici aussi.",
+    "surfaceCategory": "Interruption et affichage",
+    "surfaceCategoryHint": "Intensité, position et rigueur de la fenêtre de pause.",
+    "smartPause": "Pause intelligente",
+    "smartPauseHint": "Pauza cherche d'abord un créneau évident, puis assouplit progressivement.",
+    "generalAndShortcuts": "Général et raccourcis",
+    "generalAndShortcutsHint": "Gérer la langue, le lancement automatique et les raccourcis clavier.",
+    "advanced": "Avancé",
+    "sectionAdvancedHint": "Plus de contrôle, options de compatibilité et raccourcis.",
+    "appExclusions": "Exclusions d'apps",
+    "appExclusionsHint": "Apps pour lesquelles les rappels sont suspendus ou repris.",
+    "appExclusionsEnable": "Activer",
+    "appRulePause": "Suspendre si trouvé",
+    "appRuleResume": "Reprendre seulement si trouvé",
+    "pause30": "Pause 30 min",
+    "focus45": "Focus 45 min",
+    "resume": "Reprendre",
+    "clearFocus": "Terminer le focus",
+    "save": "Enregistrer",
+    "revert": "Annuler",
+    "defaults": "Valeurs par défaut",
+    "preBreakNotifications": "Son d'annonce",
+    "beforeLabel": "Avant",
+    "postpone": "Reporter",
+    "scheduleControl": "Contrôle du rythme",
+    "resetScheduleHint": "Recalculer les prochaines pauses à partir de maintenant.",
+    "postponeCategoryHint": "Configurer séparément la durée et le nombre de reports.",
+    "limitLabel": "Limite",
+    "breakSurface": "Fenêtre de pause",
+    "breakDisplayMode": "Mode d'affichage",
+    "breakBackdrop": "Thème d'arrière-plan",
+    "breakBackdropHint": "Choisir un arrière-plan atmosphérique pour la fenêtre de pause.",
+    "breakBackdropPaper": "Papier",
+    "breakBackdropDawn": "Aube",
+    "breakBackdropForest": "Forêt",
+    "breakBackdropNight": "Nuit",
+    "breakBackdropCustom": "Fond personnalisé",
+    "customWallpaper": "Fond personnalisé",
+    "customWallpaperHint": "Charger une image locale comme arrière-plan de la fenêtre de pause.",
+    "customWallpaperChoose": "Choisir une image",
+    "customWallpaperReplace": "Remplacer l'image",
+    "customWallpaperRemove": "Supprimer",
+    "customWallpaperEmpty": "Aucun fond personnalisé sélectionné",
+    "customWallpaperEmptyHint": "Sans image, le thème par défaut sera utilisé.",
+    "customWallpaperReady": "L'image est compressée et enregistrée localement comme fond de pause.",
+    "breakIdeas": "Conseils de pause",
+    "breakIdeasHint": "Afficher un conseil court à chaque pause.",
+    "breakSounds": "Sons de pause",
+    "breakSoundsHint": "Son d'annonce avant la pause et son de fin après.",
+    "microbreakStartSound": "Son d'annonce micro-pause",
+    "microbreakEndSound": "Son de fin micro-pause",
+    "longBreakStartSound": "Son d'annonce pause",
+    "longBreakEndSound": "Son de fin pause",
+    "breakSoundVolume": "Volume",
+    "breakSoundSilence": "Muet",
+    "breakSoundCrystalGlass": "Verre cristal",
+    "breakSoundWindChime": "Carillon",
+    "breakSoundTicToc": "Tic-tac",
+    "breakSoundReverie": "Rêverie",
+    "reminderMode": "Mode de rappel",
+    "reminderModeHint": "Intelligent cherche un créneau naturel ; Forcé interrompt immédiatement.",
+    "reminderModeSmart": "Intelligent",
+    "reminderModeForced": "Forcé",
+    "window": "Fenêtre",
+    "fullscreen": "Plein écran",
+    "promptStyleGentle": "Doux",
+    "promptStyleBalanced": "Équilibré",
+    "promptStyleImmersive": "Immersif",
+    "allScreens": "Tous les écrans",
+    "screenPrimary": "Écran principal",
+    "screenCursor": "Écran avec le curseur",
+    "showTimeToBreakInTray": "Afficher la prochaine pause dans la barre",
+    "currentTimeInBreaks": "Afficher l'heure dans la fenêtre de pause",
+    "currentTimeInBreaksHint": "Afficher l'heure système en haut à droite de la fenêtre de pause.",
+    "strictModes": "Modes stricts",
+    "strictModesHint": "Contrôler si les pauses peuvent être ignorées et si une confirmation manuelle est requise.",
+    "microbreakStrict": "Micro-pause stricte",
+    "longBreakStrict": "Pause stricte",
+    "manualFinish": "Terminer manuellement après le minuteur",
+    "showTrayMenuInStrictMode": "Menu de la barre en mode strict",
+    "shortcuts": "Raccourcis clavier",
+    "shortcutsHint": "Vide = non enregistré. Ex. : CmdOrCtrl+Shift+P",
+    "shortcutReveal": "Ouvrir les réglages",
+    "shortcutFocus45": "Focus 45 min",
+    "shortcutPauseToggle": "Basculer la pause",
+    "shortcutPause30": "Pause 30 min",
+    "shortcutPause60": "Pause 1 h",
+    "shortcutPause120": "Pause 2 h",
+    "shortcutPause300": "Pause 5 h",
+    "shortcutSkipScheduled": "Aller à la prochaine pause planifiée",
+    "shortcutSkipMicrobreak": "Aller à la micro-pause",
+    "shortcutSkipLongBreak": "Aller à la pause",
+    "shortcutReset": "Réinitialiser le rythme",
+    "suffix": {
+      "secondsLong": "s",
+      "secondsBefore": "s avant",
+      "minutesApart": "min après",
+      "cycles": "cycles",
+      "minutesLong": "min",
+      "minutesShortPostpone": "min",
+      "minutesLongPostpone": "min",
+      "minutesAway": "min",
+      "minutes": "min",
+      "times": "×"
+    },
+    "status": {
+      "noBreakScheduled": "Aucune pause prévue",
+      "microbreak": "Micro-pause",
+      "longBreak": "Pause",
+      "nextBreak": "{{label}} dans {{duration}}",
+      "focus": "Focus {{duration}}",
+      "pause": "En pause {{duration}}",
+      "pauseForever": "En pause indéfiniment",
+      "blockedBy": "En pause par {{match}}",
+      "appRuleActive": "Règle d'app active",
+      "dndActive": "Ne pas déranger actif"
+    },
+    "error": {
+      "loadState": "Impossible de charger l'état de Pauza"
+    },
+    "breakCopy": {
+      "clearedDetail": "Aucune pause active.",
+      "manualAwaiting": "Le temps est écoulé. Terminez cette pause avant de reprendre.",
+      "awaitingFinish": "En attente de confirmation",
+      "actions": {
+        "resumeWork": "Reprendre le travail",
+        "done": "Terminé",
+        "later": "Plus tard",
+        "skip": "Ignorer"
+      },
+      "defaultPrompt": {
+        "microbreak": "Levez-vous, détendez vos épaules et votre cou, regardez au loin.",
+        "longBreak": "Quittez votre bureau quelques minutes pour que votre corps et votre esprit récupèrent."
+      }
+    },
+    "previewAction": {
+      "save": "Aperçu : réglages mis à jour.",
+      "pause": "Aperçu : pause 30 min.",
+      "pauseForever": "Aperçu : pause indéfinie.",
+      "focus": "Aperçu : focus activé.",
+      "focusCleared": "Aperçu : focus terminé.",
+      "resume": "Aperçu : repris.",
+      "reset": "Aperçu : rythme réinitialisé.",
+      "autostartOn": "Aperçu : démarrage auto activé.",
+      "autostartOff": "Aperçu : démarrage auto désactivé.",
+      "done": "Aperçu : pause terminée.",
+      "later": "Aperçu : pause reportée.",
+      "skip": "Aperçu : pause ignorée."
+    },
+    "preBreakSoundHint": "Jouer un son doux avant la fin du minuteur pour terminer votre tâche.",
+    "previewSound": "Écouter",
+    "appExclusionsSearch": "Rechercher dans les apps en cours",
+    "appExclusionsSearchPlaceholder": "Nom de l'app…",
+    "appExclusionsSearchLoading": "Chargement…",
+    "appExclusionsSearchEmpty": "Aucun résultat",
+    "appExclusionsManualHint": "Ou saisir manuellement un nom de processus (une entrée par ligne)",
+    "appExclusionsAdd": "Cliquer pour ajouter à la liste d'exclusions"
   }
 }

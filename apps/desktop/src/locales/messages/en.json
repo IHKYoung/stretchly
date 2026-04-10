@@ -111,7 +111,7 @@
       "ourWebsite": "visit our website",
       "dot": ".",
       "developedBy": "Developed by",
-      "janH": "Clarke Young",
+      "clarkeY": "Clarke Young",
       "designedBy": "Icon and UI design by Colin Shanley"
     },
     "heart": {
@@ -179,6 +179,7 @@
     "showOnMonitor": "Show breaks on",
     "primary": "Primary monitor",
     "cursor": "Follow cursor",
+    "showTimeToBreakInTray": "Show time to next break in tray",
     "showTrayIcon": "Show tray icon",
     "toShowTrayIcon": "Show Pauza icon in tray",
     "currentTimeInBreaks": "Current time",
@@ -227,300 +228,520 @@
       "text": "Go grab a glass of water."
     },
     "aab": {
-      "text": "Slowly look all the way left, then right."
+      "text": "Your water bottle is judging you. Take a sip."
     },
     "aac": {
-      "text": "Slowly look all the way up, then down."
+      "text": "Hydration check: when did you last drink water?"
     },
     "aad": {
-      "text": "Close your eyes and take few deep breaths."
+      "text": "Slowly look all the way left, then right."
     },
     "aae": {
-      "text": "Close your eyes and relax."
+      "text": "Slowly look all the way up, then down."
     },
     "aaf": {
-      "text": "Stretch your legs."
+      "text": "Look at something 20 feet away for 20 seconds — the 20-20-20 rule."
     },
     "aag": {
-      "text": "Stretch your arms."
+      "text": "Blink rapidly 20 times. Your dry eyes will thank you."
     },
     "aah": {
-      "text": "Is your sitting posture correct?"
+      "text": "Close your eyes and gently roll your eyeballs in circles."
     },
     "aai": {
-      "text": "Slowly turn head to side and hold for 10 seconds."
+      "text": "With your eyes closed, slowly look up toward the ceiling, then down."
     },
     "aaj": {
-      "text": "Slowly tilt head to side and hold for 5-10 seconds."
+      "text": "With your eyes closed, slowly look left, then right."
     },
     "aak": {
-      "text": "Stand from your chair and stretch."
+      "text": "Rub your hands together until warm, then gently cup them over your closed eyes."
     },
     "aal": {
-      "text": "Refocus your eyes on an object at least 20 meters away."
+      "text": "Stare out the window for 30 seconds. Remember the outside world?"
     },
     "aam": {
-      "text": "Take a moment to think about something you appreciate."
+      "text": "Look away from the screen and focus on something green. Eyes love green."
     },
     "aan": {
-      "text": "Take a moment to smile at being alive."
+      "text": "Let some natural light reach your eyes."
     },
     "aao": {
-      "text": "A truly ergonomic workstation is one that you regularly push away from."
+      "text": "Close your eyes and take a few deep breaths."
     },
     "aap": {
-      "text": "Close your eyes and count your breaths."
+      "text": "Close your eyes and relax."
     },
     "aaq": {
-      "text": "Close your eyes and name the things you hear."
+      "text": "Close your eyes and count your breaths."
     },
     "aar": {
-      "text": "Place your fingertips on your shoulders. Roll your shoulders forward for 10 seconds, then backward."
+      "text": "Breathe in for 4 counts, hold for 7, exhale for 8. The 4-7-8 technique."
     },
     "aas": {
-      "text": "Raise your right arm, stretch it over your head to the left, and hold for 10 seconds. Repeat on the other side."
+      "text": "Take 3 slow breaths. In through the nose, out through the mouth."
     },
     "aat": {
-      "text": "With your right hand, grab each finger of your left hand in turn and squeeze. Repeat on the other side."
+      "text": "Take one deep breath so big your belly expands. That's diaphragmatic breathing."
     },
     "aau": {
-      "text": "Stand up and do a lunge. Hold for 10 seconds, then do the other leg."
+      "text": "Do absolutely nothing for 20 seconds. Harder than it sounds."
     },
     "aav": {
-      "text": "Close your eyes and simply notice whatever arises in current moment, without judgement."
+      "text": "Check your posture — shoulders back, feet flat on the floor."
     },
     "aaw": {
-      "text": "Focus every 20 minutes for 20 seconds on an object at 20 feet distance."
+      "text": "Change your sitting position."
     },
     "aax": {
-      "text": "If you need help, ask for it."
+      "text": "Drop your shoulders. They've been up by your ears this whole time."
     },
     "aay": {
-      "text": "Do one thing at a time."
+      "text": "Unclench your jaw. You didn't realize it was clenched, did you?"
     },
     "aaz": {
-      "text": "Is your attention spent wisely?"
+      "text": "Straighten your spine. Pretend there's a string pulling you up from the top of your head."
     },
     "aba": {
-      "text": "Change your sitting posture."
+      "text": "Sitting is the new smoking. Stand up for a minute."
     },
     "abb": {
-      "text": "Expose your eyes to natural light."
+      "text": "Slowly turn your head to one side and hold for 10 seconds. Switch."
     },
     "abc": {
-      "text": "With your eyes closed, slowly and gently raise your eyes to the ceiling and back down to the floor."
+      "text": "Slowly tilt your head to the side and hold for 5-10 seconds."
     },
     "abd": {
-      "text": "With your eyes closed, slowly and gently move your eyes to the left, then slowly to the right."
+      "text": "Gently pull one ear toward your shoulder. Feel the neck stretch."
     },
     "abe": {
-      "text": "Shake your hands out to get some relief."
+      "text": "Rotate your neck in a slow, gentle circle."
     },
     "abf": {
-      "text": "One at a time, touch the tip of each finger to the tip of your thumb so they make an O-shape."
+      "text": "Tilt your head forward, backward, left, right. Full compass reset."
     },
     "abg": {
-      "text": "Make a fist and then slide your fingers up until they point toward the ceiling, like you're telling someone to stop."
+      "text": "Roll your shoulders forward for 10 seconds, then backward."
     },
     "abh": {
-      "text": "Make a fist and then fan your fingers out and stretch them as far as you can."
+      "text": "Shrug your shoulders up to your ears and drop them. Repeat 5 times."
     },
     "abi": {
-      "text": "Sit tall, arms hanging at your sides, and slowly rotate neck in one direction in a large circle."
+      "text": "Squeeze your shoulder blades together and hold for 5 seconds."
     },
     "abj": {
-      "text": "Stand tall and slowly tilt your head toward the shoulder using the same hand until you feel a stretch."
+      "text": "Raise your right arm over your head, lean left, hold 10 seconds. Switch sides."
     },
     "abk": {
-      "text": "Stand tall with your arms by your side. Squeeze your shoulder blades together and hold."
+      "text": "Cross one arm across your chest and gently pull it in with the other hand. Switch."
     },
     "abl": {
-      "text": "Stand tall with your arms raised along your shoulders. Move hands slightly behind your back, hold for a second and return."
+      "text": "Hold one arm straight up, use the other to gently push the elbow back. Hold 10 seconds. Switch."
     },
     "abm": {
-      "text": "Sit on the edge of your chair, twist your torso to one side and hold for 10-15 seconds. Repeat on the other side."
+      "text": "Interlock your fingers behind your back and stretch your chest open."
     },
     "abn": {
-      "text": "Stand up and put one foot on a nearby object, like a chair or step stool. Keep your knee bent and hold for 10-15 seconds. Repeat with the other foot."
+      "text": "Interlace your fingers and push your palms toward the ceiling. Stretch!"
     },
     "abo": {
-      "text": "Stand with your feet shoulder-width apart, lower your body down as if you were sitting back into a chair, then stand back up. Repeat several times."
+      "text": "Hold your arms straight out to the sides. Make small circles. Burns faster than you'd think."
     },
     "abp": {
-      "text": "Stand with your back and hands on a wall, then slowly move your arms up and down as if you were making snow angels."
+      "text": "Shake your hands out to release tension."
     },
     "abq": {
-      "text": "Stand facing a wall and place your hands on it, then do several push-ups."
+      "text": "Touch each fingertip to your thumb, making an O-shape."
     },
     "abr": {
-      "text": "Sit on the edge of your chair and extend one leg straight out in front of you, holding for 10-15 seconds. Repeat with the other leg."
+      "text": "Make a fist, then fan your fingers out and stretch them wide."
     },
     "abs": {
-      "text": "Stand facing a wall, put one foot back and the other foot forward, then lean into the wall. Repeat with the other leg."
+      "text": "Make a fist, then spread your fingers like you're telling someone to stop."
     },
     "abt": {
-      "text": "Hold one arm straight up, then use the other arm to gently push the elbow of the first arm towards your head. Hold for 10-15 seconds. Repeat with the other arm."
+      "text": "Squeeze each finger of your left hand with your right. Switch hands."
     },
     "abu": {
-      "text": "Tilt your head to one side, then to the other side, and then gently tilt it forward and backward."
+      "text": "Stretch your wrists — extend your arm, pull your fingers back gently."
     },
     "abv": {
-      "text": "Reach one arm across your chest, hold onto the elbow with the other hand, and gently pull it in towards your chest. Repeat with the other arm."
+      "text": "Rotate your wrists 10 times clockwise, then counterclockwise."
     },
     "abw": {
-      "text": "Stand up, put one foot on a nearby object, like a chair or step stool, and reach down to touch your toes. Repeat with the other leg."
+      "text": "Place your hand flat on the desk and gently spread your fingers apart."
     },
     "abx": {
-      "text": "Stand in a doorway and place one arm on each side of the doorway, then gently lean forward until you feel a stretch in your chest."
+      "text": "Tap your fingers on the desk one by one, pinky to thumb. Now reverse."
     },
     "aby": {
-      "text": "Sit on the edge of a chair or on the floor, and place the soles of your feet together, gently pressing down with your elbows to stretch your inner thighs."
+      "text": "Give yourself a hand massage. You've earned it."
+    },
+    "abz": {
+      "text": "Stand up and stretch. Your spine has been waiting."
+    },
+    "aca": {
+      "text": "Sit on the edge of your chair, twist your torso to one side, hold 10 seconds. Switch."
+    },
+    "acb": {
+      "text": "Arch your back like a cat, then let it dip. Cat-cow stretch, office edition."
+    },
+    "acc": {
+      "text": "Place both hands behind your lower back and gently arch backward."
+    },
+    "acd": {
+      "text": "Stand with your back against the wall and slowly slide your arms up and down — wall angels."
+    },
+    "ace": {
+      "text": "Stretch your legs."
+    },
+    "acf": {
+      "text": "Stand up and do a lunge. Hold 10 seconds each leg."
+    },
+    "acg": {
+      "text": "Stand up and do a few squats. Your chair is right there if things go wrong."
+    },
+    "ach": {
+      "text": "Do 10 calf raises at your desk. Stealth fitness."
+    },
+    "aci": {
+      "text": "Extend one leg straight out while seated. Hold 10 seconds. Switch."
+    },
+    "acj": {
+      "text": "Roll your ankles in circles — clockwise, then counterclockwise."
+    },
+    "ack": {
+      "text": "Point and flex your feet 10 times. Your ankles have been neglected."
+    },
+    "acl": {
+      "text": "Stand on one foot for 30 seconds. Switch. Balance is a skill."
+    },
+    "acm": {
+      "text": "Wiggle your toes inside your shoes. Yes, all of them."
+    },
+    "acn": {
+      "text": "Stand up and march in place for 30 seconds."
+    },
+    "aco": {
+      "text": "Do a few wall push-ups. Nobody's watching. Probably."
+    },
+    "acp": {
+      "text": "Do 5 desk dips using the edge of your chair."
+    },
+    "acq": {
+      "text": "Flex and release every muscle from your toes to your forehead. Full body reset."
+    },
+    "acr": {
+      "text": "Scrunch your face tight for 5 seconds, then release. Facial tension: gone."
+    },
+    "acs": {
+      "text": "Stand in a doorway and lean forward gently to stretch your chest."
+    },
+    "act": {
+      "text": "Close your eyes and name the sounds you hear."
+    },
+    "acu": {
+      "text": "Close your eyes and notice what comes to mind, without judgment."
+    },
+    "acv": {
+      "text": "Think of something you're grateful for right now."
+    },
+    "acw": {
+      "text": "Smile. You're alive and that's pretty cool."
+    },
+    "acx": {
+      "text": "Take a mental snapshot of how your body feels. Any tension spots?"
+    },
+    "acy": {
+      "text": "Think of one nice thing you'd say to a friend, then say it to yourself."
+    },
+    "acz": {
+      "text": "Notice 5 things in the room you never paid attention to before."
+    },
+    "ada": {
+      "text": "Close your eyes and picture your happy place for 20 seconds."
+    },
+    "adb": {
+      "text": "Put your phone face-down for 60 seconds. Nothing will happen. Promise."
+    },
+    "adc": {
+      "text": "Your keyboard won't miss you. Stand up."
+    },
+    "add": {
+      "text": "Your back just filed a formal complaint. Time to stretch."
+    },
+    "ade": {
+      "text": "Look up from the screen. Plot twist: the world is 3D."
+    },
+    "adf": {
+      "text": "Yawn. Even a fake one triggers a real one. Try it."
+    },
+    "adg": {
+      "text": "Open your mouth wide, then close it slowly. Jaw tension: released."
+    },
+    "adh": {
+      "text": "Hug yourself. Cross your arms and squeeze. Self-care isn't weird."
+    },
+    "adi": {
+      "text": "Mini dance break — just 10 seconds. You know you want to."
+    },
+    "adj": {
+      "text": "Pretend you're pulling a rope above your head. Side stretch unlocked."
+    },
+    "adk": {
+      "text": "Press your palms together in front of your chest and hold. Namaste, coder."
+    },
+    "adl": {
+      "text": "Massage your temples in small circles for 10 seconds. Instant calm."
+    },
+    "adm": {
+      "text": "Your monitor called. It says you've been way too close for way too long."
     }
   },
   "longBreakIdeas": {
     "aaa": {
-      "title": "Not alone",
-      "text": "Do you find it hard to take a break alone? Try to do it with a co-worker. Aside from making it easier to stick to breaks, you will have a chance to get to know them better. Taking breaks together increases productivity."
+      "title": "Better together",
+      "text": "Find it hard to take breaks alone? Try breaking with a coworker. You'll stick to it more and bond over shared complaints about deadlines. Studies show social breaks boost productivity."
     },
     "aab": {
       "title": "Step away",
-      "text": "Do you ever notice how your brain can figure things out by itself? All it takes is to step away from the computer and take a break to think about something totally unrelated."
+      "text": "Ever notice how your best ideas come in the shower? That's because your brain solves problems in the background. Step away from the screen and think about something completely unrelated."
     },
     "aac": {
       "title": "Microbreaks",
-      "text": "Rest is a key component in ensuring the performance of the musculoskeletal system. Frequent breaks can decrease the duration of a task and help lower the exposure to ergonomic injury risk."
+      "text": "Short, frequent breaks reduce repetitive strain and keep your musculoskeletal system healthy. Think of them as maintenance for the human machine."
     },
     "aad": {
       "title": "Meditation",
-      "text": "Research studies suggest that mindfulness-based exercises help decrease anxiety, depression, stress, and pain, and help improve general health, mental health, and quality of life. Not sure how to start? There are numerous apps to help you out."
+      "text": "Mindfulness meditation reduces anxiety, stress, and even physical pain. Not sure where to start? Even 5 minutes of focused breathing counts. There are dozens of free apps if you want guidance."
     },
     "aae": {
-      "title": "Blink",
-      "text": "Looking at screens for a long time causes you to blink less, thus exposing your eyes to the air. Blink rapidly for a few seconds to refresh the tear film and clear dust from the eye surface."
+      "title": "Blink more",
+      "text": "You blink up to 66% less when staring at screens, which dries out your eyes. Blink rapidly for a few seconds to refresh your tear film. Your eyes do so much for you — return the favor."
     },
     "aaf": {
-      "title": "Ergonomics",
-      "text": "Improper height and angle of the keyboard, mouse, monitor or working surface can cause health problems. Take some time to read about desk ergonomics."
+      "title": "Desk ergonomics",
+      "text": "Monitor at eye level, keyboard at elbow height, feet flat on the floor. Bad ergonomics cause real damage over time. Spend 2 minutes checking your setup — your future self will thank you."
     },
     "aag": {
-      "title": "Move",
-      "text": "There are a lot of ways you can exercise within your office. Try marching in place or doing desk push-ups."
+      "title": "Office workout",
+      "text": "You don't need a gym to move. March in place, do desk push-ups, or try some squats. Even 60 seconds of movement resets your energy levels."
     },
     "aah": {
-      "title": "Change",
-      "text": "Do you have a stability ball or standing work desk? Consider replacing your desk chair with them for a while."
+      "title": "Switch it up",
+      "text": "If you have a standing desk or stability ball, now is a great time to switch. Alternating between sitting and standing reduces fatigue and keeps your muscles engaged."
     },
     "aai": {
-      "title": "Notice",
-      "text": "Are you daydreaming or having trouble focusing? It is a sign that you need to take a break."
+      "title": "Read the signs",
+      "text": "Daydreaming? Trouble focusing? Re-reading the same line? These are your brain's polite way of saying: take a break already."
     },
     "aaj": {
-      "title": "Tech",
-      "text": "How about taking a no-tech walk?"
+      "title": "No-tech walk",
+      "text": "Leave your phone behind and take a short walk. No podcasts, no music — just you and your thoughts. It's surprisingly refreshing in a world of constant input."
     },
     "aak": {
-      "title": "Metabolism",
-      "text": "Emerging research shows that sitting for long periods of time contributes to risk of metabolic syndrome, heart attack and stroke risk and overall death risk, among others. Taking regular walking breaks can help your circulation, working to counteract some of those problems."
+      "title": "The sitting problem",
+      "text": "Prolonged sitting increases your risk of heart disease, diabetes, and back problems. A 5-minute walk every hour can significantly offset these effects. Your body was built to move."
     },
     "aal": {
-      "title": "Active Meetings",
-      "text": "How about moving meetings from the conference room to the concourse? Walking not only burns calories but it may even foster a sense of collaboration."
+      "title": "Walking meetings",
+      "text": "Next time you have a one-on-one, suggest walking instead of sitting. Walking meetings boost creativity by up to 60%, according to Stanford research."
     },
     "aam": {
-      "title": "Fruit",
-      "text": "Take your time and eat some fruit. Slowly. Notice the flavor, the texture, the freshness."
+      "title": "Mindful snacking",
+      "text": "Grab a piece of fruit and eat it slowly. Notice the flavor, texture, and freshness. It's a mini meditation disguised as a snack."
     },
     "aan": {
-      "title": "Bathrooms",
-      "text": "Walk to the farthest bathroom in the worksite facility when going to the restroom."
+      "title": "Coffee walk",
+      "text": "Going for coffee? Make it a 5-minute walk too. Two birds, one latte."
     },
     "aao": {
-      "title": "Coffee break",
-      "text": "Going on coffee break? Consider doing a 5-minute walk every time you go for one."
+      "title": "Your brain on breaks",
+      "text": "An NIH study found that our brains rehearse and consolidate new skills during rest — not during practice. Breaks literally make you better at what you do."
     },
     "aap": {
-      "title": "Colleagues",
-      "text": "Do not email or message office colleagues, walk to their desks to communicate with them."
+      "title": "Move a little, gain a lot",
+      "text": "Even small amounts of regular exercise dramatically reduce stress and improve mood. You don't need an hour — 10 minutes of movement can shift your whole day."
     },
     "aaq": {
-      "title": "Learning",
-      "text": "In a study of healthy volunteers, NIH researchers found that taking short breaks, early and often, may help our brains learn new skills."
+      "title": "Stretch routine",
+      "text": "Found a set of stretches you like? Repeat them several times throughout the day. Consistency beats intensity when fighting the effects of prolonged sitting."
     },
     "aar": {
-      "title": "Exercise",
-      "text": "Evidence suggests small amounts of regular exercise can bring dramatic health benefits, including measurably reducing stress."
+      "title": "Wrist circles",
+      "text": "Extend your arms with palms facing you, then slowly rotate your hands — 4 times clockwise, 4 times counterclockwise. Your wrists handle more stress than you think."
     },
     "aas": {
-      "title": "Repeat",
-      "text": "Have you found your stretch-ly-routine? Do not forget to repeat it for more than once to better fight effects of prolonged sitting."
+      "title": "Overhead reach",
+      "text": "Clasp your hands behind your head, then lift them up above your head with palms facing the ceiling. Hold for 10 seconds. Feel your back wake up."
     },
     "aat": {
-      "title": "Wrist and forearm",
-      "text": "Extend your arms with the palms facing towards you, then slowly rotate the hands four times clockwise, then four times counter-clockwise."
+      "title": "The 30/1 rule",
+      "text": "For every 30 minutes of sitting, get at least 1 minute of movement. Set a timer if you need to. Small habits compound into big health benefits."
     },
     "aau": {
-      "title": "Back stretching",
-      "text": "Join your hands behind your head, then lift them together up above your head ending with your palms facing upward."
+      "title": "7-minute workout",
+      "text": "A full-body workout in just 7 minutes. It's backed by science and requires no equipment. There are plenty of free apps to guide you through it."
     },
     "aav": {
-      "title": "Mobilize",
-      "text": "For every thirty minutes of stagnation, you should have at least one minute of stimulation."
+      "title": "Elevate your heart rate",
+      "text": "Aim for 20 minutes of elevated heart rate (around 120 bpm), 4-5 times a week. It doesn't matter what you do — dance, jog, play with your dog. Your heart doesn't judge."
     },
     "aaw": {
-      "title": "7 Minute Workout",
-      "text": "This workout packs in a full-body exercise routine in a fraction of the time. But as with any exercise, be careful. There are numerous apps to get you started."
+      "title": "Take the stairs",
+      "text": "Stair climbing is classified as vigorous exercise and burns more calories per minute than jogging. Next time, skip the elevator. Your legs will complain, but your heart will celebrate."
     },
     "aax": {
-      "title": "Pulse",
-      "text": "Raise your pulse rate to 120 beats per minute for 20 straight minutes four or five times a week doing anything you enjoy. Regularly raising your heart rate results in improved cardiovascular health."
+      "title": "Make something",
+      "text": "Art therapy is proven to reduce stress. Write a haiku, doodle a monster, take a photo of something beautiful. Creativity is a reset button for your brain."
     },
     "aay": {
-      "title": "Take the stairs",
-      "text": "Studies have shown that stair climbing, which is considered vigorous-intensity physical activity, burns more calories per minute than jogging."
+      "title": "Declutter",
+      "text": "A messy desk correlates with higher stress. Take 5 minutes to organize your workspace. A clean space, a clear mind."
     },
     "aaz": {
-      "title": "Make art",
-      "text": "Art therapy is known to have great mental health benefits, especially when it comes to stress management. How about writing a quick poem, taking a picture or painting something small?"
+      "title": "Eat outside",
+      "text": "Nature exposure reduces cortisol, the stress hormone. When possible, take your lunch break outdoors. Even sitting near a window with a view of greenery helps."
     },
     "aba": {
-      "title": "Declutter",
-      "text": "A clean space helps your focus at work and is often linked to positive emotions like happiness."
+      "title": "The power of yawning",
+      "text": "Yawning isn't just boredom — it cools your brain and produces tears that lubricate your eyes. Go ahead, fake a big yawn. Your body will make it real."
     },
     "abb": {
-      "title": "Lunch outside",
-      "text": "Nature is linked to positive emotions and decreased stress and anxiety. Whenever possible, try to take your daily lunch break outside, surrounded by some greenery."
+      "title": "Focus shifting",
+      "text": "Hold a finger close to your face and focus on it. Slowly move it away, then look far into the distance, then back. This exercises the muscles that control your eye's lens."
     },
     "abc": {
-      "title": "Public transport",
-      "text": "If you use public transport regularly, you can stand instead of sitting. If it is possible, try to replace as many of your daily trips as possible with walking or cycling."
+      "title": "Eye palming",
+      "text": "Cup your warm hands over your closed eyes and rest your elbows on the desk. Breathe slowly through your nose. Even 30 seconds of darkness gives your visual system a reset."
     },
     "abd": {
-      "title": "Yawning",
-      "text": "Yawning can be really helpful, as it produces tears to help moisten and lubricate the eyes."
+      "title": "Squeeze something",
+      "text": "Grab a stress ball, a pair of socks, or anything squeezable. Hold for 5 seconds, release, repeat. It relieves hand tension and feels oddly satisfying."
     },
     "abe": {
-      "title": "Focus change",
-      "text": "Hold one finger close to the eye and focus on it. Slowly move the finger away, focus far into the distance and then back to the finger. Bring the finger back and focus on something far away."
+      "title": "Slow breathing",
+      "text": "Controlled slow breathing (around 6 breaths per minute) activates the parasympathetic nervous system, reducing blood pressure and anxiety. It's like a software update for your nervous system."
     },
     "abf": {
-      "title": "Palming",
-      "text": "While seated, brace elbows on the desk and close to the desk edge. Let your weight fall forward and cup hands over eyes. Close your eyes and inhale slowly through nose and hold for few seconds. Continue deep breathing."
+      "title": "Visualization",
+      "text": "Close your eyes and picture yourself in a calm place — a beach, a forest, a mountain top. Focus on the sounds, smells, and sensations. Mini mental vacation, zero travel costs."
     },
     "abg": {
-      "title": "Hand squeezes",
-      "text": "Squeeze a pair of balled-up socks or a soft rubber ball, hold for 5 seconds. Repeat whole process a few times."
+      "title": "5-4-3-2-1 grounding",
+      "text": "Feeling overwhelmed? Name 5 things you see, 4 you can touch, 3 you hear, 2 you smell, 1 you taste. This grounding technique pulls you back to the present moment."
     },
     "abh": {
-      "title": "Slow Breathing",
-      "text": "Emerging research suggests potential for use of controlled slow breathing techniques as a means of optimising physiological parameters that appear to be associated with health and longevity."
+      "title": "Power nap science",
+      "text": "A 10-20 minute nap boosts alertness and performance without grogginess. NASA found that pilots who napped for 26 minutes improved performance by 34%. If it's good enough for astronauts, it's good enough for you."
     },
     "abi": {
-      "title": "Imaginative visualization",
-      "text": "Close your eyes and imagine yourself in a peaceful and calming place, such as a beach or a forest, focusing on the sights, sounds, and sensations of that environment."
+      "title": "The Pomodoro reset",
+      "text": "Work for 25 minutes, break for 5. After four rounds, take a longer break. The Pomodoro Technique isn't just a productivity hack — it's a sanity-preservation strategy."
     },
     "abj": {
-      "title": "Overwhelmed?",
-      "text": "Try the 5-4-3-2-1 Grounding Technique: Identify 5 things you can see, 4 things you can touch, 3 things you can hear, 2 things you can smell, and 1 thing you can taste."
+      "title": "Doodle break",
+      "text": "Doodling during breaks actually improves concentration and memory retention by up to 29%, according to a study in Applied Cognitive Psychology. So grab a pen and let your hand wander."
+    },
+    "abk": {
+      "title": "One song break",
+      "text": "Put on your favorite song and actually listen to it — not as background noise, but as the main event. Music activates the brain's reward system and reduces cortisol."
+    },
+    "abl": {
+      "title": "Gratitude moment",
+      "text": "Write down 3 things you're grateful for right now. Studies show that a regular gratitude practice rewires your brain for positivity and reduces stress hormones."
+    },
+    "abm": {
+      "title": "Cold water reset",
+      "text": "Splash cold water on your face or hold a cold glass against your wrists. The cold triggers your dive reflex, which slows heart rate and calms the nervous system instantly."
+    },
+    "abn": {
+      "title": "Talk to a plant",
+      "text": "If you have a desk plant, check on it. Water it, turn it. If you don't have one, maybe it's time. Plants reduce stress and improve air quality. They're the perfect silent coworkers."
+    },
+    "abo": {
+      "title": "Brain dump",
+      "text": "Grab a piece of paper and write down everything on your mind — tasks, worries, random thoughts. Getting it out of your head and onto paper frees up mental RAM."
+    },
+    "abp": {
+      "title": "Pet your pet",
+      "text": "If you work from home with a pet, take a minute to pet them. Petting animals lowers cortisol and raises oxytocin. It's science-approved stress relief."
+    },
+    "abq": {
+      "title": "Laugh therapy",
+      "text": "Watch a 2-minute funny video or read a few jokes. Laughter triggers endorphins, lowers stress hormones, and relaxes your muscles for up to 45 minutes."
+    },
+    "abr": {
+      "title": "Fresh air fix",
+      "text": "Open a window or step outside for 60 seconds. Fresh air increases oxygen to your brain, improving concentration, serotonin levels, and energy."
+    },
+    "abs": {
+      "title": "Body scan",
+      "text": "Starting from your toes, slowly move your attention up through your body. Notice where you're holding tension. Acknowledge it, breathe into it, and let it go."
+    },
+    "abt": {
+      "title": "Desk yoga",
+      "text": "Seated cat-cow, spinal twist, forward fold — you can do yoga without leaving your chair. Your spine doesn't care about your outfit or location, it just wants to move."
+    },
+    "abu": {
+      "title": "Read a page",
+      "text": "Keep a book nearby and read just one page during your break. Fiction transports your mind somewhere else. Non-fiction feeds it something new. Either way, you win."
+    },
+    "abv": {
+      "title": "The 90-minute cycle",
+      "text": "Your brain works in 90-minute ultradian cycles of high and low energy. Working with these natural rhythms instead of against them makes you more productive and less exhausted."
+    },
+    "abw": {
+      "title": "Curiosity break",
+      "text": "Look up one random fact about something that interests you. Learning something new during a break activates your brain's reward circuits differently than work does."
+    },
+    "abx": {
+      "title": "Box breathing",
+      "text": "Breathe in for 4 counts, hold for 4, out for 4, hold for 4. Used by Navy SEALs to stay calm under pressure. If it works for them, it'll work for your inbox."
+    },
+    "aby": {
+      "title": "Dance it out",
+      "text": "Put on a song and dance for the duration. Close the door if you must. Dancing releases endorphins, improves coordination, and makes you feel alive. Nobody looks cool dancing alone, and that's the point."
+    },
+    "abz": {
+      "title": "Call someone",
+      "text": "Use your break to call someone you care about — just to say hi. Social connection is one of the strongest predictors of happiness and longevity."
+    },
+    "aca": {
+      "title": "Sunlight dose",
+      "text": "Get 10-15 minutes of sunlight when possible. It regulates your circadian rhythm, boosts vitamin D production, and improves your mood. Your body is solar-powered too."
+    },
+    "acb": {
+      "title": "Progressive relaxation",
+      "text": "Tense each muscle group for 5 seconds, then release. Start with your feet, move up to your calves, thighs, abs, hands, arms, shoulders, and face. Total tension release in under 3 minutes."
+    },
+    "acc": {
+      "title": "Barefoot moment",
+      "text": "Take off your shoes and feel the floor under your feet. If you can, walk on grass. Grounding — or earthing — has been shown to reduce inflammation and improve sleep."
+    },
+    "acd": {
+      "title": "Write to your future self",
+      "text": "Write a quick note to your future self — a goal, a wish, a reminder. It builds self-continuity and keeps you connected to what matters beyond today's to-do list."
+    },
+    "ace": {
+      "title": "Digital declutter",
+      "text": "Close all the tabs you're not using. Unread notifications stacking up? Clear them. Digital clutter creates cognitive load, just like physical clutter."
+    },
+    "acf": {
+      "title": "The 2-minute rule",
+      "text": "If something on your mind will take less than 2 minutes, do it now during your break. Clearing small tasks removes the mental weight of unfinished business."
+    },
+    "acg": {
+      "title": "Posture audit",
+      "text": "Stand against a wall with your heels, butt, shoulders, and head touching it. That's what good posture feels like. Try to recreate that feeling when you sit back down."
+    },
+    "ach": {
+      "title": "Scent break",
+      "text": "Smell something pleasant — coffee beans, a candle, essential oils, or fresh air. Olfactory input is directly connected to your emotional brain and can shift your mood instantly."
+    },
+    "aci": {
+      "title": "Cloud watching",
+      "text": "If you can see the sky, spend a minute watching the clouds. It's the original screensaver — and it gives your brain the kind of soft focus that promotes creative thinking."
     }
   },
   "duration": {
@@ -598,7 +819,7 @@
     "surfaceCategory": "Interruption & placement",
     "surfaceCategoryHint": "Control how breaks appear, where they open and how strict they feel.",
     "smartPause": "Smart pause",
-    "smartPauseHint": "Let Pauza adapt around idle time, focus mode and app rules.",
+    "smartPauseHint": "Pauza looks for a clear pause first, then gradually lowers the bar so breaks never wait forever.",
     "generalAndShortcuts": "General & shortcuts",
     "generalAndShortcutsHint": "Manage language, launch behavior and keyboard entry points.",
     "advanced": "Advanced",
@@ -615,7 +836,7 @@
     "save": "Save",
     "revert": "Revert",
     "defaults": "Defaults",
-    "preBreakNotifications": "Heads-up notifications",
+    "preBreakNotifications": "Heads-up cues",
     "beforeLabel": "Before",
     "postpone": "Later",
     "scheduleControl": "Schedule control",
@@ -654,7 +875,7 @@
     "breakSoundTicToc": "Tic-toc",
     "breakSoundReverie": "Reverie",
     "reminderMode": "Reminder mode",
-    "reminderModeHint": "Smart waits for a short pause; Forced starts on time and locks the break.",
+    "reminderModeHint": "Smart first looks for a clearer pause, then gradually lowers the threshold; Forced starts on time and locks the break.",
     "reminderModeSmart": "Smart",
     "reminderModeForced": "Forced",
     "window": "Window",
@@ -665,6 +886,7 @@
     "allScreens": "Show on all screens",
     "screenPrimary": "Primary screen",
     "screenCursor": "Screen under cursor",
+    "showTimeToBreakInTray": "Show time to next break in tray",
     "currentTimeInBreaks": "Show current time inside breaks",
     "currentTimeInBreaksHint": "Keep the current system time visible in the top-right corner.",
     "strictModes": "Strict modes",
@@ -713,6 +935,21 @@
     "error": {
       "loadState": "Failed to load Pauza state"
     },
+    "breakCopy": {
+      "clearedDetail": "There is no active break right now.",
+      "manualAwaiting": "Time is up. Finish this break before jumping back in.",
+      "awaitingFinish": "Waiting to finish",
+      "actions": {
+        "resumeWork": "Resume work",
+        "done": "Done",
+        "later": "Later",
+        "skip": "Skip"
+      },
+      "defaultPrompt": {
+        "microbreak": "Stand up, release your shoulders, and look farther away.",
+        "longBreak": "Step away for a few minutes and let your posture fully reset."
+      }
+    },
     "previewAction": {
       "save": "Preview mode: settings updated.",
       "pause": "Preview mode: breaks paused for 30 minutes.",
@@ -757,11 +994,11 @@
       "naturalBreakDetected": "Natural break detected. Waiting until you return.",
       "naturalBreakFinished": "Natural break finished. Schedule reset.",
       "appExclusionCleared": "App exclusion cleared. Schedule reset.",
-      "waitingForOpportunity": "{{title}} is due, but Pauza is waiting for a calmer moment.",
+      "waitingForOpportunity": "{{title}} is due, so Pauza is waiting for a natural pause first.",
       "breakFinished": "{{title}} finished.",
       "breakStarted": "{{title}} started.",
       "manualFinishWaiting": "{{title}} timer ended. Waiting for manual finish.",
-      "notificationSent": "Sent a heads-up for {{title}}.",
+      "notificationSent": "Sent a heads-up cue for {{title}}.",
       "pauseEnded": "Pause ended.",
       "focusFinished": "Focus session finished.",
       "autostartDisabled": "Launch on login disabled.",
@@ -797,8 +1034,11 @@
         "dndDetail": "Breaks are paused until focus mode ends.",
         "naturalTitle": "Natural break",
         "naturalDetail": "You have been away long enough to reset the schedule.",
+        "headsUpTitle": "Up next",
+        "headsUpDetail": "{{kind}} starts in {{duration}}.",
+        "headsUpAdaptiveDetail": "{{kind}} should start in about {{duration}}. If you're still active, Pauza will wait for a cleaner pause first.",
         "waitingOpportunityTitle": "Waiting for a pause",
-        "waitingOpportunityDetail": "{{kind}} is due and will start when your current burst settles.",
+        "waitingOpportunityDetail": "{{kind}} is due. Pauza looks for a clearer pause first, then gradually lowers the threshold so it never waits forever.",
         "runningTitle": "Running",
         "runningDetail": "{{kind}} in {{duration}}.",
         "idleTitle": "Idle",
@@ -814,8 +1054,8 @@
       "title": "Pauza",
       "microbreakSoon": "{{title}} starts in {{duration}}.",
       "longBreakSoon": "{{title}} starts in {{duration}}.",
-      "microbreakAdaptiveSoon": "{{title}} is coming up. Pauza will wait for a brief pause before showing it.",
-      "longBreakAdaptiveSoon": "{{title}} is coming up. Pauza will wait for a calmer moment before showing it."
+      "microbreakAdaptiveSoon": "{{title}} is coming up. Pauza will look for a natural pause first and relax the threshold if needed.",
+      "longBreakAdaptiveSoon": "{{title}} is coming up. Pauza will look for a natural pause first and relax the threshold if needed."
     },
     "tray": {
       "open": "Open settings",

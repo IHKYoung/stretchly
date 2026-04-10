@@ -11,7 +11,9 @@ fn build_snapshot<R: Runtime>(
     app: &AppHandle<R>,
     state: &PauzaState,
 ) -> Result<DesktopSnapshot, String> {
-    let autostart_enabled = app.autolaunch().is_enabled().map_err(app_error)?;
+    let autostart_enabled = state.autostart_enabled_or_init(|| {
+        app.autolaunch().is_enabled().map_err(app_error)
+    })?;
     Ok(state.snapshot(
         std::env::consts::OS.to_string(),
         app.package_info().version.to_string(),
@@ -198,17 +200,21 @@ pub fn toggle_autostart<R: Runtime>(
     state: State<'_, PauzaState>,
 ) -> Result<DesktopSnapshot, String> {
     let autostart_manager = app.autolaunch();
-    let enabled = autostart_manager.is_enabled().map_err(app_error)?;
+    let enabled = state.autostart_enabled_or_init(|| {
+        autostart_manager.is_enabled().map_err(app_error)
+    })?;
     let settings = state.settings();
 
     if enabled {
         autostart_manager.disable().map_err(app_error)?;
+        state.set_autostart_enabled(false);
         state.set_last_action(i18n::text(
             &settings.language,
             "runtime.actions.autostartDisabled",
         ));
     } else {
         autostart_manager.enable().map_err(app_error)?;
+        state.set_autostart_enabled(true);
         state.set_last_action(i18n::text(
             &settings.language,
             "runtime.actions.autostartEnabled",
@@ -217,4 +223,22 @@ pub fn toggle_autostart<R: Runtime>(
 
     let _ = shell::refresh_tray(&app);
     build_snapshot(&app, &state)
+}
+
+#[tauri::command]
+pub fn list_running_app_names() -> Vec<String> {
+    use sysinfo::{ProcessesToUpdate, System};
+    let mut sys = System::new();
+    sys.refresh_processes(ProcessesToUpdate::All, false);
+    let names: std::collections::HashSet<String> = sys
+        .processes()
+        .values()
+        .filter_map(|p| {
+            let name = p.name().to_string_lossy().into_owned();
+            if name.is_empty() { None } else { Some(name) }
+        })
+        .collect();
+    let mut sorted: Vec<String> = names.into_iter().collect();
+    sorted.sort_by(|a, b| a.to_ascii_lowercase().cmp(&b.to_ascii_lowercase()));
+    sorted
 }

@@ -4,5 +4,5 @@
   "nativeLabel": "ייִדיש",
   "fallback": "en",
   "direction": "rtl",
-  "desktopReady": false
+  "desktopReady": true
 }

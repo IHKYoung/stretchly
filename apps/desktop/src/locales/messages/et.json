@@ -1,157 +1,277 @@
 {
   "miniBreakIdeas": {
-    "aas": {
-      "text": "Tõstke parem käsi üles, sirutage see üle pea vasakule ja hoidke 10 sekundit. Korda teisel küljel."
-    },
-    "abl": {
-      "text": "Seisa sirgelt, käed õlgade kõrgusele tõstetud, külgedel. Liiguta käsi veidi selja taha, hoidke sekund ja too käed külgedele tagasi."
-    },
-    "aak": {
-      "text": "Tõuse toolilt ja ringuta."
-    },
-    "abe": {
-      "text": "Raputa oma käsi, et nad saaksid kergendust."
-    },
-    "aae": {
-      "text": "Sulge silmad ja lõdvestu."
-    },
-    "abb": {
-      "text": "Paljasta oma silmad loomulikule valgusele."
-    },
-    "aaf": {
-      "text": "Siruta oma jalgu."
-    },
-    "abj": {
-      "text": "Seisa sirgelt ja aeglaselt kalluta pead õla suunas, kasutades sama suuna kätt - kuniks tunned venitust."
-    },
-    "abs": {
-      "text": "Seisa näoga seina poole, aseta üks jalg taha ja teine jalg ette, seejärel toetu seina vastu. Korda sama teise jalaga."
-    },
-    "abt": {
-      "text": "Hoia ühte kätt otse üleval, seejärel kasuta teist kätt, et suruda esimese käe küünarnukk õrnalt pea poole. Hoia 10-15 sekundit. Korda teise käega."
-    },
-    "aaz": {
-      "text": "Kas kulutad oma tähelepanu mõistlikult, targalt?"
-    },
-    "abu": {
-      "text": "Kalluta pea ühele küljele, seejärel teisele küljele ja seejärel kalluta seda õrnalt ette ja taha."
-    },
-    "abn": {
-      "text": "Tõuse püsti ja pane üks jalg lähedal asuvale objektile, näiteks toolile või astmele. Hoia põlv kõverdatud, 10-15 sekundit. Korda teise jalaga."
-    },
-    "aam": {
-      "text": "Võta hetk, et mõelda millelegi, mida hindad."
-    },
-    "abp": {
-      "text": "Seisa selg ja käed vastu seina, seejärel liiguta käsi aeglaselt üles-alla, nagu teeksid lumeingleid."
-    },
-    "abd": {
-      "text": "Suletud silmadega liiguta silmi aeglaselt ja õrnalt vasakule, seejärel aeglaselt paremale."
-    },
-    "aac": {
-      "text": "Vaata aeglaselt lõpuni üles, siis alla."
-    },
-    "aaw": {
-      "text": "Keskendu iga 20 minuti järel, 20 sekundi jooksul, 20 meetri kaugusel olevale objektile."
-    },
-    "abw": {
-      "text": "Tõuse püsti, pane üks jalg lähedal asuvale objektile, näiteks toolile või astmelauale, ja siruta varvaste puudutamiseks alla. Korda teise jalaga."
-    },
-    "abg": {
-      "text": "Tee rusikas ja sirutage siis sõrmed üles, kuni need osutavad lae poole, nagu käsiksid kellelgi peatuda."
-    },
-    "abo": {
-      "text": "Seisa püsti, jalad õlgade laiuselt. Lasku alla, nagu istuksid tagasi toolile ja tõuse uuesti püsti. Tee mitu korda."
-    },
-    "aai": {
-      "text": "Pööra aeglaselt pea küljele ja hoia 10 sekundit."
-    },
-    "abc": {
-      "text": "Suletud silmadega tõsta silmad aeglaselt ja õrnalt lakke ja tagasi põrandale."
-    },
-    "aap": {
-      "text": "Sulge silmad ja loenda oma hingetõmbeid."
-    },
-    "aax": {
-      "text": "Kui vajad abi, küsi seda."
-    },
-    "abm": {
-      "text": "Istu tooli servale, keera oma keha ühele küljele ja hoia 10-15 sekundit. Korda teisele küljele."
-    },
-    "aat": {
-      "text": "Haarake parema käega kordamööda vasaku käe igast sõrmest ja pigistage. Korda teise käega."
-    },
-    "aag": {
-      "text": "Siruta oma käsi."
-    },
-    "abq": {
-      "text": "Seisa näoga seina poole, aseta käed vastu seina ja tee mitu kätekõverdust."
-    },
-    "aba": {
-      "text": "Muuda oma istumisasendit."
-    },
-    "aaj": {
-      "text": "Kalluta pead aeglaselt küljele ja hoia 5-10 sekundit."
-    },
-    "aar": {
-      "text": "Aseta sõrmeotsad õlgadele. Ringitage õlgu 10 sekundit ettepoole, seejärel tahapoole."
-    },
-    "abf": {
-      "text": "Ükshaaval puuduta iga sõrmega oma pöidla otsa."
-    },
-    "abk": {
-      "text": "Seisa sirgelt, käed külgedel. Suru oma õlad selja taha kokku ja hoia."
-    },
-    "aan": {
-      "text": "Võta hetk, et naeratada elus olemise üle."
-    },
-    "aad": {
-      "text": "Sulge silmad ja hinga paar korda sügavalt sisse."
-    },
-    "aah": {
-      "text": "Kas sinu istumisasend on õige?"
+    "aaa": {
+      "text": "Mine too endale klaas vett."
     },
     "aab": {
-      "text": "Vaata aeglaselt lõpuni vasakule, siis paremale."
+      "text": "Sinu veepudel vaatab sind etteheitvalt. Tee lonks."
     },
-    "aaq": {
-      "text": "Sule silmad ja nimeta asju, mida kuuled."
+    "aac": {
+      "text": "Veetarbimine: millal sa viimati vett jõid?"
     },
-    "abv": {
-      "text": "Siruta üks käsi üle rinna, hoia teise käega küünarnukist kinni ja tõmba see õrnalt rinna poole. Korda teise käega."
+    "aad": {
+      "text": "Vaata aeglaselt päris vasakule, siis paremale."
+    },
+    "aae": {
+      "text": "Vaata aeglaselt päris üles, siis alla."
+    },
+    "aaf": {
+      "text": "Vaata 6 meetri kaugusele olevat eset 20 sekundit — 20-20-20 reegel."
+    },
+    "aag": {
+      "text": "Pilguta kiiresti 20 korda. Su kuivad silmad tänavad sind."
+    },
+    "aah": {
+      "text": "Sulge silmad ja keera silmamune õrnalt ringis."
+    },
+    "aai": {
+      "text": "Suletud silmadega vaata aeglaselt üles lae poole, siis alla."
+    },
+    "aaj": {
+      "text": "Suletud silmadega vaata aeglaselt vasakule, siis paremale."
+    },
+    "aak": {
+      "text": "Hõõru peopesasid kokku, kuni need soojenevad, siis aseta õrnalt suletud silmadele."
     },
     "aal": {
-      "text": "Suuna oma pilk vähemalt 20 meetri kaugusel asuvale objektile."
+      "text": "Vaata 30 sekundit aknast välja. Mäletad välismaailma?"
     },
-    "abh": {
-      "text": "Tee rusikas ja seejärel siruta sõrmed harali välja ning suru neid nii kaugele kui võimalik."
+    "aam": {
+      "text": "Vaata ekraanist eemale ja fokuseeri millelegi rohelisele. Silmad armastavad rohelist."
     },
-    "abi": {
-      "text": "Istu selg sirgelt, käed külgedel rippumas ja pööra oma kaela aeglaselt ühes suunas suures ringis."
-    },
-    "aay": {
-      "text": "Tee üks asi korraga."
+    "aan": {
+      "text": "Lase loomulikul valgusel oma silmadeni jõuda."
     },
     "aao": {
-      "text": "Tõeliselt ergonoomiline töölaud on selline, millest sa end regulaarselt eemale lükkad."
+      "text": "Sulge silmad ja tee paar sügavat hingetõmmet."
     },
-    "aby": {
-      "text": "Istu tooli serval või põrandal ja aseta jalatallad kokku, surudes küünarnukkidega õrnalt alla, et venitada oma sisemisi reisi."
+    "aap": {
+      "text": "Sulge silmad ja lõdvestu."
     },
-    "abx": {
-      "text": "Seisa ukseavas ja aseta käed ukseava mõlemale küljele, seejärel nõjatu õrnalt ettepoole, kuni tunned rinnus venitust."
+    "aaq": {
+      "text": "Sulge silmad ja loe oma hingamisi."
     },
-    "aav": {
-      "text": "Sule silmad ja pane lihtsalt tähele kõike, mis tekib praeguses hetkes, ilma hinnanguteta."
+    "aar": {
+      "text": "Hinga sisse 4 loendit, hoia 7, hinga välja 8. 4-7-8 tehnika."
+    },
+    "aas": {
+      "text": "Tee 3 aeglast hingetõmmet. Nina kaudu sisse, suu kaudu välja."
+    },
+    "aat": {
+      "text": "Tee nii sügav sissehingamine, et kõht paisub. See on diafragmaatiline hingamine."
     },
     "aau": {
-      "text": "Tõuse püsti ja tee pikk väljaaste ette, käärkükki. Hoia 10 sekundit, seejärel tee ka teise jalaga."
+      "text": "20 sekundit ära tee absoluutselt mitte midagi. Raskem kui tundub."
     },
-    "aaa": {
-      "text": "Mine võta klaas vett."
+    "aav": {
+      "text": "Kontrolli rühti — õlad taha, jalad põrandal."
+    },
+    "aaw": {
+      "text": "Muuda istumisasendit."
+    },
+    "aax": {
+      "text": "Lase õlad alla. Need on kogu aeg kõrvade juures olnud."
+    },
+    "aay": {
+      "text": "Lõdvesta lõualuu. Sa ei teadnudki, et see oli pingul, eks?"
+    },
+    "aaz": {
+      "text": "Siruta selgroogu. Kujuta ette, et nöör tõmbab sind pealae kohalt üles."
+    },
+    "aba": {
+      "text": "Istumine on uus suitsetamine. Tõuse minutiks püsti."
+    },
+    "abb": {
+      "text": "Aeglaselt keera pea ühele poole ja hoia 10 sekundit. Vaheta."
+    },
+    "abc": {
+      "text": "Aeglaselt kalluta pea küljele ja hoia 5-10 sekundit."
+    },
+    "abd": {
+      "text": "Tõmba õrnalt üks kõrv õla poole. Tunne kaela venitust."
+    },
+    "abe": {
+      "text": "Keera kaela aeglases, õrnas ringis."
+    },
+    "abf": {
+      "text": "Kalluta pea ette, taha, vasakule, paremale. Täielik kompassi lähtestamine."
+    },
+    "abg": {
+      "text": "Keera õlgu ette 10 sekundit, siis taha."
+    },
+    "abh": {
+      "text": "Tõsta õlad kõrvadeni ja lase alla. Korda 5 korda."
+    },
+    "abi": {
+      "text": "Pigista abaluud kokku ja hoia 5 sekundit."
+    },
+    "abj": {
+      "text": "Tõsta parem käsi pea kohale, kalluta vasakule, hoia 10 sekundit. Vaheta."
+    },
+    "abk": {
+      "text": "Tõmba üks käsi üle rinna ja suru õrnalt teisega. Vaheta."
+    },
+    "abl": {
+      "text": "Hoia üks käsi otse üleval, teisega lükka küünarnukki õrnalt taha. Hoia 10 sekundit. Vaheta."
+    },
+    "abm": {
+      "text": "Põimi sõrmed selja taha kokku ja veni rindkere lahti."
+    },
+    "abn": {
+      "text": "Põimi sõrmed kokku ja lükka peopesad lae poole. Venita!"
+    },
+    "abo": {
+      "text": "Hoia käed sirgelt külgedel. Tee väikseid ringe. Põletab kiiremini kui arvad."
+    },
+    "abp": {
+      "text": "Raputa käsi, et vabastada pinge."
+    },
+    "abq": {
+      "text": "Puuduta iga sõrmeotsaga pöialt, tehes O-kujulise."
     },
     "abr": {
-      "text": "Istu oma tooli servale ja siruta üks jalg otse enda ette, hoides 10-15 sekundit. Korda teise jalaga."
+      "text": "Tee rusikas, siis lao sõrmed lahti ja veni need laiali."
+    },
+    "abs": {
+      "text": "Tee rusikas, siis sirguta sõrmed nagu ütleksid kellelegi 'stopp'."
+    },
+    "abt": {
+      "text": "Pigista iga vasaku käe sõrme paremaga. Vaheta."
+    },
+    "abu": {
+      "text": "Veni randmeid — siruta käsi, tõmba sõrmi õrnalt tagasi."
+    },
+    "abv": {
+      "text": "Keera randmeid 10 korda päripäeva, siis vastupäeva."
+    },
+    "abw": {
+      "text": "Aseta käsi lamedalt lauale ja lao sõrmed õrnalt laiali."
+    },
+    "abx": {
+      "text": "Koputa sõrmedega laual ükshaaval, väikesest sõrmest pöidlani. Tagurpidi."
+    },
+    "aby": {
+      "text": "Tee endale kätemassaaž. Oled selle ära teeninud."
+    },
+    "abz": {
+      "text": "Tõuse püsti ja venita. Sinu selgroog on oodanud."
+    },
+    "aca": {
+      "text": "Istu tooli servale, keera keha ühele poole, hoia 10 sekundit. Vaheta."
+    },
+    "acb": {
+      "text": "Kummarda selga nagu kass, siis lase vajuda. Kassi-lehma venitus, kontori versioon."
+    },
+    "acc": {
+      "text": "Aseta mõlemad käed alaselga taha ja kummarda õrnalt taha."
+    },
+    "acd": {
+      "text": "Seisa seina ääres ja libista käsi aeglaselt üles-alla — seinaingleid."
+    },
+    "ace": {
+      "text": "Venita jalgu."
+    },
+    "acf": {
+      "text": "Tõuse püsti ja tee väljaaste. Hoia 10 sekundit iga jalaga."
+    },
+    "acg": {
+      "text": "Tõuse püsti ja tee paar kükki. Tool on kohe seal, kui midagi valesti läheb."
+    },
+    "ach": {
+      "text": "Tee 10 varvastõusu laua juures. Varjatud fitness."
+    },
+    "aci": {
+      "text": "Siruta üks jalg istudes otse välja. Hoia 10 sekundit. Vaheta."
+    },
+    "acj": {
+      "text": "Keera hüppeliigeset ringis — päripäeva, siis vastupäeva."
+    },
+    "ack": {
+      "text": "Painuta ja siruta jalalaba 10 korda. Hüppeliigesed on unarusse jäetud."
+    },
+    "acl": {
+      "text": "Seisa ühel jalal 30 sekundit. Vaheta. Tasakaal on oskus."
+    },
+    "acm": {
+      "text": "Liiguta varbaid kingade sees. Jah, kõiki."
+    },
+    "acn": {
+      "text": "Tõuse püsti ja marsi paigal 30 sekundit."
+    },
+    "aco": {
+      "text": "Tee paar seinalülitust. Keegi ei vaata. Arvatavasti."
+    },
+    "acp": {
+      "text": "Tee 5 tooli servalt dippi."
+    },
+    "acq": {
+      "text": "Pinge ja lõdvesta iga lihast varvastest laubani. Täielik lähtestamine."
+    },
+    "acr": {
+      "text": "Krimpsuta nägu 5 sekundiks, siis lõdvesta. Näopinge: kadunud."
+    },
+    "acs": {
+      "text": "Seisa ukselävel ja kummarda õrnalt ette, et venitada rindkere."
+    },
+    "act": {
+      "text": "Mini tantsupaus — ainult 10 sekundit. Sa tead, et tahad."
+    },
+    "acu": {
+      "text": "Kujuta ette, et tõmbad köit pea kohalt. Külgvenitus avatud."
+    },
+    "acv": {
+      "text": "Suru peopesad rinna ees kokku ja hoia. Namaste, programmeerija."
+    },
+    "acw": {
+      "text": "Masseeri oimukohti väikeste ringidega 10 sekundit. Kohene rahu."
+    },
+    "acx": {
+      "text": "Kallista ennast. Pane käed risti ja pigista. Enesehooldus pole imelik."
+    },
+    "acy": {
+      "text": "Sulge silmad ja nimeta helid, mida kuuled."
+    },
+    "acz": {
+      "text": "Sulge silmad ja märka, mis pähe tuleb, ilma hinnanguteta."
+    },
+    "ada": {
+      "text": "Mõtle millelegi, mille eest oled praegu tänulik."
+    },
+    "adb": {
+      "text": "Naerata. Oled elus ja see on päris lahe."
+    },
+    "adc": {
+      "text": "Tee vaimne hetktõmmis, kuidas su keha ennast tunneb. Kus on pinge?"
+    },
+    "add": {
+      "text": "Mõtle ühele ilusale asjale, mida ütleksid sõbrale, siis ütle see endale."
+    },
+    "ade": {
+      "text": "Märka 5 asja ruumis, millele pole kunagi tähelepanu pööranud."
+    },
+    "adf": {
+      "text": "Sulge silmad ja kujuta 20 sekundit ette oma õnnelikku kohta."
+    },
+    "adg": {
+      "text": "Pane telefon 60 sekundiks ekraaniga alla. Midagi ei juhtu. Luban."
+    },
+    "adh": {
+      "text": "Vaata ekraanilt üles. Pööre süžees: maailm on 3D."
+    },
+    "adi": {
+      "text": "Haiguta. Isegi võlts haigutus kutsub esile päris. Proovi."
+    },
+    "adj": {
+      "text": "Ava suu pärani, siis sulge aeglaselt. Lõualuu pinge: vabastatud."
+    },
+    "adk": {
+      "text": "Su selg esitas ametliku kaebuse. Aeg venituseks."
+    },
+    "adl": {
+      "text": "Su klaviatuur ei igatse sind. Tõuse püsti."
+    },
+    "adm": {
+      "text": "Su monitor helistas. Ta ütleb, et oled liiga kaua liiga lähedal olnud."
     }
   },
   "preferences": {
@@ -204,7 +324,7 @@
       "version": "Versioon ",
       "latestVersion": "Uusim versioon ",
       "learnMore": "Et rohkem teada saada Pauza funktsioonidest, vaata õpetust, laadi alla uusim versioon või võta meiega ühendust toe saamiseks, ",
-      "janH": "Clarke Young"
+      "clarkeY": "Clarke Young"
     },
     "title": "Pauza Seaded",
     "heart": {
@@ -299,145 +419,249 @@
     "notifications": "Pauside teavitused:"
   },
   "longBreakIdeas": {
-    "abf": {
-      "text": "Istudes säti küünarnukid laua serva lähedale. Lase oma kaalul ettepoole langeda ja aseta käed silmadele. Sulge silmad ja hinga aeglaselt läbi nina sisse ja hoia paar sekundit. Jätka sügavat hingamist.",
-      "title": "Peopesad"
+    "aaa": {
+      "title": "Koos on parem",
+      "text": "Raske üksi pause pidada? Proovi koos kolleegiga. Peate rohkem kinni ja saate koos tähtaegade üle nuriseda. Uuringud näitavad, et sotsiaalsed pausid tõstavad tootlikkust."
     },
     "aab": {
-      "text": "Kas oled kunagi märganud, kuidas sinu aju suudab asju ise välja mõelda? Vaja on vaid astuda arvutist eemale ja teha paus, et mõelda millelegi täiesti seosetule.",
-      "title": "Astu korraks eemale"
+      "title": "Astu eemale",
+      "text": "Oled märganud, et parimad ideed tulevad duši all? Sinu aju lahendab probleeme taustal. Astu ekraanist eemale ja mõtle millegi täiesti seosetule."
     },
-    "abb": {
-      "title": "Lõunata väljas",
-      "text": "Loodus on seotud positiivsete emotsioonidega ning vähenenud stressi ja ärevusega. Kui vähegi võimalik, proovi oma igapäevane lõunapaus teha õues, ümbritsetuna rohelusest."
-    },
-    "abe": {
-      "text": "Hoia üks sõrm silma lähedal ja keskendu sellele. Liiguta sõrm aeglaselt eemale, keskenduge kaugele ja vaata seejärel uuesti sõrme. Too sõrm tagasi ja vaata millelegi kaugele.",
-      "title": "Fookuse muutmine"
-    },
-    "aah": {
-      "text": "Kas sul on istumispall või tõstetav töölaud? Kaalu mõneks ajaks oma tooli asendamist nendega.",
-      "title": "Muuda midagi"
-    },
-    "abd": {
-      "title": "Haigutamine",
-      "text": "Haigutamine võib olla tõesti kasulik, kuna see tekitab pisaraid, mis aitavad silmi niisutada ja määrida."
+    "aac": {
+      "title": "Mikropausid",
+      "text": "Lühikesed, sagedased pausid vähendavad korduvat koormust ja hoiavad luu-lihaskonna tervena. Mõtle neist kui inimmasina hooldusest."
     },
     "aad": {
       "title": "Meditatsioon",
-      "text": "Uuringud näitavad, et tähelepanelikkusel põhinevad harjutused aitavad vähendada ärevust, depressiooni, stressi ja valu ning aitavad parandada üldist tervist, vaimset tervist ja elukvaliteeti. Pole kindel, kuidas alustada? Sinu abistamiseks on palju rakendusi."
-    },
-    "aau": {
-      "text": "Ühenda oma käed pea taga, seejärel tõsta need koos pea kohal üles, lõpetades peopesadega ülespoole.",
-      "title": "Seljavenitused"
-    },
-    "aag": {
-      "text": "Kontoris treenimiseks on palju võimalusi. Proovi paigal marssida või teha lauakõverdusi.",
-      "title": "Liiguta"
-    },
-    "aaf": {
-      "title": "Ergonoomika",
-      "text": "Klaviatuuri, hiire, monitori või tööpinna vale kõrgus ja nurk võivad põhjustada terviseprobleeme. Võta aega, et lugeda töökoha ergonoomika kohta."
-    },
-    "abc": {
-      "text": "Kui kasutad regulaarselt ühistransporti, võid istumise asemel seista. Kui võimalik, proovi võimalikult palju oma igapäevaseid väljasõite asendada jalgsikäimise või rattasõiduga.",
-      "title": "Ühistransport"
-    },
-    "aaq": {
-      "text": "Lühikeste pauside tegemine, varakult ja sageli, võib aidata meie ajul uusi oskusi õppida.",
-      "title": "Õppimine"
-    },
-    "aal": {
-      "title": "Aktiivsed koosolekud",
-      "text": "Kuidas oleks, kui viiksite koosolekud konverentsisaalist välja? Kõndimine mitte ainult ei põleta kaloreid, vaid võib isegi edendada koostöötunnet."
-    },
-    "aai": {
-      "title": "Märka",
-      "text": "Kas unistad või on sul probleeme keskendumisega? See on märk, et pead pausi tegema."
+      "text": "Teadlik meditatsioon vähendab ärevust, stressi ja isegi füüsilist valu. Ei tea, kust alustada? Isegi 5 minutit keskendunud hingamist loeb. Tasuta äppe on kümneid."
     },
     "aae": {
-      "text": "Pikaajaline ekraani vaatamine põhjustab harvemini pilgutamist, jättes seega silmad kuiva õhu kätte. Pilgutage kiiresti mõne sekundi jooksul, et värskendada pisarakihti ja eemaldada tolm silmapinnalt.",
-      "title": "Pilguta"
+      "title": "Pilguta rohkem",
+      "text": "Ekraani vaadates pilgutad kuni 66% vähem, mis kuivatab silmi. Pilguta kiiresti paar sekundit, et pisarakihti värskendada. Sinu silmad teevad nii palju — tee neile teene vastu."
+    },
+    "aaf": {
+      "title": "Töölaua ergonoomika",
+      "text": "Monitor silmade kõrgusel, klaviatuur küünarnukkide kõrgusel, jalad põrandal. Halb ergonoomika tekitab aja jooksul tõelist kahju. Kuluta 2 minutit oma seadistuse kontrolliks — tuleviku sina tänab."
+    },
+    "aag": {
+      "title": "Kontori trenn",
+      "text": "Jõusaali pole vaja liikumiseks. Marsi paigal, tee laualt kätekõverdusi või paar kükki. Isegi 60 sekundit liikumist taastab energiatasemed."
+    },
+    "aah": {
+      "title": "Vaheta asendit",
+      "text": "Kas sul on reguleeritav laud või tasakaalupall? Suurepärane aeg vahetada. Istumise ja seismise vaheldumine vähendab väsimust."
+    },
+    "aai": {
+      "title": "Loe märke",
+      "text": "Unistad? Raske keskenduda? Loed sama rida uuesti? Need on sinu aju viisakas viis öelda: tee lõpuks paus."
     },
     "aaj": {
-      "title": "Tehnika",
-      "text": "Kuidas oleks tehnikavaba jalutuskäiguga?"
-    },
-    "aaz": {
-      "text": "Kunstiteraapial on teadaolevalt suur kasu vaimsele tervisele, eriti kui tegemist on stressijuhtimisega. Kuidas oleks kirjutada kiire luuletus, pildistada või maalida midagi väikest?",
-      "title": "Loo kunsti"
-    },
-    "aao": {
-      "text": "Lähed kohvipausile? Kaalu iga kord 5-minutilise jalutuskäigu tegemist.",
-      "title": "Kohvipaus"
-    },
-    "aat": {
-      "text": "Siruta käed nii, et peopesad oleksid enda poole suunatud, seejärel pööra käsi aeglaselt neli korda päripäeva ja seejärel neli korda vastupäeva.",
-      "title": "Ranne ja küünarvars"
-    },
-    "aaa": {
-      "title": "Sa ei ole üksi",
-      "text": "Kas sul on raske üksi pausi teha? Proovi seda teha koos töökaaslasega. Lisaks pausidest kinnipidamise hõlbustamisele on sul võimalus neid paremini tundma õppida. Koos pauside tegemine suurendab tootlikkust."
-    },
-    "aba": {
-      "text": "Puhas ruum aitab sul keskenduda tööle ja on sageli seotud positiivsete emotsioonidega, nagu õnn.",
-      "title": "Korrasta"
-    },
-    "aam": {
-      "title": "Puuvili",
-      "text": "Võta aega ja söö puuvilju. Aeglaselt. Pane tähele maitset, tekstuuri, värskust."
-    },
-    "aap": {
-      "text": "Ära saada kontorikaaslastele e-kirju ega sõnumeid - kõnni nendega suhtlemiseks nende laudade juurde.",
-      "title": "Kolleegid"
-    },
-    "aas": {
-      "title": "Korda",
-      "text": "Kas oled leidnud oma venitusrutiini? Ära unusta seda korrata rohkem kui üks kord, et paremini võidelda pikaajalise istumise tagajärgedega."
-    },
-    "aay": {
-      "text": "Uuringud on näidanud, et trepist ronimine, mida peetakse intensiivseks füüsiliseks tegevuseks, põletab minutis rohkem kaloreid kui sörkimine.",
-      "title": "Kasuta treppe"
-    },
-    "aan": {
-      "title": "Tualettruumid",
-      "text": "Tualettruumi minnes kõnni töökoha kõige kaugemasse tualettruumi."
-    },
-    "aac": {
-      "text": "Puhkus on luu- ja lihaskonna süsteemi toimimise tagamise põhikomponent. Sagedased pausid võivad vähendada ülesande kestust ja aidata vähendada kokkupuudet ergonoomiliste vigastuste riskiga.",
-      "title": "Pisikesed puhkepausid"
-    },
-    "aaw": {
-      "text": "See treening sisaldab kogu keha treeningrutiini, võttes murdosa ajast. Kuid nagu iga treeningu puhul, ole ettevaatlik. Alustamiseks on palju rakendusi.",
-      "title": "7-minutiline treening"
+      "title": "Tehnikavaba jalutuskäik",
+      "text": "Jäta telefon maha ja tee lühike jalutuskäik. Ilma taskuhäälinguteta, ilma muusikata — ainult sina ja oma mõtted. Üllatavalt värskendav pideva sisendi maailmas."
     },
     "aak": {
-      "title": "Ainevahetus",
-      "text": "Uuringud näitavad, et pikaajaline istumine suurendab muu hulgas metaboolse sündroomi, südameataki ja insuldiriski ning üldise surma riski. Regulaarsete kõndimispauside tegemine võib aidata sinu vereringet, töötades mõne sellise probleemi lahendamiseks."
+      "title": "Istumise probleem",
+      "text": "Pikaajaline istumine suurendab südamehaiguste, diabeedi ja seljavaevuste riski. 5-minutiline jalutuskäik iga tund kompenseerib seda märkimisväärselt. Su keha on loodud liikuma."
+    },
+    "aal": {
+      "title": "Kõndivad koosolekud",
+      "text": "Järgmine kord, kui sul on üks-ühele kohtumine, paku välja kõndimine istumise asemel. Stanfordi uuringu järgi suurendavad kõndivad koosolekud loovust kuni 60%."
+    },
+    "aam": {
+      "title": "Teadlik näksimine",
+      "text": "Haarake puuvili ja sööge aeglaselt. Märka maitset, tekstuuri ja värskust. Minimedidatsioon, mis on maskeeritud näksiks."
+    },
+    "aan": {
+      "title": "Kohvikõnd",
+      "text": "Lähed kohvi tooma? Tee sellest ka 5-minutiline jalutuskäik. Kaks kärbest ühe hoobiga — vabandust, ühe lattega."
+    },
+    "aao": {
+      "title": "Sinu aju pausidel",
+      "text": "NIH uuring leidis, et meie ajud harjutavad ja kinnistuvad uusi oskusi puhkuse ajal — mitte harjutamise ajal. Pausid teevad sind sõna otseses mõttes paremaks."
+    },
+    "aap": {
+      "title": "Liigu natuke, võida palju",
+      "text": "Isegi väikesed kogused regulaarset liikumist vähendavad dramaatiliselt stressi ja parandavad tuju. Ei ole vaja tundi — 10 minutit liikumist võib muuta kogu päeva."
+    },
+    "aaq": {
+      "title": "Venitusrutiin",
+      "text": "Leidsid endale sobiva venitusharjutuste komplekti? Korda neid mitu korda päevas. Järjepidevus võidab intensiivsuse pikaajalise istumise mõjude vastu võitlemisel."
     },
     "aar": {
-      "text": "Väike kogus regulaarset treeningut võib tuua dramaatilist kasu tervisele, sealhulgas vähendada mõõdetavalt stressi.",
-      "title": "Kehalised treeningud"
+      "title": "Randmeringid",
+      "text": "Siruta käed peopesadega enda poole, siis keera aeglaselt — 4 korda päripäeva, 4 korda vastupäeva. Randmed kannavad rohkem stressi, kui arvad."
     },
-    "aax": {
-      "text": "Tõsta oma pulssi 120 löögini minutis 20 minutiks neli või viis korda nädalas, tehes kõike, mis sulle meeldib. Regulaarne pulsisageduse tõstmine parandab südame-veresoonkonna tervist.",
-      "title": "Pulss"
+    "aas": {
+      "title": "Ülesirutus",
+      "text": "Pane käed kukla taha kokku, siis tõsta need pea kohale peopesadega lae poole. Hoia 10 sekundit. Tunne, kuidas selg ärkab."
+    },
+    "aat": {
+      "title": "30/1 reegel",
+      "text": "Iga 30 minuti istumise kohta vähemalt 1 minut liikumist. Pane taimer, kui vaja. Väikesed harjumused liituvad suureks tervisekasuteks."
+    },
+    "aau": {
+      "title": "7-minutiline trenn",
+      "text": "Kogu keha trenn vaid 7 minutiga. Teaduslikult tõestatud ja varustust pole vaja. Tasuta äppe, mis sind juhendavad, on kümneid."
     },
     "aav": {
-      "title": "Liigu",
-      "text": "Iga 30-minutilise paigalseisu kohta peaks sul olema vähemalt üks minut stimulatsiooni."
+      "title": "Tõsta südame löögisagedust",
+      "text": "Eesmärk on 20 minutit kõrgendatud südame löögisagedust (umbes 120 lööki/min), 4-5 korda nädalas. Pole vahet, mida teed — tantsi, jookse, mängi koeraga. Su süda ei mõista kohut."
+    },
+    "aaw": {
+      "title": "Kasuta treppe",
+      "text": "Trepist ronimine liigitub jõuliseks treeninguks ja põletab rohkem kaloreid minutis kui jooksmine. Järgmine kord jäta lift vahele. Jalad nurisevad, aga süda pidutseb."
+    },
+    "aax": {
+      "title": "Loo midagi",
+      "text": "Kunstiteraapia vähendab tõestatult stressi. Kirjuta haiku, joonista koletis, pildista midagi ilusat. Loovus on aju lähtestamise nupp."
+    },
+    "aay": {
+      "title": "Korista",
+      "text": "Segane laud korreleerub kõrgema stressiga. Kuluta 5 minutit töökoha korrastamiseks. Puhas ruum, selge pea."
+    },
+    "aaz": {
+      "title": "Söö õues",
+      "text": "Loodusega kokkupuude vähendab kortisooli ehk stressihormooni. Võimalusel söö lõunat õues. Isegi rohelu vaatega akna juures istumine aitab."
+    },
+    "aba": {
+      "title": "Haigutamise jõud",
+      "text": "Haigutamine pole ainult igavus — see jahutab aju ja tekitab pisaraid, mis niisutavad silmi. Tee julgelt suur võltshaigutus. Keha muudab selle päriseks."
+    },
+    "abb": {
+      "title": "Fookuse vahetamine",
+      "text": "Hoia sõrme näo lähedal ja fokuseeri sellele. Liiguta seda aeglaselt eemale, siis vaata kaugusesse, siis tagasi. See treenib lihaseid, mis juhivad silma läätse."
+    },
+    "abc": {
+      "title": "Silmade katmine kätega",
+      "text": "Aseta soojad peopesad suletud silmadele ja toeta küünarnukke lauale. Hinga aeglaselt nina kaudu. Isegi 30 sekundit pimedust lähtestab nägemissüsteemi."
+    },
+    "abd": {
+      "title": "Pigista midagi",
+      "text": "Haara stressipall, sokipaar või midagi pigistatavet. Hoia 5 sekundit, lase lahti, korda. Vabastab käepinget ja on kummaliselt rahuldav."
+    },
+    "abe": {
+      "title": "Aeglane hingamine",
+      "text": "Kontrollitud aeglane hingamine (umbes 6 hingetõmmet minutis) aktiveerib parasümpaatilise närvisüsteemi, alandab vererõhku ja ärevust. Nagu tarkvarauuendus sinu närvisüsteemile."
+    },
+    "abf": {
+      "title": "Visualiseerimine",
+      "text": "Sulge silmad ja kujuta ette rahulikku kohta — randa, metsa, mäetippu. Keskendu helidele, lõhnadele ja aistingutele. Minivaimne puhkus, null reisikulusid."
     },
     "abg": {
-      "title": "Käepigistused",
-      "text": "Pigista kokkukeritud sokke või pehmet kummipalli, hoidke 5 sekundit. Korda kogu protsessi paar korda."
+      "title": "5-4-3-2-1 maandamine",
+      "text": "Tunned end ülekoormatuna? Nimeta 5 asja, mida näed, 4, mida saad puudutada, 3, mida kuuled, 2, mida haista saad, 1, mida maitsed. See tehnika toob sind tagasi praegusesse hetkesse."
     },
     "abh": {
-      "title": "Aeglane hingamine",
-      "text": "Uued uuringud viitavad võimalusele kasutada kontrollitud aeglase hingamise tehnikaid füsioloogiliste parameetrite optimeerimise vahendina, mis näivad olevat seotud tervise ja pikaealisusega."
+      "title": "Kiire uinaku teadus",
+      "text": "10-20 minutiline uinak tõstab erksust ja sooritust ilma unisuseta. NASA leidis, et 26-minutilise uinaku teinud piloodid parandasid sooritust 34%. Kui see sobib astronautidele — sobib ka sulle."
     },
     "abi": {
-      "title": "Fantaasiarikas visualiseerimine",
-      "text": "Sulge silmad ja kujutle end rahulikus ja rahustavas kohas, näiteks rannas või metsas, keskendudes selle keskkonna vaatamisväärsustele, helidele ja aistingutele."
+      "title": "Pomodoro lähtestamine",
+      "text": "Tööta 25 minutit, paus 5 minutit. Nelja ringi järel pikem paus. Pomodoro tehnika pole lihtsalt produktiivsuse trikk — see on mõistuse säilitamise strateegia."
+    },
+    "abj": {
+      "title": "Kritseldamispaus",
+      "text": "Kritseldamine pauside ajal parandab tegelikult keskendumisvõimet ja mälu kuni 29%, vastavalt uuringule Applied Cognitive Psychology ajakirjas. Haara pastakas ja lase käel rännata."
+    },
+    "abk": {
+      "title": "Ühe laulu paus",
+      "text": "Pane oma lemmiklaul mängima ja kuula seda päriselt — mitte taustamüürana, vaid peaesinejana. Muusika aktiveerib aju tasustamissüsteemi ja vähendab kortisooli."
+    },
+    "abl": {
+      "title": "Tänulikkuse hetk",
+      "text": "Kirjuta üles 3 asja, mille eest oled praegu tänulik. Uuringud näitavad, et regulaarne tänulikkuse harjutamine ühendab aju ümber positiivsusele ja vähendab stressihormoone."
+    },
+    "abm": {
+      "title": "Külma vee lähtestamine",
+      "text": "Pritsi näole külma vett või hoia külma klaasi randmete vastu. Külm käivitab sukeldumisrefleksi, mis aeglustab südame löögisagedust ja rahustab närvisüsteemi koheselt."
+    },
+    "abn": {
+      "title": "Räägi taimega",
+      "text": "Kas sul on lauataim? Kontrolli teda. Kasta, keera. Kui pole — ehk on aeg. Taimed vähendavad stressi ja parandavad õhukvaliteeti. Nad on ideaalsed vaiksed kolleegid."
+    },
+    "abo": {
+      "title": "Mõtete mahalaadmine",
+      "text": "Haara paberileht ja kirjuta üles kõik, mis peas — ülesanded, mured, juhuslikud mõtted. Peast paberile kandmine vabastab vaimse RAM-i."
+    },
+    "abp": {
+      "title": "Pai oma lemmiklooma",
+      "text": "Töötad kodust koos lemmikloomaga? Võta minut teda paitada. Loomade paitamine alandab kortisooli ja tõstab oksütotsiini. Teaduslikult kinnitatud stressi leevendamine."
+    },
+    "abq": {
+      "title": "Naeruteraapia",
+      "text": "Vaata 2-minutilist naljakat videot või loe paar nalja. Naer vallandab endorfiine, alandab stressihormoone ja lõdvestab lihaseid kuni 45 minutiks."
+    },
+    "abr": {
+      "title": "Värske õhu doos",
+      "text": "Ava aken või astu 60 sekundiks välja. Värske õhk suurendab hapnikuvoolu ajusse, parandab keskendumist, serotoniini taset ja energiat."
+    },
+    "abs": {
+      "title": "Kehaskanneerimine",
+      "text": "Alustades varvastest, liiguta tähelepanu aeglaselt üle keha ülespoole. Märka, kus hoiad pinget. Tunnista seda, hinga sinna ja lase lahti."
+    },
+    "abt": {
+      "title": "Kontorijoga",
+      "text": "Istuv kassi-lehma poos, lülisamba keeramine, ettepaindus — joogat saab teha toolist lahkumata. Su lülisambal on ükskõik riietuse või asukoha suhtes, ta tahab lihtsalt liikuda."
+    },
+    "abu": {
+      "title": "Loe lehekülg",
+      "text": "Hoia raamat käeulatuses ja loe pausi ajal üks lehekülg. Ilukirjandus viib mõtted mujale. Tõsisem kirjandus toidab uuega. Mõlemal juhul võidad."
+    },
+    "abv": {
+      "title": "90-minutiline tsükkel",
+      "text": "Su aju töötab 90-minutilistes ultradiaansetes tsüklites kõrge ja madala energia vahel. Nende looduslike rütmidega töötamine, mitte nende vastu, teeb sind produktiivsemaks ja vähem kurnatud."
+    },
+    "abw": {
+      "title": "Uudishimupaus",
+      "text": "Otsi üks juhuslik fakt millegi kohta, mis sind huvitab. Millegi uue õppimine pausi ajal aktiveerib aju tasustamisahelaid teisiti kui töö."
+    },
+    "abx": {
+      "title": "Kastihingamine",
+      "text": "Hinga sisse 4, hoia 4, välja 4, hoia 4. Kasutavad USA mereväe eriüksused surve all rahulikuks jäämiseks. Kui see töötab neil — töötab ka sinu postkasti jaoks."
+    },
+    "aby": {
+      "title": "Tantsi välja",
+      "text": "Pane laul mängima ja tantsi selle kestuse. Sulge uks, kui pead. Tantsimine vabastab endorfiine, parandab koordinatsiooni ja paneb end elavana tundma. Keegi ei näe lahe välja üksi tantsides, ja see ongi mõte."
+    },
+    "abz": {
+      "title": "Helista kellelegi",
+      "text": "Kasuta pausi, et helistada kellelegi, kellest hoolid — lihtsalt tervitamiseks. Sotsiaalne side on üks tugevamaid õnne ja pikaealisuse ennustajaid."
+    },
+    "aca": {
+      "title": "Päikesevalguse doos",
+      "text": "Võimalusel saa 10-15 minutit päikesevalgust. See reguleerib ööpäevarütmi, soodustab D-vitamiini tootmist ja parandab tuju. Sinu keha töötab ka päikeseenergial."
+    },
+    "acb": {
+      "title": "Progressiivne lõdvestus",
+      "text": "Pinge iga lihasgruppi 5 sekundiks, siis lõdvesta. Alusta jalgadest, liigu säärte, reite, kõhulihaste, käte, õlgade ja näoni. Täielik pinge vabastamine alla 3 minutiga."
+    },
+    "acc": {
+      "title": "Paljajalu hetk",
+      "text": "Võta kingad jalast ja tunne põrandat jalgade all. Võimalusel kõnni murul. Maandamine vähendab tõestatult põletikku ja parandab und."
+    },
+    "acd": {
+      "title": "Kirjuta tuleviku endale",
+      "text": "Kirjuta kiire märge tuleviku endale — eesmärk, soov, meeldetuletus. See loob enesejätkuvust ja hoiab sind seotuna sellega, mis on oluline peale tänase ülesannete nimekirja."
+    },
+    "ace": {
+      "title": "Digitaalne koristamine",
+      "text": "Sulge kõik vahekaardid, mida ei kasuta. Lugemata teavitused kuhjuvad? Kustuta need. Digitaalne segadus tekitab kognitiivset koormust, täpselt nagu füüsiline."
+    },
+    "acf": {
+      "title": "2-minuti reegel",
+      "text": "Kui miski, mis peas on, võtab alla 2 minuti — tee see praegu pausi ajal. Väikeste ülesannete tegemine eemaldab lõpetamata asjade vaimse raskuse."
+    },
+    "acg": {
+      "title": "Rühiaudit",
+      "text": "Seisa seina vastu nii, et kannad, tuharad, õlad ja pea puudutavad seda. Nii tunneb hea rüht. Proovi seda tunnet taasluua, kui tagasi istud."
+    },
+    "ach": {
+      "title": "Lõhnapaus",
+      "text": "Nuusuta midagi meeldivat — kohviube, küünalt, eeterlikke õlisid või värsket õhku. Haistmine on otse seotud emotsionaalse ajuga ja võib hetkeliselt meeleolu muuta."
+    },
+    "aci": {
+      "title": "Pilvede vaatamine",
+      "text": "Kui näed taevast, kuluta minut pilvede vaatamisele. See on algne ekraanisäästja — ja annab ajule pehmefookuse, mis soodustab loovat mõtlemist."
     }
   },
   "statusMessages": {
@@ -507,5 +731,221 @@
   },
   "process": {
     "newVersionAvailable": "Uus versioon on saadaval!"
+  },
+  "ui": {
+    "loading": "Pauza laadimine…",
+    "preview": {
+      "status": "Eelvaade",
+      "detail": "Brauseri eelvaade",
+      "action": "Eelvaate režiim aktiivne."
+    },
+    "title": "Pauza",
+    "heroHeadline": "Hoidke töörütmi rahuliku liidesega",
+    "heroSubtitle": "Olulisemad seaded ees, täpsemad valikud taga.",
+    "settingsCategories": "Seadete kategooriad",
+    "settingsCategoriesHint": "Vahetage kategooriat vasakul, vaadake seadeid paremal.",
+    "currentCategory": "Praegune kategooria",
+    "overview": "Ülevaade",
+    "overviewHint": "Oleku kokkuvõte, viimased toimingud ja kiirjuurdepääs.",
+    "liveOverview": "Reaalajas ülevaade",
+    "liveOverviewHint": "Praegune rütm, rakenduse olek ja pausaken pilguga.",
+    "quickActions": "Kiirtoimingud",
+    "quickActionsHint": "Need toimingud mõjutavad otseselt praegust rütmi.",
+    "savePanel": "Salvesta muudatused",
+    "savePanelHint": "Muudatused jõustuvad alles pärast salvestamist.",
+    "nextBreakLabel": "Järgmine paus",
+    "currentBreakLabel": "Praegune paus",
+    "lastActionLabel": "Viimane toiming",
+    "runtimeLabel": "Keskkond",
+    "platformLabel": "Platvorm",
+    "versionLabel": "Versioon",
+    "breakFeelLabel": "Pausi stiil",
+    "placementLabel": "Akna positsioon",
+    "pendingChanges": "Salvestamata muudatused",
+    "synced": "Sünkroonitud",
+    "saving": "Salvestamine…",
+    "allSet": "Valmis",
+    "noCurrentBreak": "Aktiivne paus puudub",
+    "liveSignals": "Reaalajas signaalid",
+    "general": "Üldine",
+    "preferences": "Eelistused",
+    "currentStatus": "Praegune olek",
+    "language": "Keel",
+    "languageChinese": "Lihtsustatud hiina",
+    "languageEnglish": "Inglise",
+    "launchOnLogin": "Käivita sisselogimisel",
+    "enabled": "Sees",
+    "disabled": "Väljas",
+    "schedule": "Rütm",
+    "interruptions": "Meeldetuletused ja katkestused",
+    "sectionScheduleHint": "Ainult need rütmiseaded, mida igapäevaselt kohandate.",
+    "microbreaks": "Mikropausid",
+    "microbreaksHint": "Lühikesed katkestused töö ajal.",
+    "longBreaks": "Pausid",
+    "longBreaksHint": "Täielik paus mitme tsükli järel.",
+    "interval": "Intervall",
+    "every": "Sagedus",
+    "durationLabel": "Kestus",
+    "behavior": "Käitumine",
+    "allowPostpone": "Luba edasilükkamine",
+    "signals": "Signaalid",
+    "sectionSignalsHint": "Laske Pauzal targemini otsustada, millal meeldetuletusi kuvada.",
+    "naturalBreaks": "Loomulikud pausid",
+    "naturalBreaksHint": "Automaatne lähtestamine piisavalt pika eemaloleku järel.",
+    "resetAfter": "Lähtesta pärast",
+    "dnd": "Mitte segada",
+    "dndHint": "Peata meeldetuletused, kui see režiim on aktiivne",
+    "sectionSurfaceHint": "Juhtida katkestuse intensiivsust ja pausakna positsiooni.",
+    "sectionGeneralHint": "Mõned globaalsed eelistused. Vaikimisi minimalistlikud.",
+    "notificationsCategory": "Meeldetuletused ja edasilükkamine",
+    "notificationsCategoryHint": "Heli enne pausi. Edasilükkamise seaded siin.",
+    "surfaceCategory": "Katkestus ja kuvamine",
+    "surfaceCategoryHint": "Pausakna intensiivsus, positsioon ja rangus.",
+    "smartPause": "Tark paus",
+    "smartPauseHint": "Pauza otsib esmalt ilmset hetke ja alandab järk-järgult läve.",
+    "generalAndShortcuts": "Üldine ja kiirklahvid",
+    "generalAndShortcutsHint": "Halda keelt, automaatset käivitust ja globaalseid kiirklahve.",
+    "advanced": "Täpsem",
+    "sectionAdvancedHint": "Rohkem juhtimist, ühilduvusvalikuid ja kiirklahve.",
+    "appExclusions": "Rakenduste erandid",
+    "appExclusionsHint": "Rakendused, mille puhul meeldetuletused peatatakse või jätkatakse.",
+    "appExclusionsEnable": "Luba",
+    "appRulePause": "Peata leiu korral",
+    "appRuleResume": "Jätka ainult leiu korral",
+    "pause30": "Paus 30 min",
+    "focus45": "Fookus 45 min",
+    "resume": "Jätka",
+    "clearFocus": "Lõpeta fookus",
+    "save": "Salvesta",
+    "revert": "Tühista",
+    "defaults": "Vaikeväärtused",
+    "preBreakNotifications": "Hoiatusheli",
+    "beforeLabel": "Enne",
+    "postpone": "Lükka edasi",
+    "scheduleControl": "Rütmi juhtimine",
+    "resetScheduleHint": "Arvuta järgmised pausid ümber praegusest hetkest.",
+    "postponeCategoryHint": "Seadke edasilükkamise kestus ja limiit eraldi.",
+    "limitLabel": "Limiit",
+    "breakSurface": "Pausaken",
+    "breakDisplayMode": "Kuvamisrežiim",
+    "breakBackdrop": "Taustateema",
+    "breakBackdropHint": "Valige atmosfäärne taust pausaknale.",
+    "breakBackdropPaper": "Paber",
+    "breakBackdropDawn": "Koit",
+    "breakBackdropForest": "Mets",
+    "breakBackdropNight": "Öö",
+    "breakBackdropCustom": "Kohandatud taust",
+    "customWallpaper": "Kohandatud taust",
+    "customWallpaperHint": "Laadige üles kohalik pilt pausakna taustaks.",
+    "customWallpaperChoose": "Vali pilt",
+    "customWallpaperReplace": "Asenda pilt",
+    "customWallpaperRemove": "Eemalda",
+    "customWallpaperEmpty": "Kohandatud tausta pole valitud",
+    "customWallpaperEmptyHint": "Pildita kasutatakse vaikimisi teemat.",
+    "customWallpaperReady": "Pilt tihendatakse ja salvestatakse kohapeal pausi taustana.",
+    "breakIdeas": "Pausinõuanded",
+    "breakIdeasHint": "Kuva iga pausi ajal lühike nõuanne.",
+    "breakSounds": "Pausihelid",
+    "breakSoundsHint": "Hoiatusheli enne pausi ja lõpuheli pärast seda.",
+    "microbreakStartSound": "Mikropausi hoiatus",
+    "microbreakEndSound": "Mikropausi lõpp",
+    "longBreakStartSound": "Pausi hoiatus",
+    "longBreakEndSound": "Pausi lõpp",
+    "breakSoundVolume": "Helitugevus",
+    "breakSoundSilence": "Vaikus",
+    "breakSoundCrystalGlass": "Kristallklaas",
+    "breakSoundWindChime": "Tuulekell",
+    "breakSoundTicToc": "Tik-tak",
+    "breakSoundReverie": "Unistus",
+    "reminderMode": "Meeldetuletuse režiim",
+    "reminderModeHint": "Tark otsib loomulikku hetke; Sunnitud katkestab kohe.",
+    "reminderModeSmart": "Tark",
+    "reminderModeForced": "Sunnitud",
+    "window": "Aken",
+    "fullscreen": "Täisekraan",
+    "promptStyleGentle": "Õrn",
+    "promptStyleBalanced": "Tasakaalustatud",
+    "promptStyleImmersive": "Haarav",
+    "allScreens": "Kõik ekraanid",
+    "screenPrimary": "Põhiekraan",
+    "screenCursor": "Ekraan kursoriga",
+    "showTimeToBreakInTray": "Kuva järgmine paus süsteemisalves",
+    "currentTimeInBreaks": "Kuva kellaaeg pausaknas",
+    "currentTimeInBreaksHint": "Süsteemi kellaaeg pausakna paremas ülanurgas.",
+    "strictModes": "Ranged režiimid",
+    "strictModesHint": "Juhtige, kas pause saab vahele jätta ja kas on vaja käsitsi kinnitust.",
+    "microbreakStrict": "Range mikropaus",
+    "longBreakStrict": "Range paus",
+    "manualFinish": "Lõpeta käsitsi pärast taimerit",
+    "showTrayMenuInStrictMode": "Süsteemisalve menüü ranges režiimis",
+    "shortcuts": "Kiirklahvid",
+    "shortcutsHint": "Tühi = registreerimata. Vorming nt: CmdOrCtrl+Shift+P",
+    "shortcutReveal": "Ava seaded",
+    "shortcutFocus45": "Fookus 45 min",
+    "shortcutPauseToggle": "Lülita paus",
+    "shortcutPause30": "Paus 30 min",
+    "shortcutPause60": "Paus 1 t",
+    "shortcutPause120": "Paus 2 t",
+    "shortcutPause300": "Paus 5 t",
+    "shortcutSkipScheduled": "Hüppa järgmisele plaanitud pausile",
+    "shortcutSkipMicrobreak": "Hüppa mikropausile",
+    "shortcutSkipLongBreak": "Hüppa pausile",
+    "shortcutReset": "Lähtesta rütm",
+    "suffix": {
+      "secondsLong": "s",
+      "secondsBefore": "s enne",
+      "minutesApart": "min iga",
+      "cycles": "tsüklit",
+      "minutesLong": "min",
+      "minutesShortPostpone": "min",
+      "minutesLongPostpone": "min",
+      "minutesAway": "min",
+      "minutes": "min",
+      "times": "×"
+    },
+    "status": {
+      "noBreakScheduled": "Pausi pole plaanitud",
+      "microbreak": "Mikropaus",
+      "longBreak": "Paus",
+      "nextBreak": "{{label}} {{duration}} pärast",
+      "focus": "Fookus {{duration}}",
+      "pause": "Peatatud {{duration}}",
+      "pauseForever": "Peatatud määramata ajaks",
+      "blockedBy": "Peatatud: {{match}}",
+      "appRuleActive": "Rakenduse reegel aktiivne",
+      "dndActive": "Mitte segada aktiivne"
+    },
+    "error": {
+      "loadState": "Pauza oleku laadimine ebaõnnestus"
+    },
+    "breakCopy": {
+      "clearedDetail": "Aktiivne paus puudub.",
+      "manualAwaiting": "Aeg on läbi. Lõpetage see paus enne tööle naasmist.",
+      "awaitingFinish": "Lõpetamise ootel",
+      "actions": {
+        "resumeWork": "Tagasi tööle",
+        "done": "Valmis",
+        "later": "Hiljem",
+        "skip": "Jäta vahele"
+      },
+      "defaultPrompt": {
+        "microbreak": "Tõuske püsti, lõdvestage õlgu ja kaela, vaadake kaugusesse.",
+        "longBreak": "Eemalduge lauast mõneks minutiks, et keha ja meel saaksid puhata."
+      }
+    },
+    "previewAction": {
+      "save": "Eelvaade: seaded uuendatud.",
+      "pause": "Eelvaade: peatatud 30 min.",
+      "pauseForever": "Eelvaade: peatatud määramata ajaks.",
+      "focus": "Eelvaade: fookus sisse.",
+      "focusCleared": "Eelvaade: fookus lõpetatud.",
+      "resume": "Eelvaade: jätkatud.",
+      "reset": "Eelvaade: rütm lähtestatud.",
+      "autostartOn": "Eelvaade: automaatne käivitus sisse.",
+      "autostartOff": "Eelvaade: automaatne käivitus välja.",
+      "done": "Eelvaade: paus lõpetatud.",
+      "later": "Eelvaade: paus edasi lükatud.",
+      "skip": "Eelvaade: paus vahele jäetud."
+    }
   }
 }

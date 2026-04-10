@@ -81,7 +81,7 @@
 - Approval Owner: orchestrator
 - Execution Profile: single-task
 - Orchestrator Execution Profile: aggressive baseline uses `sandbox_mode = "danger-full-access"` + `approval_policy = "never"`
-- Required Roles: orchestrator,coder,tester,scribe
+- Required Roles: orchestrator,architect,coder,tester,scribe
 - Execution Mode Policy: multi-agent preferred; `single-agent-fallback` only when warmup is BLOCKED and scope / reason code are explicitly bounded
 - Subagent Approval Policy: non-orchestrator agents must use `approval_policy = "never"`
 - Escalation Route: subagent -> Orchestrator -> direct local execution | user (only for destructive or external-impact decisions)

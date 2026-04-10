@@ -2,12 +2,11 @@ import crystalGlassUrl from '@/assets/audio/crystal-glass.wav'
 import reverieUrl from '@/assets/audio/reverie.wav'
 import ticTocUrl from '@/assets/audio/tic-toc.wav'
 import windChimeUrl from '@/assets/audio/wind-chime.wav'
-import { getBreakPrompts } from '@/locales/break-message-copy'
-import type { AppLanguage } from '@/i18n'
 
 export type BreakKind = 'microbreak' | 'longBreak'
 export type BreakBackdrop = 'paper' | 'dawn' | 'forest' | 'night' | 'custom'
 export type BreakSound = 'silence' | 'crystal-glass' | 'wind-chime' | 'tic-toc' | 'reverie'
+export type BreakContrastMode = 'light' | 'dark'
 
 export type BreakScene = {
   background: string
@@ -22,6 +21,7 @@ export type BreakScene = {
   cueTagText: string
   meterTrack: string
   meterFill: string
+  contrastMode: BreakContrastMode
 }
 
 type BuiltinBreakBackdrop = Exclude<BreakBackdrop, 'custom'>
@@ -44,6 +44,7 @@ const BREAK_SCENES: Record<BuiltinBreakBackdrop, BreakScene> = {
     cueTagText: '#385389',
     meterTrack: 'rgba(56,83,137,0.12)',
     meterFill: '#385389',
+    contrastMode: 'light',
   },
   dawn: {
     background:
@@ -62,6 +63,7 @@ const BREAK_SCENES: Record<BuiltinBreakBackdrop, BreakScene> = {
     cueTagText: '#a65c4c',
     meterTrack: 'rgba(166,92,76,0.12)',
     meterFill: '#a65c4c',
+    contrastMode: 'light',
   },
   forest: {
     background:
@@ -80,6 +82,7 @@ const BREAK_SCENES: Record<BuiltinBreakBackdrop, BreakScene> = {
     cueTagText: '#2f6a4f',
     meterTrack: 'rgba(47,106,79,0.12)',
     meterFill: '#2f6a4f',
+    contrastMode: 'light',
   },
   night: {
     background:
@@ -98,6 +101,7 @@ const BREAK_SCENES: Record<BuiltinBreakBackdrop, BreakScene> = {
     cueTagText: '#dbe7ff',
     meterTrack: 'rgba(255,255,255,0.14)',
     meterFill: '#8fb4ff',
+    contrastMode: 'dark',
   },
 }
 
@@ -124,21 +128,57 @@ export const BREAK_SOUND_OPTIONS: Array<{ value: BreakSound; labelKey: string }>
   { value: 'reverie', labelKey: 'ui.breakSoundReverie' },
 ]
 
-export function pickBreakPrompt(
-  language: AppLanguage,
-  kind: BreakKind,
-  startedAtMs: number,
-): string {
-  const source = getBreakPrompts(language, kind)
-  if (source.length === 0) {
-    return ''
-  }
-  const index = Math.floor(startedAtMs / 1000) % source.length
-  return source[index]
-}
-
 export function getBreakScene(backdrop: BreakBackdrop): BreakScene {
   return BREAK_SCENES[backdrop === 'custom' ? 'paper' : backdrop]
+}
+
+export async function resolveBreakContrastMode(
+  backdrop: BreakBackdrop,
+  customBackdropDataUrl?: string | null,
+): Promise<BreakContrastMode> {
+  if (backdrop !== 'custom' || !customBackdropDataUrl) {
+    return getBreakScene(backdrop).contrastMode
+  }
+
+  try {
+    const image = await loadImage(customBackdropDataUrl)
+    const sampleSize = 24
+    const canvas = document.createElement('canvas')
+    canvas.width = sampleSize
+    canvas.height = sampleSize
+
+    const context = canvas.getContext('2d', { willReadFrequently: true })
+    if (!context) {
+      return 'light'
+    }
+
+    context.drawImage(image, 0, 0, sampleSize, sampleSize)
+    const { data } = context.getImageData(0, 0, sampleSize, sampleSize)
+
+    let weightedLuminance = 0
+    let alphaTotal = 0
+    for (let index = 0; index < data.length; index += 4) {
+      const alpha = data[index + 3] / 255
+      if (alpha <= 0) {
+        continue
+      }
+
+      const red = data[index]
+      const green = data[index + 1]
+      const blue = data[index + 2]
+      const luminance = 0.2126 * red + 0.7152 * green + 0.0722 * blue
+      weightedLuminance += luminance * alpha
+      alphaTotal += alpha
+    }
+
+    if (alphaTotal <= 0) {
+      return 'light'
+    }
+
+    return weightedLuminance / alphaTotal >= 148 ? 'light' : 'dark'
+  } catch {
+    return 'light'
+  }
 }
 
 export function getBreakSoundUrl(sound: BreakSound): string | null {

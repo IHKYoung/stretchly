@@ -26,7 +26,9 @@ pub fn spawn<R: Runtime>(app: AppHandle<R>) {
             if let (Some(title), Some(body)) =
                 (actions.notify_title.as_ref(), actions.notify_body.as_ref())
             {
-                let _ = app.notification().builder().title(title).body(body).show();
+                if let Err(error) = app.notification().builder().title(title).body(body).show() {
+                    eprintln!("failed to show desktop notification: {error}");
+                }
             }
 
             if actions.open_break_window {

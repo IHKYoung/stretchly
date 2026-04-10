@@ -6,8 +6,47 @@ use std::sync::{Arc, Mutex};
 use std::time::{Duration, SystemTime, UNIX_EPOCH};
 
 const SETTINGS_FILE: &str = "settings.json";
-const BREAK_ACTION_WINDOW_PERCENT: f64 = 30.0;
 const BREAK_ACTION_DELAY_MS: u64 = 100;
+const BREAK_POSTPONE_WINDOW_MS: u64 = 10_000;
+const DEFAULT_IDLE_OPPORTUNITY_SECONDS: u64 = 6;
+const MICROBREAK_FINAL_WAIT_CAP_MS: u64 = 45_000;
+const LONG_BREAK_FINAL_WAIT_CAP_MS: u64 = 90_000;
+
+#[derive(Debug, Clone, Copy)]
+struct SmartWaitStage {
+    wait_until_ms: u64,
+    idle_required_ms: u64,
+}
+
+const MICROBREAK_SMART_WAIT_STAGES: [SmartWaitStage; 3] = [
+    SmartWaitStage {
+        wait_until_ms: 15_000,
+        idle_required_ms: 6_000,
+    },
+    SmartWaitStage {
+        wait_until_ms: 30_000,
+        idle_required_ms: 3_000,
+    },
+    SmartWaitStage {
+        wait_until_ms: MICROBREAK_FINAL_WAIT_CAP_MS,
+        idle_required_ms: 1_000,
+    },
+];
+
+const LONG_BREAK_SMART_WAIT_STAGES: [SmartWaitStage; 3] = [
+    SmartWaitStage {
+        wait_until_ms: 30_000,
+        idle_required_ms: 8_000,
+    },
+    SmartWaitStage {
+        wait_until_ms: 60_000,
+        idle_required_ms: 4_000,
+    },
+    SmartWaitStage {
+        wait_until_ms: LONG_BREAK_FINAL_WAIT_CAP_MS,
+        idle_required_ms: 1_000,
+    },
+];
 
 #[derive(Debug, Clone, Copy, Serialize, Deserialize, PartialEq, Eq, Default)]
 #[serde(rename_all = "camelCase")]
@@ -93,6 +132,7 @@ pub struct PauzaSettings {
     pub show_breaks_on_all_screens: bool,
     pub target_screen: String,
     pub current_time_in_breaks: bool,
+    pub show_time_to_break_in_tray: bool,
     pub microbreak_start_sound: BreakSound,
     pub microbreak_end_sound: BreakSound,
     pub long_break_start_sound: BreakSound,
@@ -125,7 +165,7 @@ impl Default for PauzaSettings {
             microbreak_postpone_minutes: 2,
             microbreak_postpones_limit: 1,
             reminder_mode: ReminderMode::Smart,
-            idle_opportunity_seconds: 12,
+            idle_opportunity_seconds: DEFAULT_IDLE_OPPORTUNITY_SECONDS,
             microbreak_manual_finish: false,
             long_break_enabled: true,
             long_break_every: 3,
@@ -150,6 +190,7 @@ impl Default for PauzaSettings {
             show_breaks_on_all_screens: true,
             target_screen: "primary".into(),
             current_time_in_breaks: false,
+            show_time_to_break_in_tray: true,
             microbreak_start_sound: BreakSound::Silence,
             microbreak_end_sound: BreakSound::CrystalGlass,
             long_break_start_sound: BreakSound::Silence,
@@ -262,10 +303,6 @@ impl PauzaSettings {
             BreakKind::Microbreak => self.microbreak_postpones_limit,
             BreakKind::LongBreak => self.long_break_postpones_limit,
         }
-    }
-
-    pub fn idle_opportunity_ms(&self, _kind: BreakKind) -> u64 {
-        self.idle_opportunity_seconds * 1_000
     }
 
     pub fn strict_mode(&self, _kind: BreakKind) -> bool {
@@ -458,6 +495,30 @@ struct RuntimeState {
 #[derive(Clone, Default)]
 pub struct PauzaState {
     runtime: Arc<Mutex<RuntimeState>>,
+    autostart: Arc<Mutex<Option<bool>>>,
+}
+
+impl PauzaState {
+    /// Returns the cached autostart state, calling `init` once if not yet initialized.
+    pub fn autostart_enabled_or_init<F>(&self, init: F) -> Result<bool, String>
+    where
+        F: FnOnce() -> Result<bool, String>,
+    {
+        let mut guard = self.autostart.lock().expect("autostart lock poisoned");
+        match *guard {
+            Some(v) => Ok(v),
+            None => {
+                let v = init()?;
+                *guard = Some(v);
+                Ok(v)
+            }
+        }
+    }
+
+    /// Updates the cached autostart state after enable/disable.
+    pub fn set_autostart_enabled(&self, enabled: bool) {
+        *self.autostart.lock().expect("autostart lock poisoned") = Some(enabled);
+    }
 }
 
 impl PauzaState {
@@ -538,11 +599,16 @@ impl PauzaState {
     pub fn update_settings(&self, settings: PauzaSettings) -> Result<(), String> {
         let now = now_ms();
         let mut runtime = self.runtime.lock().expect("state lock poisoned");
+        let has_active_break_flow = runtime.current_break.is_some()
+            || runtime.next_break_due_ms.is_some()
+            || runtime.next_break_wait_started_ms.is_some();
         runtime.settings = settings.sanitized();
         save_settings(&runtime)?;
         runtime.last_action =
             i18n::text(&runtime.settings.language, "runtime.actions.settingsUpdated");
-        runtime.reset_schedule(now);
+        if !has_active_break_flow && runtime.blocking_reason(now).is_none() {
+            runtime.reset_schedule(now);
+        }
         Ok(())
     }
 
@@ -654,6 +720,10 @@ impl PauzaState {
         let now = now_ms();
         let mut runtime = self.runtime.lock().expect("state lock poisoned");
         if let Some(current) = runtime.current_break.take() {
+            if !current.manual_awaiting {
+                runtime.current_break = Some(current);
+                return false;
+            }
             let language = runtime.settings.language.clone();
             let translated_source = source_translation(&language, source);
             runtime.last_action = i18n::text2(
@@ -1143,15 +1213,54 @@ impl RuntimeState {
             return false;
         }
 
-        self.pending_due_kind(now).is_some() && self.idle_ms < self.settings.idle_opportunity_ms(kind)
+        if self.pending_due_kind(now).is_none() {
+            return false;
+        }
+
+        let Some(idle_required_ms) = self.current_smart_wait_idle_requirement_ms(kind, now) else {
+            return false;
+        };
+
+        self.idle_ms < idle_required_ms
     }
 
     fn waiting_for_opportunity_kind(&self, now: u64) -> Option<BreakKind> {
         let kind = self.pending_due_kind(now)?;
-        if self.next_break_wait_started_ms.is_some() || self.should_wait_for_opportunity(kind, now) {
+        if self.should_wait_for_opportunity(kind, now) {
+            return Some(kind);
+        }
+        if self.next_break_wait_started_ms.is_some() {
             return Some(kind);
         }
         None
+    }
+
+    fn heads_up_kind(&self, now: u64) -> Option<BreakKind> {
+        let kind = self.next_break_kind?;
+        let due = self.next_break_due_ms?;
+        if due <= now || !self.settings.notification_enabled(kind) {
+            return None;
+        }
+
+        let lead_ms = self.settings.notification_ms(kind);
+        if lead_ms == 0 {
+            return None;
+        }
+
+        (due.saturating_sub(now) <= lead_ms).then_some(kind)
+    }
+
+    fn smart_wait_elapsed_ms(&self, now: u64) -> u64 {
+        let started_at = self.next_break_wait_started_ms.unwrap_or(now);
+        now.saturating_sub(started_at)
+    }
+
+    fn current_smart_wait_idle_requirement_ms(&self, kind: BreakKind, now: u64) -> Option<u64> {
+        let elapsed_ms = self.smart_wait_elapsed_ms(now);
+        smart_wait_stages(kind)
+            .iter()
+            .find(|stage| elapsed_ms < stage.wait_until_ms)
+            .map(|stage| stage.idle_required_ms)
     }
 
     fn blocking_reason(&self, now: u64) -> Option<&'static str> {
@@ -1294,6 +1403,18 @@ impl RuntimeState {
             );
         }
 
+        if let Some(kind) = self.heads_up_kind(now) {
+            return (
+                i18n::text(language, "runtime.break.status.headsUpTitle"),
+                pre_break_heads_up_detail(
+                    &self.settings,
+                    language,
+                    kind,
+                    self.next_break_due_ms.unwrap_or(now).saturating_sub(now),
+                ),
+            );
+        }
+
         if let Some(kind) = self.waiting_for_opportunity_kind(now) {
             return (
                 i18n::text(language, "runtime.break.status.waitingOpportunityTitle"),
@@ -1355,7 +1476,7 @@ impl CurrentBreak {
             return false;
         }
 
-        self.elapsed_percent(now) <= BREAK_ACTION_WINDOW_PERCENT
+        now.saturating_sub(self.started_at_ms) <= BREAK_POSTPONE_WINDOW_MS
     }
 
     fn can_skip(&self, settings: &PauzaSettings, now: u64) -> bool {
@@ -1364,14 +1485,6 @@ impl CurrentBreak {
         }
 
         !self.can_postpone(settings, now)
-    }
-
-    fn elapsed_percent(&self, now: u64) -> f64 {
-        let elapsed = now.saturating_sub(self.started_at_ms).min(self.duration_ms);
-        if self.duration_ms == 0 {
-            return 100.0;
-        }
-        (elapsed as f64 / self.duration_ms as f64) * 100.0
     }
 }
 
@@ -1530,6 +1643,35 @@ fn pre_break_notification_body(settings: &PauzaSettings, language: &str, kind: B
     }
 }
 
+fn pre_break_heads_up_detail(
+    settings: &PauzaSettings,
+    language: &str,
+    kind: BreakKind,
+    remaining_ms: u64,
+) -> String {
+    let title = break_kind_label(language, kind);
+    let duration = i18n::duration(language, remaining_ms);
+    if settings.reminder_mode == ReminderMode::Smart {
+        i18n::text2(
+            language,
+            "runtime.break.status.headsUpAdaptiveDetail",
+            "kind",
+            title,
+            "duration",
+            duration,
+        )
+    } else {
+        i18n::text2(
+            language,
+            "runtime.break.status.headsUpDetail",
+            "kind",
+            title,
+            "duration",
+            duration,
+        )
+    }
+}
+
 fn notification_due_at(
     settings: &PauzaSettings,
     kind: BreakKind,
@@ -1580,6 +1722,13 @@ pub fn now_ms() -> u64 {
         .duration_since(UNIX_EPOCH)
         .unwrap_or(Duration::ZERO)
         .as_millis() as u64
+}
+
+fn smart_wait_stages(kind: BreakKind) -> &'static [SmartWaitStage] {
+    match kind {
+        BreakKind::Microbreak => &MICROBREAK_SMART_WAIT_STAGES,
+        BreakKind::LongBreak => &LONG_BREAK_SMART_WAIT_STAGES,
+    }
 }
 
 #[cfg(test)]
@@ -1644,6 +1793,50 @@ mod tests {
     }
 
     #[test]
+    fn postpone_is_only_available_in_first_ten_seconds() {
+        let settings = settings();
+        let current = CurrentBreak {
+            kind: BreakKind::Microbreak,
+            title: "Microbreak".into(),
+            detail: "detail".into(),
+            started_at_ms: 1_000,
+            ends_at_ms: 21_000,
+            duration_ms: 20_000,
+            strict_mode: false,
+            manual_finish: false,
+            manual_awaiting: false,
+            postpones_used: 0,
+        };
+
+        assert!(current.can_postpone(&settings, 11_000));
+        assert!(!current.can_postpone(&settings, 11_001));
+    }
+
+    #[test]
+    fn finish_current_break_requires_manual_awaiting() {
+        let state = PauzaState::default();
+        {
+            let mut runtime = state.runtime.lock().expect("state lock poisoned");
+            runtime.current_break = Some(CurrentBreak {
+                kind: BreakKind::Microbreak,
+                title: "Microbreak".into(),
+                detail: "detail".into(),
+                started_at_ms: 1_000,
+                ends_at_ms: 21_000,
+                duration_ms: 20_000,
+                strict_mode: false,
+                manual_finish: false,
+                manual_awaiting: false,
+                postpones_used: 0,
+            });
+        }
+
+        assert!(!state.finish_current_break("break-window"));
+        let runtime = state.runtime.lock().expect("state lock poisoned");
+        assert!(runtime.current_break.is_some());
+    }
+
+    #[test]
     fn due_break_waits_for_idle_opportunity() {
         let state = PauzaState::default();
         {
@@ -1673,7 +1866,66 @@ mod tests {
         }
 
         let _ = state.tick(1_100, 0, false, None);
-        let actions = state.tick(13_100, 12_000, false, None);
+        let actions = state.tick(7_100, 6_000, false, None);
+
+        assert!(actions.open_break_window);
+
+        let runtime = state.runtime.lock().expect("state lock poisoned");
+        assert!(runtime.current_break.is_some());
+        assert!(runtime.next_break_wait_started_ms.is_none());
+    }
+
+    #[test]
+    fn microbreak_wait_threshold_relaxes_after_first_stage() {
+        let state = PauzaState::default();
+        {
+            let mut runtime = state.runtime.lock().expect("state lock poisoned");
+            runtime.settings = settings();
+            runtime.schedule_specific_break(BreakKind::Microbreak, 1_100, 1_000);
+        }
+
+        let _ = state.tick(1_100, 0, false, None);
+        let actions = state.tick(16_100, 3_000, false, None);
+
+        assert!(actions.open_break_window);
+
+        let runtime = state.runtime.lock().expect("state lock poisoned");
+        assert!(runtime.current_break.is_some());
+        assert!(runtime.next_break_wait_started_ms.is_none());
+    }
+
+    #[test]
+    fn long_break_uses_wider_idle_window_before_relaxing() {
+        let state = PauzaState::default();
+        {
+            let mut runtime = state.runtime.lock().expect("state lock poisoned");
+            runtime.settings = settings();
+            runtime.schedule_specific_break(BreakKind::LongBreak, 1_100, 1_000);
+        }
+
+        let _ = state.tick(1_100, 0, false, None);
+        let still_waiting = state.tick(20_100, 6_000, false, None);
+        assert!(!still_waiting.open_break_window);
+
+        let actions = state.tick(35_100, 4_000, false, None);
+        assert!(actions.open_break_window);
+
+        let runtime = state.runtime.lock().expect("state lock poisoned");
+        assert!(runtime.current_break.as_ref().is_some_and(|current| current.kind == BreakKind::LongBreak));
+        assert!(runtime.next_break_wait_started_ms.is_none());
+    }
+
+    #[test]
+    fn smart_mode_starts_break_after_final_stage_even_without_idle_gap() {
+        let state = PauzaState::default();
+        {
+            let mut runtime = state.runtime.lock().expect("state lock poisoned");
+            runtime.settings = settings();
+            runtime.schedule_specific_break(BreakKind::Microbreak, 1_100, 1_000);
+        }
+
+        let _ = state.tick(1_100, 0, false, None);
+        let actions = state.tick(46_100, 0, false, None);
 
         assert!(actions.open_break_window);
 
@@ -1767,5 +2019,90 @@ mod tests {
                 i18n::text("zh-CN", "runtime.break.kind.microbreak")
             )
         );
+    }
+
+    #[test]
+    fn snapshot_status_reflects_pre_break_heads_up() {
+        let state = PauzaState::default();
+        let scheduled_from = now_ms();
+        let due_ms = scheduled_from + 9_000;
+        {
+            let mut runtime = state.runtime.lock().expect("state lock poisoned");
+            runtime.settings = settings();
+            runtime.schedule_specific_break(BreakKind::Microbreak, due_ms, scheduled_from);
+        }
+
+        let snapshot = state.snapshot("test".into(), "0.0.0".into(), false);
+        let remaining = snapshot.next_break_in_ms.expect("remaining time available");
+
+        assert_eq!(
+            snapshot.status,
+            i18n::text("zh-CN", "runtime.break.status.headsUpTitle")
+        );
+        assert_eq!(
+            snapshot.status_detail,
+            i18n::text2(
+                "zh-CN",
+                "runtime.break.status.headsUpAdaptiveDetail",
+                "kind",
+                i18n::text("zh-CN", "runtime.break.kind.microbreak"),
+                "duration",
+                i18n::duration("zh-CN", remaining)
+            )
+        );
+    }
+
+    #[test]
+    fn update_settings_keeps_current_break_running() {
+        let state = PauzaState::default();
+        let temp_path = std::env::temp_dir().join(format!("pauza-settings-current-{}.json", now_ms()));
+
+        {
+            let mut runtime = state.runtime.lock().expect("state lock poisoned");
+            runtime.config_path = Some(temp_path.clone());
+            runtime.settings = settings();
+            runtime.schedule_specific_break(BreakKind::Microbreak, 1_100, 1_000);
+        }
+
+        let _ = state.tick(1_100, 12_000, false, None);
+
+        let mut updated = settings();
+        updated.microbreak_duration_seconds = 90;
+        state.update_settings(updated).expect("update settings");
+
+        let runtime = state.runtime.lock().expect("state lock poisoned");
+        let current = runtime.current_break.as_ref().expect("current break preserved");
+        assert_eq!(current.kind, BreakKind::Microbreak);
+        assert_eq!(current.duration_ms, 20_000);
+        assert_eq!(current.ends_at_ms, 21_100);
+        assert!(runtime.next_break_due_ms.is_none());
+
+        let _ = std::fs::remove_file(temp_path);
+    }
+
+    #[test]
+    fn update_settings_keeps_already_scheduled_next_break() {
+        let state = PauzaState::default();
+        let temp_path = std::env::temp_dir().join(format!("pauza-settings-next-{}.json", now_ms()));
+
+        {
+            let mut runtime = state.runtime.lock().expect("state lock poisoned");
+            runtime.config_path = Some(temp_path.clone());
+            runtime.settings = settings();
+            runtime.cycle_index = 1;
+            runtime.schedule_specific_break(BreakKind::LongBreak, 61_000, 1_000);
+        }
+
+        let mut updated = settings();
+        updated.long_break_duration_minutes = 15;
+        updated.microbreak_interval_minutes = 30;
+        state.update_settings(updated).expect("update settings");
+
+        let runtime = state.runtime.lock().expect("state lock poisoned");
+        assert_eq!(runtime.next_break_kind, Some(BreakKind::LongBreak));
+        assert_eq!(runtime.next_break_due_ms, Some(61_000));
+        assert_eq!(runtime.cycle_index, 1);
+
+        let _ = std::fs::remove_file(temp_path);
     }
 }

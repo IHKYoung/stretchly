@@ -50,7 +50,7 @@
     },
     "about": {
       "designedBy": "Ikon dan desain UI oleh Colin Shanley",
-      "janH": "Clarke Young",
+      "clarkeY": "Clarke Young",
       "developedBy": "Dikembangkan oleh",
       "dot": ".",
       "ourWebsite": "kunjungi situs web kami",
@@ -210,257 +210,748 @@
     "postpone": "Tunda istirahat ini"
   },
   "miniBreakIdeas": {
-    "aab": {
-      "text": "Perlahan lihat ke kiri, lalu ke kanan."
-    },
-    "aae": {
-      "text": "Tutup mata Anda dan rileks."
-    },
-    "aaq": {
-      "text": "Tutup mata Anda dan sebutkan hal-hal yang Anda dengar."
-    },
-    "aat": {
-      "text": "Dengan tangan kanan Anda, ambil setiap jari tangan kiri Anda secara bergantian dan remas. Ulangi di sisi lain."
-    },
-    "aax": {
-      "text": "Jika Anda butuh bantuan, mintalah."
-    },
-    "aaz": {
-      "text": "Apakah perhatian Anda dihabiskan dengan bijak?"
-    },
-    "abe": {
-      "text": "Goyangkan tangan Anda untuk mendapatkan sedikit relaksasi."
-    },
-    "abh": {
-      "text": "Kepalkan tangan, lalu kibaskan jari-jari Anda dan regangkan sejauh mungkin."
-    },
-    "aam": {
-      "text": "Luangkan waktu sejenak untuk memikirkan sesuatu yang Anda hargai."
-    },
-    "aan": {
-      "text": "Luangkan waktu sejenak untuk tersenyum bahwa kita masih hidup."
-    },
     "aaa": {
-      "text": "Pergi ambil segelas air."
+      "text": "Minum segelas air putih sekarang."
+    },
+    "aab": {
+      "text": "Istirahatkan mata — lihat sesuatu yang jauh selama 20 detik."
     },
     "aac": {
-      "text": "Perlahan lihat ke atas, lalu ke bawah."
+      "text": "Tarik napas dalam-dalam tiga kali."
     },
     "aad": {
-      "text": "Tutup mata Anda dan tarik napas dalam-dalam beberapa kali."
+      "text": "Tegakkan punggung dan duduk dengan benar."
     },
-    "abc": {
-      "text": "Dengan mata tertutup, perlahan dan lembut angkat mata Anda ke langit-langit dan kembali ke lantai."
+    "aae": {
+      "text": "Gerakkan leher — miringkan ke kiri dan kanan."
     },
     "aaf": {
-      "text": "Regangkan kaki Anda."
-    },
-    "aao": {
-      "text": "Tempat kerja yang benar-benar ergonomis adalah tempat kerja yang sering Anda hindari."
-    },
-    "aap": {
-      "text": "Tutup mata Anda dan hitung nafas Anda."
-    },
-    "aar": {
-      "text": "Letakkan ujung jari Anda di bahu Anda. Putar bahu Anda ke depan selama 10 detik, lalu ke belakang."
+      "text": "Angkat dan turunkan bahu beberapa kali."
     },
     "aag": {
-      "text": "Regangkan lengan Anda."
+      "text": "Regangkan jari-jari dan pergelangan tangan."
     },
     "aah": {
-      "text": "Apakah postur duduk Anda sudah benar?"
+      "text": "Berdiri dan regangkan punggung sebentar."
     },
     "aai": {
-      "text": "Perlahan putar kepala ke samping dan tahan selama 10 detik."
-    },
-    "aak": {
-      "text": "Berdiri dari kursi Anda dan regangkan."
-    },
-    "aba": {
-      "text": "Ubah postur duduk Anda."
-    },
-    "abg": {
-      "text": "Kepalkan tangan, lalu geser jari Anda ke atas hingga mengarah ke langit-langit, seperti Anda menyuruh seseorang untuk berhenti."
-    },
-    "aas": {
-      "text": "Angkat lengan kanan Anda, regangkan di atas kepala Anda ke kiri, dan tahan selama 10 detik. Ulangi di sisi lain."
-    },
-    "aay": {
-      "text": "Lakukan satu hal pada satu waktu."
-    },
-    "abb": {
-      "text": "Paparkan mata Anda pada cahaya alami."
-    },
-    "abk": {
-      "text": "Berdiri tegak dengan tangan di samping Anda. Remas tulang belikat Anda bersama-sama dan tahan."
-    },
-    "aaw": {
-      "text": "Fokus setiap 20 menit selama 20 detik pada objek dengan jarak 6 meter."
-    },
-    "abd": {
-      "text": "Dengan mata tertutup, perlahan dan lembut gerakkan mata Anda ke kiri, lalu perlahan ke kanan."
-    },
-    "abf": {
-      "text": "Satu per satu, sentuhkan ujung setiap jari ke ujung ibu jari Anda sehingga membentuk huruf O."
-    },
-    "abi": {
-      "text": "Duduk tegak, lengan tergantung di sisi tubuh, dan perlahan putar leher ke satu arah dalam lingkaran besar."
-    },
-    "abj": {
-      "text": "Berdiri tegak dan perlahan miringkan kepala dan perlahan tekan menggunakan tangan sampai Anda merasakan peregangan, kemudian ganti sisi sebelahnya."
-    },
-    "abl": {
-      "text": "Berdiri tegak dengan tangan terangkat di sepanjang bahu. Gerakkan tangan sedikit ke belakang, tahan sebentar dan kembali."
+      "text": "Gerakkan kaki meskipun sedang duduk."
     },
     "aaj": {
-      "text": "Perlahan miringkan kepala ke samping dan tahan selama 5-10 detik."
+      "text": "Regangkan seluruh tubuh — raih langit-langit."
+    },
+    "aak": {
+      "text": "Rilekskan otot-otot wajah."
     },
     "aal": {
-      "text": "Fokuskan kembali mata Anda pada objek yang berjarak setidaknya 20 meter."
+      "text": "Alihkan pandangan dari layar dan cari sesuatu yang hijau."
+    },
+    "aam": {
+      "text": "Tarik napas dalam dan hembuskan perlahan."
+    },
+    "aan": {
+      "text": "Putar bahu ke depan dan ke belakang."
+    },
+    "aao": {
+      "text": "Regangkan lengan ke depan dan dorong telapak tangan."
+    },
+    "aap": {
+      "text": "Pejamkan mata dan bernapas tiga kali."
+    },
+    "aaq": {
+      "text": "Putar leher perlahan membentuk lingkaran."
+    },
+    "aar": {
+      "text": "Tekuk dan luruskan kaki beberapa kali."
+    },
+    "aas": {
+      "text": "Angkat bahu sampai ke telinga lalu lepaskan."
+    },
+    "aat": {
+      "text": "Buka dan tutup jari-jari tangan beberapa kali."
     },
     "aau": {
-      "text": "Berdiri dan lakukan lunge. Tahan selama 10 detik, kemudian ganti kaki lainnya."
+      "text": "Berdiri sebentar dan gerakkan badan."
     },
     "aav": {
-      "text": "Tutup mata Anda and perhatikan apapun yang muncul pada saat ini, dengan tanpa menghakimi."
+      "text": "Cek postur — apakah punggungmu sudah lurus?"
+    },
+    "aaw": {
+      "text": "Buat lingkaran dengan pergelangan tangan."
+    },
+    "aax": {
+      "text": "Lihat keluar jendela dan istirahatkan mata."
+    },
+    "aay": {
+      "text": "Gerakkan lutut naik turun sambil duduk."
+    },
+    "aaz": {
+      "text": "Ambil air minum — hidrasi itu penting, gaes!"
+    },
+    "aba": {
+      "text": "Rilekskan rahang — mungkin kamu sedang mengatupkannya."
+    },
+    "abb": {
+      "text": "Terapkan aturan 20-20-20: lihat 20 kaki jauhnya selama 20 detik."
+    },
+    "abc": {
+      "text": "Gerakkan jari-jari kaki di dalam sepatu."
+    },
+    "abd": {
+      "text": "Miringkan kepala ke satu bahu, lalu ke bahu lainnya."
+    },
+    "abe": {
+      "text": "Bernapas dengan perut — perpanjang hembusan."
+    },
+    "abf": {
+      "text": "Regangkan paha — angkat satu lutut ke dada."
+    },
+    "abg": {
+      "text": "Lakukan push-up di meja atau dinding."
+    },
+    "abh": {
+      "text": "Kibaskan tangan seperti sedang mengeringkannya."
+    },
+    "abi": {
+      "text": "Pijat pelipis dengan jari-jari."
+    },
+    "abj": {
+      "text": "Buat lingkaran dengan pergelangan kaki."
+    },
+    "abk": {
+      "text": "Cari sesuatu yang lucu di sekitarmu — ayo senyum!"
+    },
+    "abl": {
+      "text": "Turunkan bahu — pasti sudah naik lagi kan?"
+    },
+    "abm": {
+      "text": "Lakukan box breathing: tarik 4, tahan 4, hembuskan 4, tahan 4."
+    },
+    "abn": {
+      "text": "Sesuaikan kursi agar kamu nyaman."
+    },
+    "abo": {
+      "text": "Lakukan calf raises sambil berdiri."
+    },
+    "abp": {
+      "text": "Gulingkan botol air di bawah telapak kaki."
+    },
+    "abq": {
+      "text": "Kedipkan mata beberapa kali untuk menyegarkan."
+    },
+    "abr": {
+      "text": "Regangkan trapezius — tarik kepala ke samping dengan tangan."
+    },
+    "abs": {
+      "text": "Gerakkan tangan — jazz hands!"
+    },
+    "abt": {
+      "text": "Tarik napas dalam dan tersenyumlah tanpa alasan."
+    },
+    "abu": {
+      "text": "Alihkan pandangan dari layar dan hitung lima benda yang kamu lihat."
+    },
+    "abv": {
+      "text": "Pijat tangan — tekan titik-titik tekanan."
+    },
+    "abw": {
+      "text": "Lakukan side bend — raih tangan ke atas dan miringkan ke samping."
+    },
+    "abx": {
+      "text": "Lakukan chin tuck — dorong dagu ke belakang."
+    },
+    "aby": {
+      "text": "Lambaikan lengan seperti burung."
+    },
+    "abz": {
+      "text": "Putar pergelangan tangan searah dan berlawanan jarum jam."
+    },
+    "aca": {
+      "text": "Lakukan seated spinal twist — putar badan ke kiri dan kanan."
+    },
+    "acb": {
+      "text": "Coba box breathing: tarik 4, tahan 4, hembuskan 4."
+    },
+    "acc": {
+      "text": "Lepaskan semua ketegangan di tubuh sekarang."
+    },
+    "acd": {
+      "text": "Lakukan leg extension sambil duduk — luruskan lutut."
+    },
+    "ace": {
+      "text": "Regangkan jari-jari membentuk bintang."
+    },
+    "acf": {
+      "text": "Sesuaikan monitor agar sejajar dengan mata."
+    },
+    "acg": {
+      "text": "Minum air — otak juga butuh hidrasi, bro!"
+    },
+    "ach": {
+      "text": "Lakukan chest opener — rapatkan tulang belikat."
+    },
+    "aci": {
+      "text": "Pikirkan tiga hal yang kamu syukuri hari ini."
+    },
+    "acj": {
+      "text": "Buat lingkaran kecil dengan lengan."
+    },
+    "ack": {
+      "text": "Ketuk-ketuk jari di meja seperti main drum."
+    },
+    "acl": {
+      "text": "Tarik napas dalam dan ingat momen bahagia."
+    },
+    "acm": {
+      "text": "Cek kecerahan layar — terlalu terang nggak?"
+    },
+    "acn": {
+      "text": "Lakukan figure-four stretch sambil berdiri kalau bisa."
+    },
+    "aco": {
+      "text": "Rilekskan mata — teknik palming."
+    },
+    "acp": {
+      "text": "Gerakkan lengan seperti membuat snow angel."
+    },
+    "acq": {
+      "text": "Makan buah atau camilan sehat."
+    },
+    "acr": {
+      "text": "Regangkan lengan bawah — buka tangan dan tarik jari ke belakang."
+    },
+    "acs": {
+      "text": "Pijat tengkuk beberapa detik."
+    },
+    "act": {
+      "text": "Lakukan pelvic tilt sambil duduk — gerakkan pinggul."
+    },
+    "acu": {
+      "text": "Pikirkan sesuatu yang kamu tunggu-tunggu."
+    },
+    "acv": {
+      "text": "Regangkan hamstring sambil duduk."
+    },
+    "acw": {
+      "text": "Buka jendela dan hirup udara segar."
+    },
+    "acx": {
+      "text": "Lakukan face yoga — buat ekspresi konyol!"
+    },
+    "acy": {
+      "text": "Sesuaikan kursi agar punggung nyaman."
+    },
+    "acz": {
+      "text": "Siapa yang ingin kamu ucapkan terima kasih hari ini?"
+    },
+    "ada": {
+      "text": "Remas dan lepaskan bola stres atau bantal."
+    },
+    "adb": {
+      "text": "Hitung setiap napas — satu sampai sepuluh."
+    },
+    "adc": {
+      "text": "Sudah cukup minum air hari ini belum?"
+    },
+    "add": {
+      "text": "Gerakkan mata melingkar — searah dan berlawanan jarum jam."
+    },
+    "ade": {
+      "text": "Tepuk punggungmu sendiri — kamu sudah hebat hari ini!"
+    },
+    "adf": {
+      "text": "Regangkan telapak kaki — berdiri dan rentangkan."
+    },
+    "adg": {
+      "text": "Jeda mindful — apa yang kamu rasakan sekarang?"
+    },
+    "adh": {
+      "text": "Miringkan telinga ke bahu perlahan."
+    },
+    "adi": {
+      "text": "Goyang-goyangkan semua jari — tangan dan kaki."
+    },
+    "adj": {
+      "text": "Body scan cepat — di mana ada ketegangan?"
+    },
+    "adk": {
+      "text": "Tersenyum dan syukuri tubuh yang masih bekerja."
+    },
+    "adl": {
+      "text": "Gabut sebentar itu wajar — tapi jangan lupa gerak!"
+    },
+    "adm": {
+      "text": "Rebahan mental dulu sebentar, terus balik kerja ya."
     }
   },
   "longBreakIdeas": {
     "aaa": {
-      "title": "Tidak sendiri",
-      "text": "Apakah Anda merasa sulit untuk istirahat sendirian? Cobalah untuk melakukannya dengan rekan kerja. Selain membuatnya lebih mudah untuk tetap istirahat, Anda akan memiliki kesempatan untuk mengenal mereka lebih baik. Beristirahat bersama meningkatkan produktivitas."
+      "title": "Istirahat Pomodoro",
+      "text": "Satu siklus Pomodoro selesai! Berdiri, regangkan badan, dan beri hadiah kecil untuk dirimu sendiri."
     },
     "aab": {
-      "title": "Menyingkir",
-      "text": "Pernahkah Anda memperhatikan bagaimana otak Anda bisa memikirkan sesuatu dengan sendirinya? Yang diperlukan hanyalah menjauh dari komputer dan beristirahat sejenak untuk memikirkan sesuatu yang sama sekali tidak berhubungan."
+      "title": "Power Nap",
+      "text": "Tidur sebentar 10-15 menit. Pasang alarm — jangan kebablasan ya!"
     },
     "aac": {
-      "title": "Istirahat Mikro",
-      "text": "Istirahat adalah komponen kunci dalam memastikan kinerja sistem muskuloskeletal. Istirahat yang sering dapat mengurangi durasi tugas dan membantu menurunkan risiko cedera ergonomis."
-    },
-    "aae": {
-      "title": "Berkedip",
-      "text": "Melihat layar untuk waktu yang lama menyebabkan Anda lebih sedikit berkedip, sehingga membuat mata Anda perih. Berkedip cepat selama beberapa detik untuk menyegarkan lapisan air mata dan membersihkan debu dari permukaan mata."
-    },
-    "aaf": {
-      "title": "Ergonomi",
-      "text": "Ketinggian dan sudut keyboard, mouse, monitor, atau permukaan kerja yang tidak tepat dapat menyebabkan masalah kesehatan. Luangkan waktu untuk membaca tentang meja ergonomis."
-    },
-    "aag": {
-      "title": "Bergerak",
-      "text": "Ada banyak cara untuk berolahraga di kantor Anda. Cobalah jalan di tempat atau lakukan push-up meja."
-    },
-    "aah": {
-      "title": "Mengubah",
-      "text": "Apakah Anda memiliki bola stabilitas atau meja kerja berdiri? Pertimbangkan untuk mengganti kursi meja Anda dengan benda tersebut untuk sementara waktu."
-    },
-    "aaj": {
-      "title": "Teknologi",
-      "text": "Bagaimana kalau jalan-jalan tanpa alat teknologi?"
-    },
-    "aak": {
-      "title": "Metabolisme",
-      "text": "Penelitian yang muncul menunjukkan bahwa duduk untuk waktu yang lama berkontribusi terhadap risiko sindrom metabolik, risiko serangan jantung dan stroke dan risiko kematian secara keseluruhan, dan masih banyak lagi. Mengambil istirahat dengan berjalan-jalan secara teratur dapat membantu sirkulasi tubuh Anda, yang mana mampu mengatasi beberapa masalah tersebut."
-    },
-    "aal": {
-      "title": "Rapat Aktif",
-      "text": "Bagaimana dengan memindahkan rapat dari ruang konferensi ke tempat terbuka? Berjalan tidak hanya membakar kalori tetapi bahkan dapat menumbuhkan rasa kolaborasi."
-    },
-    "aam": {
-      "title": "Buah",
-      "text": "Luangkan waktu Anda dan makan buah. Perlahan-lahan. Perhatikan rasanya, teksturnya, kesegarannya."
-    },
-    "aan": {
-      "title": "Kamar mandi",
-      "text": "Berjalan ke kamar mandi terjauh di fasilitas tempat kerja ketika pergi ke kamar kecil."
-    },
-    "aao": {
-      "title": "Rehat Kopi",
-      "text": "Pergi rehat kopi? Pertimbangkan untuk berjalan 5 menit setiap kali Anda melakukannya."
-    },
-    "aaq": {
-      "title": "Belajar",
-      "text": "Dalam sebuah penelitian terhadap sukarelawan yang sehat, peneliti NIH menemukan bahwa istirahat sejenak, lebih awal dan sering, dapat membantu otak kita mempelajari keterampilan baru."
-    },
-    "aar": {
-      "title": "Latihan",
-      "text": "Bukti menunjukkan sejumlah kecil olahraga teratur dapat membawa manfaat kesehatan yang dramatis, termasuk mengurangi stres secara terukur."
-    },
-    "aas": {
-      "title": "Mengulang",
-      "text": "Sudahkah Anda menemukan rutinitas peregangan Anda? Jangan lupa untuk mengulanginya lebih dari sekali untuk melawan efek duduk yang lama dengan lebih baik."
-    },
-    "aat": {
-      "title": "Pergelangan Tangan dan Lengan Bawah",
-      "text": "Rentangkan tangan Anda dengan telapak tangan menghadap ke arah Anda, lalu perlahan-lahan putar tangan empat kali searah jarum jam, lalu empat kali berlawanan arah jarum jam."
+      "title": "Waktu Corat-Coret",
+      "text": "Ambil kertas dan gambar apa saja — rumah, kucing, atau karikatur teman kerja."
     },
     "aad": {
-      "title": "Meditasi",
-      "text": "Studi penelitian menunjukkan bahwa latihan berbasis kesadaran membantu mengurangi kecemasan, depresi, stres, dan rasa sakit, dan membantu meningkatkan kesehatan umum, kesehatan mental, dan kualitas hidup. Tidak yakin bagaimana memulainya? Ada banyak aplikasi untuk membantu Anda."
+      "title": "Momen Musik",
+      "text": "Putar lagu favorit dan nikmati — nyanyi, joget, atau cuma dengerin aja."
+    },
+    "aae": {
+      "title": "Jurnal Syukur",
+      "text": "Tulis tiga hal yang kamu syukuri hari ini. Bagus untuk kesehatan mental."
+    },
+    "aaf": {
+      "title": "Air Dingin",
+      "text": "Cuci muka dengan air dingin atau taruh kompres dingin di mata — langsung segar!"
+    },
+    "aag": {
+      "title": "Rawat Tanaman",
+      "text": "Siram tanaman atau sekadar pandangi mereka. Terapi hijau gratis!"
+    },
+    "aah": {
+      "title": "Brain Dump",
+      "text": "Tulis semua yang ada di pikiran ke kertas — tanpa filter, tanpa penilaian. Bersihkan otak."
     },
     "aai": {
-      "text": "Apakah Anda melamun atau kesulitan fokus? Itu tandanya kamu butuh istirahat.",
-      "title": "Melihat"
+      "title": "Terapi Hewan",
+      "text": "Kalau punya hewan peliharaan, main bareng sekarang. Kalau nggak, tonton video hewan lucu."
     },
-    "aau": {
-      "title": "Peregangan punggung",
-      "text": "Kaitkan jari-jemari tangan di belakang kepala Anda, kemudian perlahan bergerak ke atas kepala hingga posisi telapak tangan menghadap atas."
+    "aaj": {
+      "title": "Momen Ketawa",
+      "text": "Tonton video lucu atau ingat jokes paling kocak yang pernah kamu dengar."
+    },
+    "aak": {
+      "title": "Udara Segar",
+      "text": "Keluar dan hirup udara segar. Biarkan angin menerpa wajah."
+    },
+    "aal": {
+      "title": "Body Scan Meditasi",
+      "text": "Dari kepala sampai kaki, periksa setiap bagian tubuh perlahan dan lepaskan ketegangan."
+    },
+    "aam": {
+      "title": "Yoga di Meja",
+      "text": "Lakukan pose yoga sederhana di kursi — cat-cow duduk, twist, dan forward fold."
+    },
+    "aan": {
+      "title": "Baca Sebentar",
+      "text": "Ambil buku dan baca minimal 5 halaman. Fiksi, non-fiksi, apa saja."
+    },
+    "aao": {
+      "title": "Cek Siklus 90 Menit",
+      "text": "Kalau sudah 90 menit fokus, ini waktu yang tepat untuk reset otak."
     },
     "aap": {
-      "title": "Rekan Kerja",
-      "text": "Jangan mengirim email atau mengirim pesan ke rekan kantor, berjalan ke meja mereka untuk berkomunikasi dengan mereka."
+      "title": "Curiosity Break",
+      "text": "Cari fakta acak atau trivia — setiap hari belajar hal baru!"
     },
-    "aay": {
-      "title": "Pilih anak tangga ",
-      "text": "Penelitian membuktikan bahwa mendaki anak tangga, yang tergolong aktivitas fisik berintensitas tinggi, membakar lebih banyak kalori tiap menitnya ketimbang jogging."
+    "aaq": {
+      "title": "Box Breathing",
+      "text": "Tarik napas 4 hitungan, tahan 4, hembuskan 4, tahan 4. Ulangi 4 kali untuk ketenangan."
     },
-    "aba": {
-      "text": "Tempat yang bersih membantumu fokus ketika bekerja dan keberihan sering berkaitan dengan emosi positif seperti kebahagiaan.",
-      "title": "Merapikan"
+    "aar": {
+      "title": "Dance Break!",
+      "text": "Putar lagu dance favorit dan menari seperti nggak ada yang lihat!"
     },
-    "abc": {
-      "title": "Transportasi Umum",
-      "text": "Jika kamu biasanya menggunakan transportasi umum , kamu bisa memilih berdiri ketimbang duduk. Jika dimungkinkan, coba untuk mengganti moda transportasimu sebanyak mungkin dengan bersepeda atau jalan kaki."
+    "aas": {
+      "title": "Telepon Teman",
+      "text": "Telepon atau kirim pesan ke teman atau keluarga. Koneksi sosial itu self-care juga."
     },
-    "aax": {
-      "text": " Lakukan olahraga yang meningkatkan denyut jantung hingga 120 beat per menit selama 20 menit setiap empat atau lima hari seminggu. Meningkatkan detak jantung secara teratur dapat meningkatkan kesehatan kardiovaskular.",
-      "title": "Denyut"
+    "aat": {
+      "title": "Terapi Sinar Matahari",
+      "text": "Keluar dan berjemur 5-10 menit. Loading vitamin D!"
     },
-    "aaz": {
-      "title": "Buat karya seni",
-      "text": "Terapi kesenian dikenal memiliki keuntungan meningkatkan kesehatan mental, khususnya dalam hal managemen stress. Bagaimana dengan menulis puisi singkat, mengambil foto atau menggambar sesuatu yang kecil?"
-    },
-    "abb": {
-      "text": "Alam dikaitkan dengan emosi positif and mengurangi stress dan kegelisahan. Jika memungkinkan, coba untuk membawa makan siang harianmu ke luar, dikelilingi oleh tumbuhan hijau.",
-      "title": "Makan siang di luar"
-    },
-    "abd": {
-      "title": "Menguap",
-      "text": "Menguap dapat membantu, sebab menguap memproduksi air mata untuk melembabkan dan melumasi mata."
-    },
-    "abe": {
-      "title": "Berganti fokus",
-      "text": "Letakkan satu jari di dekat mata dan fokus padanya. Perlahan gerakkan jari menjauh, kemudian fokus ke sesuatu dikejauhan lalu kembali ke jari. Bawa jari ke dekat mata dan fokus pada sesuatu yang jauh."
+    "aau": {
+      "title": "Relaksasi Progresif",
+      "text": "Tegangkan setiap kelompok otot 5 detik lalu lepaskan. Dari kaki sampai kepala."
     },
     "aav": {
-      "title": "Bergerak",
-      "text": "Untuk setiap tiga puluh menit berdiam diri, Anda harus setidaknya melakukan satu menit peregangan."
+      "title": "Grounding Tanpa Alas Kaki",
+      "text": "Jalan tanpa sepatu di lantai atau tanah — rasakan kontak dengan bumi."
     },
     "aaw": {
-      "title": "Olahraga 7 Menit",
-      "text": "Paket olahraga ini berisi rutinitas olahraga seluruh tubuh dalam waktu singkat. Tetapi seperti olahraga lainnya, berhati-hatilah. Terdapat banyak aplikasi untuk membuat Anda memulai olahraga."
+      "title": "Surat untuk Diri Masa Depan",
+      "text": "Tulis catatan pendek untuk dirimu di masa depan — apa yang ingin kamu sampaikan?"
     },
-    "abg": {
-      "title": "Meremas",
-      "text": "Remas sepasang kaus kaki atau bola karet lembut, tahan selama 5 detik. Ulangi seluruh proses beberapa kali."
+    "aax": {
+      "title": "Detoks Digital",
+      "text": "Taruh HP di ruangan lain selama 10 menit. Nggak akan ada yang kamu lewatkan, serius."
     },
-    "abh": {
-      "title": "Bernapas Lambat",
-      "text": "Penelitian yang muncul menunjukkan potensi penggunaan teknik pernapasan lambat terkontrol sebagai sarana untuk mengoptimalkan parameter fisiologis yang tampaknya terkait dengan kesehatan dan umur panjang."
+    "aay": {
+      "title": "Aturan 2 Menit",
+      "text": "Ada tugas kecil yang kamu hindari? Kalau bisa selesai dalam 2 menit, kerjakan sekarang."
+    },
+    "aaz": {
+      "title": "Reset Postur",
+      "text": "Berdiri, regangkan seluruh tubuh, dan duduk kembali dengan benar. Seperti baru!"
+    },
+    "aba": {
+      "title": "Aromaterapi",
+      "text": "Cium essential oil, kopi, atau bunga. Biarkan indera-inderamu rileks."
+    },
+    "abb": {
+      "title": "Lihat Awan",
+      "text": "Tatap awan dan bayangkan bentuk-bentuk — naga? Bakso? Terserah kamu."
+    },
+    "abc": {
+      "title": "Peregangan Total",
+      "text": "Regangkan seluruh tubuh dari kepala sampai kaki. Raih langit-langit dan lantai."
+    },
+    "abd": {
+      "title": "Kopi atau Teh Mindful",
+      "text": "Buat minuman hangat dan nikmati pelan-pelan — tanpa multitasking."
+    },
+    "abe": {
+      "title": "Jalan-Jalan Singkat",
+      "text": "Keluar dan jalan 5-10 menit. Nggak perlu tujuan."
     },
     "abf": {
-      "title": "Menutup Mata",
-      "text": "Saat duduk, letakkan siku di atas meja dan dekatkan ke tepi meja. Biarkan berat badan Anda turun ke depan dan tutupi mata dengan telapak tangan. Tutup mata Anda dan tarik napas dalam secara perlahan melalui hidung, tahan selama beberapa detik dan hembuskan secara perlahan. Lanjutkan pernapasan dalam."
+      "title": "Bersih-Bersih Meja",
+      "text": "Rapikan meja — buang sampah, organisir barang. Meja bersih, pikiran jernih."
+    },
+    "abg": {
+      "title": "Siapkan Camilan",
+      "text": "Siapkan camilan sehat — buah, kacang, atau roti."
+    },
+    "abh": {
+      "title": "Peregangan Lengkap",
+      "text": "Lakukan rutinitas stretching lengkap — leher, bahu, punggung, kaki."
+    },
+    "abi": {
+      "title": "Waktu Menulis",
+      "text": "Tulis tentang harimu atau rencana besok."
+    },
+    "abj": {
+      "title": "Hening dan Refleksi",
+      "text": "Duduk tenang, pejamkan mata, dan jangan pikirkan apa-apa selama 5 menit."
+    },
+    "abk": {
+      "title": "Musik Rileks",
+      "text": "Putar musik menenangkan — lo-fi, klasik, atau suara hujan."
+    },
+    "abl": {
+      "title": "Gerak Aktif",
+      "text": "Lakukan jumping jacks, squat, atau jalan di tempat selama 3 menit."
+    },
+    "abm": {
+      "title": "Spa Mata",
+      "text": "Tutup mata dengan handuk hangat atau telapak tangan selama 3 menit."
+    },
+    "abn": {
+      "title": "Cek Hidrasi",
+      "text": "Minum dua gelas air dan isi ulang botol. Terhidrasi = Bahagia."
+    },
+    "abo": {
+      "title": "Momen Syukur",
+      "text": "Pikirkan lima orang yang membahagiakan hidupmu dan ucapkan terima kasih dalam hati."
+    },
+    "abp": {
+      "title": "Koneksi Sosial",
+      "text": "Chat atau telepon seseorang yang sudah lama nggak kamu hubungi."
+    },
+    "abq": {
+      "title": "Istirahat Kreatif",
+      "text": "Gambar, tulis puisi, atau buat origami — nggak harus bagus, yang penting seru!"
+    },
+    "abr": {
+      "title": "Meditasi Singkat",
+      "text": "Lakukan meditasi terpandu 5 menit — banyak yang gratis di YouTube."
+    },
+    "abs": {
+      "title": "Lepaskan Leher dan Bahu",
+      "text": "Putar leher dan bahu perlahan untuk melepaskan ketegangan."
+    },
+    "abt": {
+      "title": "Mini Leg Day",
+      "text": "Lakukan wall sit atau calf raises selama 1 menit — leg day di kantor!"
+    },
+    "abu": {
+      "title": "Tangga Napas",
+      "text": "Bernapas: tarik 2 hitungan, hembuskan 2. Lalu 3-3, 4-4, sampai 8-8."
+    },
+    "abv": {
+      "title": "Istirahat Kaki",
+      "text": "Lepas sepatu dan pijat kaki. Kamu layak mendapatkannya."
+    },
+    "abw": {
+      "title": "Menatap Jendela",
+      "text": "Lihat keluar jendela dan biarkan pikiran mengembara beberapa menit."
+    },
+    "abx": {
+      "title": "Rapih-Rapih Cepat",
+      "text": "Pilih satu laci atau folder dan rapikan dalam 5 menit."
+    },
+    "aby": {
+      "title": "Perawatan Lengan dan Pergelangan",
+      "text": "Regangkan lengan dan pergelangan — apalagi kalau banyak mengetik."
+    },
+    "abz": {
+      "title": "Mobilitas Tulang Belakang",
+      "text": "Lakukan cat-cow stretches — gerakkan tulang belakang naik turun."
+    },
+    "aca": {
+      "title": "Makan Mindful",
+      "text": "Kalau sedang makan, nikmati setiap suapan — perhatikan rasa dan teksturnya."
+    },
+    "acb": {
+      "title": "Buka Pinggul",
+      "text": "Lakukan seated figure-four atau lingkaran pinggul berdiri."
+    },
+    "acc": {
+      "title": "Tantangan Keseimbangan",
+      "text": "Berdiri satu kaki selama 30 detik per sisi — latihan keseimbangan!"
+    },
+    "acd": {
+      "title": "Cek Suhu",
+      "text": "Kepanasan atau kedinginan? Sesuaikan lingkunganmu biar nyaman."
+    },
+    "ace": {
+      "title": "Rayakan Pencapaian Kecil",
+      "text": "Apa yang sudah kamu capai hari ini? Sekecil apa pun, rayakan!"
+    },
+    "acf": {
+      "title": "Pesan Semangat",
+      "text": "Bilang ke dirimu sendiri: 'Aku sudah berusaha keras. Aku pantas istirahat.'"
+    },
+    "acg": {
+      "title": "Main Sebentar",
+      "text": "Main game sederhana — puzzle, Wordle, atau apa aja yang ringan."
+    },
+    "ach": {
+      "title": "Refleksi Tenang",
+      "text": "Refleksi: apa pelajaran yang kamu dapat minggu ini?"
+    },
+    "aci": {
+      "title": "Rebahan Produktif",
+      "text": "Istirahat bukan berarti malas — ini cara smart buat recharge energi."
     }
+  },
+  "ui": {
+    "loading": "Memuat Pauza…",
+    "preview": {
+      "status": "Pratinjau",
+      "detail": "Pratinjau browser",
+      "action": "Mode pratinjau diaktifkan."
+    },
+    "title": "Pauza",
+    "heroHeadline": "Lindungi ritme kerja dengan antarmuka yang tenang",
+    "heroSubtitle": "Pengaturan sering di depan, kontrol lanjutan di belakang.",
+    "settingsCategories": "Kategori Pengaturan",
+    "settingsCategoriesHint": "Ganti kategori di kiri, lihat pengaturan di kanan.",
+    "currentCategory": "Kategori saat ini",
+    "overview": "Ringkasan",
+    "overviewHint": "Rangkuman status, aktivitas terbaru, dan akses cepat.",
+    "liveOverview": "Ringkasan langsung",
+    "liveOverviewHint": "Lihat ritme saat ini, status aplikasi, dan jendela istirahat.",
+    "quickActions": "Tindakan cepat",
+    "quickActionsHint": "Tindakan ini langsung memengaruhi ritme saat ini.",
+    "savePanel": "Simpan perubahan",
+    "savePanelHint": "Perubahan berlaku setelah disimpan.",
+    "nextBreakLabel": "Istirahat berikutnya",
+    "currentBreakLabel": "Sedang istirahat",
+    "lastActionLabel": "Tindakan terakhir",
+    "runtimeLabel": "Waktu jalan",
+    "platformLabel": "Platform",
+    "versionLabel": "Versi",
+    "breakFeelLabel": "Gaya istirahat",
+    "placementLabel": "Posisi jendela",
+    "pendingChanges": "Perubahan belum disimpan",
+    "synced": "Tersinkron",
+    "saving": "Menyimpan…",
+    "allSet": "Siap",
+    "noCurrentBreak": "Tidak ada istirahat aktif",
+    "liveSignals": "Sinyal langsung",
+    "general": "Umum",
+    "preferences": "Preferensi",
+    "currentStatus": "Status saat ini",
+    "language": "Bahasa",
+    "languageChinese": "Tionghoa Sederhana",
+    "languageEnglish": "Inggris",
+    "launchOnLogin": "Mulai saat masuk",
+    "enabled": "Aktif",
+    "disabled": "Nonaktif",
+    "schedule": "Jadwal",
+    "interruptions": "Notifikasi & Interupsi",
+    "sectionScheduleHint": "Hanya menampilkan pengaturan ritme yang Anda sesuaikan setiap hari.",
+    "microbreaks": "Istirahat mikro",
+    "microbreaksHint": "Pengisian ulang singkat saat bekerja.",
+    "longBreaks": "Istirahat panjang",
+    "longBreaksHint": "Istirahat penuh setelah beberapa siklus.",
+    "interval": "Interval",
+    "every": "Frekuensi",
+    "durationLabel": "Durasi",
+    "behavior": "Perilaku",
+    "allowPostpone": "Izinkan tunda",
+    "signals": "Sinyal",
+    "sectionSignalsHint": "Bantu Pauza memilih waktu yang tepat untuk memberi tahu.",
+    "naturalBreaks": "Istirahat alami",
+    "naturalBreaksHint": "Reset otomatis saat Anda pergi cukup lama.",
+    "resetAfter": "Reset setelah",
+    "dnd": "Jangan Ganggu",
+    "dndHint": "Jeda saat mode fokus sistem aktif",
+    "sectionSurfaceHint": "Kontrol intensitas interupsi dan posisi jendela istirahat.",
+    "sectionGeneralHint": "Preferensi global minimal.",
+    "notificationsCategory": "Notifikasi & Tunda",
+    "notificationsCategoryHint": "Kelola waktu pra-notifikasi dan aturan penundaan.",
+    "surfaceCategory": "Interupsi & Tata Letak",
+    "surfaceCategoryHint": "Kontrol tampilan, posisi, dan keketatan.",
+    "smartPause": "Jeda pintar",
+    "smartPauseHint": "Pauza mencari momen alami dulu, lalu melonggarkan bertahap.",
+    "generalAndShortcuts": "Umum & Pintasan",
+    "generalAndShortcutsHint": "Kelola bahasa, mulai otomatis, dan pintasan.",
+    "advanced": "Lanjutan",
+    "sectionAdvancedHint": "Kontrol lebih dalam, opsi kompatibilitas, dan pintasan.",
+    "appExclusions": "Pengecualian aplikasi",
+    "appExclusionsHint": "Aplikasi yang menghentikan atau melanjutkan notifikasi.",
+    "appExclusionsEnable": "Aktifkan",
+    "appRulePause": "Jeda saat cocok",
+    "appRuleResume": "Lanjut hanya saat cocok",
+    "pause30": "Jeda 30 menit",
+    "focus45": "Fokus 45 menit",
+    "resume": "Lanjutkan",
+    "clearFocus": "Akhiri fokus",
+    "save": "Simpan",
+    "revert": "Kembalikan",
+    "defaults": "Bawaan",
+    "preBreakNotifications": "Pra-notifikasi",
+    "beforeLabel": "sebelum",
+    "postpone": "Nanti",
+    "scheduleControl": "Kontrol jadwal",
+    "resetScheduleHint": "Mulai ulang penghitung dari sekarang.",
+    "postponeCategoryHint": "Atur waktu tunda dan batas terpisah untuk istirahat mikro dan panjang.",
+    "limitLabel": "Batas",
+    "breakSurface": "Jendela istirahat",
+    "breakDisplayMode": "Mode tampilan",
+    "breakBackdrop": "Tema latar",
+    "breakBackdropHint": "Pilih latar suasana untuk jendela istirahat.",
+    "breakBackdropPaper": "Kertas",
+    "breakBackdropDawn": "Fajar",
+    "breakBackdropForest": "Hutan",
+    "breakBackdropNight": "Malam",
+    "breakBackdropCustom": "Kustom",
+    "customWallpaper": "Wallpaper kustom",
+    "customWallpaperHint": "Unggah gambar lokal sebagai latar istirahat.",
+    "customWallpaperChoose": "Pilih gambar",
+    "customWallpaperReplace": "Ganti gambar",
+    "customWallpaperRemove": "Hapus",
+    "customWallpaperEmpty": "Belum ada wallpaper kustom",
+    "customWallpaperEmptyHint": "Tanpa gambar, tema bawaan akan digunakan.",
+    "customWallpaperReady": "Gambar dikompresi dan disimpan lokal sebagai latar istirahat.",
+    "breakIdeas": "Tips istirahat",
+    "breakIdeasHint": "Tampilkan tips singkat setiap istirahat.",
+    "breakSounds": "Suara istirahat",
+    "breakSoundsHint": "Putar suara sebelum istirahat dimulai dan saat berakhir.",
+    "microbreakStartSound": "Suara mulai istirahat mikro",
+    "microbreakEndSound": "Suara akhir istirahat mikro",
+    "longBreakStartSound": "Suara mulai istirahat panjang",
+    "longBreakEndSound": "Suara akhir istirahat panjang",
+    "breakSoundVolume": "Volume",
+    "breakSoundSilence": "Senyap",
+    "breakSoundCrystalGlass": "Gelas kristal",
+    "breakSoundWindChime": "Lonceng angin",
+    "breakSoundTicToc": "Tik tok",
+    "breakSoundReverie": "Lamunan",
+    "reminderMode": "Mode pengingat",
+    "reminderModeHint": "Pintar mencari momen alami, paksa langsung menginterupsi.",
+    "reminderModeSmart": "Pintar",
+    "reminderModeForced": "Paksa",
+    "window": "Jendela",
+    "fullscreen": "Layar penuh",
+    "promptStyleGentle": "Lembut",
+    "promptStyleBalanced": "Seimbang",
+    "promptStyleImmersive": "Imersif",
+    "allScreens": "Semua layar",
+    "screenPrimary": "Layar utama",
+    "screenCursor": "Layar kursor",
+    "showTimeToBreakInTray": "Tampilkan waktu ke istirahat di bilah status",
+    "currentTimeInBreaks": "Tampilkan waktu saat ini di jendela istirahat",
+    "currentTimeInBreaksHint": "Tampilkan waktu sistem di pojok kanan atas.",
+    "strictModes": "Mode ketat",
+    "strictModesHint": "Kontrol apakah istirahat bisa dilewati.",
+    "microbreakStrict": "Istirahat mikro ketat",
+    "longBreakStrict": "Istirahat panjang ketat",
+    "manualFinish": "Selesai manual setelah timer",
+    "showTrayMenuInStrictMode": "Tampilkan menu saat mode ketat",
+    "shortcuts": "Pintasan",
+    "shortcutsHint": "Kosongkan untuk menonaktifkan. Contoh: CmdOrCtrl+Shift+P",
+    "shortcutReveal": "Buka pengaturan",
+    "shortcutFocus45": "Fokus 45 menit",
+    "shortcutPauseToggle": "Alih jeda",
+    "shortcutPause30": "Jeda 30 menit",
+    "shortcutPause60": "Jeda 1 jam",
+    "shortcutPause120": "Jeda 2 jam",
+    "shortcutPause300": "Jeda 5 jam",
+    "shortcutSkipScheduled": "Lompat ke istirahat berikutnya",
+    "shortcutSkipMicrobreak": "Lompat ke istirahat mikro",
+    "shortcutSkipLongBreak": "Lompat ke istirahat panjang",
+    "shortcutReset": "Reset jadwal",
+    "suffix": {
+      "secondsLong": "detik",
+      "secondsBefore": "detik sebelum",
+      "minutesApart": "menit",
+      "cycles": "siklus",
+      "minutesLong": "menit",
+      "minutesShortPostpone": "menit",
+      "minutesLongPostpone": "menit",
+      "minutesAway": "menit",
+      "minutes": "menit",
+      "times": "kali"
+    },
+    "status": {
+      "noBreakScheduled": "Tidak ada istirahat",
+      "microbreak": "Istirahat mikro",
+      "longBreak": "Istirahat panjang",
+      "nextBreak": "{{label}} dalam {{duration}}",
+      "focus": "Fokus {{duration}}",
+      "pause": "Jeda {{duration}}",
+      "pauseForever": "Jeda tanpa batas",
+      "blockedBy": "Dijeda oleh {{match}}",
+      "appRuleActive": "Aturan aplikasi aktif",
+      "dndActive": "Jangan ganggu aktif"
+    },
+    "error": {
+      "loadState": "Tidak dapat memuat status Pauza"
+    },
+    "breakCopy": {
+      "clearedDetail": "Tidak ada istirahat aktif saat ini.",
+      "manualAwaiting": "Waktu habis. Selesaikan istirahat ini sebelum kembali bekerja.",
+      "awaitingFinish": "Menunggu selesai",
+      "actions": {
+        "resumeWork": "Kembali bekerja",
+        "done": "Selesai",
+        "later": "Nanti",
+        "skip": "Lewati"
+      },
+      "defaultPrompt": {
+        "microbreak": "Berdiri, regangkan bahu dan leher, pandang ke kejauhan.",
+        "longBreak": "Tinggalkan meja beberapa menit untuk mengistirahatkan tubuh dan pikiran."
+      }
+    },
+    "previewAction": {
+      "save": "Pratinjau: Pengaturan diperbarui.",
+      "pause": "Pratinjau: Jeda 30 menit.",
+      "pauseForever": "Pratinjau: Jeda tanpa batas.",
+      "focus": "Pratinjau: Fokus aktif.",
+      "focusCleared": "Pratinjau: Fokus berakhir.",
+      "resume": "Pratinjau: Dilanjutkan.",
+      "reset": "Pratinjau: Jadwal direset.",
+      "autostartOn": "Pratinjau: Mulai otomatis aktif.",
+      "autostartOff": "Pratinjau: Mulai otomatis nonaktif.",
+      "done": "Pratinjau: Istirahat selesai.",
+      "later": "Pratinjau: Istirahat ditunda.",
+      "skip": "Pratinjau: Istirahat dilewati."
+    },
+    "preBreakSoundHint": "Suara lembut sebelum timer habis membantu Anda menyelesaikan pekerjaan.",
+    "previewSound": "Dengarkan",
+    "appExclusionsSearch": "Cari dari aplikasi yang berjalan",
+    "appExclusionsSearchPlaceholder": "Nama aplikasi…",
+    "appExclusionsSearchLoading": "Memuat…",
+    "appExclusionsSearchEmpty": "Tidak ditemukan",
+    "appExclusionsManualHint": "Ketik nama proses (satu per baris)",
+    "appExclusionsAdd": "Klik untuk menambah ke daftar pengecualian"
   }
 }

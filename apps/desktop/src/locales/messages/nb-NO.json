@@ -92,7 +92,7 @@
       "version": "Versjon ",
       "tagline": "Pausepåminnelsesprogrammet",
       "designedBy": "Ikon- og grensesnittsdesign av Colin Shanley",
-      "janH": "Clarke Young",
+      "clarkeY": "Clarke Young",
       "developedBy": "Utviklet av",
       "dot": ".",
       "ourWebsite": "besøk vår nettside",
@@ -212,257 +212,748 @@
     "toolTipHeader": "Pauza - Pausepåminnelsesprogrammet"
   },
   "miniBreakIdeas": {
-    "aao": {
-      "text": "En virkelig ergonomisk arbeidsplass er en du kan dytte deg vekk fra."
+    "aaa": {
+      "text": "Gå og hent et glass vann."
     },
     "aab": {
-      "text": "Se sakte hele veien til venstre, og så til høyre."
-    },
-    "abk": {
-      "text": "Stå rett opp med armene ned langs siden. Press skulderbladene sammen og hold i 10 sekunder."
-    },
-    "abi": {
-      "text": "Sitt rett med armene hengene ned langs sidene, og sakte roter nakken i en stor sirkel i en retning."
+      "text": "Vannflasken din dømmer deg. Ta en slurk."
     },
     "aac": {
-      "text": "Se sakte helt opp, og så ned."
-    },
-    "abe": {
-      "text": "Rist hendene for å slippe ut spenningen."
-    },
-    "abl": {
-      "text": "Stå opp med armene strukket rett langs skuldrene. Ta hengene bak ryggen, hold dem der en stund og strekk armene ut igjen."
-    },
-    "aaa": {
-      "text": "Gå og ta ett glass vann."
+      "text": "Hydreringssjekk: når drakk du vann sist?"
     },
     "aad": {
-      "text": "Lukk øynene og ta noen dype åndedrag."
+      "text": "Se sakte helt til venstre, så helt til høyre."
     },
     "aae": {
-      "text": "Lukk øynene og slapp av."
+      "text": "Se sakte helt opp, så helt ned."
     },
     "aaf": {
-      "text": "Strekk på bena."
+      "text": "Se på noe 6 meter unna i 20 sekunder — 20-20-20-regelen."
     },
     "aag": {
-      "text": "Strekk på deg med armene i været."
+      "text": "Blink raskt 20 ganger. De tørre øynene dine takker deg."
     },
     "aah": {
-      "text": "Sitter du riktig nå?"
+      "text": "Lukk øynene og rull øyeeplene forsiktig i sirkler."
     },
     "aai": {
-      "text": "Snu sakte hodet til siden og hold det der i 10 sekunder."
+      "text": "Med lukkede øyne — se sakte opp mot taket, så ned."
     },
     "aaj": {
-      "text": "Vipp hodet til siden og hold det der i 5 til 10 sekunder."
+      "text": "Med lukkede øyne — se sakte til venstre, så til høyre."
     },
     "aak": {
-      "text": "Stå opp fra stolen og strekk på deg."
+      "text": "Gni hendene sammen til de er varme, og legg dem forsiktig over lukkede øyne."
     },
     "aal": {
-      "text": "Fokuser på en gjenstand minst 20 meter unna."
+      "text": "Se ut av vinduet i 30 sekunder. Husker du verden der ute?"
     },
     "aam": {
-      "text": "Bruk et øyeblikk til å tenke på noe du setter pris på."
+      "text": "Se bort fra skjermen og fokuser på noe grønt. Øynene elsker grønt."
     },
     "aan": {
-      "text": "Smil et øyeblikk og tenk på at du lever."
+      "text": "La litt naturlig lys nå øynene dine."
+    },
+    "aao": {
+      "text": "Lukk øynene og ta noen dype pust."
     },
     "aap": {
-      "text": "Lukk øynene og tell at du puster."
+      "text": "Lukk øynene og slapp av."
     },
     "aaq": {
-      "text": "Lukk øynene og gi navn på det du hører."
+      "text": "Lukk øynene og tell pustene dine."
     },
     "aar": {
-      "text": "Plasser fingertuppene på skuldrene. Rull skuldrene forover i 10 sekunder, og så bakover."
+      "text": "Pust inn i 4 takter, hold i 7, pust ut i 8. Den klassiske 4-7-8-teknikken."
     },
     "aas": {
-      "text": "Reis høyre arm, strekk den over hodet ditt mot venstre og hold i 10 sekunder. Gjenta med venstre arm."
+      "text": "Ta 3 langsomme pust. Inn gjennom nesen, ut gjennom munnen."
     },
     "aat": {
-      "text": "Grip hver finger på din venstre hånd med din høyre hånd og press. Gjenta med motsatte hender."
+      "text": "Ta et dypt innpust så magen utvider seg. Det heter diafragma-pusting."
     },
     "aau": {
-      "text": "Stå opp og gjør et utfall. Hold i 10 sekunder, og så gjør utfall med det andre benet."
+      "text": "Gjør absolutt ingenting i 20 sekunder. Vanskeligere enn det høres ut."
     },
     "aav": {
-      "text": "Lukk øynene og bare legg merke til hva som skjer i øyeblikket, uten å dømme."
+      "text": "Sjekk kroppsholdningen — skuldre tilbake, føtter flatt på gulvet."
     },
     "aaw": {
-      "text": "Fokuser hvert 20 minutt i 20 sekunder på en gjenstand 20 meter unna."
-    },
-    "aax": {
-      "text": "Trenger du hjelp, spør om det."
-    },
-    "aay": {
-      "text": "Gjør én ting av gangen."
-    },
-    "aaz": {
-      "text": "Bruker du fokuset ditt fornuftig?"
-    },
-    "aba": {
       "text": "Bytt sittestilling."
     },
+    "aax": {
+      "text": "Senk skuldrene. De har vært oppe ved ørene hele tiden."
+    },
+    "aay": {
+      "text": "Slapp av i kjeven. Du visste ikke at den var spent, gjord du vel?"
+    },
+    "aaz": {
+      "text": "Rett opp ryggen. Forestill deg en tråd som drar deg opp fra toppen av hodet."
+    },
+    "aba": {
+      "text": "Å sitte er den nye røykingen. Reis deg opp et minutt."
+    },
     "abb": {
-      "text": "Utsett øynene dine for naturlig lys."
+      "text": "Drei hodet sakte til den ene siden og hold i 10 sekunder. Bytt."
     },
     "abc": {
-      "text": "Lukk øynene og sakte, forsiktig se opp mot taket og tilbake til gulvet."
+      "text": "Vipp hodet sakte til siden og hold i 5-10 sekunder."
     },
     "abd": {
-      "text": "Med øynene lukket, beveg øynene sakte og forsiktig til venstre, og så sakte til høyre."
+      "text": "Dra forsiktig det ene øret mot skulderen. Kjenn nakkestrekket."
+    },
+    "abe": {
+      "text": "Roter nakken i en sakte, myk sirkel."
     },
     "abf": {
-      "text": "Rør ved hver fingertupp med tuppen av tommelen slik at det formes en O."
+      "text": "Vipp hodet fremover, bakover, venstre, høyre. Fullt kompass-reset."
     },
     "abg": {
-      "text": "Lag en knyttneve og slipp så sakte opp mot taket, som om du ber noen om å stoppe."
+      "text": "Rull skuldrene fremover i 10 sekunder, så bakover."
     },
     "abh": {
-      "text": "Lag en knyttneve og strekk så fingrene ut så langt du kan."
+      "text": "Trekk skuldrene opp til ørene og slipp. Gjenta 5 ganger."
+    },
+    "abi": {
+      "text": "Klem skulderbladene sammen og hold i 5 sekunder."
     },
     "abj": {
-      "text": "Sitt rett og sakte vend hodet på skakke mot skuldrene med hjelp av hånden så du strekker på nakken."
+      "text": "Løft høyre arm over hodet, len til venstre, hold 10 sekunder. Bytt."
+    },
+    "abk": {
+      "text": "Kryss den ene armen over brystet og dra den inn med den andre hånden. Bytt."
+    },
+    "abl": {
+      "text": "Hold den ene armen rett opp, bruk den andre til å skyve albuen bakover. Hold 10 sekunder. Bytt."
+    },
+    "abm": {
+      "text": "Flett fingrene bak ryggen og strekk brystkassen."
+    },
+    "abn": {
+      "text": "Flett fingrene og skyv håndflatene mot taket. Strekk!"
+    },
+    "abo": {
+      "text": "Hold armene rett ut til sidene. Lag små sirkler. Det brenner raskere enn du tror."
+    },
+    "abp": {
+      "text": "Rist hendene for å slippe spenningen."
+    },
+    "abq": {
+      "text": "Berør hver fingertupp mot tommelen, som en O."
+    },
+    "abr": {
+      "text": "Knytt neven, så spre fingrene ut og strekk dem."
+    },
+    "abs": {
+      "text": "Knytt neven, så åpne den som om du sier stopp."
+    },
+    "abt": {
+      "text": "Klem hver finger på venstre hånd med høyre. Bytt hender."
+    },
+    "abu": {
+      "text": "Strekk håndleddene — strekk armen og dra forsiktig fingrene tilbake."
+    },
+    "abv": {
+      "text": "Roter håndleddene 10 ganger med klokken, så mot klokken."
+    },
+    "abw": {
+      "text": "Legg hånden flatt på bordet og spre forsiktig fingrene."
+    },
+    "abx": {
+      "text": "Tromm med fingrene på bordet én etter én, lillefinger til tommel. Nå baklengs."
+    },
+    "aby": {
+      "text": "Gi deg selv en håndmassasje. Du har fortjent det."
+    },
+    "abz": {
+      "text": "Reis deg opp og strekk deg. Ryggraden din har ventet."
+    },
+    "aca": {
+      "text": "Sitt på kanten av stolen, vri overkroppen til den ene siden, hold 10 sekunder. Bytt."
+    },
+    "acb": {
+      "text": "Krum ryggen som en katt, la den så henge. Katt-ku-strekk, kontorutgaven."
+    },
+    "acc": {
+      "text": "Legg begge hender bak korsryggen og bøy forsiktig bakover."
+    },
+    "acd": {
+      "text": "Stå med ryggen mot veggen og gli sakte armene opp og ned — veggengel."
+    },
+    "ace": {
+      "text": "Strekk beina."
+    },
+    "acf": {
+      "text": "Reis deg og gjør et utfall. Hold 10 sekunder per bein."
+    },
+    "acg": {
+      "text": "Reis deg og gjør noen knebøy. Stolen er rett bak deg hvis det går galt."
+    },
+    "ach": {
+      "text": "Gjør 10 tåhev ved pulten. Stealth-fitness."
+    },
+    "aci": {
+      "text": "Strekk det ene beinet rett ut mens du sitter. Hold 10 sekunder. Bytt."
+    },
+    "acj": {
+      "text": "Rull anklene i sirkler — med klokken, så mot klokken."
+    },
+    "ack": {
+      "text": "Pek og bøy føttene 10 ganger. Anklene dine har blitt forsømt."
+    },
+    "acl": {
+      "text": "Stå på én fot i 30 sekunder. Bytt. Balanse er en ferdighet."
+    },
+    "acm": {
+      "text": "Vrikk med tærne inni skoene. Ja, alle sammen."
+    },
+    "acn": {
+      "text": "Reis deg og marsjer på stedet i 30 sekunder."
+    },
+    "aco": {
+      "text": "Gjør noen vegg-pushups. Ingen ser på. Sannsynligvis."
+    },
+    "acp": {
+      "text": "Gjør 5 dips på kanten av stolen."
+    },
+    "acq": {
+      "text": "Spenn og slapp av alle muskler fra tærne til pannen. Full kropps-reset."
+    },
+    "acr": {
+      "text": "Skrukk ansiktet sammen i 5 sekunder, slipp så. Ansiktsspenning: borte."
+    },
+    "acs": {
+      "text": "Stå i en døråpning og len deg forsiktig fremover for å strekke brystkassen."
+    },
+    "act": {
+      "text": "Lukk øynene og navngi lydene du hører."
+    },
+    "acu": {
+      "text": "Lukk øynene og legg merke til hva som dukker opp, uten å dømme."
+    },
+    "acv": {
+      "text": "Tenk på noe du er takknemlig for akkurat nå."
+    },
+    "acw": {
+      "text": "Smil. Du lever, og det er ganske koselig."
+    },
+    "acx": {
+      "text": "Ta et mentalt bilde av hvordan kroppen din føles. Noen spente steder?"
+    },
+    "acy": {
+      "text": "Tenk på noe fint du ville sagt til en venn, og si det til deg selv."
+    },
+    "acz": {
+      "text": "Legg merke til 5 ting i rommet du aldri har lagt merke til før."
+    },
+    "ada": {
+      "text": "Lukk øynene og se for deg ditt koseligste sted i 20 sekunder."
+    },
+    "adb": {
+      "text": "Legg telefonen med skjermen ned i 60 sekunder. Ingenting skjer. Lovt."
+    },
+    "adc": {
+      "text": "Tastaturet ditt savner deg ikke. Reis deg opp."
+    },
+    "add": {
+      "text": "Ryggen din har nettopp levert en formell klage. På tide å strekke seg."
+    },
+    "ade": {
+      "text": "Se opp fra skjermen. Plot twist: verden er i 3D."
+    },
+    "adf": {
+      "text": "Gjesp. Selv en falsk gjesp utløser en ekte. Prøv det."
+    },
+    "adg": {
+      "text": "Åpne munnen helt, lukk den sakte igjen. Kjevespenning: borte."
+    },
+    "adh": {
+      "text": "Gi deg selv en klem. Kryss armene og klem. Egenomsorg er ikke rart."
+    },
+    "adi": {
+      "text": "Mini dansepause — bare 10 sekunder. Du vet du vil."
+    },
+    "adj": {
+      "text": "Lat som du drar i et tau over hodet. Sidestrekk aktivert."
+    },
+    "adk": {
+      "text": "Press håndflatene sammen foran brystet og hold. Namaste, koder."
+    },
+    "adl": {
+      "text": "Massér tinningene i små sirkler i 10 sekunder. Umiddelbar ro."
+    },
+    "adm": {
+      "text": "Skjermen din ringte. Den sier du har sittet altfor nært altfor lenge."
     }
   },
   "longBreakIdeas": {
     "aaa": {
-      "text": "Synes du det er vanskelig å ta en pause alene? Forsøk å ta en pause med en kollega. I tillegg til at det blir enklere å ta pauser, så vil dere ha en mulighet til å bli bedre kjent. Å ta pauser sammen øker produktiviteten.",
-      "title": "Ikke alene"
+      "title": "Bedre sammen",
+      "text": "Vanskelig å ta pauser alene? Prøv å ta pause med en kollega. Dere holder bedre fast i det — og kan kose dere over felles klaging om deadlines. Studier viser at sosiale pauser øker produktiviteten."
     },
     "aab": {
-      "title": "Gå vekk",
-      "text": "Legger du noen ganger merke til at hjernen kan finne ut av ting på egen hånd? Alt som trengs er å gå vekk fra datamaskinen og ta en pause for å tenke på noe helt annet enn det du jobber med."
+      "title": "Steg bort",
+      "text": "Har du lagt merke til at de beste ideene dine dukker opp i dusjen? Det er fordi hjernen løser problemer i bakgrunnen. Steg bort fra skjermen og tenk på noe helt annet."
     },
     "aac": {
-      "text": "Hvile er en nøkkelkomponent for å sikre ytelsen til muskel- og skjelettsystemet. Hyppige pauser kan redusere varigheten av en oppgave og bidra til å redusere eksponeringen for ergonomisk skade.",
-      "title": "Minipauser"
-    },
-    "aaf": {
-      "text": "Feil høyde og vinkel på tastaturet, musen, skjermen eller arbeidsflaten kan forårsake helseproblemer. Ta deg tid til å lese om skrivebordsergonomi.",
-      "title": "Ergonomi"
-    },
-    "aak": {
-      "text": "Ny forskning viser at å sitte over lengre perioder bidrar til blant annet risiko for metabolsk syndrom, hjerteinfarkt og hjerneslag og generell dødsrisiko. Å ta regelmessige gåpauser kan hjelpe blodsirkulasjonen din, og jobbe for å motvirke noen av disse problemene.",
-      "title": "Metabolisme"
-    },
-    "aam": {
-      "title": "Frukt",
-      "text": "Ta deg god tid og spis litt frukt. Sakte. Legg merke til smaken, teksturen, friskheten."
-    },
-    "aaq": {
-      "title": "Læring",
-      "text": "I en studie ble det vist at å ta korte pauser, tidlig og ofte, kan hjelpe hjernen vår til å lære nye ferdigheter."
-    },
-    "aap": {
-      "title": "Kollegaer",
-      "text": "Ikke send e-post eller melding til kollegaer, gå til pultene deres for å kommunisere med dem."
-    },
-    "aau": {
-      "title": "Strekking av ryggen",
-      "text": "Slå sammen hendene bak hodet, og løft dem deretter sammen opp over hodet og avslutter med håndflatene vendt oppover."
-    },
-    "aar": {
-      "title": "Trening",
-      "text": "Forskning viser at små mengder regelmessig trening kan gi dramatiske helsegevinster, inkludert målbar reduksjon av stress."
-    },
-    "aat": {
-      "text": "Strekk ut armene med håndflatene vendt mot deg, og roter deretter hendene sakte fire ganger med klokken, deretter fire ganger mot klokken.",
-      "title": "Håndledd og underarm"
-    },
-    "aaw": {
-      "title": "Syv minutter trening",
-      "text": "Denne treningen pakker inn en treningsrutine for hele kroppen på en brøkdel av tiden. Men som med all trening, vær forsiktig. Det er mange apper for å komme i gang."
-    },
-    "abb": {
-      "text": "Naturen er knyttet til positive følelser og redusert stress og angst. Når det er mulig, prøv å ta din daglige lunsjpause ute, omgitt av litt grønt.",
-      "title": "Lunsj utendørs"
-    },
-    "aax": {
-      "text": "Øk pulsen til 120 slag per minutt i 20 minutter i strekk fire eller fem ganger i uken, og gjør alt du liker. Regelmessig heving av hjertefrekvensen resulterer i forbedret kardiovaskulær helse.",
-      "title": "Puls"
-    },
-    "abg": {
-      "text": "Klem et par oppballede sokker eller en myk gummiball, hold i 5 sekunder. Gjenta hele prosessen noen ganger.",
-      "title": "Håndklemme"
-    },
-    "aaz": {
-      "text": "Kunstterapi er kjent for å ha store psykiske fordeler, spesielt når det kommer til stressmestring. Hva med å skrive et raskt dikt, ta et bilde eller male noe lite?",
-      "title": "Lag kunst"
-    },
-    "abd": {
-      "text": "Å gjespe kan være veldig nyttig, siden det produserer tårer for å bidra til å fukte og smøre øynene.",
-      "title": "Gjespe"
-    },
-    "abe": {
-      "text": "Hold en finger tett inntil øyet og fokuser på den. Flytt fingeren sakte vekk, fokuser langt i det fjerne og deretter tilbake til fingeren. Ta fingeren tilbake og fokuser på noe langt unna.",
-      "title": "Endring av fokus"
-    },
-    "abh": {
-      "text": "Ny forskning viser at bruk av kontrollerte sakte pusteteknikker har et potensiale som et middel for å optimalisere fysiologiske parametere som ser ut til å være assosiert med helse og lang levetid.",
-      "title": "Sakte pusting"
-    },
-    "abf": {
-      "text": "Mens du sitter, fest albuene på skrivebordet og nær skrivebordskanten. La vekten falle fremover og legg hendene over øynene. Lukk øynene og inhaler sakte gjennom nesen og hold i noen sekunder. Fortsett å puste dypt.",
-      "title": "Håndflater"
+      "title": "Mikropauser",
+      "text": "Korte, hyppige pauser reduserer belastningsskader og holder muskel- og skjelettsystemet friskt. Tenk på dem som vedlikehold av den menneskelige maskinen."
     },
     "aad": {
-      "title": "Meditering",
-      "text": "Forsknings viser at oppmerksomhetsbaserte øvelser bidrar til å redusere angst, depresjon, stress og smerte, og bidrar til å forbedre generell helse, mental helse og livskvalitet. Ikke sikker på hvordan du skal starte? Det er mange apper som hjelper deg."
+      "title": "Meditasjon",
+      "text": "Mindfulness-meditasjon reduserer angst, stress og til og med fysisk smerte. Usikker på hvor du skal starte? Selv 5 minutter med fokusert pusting teller. Det finnes mange gratis apper."
     },
     "aae": {
-      "title": "Blunk",
-      "text": "Å se lenge på skjermen får deg til å blunke mindre, og dermed utsette øynene for luft. Blunk raskt i noen sekunder for å friske opp tårefilmen og fjerne støv fra øyeoverflaten."
+      "title": "Blink mer",
+      "text": "Du blinker opptil 66 % mindre når du stirrer på skjermer, og det tørker ut øynene. Blink raskt noen ganger for å friske opp tårefilmen. Øynene dine gjør så mye for deg — gi litt tilbake."
+    },
+    "aaf": {
+      "title": "Skrivebords-ergonomi",
+      "text": "Skjerm i øyehøyde, tastatur i albuehøyde, føtter flatt på gulvet. Dårlig ergonomi gir reelle skader over tid. Bruk 2 minutter på å sjekke oppsettet ditt."
     },
     "aag": {
-      "title": "Beveg deg",
-      "text": "Det er mange måter du kan trene på kontoret ditt. Prøv å marsjere på samme sted eller ta push-ups."
+      "title": "Kontor-workout",
+      "text": "Du trenger ikke et treningsstudio for å bevege deg. Marsjer på stedet, gjør pult-pushups eller noen knebøy. Selv 60 sekunders bevegelse nullstiller energinivået ditt."
     },
     "aah": {
-      "title": "Endring",
-      "text": "Har du en stabilitetsball eller stående skrivebord? Vurder å bytte ut skrivebordsstolen med dem en stund."
+      "title": "Bytt stilling",
+      "text": "Har du et heve-senke-bord eller en balanseball? Nå er et godt tidspunkt å bytte. Å veksle mellom å sitte og stå reduserer tretthet og aktiverer musklene."
     },
     "aai": {
-      "title": "Observer",
-      "text": "Dagdrømmer du eller har problemer med å fokusere? Det er et tegn på at du må ta en pause."
+      "title": "Les tegnene",
+      "text": "Dagdrømmer du? Vanskelig å fokusere? Leser du samme linje om igjen? Det er hjernens høflige måte å si: ta en pause nå."
     },
     "aaj": {
-      "title": "Teknologi",
-      "text": "Hva med å ta en ikke-teknologisk tur?"
+      "title": "Gåtur uten tech",
+      "text": "Legg fra deg telefonen og ta en kort gåtur. Ingen podcaster, ingen musikk — bare deg og tankene dine. Overraskende forfriskende i en verden av konstant input."
+    },
+    "aak": {
+      "title": "Sitteproblemet",
+      "text": "Langvarig sitting øker risikoen for hjertesykdom, diabetes og ryggproblemer. En 5-minutters gåtur hver time kan motvirke disse effektene betydelig. Kroppen din er bygd for å bevege seg."
     },
     "aal": {
-      "title": "Aktive møter",
-      "text": "Hva med å flytte møter fra konferanserommet til gangen? Å gå forbrenner ikke bare kalorier, men det kan til og med fremme en følelse av samarbeid."
+      "title": "Gå-møter",
+      "text": "Neste gang du har en en-til-en, foreslå å gå i stedet for å sitte. Ifølge Stanford-forskning øker gå-møter kreativiteten med opptil 60 %."
+    },
+    "aam": {
+      "title": "Bevisst snacking",
+      "text": "Ta et stykke frukt og spis det sakte. Legg merke til smaken, teksturen og friskheten. Det er en mini-meditasjon forkledd som et mellommåltid."
     },
     "aan": {
-      "title": "Toalettbesøk",
-      "text": "Gå til det fjerneste toalettet når du må på do."
+      "title": "Kaffetur",
+      "text": "Skal du ha kaffe? Gjør det til en 5-minutters gåtur. To fluer, én latte."
     },
     "aao": {
-      "title": "Kaffepause",
-      "text": "Skal du ta kaffepause? Vurder å gå en 5-minutters spasertur hver gang du går for å ta en kaffe."
+      "title": "Hjernen din på pauser",
+      "text": "En NIH-studie fant at hjernen øver og konsoliderer nye ferdigheter under hvile — ikke under øvelse. Pauser gjør deg bokstavelig talt bedre på det du driver med."
+    },
+    "aap": {
+      "title": "Beveg deg litt, vinn mye",
+      "text": "Selv små mengder regelmessig mosjon reduserer stress dramatisk og forbedrer humøret. Du trenger ikke en time — 10 minutters bevegelse kan endre hele dagen."
+    },
+    "aaq": {
+      "title": "Tøyerutine",
+      "text": "Funnet et sett med tøyninger du liker? Gjenta dem flere ganger i løpet av dagen. Konsistens slår intensitet når du bekjemper effektene av langvarig sitting."
+    },
+    "aar": {
+      "title": "Håndleddssirkler",
+      "text": "Strekk armene ut med håndflatene mot deg, roter så sakte hendene — 4 ganger med klokken, 4 ganger mot klokken. Håndleddene dine takler mer stress enn du tror."
     },
     "aas": {
-      "title": "Gjenta",
-      "text": "Har du funnet din strekke-rutine? Ikke glem å gjenta det mer enn én gang for bedre å bekjempe effekten av langvarig sittestilling."
+      "title": "Overhead-strekk",
+      "text": "Flett fingrene bak hodet, løft dem opp over hodet med håndflatene mot taket. Hold 10 sekunder. Kjenn ryggen våkne."
+    },
+    "aat": {
+      "title": "30/1-regelen",
+      "text": "For hver 30 minutters sitting, beveg deg minst 1 minutt. Sett en timer om du trenger det. Små vaner utgjør store helsegevinster over tid."
+    },
+    "aau": {
+      "title": "7-minutters workout",
+      "text": "En helkropps trening på bare 7 minutter. Det er vitenskapelig støttet og krever ingen utstyr. Det finnes mange gratis apper som guider deg gjennom det."
     },
     "aav": {
-      "title": "Mobilisering",
-      "text": "For hvert tretti minutt med stagnasjon bør du ha minst ett minutt med stimulering."
+      "title": "Få opp pulsen",
+      "text": "Sikt på 20 minutter med forhøyet puls (rundt 120 bpm), 4-5 ganger i uken. Det spiller ingen rolle hva du gjør — dans, jogge, lek med hunden. Hjertet ditt dømmer ikke."
+    },
+    "aaw": {
+      "title": "Ta trappa",
+      "text": "Trappegang klassifiseres som intens mosjon og forbrenner flere kalorier per minutt enn jogging. Dropp heisen neste gang. Beina klager, men hjertet feirer."
+    },
+    "aax": {
+      "title": "Lag noe kreativt",
+      "text": "Kunstterapi er bevist å redusere stress. Skriv et haiku, tegn et monster, ta et bilde av noe vakkert. Kreativitet er en reset-knapp for hjernen."
     },
     "aay": {
-      "title": "Ta trappene",
-      "text": "Studier har vist at trappegang, som regnes som fysisk aktivitet med sterk intensitet, forbrenner flere kalorier per minutt enn jogging."
+      "title": "Rydd opp",
+      "text": "Et rotete skrivebord henger sammen med høyere stress. Bruk 5 minutter på å organisere arbeidsplassen din. Rent bord, klart hode — det er som en koselig hjernestund."
+    },
+    "aaz": {
+      "title": "Spis ute",
+      "text": "Naturen reduserer kortisol, stresshormonet. Ta lunsjen utendørs når det er mulig. Selv å sitte ved et vindu med utsikt til grønt hjelper."
     },
     "aba": {
-      "title": "Opprydning",
-      "text": "En ren plass hjelper deg med å fokusere på jobben og er ofte knyttet til positive følelser som lykke."
+      "title": "Gjespingens kraft",
+      "text": "Gjesping er ikke bare kjedsomhet — det kjøler hjernen og produserer tårer som smører øynene. La ut en stor falsk gjesp. Kroppen gjør den ekte."
+    },
+    "abb": {
+      "title": "Fokusskift",
+      "text": "Hold en finger nær ansiktet og fokuser. Flytt den sakte bort, se langt i det fjerne, så tilbake. Det trener musklene som kontrollerer øyelinsen."
     },
     "abc": {
-      "title": "Offentlig transport",
-      "text": "Hvis du bruker offentlig transport regelmessig, kan du stå i stedet for å sitte. Hvis det er mulig, prøv å erstatte så mange av dine daglige turer som mulig med gåing eller sykling."
+      "title": "Øye-palming",
+      "text": "Legg varme hender over lukkede øyne og hvil albuene på bordet. Pust sakte. Selv 30 sekunders mørke gir det visuelle systemet et reset."
+    },
+    "abd": {
+      "title": "Klem på noe",
+      "text": "Ta en stressball, et par sokker, eller noe klembart. Hold i 5 sekunder, slipp, gjenta. Det letter håndspenning og føles overraskende tilfredsstillende."
+    },
+    "abe": {
+      "title": "Langsom pusting",
+      "text": "Kontrollert langsom pusting (ca. 6 pust per minutt) aktiverer det parasympatiske nervesystemet og reduserer blodtrykk og angst. Det er som en programvareoppdatering for nervesystemet."
+    },
+    "abf": {
+      "title": "Visualisering",
+      "text": "Lukk øynene og se for deg et rolig sted — en strand, en skog, en fjelltopp. Fokuser på lydene, luktene og følelsene. Mini mental ferie, ingen reiseutgifter."
+    },
+    "abg": {
+      "title": "5-4-3-2-1 grounding",
+      "text": "Føler du deg overveldet? Nevn 5 ting du ser, 4 du kan ta på, 3 du hører, 2 du lukter, 1 du smaker. Denne groundingteknikken drar deg tilbake til øyeblikket."
+    },
+    "abh": {
+      "title": "Power nap-vitenskap",
+      "text": "En 10-20 minutters blund øker årvåkenhet og ytelse uten døsighet. NASA fant at piloter som tok en 26-minutters blund forbedret ytelsen med 34 %. Bra nok for astronauter, bra nok for deg."
+    },
+    "abi": {
+      "title": "Pomodoro-reset",
+      "text": "Jobb i 25 minutter, pause i 5. Etter fire runder, ta en lengre pause. Pomodoro-teknikken er ikke bare et produktivitetshack — det er en strategi for å bevare vettet."
+    },
+    "abj": {
+      "title": "Tegne-pause",
+      "text": "Å doodle under pauser forbedrer faktisk konsentrasjon og hukommelse med opptil 29 %, ifølge en studie i Applied Cognitive Psychology. Grab en penn og la hånden vandre."
+    },
+    "abk": {
+      "title": "Én-sang-pause",
+      "text": "Sett på favorittsangen din og lytt ordentlig — ikke som bakgrunnsstøy, men som hovedbegivenheten. Musikk aktiverer hjernens belønningssystem og reduserer kortisol."
+    },
+    "abl": {
+      "title": "Takknemlighet",
+      "text": "Skriv ned 3 ting du er takknemlig for akkurat nå. Studier viser at regelmessig takknemlighetspraksis omprogrammerer hjernen for positivitet og reduserer stresshormoner."
+    },
+    "abm": {
+      "title": "Kaldt vann-reset",
+      "text": "Sprut kaldt vann i ansiktet eller hold et kaldt glass mot håndleddene. Kulden utløser dykkerefleksen, som senker pulsen og beroligrer nervesystemet umiddelbart."
+    },
+    "abn": {
+      "title": "Snakk med en plante",
+      "text": "Har du en skrivebords-plante? Sjekk den. Vann den, snu den. Har du ingen, er det kanskje på tide. Planter reduserer stress og forbedrer luftkvaliteten. De perfekte stille kollegaene."
+    },
+    "abo": {
+      "title": "Hjernetømming",
+      "text": "Ta et ark papir og skriv ned alt du har i hodet — oppgaver, bekymringer, tilfeldige tanker. Å få det ut av hodet og ned på papir frigjør mental RAM."
+    },
+    "abp": {
+      "title": "Kos med kjæledyret",
+      "text": "Jobber du hjemmefra med et kjæledyr? Ta et minutt og kos med det. Å klappe dyr senker kortisol og øker oksytocin. Det er vitenskapelig godkjent stressavlastning."
+    },
+    "abq": {
+      "title": "Latterterapi",
+      "text": "Se en 2-minutters morsom video eller les noen vitser. Latter utløser endorfiner, senker stresshormoner og avslapper musklene i opptil 45 minutter."
+    },
+    "abr": {
+      "title": "Frisk luft",
+      "text": "Åpne et vindu eller gå ut i 60 sekunder. Frisk luft øker oksygen til hjernen, forbedrer konsentrasjon, serotoninnivåer og energi."
+    },
+    "abs": {
+      "title": "Kroppsskanning",
+      "text": "Start fra tærne og flytt sakte oppmerksomheten opp gjennom kroppen. Legg merke til hvor du holder spenning. Anerkjenn det, pust inn i det, og slipp det."
+    },
+    "abt": {
+      "title": "Skrivebords-yoga",
+      "text": "Sittende katt-ku, ryggvridning, fremoverbøying — du kan gjøre yoga uten å forlate stolen. Ryggraden din bryr seg ikke om antrekket, den vil bare bevege seg."
+    },
+    "abu": {
+      "title": "Les en side",
+      "text": "Ha en bok i nærheten og les bare én side under pausen. Fiksjon transporterer sinnet et annet sted. Sakprosa gir det noe nytt. Uansett vinner du."
+    },
+    "abv": {
+      "title": "90-minutters syklus",
+      "text": "Hjernen jobber i 90-minutters ultradiane sykluser med høy og lav energi. Å jobbe med disse naturlige rytmene i stedet for mot dem gjør deg mer produktiv og mindre utslitt."
+    },
+    "abw": {
+      "title": "Nysgjerrighetspause",
+      "text": "Slå opp ett tilfeldig faktum om noe som interesserer deg. Å lære noe nytt under en pause aktiverer hjernens belønningskretser annerledes enn jobb gjør."
+    },
+    "abx": {
+      "title": "Boks-pusting",
+      "text": "Pust inn i 4 takter, hold 4, ut 4, hold 4. Brukes av Navy SEALs for å holde roen under press. Hvis det fungerer for dem, fungerer det for innboksen din."
+    },
+    "aby": {
+      "title": "Dans det ut",
+      "text": "Sett på en sang og dans gjennom hele nummeret. Lukk døra om du må. Dans frigjør endorfiner, forbedrer koordinasjonen og får deg til å føle deg i live. Ingen ser kul ut når de danser alene, og det er hele poenget."
+    },
+    "abz": {
+      "title": "Ring noen",
+      "text": "Bruk pausen til å ringe noen du er glad i — bare for å si hei. Sosial kontakt er en av de sterkeste prediktorene for lykke og lang levetid."
+    },
+    "aca": {
+      "title": "Sollysdose",
+      "text": "Få 10-15 minutter med sollys når det er mulig. Det regulerer døgnrytmen, øker D-vitamin-produksjonen og forbedrer humøret. Kroppen din er også soldrevet."
+    },
+    "acb": {
+      "title": "Progressiv avslapning",
+      "text": "Spenn hver muskelgruppe i 5 sekunder, slipp så. Start med føttene, opp til legger, lår, mage, hender, armer, skuldre og ansikt. Total spenningsutløsning på under 3 minutter."
+    },
+    "acc": {
+      "title": "Barfot-øyeblikk",
+      "text": "Ta av skoene og kjenn gulvet under føttene. Kan du gå på gress, gjør det. Grounding har vist seg å redusere betennelse og forbedre søvn."
+    },
+    "acd": {
+      "title": "Skriv til fremtidens deg",
+      "text": "Skriv en rask lapp til fremtidens deg — et mål, et ønske, en påminnelse. Det bygger selv-kontinuitet og holder deg koblet til det som betyr noe utover dagens oppgaveliste."
+    },
+    "ace": {
+      "title": "Digital opprydding",
+      "text": "Lukk alle fanene du ikke bruker. Uleste varsler som hoper seg opp? Fjern dem. Digitalt rot skaper kognitivt belastning, akkurat som fysisk rot."
+    },
+    "acf": {
+      "title": "2-minuttersregelen",
+      "text": "Hvis noe du tenker på tar under 2 minutter, gjør det nå under pausen. Å rydde små oppgaver fjerner den mentale vekten av uavsluttede ting."
+    },
+    "acg": {
+      "title": "Holdningssjekk",
+      "text": "Stå inntil en vegg med hæler, bak, skuldre og hode mot den. Slik føles god holdning. Prøv å gjenskape den følelsen når du setter deg igjen."
+    },
+    "ach": {
+      "title": "Duftpause",
+      "text": "Lukt på noe behagelig — kaffebønner, et lys, eteriske oljer eller frisk luft. Luktesansen er direkte koblet til den emosjonelle hjernen og kan endre humøret ditt umiddelbart."
+    },
+    "aci": {
+      "title": "Skyspotting",
+      "text": "Kan du se himmelen? Bruk et minutt på å se på skyene. Det er den originale skjermspareren — og det gir hjernen den typen mykt fokus som fremmer kreativ tenkning."
     }
+  },
+  "ui": {
+    "loading": "Laster Pauza…",
+    "preview": {
+      "status": "Forhåndsvisning",
+      "detail": "Nettleserforhåndsvisning",
+      "action": "Forhåndsvisningsmodus er aktiv."
+    },
+    "title": "Pauza",
+    "heroHeadline": "Hold arbeidsrytmen med et roligere grensesnitt",
+    "heroSubtitle": "De viktigste innstillingene foran, avanserte valg bak.",
+    "settingsCategories": "Innstillingskategorier",
+    "settingsCategoriesHint": "Bytt kategori til venstre, se innstillingene til høyre.",
+    "currentCategory": "Gjeldende kategori",
+    "overview": "Oversikt",
+    "overviewHint": "Statusoversikt, siste handlinger og hurtigtilgang.",
+    "liveOverview": "Sanntidsoversikt",
+    "liveOverviewHint": "Gjeldende rytme, appstatus og pausevindu med ett blikk.",
+    "quickActions": "Hurtighandlinger",
+    "quickActionsHint": "Disse handlingene påvirker den pågående rytmen direkte.",
+    "savePanel": "Lagre endringer",
+    "savePanelHint": "Endringer trer i kraft først etter lagring.",
+    "nextBreakLabel": "Neste pause",
+    "currentBreakLabel": "Gjeldende pause",
+    "lastActionLabel": "Siste handling",
+    "runtimeLabel": "Kjøremiljø",
+    "platformLabel": "Plattform",
+    "versionLabel": "Versjon",
+    "breakFeelLabel": "Pausestil",
+    "placementLabel": "Visningsposisjon",
+    "pendingChanges": "Ulagrede endringer",
+    "synced": "Synkronisert",
+    "saving": "Lagrer…",
+    "allSet": "Klar",
+    "noCurrentBreak": "Ingen aktiv pause",
+    "liveSignals": "Sanntidssignaler",
+    "general": "Generelt",
+    "preferences": "Innstillinger",
+    "currentStatus": "Gjeldende status",
+    "language": "Språk",
+    "languageChinese": "Forenklet kinesisk",
+    "languageEnglish": "Engelsk",
+    "launchOnLogin": "Start ved pålogging",
+    "enabled": "På",
+    "disabled": "Av",
+    "schedule": "Rytme",
+    "interruptions": "Påminnelser og avbrudd",
+    "sectionScheduleHint": "Kun de rytmeinnstillingene du justerer daglig.",
+    "microbreaks": "Mikropauser",
+    "microbreaksHint": "Korte avbrudd under arbeidet.",
+    "longBreaks": "Pauser",
+    "longBreaksHint": "Fullstendig skjermfrihet etter flere runder.",
+    "interval": "Intervall",
+    "every": "Hyppighet",
+    "durationLabel": "Varighet",
+    "behavior": "Oppførsel",
+    "allowPostpone": "Tillat utsettelse",
+    "signals": "Signaler",
+    "sectionSignalsHint": "La Pauza bestemme smartere når påminnelser vises.",
+    "naturalBreaks": "Naturlige pauser",
+    "naturalBreaksHint": "Automatisk tilbakestilling etter tilstrekkelig lang fravær.",
+    "resetAfter": "Tilbakestill etter",
+    "dnd": "Ikke forstyrr",
+    "dndHint": "Pause påminnelser når denne modusen er aktiv",
+    "sectionSurfaceHint": "Styre avbruddsintensitet og pausevinduets posisjon.",
+    "sectionGeneralHint": "Noen få globale innstillinger. Minimalistisk som standard.",
+    "notificationsCategory": "Påminnelser og utsettelse",
+    "notificationsCategoryHint": "Lyd før pausen. Utsettelsesinnstillinger her.",
+    "surfaceCategory": "Avbrudd og visning",
+    "surfaceCategoryHint": "Intensitet, posisjon og strenghet for pausevinduet.",
+    "smartPause": "Smart pause",
+    "smartPauseHint": "Pauza leter først etter et tydelig øyeblikk og senker terskelen gradvis.",
+    "generalAndShortcuts": "Generelt og snarveier",
+    "generalAndShortcutsHint": "Administrer språk, autostart og globale tastatursnarveier.",
+    "advanced": "Avansert",
+    "sectionAdvancedHint": "Mer kontroll, kompatibilitetsalternativer og snarveier.",
+    "appExclusions": "App-unntak",
+    "appExclusionsHint": "Apper der påminnelser pauses eller gjenopptas.",
+    "appExclusionsEnable": "Aktiver",
+    "appRulePause": "Pause ved treff",
+    "appRuleResume": "Gjenoppta kun ved treff",
+    "pause30": "Pause 30 min",
+    "focus45": "Fokusbeskyttelse 45 min",
+    "resume": "Gjenoppta",
+    "clearFocus": "Avslutt fokus",
+    "save": "Lagre",
+    "revert": "Angre",
+    "defaults": "Standardverdier",
+    "preBreakNotifications": "Forvarselslyd",
+    "beforeLabel": "Før",
+    "postpone": "Utsett",
+    "scheduleControl": "Rytmestyring",
+    "resetScheduleHint": "Beregn neste pause på nytt fra nå av.",
+    "postponeCategoryHint": "Sett utsettelsestid og -grense separat.",
+    "limitLabel": "Grense",
+    "breakSurface": "Pausevindu",
+    "breakDisplayMode": "Visningsmodus",
+    "breakBackdrop": "Bakgrunnstema",
+    "breakBackdropHint": "Velg en stemningsfull bakgrunn for pausevinduet.",
+    "breakBackdropPaper": "Papir",
+    "breakBackdropDawn": "Morgengry",
+    "breakBackdropForest": "Skog",
+    "breakBackdropNight": "Natt",
+    "breakBackdropCustom": "Egendefinert bakgrunn",
+    "customWallpaper": "Egendefinert bakgrunn",
+    "customWallpaperHint": "Last opp et lokalt bilde som bakgrunn for pausevinduet.",
+    "customWallpaperChoose": "Velg bilde",
+    "customWallpaperReplace": "Erstatt bilde",
+    "customWallpaperRemove": "Fjern",
+    "customWallpaperEmpty": "Ingen egendefinert bakgrunn valgt",
+    "customWallpaperEmptyHint": "Uten bilde brukes standardtemaet.",
+    "customWallpaperReady": "Bildet komprimeres og lagres lokalt som pausebakgrunn.",
+    "breakIdeas": "Pausetips",
+    "breakIdeasHint": "Vis et kort tips ved hver pause.",
+    "breakSounds": "Pauselyder",
+    "breakSoundsHint": "Forvarselslyd før pausen og sluttlyd etter.",
+    "microbreakStartSound": "Mikropause-forvarsel",
+    "microbreakEndSound": "Mikropause slutt",
+    "longBreakStartSound": "Pause-forvarsel",
+    "longBreakEndSound": "Pause slutt",
+    "breakSoundVolume": "Volum",
+    "breakSoundSilence": "Stille",
+    "breakSoundCrystalGlass": "Krystallglass",
+    "breakSoundWindChime": "Vindbjelle",
+    "breakSoundTicToc": "Tikk-takk",
+    "breakSoundReverie": "Dagdrøm",
+    "reminderMode": "Påminnelsesmodus",
+    "reminderModeHint": "Smart leter etter et naturlig øyeblikk; Tvunget avbryter umiddelbart.",
+    "reminderModeSmart": "Smart",
+    "reminderModeForced": "Tvunget",
+    "window": "Vindu",
+    "fullscreen": "Fullskjerm",
+    "promptStyleGentle": "Myk",
+    "promptStyleBalanced": "Balansert",
+    "promptStyleImmersive": "Fordypende",
+    "allScreens": "Alle skjermer",
+    "screenPrimary": "Hovedskjerm",
+    "screenCursor": "Skjerm med markøren",
+    "showTimeToBreakInTray": "Vis neste pause i systemstatusfeltet",
+    "currentTimeInBreaks": "Vis tid i pausevinduet",
+    "currentTimeInBreaksHint": "Systemtiden øverst til høyre i pausevinduet.",
+    "strictModes": "Strenge moduser",
+    "strictModesHint": "Styr om pauser kan hoppes over og om manuell bekreftelse kreves.",
+    "microbreakStrict": "Streng mikropause",
+    "longBreakStrict": "Streng pause",
+    "manualFinish": "Avslutt manuelt etter tidtaker",
+    "showTrayMenuInStrictMode": "Systemstatusfeltmeny i streng modus",
+    "shortcuts": "Snarveier",
+    "shortcutsHint": "Tomt = ikke registrert. Format f.eks.: CmdOrCtrl+Shift+P",
+    "shortcutReveal": "Åpne innstillinger",
+    "shortcutFocus45": "Fokusbeskyttelse 45 min",
+    "shortcutPauseToggle": "Veksle pause",
+    "shortcutPause30": "Pause 30 min",
+    "shortcutPause60": "Pause 1 time",
+    "shortcutPause120": "Pause 2 timer",
+    "shortcutPause300": "Pause 5 timer",
+    "shortcutSkipScheduled": "Gå til neste planlagte pause",
+    "shortcutSkipMicrobreak": "Gå til mikropause",
+    "shortcutSkipLongBreak": "Gå til pause",
+    "shortcutReset": "Tilbakestill rytme",
+    "suffix": {
+      "secondsLong": "s",
+      "secondsBefore": "s før",
+      "minutesApart": "min etter",
+      "cycles": "runder",
+      "minutesLong": "min",
+      "minutesShortPostpone": "min",
+      "minutesLongPostpone": "min",
+      "minutesAway": "min",
+      "minutes": "min",
+      "times": "×"
+    },
+    "status": {
+      "noBreakScheduled": "Ingen pause planlagt",
+      "microbreak": "Mikropause",
+      "longBreak": "Pause",
+      "nextBreak": "{{label}} om {{duration}}",
+      "focus": "Fokus {{duration}}",
+      "pause": "Pauset {{duration}}",
+      "pauseForever": "Pauset på ubestemt tid",
+      "blockedBy": "Pauset av {{match}}",
+      "appRuleActive": "App-regel aktiv",
+      "dndActive": "Ikke forstyrr aktiv"
+    },
+    "error": {
+      "loadState": "Kunne ikke laste Pauzas status"
+    },
+    "breakCopy": {
+      "clearedDetail": "Ingen aktiv pause.",
+      "manualAwaiting": "Tiden er ute. Fullfør denne pausen før du fortsetter.",
+      "awaitingFinish": "Venter på fullføring",
+      "actions": {
+        "resumeWork": "Fortsett å arbeide",
+        "done": "Ferdig",
+        "later": "Senere",
+        "skip": "Hopp over"
+      },
+      "defaultPrompt": {
+        "microbreak": "Reis deg, slapp av i skuldrene og se langt bort.",
+        "longBreak": "Gå bort fra skrivebordet noen minutter og la kropp og sinn hvile."
+      }
+    },
+    "previewAction": {
+      "save": "Forhåndsvisning: innstillinger oppdatert.",
+      "pause": "Forhåndsvisning: pauset 30 min.",
+      "pauseForever": "Forhåndsvisning: pauset på ubestemt tid.",
+      "focus": "Forhåndsvisning: fokus aktivert.",
+      "focusCleared": "Forhåndsvisning: fokus avsluttet.",
+      "resume": "Forhåndsvisning: gjenopptatt.",
+      "reset": "Forhåndsvisning: rytme tilbakestilt.",
+      "autostartOn": "Forhåndsvisning: autostart aktivert.",
+      "autostartOff": "Forhåndsvisning: autostart deaktivert.",
+      "done": "Forhåndsvisning: pause fullført.",
+      "later": "Forhåndsvisning: pause utsatt.",
+      "skip": "Forhåndsvisning: pause hoppet over."
+    },
+    "preBreakSoundHint": "Myk lyd før tidtakeren utløper slik at du kan fullføre oppgaven din.",
+    "previewSound": "Lytt",
+    "appExclusionsSearch": "Søk blant kjørende apper",
+    "appExclusionsSearchPlaceholder": "App-navn…",
+    "appExclusionsSearchLoading": "Laster…",
+    "appExclusionsSearchEmpty": "Ingen resultater",
+    "appExclusionsManualHint": "Eller skriv inn prosessnavn manuelt (én per linje)",
+    "appExclusionsAdd": "Klikk for å legge til i unntakslisten"
   }
 }

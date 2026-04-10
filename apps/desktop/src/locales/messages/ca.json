@@ -83,7 +83,7 @@
       "ourWebsite": "visiti la nostra pàgina web",
       "dot": ".",
       "developedBy": "Desenvolupat per",
-      "janH": "Clarke Young",
+      "clarkeY": "Clarke Young",
       "designedBy": "Icona i disseny UI per Colin Shanley",
       "tagline": "L'Aplicació que et recorda fer pauses",
       "latestVersion": "Darrera versió ",
@@ -202,149 +202,249 @@
     "newVersionAvailable": "Nova versió disponible!"
   },
   "longBreakIdeas": {
-    "abi": {
-      "title": "Visualització imaginativa",
-      "text": "Acluca els ulls i imagina't en un lloc pacífic i serè, com una platja o bosc, centrant-te en el paisatge, els sons, i les sensacions del teu entorn."
-    },
     "aaa": {
-      "title": "Sol no",
-      "text": "Et costa fer una pausa en solitari? Intenta-ho amb companys. A banda de facilitar el respecte de les pauses, els podràs conèixer millor. Fer pauses en companyia augmenta la productivitat."
+      "title": "Millor junts",
+      "text": "Et costa fer pauses sol? Prova de fer-les amb un company de feina. Us mantindreu motivats i podreu queixar-vos junts dels terminis. Els estudis mostren que les pauses socials augmenten la productivitat."
     },
     "aab": {
-      "title": "Fes un pas enrere",
-      "text": "T'hi has fixa't com el teu cervell pot solucionar problemes tot sol? Només cal allunyar-se de l'ordinador i fer una pausa per pensar sobre alguna cosa completament diferent."
+      "title": "Allunya't",
+      "text": "Has notat que les millors idees et vénen a la dutxa? És perquè el cervell resol problemes en segon pla. Allunya't de la pantalla i pensa en alguna cosa completament diferent."
     },
     "aac": {
       "title": "Micropauses",
-      "text": "El descans és un component clau en el rendiment del sistema musculoesquelètic. Les pauses freqüents poden escurçar una tasca i ajudar a reduir el risc de lesions ergonòmiques."
+      "text": "Les pauses curtes i freqüents redueixen les lesions per esforç repetitiu i mantenen l'aparell locomotor sa. Pensa-hi com el manteniment de la màquina humana."
     },
     "aad": {
       "title": "Meditació",
-      "text": "La recerca suggereix que els exercicis de contemplació ajuden a reduir l'ansietat, la depressió, l'estrès i el dolor, i a millorar la salut en general, la salut mental i la qualitat de vida. No saps per on començar? Hi ha un grapat d'apps per ajudar-te."
+      "text": "Meditar no vol dir buidar la ment. Vol dir observar els pensaments sense quedar-s'hi atrapat. Comença amb cinc minuts i enfoca't en la respiració."
     },
     "aae": {
-      "title": "Parpelleja",
-      "text": "Mirar pantalles durant massa temps causa que parpellegem menys, exposant els nostres ulls a l'aire. Parpelleja ràpidament durant uns quants segons per a refrescar la pel·lícula lacrimal i netejar la pols de la superfície de l'ull."
+      "title": "Parpelleja més",
+      "text": "Parpellegem un seixanta-sis per cent menys davant la pantalla. Això causa ulls secs i cansats. Parpelleja conscientment durant la pausa i considera col·liris si cal."
     },
     "aaf": {
-      "title": "Ergonomia",
-      "text": "Una alçada i un angle inadequats del teclat, el ratolí, el monitor o la superfície de treball poden causar problemes de salut. Dedica una estona a llegir sobre l'ergonomia del lloc de treball."
+      "title": "Ergonomia de l'escriptori",
+      "text": "La part superior de la pantalla ha d'estar a l'alçada dels ulls, els braços a noranta graus. Un petit ajust ara et pot estalviar mesos de dolor."
     },
     "aag": {
-      "title": "Mou-te",
-      "text": "Hi ha moltes maneres de fer exercici dins l'oficina. Intenta caminar sense desplaçar-te o fer flexions a la taula."
+      "title": "Exercici d'oficina",
+      "text": "Flexions contra l'escriptori, esquats a la cadira o estocades al passadís. No cal equipament, només la voluntat de semblar una mica ridícul."
     },
     "aah": {
-      "title": "Canviar",
-      "text": "Tens una pilota de ioga o un escriptori de peu? Considera canviar la teva cadira per ells de tant en tant."
+      "title": "Canvia de tasca",
+      "text": "Canviar de tasca o d'espai de treball dona al cervell un reinici suau. Mou-te a una altra sala o canvia a un altre tipus de feina."
     },
     "aai": {
-      "title": "Avís",
-      "text": "Estàs somniant despert/a o et costa concentrar-te? És un senyal que necessites una pausa."
-    },
-    "aak": {
-      "title": "Metabolisme",
-      "text": "Els estudis més recents indiquen que passar molt temps assegut augmenta el risc de síndrome metabòlic, infart de miocardi i accident vascular cerebral, així com el risc de mort en general, entre altres problemes de salut. Prendre pauses regulars per caminar pot millorar la circulació i ajudar a mitigar alguns d'aquests riscos."
-    },
-    "aal": {
-      "title": "Reunions Actives",
-      "text": "Per què no canviar les reunions de la sala de conferències al passadís? Caminar no només ajuda a cremar calories, sinó que també pot estimular la col·laboració i la creativitat."
-    },
-    "aam": {
-      "title": "Fruita",
-      "text": "Menja una mica de fruita. A poc a poc. Fixa't en el gust, la textura, la frescor."
-    },
-    "aan": {
-      "title": "Lavabos",
-      "text": "Camina al lavabo més allunyat quan vagis al lavabo."
-    },
-    "aao": {
-      "title": "Pausa per un cafè",
-      "text": "Vas a prendre un cafè? Planteja't fer un passeig de 5 minuts cada vegada que hi vagis."
-    },
-    "aap": {
-      "title": "Col·legues",
-      "text": "No enviïs emails o missatges a companys de feina, camina fins els seus escriptoris per a parlar amb ells."
-    },
-    "aaq": {
-      "title": "Aprendre",
-      "text": "En un estudi de voluntaris sans, investigadors del NIH van descobrir que fer pauses curtes, aviat i sovint, pot ajudar els nostres cervells aprendre noves habilitats."
-    },
-    "aar": {
-      "title": "Exercici",
-      "text": "Les proves suggereixen que petites quantitats d'exercici regular poden aportar beneficis dramàtics per a la salut, inclosa una reducció de l'estrès mesurable."
-    },
-    "aas": {
-      "title": "Repetir",
-      "text": "Has trobat la teva rutina stretch-ly? No oblidis repetir-la més d'un cop per combatre millor els efectes de seure per períodes llargs."
-    },
-    "aat": {
-      "title": "Canell i avantbraç",
-      "text": "Estira els teus braços amb els palmells mirant cap a tu, i rota lentament les mans quatre vegades en sentit horari, i després en sentit antihorari."
-    },
-    "aau": {
-      "title": "Estirar l'esquena",
-      "text": "Ajunta les teves mans darrere el cap, i aixeca-les juntes sobre el teu cap acabant amb els palmells cap amunt."
-    },
-    "aav": {
-      "title": "Mobilitzar",
-      "text": "Per a cada trenta minuts d'inactivitat, n'hauries de tenir com a mínim un d'estimulació."
-    },
-    "aaw": {
-      "title": "Entrenament de 7 Minuts",
-      "text": "Aquest entrenament empaqueta una rutina d'exercici de cos complet en una fracció del temps. Però com a qualsevol exercici, tingues cura. Hi ha un grapat d'apps per a començar."
-    },
-    "aax": {
-      "title": "Pols",
-      "text": "Augmenta les teves pulsacions a 120 batecs per minut durant 20 minuts seguits quatre o cinc vegades per setmana fent qualsevol cosa que t'agradi. Augmentar regularment la freqüència cardíaca millora la salut cardiovascular."
-    },
-    "aba": {
-      "title": "Endreçar",
-      "text": "Un espai net i polit t'ajuda a concentrar-te i sovint es relaciona amb emocions positives com la felicitat."
-    },
-    "abb": {
-      "text": "La natura té un vincle amb emocions positives i menys estrès i ansietat. Quan sigui possible, intenta dinar a fora, envoltat per verd.",
-      "title": "Dinar fora"
-    },
-    "abc": {
-      "text": "Si fas servir transport públic regularment, pots quedar-te dempeus en lloc de seure. Si és possible, intenta fer tants trajectes com puguis caminant o amb bicicleta.",
-      "title": "Transport públic"
-    },
-    "abd": {
-      "text": "Badallar pot ser molt útil, ja que produeix llàgrimes que ajuden a humitejar i lubricar els ulls.",
-      "title": "Badallar"
-    },
-    "abe": {
-      "title": "Canvi d'enfocament",
-      "text": "Col·loca un dit prop de l'ull i centra't en ell. Mou-lo cap al fons a poc a poc, centra't en la distància i un altre cop al dit. Apropa el dit un altre cop i centra't en algun objecte llunyà."
-    },
-    "abg": {
-      "title": "Estrènyer les mans",
-      "text": "Estreny un parell de mitjons o una pilota de goma suau, mantén durant 5 segons. Repeteix-ho uns quants cops."
-    },
-    "abh": {
-      "title": "Respirar Lentament",
-      "text": "Hi ha nova recerca que suggereix el potencial de tècniques de respiració lenta com a forma d'optimitzar paràmetres fisiològics que semblen estar relacionats amb la salut i la longevitat."
+      "title": "Llegeix els senyals",
+      "text": "Mal de cap, espatlles rígides, vista borrosa: el cos t'envia senyals. Escolta abans que es faci crònic."
     },
     "aaj": {
-      "title": "Tecnologia",
-      "text": "Què et sembla passejar sense tecnologia?"
+      "title": "Passeig sense tecnologia",
+      "text": "Deixa el mòbil i fes una passejada curta. Només deu minuts sense pantalla poden reduir els nivells d'estrès notablement."
     },
-    "aaz": {
-      "title": "Fes art",
-      "text": "Se sap que la teràpia d'art té grans beneficis a la salut mental, especialment en termes d'estrès. I si escrius un poema curt, fas una foto o esbosses alguna cosa?"
+    "aak": {
+      "title": "El problema de seure",
+      "text": "La investigació mostra que seure molt de temps augmenta el risc de malalties cardíaques, diabetis i problemes d'esquena. Aixeca't regularment: el teu jo futur t'ho agrairà."
+    },
+    "aal": {
+      "title": "Reunions caminant",
+      "text": "La propera vegada que tinguis una trucada, prova de caminar. Les reunions caminant augmenten la creativitat i fan la conversa més relaxada."
+    },
+    "aam": {
+      "title": "Berenar conscient",
+      "text": "No mengis davant la pantalla. Agafa la fruita o els fruits secs, seu en un altre lloc i tasta realment el menjar."
+    },
+    "aan": {
+      "title": "Passeig amb cafè",
+      "text": "En comptes de beure el cafè a l'escriptori, fes un tomb amb la tassa. Moviment més cafeïna és una combinació guanyadora."
+    },
+    "aao": {
+      "title": "El cervell i les pauses",
+      "text": "El cervell processa i consolida informació durant el descans. Les pauses no et fan mandrós, et fan més intel·ligent."
+    },
+    "aap": {
+      "title": "Mou-te una mica, guanya molt",
+      "text": "Només dos minuts de moviment per hora poden contrarestar els efectes de seure molt de temps. No cal que sigui un entrenament."
+    },
+    "aaq": {
+      "title": "Rutina d'estiraments",
+      "text": "Segueix una rutina simple d'estiraments: coll, espatlles, esquena, malucs, cames. Cinc minuts poden desfer hores de tensió."
+    },
+    "aar": {
+      "title": "Rotacions de canell",
+      "text": "Gira els canells en cercles, deu vegades en cada direcció. Després obre i tanca els dits alternativament. Perfecte contra el dolor de canell."
+    },
+    "aas": {
+      "title": "Estira cap amunt",
+      "text": "Aixeca't, estira els braços cap al sostre i posa't de puntetes. Aguanta cinc segons. Sent com la columna s'allarga."
+    },
+    "aat": {
+      "title": "La regla 30/1",
+      "text": "Cada trenta minuts, mou-te almenys un minut. Posa un temporitzador. És una petita inversió amb un gran retorn."
+    },
+    "aau": {
+      "title": "Entrenament de 7 minuts",
+      "text": "Segueix un entrenament de set minuts basat en la ciència. Dotze exercicis, trenta segons cadascun. Només necessites una cadira i una paret."
+    },
+    "aav": {
+      "title": "Eleva el ritme cardíac",
+      "text": "Uns minuts de moviment ràpid – salts, flexions, córrer al lloc – augmenten el flux sanguini i agusen la concentració."
+    },
+    "aaw": {
+      "title": "Agafa les escales",
+      "text": "Tria les escales en comptes de l'ascensor. És exercici gratuït i t'estalvies el temps d'esperar l'ascensor."
+    },
+    "aax": {
+      "title": "Crea alguna cosa",
+      "text": "Dibuixa, escriu, plega paper. Les pauses creatives activen altres parts del cervell i donen als circuits analítics l'oportunitat de descansar."
     },
     "aay": {
-      "title": "Agafa les escales",
-      "text": "Segons certs estudis, pujar escales, que es considera una activitat física intensa, és un exercici més energètic que córrer."
+      "title": "Endreça l'escriptori",
+      "text": "Un escriptori net és com un pensament net. Dedica cinc minuts a organitzar, llençar brossa i crear ordre."
+    },
+    "aaz": {
+      "title": "Menja a fora",
+      "text": "Si el temps ho permet, dina a l'aire lliure. La llum natural, l'aire fresc i les vistes naturals redueixen l'estrès i milloren l'humor."
+    },
+    "aba": {
+      "title": "El poder del badall",
+      "text": "Badallar refreda el cervell i augmenta l'estat d'alerta. Provoca un badall conscientment: és legítimament saludable."
+    },
+    "abb": {
+      "title": "Canvi d'enfocament",
+      "text": "Mira un objecte proper i després alguna cosa llunyana. Repeteix deu vegades. Entrena la capacitat d'enfocament de l'ull."
+    },
+    "abc": {
+      "title": "Pal·liament ocular",
+      "text": "Frega els palmells per escalfar-los i posa'ls sobre els ulls durant un minut. La foscor i la calor calmen els músculs oculars."
+    },
+    "abd": {
+      "title": "Prem alguna cosa",
+      "text": "Una pilota antiestrès o similar activa els músculs de la mà i pot reduir la tensió a tot el tors. Prem i deixa anar rítmicament."
+    },
+    "abe": {
+      "title": "Respiració lenta",
+      "text": "Redueix la respiració a sis inspiracions per minut. Activa el sistema de calma i redueix la pressió arterial."
     },
     "abf": {
-      "title": "Palmells",
-      "text": "Mentre seguis, recolza els colzes a la taula, a prop de la vora. Deixa caure el pes cap endavant i cobreix-te els ulls amb les mans. Tanca els ulls i inspira lentament pel nas i aguanta la respiració uns segons. Continua respirant profundament."
+      "title": "Visualització",
+      "text": "Tanca els ulls i imagina't en un lloc on et sentis tranquil. El mar, el bosc, la muntanya – on sigui. Queda-t'hi dos minuts."
+    },
+    "abg": {
+      "title": "5-4-3-2-1 arrelament",
+      "text": "Cinc coses que veus, quatre que pots tocar, tres que sents, dues que olores, una que tastes. La tècnica d'arrelament et porta al moment present."
+    },
+    "abh": {
+      "title": "Ciència de la migdiada",
+      "text": "Una migdiada de deu a vint minuts millora l'estat d'alerta i el rendiment sense causar somnolència. Posa una alarma i descansa."
+    },
+    "abi": {
+      "title": "Reinici Pomodoro",
+      "text": "La tècnica Pomodoro: vint-i-cinc minuts de concentració, cinc minuts de pausa. Cada quatre rondes, pausa llarga. Les pauses estructurades augmenten la resistència."
     },
     "abj": {
-      "title": "Aclaparat?",
-      "text": "Prova la tècnica de connexió 5-4-3-2-1: Identifica 5 coses que puguis veure, 4 coses que puguis tocar, 3 coses que pots sentir, 2 coses que pots olorar, i 1 cosa que pots tastar."
+      "title": "Pausa de gargots",
+      "text": "Dibuixa lliurement uns minuts. Estimula la creativitat i ajuda el cervell a processar informació. No cal ser artista."
+    },
+    "abk": {
+      "title": "Pausa d'una cançó",
+      "text": "Posa la teva cançó preferida i no facis res més. Escolta activament. La música redueix el cortisol i augmenta la dopamina."
+    },
+    "abl": {
+      "title": "Moment de gratitud",
+      "text": "Escriu tres coses per les quals estàs agraït ara mateix. Triga trenta segons i canvia el focus del cervell cap al positiu."
+    },
+    "abm": {
+      "title": "Reinici amb aigua freda",
+      "text": "Renta't les mans i la cara amb aigua freda. Activa el reflex d'immersió, redueix el pols i agusa l'atenció."
+    },
+    "abn": {
+      "title": "Parla amb una planta",
+      "text": "Tens una planta d'interior? Rega-la, mira-la, parla-hi. El verd redueix l'estrès i millora la qualitat de l'aire."
+    },
+    "abo": {
+      "title": "Bolcat cerebral",
+      "text": "Escriu tot el que et volta pel cap sense censurar. Paper o app de notes – simplement aboca. Allibera espai mental."
+    },
+    "abp": {
+      "title": "Acaricia la teva mascota",
+      "text": "Tens una mascota a prop? Acariciar un animal redueix la pressió arterial i augmenta l'oxitocina. Guanyeu tots dos."
+    },
+    "abq": {
+      "title": "Teràpia de riure",
+      "text": "Mira un vídeo divertit o recorda alguna cosa que et va fer riure. Riure augmenta l'oxigenació i allibera endorfines."
+    },
+    "abr": {
+      "title": "Aire fresc",
+      "text": "Obre una finestra o surt un minut. L'aire fresc augmenta l'oxigenació i aclareix la ment. Especialment important a l'hivern."
+    },
+    "abs": {
+      "title": "Escàner corporal",
+      "text": "Tanca els ulls i escaneja el cos de dalt a baix. Nota on sents tensió. Respira cap a la zona tensa i deixa-la anar."
+    },
+    "abt": {
+      "title": "Ioga d'escriptori",
+      "text": "Gat-vaca a la cadira, torsió assegut, flexió endavant. El ioga simple d'escriptori allibera tensions sense necessitat d'una estora."
+    },
+    "abu": {
+      "title": "Llegeix una pàgina",
+      "text": "Llegeix una pàgina d'un llibre – de paper. Dona als ulls temps sense pantalla i al cervell un estímul diferent."
+    },
+    "abv": {
+      "title": "El cicle de 90 minuts",
+      "text": "El cervell treballa en cicles ultradians d'aproximadament noranta minuts. Planifica les pauses segons aquest ritme per a màxima eficiència."
+    },
+    "abw": {
+      "title": "Pausa de curiositat",
+      "text": "Investiga alguna cosa que sempre t'has preguntat. O mira un documental curt. La curiositat activa el sistema de recompensa del cervell."
+    },
+    "abx": {
+      "title": "Respiració quadrada",
+      "text": "Inspira quatre segons, aguanta quatre, expira quatre, aguanta quatre. Repeteix quatre vegades. Els militars utilitzen això contra l'estrès."
+    },
+    "aby": {
+      "title": "Balla",
+      "text": "Posa una cançó i balla lliurement tres minuts. Combina moviment físic, música i alegria. Tanca la porta si vols."
+    },
+    "abz": {
+      "title": "Truca algú",
+      "text": "Truca un amic o familiar. Només dos minuts. El contacte humà millora el benestar més que la majoria de trucs de productivitat."
+    },
+    "aca": {
+      "title": "Dosi de llum solar",
+      "text": "Surt al sol cinc minuts. La llum solar regula el ritme circadiari, augmenta els nivells de vitamina D i millora l'humor."
+    },
+    "acb": {
+      "title": "Relaxació progressiva",
+      "text": "Tensar i relaxar cada grup muscular per torns. Comença pels peus i puja. Tot el cos en cinc minuts."
+    },
+    "acc": {
+      "title": "Moment descalç",
+      "text": "Treu-te les sabates i sent el terra sota els peus. Caminar descalç, fins i tot a casa, estimula els nervis de la planta i millora l'equilibri."
+    },
+    "acd": {
+      "title": "Escriu al teu jo futur",
+      "text": "Escriu un missatge curt al teu jo de d'aquí a sis mesos. Què esperes? Què vols recordar? Dóna perspectiva."
+    },
+    "ace": {
+      "title": "Neteja digital",
+      "text": "Tanca pestanyes innecessàries, esborra fitxers antics, dona't de baixa d'un butlletí. Cinc minuts de neteja digital redueixen el soroll mental."
+    },
+    "acf": {
+      "title": "La regla dels dos minuts",
+      "text": "Si alguna cosa triga menys de dos minuts, fes-ho ara. Respon aquell correu, renta la tassa, arregla la petita cosa. Allibera energia mental."
+    },
+    "acg": {
+      "title": "Auditoria de postura",
+      "text": "Recolza't contra una paret: talons, natges, omòplats i bescoll han de tocar la paret. Aquesta és la teva postura de referència."
+    },
+    "ach": {
+      "title": "Pausa d'aroma",
+      "text": "Olora cafè, una llimona, espígol o la teva fragància preferida. L'olfacte connecta directament amb el centre emocional del cervell i pot canviar l'humor a l'instant."
+    },
+    "aci": {
+      "title": "Mirar els núvols",
+      "text": "Vés a la finestra i mira els núvols. Troba-hi formes. És meditació per als qui no volen meditar, i funciona igual de bé."
     }
   },
   "statusMessages": {
@@ -360,163 +460,507 @@
     "nextMiniBreak": "Següent Mini Pausa"
   },
   "miniBreakIdeas": {
-    "aac": {
-      "text": "Mireu lentament cap amunt, i després cap avall."
-    },
-    "aaf": {
-      "text": "Estira les cames."
-    },
-    "aah": {
-      "text": "La teva postura és correcta?"
-    },
-    "aaj": {
-      "text": "Gira el cap de costat a costat lentament i mantén-lo 5-10 segons."
-    },
-    "aal": {
-      "text": "Centra els ulls en un objecte que estigui a 20 metres com a mínim."
-    },
-    "aam": {
-      "text": "Dedica un instant a reflexionar sobre alguna cosa que valores."
-    },
-    "aan": {
-      "text": "Dedica un instant a gaudir del fet de viure."
-    },
-    "aar": {
-      "text": "Col·loca les puntes dels dits a les teves espatlles. Gira les espatlles endavant durant 10 segons, després cap enrere."
-    },
-    "aas": {
-      "text": "Aixeca el braç dret, estira'l sobre el cap en direcció a l'esquerra, i aguanta'l 10 segons. Repeteix amb l'altre costat."
-    },
-    "aat": {
-      "text": "Amb la mà dreta, agafa cada dit de la teva mà esquerra i prem-los. Repeteix amb l'altra banda."
-    },
-    "aax": {
-      "text": "Si necessites ajuda, demana-la."
-    },
-    "aaz": {
-      "text": "Com empres la teva atenció?"
-    },
-    "abd": {
-      "text": "Amb els ulls closos, gira'ls lentament cap a l'esquerra, i després cap a la dreta."
-    },
-    "abe": {
-      "text": "Agita les mans per alleujar la tensió."
-    },
-    "abf": {
-      "text": "D'una en una, toca la punta de cada dit amb el polze perquè facin una forma d'O."
-    },
-    "abg": {
-      "text": "Fes un puny i després llisca els dits amunt fins que apuntin cap al sostre, com si diguessis a algú que pari."
-    },
-    "abh": {
-      "text": "Fes un puny i després obre els dits en ventall i estira'ls tant com puguis."
-    },
-    "abo": {
-      "text": "Alça't amb els peus separats a l'amplada de les espatlles, ajeu-te com si anessis a seure un altre cop, i torna't a aixecar. Repeteix-ho bastantes vegades."
-    },
-    "abp": {
-      "text": "Col·loca't dempeus amb l'esquena i mans a la paret, i mou els braços lentament amunt i avall com si fessis àngels a la neu."
-    },
-    "abq": {
-      "text": "De cara a la paret, fes unes quantes flexions de paret."
-    },
-    "abs": {
-      "text": "De cara a la paret, posa un peu enrere i l'altre endavant, i recolza't a la paret. Canvia de cama."
-    },
-    "abv": {
-      "text": "Estén un braç per davant del teu pit, agafa't el colze amb l'altra mà i estira suaument cap al teu pit. Repeteix amb l'altre braç."
-    },
     "aaa": {
-      "text": "Ves a agafar un got d'aigua."
+      "text": "Vés a buscar un got d'aigua."
     },
     "aab": {
-      "text": "Gira el cap a poc a poc cap a l'esquerra, i després cap a la dreta."
+      "text": "La teva ampolla d'aigua et jutja. Fes un glop."
+    },
+    "aac": {
+      "text": "Control d'hidratació: quan vas beure aigua per última vegada?"
     },
     "aad": {
-      "text": "Tanqueu els ulls i respireu profundament uns quants cops."
+      "text": "Beu aigua. El cafè no compta."
     },
     "aae": {
-      "text": "Tanqueu els ulls i relaxeu-vos."
+      "text": "Omple l'ampolla d'aigua. El teu cos t'ho agrairà."
     },
-    "aai": {
-      "text": "Gira el cap a poc a poc de costat a costat i mantingues-lo 10 segons."
-    },
-    "aak": {
-      "text": "Alça't de la cadira i estira't."
-    },
-    "aao": {
-      "text": "Una estació de treball veritablement ergonòmica és aquella de la qual us allunyeu sovint."
-    },
-    "aap": {
-      "text": "Tanca els ulls i compta les teves respiracions."
-    },
-    "aaq": {
-      "text": "Tanca els ulls i anomena les coses que sents."
+    "aaf": {
+      "text": "L'aigua és la beguda de la vida. Fes un glop ara."
     },
     "aag": {
-      "text": "Estira els braços."
+      "text": "Recordatori: ets majoritàriament aigua. Reomple el dipòsit."
     },
-    "aav": {
-      "text": "Tanca els ulls i fixa't en què passa en el present, sense jutjar."
+    "aah": {
+      "text": "Un glop d'aigua fa miracles. Prova-ho."
     },
-    "aaw": {
-      "text": "Centra't cada 20 minuts durant 20 segons en un objecte a 5+ metres de distància."
+    "aai": {
+      "text": "Mira lluny de la pantalla durant 20 segons."
+    },
+    "aaj": {
+      "text": "Regla 20-20-20: mira a 20 metres durant 20 segons."
+    },
+    "aak": {
+      "text": "Tanca els ulls i relaxa els músculs oculars."
+    },
+    "aal": {
+      "text": "Fes rodar els ulls en cercles. Ningú et jutja."
+    },
+    "aam": {
+      "text": "Enfoca alguna cosa llunyana per la finestra."
+    },
+    "aan": {
+      "text": "Parpelleja conscientment deu vegades. Els teus ulls ho necessiten."
+    },
+    "aao": {
+      "text": "Frega els palmells de les mans i posa'ls sobre els ulls."
+    },
+    "aap": {
+      "text": "Alça el cap de la pantalla i respira profundament."
+    },
+    "aaq": {
+      "text": "Fes tres respiracions profundes. Inspira pel nas, expira per la boca."
+    },
+    "aar": {
+      "text": "Inspira quatre segons, aguanta quatre, expira quatre."
+    },
+    "aas": {
+      "text": "Relaxa les espatlles mentre expires."
+    },
+    "aat": {
+      "text": "Respira amb el ventre. Sent com puja."
     },
     "aau": {
-      "text": "Alça't i fes una estocada (passa amb el genoll flexionat). Mantingues la postura 10 segons, i canvia de cama."
+      "text": "Una expiració llarga activa el sistema nerviós parasimpàtic."
+    },
+    "aav": {
+      "text": "Expira el doble de lent del que inspires."
+    },
+    "aaw": {
+      "text": "Tanca els ulls i fes cinc respiracions conscients."
+    },
+    "aax": {
+      "text": "Respira amb calma. Res no és tan urgent com sembla."
     },
     "aay": {
-      "text": "Fes les coses pas a pas."
+      "text": "Seu dret. Gràcies."
+    },
+    "aaz": {
+      "text": "Redreça l'esquena. T'has tornat a encongir."
     },
     "aba": {
-      "text": "Canvia la teva postura."
+      "text": "Ajusta la cadira perquè els peus reposen plans a terra."
     },
     "abb": {
-      "text": "Exposa els teus ulls a la llum natural."
+      "text": "Espatlles avall, lluny de les orelles. Relaxa't."
     },
     "abc": {
-      "text": "Amb els ulls closos, aixequeu-los a poc a poc cap al sostre i un altre cop cap a terra."
+      "text": "Imagina un fil que et tira cap amunt des del cap."
+    },
+    "abd": {
+      "text": "Comprova la teva postura. Recte però no rígid."
+    },
+    "abe": {
+      "text": "Tira les espatlles enrere i obre el pit."
+    },
+    "abf": {
+      "text": "Posa els dos peus a terra. Sent el contacte."
+    },
+    "abg": {
+      "text": "Inclina el cap cap a un costat i estira el coll."
+    },
+    "abh": {
+      "text": "Fes rodar el cap lentament en un semicercle."
     },
     "abi": {
-      "text": "Seu recte, amb els braços penjant als costats, i gira lentament el coll en una direcció formant un gran cercle."
+      "text": "Baixa la barbeta cap al pit i sent l'estirament al coll."
     },
     "abj": {
-      "text": "Posa't dempeus i gira el cap lentament cap a una espatlla fent servir la mateixa mà fins que notis que tiba."
+      "text": "Mira lentament cap a l'esquerra i després cap a la dreta."
     },
     "abk": {
-      "text": "Aixeca't amb els braços als costats. Apropa els omòplats l'un a l'altre i aguanta."
+      "text": "Gira el cap en cercles suaus. El coll t'ho agrairà."
     },
     "abl": {
-      "text": "Alça't amb els braços aixecats alineats amb les espatlles. Mou les mans lleugerament darrere de l'esquena, aguanta un segon i torna."
+      "text": "Masseja el coll amb els dits durant trenta segons."
     },
     "abm": {
-      "text": "Seu a la vora de la cadira, gira el tors cap un costat i aguanta 10-15 segons. Repeteix a l'altre costat."
+      "text": "Puja les espatlles cap a les orelles, aguanta i deixa anar."
     },
     "abn": {
-      "text": "Aixeca't i posa un peu sobre un objecte proper, com una cadira o tamboret. Mantén el genoll doblegat i aguanta 10-15 segons. Repeteix-ho amb l'altre peu."
+      "text": "Fes rodar les espatlles enrere cinc vegades."
+    },
+    "abo": {
+      "text": "Fes rodar les espatlles endavant cinc vegades."
+    },
+    "abp": {
+      "text": "Apropa els omòplats com si pressionessis un llapis entre ells."
+    },
+    "abq": {
+      "text": "Estira un braç i tira'l cap al pit."
     },
     "abr": {
-      "text": "Seu a la vora de la cadira i estén una cama recta davant teu, mantenint-la 10-15 segons. Canvia de cama."
+      "text": "Sacseja les espatlles. Deixa anar la tensió."
+    },
+    "abs": {
+      "text": "Obre els dits ben amples i després tanca els punys."
     },
     "abt": {
-      "text": "Aixeca un braç recte cap al cel, i fes servir l'altre per empènyer suaument el colze del braç aixecat cap al teu cap. Fes-ho durant 10-15 segons. Canvia de braç."
+      "text": "Fes rodar els canells en cercles cap als dos costats."
     },
     "abu": {
-      "text": "Inclina el cap en una direcció, i després cap a l'altra, i inclina'l suaument cap a davant i cap enrere."
+      "text": "Sacseja les mans com si les assequessis."
+    },
+    "abv": {
+      "text": "Prem els palmells l'un contra l'altre durant deu segons."
     },
     "abw": {
-      "text": "Aixeca't i posa un peu sobre un objecte proper, com una cadira o tamboret, i toca't els dits dels peus. Repeteix-ho amb l'altre peu."
+      "text": "Doblega el canell amunt i avall amb l'altra mà."
     },
     "abx": {
-      "text": "Posa't en una porta i col·loca un braç a cada costat de la porta, després inclina't suaument cap endavant fins que sentis un estirament al pit."
+      "text": "Tamborineja els dits sobre la taula com si toquessis el piano."
     },
     "aby": {
-      "text": "Seu a la vora d'una cadira o al terra, i col·loca les plantes dels peus juntes, prement suaument amb els colzes cap avall per a estirar l'interior de les cuixes."
+      "text": "Masseja el palmell amb el polze de l'altra mà."
+    },
+    "abz": {
+      "text": "Estira cada dit individualment. Dóna'ls una mica d'amor."
+    },
+    "aca": {
+      "text": "Gira el tors cap a un costat, aguanta cinc segons."
+    },
+    "acb": {
+      "text": "Recolza't enrere a la cadira i estira l'esquena."
+    },
+    "acc": {
+      "text": "Aixeca't i inclina't endavant cap als dits dels peus."
+    },
+    "acd": {
+      "text": "Seu dret i gira el tronc cap a cada costat."
+    },
+    "ace": {
+      "text": "Fes el moviment gat-vaca a la cadira."
+    },
+    "acf": {
+      "text": "Estira els braços cap amunt i inclina't cap a un costat."
+    },
+    "acg": {
+      "text": "Estira les cames sota l'escriptori."
+    },
+    "ach": {
+      "text": "Aixeca't i fes cinc esquats."
+    },
+    "aci": {
+      "text": "Aixeca't i camina al lloc durant trenta segons."
+    },
+    "acj": {
+      "text": "Alterna alçar els genolls mentre seus."
+    },
+    "ack": {
+      "text": "Posa't de puntetes i baixa, deu vegades."
+    },
+    "acl": {
+      "text": "Fes una volta curta al voltant de l'escriptori."
+    },
+    "acm": {
+      "text": "Aixeca't i estira tot el cos."
+    },
+    "acn": {
+      "text": "Fes cinc flexions contra l'escriptori."
+    },
+    "aco": {
+      "text": "Salta al lloc cinc vegades. Ningú et veu."
+    },
+    "acp": {
+      "text": "Aixeca't i sacseja tot el cos."
+    },
+    "acq": {
+      "text": "Fes una passejada curta fins a la cuina i torna."
+    },
+    "acr": {
+      "text": "Aixeca't, estira els braços per sobre el cap i badalla fort."
+    },
+    "acs": {
+      "text": "Fes un tomb curt pel passadís."
+    },
+    "act": {
+      "text": "Aixeca't i fes un gran estirament com un gat."
+    },
+    "acu": {
+      "text": "Para i escolta tres sons al teu voltant."
+    },
+    "acv": {
+      "text": "Sent els peus a terra. Sigues present."
+    },
+    "acw": {
+      "text": "Observa la teva respiració sense canviar-la."
+    },
+    "acx": {
+      "text": "Mira per la finestra i simplement observa."
+    },
+    "acy": {
+      "text": "Fixa't en tres coses que pots veure ara mateix."
+    },
+    "acz": {
+      "text": "Fes una pausa conscient. Només trenta segons."
+    },
+    "ada": {
+      "text": "Sent la temperatura de l'habitació. Calor? Fred? Just bé?"
+    },
+    "adb": {
+      "text": "Nota com se sent el teu cos ara mateix, sense jutjar."
+    },
+    "adc": {
+      "text": "Hora de fer un vermut! Bé, almenys un estirament."
+    },
+    "add": {
+      "text": "Has estat assegut més que un casteller a la base. Mou-te."
+    },
+    "ade": {
+      "text": "Fins i tot el Barça fa pauses. Estira't."
+    },
+    "adf": {
+      "text": "Pausa com un professional. Estira't com si ningú mirés."
+    },
+    "adg": {
+      "text": "La teva cadira d'oficina no és un sofà. Seu bé."
+    },
+    "adh": {
+      "text": "Fes una micropausa. És com una calçotada per als músculs."
+    },
+    "adi": {
+      "text": "Estira't com si anessis a buscar la coca de recapte a la prestatgeria de dalt."
+    },
+    "adj": {
+      "text": "Hora de moure's! El teu teclat també necessita descansar."
+    },
+    "adk": {
+      "text": "Dóna't un aplaudiment. Amb els braços ben estirats."
+    },
+    "adl": {
+      "text": "Si pots sobreviure a un dilluns, pots fer un estirament."
+    },
+    "adm": {
+      "text": "Ets més rígid que un pa de pagès d'ahir. Estira't!"
     }
   },
   "break": {
     "postpone": "Ajornar aquesta pausa",
     "skip": "Saltar aquesta pausa",
     "title": "És temps d'una pausa!"
+  },
+  "ui": {
+    "loading": "Carregant Pauza…",
+    "preview": {
+      "status": "Previsualització",
+      "detail": "Previsualització al navegador",
+      "action": "El mode de previsualització s'ha activat."
+    },
+    "title": "Pauza",
+    "heroHeadline": "Protegiu el ritme de treball amb una interfície tranquil·la",
+    "heroSubtitle": "Paràmetres freqüents al davant, controls avançats al darrere.",
+    "settingsCategories": "Categories de configuració",
+    "settingsCategoriesHint": "Canvieu de categoria a l'esquerra, consulteu la configuració a la dreta.",
+    "currentCategory": "Categoria actual",
+    "overview": "Resum",
+    "overviewHint": "Resum d'estat, activitat recent i accés ràpid.",
+    "liveOverview": "Resum en directe",
+    "liveOverviewHint": "Consulteu el ritme actual, l'estat de l'aplicació i la finestra de descans.",
+    "quickActions": "Accions ràpides",
+    "quickActionsHint": "Aquestes accions afecten directament el ritme actual.",
+    "savePanel": "Desa els canvis",
+    "savePanelHint": "Els canvis només s'apliquen després de desar.",
+    "nextBreakLabel": "Proper descans",
+    "currentBreakLabel": "Descans actual",
+    "lastActionLabel": "Última acció",
+    "runtimeLabel": "Temps d'execució",
+    "platformLabel": "Plataforma",
+    "versionLabel": "Versió",
+    "breakFeelLabel": "Estil de descans",
+    "placementLabel": "Posició de la finestra",
+    "pendingChanges": "Canvis sense desar",
+    "synced": "Sincronitzat",
+    "saving": "Desant…",
+    "allSet": "Tot llest",
+    "noCurrentBreak": "Cap descans actiu",
+    "liveSignals": "Senyals en directe",
+    "general": "General",
+    "preferences": "Preferències",
+    "currentStatus": "Estat actual",
+    "language": "Idioma",
+    "languageChinese": "Xinès simplificat",
+    "languageEnglish": "Anglès",
+    "launchOnLogin": "Iniciar en entrar",
+    "enabled": "Activat",
+    "disabled": "Desactivat",
+    "schedule": "Horari",
+    "interruptions": "Notificacions i interrupcions",
+    "sectionScheduleHint": "Només mostra els paràmetres de ritme que ajusteu diàriament.",
+    "microbreaks": "Microdescansos",
+    "microbreaksHint": "Recàrregues breus durant el treball.",
+    "longBreaks": "Descansos llargs",
+    "longBreaksHint": "Descans complet després de diversos cicles.",
+    "interval": "Interval",
+    "every": "Freqüència",
+    "durationLabel": "Durada",
+    "behavior": "Comportament",
+    "allowPostpone": "Permetre ajornar",
+    "signals": "Senyals",
+    "sectionSignalsHint": "Ajudeu Pauza a triar el moment adequat per avisar.",
+    "naturalBreaks": "Descansos naturals",
+    "naturalBreaksHint": "Reinici automàtic quan heu estat absent prou temps.",
+    "resetAfter": "Reiniciar després de",
+    "dnd": "No molestar",
+    "dndHint": "Pausa quan el mode de concentració del sistema està actiu",
+    "sectionSurfaceHint": "Controleu la intensitat de la interrupció i la posició de la finestra de descans.",
+    "sectionGeneralHint": "Preferències globals mínimes.",
+    "notificationsCategory": "Notificacions i ajornament",
+    "notificationsCategoryHint": "Gestioneu el temps de preavís i les regles d'ajornament.",
+    "surfaceCategory": "Interrupció i disposició",
+    "surfaceCategoryHint": "Controleu com es mostra, la posició i l'estricte.",
+    "smartPause": "Pausa intel·ligent",
+    "smartPauseHint": "Pauza primer busca moments naturals i després relaxa gradualment.",
+    "generalAndShortcuts": "General i dreceres",
+    "generalAndShortcutsHint": "Gestioneu l'idioma, l'inici automàtic i les dreceres.",
+    "advanced": "Avançat",
+    "sectionAdvancedHint": "Control més profund, opcions de compatibilitat i dreceres.",
+    "appExclusions": "Exclusions d'aplicacions",
+    "appExclusionsHint": "Aplicacions que pausen o reprenen les notificacions.",
+    "appExclusionsEnable": "Activar",
+    "appRulePause": "Pausar en coincidir",
+    "appRuleResume": "Reprendre només en coincidir",
+    "pause30": "Pausa 30 min",
+    "focus45": "Concentració 45 min",
+    "resume": "Reprendre",
+    "clearFocus": "Finalitzar concentració",
+    "save": "Desar",
+    "revert": "Revertir",
+    "defaults": "Valors per defecte",
+    "preBreakNotifications": "Preavís",
+    "beforeLabel": "abans",
+    "postpone": "Més tard",
+    "scheduleControl": "Control d'horari",
+    "resetScheduleHint": "Reiniciar el temporitzador des d'ara.",
+    "postponeCategoryHint": "Configureu temps i límits d'ajornament separats per a microdescansos i descansos llargs.",
+    "limitLabel": "Límit",
+    "breakSurface": "Finestra de descans",
+    "breakDisplayMode": "Mode de visualització",
+    "breakBackdrop": "Tema de fons",
+    "breakBackdropHint": "Trieu un fons ambiental per a la finestra de descans.",
+    "breakBackdropPaper": "Paper",
+    "breakBackdropDawn": "Alba",
+    "breakBackdropForest": "Bosc",
+    "breakBackdropNight": "Nit",
+    "breakBackdropCustom": "Personalitzat",
+    "customWallpaper": "Fons personalitzat",
+    "customWallpaperHint": "Pengeu una imatge local com a fons de descans.",
+    "customWallpaperChoose": "Triar imatge",
+    "customWallpaperReplace": "Canviar imatge",
+    "customWallpaperRemove": "Eliminar",
+    "customWallpaperEmpty": "Cap fons personalitzat seleccionat",
+    "customWallpaperEmptyHint": "Sense imatge s'usa el tema per defecte.",
+    "customWallpaperReady": "La imatge es comprimeix i es desa localment com a fons de descans.",
+    "breakIdeas": "Consells de descans",
+    "breakIdeasHint": "Mostra un consell breu a cada descans.",
+    "breakSounds": "Sons de descans",
+    "breakSoundsHint": "Reprodueix sons abans de començar el descans i en acabar.",
+    "microbreakStartSound": "So d'inici de microdescans",
+    "microbreakEndSound": "So de fi de microdescans",
+    "longBreakStartSound": "So d'inici de descans llarg",
+    "longBreakEndSound": "So de fi de descans llarg",
+    "breakSoundVolume": "Volum",
+    "breakSoundSilence": "Silenci",
+    "breakSoundCrystalGlass": "Copa de cristall",
+    "breakSoundWindChime": "Campaneta de vent",
+    "breakSoundTicToc": "Tic-tac",
+    "breakSoundReverie": "Reverie",
+    "reminderMode": "Mode de recordatori",
+    "reminderModeHint": "Intel·ligent busca moments naturals, forçat interromp immediatament.",
+    "reminderModeSmart": "Intel·ligent",
+    "reminderModeForced": "Forçat",
+    "window": "Finestra",
+    "fullscreen": "Pantalla completa",
+    "promptStyleGentle": "Suau",
+    "promptStyleBalanced": "Equilibrat",
+    "promptStyleImmersive": "Immersiu",
+    "allScreens": "Totes les pantalles",
+    "screenPrimary": "Pantalla principal",
+    "screenCursor": "Pantalla amb el cursor",
+    "showTimeToBreakInTray": "Mostra el temps fins al descans a la barra d'estat",
+    "currentTimeInBreaks": "Mostra l'hora actual a la finestra de descans",
+    "currentTimeInBreaksHint": "Mostra l'hora del sistema a la cantonada superior dreta.",
+    "strictModes": "Modes estrictes",
+    "strictModesHint": "Controleu si es poden ometre els descansos.",
+    "microbreakStrict": "Microdescans estricte",
+    "longBreakStrict": "Descans llarg estricte",
+    "manualFinish": "Finalització manual després del temporitzador",
+    "showTrayMenuInStrictMode": "Mostra el menú en mode estricte",
+    "shortcuts": "Dreceres",
+    "shortcutsHint": "Deixeu en blanc per desactivar. Ex.: CmdOrCtrl+Shift+P",
+    "shortcutReveal": "Obrir configuració",
+    "shortcutFocus45": "Concentració 45 min",
+    "shortcutPauseToggle": "Alternar pausa",
+    "shortcutPause30": "Pausa 30 min",
+    "shortcutPause60": "Pausa 1 hora",
+    "shortcutPause120": "Pausa 2 hores",
+    "shortcutPause300": "Pausa 5 hores",
+    "shortcutSkipScheduled": "Saltar al proper descans",
+    "shortcutSkipMicrobreak": "Saltar al microdescans",
+    "shortcutSkipLongBreak": "Saltar al descans llarg",
+    "shortcutReset": "Reiniciar horari",
+    "suffix": {
+      "secondsLong": "segons",
+      "secondsBefore": "segons abans",
+      "minutesApart": "minuts",
+      "cycles": "cicles",
+      "minutesLong": "minuts",
+      "minutesShortPostpone": "min",
+      "minutesLongPostpone": "min",
+      "minutesAway": "minuts",
+      "minutes": "min",
+      "times": "vegades"
+    },
+    "status": {
+      "noBreakScheduled": "Cap descans programat",
+      "microbreak": "Microdescans",
+      "longBreak": "Descans llarg",
+      "nextBreak": "{{label}} en {{duration}}",
+      "focus": "Concentració {{duration}}",
+      "pause": "Pausa {{duration}}",
+      "pauseForever": "Pausa indefinida",
+      "blockedBy": "Pausat per {{match}}",
+      "appRuleActive": "Regla d'aplicació activa",
+      "dndActive": "No molestar actiu"
+    },
+    "error": {
+      "loadState": "No s'ha pogut carregar l'estat de Pauza"
+    },
+    "breakCopy": {
+      "clearedDetail": "No hi ha cap descans actiu.",
+      "manualAwaiting": "S'ha acabat el temps. Completeu aquest descans abans de tornar a treballar.",
+      "awaitingFinish": "Esperant finalització",
+      "actions": {
+        "resumeWork": "Tornar al treball",
+        "done": "Fet",
+        "later": "Més tard",
+        "skip": "Ometre"
+      },
+      "defaultPrompt": {
+        "microbreak": "Aixequeu-vos, estireu espatlles i coll, mireu lluny.",
+        "longBreak": "Allunyeu-vos de la taula uns minuts per descansar cos i ment."
+      }
+    },
+    "previewAction": {
+      "save": "Previsualització: Configuració actualitzada.",
+      "pause": "Previsualització: Pausa 30 min.",
+      "pauseForever": "Previsualització: Pausa indefinida.",
+      "focus": "Previsualització: Concentració activada.",
+      "focusCleared": "Previsualització: Concentració finalitzada.",
+      "resume": "Previsualització: Reprès.",
+      "reset": "Previsualització: Horari reiniciat.",
+      "autostartOn": "Previsualització: Inici automàtic activat.",
+      "autostartOff": "Previsualització: Inici automàtic desactivat.",
+      "done": "Previsualització: Descans completat.",
+      "later": "Previsualització: Descans ajornat.",
+      "skip": "Previsualització: Descans omès."
+    },
+    "preBreakSoundHint": "Un so suau abans que acabi el temps per acabar la tasca.",
+    "previewSound": "Escoltar",
+    "appExclusionsSearch": "Cercar entre les aplicacions en execució",
+    "appExclusionsSearchPlaceholder": "Nom de l'aplicació…",
+    "appExclusionsSearchLoading": "Carregant…",
+    "appExclusionsSearchEmpty": "Sense resultats",
+    "appExclusionsManualHint": "Escriviu el nom del procés (un per línia)",
+    "appExclusionsAdd": "Feu clic per afegir a la llista d'exclusions"
   }
 }

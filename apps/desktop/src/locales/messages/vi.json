@@ -97,7 +97,7 @@
       "dot": ".",
       "checkNewVersion": "Tự động kiểm tra phiên bản cập nhật của ứng dụng",
       "learnMore": "Để tìm hiểu thêm về các tính năng của Pauza, hãy xem hướng dẫn, tải xuống phiên bản mới nhất hoặc liên hệ với chúng tôi để được hỗ trợ, ",
-      "janH": "Clarke Young",
+      "clarkeY": "Clarke Young",
       "designedBy": "Biểu tượng và Giao diện người dùng thiết kế bởi Colin Shanley"
     },
     "title": "Tuỳ chọn Pauza",
@@ -191,300 +191,524 @@
     "resuming": "Đang tiếp tục"
   },
   "miniBreakIdeas": {
-    "aae": {
-      "text": "Nhắm mắt lại và thư giãn."
-    },
-    "aaf": {
-      "text": "Duỗi chân của bạn ra nào."
-    },
-    "aai": {
-      "text": "Từ từ quay đầu sang một bên và giữ trong 10 giây."
-    },
-    "aaj": {
-      "text": "Từ từ nghiêng đầu sang một bên và giữ trong 5-10 giây."
-    },
-    "aap": {
-      "text": "Nhắm mắt lại và đếm hơi thở của bạn."
-    },
-    "aas": {
-      "text": "Nâng cánh tay phải của bạn, duỗi nó qua đầu sang trái và giữ trong 10 giây. Lặp lại với tay trái."
-    },
-    "aav": {
-      "text": "Nhắm mắt lại và chỉ cần chú ý bất cứ điều gì phát sinh trong thời điểm hiện tại, và không nên phán xét chúng."
-    },
-    "aaz": {
-      "text": "Sự chú ý của bạn có được sử dụng một cách khôn ngoan không?"
-    },
-    "aba": {
-      "text": "Thay đổi tư thế ngồi của bạn."
-    },
-    "abb": {
-      "text": "Để mắt bạn tiếp xúc với ánh sáng tự nhiên."
-    },
-    "abe": {
-      "text": "Hãy lắc tay để cảm nhận được sự nhẹ nhõm."
-    },
-    "abs": {
-      "text": "Đứng quay mặt vào tường, đặt một chân ra sau và chân kia về phía trước, sau đó dựa vào tường. Lặp lại với chân còn lại."
-    },
-    "abu": {
-      "text": "Nghiêng đầu sang một bên, rồi sang bên kia, sau đó nhẹ nhàng nghiêng về phía trước và phía sau."
+    "aaa": {
+      "text": "Đi lấy một ly nước đi. Cơ thể bạn đang khát đấy."
     },
     "aab": {
-      "text": "Từ từ nhìn hết sang trái, rồi sang phải."
-    },
-    "aah": {
-      "text": "Tư thế ngồi của bạn đã đúng chưa?"
-    },
-    "aad": {
-      "text": "Nhắm mắt lại và hít thở sâu vài lần."
-    },
-    "aak": {
-      "text": "Đứng khỏi ghế của bạn và relax toàn thân."
-    },
-    "aaa": {
-      "text": "Đi lấy một cốc nước."
+      "text": "Chai nước đang nhìn bạn chằm chằm kìa. Uống một ngụm đi."
     },
     "aac": {
-      "text": "Từ từ nhìn hết lên trên, rồi xuống dưới."
+      "text": "Kiểm tra hydration: lần cuối bạn uống nước là khi nào?"
+    },
+    "aad": {
+      "text": "Từ từ nhìn sang trái hết cỡ, rồi sang phải. Mắt cần vận động."
+    },
+    "aae": {
+      "text": "Từ từ nhìn lên trần nhà, rồi nhìn xuống. Giãn cơ mắt nào."
+    },
+    "aaf": {
+      "text": "Nhìn vào vật gì đó cách 6 mét trong 20 giây — quy tắc 20-20-20."
     },
     "aag": {
-      "text": "Duỗi cánh tay của bạn ra nào."
+      "text": "Chớp mắt nhanh 20 lần. Mắt khô sẽ cảm ơn bạn."
+    },
+    "aah": {
+      "text": "Nhắm mắt lại và xoay nhẹ tròng mắt theo vòng tròn."
+    },
+    "aai": {
+      "text": "Nhắm mắt, từ từ nhìn lên rồi nhìn xuống. Thư giãn cơ mắt."
+    },
+    "aaj": {
+      "text": "Nhắm mắt, từ từ nhìn sang trái rồi sang phải."
+    },
+    "aak": {
+      "text": "Xoa hai tay vào nhau cho ấm, rồi áp nhẹ lên mắt nhắm. Spa mini tại bàn."
     },
     "aal": {
-      "text": "Tập trung mắt bạn vào một vật cách xa ít nhất 20 mét (nếu không thì xa nhất có thể)."
+      "text": "Nhìn ra cửa sổ 30 giây. Nhớ không, ngoài kia có cả một thế giới?"
     },
     "aam": {
-      "text": "Dành một chút thời gian để suy nghĩ về một cái gì đó bạn đang quan tâm và đánh giá cao."
+      "text": "Nhìn ra xa và tập trung vào thứ gì đó màu xanh lá. Mắt thích màu xanh lắm."
     },
     "aan": {
-      "text": "Hãy dành một chút thời gian để mỉm cười khi được sống."
+      "text": "Cho mắt tiếp xúc với ánh sáng tự nhiên một chút."
     },
     "aao": {
-      "text": "Một nơi làm việc thực sự tiện dụng là một nơi làm việc mà bạn thường xuyên tránh xa."
+      "text": "Nhắm mắt và hít thở sâu vài lần. Đơn giản mà hiệu quả."
+    },
+    "aap": {
+      "text": "Nhắm mắt lại và thả lỏng. Không nghĩ gì hết."
     },
     "aaq": {
-      "text": "Nhắm mắt lại và gọi tên những thứ bạn nghe thấy."
+      "text": "Nhắm mắt và đếm nhịp thở. Hít vào… thở ra…"
     },
     "aar": {
-      "text": "Đặt đầu ngón tay lên vai. Xoay vai về phía trước trong 10 giây rồi xoay ngược lại."
+      "text": "Hít vào 4 nhịp, giữ 7 nhịp, thở ra 8 nhịp. Kỹ thuật 4-7-8."
+    },
+    "aas": {
+      "text": "Hít 3 hơi thật chậm. Hít vào bằng mũi, thở ra bằng miệng."
     },
     "aat": {
-      "text": "Dùng bàn tay phải của bạn, lần lượt nắm lấy từng ngón tay của bàn tay trái và siết chặt. Lặp lại với bàn tay trái và ngón tay bên phải."
+      "text": "Hít một hơi thật sâu cho bụng phình ra. Đó là thở bằng cơ hoành."
     },
     "aau": {
-      "text": "Đứng lên và thực hiện động tác Lunge (bước chân tới trước và gập gối). Giữ trong 10 giây, sau đó thực hiện chân còn lại."
+      "text": "Không làm gì cả trong 20 giây. Khó hơn bạn nghĩ đấy."
+    },
+    "aav": {
+      "text": "Kiểm tra tư thế ngồi — vai thẳng, chân đặt phẳng trên sàn."
     },
     "aaw": {
-      "text": "Tập trung 20 phút một lần trong 20 giây vào một vật ở khoảng cách 6 mét (20 feet)."
+      "text": "Đổi tư thế ngồi đi. Mông bạn đang phản đối rồi đấy."
     },
     "aax": {
-      "text": "Nếu bạn cần giúp đỡ, hãy lên tiếng."
+      "text": "Hạ vai xuống. Chúng đã leo lên tận tai từ lúc nào rồi."
     },
     "aay": {
-      "text": "Làm một việc tại một thời điểm."
+      "text": "Thả lỏng hàm đi. Bạn không nhận ra mình đang nghiến răng à?"
+    },
+    "aaz": {
+      "text": "Duỗi thẳng cột sống. Tưởng tượng có sợi dây kéo bạn lên từ đỉnh đầu."
+    },
+    "aba": {
+      "text": "Ngồi lâu hại như hút thuốc. Đứng dậy một phút thôi."
+    },
+    "abb": {
+      "text": "Từ từ quay đầu sang một bên, giữ 10 giây. Đổi bên."
     },
     "abc": {
-      "text": "Nhắm mắt lại, chậm rãi và nhẹ nhàng ngước mắt lên trần nhà rồi hạ xuống sàn."
+      "text": "Nghiêng đầu sang một bên, giữ 5-10 giây. Cổ sẽ biết ơn bạn."
     },
     "abd": {
-      "text": "Nhắm mắt lại, chậm rãi và nhẹ nhàng di chuyển mắt sang trái, rồi sang phải."
+      "text": "Nhẹ nhàng kéo tai về phía vai. Cảm nhận cổ được giãn ra."
     },
-    "abg": {
-      "text": "Nắm tay lại rồi đưa các ngón tay lên cho đến khi chúng hướng lên trần nhà, giống như bạn đang bảo ai đó dừng lại."
+    "abe": {
+      "text": "Xoay cổ theo vòng tròn thật chậm và nhẹ nhàng."
     },
     "abf": {
-      "text": "Lần lượt chạm đầu mỗi ngón tay vào đầu ngón tay cái để chúng tạo thành hình chữ O."
+      "text": "Nghiêng đầu trước, sau, trái, phải. Reset la bàn cổ."
+    },
+    "abg": {
+      "text": "Xoay vai về phía trước 10 giây, rồi về phía sau. Hết cứng vai."
     },
     "abh": {
-      "text": "Nắm tay lại rồi xòe các ngón tay ra và duỗi chúng ra xa nhất có thể."
-    },
-    "abj": {
-      "text": "Đứng thẳng và chậm rãi nghiêng đầu về phía vai bằng cùng một tay cho đến khi bạn cảm thấy căng ra."
+      "text": "Nhún vai lên sát tai rồi thả xuống. Lặp lại 5 lần."
     },
     "abi": {
-      "text": "Ngồi thẳng lưng, hai tay buông thõng hai bên và chậm rãi xoay cổ theo một hướng theo một vòng tròn lớn nhất có thể."
+      "text": "Ép hai bả vai lại gần nhau, giữ 5 giây. Ngực mở ra."
+    },
+    "abj": {
+      "text": "Giơ tay phải qua đầu, nghiêng trái, giữ 10 giây. Đổi bên."
     },
     "abk": {
-      "text": "Đứng cao với cánh tay của bạn bên cạnh bạn. Siết chặt xương bả vai của bạn với nhau và giữ."
+      "text": "Đưa một cánh tay ngang ngực, dùng tay kia kéo nhẹ vào. Đổi bên."
     },
     "abl": {
-      "text": "Đứng thẳng với hai cánh tay giơ cao ngang vai. Di chuyển tay ra sau lưng một chút, giữ một giây và quay trở lại."
+      "text": "Giơ thẳng một tay lên, dùng tay kia đẩy khuỷu tay ra sau. Giữ 10 giây. Đổi bên."
     },
     "abm": {
-      "text": "Ngồi trên mép ghế, vặn thân sang một bên và giữ trong 10-15 giây. Lặp lại ở phía bên kia."
-    },
-    "abo": {
-      "text": "Đứng hai chân rộng bằng vai, hạ người xuống như thể bạn đang ngồi tựa lưng vào ghế, sau đó đứng lên. Lặp lại nhiều lần."
+      "text": "Đan các ngón tay sau lưng, kéo ra và mở rộng ngực."
     },
     "abn": {
-      "text": "Đứng lên và đặt một chân lên đồ vật gần đó, chẳng hạn như ghế hoặc ghế đẩu. Gập đầu gối của bạn và giữ trong 10-15 giây. Lặp lại với chân kia."
+      "text": "Đan ngón tay, đẩy lòng bàn tay lên trần nhà. Giãn cơ toàn thân!"
+    },
+    "abo": {
+      "text": "Duỗi thẳng hai tay sang ngang, xoay vòng tròn nhỏ. Nóng nhanh hơn bạn nghĩ."
     },
     "abp": {
-      "text": "Đứng dựa lưng và đặt tay lên tường, sau đó chậm rãi di chuyển cánh tay lên xuống như thể bạn đang làm thiên thần tuyết."
+      "text": "Vẩy tay cho hết căng thẳng. Lắc lắc lắc."
     },
     "abq": {
-      "text": "Đứng quay mặt vào tường và đặt tay lên đó, sau đó thực hiện vài động tác chống đẩy."
+      "text": "Chạm từng đầu ngón tay vào ngón cái, tạo hình chữ O."
     },
     "abr": {
-      "text": "Ngồi trên mép ghế và duỗi thẳng một chân ra trước mặt, giữ trong 10-15 giây. Lặp lại với chân còn lại."
+      "text": "Nắm chặt tay lại, rồi xòe các ngón tay ra hết cỡ."
+    },
+    "abs": {
+      "text": "Nắm tay lại, rồi mở bung ra như đang ra hiệu dừng lại."
     },
     "abt": {
-      "text": "Giữ một cánh tay thẳng lên, sau đó sử dụng cánh tay kia để đẩy nhẹ khuỷu tay của cánh tay thứ nhất về phía đầu của bạn. Giữ trong 10-15 giây. Lặp lại với cánh tay kia."
+      "text": "Bóp từng ngón tay trái bằng tay phải. Đổi tay."
+    },
+    "abu": {
+      "text": "Giãn cổ tay — duỗi cánh tay, kéo nhẹ các ngón tay về phía sau."
     },
     "abv": {
-      "text": "Đưa cánh tay trái qua ngực, tay phải giữ lấy khuỷu tay trái và nhẹ nhàng kéo nó về phía ngực. Lặp lại với cánh tay kia."
+      "text": "Xoay cổ tay 10 vòng theo chiều kim đồng hồ, rồi ngược lại."
     },
     "abw": {
-      "text": "Đứng dậy, đặt một chân lên một đồ vật gần đó, chẳng hạn như ghế hoặc ghế đẩu và đưa tay xuống để chạm vào ngón chân của bạn. Lặp lại với chân còn lại."
+      "text": "Đặt tay phẳng trên bàn, nhẹ nhàng tách các ngón tay ra."
     },
     "abx": {
-      "text": "Đứng ở cửa phòng và đặt một cánh tay ở mỗi bên của cửa, sau đó nhẹ nhàng cúi người về phía trước cho đến khi bạn cảm thấy căng ở ngực."
+      "text": "Gõ từng ngón tay lên bàn, từ út đến cái. Rồi ngược lại."
     },
     "aby": {
-      "text": "Ngồi trên mép ghế hoặc trên sàn, đặt hai lòng bàn chân vào nhau, nhẹ nhàng ấn khuỷu tay xuống gối để kéo căng đùi trong."
+      "text": "Tự massage bàn tay cho mình. Bạn xứng đáng được thế."
+    },
+    "abz": {
+      "text": "Đứng dậy và duỗi người. Cột sống đã chờ lâu rồi."
+    },
+    "aca": {
+      "text": "Ngồi ở mép ghế, xoay thân sang một bên, giữ 10 giây. Đổi bên."
+    },
+    "acb": {
+      "text": "Cong lưng như mèo, rồi võng xuống. Động tác cat-cow phiên bản văn phòng."
+    },
+    "acc": {
+      "text": "Đặt hai tay sau lưng dưới, nhẹ nhàng ưỡn người ra sau."
+    },
+    "acd": {
+      "text": "Đứng tựa lưng vào tường, trượt tay lên xuống — wall angels tại chỗ."
+    },
+    "ace": {
+      "text": "Duỗi chân ra đi. Chúng đã bị gập quá lâu rồi."
+    },
+    "acf": {
+      "text": "Đứng dậy và lunge một cái. Giữ 10 giây mỗi chân."
+    },
+    "acg": {
+      "text": "Đứng dậy squat vài cái. Ghế ở ngay sau nếu bạn \"gục\"."
+    },
+    "ach": {
+      "text": "Nhón chân 10 lần tại bàn. Tập lén không ai biết."
+    },
+    "aci": {
+      "text": "Duỗi thẳng một chân khi ngồi, giữ 10 giây. Đổi chân."
+    },
+    "acj": {
+      "text": "Xoay cổ chân theo vòng tròn — chiều kim đồng hồ, rồi ngược lại."
+    },
+    "ack": {
+      "text": "Gập và duỗi bàn chân 10 lần. Cổ chân đã bị bỏ quên lâu rồi."
+    },
+    "acl": {
+      "text": "Đứng trên một chân 30 giây. Đổi chân. Thăng bằng là kỹ năng đấy."
+    },
+    "acm": {
+      "text": "Ngọ nguậy các ngón chân trong giày. Đúng, tất cả các ngón."
+    },
+    "acn": {
+      "text": "Đứng dậy và giậm chân tại chỗ 30 giây. Giả vờ đang đi bộ."
+    },
+    "aco": {
+      "text": "Chống đẩy tường vài cái. Chắc không ai nhìn đâu. Chắc thế."
+    },
+    "acp": {
+      "text": "Chống tay lên mép ghế, hạ người xuống 5 lần. Desk dips!"
+    },
+    "acq": {
+      "text": "Co và thả từng nhóm cơ từ chân lên đầu. Full body reset."
+    },
+    "acr": {
+      "text": "Nhăn mặt thật chặt 5 giây, rồi thả ra. Hết căng thẳng mặt."
+    },
+    "acs": {
+      "text": "Đứng ở cửa ra vào, tựa người về phía trước, giãn ngực."
+    },
+    "act": {
+      "text": "Nhắm mắt và đoán xem bạn đang nghe thấy những âm thanh gì."
+    },
+    "acu": {
+      "text": "Nhắm mắt và quan sát suy nghĩ xuất hiện, không phán xét."
+    },
+    "acv": {
+      "text": "Nghĩ về điều gì đó bạn biết ơn ngay lúc này."
+    },
+    "acw": {
+      "text": "Mỉm cười đi. Bạn vẫn đang sống và điều đó rất tuyệt."
+    },
+    "acx": {
+      "text": "Quét nhanh cơ thể xem đang căng ở đâu. Vai? Lưng? Hàm?"
+    },
+    "acy": {
+      "text": "Nghĩ một câu tử tế mà bạn sẽ nói với bạn bè, rồi nói với chính mình."
+    },
+    "acz": {
+      "text": "Để ý 5 thứ trong phòng mà trước giờ bạn chưa bao giờ chú ý."
+    },
+    "ada": {
+      "text": "Nhắm mắt và tưởng tượng nơi bạn thấy hạnh phúc nhất trong 20 giây."
+    },
+    "adb": {
+      "text": "Úp điện thoại xuống 60 giây. Không gì xảy ra đâu. Hứa."
+    },
+    "adc": {
+      "text": "Bàn phím không nhớ bạn đâu. Đứng dậy đi."
+    },
+    "add": {
+      "text": "Lưng bạn vừa gửi đơn khiếu nại. Đã đến lúc giãn cơ."
+    },
+    "ade": {
+      "text": "Nhìn lên khỏi màn hình. Plot twist: thế giới là 3D."
+    },
+    "adf": {
+      "text": "Ngáp đi. Ngáp giả cũng thành ngáp thật. Thử xem."
+    },
+    "adg": {
+      "text": "Mở miệng thật rộng, rồi khép lại từ từ. Hết căng hàm."
+    },
+    "adh": {
+      "text": "Ôm chính mình. Khoanh tay lại và siết chặt. Tự yêu bản thân không kỳ đâu."
+    },
+    "adi": {
+      "text": "Nhảy mini 10 giây. Bạn biết bạn muốn mà."
+    },
+    "adj": {
+      "text": "Giả vờ kéo dây thừng qua đầu. Mở khóa bài tập giãn hông."
+    },
+    "adk": {
+      "text": "Áp hai lòng bàn tay trước ngực và giữ yên. Namaste, coder."
+    },
+    "adl": {
+      "text": "Massage thái dương theo vòng tròn nhỏ 10 giây. Bình tĩnh ngay lập tức."
+    },
+    "adm": {
+      "text": "Màn hình vừa gọi. Nó bảo bạn ngồi sát quá lâu rồi."
     }
   },
   "longBreakIdeas": {
     "aaa": {
-      "title": "Bạn không cô đơn",
-      "text": "Bạn có cảm thấy khó khăn khi Giải lao một mình? Cố gắng làm điều đó với một đồng nghiệp. Ngoài việc giúp bạn dễ dàng gắn vào với việc Giải lao hơn, bạn sẽ có cơ hội hiểu rõ hơn về họ. Nghỉ và giải lao cùng nhau làm tăng năng suất lao động."
+      "title": "Cùng nhau nghỉ giải lao",
+      "text": "Nghỉ giải lao một mình khó lắm? Rủ đồng nghiệp nghỉ cùng. Vừa dễ duy trì thói quen, vừa có người để than thở chuyện deadline. Nghiên cứu cho thấy nghỉ giải lao xã hội tăng năng suất đáng kể."
     },
     "aab": {
-      "title": "Hãy bước đi",
-      "text": "Bạn có bao giờ để ý làm thế nào bộ não của bạn có thể tự tìm ra mọi thứ không? Tất cả những gì cần làm là hãy bước ra khỏi bàn máy tính và nghỉ ngơi để suy nghĩ về điều gì đó hoàn toàn không liên quan."
+      "title": "Rời khỏi bàn đi",
+      "text": "Bạn có nhận ra ý tưởng hay nhất thường đến lúc tắm? Vì não giải quyết vấn đề khi bạn không cố suy nghĩ. Rời màn hình và nghĩ về thứ gì hoàn toàn khác đi."
     },
     "aac": {
-      "title": "Khoảng giải lao siêu nhỏ",
-      "text": "Nghỉ ngơi là một thành phần quan trọng trong việc đảm bảo hiệu suất của hệ thống cơ xương. Nghỉ giải lao thường xuyên có thể làm giảm thời lượng tập trung thực hiện một việc gì đó và giúp giảm nguy cơ tác dụng tiêu cực khi làm việc."
+      "title": "Micro-break",
+      "text": "Nghỉ ngắn thường xuyên giúp giảm tổn thương lặp lại và giữ hệ cơ xương khỏe mạnh. Hãy coi đó như bảo trì định kỳ cho cỗ máy con người."
     },
     "aad": {
       "title": "Thiền",
-      "text": "Các nghiên cứu cho thấy rằng các bài tập dựa trên chánh niệm giúp giảm lo lắng, trầm cảm, căng thẳng và đau đớn, đồng thời giúp cải thiện sức khỏe nói chung, sức khỏe tâm thần và chất lượng cuộc sống. Không chắc chắn làm thế nào để bắt đầu ư? Có rất nhiều ứng dụng để giúp bạn giải quyết."
+      "text": "Thiền chánh niệm giảm lo âu, stress và thậm chí cả đau. Chưa biết bắt đầu từ đâu? 5 phút tập trung vào hơi thở là đủ. Có hàng tá app miễn phí hướng dẫn."
     },
     "aae": {
-      "title": "Nháy mắt",
-      "text": "Nhìn vào màn hình trong thời gian dài khiến bạn ít chớp mắt hơn, do đó, mắt bạn sẽ tiếp xúc với không khí. Chớp mắt nhanh trong vài giây để làm mới màng nước mắt và làm sạch bụi khỏi bề mặt mắt."
+      "title": "Chớp mắt nhiều hơn",
+      "text": "Bạn chớp mắt ít hơn 66% khi nhìn màn hình, khiến mắt khô. Chớp nhanh vài giây để làm mới lớp nước mắt. Mắt làm bao nhiêu việc cho bạn — hãy đáp lại."
     },
     "aaf": {
-      "title": "Công thái học",
-      "text": "Chiều cao và góc không phù hợp của bàn phím, chuột, màn hình hoặc bề mặt làm việc có thể gây ra các vấn đề về sức khỏe. Hãy dành chút thời gian để đọc về khái niệm Công thái học của bàn làm việc."
+      "title": "Chỉnh lại bàn làm việc",
+      "text": "Màn hình ngang tầm mắt, bàn phím ngang khuỷu tay, chân đặt phẳng trên sàn. Ergonomics tệ gây tổn thương thật sự. Dành 2 phút kiểm tra — bạn tương lai sẽ cảm ơn."
     },
     "aag": {
-      "title": "Di chuyển",
-      "text": "Có rất nhiều cách bạn có thể tập thể dục trong văn phòng của mình. Hãy thử diễu hành tại chỗ hoặc chống đẩy trên bàn."
-    },
-    "aai": {
-      "title": "Lưu ý",
-      "text": "Bạn đang lơ mơ hay gặp khó khăn trong việc tập trung? Đó là một dấu hiệu cho thấy bạn cần nghỉ ngơi."
-    },
-    "aal": {
-      "title": "Các cuộc họp tích cực",
-      "text": "Làm thế nào về việc chuyển các cuộc họp từ phòng họp sang phòng mở hơn (nơi có thể thoải mái vận động hơn chút)? Đi bộ không chỉ đốt cháy calo mà còn có thể thúc đẩy tinh thần hợp tác."
-    },
-    "aaq": {
-      "title": "Học hỏi",
-      "text": "Trong một nghiên cứu về các tình nguyện viên khỏe mạnh, các nhà nghiên cứu của NIH (Viện sức khoẻ Quốc gia Hoa Kỳ) đã phát hiện ra rằng việc nghỉ giải lao ngắn, sớm và thường xuyên có thể giúp bộ não của chúng ta dễ học các kỹ năng mới."
-    },
-    "aar": {
-      "title": "Tập thể dục",
-      "text": "Bằng chứng cho thấy một lượng nhỏ tập thể dục thường xuyên có thể mang lại những lợi ích sức khỏe đáng kể, bao gồm giảm nhanh căng thẳng."
-    },
-    "aas": {
-      "text": "Bạn đã tìm thấy thói quen vận động theo Pauza của mình chưa? Đừng quên lặp lại nó nhiều lần để chống lại tác động không tốt của việc ngồi lâu.",
-      "title": "Lặp lại"
-    },
-    "aat": {
-      "title": "Cổ tay và cẳng tay",
-      "text": "Mở rộng cánh tay của bạn với lòng bàn tay hướng về phía bạn, sau đó chầm chậm xoay tay bốn lần theo chiều kim đồng hồ, sau đó bốn lần ngược chiều kim đồng hồ."
-    },
-    "aau": {
-      "title": "Duỗi lưng",
-      "text": "Đặt hai bàn tay của bạn sau đầu, đan vào nhau sau đó nâng chúng lên trên đầu và kết thúc với lòng bàn tay hướng lên trên."
-    },
-    "aav": {
-      "title": "Vận động",
-      "text": "Cứ ba mươi phút trì trệ, bạn nên có ít nhất một phút năng động."
-    },
-    "aaw": {
-      "title": "7 phút tập luyện",
-      "text": "Bài tập này bao gồm một thói quen tập thể dục toàn thân trong một khoảng thời gian ngắn. Nhưng như với bất kỳ bài tập nào, hãy cẩn thận. Có rất nhiều ứng dụng để giúp bạn bắt đầu."
-    },
-    "aax": {
-      "title": "Nhịp tim",
-      "text": "Tăng nhịp tim của bạn lên 120 nhịp mỗi phút trong 20 phút liên tục, thực hiện bốn hoặc năm lần một tuần để làm bất cứ điều gì bạn thích. Tăng nhịp tim thường xuyên sẽ giúp cải thiện sức khỏe tim mạch."
-    },
-    "aay": {
-      "title": "Đi cầu thang bộ",
-      "text": "Các nghiên cứu đã chỉ ra rằng leo cầu thang, được coi là hoạt động thể chất cường độ cao, đốt cháy nhiều calo mỗi phút hơn so với chạy bộ."
-    },
-    "aaz": {
-      "title": "Sáng tạo nghệ thuật",
-      "text": "Liệu pháp nghệ thuật được biết là có lợi ích sức khỏe tinh thần tuyệt vời, đặc biệt là khi kiểm soát căng thẳng. Làm thế nào về việc viết nhanh một bài thơ, chụp ảnh hoặc vẽ một cái gì đó nho nhỏ?"
-    },
-    "aba": {
-      "text": "Một không gian sạch sẽ giúp bạn tập trung vào công việc và việc này sẽ khiến bạn hạnh phúc hơn bởi thường liên quan đến những cảm xúc tích cực.",
-      "title": "Dọn dẹp"
-    },
-    "abc": {
-      "text": "Nếu thường xuyên sử dụng các phương tiện công cộng, bạn có thể đứng thay vì ngồi. Nếu có thể, hãy cố gắng thay thế càng nhiều chuyến đi hàng ngày càng tốt bằng đi bộ hoặc đạp xe.",
-      "title": "Phương tiện công cộng"
-    },
-    "abd": {
-      "title": "Ngáp",
-      "text": "Ngáp có thể thực sự hữu ích, vì nó tạo ra nước mắt giúp làm ẩm và bôi trơn mắt."
-    },
-    "abe": {
-      "title": "Thay đổi tiêu điểm",
-      "text": "Giữ một ngón tay gần mắt và tập trung vào nó. Di chuyển ngón tay ra xa một cách chậm rãi, tập trung nhìn ra phía xa rồi quay lại ngón tay. Đưa ngón tay trở lại và tập trung vào một cái gì đó ở xa."
-    },
-    "abg": {
-      "title": "Bóp tay",
-      "text": "Bóp một quả bóng cao su mềm, giữ trong 5 giây. Lặp lại toàn bộ quá trình một vài lần."
-    },
-    "abh": {
-      "title": "Thở chậm",
-      "text": "Một số nghiên cứu mới cho thấy tiềm năng sử dụng các kỹ thuật thở chậm có kiểm soát như một phương tiện để tối ưu hóa các thông số sinh lý. Việc này dường như có liên quan tích cực đến sức khỏe và tuổi thọ."
-    },
-    "abi": {
-      "title": "Hình dung giàu trí tưởng tượng",
-      "text": "Nhắm mắt lại và tưởng tượng mình đang ở một nơi yên bình và tĩnh lặng, chẳng hạn như bãi biển hoặc khu rừng. Hãy tập trung vào cảnh vật, âm thanh và cảm giác của môi trường mà bạn đang tưởng tượng ra."
-    },
-    "aak": {
-      "title": "Sự trao đổi chất",
-      "text": "Một số nghiên cứu mới nổi cho thấy rằng ngồi trong thời gian dài góp phần làm tăng nguy cơ mắc hội chứng chuyển hóa, đau tim và nguy cơ đột quỵ cũng như nguy cơ tử vong chung, bên cạnh một loạt những vấn đề khác. Đi dạo thường xuyên có thể giúp ích cho quá trình tuần hoàn của bạn, giúp chống lại một số vấn đề tiêu cực kể trên."
+      "title": "Tập thể dục tại bàn",
+      "text": "Không cần phòng gym. Giậm chân tại chỗ, chống đẩy tường, hoặc squat vài cái. 60 giây vận động là đủ để reset năng lượng."
     },
     "aah": {
-      "title": "Thay đổi",
-      "text": "Bạn có một quả bóng tập Yoga (a stability ball) hoặc bàn làm việc đứng không? Cân nhắc thay thế bàn ghế của bạn bằng chúng để sử dụng trong một thời gian."
+      "title": "Thay đổi tư thế",
+      "text": "Có bàn đứng hoặc bóng tập? Giờ là lúc chuyển đổi. Xen kẽ ngồi và đứng giảm mệt mỏi và giữ cơ bắp hoạt động."
+    },
+    "aai": {
+      "title": "Đọc tín hiệu cơ thể",
+      "text": "Mơ màng? Khó tập trung? Đọc đi đọc lại cùng một dòng? Đó là cách lịch sự não bạn nói: nghỉ đi thôi."
     },
     "aaj": {
-      "title": "Công nghệ",
-      "text": "Làm thế nào về việc đi bộ không có công nghệ (đi bộ không sử dụng điện thoại, đeo tai nghe)?"
+      "title": "Đi bộ không điện thoại",
+      "text": "Để điện thoại lại và đi bộ ngắn. Không podcast, không nhạc — chỉ có bạn và suy nghĩ. Bất ngờ thư giãn trong thế giới đầy input."
+    },
+    "aak": {
+      "title": "Vấn đề của ngồi lâu",
+      "text": "Ngồi lâu tăng nguy cơ bệnh tim, tiểu đường và đau lưng. Đi bộ 5 phút mỗi giờ có thể bù đắp đáng kể. Cơ thể bạn được tạo ra để vận động."
+    },
+    "aal": {
+      "title": "Họp đi bộ",
+      "text": "Lần tới họp 1-1, đề xuất đi bộ thay vì ngồi. Theo nghiên cứu Stanford, họp đi bộ tăng sáng tạo lên tới 60%."
     },
     "aam": {
-      "title": "Trái cây",
-      "text": "Hãy dành thời gian của bạn và ăn một số trái cây. Chậm rãi. Chú ý hương vị, độ mềm, giòn, độ tươi."
-    },
-    "aao": {
-      "title": "Nghỉ giải lao",
-      "text": "Đi bộ khi nghỉ giải lao? Cân nhắc đi bộ 5 phút mỗi lần bạn đi nghỉ giải lao."
+      "title": "Ăn vặt chánh niệm",
+      "text": "Lấy một miếng trái cây và ăn thật chậm. Chú ý hương vị, kết cấu, độ tươi. Thiền mini ngụy trang thành bữa ăn nhẹ."
     },
     "aan": {
-      "title": "Phòng tắm",
-      "text": "Đi bộ đến toilet xa nhất trong nơi làm việc khi đi vệ sinh."
+      "title": "Đi pha cà phê",
+      "text": "Đi pha cà phê? Biến nó thành chuyến đi bộ 5 phút luôn. Một công đôi việc, thêm một ly cà phê sữa đá."
+    },
+    "aao": {
+      "title": "Não bạn khi nghỉ",
+      "text": "Nghiên cứu NIH cho thấy não luyện tập và củng cố kỹ năng mới khi nghỉ — không phải khi làm việc. Nghỉ giải lao đúng nghĩa giúp bạn giỏi hơn."
     },
     "aap": {
-      "title": "Đồng nghiệp",
-      "text": "Đừng gửi email hoặc nhắn tin cho đồng nghiệp văn phòng, hãy đi bộ đến bàn của họ để liên lạc với họ."
+      "title": "Vận động ít, lợi nhiều",
+      "text": "Ngay cả lượng tập thể dục nhỏ đều đặn cũng giảm stress và cải thiện tâm trạng đáng kể. Không cần cả tiếng — 10 phút vận động có thể thay đổi cả ngày."
+    },
+    "aaq": {
+      "title": "Chuỗi giãn cơ",
+      "text": "Tìm được bộ bài tập giãn cơ ưng ý? Lặp lại nhiều lần trong ngày. Đều đặn thắng cường độ khi chống lại tác hại của ngồi lâu."
+    },
+    "aar": {
+      "title": "Xoay cổ tay",
+      "text": "Duỗi tay ra, lòng bàn tay hướng về phía bạn, rồi xoay chậm — 4 lần thuận, 4 lần ngược. Cổ tay chịu nhiều áp lực hơn bạn nghĩ."
+    },
+    "aas": {
+      "title": "Vươn vai qua đầu",
+      "text": "Đan tay sau đầu, rồi nâng lên trên đầu, lòng bàn tay hướng lên trần. Giữ 10 giây. Cảm nhận lưng tỉnh dậy."
+    },
+    "aat": {
+      "title": "Quy tắc 30/1",
+      "text": "Cứ 30 phút ngồi, hãy vận động ít nhất 1 phút. Đặt hẹn giờ nếu cần. Thói quen nhỏ tích lũy thành lợi ích sức khỏe lớn."
+    },
+    "aau": {
+      "title": "Tập 7 phút",
+      "text": "Bài tập toàn thân chỉ trong 7 phút. Có cơ sở khoa học và không cần dụng cụ. Rất nhiều app miễn phí hướng dẫn."
+    },
+    "aav": {
+      "title": "Nâng nhịp tim",
+      "text": "Hãy nhắm 20 phút nâng nhịp tim (khoảng 120 bpm), 4-5 lần/tuần. Nhảy, chạy, chơi với thú cưng — gì cũng được. Tim không phán xét đâu."
+    },
+    "aaw": {
+      "title": "Leo cầu thang",
+      "text": "Leo cầu thang là bài tập cường độ cao, đốt calo nhiều hơn chạy bộ mỗi phút. Lần tới bỏ thang máy đi. Chân sẽ kêu ca nhưng tim sẽ ăn mừng."
+    },
+    "aax": {
+      "title": "Sáng tạo đi",
+      "text": "Art therapy được chứng minh giảm stress. Viết haiku, vẽ nguệch ngoạc, chụp ảnh cái gì đó đẹp. Sáng tạo là nút reset cho não."
+    },
+    "aay": {
+      "title": "Dọn dẹp bàn",
+      "text": "Bàn bừa bộn liên quan đến stress cao hơn. Dành 5 phút sắp xếp không gian làm việc. Bàn sạch, đầu trong."
+    },
+    "aaz": {
+      "title": "Ăn trưa ngoài trời",
+      "text": "Tiếp xúc thiên nhiên giảm cortisol — hormone stress. Khi có thể, ăn trưa ngoài trời. Ngồi gần cửa sổ nhìn cây xanh cũng giúp ích. Kiểu nghỉ trưa Việt Nam là đỉnh nhất."
+    },
+    "aba": {
+      "title": "Sức mạnh của ngáp",
+      "text": "Ngáp không chỉ vì buồn chán — nó làm mát não và tạo nước mắt bôi trơn mắt. Ngáp giả đi. Cơ thể sẽ biến nó thành thật."
     },
     "abb": {
-      "text": "Thiên nhiên được liên kết với những cảm xúc tích cực và giảm căng thẳng và lo lắng. Bất cứ khi nào có thể, hãy cố gắng nghỉ trưa hàng ngày bên ngoài, bao quanh bởi một số cây xanh.",
-      "title": "Ăn trưa bên ngoài"
+      "title": "Chuyển tiêu cự",
+      "text": "Giơ ngón tay gần mặt và tập trung nhìn. Từ từ đưa ra xa, rồi nhìn xa ra, rồi quay lại. Bài tập cho cơ điều tiết thủy tinh thể."
+    },
+    "abc": {
+      "title": "Áp tay lên mắt",
+      "text": "Úp tay ấm lên mắt nhắm, tựa khuỷu tay lên bàn. Thở chậm qua mũi. 30 giây bóng tối cho hệ thị giác reset."
+    },
+    "abd": {
+      "title": "Bóp cái gì đó",
+      "text": "Tìm bóng stress, đôi tất, hay bất cứ gì bóp được. Giữ 5 giây, thả, lặp lại. Giải tỏa căng thẳng tay và oddly satisfying."
+    },
+    "abe": {
+      "title": "Thở chậm",
+      "text": "Thở chậm có kiểm soát (khoảng 6 nhịp/phút) kích hoạt hệ thần kinh phó giao cảm, giảm huyết áp và lo âu. Như update phần mềm cho hệ thần kinh."
     },
     "abf": {
-      "title": "Lòng bàn tay",
-      "text": "Khi ngồi, chống khuỷu tay lên bàn và sát mép bàn. Hãy để trọng lượng của bạn rơi về phía trước và khum tay lên mắt. Nhắm mắt lại và hít chậm vào bằng mũi và giữ trong vài giây, rồi thở ra chầm chậm. Sau đó tiếp tục hít thở sâu."
+      "title": "Hình dung",
+      "text": "Nhắm mắt và tưởng tượng mình ở nơi bình yên — bãi biển, rừng, đỉnh núi. Tập trung vào âm thanh, mùi, cảm giác. Kỳ nghỉ mini trong đầu, không tốn đồng nào."
+    },
+    "abg": {
+      "title": "Kỹ thuật 5-4-3-2-1",
+      "text": "Bị overwhelm? Kể 5 thứ nhìn thấy, 4 thứ chạm được, 3 thứ nghe thấy, 2 thứ ngửi được, 1 thứ nếm được. Kỹ thuật grounding kéo bạn về hiện tại."
+    },
+    "abh": {
+      "title": "Khoa học giấc ngủ trưa",
+      "text": "Ngủ trưa 10-20 phút tăng sự tỉnh táo mà không gây lờ đờ. NASA thấy phi công ngủ 26 phút cải thiện hiệu suất 34%. Đủ tốt cho phi hành gia là đủ tốt cho bạn. Người Việt mình nghỉ trưa là đúng rồi!"
+    },
+    "abi": {
+      "title": "Pomodoro reset",
+      "text": "Làm 25 phút, nghỉ 5 phút. Sau 4 vòng, nghỉ dài hơn. Pomodoro không chỉ là hack năng suất — nó là chiến lược giữ gìn sức khỏe tinh thần."
+    },
+    "abj": {
+      "title": "Vẽ nguệch ngoạc",
+      "text": "Vẽ nguệch ngoạc khi nghỉ thực sự cải thiện tập trung và trí nhớ lên 29%. Lấy bút ra và để tay tự do. Không cần vẽ đẹp."
+    },
+    "abk": {
+      "title": "Nghỉ một bài nhạc",
+      "text": "Mở bài hát yêu thích và thực sự lắng nghe — không phải nhạc nền mà là sự kiện chính. Âm nhạc kích hoạt hệ thống khen thưởng của não và giảm cortisol."
+    },
+    "abl": {
+      "title": "Khoảnh khắc biết ơn",
+      "text": "Viết 3 điều bạn biết ơn ngay bây giờ. Nghiên cứu cho thấy thực hành biết ơn đều đặn tái lập trình não theo hướng tích cực và giảm hormone stress."
+    },
+    "abm": {
+      "title": "Reset bằng nước lạnh",
+      "text": "Vỗ nước lạnh lên mặt hoặc áp ly lạnh vào cổ tay. Lạnh kích hoạt phản xạ lặn, làm chậm nhịp tim và xoa dịu hệ thần kinh ngay lập tức."
+    },
+    "abn": {
+      "title": "Nói chuyện với cây",
+      "text": "Có cây trên bàn? Kiểm tra nó đi. Tưới nước, xoay chậu. Không có thì tính mua một chậu. Cây giảm stress và lọc không khí. Đồng nghiệp im lặng hoàn hảo."
+    },
+    "abo": {
+      "title": "Brain dump",
+      "text": "Lấy giấy và viết hết mọi thứ trong đầu — việc cần làm, lo lắng, suy nghĩ random. Đổ ra giấy giải phóng RAM cho não."
+    },
+    "abp": {
+      "title": "Vuốt ve thú cưng",
+      "text": "Làm việc ở nhà có thú cưng? Dành một phút vuốt ve chúng. Vuốt ve động vật giảm cortisol và tăng oxytocin. Giải stress được khoa học chứng nhận."
+    },
+    "abq": {
+      "title": "Liệu pháp cười",
+      "text": "Xem video hài 2 phút hoặc đọc vài câu đùa. Cười giải phóng endorphin, giảm hormone stress, và thả lỏng cơ bắp lên đến 45 phút."
+    },
+    "abr": {
+      "title": "Hít thở không khí",
+      "text": "Mở cửa sổ hoặc bước ra ngoài 60 giây. Không khí trong lành tăng oxy cho não, cải thiện tập trung, serotonin và năng lượng."
+    },
+    "abs": {
+      "title": "Quét toàn thân",
+      "text": "Bắt đầu từ ngón chân, từ từ di chuyển sự chú ý lên khắp cơ thể. Chỗ nào đang căng? Nhận biết, hít thở vào đó, và buông."
+    },
+    "abt": {
+      "title": "Yoga tại bàn",
+      "text": "Cat-cow ngồi, xoay cột sống, gập người — yoga không cần rời ghế. Cột sống không quan tâm bạn mặc gì hay ở đâu, nó chỉ muốn được vận động."
+    },
+    "abu": {
+      "title": "Đọc một trang sách",
+      "text": "Để cuốn sách gần bàn và đọc một trang khi nghỉ. Tiểu thuyết đưa tâm trí đi nơi khác. Sách kiến thức cho não thứ mới. Cách nào cũng thắng."
+    },
+    "abv": {
+      "title": "Chu kỳ 90 phút",
+      "text": "Não hoạt động theo chu kỳ 90 phút năng lượng cao và thấp. Làm việc theo nhịp tự nhiên thay vì chống lại giúp bạn hiệu quả hơn và ít kiệt sức hơn."
+    },
+    "abw": {
+      "title": "Tò mò một chút",
+      "text": "Tra cứu một sự thật ngẫu nhiên về thứ gì bạn thích. Học điều mới khi nghỉ kích hoạt mạch khen thưởng của não khác với khi làm việc."
+    },
+    "abx": {
+      "title": "Thở hộp",
+      "text": "Hít vào 4 nhịp, giữ 4, thở ra 4, giữ 4. Navy SEALs dùng để giữ bình tĩnh dưới áp lực. Nếu hiệu quả với họ, chắc chắn hiệu quả với inbox của bạn."
+    },
+    "aby": {
+      "title": "Nhảy hết mình",
+      "text": "Mở nhạc và nhảy hết bài. Đóng cửa nếu cần. Nhảy giải phóng endorphin, cải thiện phối hợp, và khiến bạn cảm thấy sống. Không ai nhảy một mình mà cool cả, và đó mới là điểm hay."
+    },
+    "abz": {
+      "title": "Gọi ai đó",
+      "text": "Dùng lúc nghỉ gọi cho người bạn quan tâm — chỉ để chào hỏi. Kết nối xã hội là yếu tố dự báo mạnh nhất cho hạnh phúc và tuổi thọ."
+    },
+    "aca": {
+      "title": "Tắm nắng",
+      "text": "Phơi nắng 10-15 phút khi có thể. Ánh nắng điều chỉnh nhịp sinh học, tăng vitamin D và cải thiện tâm trạng. Cơ thể bạn cũng chạy bằng năng lượng mặt trời."
+    },
+    "acb": {
+      "title": "Thư giãn từng phần",
+      "text": "Căng từng nhóm cơ 5 giây rồi thả. Bắt đầu từ chân, lên bắp chân, đùi, bụng, tay, vai, mặt. Xả căng thẳng toàn thân trong 3 phút."
+    },
+    "acc": {
+      "title": "Đi chân đất",
+      "text": "Cởi giày và cảm nhận sàn dưới chân. Nếu được, đi trên cỏ. Grounding giúp giảm viêm và cải thiện giấc ngủ."
+    },
+    "acd": {
+      "title": "Viết cho mình tương lai",
+      "text": "Viết nhanh ghi chú cho bạn tương lai — mục tiêu, ước muốn, lời nhắc. Xây dựng sự kết nối với điều quan trọng hơn danh sách việc cần làm hôm nay."
+    },
+    "ace": {
+      "title": "Dọn dẹp số",
+      "text": "Đóng hết tab không dùng. Thông báo chưa đọc chồng chất? Xóa đi. Rác số tạo tải nhận thức, y như rác vật lý."
+    },
+    "acf": {
+      "title": "Quy tắc 2 phút",
+      "text": "Có việc gì trong đầu mất dưới 2 phút? Làm luôn trong lúc nghỉ. Giải quyết việc nhỏ bỏ đi gánh nặng tinh thần của việc dở dang."
+    },
+    "acg": {
+      "title": "Kiểm tra tư thế",
+      "text": "Đứng tựa tường, gót chân, mông, vai và đầu chạm tường. Đó là cảm giác tư thế đúng. Cố tái tạo cảm giác đó khi ngồi lại."
+    },
+    "ach": {
+      "title": "Ngửi cái gì đó",
+      "text": "Ngửi thứ gì thơm — hạt cà phê, nến, tinh dầu, không khí trong lành. Khứu giác kết nối trực tiếp với não cảm xúc và có thể thay đổi tâm trạng ngay lập tức. Pha ly cà phê sữa đá luôn!"
+    },
+    "aci": {
+      "title": "Ngắm mây",
+      "text": "Nếu nhìn thấy bầu trời, dành một phút ngắm mây. Screensaver nguyên bản — và cho não kiểu tập trung mềm thúc đẩy tư duy sáng tạo."
     }
   },
   "utils": {
@@ -499,5 +723,229 @@
   },
   "process": {
     "newVersionAvailable": "Có phiên bản mới!"
+  },
+  "ui": {
+    "loading": "Đang tải Pauza…",
+    "preview": {
+      "status": "Xem trước",
+      "detail": "Xem trước trên trình duyệt",
+      "action": "Chế độ xem trước đã được kích hoạt."
+    },
+    "title": "Pauza",
+    "heroHeadline": "Bảo vệ nhịp làm việc với giao diện nhẹ nhàng",
+    "heroSubtitle": "Cài đặt thường dùng ở phía trước, điều khiển nâng cao ở phía sau.",
+    "settingsCategories": "Danh mục cài đặt",
+    "settingsCategoriesHint": "Chuyển danh mục bên trái, xem cài đặt bên phải.",
+    "currentCategory": "Danh mục hiện tại",
+    "overview": "Tổng quan",
+    "overviewHint": "Tóm tắt trạng thái, hoạt động gần đây và truy cập nhanh.",
+    "liveOverview": "Tổng quan trực tiếp",
+    "liveOverviewHint": "Xem nhịp hiện tại, trạng thái ứng dụng và cửa sổ nghỉ.",
+    "quickActions": "Thao tác nhanh",
+    "quickActionsHint": "Các thao tác này ảnh hưởng trực tiếp đến nhịp hiện tại.",
+    "savePanel": "Lưu thay đổi",
+    "savePanelHint": "Thay đổi chỉ có hiệu lực sau khi lưu.",
+    "nextBreakLabel": "Nghỉ tiếp theo",
+    "currentBreakLabel": "Đang nghỉ",
+    "lastActionLabel": "Thao tác cuối",
+    "runtimeLabel": "Thời gian chạy",
+    "platformLabel": "Nền tảng",
+    "versionLabel": "Phiên bản",
+    "breakFeelLabel": "Phong cách nghỉ",
+    "placementLabel": "Vị trí cửa sổ",
+    "pendingChanges": "Thay đổi chưa lưu",
+    "synced": "Đã đồng bộ",
+    "saving": "Đang lưu…",
+    "allSet": "Sẵn sàng",
+    "noCurrentBreak": "Không có nghỉ đang diễn ra",
+    "liveSignals": "Tín hiệu trực tiếp",
+    "general": "Chung",
+    "preferences": "Tùy chọn",
+    "currentStatus": "Trạng thái hiện tại",
+    "language": "Ngôn ngữ",
+    "languageChinese": "Tiếng Trung giản thể",
+    "languageEnglish": "Tiếng Anh",
+    "launchOnLogin": "Khởi động cùng hệ thống",
+    "enabled": "Bật",
+    "disabled": "Tắt",
+    "schedule": "Lịch trình",
+    "interruptions": "Thông báo & Gián đoạn",
+    "sectionScheduleHint": "Chỉ hiển thị cài đặt nhịp bạn điều chỉnh hàng ngày.",
+    "microbreaks": "Nghỉ ngắn",
+    "microbreaksHint": "Nạp lại năng lượng nhanh giữa các phiên làm việc.",
+    "longBreaks": "Nghỉ dài",
+    "longBreaksHint": "Nghỉ ngơi đầy đủ sau nhiều chu kỳ.",
+    "interval": "Khoảng cách",
+    "every": "Tần suất",
+    "durationLabel": "Thời lượng",
+    "behavior": "Hành vi",
+    "allowPostpone": "Cho phép hoãn",
+    "signals": "Tín hiệu",
+    "sectionSignalsHint": "Giúp Pauza chọn thời điểm thông báo thông minh hơn.",
+    "naturalBreaks": "Nghỉ tự nhiên",
+    "naturalBreaksHint": "Tự động đặt lại khi bạn rời đi đủ lâu.",
+    "resetAfter": "Đặt lại sau",
+    "dnd": "Không làm phiền",
+    "dndHint": "Tạm dừng khi chế độ tập trung hệ thống bật",
+    "sectionSurfaceHint": "Kiểm soát mức độ gián đoạn và vị trí cửa sổ nghỉ.",
+    "sectionGeneralHint": "Cài đặt chung tối thiểu.",
+    "notificationsCategory": "Thông báo & Hoãn",
+    "notificationsCategoryHint": "Quản lý thời gian thông báo trước và quy tắc hoãn.",
+    "surfaceCategory": "Gián đoạn & Bố trí",
+    "surfaceCategoryHint": "Kiểm soát cách hiển thị, vị trí và mức nghiêm ngặt.",
+    "smartPause": "Tạm dừng thông minh",
+    "smartPauseHint": "Pauza tìm thời điểm tự nhiên trước, sau đó nới lỏng dần.",
+    "generalAndShortcuts": "Chung & Phím tắt",
+    "generalAndShortcutsHint": "Quản lý ngôn ngữ, tự khởi động và phím tắt.",
+    "advanced": "Nâng cao",
+    "sectionAdvancedHint": "Điều khiển sâu hơn, tùy chọn tương thích và phím tắt.",
+    "appExclusions": "Loại trừ ứng dụng",
+    "appExclusionsHint": "Ứng dụng khiến thông báo tạm dừng hoặc tiếp tục.",
+    "appExclusionsEnable": "Kích hoạt",
+    "appRulePause": "Tạm dừng khi khớp",
+    "appRuleResume": "Chỉ tiếp tục khi khớp",
+    "pause30": "Tạm dừng 30 phút",
+    "focus45": "Tập trung 45 phút",
+    "resume": "Tiếp tục",
+    "clearFocus": "Kết thúc tập trung",
+    "save": "Lưu",
+    "revert": "Hoàn tác",
+    "defaults": "Mặc định",
+    "preBreakNotifications": "Thông báo trước",
+    "beforeLabel": "trước",
+    "postpone": "Lát nữa",
+    "scheduleControl": "Điều khiển lịch trình",
+    "resetScheduleHint": "Bắt đầu lại bộ đếm từ bây giờ.",
+    "postponeCategoryHint": "Đặt thời gian hoãn và giới hạn riêng cho nghỉ ngắn và nghỉ dài.",
+    "limitLabel": "Giới hạn",
+    "breakSurface": "Cửa sổ nghỉ",
+    "breakDisplayMode": "Chế độ hiển thị",
+    "breakBackdrop": "Chủ đề nền",
+    "breakBackdropHint": "Chọn nền tạo không khí cho cửa sổ nghỉ.",
+    "breakBackdropPaper": "Giấy",
+    "breakBackdropDawn": "Bình minh",
+    "breakBackdropForest": "Rừng",
+    "breakBackdropNight": "Đêm",
+    "breakBackdropCustom": "Tùy chỉnh",
+    "customWallpaper": "Hình nền tùy chỉnh",
+    "customWallpaperHint": "Tải ảnh từ máy làm nền nghỉ.",
+    "customWallpaperChoose": "Chọn ảnh",
+    "customWallpaperReplace": "Thay ảnh",
+    "customWallpaperRemove": "Xóa",
+    "customWallpaperEmpty": "Chưa chọn hình nền",
+    "customWallpaperEmptyHint": "Không có ảnh thì dùng chủ đề mặc định.",
+    "customWallpaperReady": "Ảnh được nén và lưu cục bộ làm nền nghỉ.",
+    "breakIdeas": "Gợi ý nghỉ",
+    "breakIdeasHint": "Hiển thị gợi ý ngắn mỗi lần nghỉ.",
+    "breakSounds": "Âm thanh nghỉ",
+    "breakSoundsHint": "Phát âm thanh trước khi nghỉ bắt đầu và khi kết thúc.",
+    "microbreakStartSound": "Âm thanh bắt đầu nghỉ ngắn",
+    "microbreakEndSound": "Âm thanh kết thúc nghỉ ngắn",
+    "longBreakStartSound": "Âm thanh bắt đầu nghỉ dài",
+    "longBreakEndSound": "Âm thanh kết thúc nghỉ dài",
+    "breakSoundVolume": "Âm lượng",
+    "breakSoundSilence": "Tắt tiếng",
+    "breakSoundCrystalGlass": "Ly pha lê",
+    "breakSoundWindChime": "Chuông gió",
+    "breakSoundTicToc": "Tích tắc",
+    "breakSoundReverie": "Mộng mơ",
+    "reminderMode": "Chế độ nhắc",
+    "reminderModeHint": "Thông minh tìm thời điểm tự nhiên, bắt buộc ngắt ngay.",
+    "reminderModeSmart": "Thông minh",
+    "reminderModeForced": "Bắt buộc",
+    "window": "Cửa sổ",
+    "fullscreen": "Toàn màn hình",
+    "promptStyleGentle": "Nhẹ nhàng",
+    "promptStyleBalanced": "Cân bằng",
+    "promptStyleImmersive": "Đắm chìm",
+    "allScreens": "Tất cả màn hình",
+    "screenPrimary": "Màn hình chính",
+    "screenCursor": "Màn hình có con trỏ",
+    "showTimeToBreakInTray": "Hiển thị thời gian đến nghỉ trên thanh trạng thái",
+    "currentTimeInBreaks": "Hiển thị giờ hiện tại trên cửa sổ nghỉ",
+    "currentTimeInBreaksHint": "Hiển thị giờ hệ thống ở góc trên bên phải.",
+    "strictModes": "Chế độ nghiêm ngặt",
+    "strictModesHint": "Kiểm soát việc bỏ qua nghỉ.",
+    "microbreakStrict": "Nghỉ ngắn nghiêm ngặt",
+    "longBreakStrict": "Nghỉ dài nghiêm ngặt",
+    "manualFinish": "Kết thúc thủ công sau hẹn giờ",
+    "showTrayMenuInStrictMode": "Giữ menu khi nghiêm ngặt",
+    "shortcuts": "Phím tắt",
+    "shortcutsHint": "Để trống để tắt. Ví dụ: CmdOrCtrl+Shift+P",
+    "shortcutReveal": "Mở cài đặt",
+    "shortcutFocus45": "Tập trung 45 phút",
+    "shortcutPauseToggle": "Bật/tắt tạm dừng",
+    "shortcutPause30": "Tạm dừng 30 phút",
+    "shortcutPause60": "Tạm dừng 1 giờ",
+    "shortcutPause120": "Tạm dừng 2 giờ",
+    "shortcutPause300": "Tạm dừng 5 giờ",
+    "shortcutSkipScheduled": "Nhảy đến nghỉ tiếp theo",
+    "shortcutSkipMicrobreak": "Nhảy đến nghỉ ngắn",
+    "shortcutSkipLongBreak": "Nhảy đến nghỉ dài",
+    "shortcutReset": "Đặt lại lịch trình",
+    "suffix": {
+      "secondsLong": "giây",
+      "secondsBefore": "giây trước",
+      "minutesApart": "phút",
+      "cycles": "chu kỳ",
+      "minutesLong": "phút",
+      "minutesShortPostpone": "phút",
+      "minutesLongPostpone": "phút",
+      "minutesAway": "phút",
+      "minutes": "phút",
+      "times": "lần"
+    },
+    "status": {
+      "noBreakScheduled": "Không có nghỉ nào",
+      "microbreak": "Nghỉ ngắn",
+      "longBreak": "Nghỉ dài",
+      "nextBreak": "{{label}} sau {{duration}}",
+      "focus": "Tập trung {{duration}}",
+      "pause": "Tạm dừng {{duration}}",
+      "pauseForever": "Tạm dừng vô thời hạn",
+      "blockedBy": "Tạm dừng bởi {{match}}",
+      "appRuleActive": "Quy tắc ứng dụng đang hoạt động",
+      "dndActive": "Không làm phiền đang bật"
+    },
+    "error": {
+      "loadState": "Không thể tải trạng thái Pauza"
+    },
+    "breakCopy": {
+      "clearedDetail": "Hiện không có nghỉ nào đang diễn ra.",
+      "manualAwaiting": "Hết giờ rồi. Hãy hoàn thành lần nghỉ này trước khi quay lại làm việc.",
+      "awaitingFinish": "Chờ hoàn thành",
+      "actions": {
+        "resumeWork": "Quay lại làm việc",
+        "done": "Xong",
+        "later": "Lát nữa",
+        "skip": "Bỏ qua"
+      },
+      "defaultPrompt": {
+        "microbreak": "Đứng dậy, thả lỏng vai và cổ, nhìn ra xa.",
+        "longBreak": "Rời khỏi bàn vài phút để cơ thể và tâm trí được nghỉ ngơi."
+      }
+    },
+    "previewAction": {
+      "save": "Xem trước: Đã cập nhật cài đặt.",
+      "pause": "Xem trước: Tạm dừng 30 phút.",
+      "pauseForever": "Xem trước: Tạm dừng vô thời hạn.",
+      "focus": "Xem trước: Bật tập trung.",
+      "focusCleared": "Xem trước: Tắt tập trung.",
+      "resume": "Xem trước: Đã tiếp tục.",
+      "reset": "Xem trước: Đặt lại lịch trình.",
+      "autostartOn": "Xem trước: Bật tự khởi động.",
+      "autostartOff": "Xem trước: Tắt tự khởi động.",
+      "done": "Xem trước: Hoàn thành nghỉ.",
+      "later": "Xem trước: Hoãn nghỉ.",
+      "skip": "Xem trước: Bỏ qua nghỉ."
+    },
+    "preBreakSoundHint": "Âm thanh nhẹ trước khi hết giờ giúp bạn hoàn thành công việc.",
+    "previewSound": "Nghe thử",
+    "appExclusionsSearch": "Tìm trong ứng dụng đang chạy",
+    "appExclusionsSearchPlaceholder": "Tên ứng dụng…",
+    "appExclusionsSearchLoading": "Đang tải…",
+    "appExclusionsSearchEmpty": "Không tìm thấy",
+    "appExclusionsManualHint": "Nhập tên tiến trình (mỗi dòng một tên)",
+    "appExclusionsAdd": "Nhấn để thêm vào danh sách loại trừ"
   }
 }

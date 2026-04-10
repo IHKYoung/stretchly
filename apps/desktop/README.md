@@ -15,5 +15,5 @@
 
 - `apps/desktop` 是单一真源；新的桌面端能力只允许加在这里。
 - 若旧 `app/**` 里仍有行为值得保留，先迁移到 `apps/desktop/**`，再继续演进；不要把新的运行链路接回 `app/**`。
-- locale 只维护 `src/locales/messages/*.json`、`src/locales/config/*.json` 和 `src/locales/break-message-copy.json`。
+- locale 只维护 `src/locales/messages/*.json` 和 `src/locales/config/*.json`；break prompt 专属文案也已经并回 `messages`。
 - `app/**` 当前仅作为归档参考保留，不再参与默认运行、构建或测试链路。

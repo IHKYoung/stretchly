@@ -213,6 +213,13 @@ body > :not(.navigation) {
   gap: 14px;
 }
 
+.schedule > div.has-duration-picker {
+  display: grid;
+  grid-template-columns: minmax(112px, 146px) minmax(0, 1fr);
+  align-items: start;
+  gap: 14px;
+}
+
 .settings > div:has(> hr),
 .schedule > div:has(> hr),
 .theme > div:has(> hr) {
@@ -521,6 +528,92 @@ output {
 hr {
   height: 1px;
   background: rgba(24, 19, 14, 0.06);
+}
+
+/* Duration picker: preset chips + custom number input */
+
+.duration-picker {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 2px 0;
+}
+
+.duration-presets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.duration-preset {
+  height: 28px;
+  min-height: 28px;
+  padding: 0 11px;
+  border: 1px solid var(--prefs-border-strong);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.65);
+  color: var(--prefs-muted);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  transition: background 150ms ease, color 150ms ease, border-color 150ms ease;
+}
+
+.duration-preset:hover {
+  background: rgba(255, 255, 255, 0.95);
+  color: var(--prefs-text);
+  border-color: rgba(24, 19, 14, 0.18);
+  box-shadow: none;
+  transform: none;
+}
+
+.duration-preset:focus {
+  outline: 2px solid rgba(35, 58, 52, 0.18);
+  outline-offset: 2px;
+}
+
+.duration-preset.is-active {
+  background: var(--prefs-accent);
+  color: #f8f5ee;
+  border-color: var(--prefs-accent);
+}
+
+.duration-preset.is-active:hover {
+  background: #1d312c;
+  border-color: #1d312c;
+  color: #f8f5ee;
+}
+
+.duration-custom {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+input[type="number"].duration-input {
+  width: 72px;
+  height: 34px;
+  padding: 0 10px;
+  border: 1px solid var(--prefs-border);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.84);
+  box-shadow: none;
+  color: var(--prefs-text);
+  font-size: 14px;
+  transition: border-color 150ms ease;
+}
+
+input[type="number"].duration-input:focus {
+  outline: 2px solid rgba(35, 58, 52, 0.18);
+  outline-offset: 2px;
+  border-color: var(--prefs-border-strong);
+}
+
+output.duration-unit {
+  color: var(--prefs-muted);
+  font-size: 13px;
+  white-space: nowrap;
 }
 
 @media (max-width: 900px) {

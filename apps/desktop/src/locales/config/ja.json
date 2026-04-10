@@ -4,5 +4,5 @@
   "nativeLabel": "日本語",
   "fallback": "en",
   "direction": "ltr",
-  "desktopReady": false
+  "desktopReady": true
 }

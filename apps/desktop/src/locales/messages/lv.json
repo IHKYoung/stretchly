@@ -167,7 +167,7 @@
     },
     "about": {
       "designedBy": "Logotipu un lietotāju saskarnes dizainu veidojis Colin Shanley",
-      "janH": "Clarke Young",
+      "clarkeY": "Clarke Young",
       "developedBy": "Izstrādājis",
       "dot": ".",
       "ourWebsite": "apmeklē mūsu mājaslapu",
@@ -218,112 +218,739 @@
   },
   "miniBreakIdeas": {
     "aaa": {
-      "text": "Dodies pēc glāzes ūdens."
+      "text": "Ej paņem glāzi ūdens."
     },
     "aab": {
-      "text": "Lēnam paskaties uz kreiso pusi, tad uz labo."
-    },
-    "aad": {
-      "text": "Aizver acis un dažas reizes dziļi ieelpo."
-    },
-    "aaf": {
-      "text": "Izstaipi savas kājas."
-    },
-    "aag": {
-      "text": "Izstaipi savas rokas."
-    },
-    "aah": {
-      "text": "Vai tava sēdēšanas poza ir pareiza?"
-    },
-    "aai": {
-      "text": "Lēnām pagriez sāniski galvu uz 10 sekundēm."
-    },
-    "aak": {
-      "text": "Piecelies no sava krēsla un izstaipies."
-    },
-    "aaj": {
-      "text": "Lēnām noliec galvu sāniski un turi to tā 5-10 sekundes."
-    },
-    "aam": {
-      "text": "Veltiet brīdi, lai padomātu par kaut ko, ko novērtējat."
-    },
-    "aaq": {
-      "text": "Aizver acis un nosauc lietas, kuras dzirdi."
-    },
-    "aax": {
-      "text": "Ja tev ir nepieciešama palīdzība, jautā to."
-    },
-    "aay": {
-      "text": "Vienlaicīgi dari tikai vienu lietu."
-    },
-    "aaz": {
-      "text": "Vai tu gudri izmanto savu uzmanību?"
-    },
-    "abb": {
-      "text": "Pakļauj savas acis dabīgajam apgaismojumam."
-    },
-    "aae": {
-      "text": "Aizver acis un atpūties."
+      "text": "Tava ūdens pudele tevi nosoda. Iedzeries malku."
     },
     "aac": {
-      "text": "Lēnām paskaties uz pašu augšu, tad leju."
+      "text": "Hidratācijas pārbaude: kad tu pēdējo reizi dzēri ūdeni?"
     },
-    "aba": {
-      "text": "Maini savu sēdēšanas pozu."
+    "aad": {
+      "text": "Lēnām paskaties pa kreisi, tad pa labi."
     },
-    "aap": {
-      "text": "Aizveriet acis un saskaitiet savas elpas."
+    "aae": {
+      "text": "Lēnām paskaties uz augšu, tad uz leju."
+    },
+    "aaf": {
+      "text": "Paskaties uz kaut ko 6 metru attālumā 20 sekundes — 20-20-20 noteikums."
+    },
+    "aag": {
+      "text": "Ātri pamirkšķini 20 reizes. Tavas sausās acis tev pateicas."
+    },
+    "aah": {
+      "text": "Aizver acis un maigi riņķo ar acs ābolu."
+    },
+    "aai": {
+      "text": "Ar aizvērtām acīm — lēnām paskaties uz augšu, tad uz leju."
+    },
+    "aaj": {
+      "text": "Ar aizvērtām acīm — lēnām paskaties pa kreisi, tad pa labi."
+    },
+    "aak": {
+      "text": "Saberzē plaukstas līdz tās ir siltas, tad maigi uzliec pār aizvērtām acīm."
     },
     "aal": {
-      "text": "Paskatieties uz objektu, kas atrodas vismaz 20 metru attālumā."
+      "text": "Paskaties pa logu 30 sekundes. Vai atceries ārpasauli?"
+    },
+    "aam": {
+      "text": "Paskaties prom no ekrāna un fokusējies uz kaut ko zaļu. Acis mīl zaļo."
+    },
+    "aan": {
+      "text": "Ļauj dabīgai gaismai sasniegt tavas acis."
+    },
+    "aao": {
+      "text": "Aizver acis un dziļi ieelpo dažas reizes."
+    },
+    "aap": {
+      "text": "Aizver acis un atpūties."
+    },
+    "aaq": {
+      "text": "Aizver acis un saskaiti savus elpas vilcienus."
+    },
+    "aar": {
+      "text": "Ieelpo 4 taktīs, aizturi 7, izelpo 8. Klasiskā 4-7-8 tehnika."
+    },
+    "aas": {
+      "text": "Veic 3 lēnas elpas. Iekšā caur degunu, ārā caur muti."
+    },
+    "aat": {
+      "text": "Ieelpo tik dziļi, lai tavs vēders izplešas. Tā ir diafragmas elpošana."
+    },
+    "aau": {
+      "text": "Nedari absolūti neko 20 sekundes. Grūtāk nekā izklausās."
+    },
+    "aav": {
+      "text": "Pārbaudi stāju — pleci atpakaļ, pēdas plakanas uz grīdas."
+    },
+    "aaw": {
+      "text": "Pamainī sēdus pozīciju."
+    },
+    "aax": {
+      "text": "Nolaid plecus. Tie visu laiku bija pie ausīm."
+    },
+    "aay": {
+      "text": "Atslābini žokli. Tu nemaz nezināji, ka tas bija sakosts, vai ne?"
+    },
+    "aaz": {
+      "text": "Iztaisno muguru. Iztēlojies, ka aukla tevi velk uz augšu no galvas virsas."
+    },
+    "aba": {
+      "text": "Sēdēšana ir jaunā smēķēšana. Piecelies uz minūti."
+    },
+    "abb": {
+      "text": "Lēnām pagriez galvu uz vienu pusi un turi 10 sekundes. Maini."
+    },
+    "abc": {
+      "text": "Lēnām noliec galvu uz sāniem un turi 5-10 sekundes."
+    },
+    "abd": {
+      "text": "Maigi pievelc vienu ausi pie pleca. Sajūti kakla stiepumu."
+    },
+    "abe": {
+      "text": "Lēnā, maigā kustībā riņķo ar kaklu."
+    },
+    "abf": {
+      "text": "Noliec galvu uz priekšu, atpakaļ, pa kreisi, pa labi. Pilns kompasa restarts."
+    },
+    "abg": {
+      "text": "Riņķo ar pleciem uz priekšu 10 sekundes, tad atpakaļ."
+    },
+    "abh": {
+      "text": "Paraustī plecus līdz ausīm un atlaid. Atkārto 5 reizes."
+    },
+    "abi": {
+      "text": "Savelc lāpstiņas kopā un turi 5 sekundes."
+    },
+    "abj": {
+      "text": "Pacel labo roku virs galvas, noliecies pa kreisi, turi 10 sekundes. Maini."
+    },
+    "abk": {
+      "text": "Krustā vienu roku pār krūtīm un maigi pievelc ar otru. Maini."
+    },
+    "abl": {
+      "text": "Turi vienu roku taisni uz augšu, ar otru maigi spied elkoni atpakaļ. Turi 10 sekundes. Maini."
+    },
+    "abm": {
+      "text": "Savij pirkstus aiz muguras un izstiep krūtis."
+    },
+    "abn": {
+      "text": "Savij pirkstus un spied plaukstas pret griestiem. Izstiepies!"
+    },
+    "abo": {
+      "text": "Turi rokas taisni uz sāniem. Veic mazus apļus. Dedzina ātrāk nekā domā."
+    },
+    "abp": {
+      "text": "Nopurini rokas, lai atbrīvotu spriedzi."
+    },
+    "abq": {
+      "text": "Pieskaries katram pirkstu galiņam pie īkšķa, veidojot O formu."
+    },
+    "abr": {
+      "text": "Savelc dūri, tad izpleš un izstiep pirkstus."
+    },
+    "abs": {
+      "text": "Savelc dūri, tad atver plaukstu kā sakot stop."
+    },
+    "abt": {
+      "text": "Saspied katru kreisās rokas pirkstu ar labo. Maini rokas."
+    },
+    "abu": {
+      "text": "Izstiep plaukstas locītavas — izstiep roku un maigi pievelc pirkstus atpakaļ."
+    },
+    "abv": {
+      "text": "Riņķo ar plaukstas locītavām 10 reizes pulksteņa virzienā, tad pretēji."
+    },
+    "abw": {
+      "text": "Noliec plaukstu plakanu uz galda un maigi izpleš pirkstus."
+    },
+    "abx": {
+      "text": "Klaudzini ar pirkstiem pa galdu pa vienam — no mazā pirkstiņa līdz īkšķim. Tagad otrādi."
+    },
+    "aby": {
+      "text": "Uztaisi sev roku masāžu. Tu to esi pelnījis."
+    },
+    "abz": {
+      "text": "Piecelies un izstiepies. Tava mugurkauls ir gaidījis."
+    },
+    "aca": {
+      "text": "Apsēdies uz krēsla malas, pagriez ķermeni uz vienu pusi, turi 10 sekundes. Maini."
+    },
+    "acb": {
+      "text": "Izliec muguru kā kaķis, tad ieliec. Kaķa-govs stiepšanās, biroja versija."
+    },
+    "acc": {
+      "text": "Noliec abas rokas aiz muguras lejasdaļas un maigi izliecies atpakaļ."
+    },
+    "acd": {
+      "text": "Nostājies ar muguru pret sienu un lēnām slidini rokas augšup un lejup — sienas eņģeļi."
+    },
+    "ace": {
+      "text": "Izstiep kājas."
+    },
+    "acf": {
+      "text": "Piecelies un izdari izkrišanu. Turi 10 sekundes katrai kājai."
+    },
+    "acg": {
+      "text": "Piecelies un izdari dažus pietupienus. Krēsls ir tieši aiz tevis, ja kas noiet greizi."
+    },
+    "ach": {
+      "text": "Izdari 10 papēžu celšanas pie galda. Slepenais fitness."
+    },
+    "aci": {
+      "text": "Izstiep vienu kāju taisni sēžot. Turi 10 sekundes. Maini."
+    },
+    "acj": {
+      "text": "Riņķo ar potītēm — pulksteņa virzienā, tad pretēji."
+    },
+    "ack": {
+      "text": "Izstiep un saliec pēdas 10 reizes. Tavas potītes ir tikušas novārtā."
+    },
+    "acl": {
+      "text": "Stāvi uz vienas kājas 30 sekundes. Maini. Līdzsvars ir prasme."
+    },
+    "acm": {
+      "text": "Pakustini kāju pirkstus apavos. Jā, visus."
+    },
+    "acn": {
+      "text": "Piecelies un maršē uz vietas 30 sekundes."
+    },
+    "aco": {
+      "text": "Izdari dažas sienas atspiedienus. Neviens neskatās. Droši vien."
+    },
+    "acp": {
+      "text": "Izdari 5 atbalsta griešanās uz krēsla malas."
+    },
+    "acq": {
+      "text": "Sasprindzini un atslābini visus muskuļus no kāju pirkstiem līdz pierei. Pilns ķermeņa restarts."
+    },
+    "acr": {
+      "text": "Sarauc seju uz 5 sekundēm, tad atlaid. Sejas spriedze: pazudusi."
+    },
+    "acs": {
+      "text": "Nostājies durvju ailā un maigi noliecies uz priekšu, lai izstiepu krūtis."
+    },
+    "act": {
+      "text": "Aizver acis un nosauc skaņas, ko dzirdi."
+    },
+    "acu": {
+      "text": "Aizver acis un ievēro, kas nāk prātā, bez vērtēšanas."
+    },
+    "acv": {
+      "text": "Padomā par kaut ko, par ko esi pateicīgs tieši tagad."
+    },
+    "acw": {
+      "text": "Pasmaidi. Tu esi dzīvs, un tas ir diezgan forši."
+    },
+    "acx": {
+      "text": "Iegūsti mentālu momentuzņēmumu par to, kā jūtas tavs ķermenis. Kādi spriedzes punkti?"
+    },
+    "acy": {
+      "text": "Padomā par kaut ko jauku, ko teiktu draugam, un pasaki to sev."
+    },
+    "acz": {
+      "text": "Ievēro 5 lietas telpā, kurām nekad iepriekš neesi pievērsis uzmanību."
+    },
+    "ada": {
+      "text": "Aizver acis un 20 sekundes iztēlojies savu mīļāko vietu."
+    },
+    "adb": {
+      "text": "Noliec tālruni ar ekrānu uz leju uz 60 sekundēm. Nekas nenotiks. Solīts."
+    },
+    "adc": {
+      "text": "Tava tastatūra tevi neiztrūks. Piecelies."
+    },
+    "add": {
+      "text": "Tava mugura tikko iesniedza oficiālu sūdzību. Laiks izstiepties."
+    },
+    "ade": {
+      "text": "Paskaties augšup no ekrāna. Sižeta pavērsiens: pasaule ir 3D."
+    },
+    "adf": {
+      "text": "Nožāvājies. Pat viltots žāvas izraisa īstu. Pamēģini."
+    },
+    "adg": {
+      "text": "Plaši atver muti, tad lēnām aizver. Žokļa spriedze: atbrīvota."
+    },
+    "adh": {
+      "text": "Apskau sevi. Sakrusto rokas un saspied. Rūpes par sevi nav dīvainas."
+    },
+    "adi": {
+      "text": "Mini deju pauze — tikai 10 sekundes. Tu zini, ka gribi."
+    },
+    "adj": {
+      "text": "Izliecies tā, it kā vilktu virvi virs galvas. Sānu stiepšanās aktivizēta."
+    },
+    "adk": {
+      "text": "Saspied plaukstas kopā krūšu priekšā un turi. Namaste, kodētāj."
+    },
+    "adl": {
+      "text": "Masē deniņus mazos apļos 10 sekundes. Tūlītējs miers."
+    },
+    "adm": {
+      "text": "Tavs monitors zvanīja. Viņš saka, ka tu esi bijis par tuvu pārāk ilgi."
     }
   },
   "longBreakIdeas": {
+    "aaa": {
+      "title": "Labāk kopā",
+      "text": "Grūti ņemt pauzes vienam? Pamēģini kopā ar kolēģi. Jūs labāk ievērosiet pauzes — un varēsiet kopā kurnēt par dedlainiem. Pētījumi rāda, ka sociālas pauzes uzlabo produktivitāti."
+    },
     "aab": {
-      "title": "Atkāpies"
+      "title": "Atkāpies",
+      "text": "Vai esi ievērojis, ka labākās idejas nāk dušā? Tas ir tāpēc, ka smadzenes risina problēmas fonā. Atkāpies no ekrāna un padomā par kaut ko pilnīgi citu."
+    },
+    "aac": {
+      "title": "Mikropauzes",
+      "text": "Īsas, biežas pauzes samazina pārslodzes traumas un uztur muskuļu un skeleta sistēmu veselīgu. Domā par tām kā cilvēka mašīnas apkopi."
     },
     "aad": {
-      "title": "Meditācija"
+      "title": "Meditācija",
+      "text": "Apzinātības meditācija samazina trauksmi, stresu un pat fiziskas sāpes. Nezini, kur sākt? Pat 5 minūtes fokusētas elpošanas der. Ir daudz bezmaksas lietotņu."
+    },
+    "aae": {
+      "title": "Mirkšķini biežāk",
+      "text": "Tu mirkšķini līdz 66% retāk, skatoties ekrānā, un tas izžāvē acis. Ātri pamirkšķini dažas reizes, lai atjaunotu asaru plēvīti. Tavas acis dara tik daudz tev — atdod pretī."
     },
     "aaf": {
-      "title": "Ergonomika"
+      "title": "Galda ergonomika",
+      "text": "Monitors acu augstumā, tastatūra elkoņa augstumā, pēdas plakanas uz grīdas. Slikta ergonomika rada reālus bojājumus laika gaitā. Veltī 2 minūtes sava uzstādījuma pārbaudei."
     },
     "aag": {
-      "title": "Kusties"
+      "title": "Biroja treniņš",
+      "text": "Tev nav vajadzīga sporta zāle, lai kustētos. Maršē uz vietas, dari galda atspiedienus vai dažus pietupienus. Pat 60 sekundes kustību atjauno enerģiju."
+    },
+    "aah": {
+      "title": "Pamainī pozīciju",
+      "text": "Tev ir augstumā regulējams galds vai balansa bumba? Tagad ir labs laiks mainīt. Sēdēšanas un stāvēšanas mija samazina nogurumu un aktivizē muskuļus."
+    },
+    "aai": {
+      "title": "Lasi zīmes",
+      "text": "Sapņo ar vaļējām acīm? Grūti koncentrēties? Lasi vienu un to pašu rindiņu? Tas ir tavu smadzeņu pieklājīgs veids, kā teikt: ņem jau pauzi."
+    },
+    "aaj": {
+      "title": "Pastaiga bez tehnoloģijām",
+      "text": "Atstāj telefonu un dodies īsā pastaigā. Bez podkāstiem, bez mūzikas — tikai tu un tavas domas. Pārsteidzoši atsvaidzinoši konstantā ievades pasaulē."
     },
     "aak": {
-      "title": "Vielmaiņa"
+      "title": "Sēdēšanas problēma",
+      "text": "Ilgstoša sēdēšana palielina sirds slimību, diabēta un muguras problēmu risku. 5 minūšu pastaiga katru stundu var ievērojami mazināt šīs sekas. Tavs ķermenis ir radīts kustībai."
+    },
+    "aal": {
+      "title": "Pastaigu sanāksmes",
+      "text": "Nākamreiz, kad tev ir viens pret vienu saruna, piedāvā pastaigāties nevis sēdēt. Stanfordas pētījumi rāda, ka pastaigu sanāksmes palielina radošumu līdz 60%."
     },
     "aam": {
-      "title": "Augļi"
+      "title": "Apzināta uzkošana",
+      "text": "Paņem augļa gabaliņu un ēd to lēnām. Ievēro garšu, tekstūru un svaigumu. Tā ir mini meditācija, kas maskējas par uzkodu."
+    },
+    "aan": {
+      "title": "Kafijas pastaiga",
+      "text": "Ej pēc kafijas? Padari to par 5 minūšu pastaigu. Divas mušas ar vienu lati."
     },
     "aao": {
-      "title": "Kafijas pauze",
-      "text": "Dodies kafijas pātraukumā? Katru reizi dodoties pēc vienas, apsver doties 5 minūšu pastaigā."
+      "title": "Tavas smadzenes pauzēs",
+      "text": "NIH pētījums atklāja, ka mūsu smadzenes atkārto un nostiprina jaunas prasmes atpūtas laikā — nevis treniņa laikā. Pauzes burtiski padara tevi labāku tajā, ko dari."
     },
     "aap": {
-      "title": "Kolēģi"
+      "title": "Kustieties mazliet, iegūsti daudz",
+      "text": "Pat nelieli regulāri vingrinājumi dramatiski samazina stresu un uzlabo garastāvokli. Tev nav vajadzīga stunda — 10 minūtes kustību var mainīt visu dienu."
     },
     "aaq": {
-      "title": "Mācīšanās"
+      "title": "Stiepšanās rutīna",
+      "text": "Atradi stiepšanās kompleksu, kas patīk? Atkārto to vairākas reizes dienas laikā. Konsekvence pārspēj intensitāti, cīnoties ar ilgstošas sēdēšanas sekām."
+    },
+    "aar": {
+      "title": "Plaukstas locītavu apļi",
+      "text": "Izstiep rokas ar plaukstām pret sevi, tad lēnām griez rokas — 4 reizes pulksteņa virzienā, 4 reizes pretēji. Tavas plaukstas locītavas iztur lielāku stresu, nekā tu domā."
+    },
+    "aas": {
+      "title": "Stiepšanās virs galvas",
+      "text": "Savij pirkstus aiz galvas, tad pacel tos virs galvas ar plaukstām pret griestiem. Turi 10 sekundes. Sajūti, kā mugura atmostas."
+    },
+    "aat": {
+      "title": "30/1 noteikums",
+      "text": "Par katrām 30 sēdēšanas minūtēm, kustieties vismaz 1 minūti. Iestati taimeri, ja vajag. Mazi ieradumi uzkrājas lielos veselības ieguvumos."
+    },
+    "aau": {
+      "title": "7 minūšu treniņš",
+      "text": "Pilna ķermeņa treniņš tikai 7 minūtēs. Tas ir zinātniski pamatots un neprasa aprīkojumu. Ir daudz bezmaksas lietotņu, kas tevi izvedīs."
+    },
+    "aav": {
+      "title": "Paātrini pulsu",
+      "text": "Mērķē uz 20 minūtēm paaugstināta pulsa (ap 120 sitieni minūtē), 4-5 reizes nedēļā. Nav svarīgi, ko tu dari — dejo, skrien, spēlējies ar suni. Tava sirds netiesā."
     },
     "aaw": {
-      "title": "7 Minūšu Treniņš"
+      "title": "Kāp pa kāpnēm",
+      "text": "Kāpšana pa kāpnēm tiek klasificēta kā intensīvs treniņš un sadedzina vairāk kaloriju minūtē nekā skriešana. Nākamreiz izlaid liftu. Kājas sūdzēsies, bet sirds svinēs."
     },
     "aax": {
-      "title": "Pulss"
+      "title": "Izveido kaut ko",
+      "text": "Mākslas terapija pierādīti samazina stresu. Uzraksti haiku, uzzīmē monstru, nofotografē kaut ko skaistu. Radošums ir restarta poga tavām smadzenēm."
     },
     "aay": {
-      "title": "Izmanto kāpnes "
+      "title": "Sakārto",
+      "text": "Nekārtīgs galds korelē ar augstāku stresu. Veltī 5 minūtes savas darba vietas sakārtošanai. Tīrs galds, skaidrs prāts."
+    },
+    "aaz": {
+      "title": "Ēd ārā",
+      "text": "Daba samazina kortizolu — stresa hormonu. Ēd pusdienas ārā, kad iespējams. Pat sēdēšana pie loga ar skatu uz zaļumu palīdz."
+    },
+    "aba": {
+      "title": "Žāvāšanās spēks",
+      "text": "Žāvāšanās nav tikai garlaicība — tā atdzesē smadzenes un rada asaras, kas mitrina acis. Mēģini viltoti nožāvāties. Ķermenis padarīs to par īstu."
     },
     "abb": {
-      "title": "Pusdienas ārā"
+      "title": "Fokusa maiņa",
+      "text": "Turi pirkstu tuvu sejai un fokusējies. Lēnām pārvieto to tālāk, paskaties tālumā, tad atpakaļ. Tas vingrino muskuļus, kas kontrolē acs lēcu."
     },
     "abc": {
-      "title": "Publiskais transports"
+      "title": "Acu paldošana",
+      "text": "Uzliec siltas plaukstas pār aizvērtām acīm un atbalsti elkoņus uz galda. Elpo lēnām. Pat 30 sekundes tumsā dod tavai redzes sistēmai restartu."
+    },
+    "abd": {
+      "title": "Saspied kaut ko",
+      "text": "Paņem stresa bumbiņu, zeķu pāri vai jebko spiežamu. Turi 5 sekundes, atlaid, atkārto. Tas atbrīvo roku spriedzi un ir pārsteidzoši apmierinošs."
+    },
+    "abe": {
+      "title": "Lēna elpošana",
+      "text": "Kontrolēta lēna elpošana (ap 6 elpas minūtē) aktivizē parasimpātisko nervu sistēmu, samazinot asinsspiedienu un trauksmi. Tas ir kā programmatūras atjauninājums tavai nervu sistēmai."
+    },
+    "abf": {
+      "title": "Vizualizācija",
+      "text": "Aizver acis un iztēlojies mierīgu vietu — pludmali, mežu, kalnu virsotni. Fokusējies uz skaņām, smaržām un sajūtām. Mini garīgās brīvdienas, bez ceļošanas izmaksām."
+    },
+    "abg": {
+      "title": "5-4-3-2-1 iezemēšanās",
+      "text": "Jūties nomākts? Nosauc 5 lietas, ko redzi, 4, ko vari pieskarties, 3, ko dzirdi, 2, ko saodi, 1, ko garšo. Šī iezemēšanās tehnika tevi atgriež tagadnē."
     },
     "abh": {
-      "title": "Lēna Elpošana"
+      "title": "Power nap zinātne",
+      "text": "10-20 minūšu snaudiens uzlabo modrību un veiktspēju bez miegainības. NASA atklāja, ka piloti, kas snauda 26 minūtes, uzlaboja veiktspēju par 34%. Ja tas der astronautiem, tas der arī tev."
+    },
+    "abi": {
+      "title": "Pomodoro restarts",
+      "text": "Strādā 25 minūtes, pauze 5. Pēc četrām kārtām — garāka pauze. Pomodoro tehnika nav tikai produktivitātes triks — tā ir saprāta saglabāšanas stratēģija."
+    },
+    "abj": {
+      "title": "Zīmēšanas pauze",
+      "text": "Zīmēšana pauzes laikā faktiski uzlabo koncentrēšanos un atmiņu līdz 29%, saskaņā ar Applied Cognitive Psychology pētījumu. Paņem pildspalvu un ļauj rokai klīst."
+    },
+    "abk": {
+      "title": "Vienas dziesmas pauze",
+      "text": "Ieliec savu mīļāko dziesmu un patiešām klausies — ne kā fona troksnis, bet kā galvenais notikums. Mūzika aktivizē smadzeņu atlīdzības sistēmu un samazina kortizolu."
+    },
+    "abl": {
+      "title": "Pateicības brīdis",
+      "text": "Pieraksti 3 lietas, par kurām esi pateicīgs tieši tagad. Pētījumi rāda, ka regulāra pateicības prakse pārprogrammē smadzenes pozitīvismam un samazina stresa hormonus."
+    },
+    "abm": {
+      "title": "Aukstā ūdens restarts",
+      "text": "Apšļaksti seju ar aukstu ūdeni vai piespied aukstu glāzi pie plaukstas locītavām. Aukstums aktivizē nirēja refleksu, kas palēnina sirdsdarbību un nomierina nervu sistēmu acumirklī."
+    },
+    "abn": {
+      "title": "Parunājies ar augu",
+      "text": "Tev ir galda augs? Pārbaudi to. Aplaisti, pagriez. Ja nav — varbūt laiks. Augi samazina stresu un uzlabo gaisa kvalitāti. Ideālie klusie kolēģi."
+    },
+    "abo": {
+      "title": "Smadzeņu iztukšošana",
+      "text": "Paņem lapu un pieraksti visu, kas ir prātā — uzdevumus, raizes, nejaušas domas. Izņemšana no galvas uz papīra atbrīvo mentālo RAM."
+    },
+    "abp": {
+      "title": "Paglaudi mājdzīvnieku",
+      "text": "Strādā no mājām ar mājdzīvnieku? Veltī minūti, lai to paglaudītu. Dzīvnieku glaudīšana samazina kortizolu un palielina oksitocīnu. Zinātniski apstiprināta stresa mazināšana."
+    },
+    "abq": {
+      "title": "Smiešanās terapija",
+      "text": "Noskaties 2 minūšu smieklīgu video vai izlasi dažus jokus. Smiekli izraisa endorfīnus, samazina stresa hormonus un atslābina muskuļus līdz 45 minūtēm."
+    },
+    "abr": {
+      "title": "Svaigs gaiss",
+      "text": "Atver logu vai izej ārā uz 60 sekundēm. Svaigs gaiss palielina skābekļa daudzumu smadzenēs, uzlabojot koncentrēšanos, serotonīna līmeni un enerģiju."
+    },
+    "abs": {
+      "title": "Ķermeņa skenēšana",
+      "text": "Sāc no kāju pirkstiem un lēnām virzi uzmanību augšup pa ķermeni. Ievēro, kur turi spriedzi. Atzīsti to, ieelpo tajā un atlaid."
+    },
+    "abt": {
+      "title": "Biroja joga",
+      "text": "Sēdoša kaķa-govs poza, mugurkaula griešana, priekšā locīšana — tu vari darīt jogu, neatstājot krēslu. Tavam mugurkaulam nerūp apģērbs — tas vienkārši grib kustēties."
+    },
+    "abu": {
+      "title": "Izlasi lapu",
+      "text": "Turi grāmatu tuvumā un izlasi tikai vienu lapu pauzes laikā. Daiļliteratūra aizved tavu prātu citur. Populārzinātniskā — baro ar ko jaunu. Jebkurā gadījumā tu iegūsti."
+    },
+    "abv": {
+      "title": "90 minūšu cikls",
+      "text": "Tavas smadzenes strādā 90 minūšu ultradiānos ciklos ar augstu un zemu enerģiju. Strādāšana ar šiem dabīgajiem ritmiem, nevis pret tiem, padara tevi produktīvāku un mazāk izsmeltu."
+    },
+    "abw": {
+      "title": "Ziņkāres pauze",
+      "text": "Uzmeklē vienu nejaušu faktu par kaut ko, kas tevi interesē. Kaut ko jaunu iemācīties pauzes laikā aktivizē smadzeņu atlīdzības ķēdes citādi nekā darbs."
+    },
+    "abx": {
+      "title": "Kastes elpošana",
+      "text": "Ieelpo 4 taktīs, aizturi 4, izelpo 4, aizturi 4. To izmanto Navy SEAL, lai saglabātu mieru zem spiediena. Ja tas der viņiem, tas derēs arī tavai iesūtnei."
+    },
+    "aby": {
+      "title": "Izdejo to",
+      "text": "Ieliec dziesmu un dejo visu skaņdarbu. Aizver durvis, ja jāaizver. Dejošana atbrīvo endorfīnus, uzlabo koordināciju un liek justies dzīvam. Neviens neizskatās forši, dejojot viens, un tieši tas ir būtība."
+    },
+    "abz": {
+      "title": "Piezvani kādam",
+      "text": "Izmanto pauzi, lai piezvanītu kādam tuvam — vienkārši lai pateiktu čau. Sociālā saikne ir viens no spēcīgākajiem laimes un ilgmūžības prognozētājiem."
+    },
+    "aca": {
+      "title": "Saules gaismas deva",
+      "text": "Saņem 10-15 minūtes saules gaismas, kad iespējams. Tā regulē diennakts ritmu, palielina D vitamīna ražošanu un uzlabo garastāvokli. Tavs ķermenis arī darbojas ar saules enerģiju."
+    },
+    "acb": {
+      "title": "Progresīvā relaksācija",
+      "text": "Sasprindzini katru muskuļu grupu 5 sekundes, tad atlaid. Sāc ar pēdām, virzi uz augšu — ikri, augšstilbi, vēders, rokas, pleci, seja. Pilnīga spriedzes atbrīvošana zem 3 minūtēm."
+    },
+    "acc": {
+      "title": "Basām kājām brīdis",
+      "text": "Noauj apavus un sajūti grīdu zem kājām. Ja vari — pastaigā pa zāli. Iezemēšanās pierādīti samazina iekaisumu un uzlabo miegu."
+    },
+    "acd": {
+      "title": "Raksti savam nākotnes es",
+      "text": "Uzraksti īsu zīmīti savam nākotnes es — mērķi, vēlmi, atgādinājumu. Tas veido pašapziņas nepārtrauktību un tur tevi saistītu ar to, kas svarīgs ārpus šodienas uzdevumiem."
+    },
+    "ace": {
+      "title": "Digitālā uzkopšana",
+      "text": "Aizver visas cilnes, ko neizmanto. Neizlasīti paziņojumi krājas? Izdzēs tos. Digitālais juceklis rada kognitīvo slodzi, tieši tāpat kā fiziskais."
+    },
+    "acf": {
+      "title": "2 minūšu noteikums",
+      "text": "Ja kaut kas, par ko domā, prasīs mazāk par 2 minūtēm, izdari to tagad pauzes laikā. Mazu uzdevumu izpilde noņem nepabeigto lietu mentālo smagumu."
+    },
+    "acg": {
+      "title": "Stājas pārbaude",
+      "text": "Nostājies pie sienas ar papēžiem, dibenu, pleciem un galvu pret to. Tā jūtas laba stāja. Mēģini atjaunot šo sajūtu, kad apsēdies atpakaļ."
+    },
+    "ach": {
+      "title": "Smaržas pauze",
+      "text": "Pasmaržo kaut ko patīkamu — kafijas pupiņas, sveci, ēteriskās eļļas vai svaigu gaisu. Oža ir tieši savienota ar emocionālajām smadzenēm un var mainīt garastāvokli acumirklī."
+    },
+    "aci": {
+      "title": "Mākoņu vērošana",
+      "text": "Vai tu vari redzēt debesis? Veltī minūti mākoņu vērošanai. Tas ir oriģinālais ekrānsaudzētājs — un tas dod tavām smadzenēm maigo fokusu, kas veicina radošo domāšanu."
+    }
+  },
+  "ui": {
+    "loading": "Ielādē Pauza…",
+    "preview": {
+      "status": "Priekšskatījums",
+      "detail": "Pārlūka priekšskatījums",
+      "action": "Priekšskatījuma režīms aktīvs."
+    },
+    "title": "Pauza",
+    "heroHeadline": "Uzturiet darba ritmu ar mierīgu saskarni",
+    "heroSubtitle": "Svarīgākie iestatījumi priekšā, papildu opcijas aizmugurē.",
+    "settingsCategories": "Iestatījumu kategorijas",
+    "settingsCategoriesHint": "Mainiet kategoriju kreisajā pusē, skatiet iestatījumus labajā pusē.",
+    "currentCategory": "Pašreizējā kategorija",
+    "overview": "Pārskats",
+    "overviewHint": "Statusa kopsavilkums, pēdējās darbības un ātrā piekļuve.",
+    "liveOverview": "Tiešraides pārskats",
+    "liveOverviewHint": "Pašreizējais ritms, lietotnes statuss un pārtraukuma logs vienā skatienā.",
+    "quickActions": "Ātrās darbības",
+    "quickActionsHint": "Šīs darbības tieši ietekmē pašreizējo ritmu.",
+    "savePanel": "Saglabāt izmaiņas",
+    "savePanelHint": "Izmaiņas stāsies spēkā tikai pēc saglabāšanas.",
+    "nextBreakLabel": "Nākamais pārtraukums",
+    "currentBreakLabel": "Pašreizējais pārtraukums",
+    "lastActionLabel": "Pēdējā darbība",
+    "runtimeLabel": "Vide",
+    "platformLabel": "Platforma",
+    "versionLabel": "Versija",
+    "breakFeelLabel": "Pārtraukuma stils",
+    "placementLabel": "Loga pozīcija",
+    "pendingChanges": "Nesaglabātas izmaiņas",
+    "synced": "Sinhronizēts",
+    "saving": "Saglabā…",
+    "allSet": "Gatavs",
+    "noCurrentBreak": "Nav aktīva pārtraukuma",
+    "liveSignals": "Tiešraides signāli",
+    "general": "Vispārīgi",
+    "preferences": "Iestatījumi",
+    "currentStatus": "Pašreizējais statuss",
+    "language": "Valoda",
+    "languageChinese": "Vienkāršotā ķīniešu",
+    "languageEnglish": "Angļu",
+    "launchOnLogin": "Palaist pieteikšanās brīdī",
+    "enabled": "Ieslēgts",
+    "disabled": "Izslēgts",
+    "schedule": "Ritms",
+    "interruptions": "Atgādinājumi un pārtraukumi",
+    "sectionScheduleHint": "Tikai tie ritma iestatījumi, kurus pielāgojat ikdienā.",
+    "microbreaks": "Mikropārtraukumi",
+    "microbreaksHint": "Īsi pārtraukumi darba laikā.",
+    "longBreaks": "Pārtraukumi",
+    "longBreaksHint": "Pilns pārtraukums pēc vairākiem cikliem.",
+    "interval": "Intervāls",
+    "every": "Biežums",
+    "durationLabel": "Ilgums",
+    "behavior": "Uzvedība",
+    "allowPostpone": "Atļaut atlikšanu",
+    "signals": "Signāli",
+    "sectionSignalsHint": "Ļaujiet Pauza gudrāk izlemt, kad rādīt atgādinājumus.",
+    "naturalBreaks": "Dabīgie pārtraukumi",
+    "naturalBreaksHint": "Automātiska atiestatīšana pēc pietiekami ilgas prombūtnes.",
+    "resetAfter": "Atiestatīt pēc",
+    "dnd": "Netraucēt",
+    "dndHint": "Apturēt atgādinājumus, kad šis režīms ir aktīvs",
+    "sectionSurfaceHint": "Kontrolējiet pārtraukuma intensitāti un pārtraukuma loga pozīciju.",
+    "sectionGeneralHint": "Dažas globālas preferences. Pēc noklusējuma minimālistiskas.",
+    "notificationsCategory": "Atgādinājumi un atlikšana",
+    "notificationsCategoryHint": "Skaņa pirms pārtraukuma. Atlikšanas iestatījumi šeit.",
+    "surfaceCategory": "Pārtraukums un attēlošana",
+    "surfaceCategoryHint": "Pārtraukuma loga intensitāte, pozīcija un stingrība.",
+    "smartPause": "Viedais pārtraukums",
+    "smartPauseHint": "Pauza vispirms meklē acīmredzamu brīdi un pakāpeniski samazina slieksni.",
+    "generalAndShortcuts": "Vispārīgi un saīsnes",
+    "generalAndShortcutsHint": "Pārvaldiet valodu, automātisko palaišanu un globālās saīsnes.",
+    "advanced": "Papildu",
+    "sectionAdvancedHint": "Vairāk kontroles, savietojamības opciju un saīsņu.",
+    "appExclusions": "Lietotņu izņēmumi",
+    "appExclusionsHint": "Lietotnes, kurām atgādinājumi tiek apturēti vai atsākti.",
+    "appExclusionsEnable": "Ieslēgt",
+    "appRulePause": "Apturēt, ja atrasts",
+    "appRuleResume": "Atsākt tikai, ja atrasts",
+    "pause30": "Pauze 30 min",
+    "focus45": "Fokuss 45 min",
+    "resume": "Atsākt",
+    "clearFocus": "Beigt fokusu",
+    "save": "Saglabāt",
+    "revert": "Atsaukt",
+    "defaults": "Noklusējuma vērtības",
+    "preBreakNotifications": "Brīdinājuma skaņa",
+    "beforeLabel": "Pirms",
+    "postpone": "Atlikt",
+    "scheduleControl": "Ritma kontrole",
+    "resetScheduleHint": "Pārrēķināt nākamos pārtraukumus no šī brīža.",
+    "postponeCategoryHint": "Iestatiet atlikšanas ilgumu un limitu atsevišķi.",
+    "limitLabel": "Limits",
+    "breakSurface": "Pārtraukuma logs",
+    "breakDisplayMode": "Attēlošanas režīms",
+    "breakBackdrop": "Fona tēma",
+    "breakBackdropHint": "Izvēlieties atmosfērisku fonu pārtraukuma logam.",
+    "breakBackdropPaper": "Papīrs",
+    "breakBackdropDawn": "Rītausma",
+    "breakBackdropForest": "Mežs",
+    "breakBackdropNight": "Nakts",
+    "breakBackdropCustom": "Pielāgots fons",
+    "customWallpaper": "Pielāgots fons",
+    "customWallpaperHint": "Augšupielādējiet lokālu attēlu kā pārtraukuma loga fonu.",
+    "customWallpaperChoose": "Izvēlēties attēlu",
+    "customWallpaperReplace": "Aizvietot attēlu",
+    "customWallpaperRemove": "Noņemt",
+    "customWallpaperEmpty": "Nav izvēlēts pielāgots fons",
+    "customWallpaperEmptyHint": "Bez attēla tiks izmantota noklusējuma tēma.",
+    "customWallpaperReady": "Attēls tiek saspiests un saglabāts lokāli kā pārtraukuma fons.",
+    "breakIdeas": "Pārtraukuma padomi",
+    "breakIdeasHint": "Rādīt īsu padomu katras pārtraukuma laikā.",
+    "breakSounds": "Pārtraukuma skaņas",
+    "breakSoundsHint": "Brīdinājuma skaņa pirms pārtraukuma un beigu skaņa pēc tā.",
+    "microbreakStartSound": "Mikropārtraukuma brīdinājums",
+    "microbreakEndSound": "Mikropārtraukuma beigas",
+    "longBreakStartSound": "Pārtraukuma brīdinājums",
+    "longBreakEndSound": "Pārtraukuma beigas",
+    "breakSoundVolume": "Skaļums",
+    "breakSoundSilence": "Klusums",
+    "breakSoundCrystalGlass": "Kristāla glāze",
+    "breakSoundWindChime": "Vēja zvaniņi",
+    "breakSoundTicToc": "Tik-tak",
+    "breakSoundReverie": "Sapņainība",
+    "reminderMode": "Atgādinājuma režīms",
+    "reminderModeHint": "Viedais meklē dabīgu brīdi; Piespiedu pārtrauc nekavējoties.",
+    "reminderModeSmart": "Viedais",
+    "reminderModeForced": "Piespiedu",
+    "window": "Logs",
+    "fullscreen": "Pilnekrāns",
+    "promptStyleGentle": "Maigs",
+    "promptStyleBalanced": "Līdzsvarots",
+    "promptStyleImmersive": "Iegremdējošs",
+    "allScreens": "Visi ekrāni",
+    "screenPrimary": "Galvenais ekrāns",
+    "screenCursor": "Ekrāns ar kursoru",
+    "showTimeToBreakInTray": "Rādīt nākamo pārtraukumu sistēmas teknē",
+    "currentTimeInBreaks": "Rādīt laiku pārtraukuma logā",
+    "currentTimeInBreaksHint": "Sistēmas laiks augšējā labajā pārtraukuma loga stūrī.",
+    "strictModes": "Stingrie režīmi",
+    "strictModesHint": "Kontrolējiet, vai pārtraukumus var izlaist un vai ir nepieciešams manuāls apstiprinājums.",
+    "microbreakStrict": "Stingrs mikropārtraukums",
+    "longBreakStrict": "Stingrs pārtraukums",
+    "manualFinish": "Manuāli beigt pēc taimera",
+    "showTrayMenuInStrictMode": "Sistēmas teknes izvēlne stingrajā režīmā",
+    "shortcuts": "Saīsnes",
+    "shortcutsHint": "Tukšs = nereģistrēts. Formāts piem.: CmdOrCtrl+Shift+P",
+    "shortcutReveal": "Atvērt iestatījumus",
+    "shortcutFocus45": "Fokuss 45 min",
+    "shortcutPauseToggle": "Pārslēgt pauzi",
+    "shortcutPause30": "Pauze 30 min",
+    "shortcutPause60": "Pauze 1 st.",
+    "shortcutPause120": "Pauze 2 st.",
+    "shortcutPause300": "Pauze 5 st.",
+    "shortcutSkipScheduled": "Pāriet uz nākamo plānoto pārtraukumu",
+    "shortcutSkipMicrobreak": "Pāriet uz mikropārtraukumu",
+    "shortcutSkipLongBreak": "Pāriet uz pārtraukumu",
+    "shortcutReset": "Atiestatīt ritmu",
+    "suffix": {
+      "secondsLong": "s",
+      "secondsBefore": "s pirms",
+      "minutesApart": "min ik",
+      "cycles": "cikli",
+      "minutesLong": "min",
+      "minutesShortPostpone": "min",
+      "minutesLongPostpone": "min",
+      "minutesAway": "min",
+      "minutes": "min",
+      "times": "×"
+    },
+    "status": {
+      "noBreakScheduled": "Nav plānota pārtraukuma",
+      "microbreak": "Mikropārtraukums",
+      "longBreak": "Pārtraukums",
+      "nextBreak": "{{label}} pēc {{duration}}",
+      "focus": "Fokuss {{duration}}",
+      "pause": "Apturēts {{duration}}",
+      "pauseForever": "Apturēts uz nenoteiktu laiku",
+      "blockedBy": "Apturēts dēļ {{match}}",
+      "appRuleActive": "Lietotnes noteikums aktīvs",
+      "dndActive": "Netraucēt aktīvs"
+    },
+    "error": {
+      "loadState": "Neizdevās ielādēt Pauza statusu"
+    },
+    "breakCopy": {
+      "clearedDetail": "Nav aktīva pārtraukuma.",
+      "manualAwaiting": "Laiks beidzies. Pabeidziet šo pārtraukumu pirms atgriešanās darbā.",
+      "awaitingFinish": "Gaida pabeigšanu",
+      "actions": {
+        "resumeWork": "Atpakaļ pie darba",
+        "done": "Gatavs",
+        "later": "Vēlāk",
+        "skip": "Izlaist"
+      },
+      "defaultPrompt": {
+        "microbreak": "Piecelieties, atslābiniet plecus un kaklu, paskatieties tālumā.",
+        "longBreak": "Atkāpieties no galda uz dažām minūtēm, lai ķermenis un prāts atpūstos."
+      }
+    },
+    "previewAction": {
+      "save": "Priekšskatījums: iestatījumi atjaunināti.",
+      "pause": "Priekšskatījums: apturēts 30 min.",
+      "pauseForever": "Priekšskatījums: apturēts uz nenoteiktu laiku.",
+      "focus": "Priekšskatījums: fokuss ieslēgts.",
+      "focusCleared": "Priekšskatījums: fokuss beigts.",
+      "resume": "Priekšskatījums: atsākts.",
+      "reset": "Priekšskatījums: ritms atiestatīts.",
+      "autostartOn": "Priekšskatījums: automātiskā palaišana ieslēgta.",
+      "autostartOff": "Priekšskatījums: automātiskā palaišana izslēgta.",
+      "done": "Priekšskatījums: pārtraukums pabeigts.",
+      "later": "Priekšskatījums: pārtraukums atlikts.",
+      "skip": "Priekšskatījums: pārtraukums izlaists."
     }
   }
 }

@@ -8,7 +8,6 @@ use std::sync::OnceLock;
 struct LanguageConfig {
     code: String,
     fallback: String,
-    desktop_ready: bool,
 }
 
 #[derive(Debug, Deserialize)]
@@ -26,21 +25,10 @@ pub fn normalize_language(language: &str) -> &'static str {
         return "zh-CN";
     };
 
-    let mut current = config_for_code(canonical_language(language)).unwrap_or(default);
-    let mut seen = HashSet::new();
-
-    while !current.desktop_ready && seen.insert(current.code.as_str()) {
-        let Some(next) = config_for_code(&current.fallback) else {
-            break;
-        };
-        current = next;
-    }
-
-    if current.desktop_ready {
-        current.code.as_str()
-    } else {
-        default.code.as_str()
-    }
+    config_for_code(canonical_language(language))
+        .unwrap_or(default)
+        .code
+        .as_str()
 }
 
 pub fn text(language: &str, key: &str) -> String {

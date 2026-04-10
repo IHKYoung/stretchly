@@ -98,7 +98,7 @@
       "ourWebsite": "visite nosso website",
       "dot": ".",
       "developedBy": "Desenvolvido por",
-      "janH": "Clarke Young",
+      "clarkeY": "Clarke Young",
       "designedBy": "Ícone e Interface desenvolvidos por Colin Shanley",
       "checkNewVersion": "Verificar automaticamente se há atualizações para o aplicativo"
     },
@@ -219,300 +219,748 @@
     "appExclusion": "Regra de exclusão do aplicativo"
   },
   "miniBreakIdeas": {
-    "aaj": {
-      "text": "Lentamente, incline a cabeça para o lado e segure por 5 a 10 segundos."
-    },
-    "aap": {
-      "text": "Feche os olhos e conte suas respirações."
-    },
-    "aaq": {
-      "text": "Feche os olhos e nomeie as coisas que você está ouvindo."
-    },
-    "aas": {
-      "text": "Levante seu braço direito, estique-o sobre sua cabeça para a esquerda e segure por 10 segundos. Repita do outro lado."
-    },
-    "aau": {
-      "text": "Levante-se e faça uma estocada. Segure por 10 segundos e depois faça a outra perna."
-    },
-    "abd": {
-      "text": "Com os olhos fechados, lenta e suavemente, mova-os para a esquerda e depois para a direita."
-    },
-    "abc": {
-      "text": "Com os olhos fechados, lenta e suavemente, levante os olhos para o teto e depois para o chão."
-    },
-    "abh": {
-      "text": "Feche o punho e, em seguida, espalhe os dedos e estique-os o máximo que puder."
+    "aaa": {
+      "text": "Vai lá pegar um copo d'água."
     },
     "aab": {
-      "text": "Lentamente olhe para a esquerda, e depois para a direita."
-    },
-    "aaa": {
-      "text": "Vá pegar um copo d'água."
-    },
-    "aal": {
-      "text": "Refocalize seus olhos em um objeto a pelo menos 20 metros de distância."
-    },
-    "aan": {
-      "text": "Tire um momento para sorrir por estar vivo."
-    },
-    "aam": {
-      "text": "Reserve um momento para pensar em algo que você aprecia."
-    },
-    "aao": {
-      "text": "Uma estação de trabalho verdadeiramente ergonômica é aquela da qual você se afasta regularmente."
-    },
-    "aar": {
-      "text": "Coloque as pontas dos dedos nos ombros. Role os ombros para a frente por 10 segundos e depois para trás."
-    },
-    "aat": {
-      "text": "Com sua mão direita, pegue cada dedo da mão esquerda e aperte. Repita do outro lado."
-    },
-    "aav": {
-      "text": "Feche os olhos e simplesmente observe o que quer que surja no momento atual, sem julgamento."
-    },
-    "aba": {
-      "text": "Mude sua postura sentada."
-    },
-    "aaw": {
-      "text": "Foque a cada 20 minutos por 20 segundos em um objeto a 6 metros de distância."
-    },
-    "aax": {
-      "text": "Se precisar de ajuda, peça."
-    },
-    "aay": {
-      "text": "Faça uma coisa de cada vez."
-    },
-    "aaz": {
-      "text": "Sua atenção é gasta com sabedoria?"
-    },
-    "abb": {
-      "text": "Exponha seus olhos à luz natural."
-    },
-    "abf": {
-      "text": "Um de cada vez, toque a ponta de cada dedo na ponta do polegar para que eles formem um O."
-    },
-    "abg": {
-      "text": "Feche o punho e deslize os dedos para cima até apontarem para o teto, como se estivesse dizendo a alguém para parar."
-    },
-    "abi": {
-      "text": "Sente-se alto, com os braços pendurados ao lado do corpo e gire lentamente o pescoço em uma direção em um grande círculo."
-    },
-    "abk": {
-      "text": "Fique em pé com os braços ao seu lado. Aperte as omoplatas juntas e segure."
-    },
-    "abl": {
-      "text": "Fique em pé com os braços levantados ao longo dos ombros. Mova as mãos ligeiramente para trás, segure por um segundo e retorne."
-    },
-    "abm": {
-      "text": "Sente-se na beirada da cadeira, vire o tronco para um lado e segure por 10 a 15 segundos. Repita do outro lado."
-    },
-    "abn": {
-      "text": "Levante-se e coloque um pé em um objeto próximo, como uma cadeira ou escadinha. Mantenha o joelho dobrado e segure por 10 a 15 segundos. Repita com o outro pé."
-    },
-    "abr": {
-      "text": "Sente-se na beirada da cadeira e estenda uma perna à sua frente, segurando por 10 a 15 segundos. Repita com a outra perna."
-    },
-    "abt": {
-      "text": "Segure um braço para cima e, em seguida, use o outro braço para empurrar suavemente o cotovelo do primeiro braço em direção à sua cabeça. Segure por 10-15 segundos. Repita com o outro braço."
-    },
-    "abw": {
-      "text": "Levante-se, coloque um pé em um objeto próximo, como uma cadeira ou escadinha, e abaixe-se para tocar os dedos dos pés. Repita com a outra perna."
-    },
-    "aby": {
-      "text": "Sente-se na beira de uma cadeira ou no chão e coloque as solas dos pés juntas, pressionando suavemente com os cotovelos para alongar a parte interna das coxas."
+      "text": "Sua garrafinha tá te julgando. Bebe um gole."
     },
     "aac": {
-      "text": "Lentamente olhe para cima, e depois para baixo."
+      "text": "Check de hidratação: quando foi a última vez que você bebeu água?"
     },
     "aad": {
-      "text": "Feche os olhos e respire fundo."
+      "text": "Olhe lentamente para a esquerda, depois para a direita."
     },
     "aae": {
-      "text": "Feche os olhos e relaxe."
+      "text": "Olhe lentamente para cima, depois para baixo."
     },
     "aaf": {
-      "text": "Estique suas pernas."
+      "text": "Olhe para algo a 6 metros de distância por 20 segundos — a regra 20-20-20."
     },
     "aag": {
-      "text": "Estique seus braços."
+      "text": "Pisque rapidamente 20 vezes. Seus olhos secos vão agradecer."
     },
     "aah": {
-      "text": "Sua postura sentada está correta?"
+      "text": "Feche os olhos e gire suavemente os globos oculares em círculos."
     },
     "aai": {
-      "text": "Vire lentamente a cabeça para o lado e segure por 10 segundos."
+      "text": "Com os olhos fechados, olhe lentamente para cima, depois para baixo."
+    },
+    "aaj": {
+      "text": "Com os olhos fechados, olhe lentamente para a esquerda, depois para a direita."
     },
     "aak": {
-      "text": "Se levante da sua cadeira e faça um alongamento."
+      "text": "Esfregue as mãos até esquentar e coloque sobre os olhos fechados."
+    },
+    "aal": {
+      "text": "Olhe pela janela por 30 segundos. Lembra que existe um mundo lá fora?"
+    },
+    "aam": {
+      "text": "Desvie o olhar da tela e foque em algo verde. Os olhos adoram verde."
+    },
+    "aan": {
+      "text": "Deixe um pouco de luz natural chegar nos seus olhos."
+    },
+    "aao": {
+      "text": "Feche os olhos e respire fundo algumas vezes."
+    },
+    "aap": {
+      "text": "Feche os olhos e relaxe."
+    },
+    "aaq": {
+      "text": "Feche os olhos e conte suas respirações."
+    },
+    "aar": {
+      "text": "Inspire por 4 tempos, segure por 7, expire por 8. A técnica 4-7-8."
+    },
+    "aas": {
+      "text": "Faça 3 respirações lentas. Pelo nariz, solta pela boca."
+    },
+    "aat": {
+      "text": "Respire tão fundo que sua barriga expanda. Isso é respiração diafragmática."
+    },
+    "aau": {
+      "text": "Não faça absolutamente nada por 20 segundos. Mais difícil do que parece."
+    },
+    "aav": {
+      "text": "Confira sua postura — ombros para trás, pés firmes no chão."
+    },
+    "aaw": {
+      "text": "Mude a posição em que você está sentado."
+    },
+    "aax": {
+      "text": "Abaixe os ombros. Eles estavam colados na orelha esse tempo todo."
+    },
+    "aay": {
+      "text": "Relaxe a mandíbula. Você nem tinha percebido que estava apertando, né?"
+    },
+    "aaz": {
+      "text": "Endireite a coluna. Imagina que tem um fio puxando você pela cabeça."
+    },
+    "aba": {
+      "text": "Ficar sentado é o novo fumar. Levanta por um minuto."
+    },
+    "abb": {
+      "text": "Vire a cabeça lentamente para um lado e segure 10 segundos. Troca."
+    },
+    "abc": {
+      "text": "Incline a cabeça para o lado e segure por 5-10 segundos."
+    },
+    "abd": {
+      "text": "Puxe suavemente uma orelha em direção ao ombro. Sinta o pescoço alongar."
     },
     "abe": {
-      "text": "Sacuda as mãos para obter um pouco de alívio."
+      "text": "Gire o pescoço em um círculo lento e suave."
+    },
+    "abf": {
+      "text": "Incline a cabeça para frente, trás, esquerda, direita. Reset completo."
+    },
+    "abg": {
+      "text": "Gire os ombros para frente por 10 segundos, depois para trás."
+    },
+    "abh": {
+      "text": "Levante os ombros até as orelhas e solte. Repita 5 vezes."
+    },
+    "abi": {
+      "text": "Aperte as escápulas uma contra a outra e segure por 5 segundos."
     },
     "abj": {
-      "text": "Fique em pé e incline lentamente a cabeça em direção ao ombro usando a mesma mão até sentir um alongamento."
+      "text": "Levante o braço direito acima da cabeça, incline para a esquerda, segure 10 segundos. Troca."
+    },
+    "abk": {
+      "text": "Cruze um braço na frente do peito e puxe suavemente com a outra mão. Troca."
+    },
+    "abl": {
+      "text": "Segure um braço esticado para cima, use o outro para empurrar o cotovelo para trás. Segure 10 segundos."
+    },
+    "abm": {
+      "text": "Entrelace os dedos atrás das costas e abra o peito num alongamento."
+    },
+    "abn": {
+      "text": "Entrelace os dedos e empurre as palmas em direção ao teto. Alongue!"
     },
     "abo": {
-      "text": "Fique em pé com os pés afastados na largura dos ombros, abaixe o corpo como se estivesse sentado em uma cadeira e, em seguida, levante-se. Repita várias vezes."
+      "text": "Estenda os braços para os lados. Faça pequenos círculos. Queima rápido."
     },
     "abp": {
-      "text": "Fique em pé com as costas e as mãos apoiadas na parede e mova lentamente os braços para cima e para baixo, como se estivesse fazendo anjos na neve."
+      "text": "Pressione as palmas das mãos uma contra a outra na frente do peito. Namastê, dev."
     },
     "abq": {
-      "text": "Fique de frente para uma parede e coloque as mãos sobre ela, depois faça várias flexões."
+      "text": "Finja que está puxando uma corda acima da cabeça. Alongamento lateral desbloqueado."
+    },
+    "abr": {
+      "text": "Sacuda as mãos para soltar a tensão."
     },
     "abs": {
-      "text": "Fique de frente para uma parede, coloque um pé para trás e o outro para a frente e, em seguida, incline-se contra a parede. Repita com a outra perna."
+      "text": "Toque cada ponta do dedo no polegar, formando um O."
+    },
+    "abt": {
+      "text": "Feche o punho, depois abra e espalhe bem os dedos."
     },
     "abu": {
-      "text": "Incline a cabeça para um lado, depois para o outro lado e, em seguida, incline-a suavemente para a frente e para trás."
+      "text": "Feche o punho, depois abra os dedos como se mandasse alguém parar."
     },
     "abv": {
-      "text": "Estenda um braço sobre o peito, segure o cotovelo com a outra mão e puxe-o suavemente em direção ao peito. Repita com o outro braço."
+      "text": "Aperte cada dedo da mão esquerda com a direita. Depois troca."
+    },
+    "abw": {
+      "text": "Alongue os punhos — estenda o braço e puxe os dedos para trás suavemente."
     },
     "abx": {
-      "text": "Posicione-se em um caminho de porta e coloque um braço de cada lado das bordas e, em seguida, incline-se suavemente para a frente até sentir um alongamento no peito."
+      "text": "Gire os punhos 10 vezes no sentido horário, depois anti-horário."
+    },
+    "aby": {
+      "text": "Coloque a mão espalmada na mesa e afaste os dedos suavemente."
+    },
+    "abz": {
+      "text": "Tamborile os dedos na mesa um por um, do mindinho ao polegar. Agora inverte."
+    },
+    "aca": {
+      "text": "Faça uma automassagem nas mãos. Você mereceu."
+    },
+    "acb": {
+      "text": "Levante e alongue. Sua coluna estava esperando."
+    },
+    "acc": {
+      "text": "Sentado na beira da cadeira, gire o tronco para um lado, segure 10 segundos. Troca."
+    },
+    "acd": {
+      "text": "Arqueie as costas como um gato, depois deixe cair. Cat-cow, versão escritório."
+    },
+    "ace": {
+      "text": "Coloque as duas mãos atrás da lombar e arqueie suavemente para trás."
+    },
+    "acf": {
+      "text": "De pé contra a parede, deslize os braços para cima e para baixo — wall angels."
+    },
+    "acg": {
+      "text": "Alongue as pernas."
+    },
+    "ach": {
+      "text": "Levante e faça um avanço. Segure 10 segundos por perna."
+    },
+    "aci": {
+      "text": "Levante e faça uns agachamentos. A cadeira tá ali pra emergência."
+    },
+    "acj": {
+      "text": "Faça 10 elevações de panturrilha na mesa. Fitness stealth."
+    },
+    "ack": {
+      "text": "Estenda uma perna reta enquanto sentado. Segure 10 segundos. Troca."
+    },
+    "acl": {
+      "text": "Gire os tornozelos em círculos — horário, depois anti-horário."
+    },
+    "acm": {
+      "text": "Flexione e estenda os pés 10 vezes. Seus tornozelos foram negligenciados."
+    },
+    "acn": {
+      "text": "Fique em um pé só por 30 segundos. Troca. Equilíbrio é habilidade."
+    },
+    "aco": {
+      "text": "Mexa os dedos dos pés dentro do sapato. Sim, todos eles."
+    },
+    "acp": {
+      "text": "Levante e marche no lugar por 30 segundos."
+    },
+    "acq": {
+      "text": "Faça umas flexões na parede. Ninguém tá olhando. Provavelmente."
+    },
+    "acr": {
+      "text": "Faça 5 dips na borda da cadeira."
+    },
+    "acs": {
+      "text": "Contraia e solte cada músculo dos pés até a testa. Reset total do corpo."
+    },
+    "act": {
+      "text": "Aperte o rosto todo por 5 segundos, depois solta. Tensão facial: foi embora."
+    },
+    "acu": {
+      "text": "Fique na porta e incline para frente suavemente para alongar o peito."
+    },
+    "acv": {
+      "text": "Feche os olhos e dê nome aos sons que você ouve."
+    },
+    "acw": {
+      "text": "Feche os olhos e observe o que vem à mente, sem julgamento."
+    },
+    "acx": {
+      "text": "Pense em algo pelo qual você é grato agora."
+    },
+    "acy": {
+      "text": "Sorria. Você tá vivo e isso já é bem legal."
+    },
+    "acz": {
+      "text": "Tire uma foto mental de como seu corpo se sente. Pontos de tensão?"
+    },
+    "ada": {
+      "text": "Pense em algo gentil que diria pra um amigo e diga pra você mesmo."
+    },
+    "adb": {
+      "text": "Note 5 coisas na sala que você nunca tinha reparado."
+    },
+    "adc": {
+      "text": "Feche os olhos e imagine seu lugar feliz por 20 segundos."
+    },
+    "add": {
+      "text": "Larga o celular por 60 segundos. Nada vai acontecer. Confia."
+    },
+    "ade": {
+      "text": "Seu teclado não vai sentir saudade. Levanta."
+    },
+    "adf": {
+      "text": "Suas costas acabaram de abrir um chamado no RH. Hora de alongar."
+    },
+    "adg": {
+      "text": "Olha pra cima da tela. Plot twist: o mundo é 3D."
+    },
+    "adh": {
+      "text": "Boceja. Até um falso vira verdadeiro. Tenta aí."
+    },
+    "adi": {
+      "text": "Abra a boca bem grande, depois feche devagar. Tensão na mandíbula: resolvida."
+    },
+    "adj": {
+      "text": "Se abraça. Cruza os braços e aperta. Autocuidado não é frescura."
+    },
+    "adk": {
+      "text": "Mini pausa dançante — só 10 segundos. Você sabe que quer."
+    },
+    "adl": {
+      "text": "Massageie as têmporas em círculos por 10 segundos. Calma instantânea."
+    },
+    "adm": {
+      "text": "Seu monitor mandou um e-mail. Disse que você tá perto demais faz tempo."
     }
   },
   "longBreakIdeas": {
     "aaa": {
-      "title": "Sem estar sozinho",
-      "text": "Você acha difícil fazer uma pausa sozinho? Tente fazer isso com um colega de trabalho. Além de facilitar o cumprimento dos intervalos, você terá a chance de conhecê-los melhor. Fazer pausas juntos aumenta a produtividade."
+      "title": "Melhor junto",
+      "text": "Fazer pausas com os colegas deixa tudo mais leve e reduz a culpa de parar. A ciência confirma: pausas sociais diminuem o estresse e melhoram o clima. Chama alguém pra alongar junto — trampo bom é trampo com pausas."
     },
     "aab": {
-      "title": "Se afaste",
-      "text": "Você já percebeu como seu cérebro pode descobrir as coisas por si só? Basta se afastar do computador e fazer uma pausa para pensar em algo totalmente alheio."
+      "title": "Dá um tempo",
+      "text": "Se afastar da mesa não é preguiça — é estratégia. Seu cérebro consolida informações durante as pausas, tornando o trabalho seguinte mais eficiente. Até caminhar até o bebedouro já conta."
     },
     "aac": {
-      "title": "Microintervalos",
-      "text": "O descanso é um componente chave para garantir o desempenho do sistema músculo-esquelético. As pausas frequentes podem diminuir a duração de uma tarefa e ajudar a diminuir a exposição ao risco de lesões ergonômicas."
+      "title": "Micropausas",
+      "text": "Micropausas de 20-30 segundos reduzem fadiga, tensão muscular e risco de lesões por esforço repetitivo. Não precisa de pausas longas: só quebrar a monotonia postural com movimentos curtos e frequentes."
     },
     "aad": {
       "title": "Meditação",
-      "text": "Estudos de pesquisa sugerem que os exercícios baseados em atenção plena ajudam a diminuir a ansiedade, a depressão, o estresse e a dor, além de ajudar a melhorar a saúde geral, a saúde mental e a qualidade de vida. Não tem certeza de como começar? Existem inúmeros aplicativos para te ajudar."
+      "text": "Até 5 minutos de meditação podem reduzir o cortisol e melhorar o foco. Fecha os olhos, presta atenção na respiração e deixa os pensamentos passarem. Seu cérebro agradece quando você volta pro trampo."
     },
     "aae": {
-      "title": "Pisque",
-      "text": "Olhar para telas por muito tempo faz com que você pisque menos, expondo assim os olhos ao ar. Pisque rapidamente por alguns segundos para refrescar o filme lacrimal e limpar a poeira da superfície do olho."
+      "title": "Pisque mais",
+      "text": "Sabia que na frente da tela você pisca 66% menos? Isso causa olho seco, cansaço visual e visão embaçada. Pisque conscientemente 15-20 vezes. Seus olhos merecem atenção."
     },
     "aaf": {
-      "title": "Ergonomia",
-      "text": "Altura e ângulo inadequados do teclado, mouse, monitor ou superfície de trabalho podem causar problemas de saúde. Reserve algum tempo para ler sobre a ergonomia da mesa."
+      "title": "Ergonomia da mesa",
+      "text": "A tela deve ficar a um braço de distância, com a borda superior na altura dos olhos. Pés firmes no chão, joelhos a 90 graus. Pequenos ajustes hoje previnem problemas grandes amanhã."
     },
     "aag": {
-      "title": "Se mexa",
-      "text": "Há uma série de maneiras de se exercitar dentro de seu escritório. Tente marchar no mesmo lugar ou fazer flexões na mesa."
+      "title": "Treino de escritório",
+      "text": "Não precisa de academia pra se mexer: flexão na parede, agachamento na cadeira, panturrilha na mesa. Até 2 minutos de exercício leve melhoram a circulação e a energia. Seu corpo não foi feito pra ficar parado 8 horas."
     },
     "aah": {
-      "title": "Mude",
-      "text": "Você tem uma bola de estabilidade ou mesa de trabalho em pé? Considere substituir sua cadeira de mesa por eles por um tempo."
+      "title": "Muda o modo",
+      "text": "Alternar entre sentado, em pé e em movimento reduz o risco de problemas posturais. Se tem mesa regulável, usa. Se não, só levantar a cada 30 minutos já faz diferença."
     },
     "aai": {
-      "title": "Percepção",
-      "text": "Você está sonhando acordado ou tendo problemas para se concentrar? É um sinal de que você precisa fazer uma pausa."
+      "title": "Leia os sinais",
+      "text": "Olhos ardendo, pescoço travado, ombros tensos, dor de cabeça no final do dia. Seu corpo tá falando com você. Aprenda a reconhecer esses sinais e aja antes que virem crônicos."
     },
     "aaj": {
-      "title": "Tecnologia",
-      "text": "Que tal dar um passeio sem tecnologia?"
+      "title": "Caminhada sem tech",
+      "text": "Deixa o celular na mesa e caminha por 5 minutos. Sem podcast, sem mensagem. Seu cérebro precisa de tempo sem estímulo pra processar e criar."
     },
     "aak": {
-      "title": "Metabolismo",
-      "text": "Pesquisas emergentes mostram que ficar sentado por longos períodos de tempo contribui para o risco de síndrome metabólica, ataque cardíaco e risco de derrame e risco geral de morte, entre outros. Fazer pausas regulares para caminhar pode ajudar a sua circulação, trabalhando para neutralizar alguns desses problemas."
+      "title": "O problema de ficar sentado",
+      "text": "Ficar sentado por mais de 6 horas por dia aumenta o risco de doenças cardiovasculares em 18%. Mesmo quem malha não tá imune. A chave é quebrar a sedentariedade com pausas frequentes."
     },
     "aal": {
-      "title": "Reuniões Ativas",
-      "text": "Que tal mover as reuniões da sala de conferências para o saguão? Caminhar não apenas queima calorias, mas também pode promover um senso de colaboração."
-    },
-    "aan": {
-      "title": "Banheiros",
-      "text": "Caminhe até o banheiro mais distante nas instalações do local de trabalho ao ir ao banheiro."
+      "title": "Reuniões caminhando",
+      "text": "Reuniões andando melhoram a criatividade em 60% segundo Stanford. A próxima call que não precisa de tela, faz andando. Suas pernas vão agradecer."
     },
     "aam": {
-      "title": "Fruta",
-      "text": "Tome seu tempo e coma algumas frutas. Devagar. Repare no sabor, na textura, no frescor."
+      "title": "Lanche consciente",
+      "text": "Comer na frente da tela faz você consumir 25% a mais sem perceber. Na próxima vez que for lanchar, sai da mesa e curte com todos os sentidos."
     },
-    "aap": {
-      "title": "Colegas",
-      "text": "Não envie e-mails ou mensagens para colegas de escritório, caminhe até suas mesas para se comunicar com eles."
+    "aan": {
+      "title": "Caminhada do café",
+      "text": "Em vez de pegar o café e voltar pra mesa, usa ele como desculpa pra uma caminhada de 5 minutos. A combinação de cafeína e movimento é poderosa pro foco."
     },
     "aao": {
-      "title": "Pausa para café",
-      "text": "Vai fazer uma pausa para o café? Considere fazer uma caminhada de 5 minutos toda vez que for fazer uma."
+      "title": "Seu cérebro nas pausas",
+      "text": "O cérebro usa 20% da energia do corpo e cansa como um músculo. As pausas permitem que o córtex pré-frontal recarregue, melhorando criatividade e tomada de decisão."
+    },
+    "aap": {
+      "title": "Mexe um pouco, ganha muito",
+      "text": "Até 2 minutos de caminhada por hora reduzem o risco de morte prematura em 33%. Não precisa de maratona: a consistência dos pequenos movimentos ganha da intensidade ocasional."
     },
     "aaq": {
-      "title": "Aprendizagem",
-      "text": "Em um estudo com voluntários saudáveis, os pesquisadores do NIH descobriram que fazer pausas curtas, cedo e com frequência, pode ajudar nosso cérebro a aprender novas habilidades."
+      "title": "Rotina de alongamento",
+      "text": "Uma rotina de 5 minutos de alongamento para pescoço, ombros e costas pode reduzir a dor muscular em 40%. Dedica uma pausa longa: seu eu do futuro vai agradecer."
     },
     "aar": {
-      "text": "Evidências sugerem que pequenas quantidades de exercícios regulares podem trazer benefícios dramáticos à saúde, incluindo a redução mensurável do estresse.",
-      "title": "Exercício"
+      "title": "Círculos com os punhos",
+      "text": "Seus punhos aguentam milhares de teclas por dia. Gire 10 vezes em cada direção, flexione e estenda os dedos. A prevenção da síndrome do túnel do carpo começa aqui."
     },
     "aas": {
-      "title": "Repetição",
-      "text": "Você encontrou sua rotina de alongamento? Não se esqueça de repeti-lo mais de uma vez para combater melhor os efeitos da postura sentada prolongada."
+      "title": "Alongamento pra cima",
+      "text": "Levante os braços acima da cabeça, entrelace os dedos e empurre pro teto. Esse gesto simples descomprime a coluna e libera tensão acumulada nos ombros e no tórax."
     },
     "aat": {
-      "text": "Estenda os braços com as palmas voltadas para você e gire lentamente as mãos quatro vezes no sentido horário e quatro vezes no sentido anti-horário.",
-      "title": "Pulso e antebraço"
+      "title": "A regra 30/1",
+      "text": "A cada 30 minutos sentado, levanta por pelo menos 1 minuto. Não complica: levanta, dá uns passos, senta de novo. Seu sistema cardiovascular vai agradecer."
     },
     "aau": {
-      "text": "Junte as mãos atrás da cabeça e levante-as juntas acima da cabeça, terminando com as palmas voltadas para cima.",
-      "title": "Alongamento das costas"
+      "title": "Treino de 7 minutos",
+      "text": "O treino de alta intensidade de 7 minutos, validado pelo Journal of Sports Medicine, combina 12 exercícios com o peso do corpo. Testa no horário de almoço: só precisa de uma cadeira e uma parede."
     },
     "aav": {
-      "title": "Mobilize-se",
-      "text": "Para cada trinta minutos de estagnação, você deve ter pelo menos um minuto de estimulação."
+      "title": "Acelera o coração",
+      "text": "Até 2-3 minutos de atividade que acelera o coração melhoram o humor e o foco pras horas seguintes. Polichinelo, corrida no lugar ou subir escada: você escolhe."
     },
     "aaw": {
-      "title": "Treino de 7 minutos",
-      "text": "Este treino inclui uma rotina de exercícios de corpo inteiro em uma fração do tempo. Mas, como em qualquer exercício, tenha cuidado. Existem vários aplicativos para você começar."
-    },
-    "aaz": {
-      "text": "A arteterapia é conhecida por trazer grandes benefícios para a saúde mental, especialmente quando se trata de gerenciamento de estresse. Que tal escrever um poema rápido, tirar uma foto ou pintar algo pequeno?",
-      "title": "Faça arte"
-    },
-    "abb": {
-      "title": "Almoce ao ar livre",
-      "text": "A natureza está ligada a emoções positivas e diminuição do estresse e ansiedade. Sempre que possível, tente fazer sua pausa diária para o almoço ao ar livre, cercada por alguma vegetação."
-    },
-    "abc": {
-      "title": "Transporte público",
-      "text": "Se você usa transporte público regularmente, pode ficar em pé em vez de sentado. Se possível, tente substituir o máximo possível de suas viagens diárias por caminhadas ou ciclismo."
-    },
-    "abe": {
-      "text": "Segure um dedo perto do olho e concentre-se nele. Afaste lentamente o dedo, concentre-se na distância e depois volte para o dedo. Traga o dedo para trás e foque em algo distante.",
-      "title": "Mudança de foco"
-    },
-    "abf": {
-      "title": "Palmas",
-      "text": "Enquanto estiver sentado, apoie os cotovelos na mesa e perto da borda da mesa. Deixe seu peso cair para a frente e coloque as mãos sobre os olhos. Feche os olhos e inspire lentamente pelo nariz e segure por alguns segundos. Continue a respiração profunda."
-    },
-    "abg": {
-      "title": "Apertos de mão",
-      "text": "Aperte um par de meias enroladas ou uma bola de borracha macia e segure por 5 segundos. Repita todo o processo algumas vezes."
+      "title": "Sobe a escada",
+      "text": "Subir escada por 3 minutos queima mais calorias por minuto que corrida. Se seu prédio tem escada, usa como academia gratuita nas pausas."
     },
     "aax": {
-      "text": "Aumente sua pulsação para 120 batimentos por minuto por 20 minutos seguidos, quatro ou cinco vezes por semana, fazendo qualquer coisa que você goste. Aumentar regularmente a frequência cardíaca resulta em melhor saúde cardiovascular.",
-      "title": "Pulso"
+      "title": "Cria alguma coisa",
+      "text": "Dedicar uns minutos a uma atividade criativa — desenhar, escrever, montar — ativa redes neurais diferentes das do trabalho analítico, oferecendo um descanso cognitivo real."
     },
     "aay": {
-      "title": "Suba as escadas",
-      "text": "Estudos demonstraram que subir escadas, considerada atividade física de intensidade vigorosa, queima mais calorias por minuto do que correr."
+      "title": "Organiza a mesa",
+      "text": "Um ambiente organizado reduz o cortisol e melhora a concentração. Dedica 5 minutos pra arrumar a mesa: joga fora o que não serve, organiza o que ficou."
+    },
+    "aaz": {
+      "title": "Almoça lá fora",
+      "text": "Comer ao ar livre te expõe à luz natural, que regula o ritmo circadiano e melhora o humor. O sol brasileiro é de graça — aproveita na hora do almoço."
     },
     "aba": {
-      "title": "Organize-se",
-      "text": "Um espaço limpo ajuda seu foco no trabalho e muitas vezes está ligado a emoções positivas como a felicidade."
+      "title": "O poder do bocejo",
+      "text": "Bocejar resfria o cérebro e melhora sua eficiência. Se não consegue bocejar naturalmente, força um: o corpo acompanha e você vai sentir um alívio imediato de tensão."
     },
-    "abh": {
-      "text": "Pesquisas emergentes sugerem potencial para o uso de técnicas de respiração lenta controlada como meio de otimizar os parâmetros fisiológicos que parecem estar associados à saúde e à longevidade.",
-      "title": "Respiração Lenta"
+    "abb": {
+      "title": "Mudança de foco",
+      "text": "Os músculos oculares ficam rígidos focando na tela. Alterne entre objetos pertos e distantes a cada 10-15 minutos. Olha pela janela, depois volta pra tela. É academia pros olhos."
+    },
+    "abc": {
+      "title": "Palming ocular",
+      "text": "Esfregue as mãos pra esquentar e coloque suavemente as palmas sobre os olhos fechados. O calor e a escuridão relaxam os músculos oculares e reduzem o cansaço em segundos."
     },
     "abd": {
-      "title": "Boceje",
-      "text": "Bocejar pode ser muito útil, pois produz lágrimas para ajudar a umedecer e lubrificar os olhos."
+      "title": "Aperta alguma coisa",
+      "text": "Apertar uma bolinha antiestresse ou objeto macio reduz a tensão muscular nas mãos e antebraços. Tenha algo na mesa pra apertar durante as micropausas."
+    },
+    "abe": {
+      "title": "Respiração lenta",
+      "text": "Desacelerar a respiração pra 6 ciclos por minuto ativa o nervo vago e baixa a pressão e o cortisol. Inspira por 5 segundos, expira por 5. Dois minutos bastam pra sentir o efeito."
+    },
+    "abf": {
+      "title": "Visualização",
+      "text": "Feche os olhos e imagine um lugar que te faz bem por 2 minutos. A visualização ativa as mesmas áreas cerebrais da experiência real, reduzindo estresse e ansiedade de forma mensurável."
+    },
+    "abg": {
+      "title": "Grounding 5-4-3-2-1",
+      "text": "Note 5 coisas que você vê, 4 que pode tocar, 3 que ouve, 2 que pode cheirar, 1 que pode saborear. Essa técnica de grounding te traz pro presente e quebra o ciclo da ansiedade."
+    },
+    "abh": {
+      "title": "A ciência do power nap",
+      "text": "Um cochilo de 10-20 minutos melhora memória, reatividade e humor sem causar inércia. Se puder, aproveita o almoço pra um power nap. No Brasil, a soneca pós-almoço é tradição respeitada."
     },
     "abi": {
-      "title": "Visualização imaginativa",
-      "text": "Feche os olhos e imagine-se em um lugar tranquilo e calmo, como uma praia ou uma floresta, concentrando-se nas imagens, sons e sensações desse ambiente."
+      "title": "O reset Pomodoro",
+      "text": "A Técnica Pomodoro — 25 minutos de trabalho, 5 de pausa — é uma das mais eficazes pra manter o foco. Usa um timer, trabalha com foco total, depois para de verdade. O segredo tá na pausa."
+    },
+    "abj": {
+      "title": "Pausa de rabiscos",
+      "text": "Rabiscar durante uma pausa ativa a rede neural padrão do cérebro, melhorando a criatividade e a resolução de problemas. Pega uma caneta e deixa a mão se mover livremente."
+    },
+    "abk": {
+      "title": "Pausa musical",
+      "text": "Ouvir uma música que você ama libera dopamina. Coloca sua música favorita, fecha os olhos e se deixa levar por 3-4 minutos. É uma recarga emocional instantânea."
+    },
+    "abl": {
+      "title": "Momento de gratidão",
+      "text": "Escreva 3 coisas pelas quais você é grato hoje. A gratidão ativa o sistema de recompensa do cérebro e melhora o bem-estar psicológico a longo prazo. 2 minutos bastam."
+    },
+    "abm": {
+      "title": "Reset com água fria",
+      "text": "Lavar o rosto ou os pulsos com água fria ativa o reflexo de mergulho dos mamíferos, desacelerando o coração e reduzindo o estresse. Um truque rápido nos momentos de sobrecarga."
+    },
+    "abn": {
+      "title": "Fala com as plantas",
+      "text": "Levantar pra regar ou checar uma planta te obriga a se mexer e desviar a atenção. O verde melhora a qualidade do ar e reduz o estresse. Bônus: plantas não te interrompem."
+    },
+    "abo": {
+      "title": "Brain dump",
+      "text": "Pega um papel e escreve tudo que tá na sua cabeça sem filtrar. Isso esvazia a memória de trabalho do cérebro, reduzindo a carga cognitiva e a ansiedade de tarefas abertas."
+    },
+    "abp": {
+      "title": "Faz carinho no pet",
+      "text": "Interagir com um bichinho por 5 minutos reduz o cortisol e aumenta a ocitocina. Se tem um amigo peludo por perto, é a hora perfeita pra um carinho."
+    },
+    "abq": {
+      "title": "Terapia do riso",
+      "text": "Rir por 1 minuto tem os mesmos benefícios de 10 minutos de exercício aeróbico. Vê um meme, um vídeo engraçado ou lembra de algo que te fez rir. Riso é o melhor remédio."
+    },
+    "abr": {
+      "title": "Cura do ar fresco",
+      "text": "Abrir a janela ou sair por 3 minutos ao ar livre aumenta os níveis de oxigênio no sangue e melhora concentração e humor. O ar viciado do escritório é inimigo da produtividade."
+    },
+    "abs": {
+      "title": "Body scan",
+      "text": "Feche os olhos e escaneie mentalmente o corpo dos pés à cabeça, notando tensão ou desconforto sem julgar. O body scan aumenta a consciência corporal e ajuda a prevenir dores crônicas."
+    },
+    "abt": {
+      "title": "Yoga na mesa",
+      "text": "Algumas posturas de yoga se adaptam perfeitamente à cadeira: torção sentada, flexão pra frente, abertura do peito. 5 minutos de desk yoga reduzem tensão e melhoram a flexibilidade."
+    },
+    "abu": {
+      "title": "Leia uma página",
+      "text": "Ler algo não relacionado ao trabalho por 5 minutos reduz o estresse em 68% segundo a Universidade de Sussex. Tenha um livro na mesa pras pausas — até uma página vale."
+    },
+    "abv": {
+      "title": "O ciclo de 90 minutos",
+      "text": "O cérebro trabalha em ciclos ultradianos de 90 minutos, alternando alta e baixa atividade. Depois de 90 minutos de foco, uma pausa de 15-20 minutos respeita o ritmo natural e maximiza a performance."
+    },
+    "abw": {
+      "title": "Pausa curiosidade",
+      "text": "Pesquisa algo que te intriga há tempos mas que você nunca aprofundou. 5 minutos de aprendizado livre estimulam a dopamina e reacendem a motivação."
+    },
+    "abx": {
+      "title": "Box breathing",
+      "text": "Inspire por 4 segundos, segure por 4, expire por 4, segure por 4. Repita 4 vezes. Essa técnica, usada pelos Navy SEALs, acalma o sistema nervoso e melhora a clareza mental."
+    },
+    "aby": {
+      "title": "Dança faz bem",
+      "text": "Dançar por 2-3 minutos libera endorfinas, melhora a coordenação e levanta o astral. Não precisa de passos profissionais — coloca uma música e se mexe. O corpo sabe o que fazer."
+    },
+    "abz": {
+      "title": "Liga pra alguém",
+      "text": "Uma ligação rápida pra alguém querido fortalece os laços sociais e libera ocitocina. 5 minutos de conversa real valem mais que uma hora de scroll no feed."
+    },
+    "aca": {
+      "title": "Dose de luz solar",
+      "text": "Exposição à luz do sol por 5-10 minutos estimula a produção de vitamina D e serotonina. Mesmo em dias nublados, a luz externa é 10-50 vezes mais forte que a artificial."
+    },
+    "acb": {
+      "title": "Relaxamento progressivo",
+      "text": "Contraia cada grupo muscular por 5 segundos e depois solte: pés, panturrilhas, coxas, abdômen, mãos, braços, ombros, rosto. O relaxamento muscular progressivo baixa a pressão e a tensão."
+    },
+    "acc": {
+      "title": "Momento descalço",
+      "text": "Tire os sapatos e ande descalço por alguns minutos. O contato direto com o chão estimula os receptores da planta do pé e melhora a propriocepção. Seus pés merecem liberdade."
+    },
+    "acd": {
+      "title": "Carta pro seu eu futuro",
+      "text": "Escreva uma mensagem curta pra você mesmo daqui a 6 meses. O que você quer lembrar desse momento? Esse exercício de reflexão melhora a consciência e o planejamento de longo prazo."
+    },
+    "ace": {
+      "title": "Faxina digital",
+      "text": "Delete 5 emails antigos, feche 5 abas do navegador e arquive 5 arquivos da área de trabalho. Um ambiente digital limpo reduz a carga cognitiva e melhora o foco."
+    },
+    "acf": {
+      "title": "A regra dos 2 minutos",
+      "text": "Se algo leva menos de 2 minutos, faz agora durante a pausa: responde aquela mensagem, guarda aquele papel, enche a garrafa d'água. Eliminar microtarefas libera a mente."
+    },
+    "acg": {
+      "title": "Auditoria postural",
+      "text": "Levanta, encosta na parede e confere se cabeça, ombros, glúteos e calcanhares estão tocando. Esse teste rápido revela desalinhamentos posturais. Corrige agora e seu corpo agradece."
+    },
+    "ach": {
+      "title": "Pausa aromática",
+      "text": "Aromaterapia funciona: lavanda pra relaxar, menta pra focar, cítricos pra energizar. Até cheirar um café fresquinho pode melhorar a performance cognitiva."
+    },
+    "aci": {
+      "title": "Observa as nuvens",
+      "text": "Se tem janela, olha as nuvens por 2 minutos. Esse tipo de atenção suave — soft fascination — descansa o córtex pré-frontal e regenera a capacidade de concentração."
     }
+  },
+  "ui": {
+    "loading": "Carregando Pauza…",
+    "preview": {
+      "status": "Prévia",
+      "detail": "Prévia do navegador",
+      "action": "Modo de prévia ativo."
+    },
+    "title": "Pauza",
+    "heroHeadline": "Mantenha o ritmo de trabalho com uma interface tranquila",
+    "heroSubtitle": "As configurações mais usadas na frente, opções avançadas atrás.",
+    "settingsCategories": "Categorias de configurações",
+    "settingsCategoriesHint": "Mude de categoria à esquerda, veja as configurações à direita.",
+    "currentCategory": "Categoria atual",
+    "overview": "Visão geral",
+    "overviewHint": "Resumo do status, últimas ações e acesso rápido.",
+    "liveOverview": "Visão geral ao vivo",
+    "liveOverviewHint": "Ritmo atual, status do app e janela de pausa de relance.",
+    "quickActions": "Ações rápidas",
+    "quickActionsHint": "Essas ações atuam diretamente no ritmo em andamento.",
+    "savePanel": "Salvar alterações",
+    "savePanelHint": "As alterações só são aplicadas após salvar.",
+    "nextBreakLabel": "Próxima pausa",
+    "currentBreakLabel": "Pausa atual",
+    "lastActionLabel": "Última ação",
+    "runtimeLabel": "Ambiente",
+    "platformLabel": "Plataforma",
+    "versionLabel": "Versão",
+    "breakFeelLabel": "Estilo de pausa",
+    "placementLabel": "Posição",
+    "pendingChanges": "Alterações não salvas",
+    "synced": "Sincronizado",
+    "saving": "Salvando…",
+    "allSet": "Pronto",
+    "noCurrentBreak": "Sem pausa ativa",
+    "liveSignals": "Sinais ao vivo",
+    "general": "Geral",
+    "preferences": "Preferências",
+    "currentStatus": "Status atual",
+    "language": "Idioma",
+    "languageChinese": "Chinês simplificado",
+    "languageEnglish": "Inglês",
+    "launchOnLogin": "Iniciar ao fazer login",
+    "enabled": "Ativado",
+    "disabled": "Desativado",
+    "schedule": "Ritmo",
+    "interruptions": "Lembretes e interrupções",
+    "sectionScheduleHint": "Apenas as configurações de ritmo que você ajusta diariamente.",
+    "microbreaks": "Micro-pausas",
+    "microbreaksHint": "Breves interrupções durante o trabalho.",
+    "longBreaks": "Pausas",
+    "longBreaksHint": "Pausa completa da tela após vários ciclos.",
+    "interval": "Intervalo",
+    "every": "Frequência",
+    "durationLabel": "Duração",
+    "behavior": "Comportamento",
+    "allowPostpone": "Permitir adiar",
+    "signals": "Sinais",
+    "sectionSignalsHint": "Tornar o Pauza mais inteligente sobre quando exibir lembretes.",
+    "naturalBreaks": "Pausas naturais",
+    "naturalBreaksHint": "Reset automático após ausência suficiente.",
+    "resetAfter": "Reiniciar após",
+    "dnd": "Não perturbar",
+    "dndHint": "Suspender lembretes quando este modo está ativo",
+    "sectionSurfaceHint": "Controlar a intensidade e a posição da janela de pausa.",
+    "sectionGeneralHint": "Poucas preferências globais, minimalistas por padrão.",
+    "notificationsCategory": "Lembretes e adiamento",
+    "notificationsCategoryHint": "Som antes da pausa. Opções de adiamento aqui.",
+    "surfaceCategory": "Interrupção e exibição",
+    "surfaceCategoryHint": "Intensidade, posição e rigor da janela de pausa.",
+    "smartPause": "Pausa inteligente",
+    "smartPauseHint": "Pauza procura primeiro um momento óbvio e relaxa gradualmente.",
+    "generalAndShortcuts": "Geral e atalhos",
+    "generalAndShortcutsHint": "Gerenciar idioma, inicialização automática e atalhos de teclado.",
+    "advanced": "Avançado",
+    "sectionAdvancedHint": "Mais controle, compatibilidade e atalhos.",
+    "appExclusions": "Exclusões de apps",
+    "appExclusionsHint": "Apps para as quais os lembretes são suspensos ou retomados.",
+    "appExclusionsEnable": "Ativar",
+    "appRulePause": "Suspender se encontrado",
+    "appRuleResume": "Retomar apenas se encontrado",
+    "pause30": "Pausar 30 min",
+    "focus45": "Foco 45 min",
+    "resume": "Retomar",
+    "clearFocus": "Encerrar foco",
+    "save": "Salvar",
+    "revert": "Desfazer",
+    "defaults": "Valores padrão",
+    "preBreakNotifications": "Som de aviso",
+    "beforeLabel": "Antes",
+    "postpone": "Adiar",
+    "scheduleControl": "Controle de ritmo",
+    "resetScheduleHint": "Recalcular as próximas pausas a partir de agora.",
+    "postponeCategoryHint": "Configure separadamente a duração e o número de adiamentos.",
+    "limitLabel": "Limite",
+    "breakSurface": "Janela de pausa",
+    "breakDisplayMode": "Modo de exibição",
+    "breakBackdrop": "Tema de fundo",
+    "breakBackdropHint": "Escolha um fundo atmosférico para a janela de pausa.",
+    "breakBackdropPaper": "Papel",
+    "breakBackdropDawn": "Amanhecer",
+    "breakBackdropForest": "Floresta",
+    "breakBackdropNight": "Noite",
+    "breakBackdropCustom": "Fundo personalizado",
+    "customWallpaper": "Fundo personalizado",
+    "customWallpaperHint": "Carregue uma imagem local como fundo da janela de pausa.",
+    "customWallpaperChoose": "Escolher imagem",
+    "customWallpaperReplace": "Substituir imagem",
+    "customWallpaperRemove": "Remover",
+    "customWallpaperEmpty": "Nenhum fundo personalizado selecionado",
+    "customWallpaperEmptyHint": "Sem imagem, o tema padrão será usado.",
+    "customWallpaperReady": "A imagem é comprimida e salva localmente como fundo de pausa.",
+    "breakIdeas": "Dicas de pausa",
+    "breakIdeasHint": "Exibir uma dica curta em cada pausa.",
+    "breakSounds": "Sons de pausa",
+    "breakSoundsHint": "Som de aviso antes da pausa e som de encerramento ao terminar.",
+    "microbreakStartSound": "Aviso de micro-pausa",
+    "microbreakEndSound": "Fim de micro-pausa",
+    "longBreakStartSound": "Aviso de pausa",
+    "longBreakEndSound": "Fim de pausa",
+    "breakSoundVolume": "Volume",
+    "breakSoundSilence": "Silêncio",
+    "breakSoundCrystalGlass": "Taça de cristal",
+    "breakSoundWindChime": "Sinos de vento",
+    "breakSoundTicToc": "Tique-taque",
+    "breakSoundReverie": "Devaneio",
+    "reminderMode": "Modo de lembrete",
+    "reminderModeHint": "Inteligente espera um momento óbvio; Forçado interrompe de imediato.",
+    "reminderModeSmart": "Inteligente",
+    "reminderModeForced": "Forçado",
+    "window": "Janela",
+    "fullscreen": "Tela cheia",
+    "promptStyleGentle": "Suave",
+    "promptStyleBalanced": "Equilibrado",
+    "promptStyleImmersive": "Imersivo",
+    "allScreens": "Todas as telas",
+    "screenPrimary": "Tela principal",
+    "screenCursor": "Tela com o cursor",
+    "showTimeToBreakInTray": "Mostrar próxima pausa no ícone da bandeja",
+    "currentTimeInBreaks": "Mostrar horário na janela de pausa",
+    "currentTimeInBreaksHint": "Horário do sistema no canto superior direito da janela de pausa.",
+    "strictModes": "Modos rígidos",
+    "strictModesHint": "Controlar se as pausas podem ser puladas e se é necessária confirmação manual.",
+    "microbreakStrict": "Micro-pausa rígida",
+    "longBreakStrict": "Pausa rígida",
+    "manualFinish": "Encerrar manualmente ao fim do cronômetro",
+    "showTrayMenuInStrictMode": "Menu da bandeja no modo rígido",
+    "shortcuts": "Atalhos de teclado",
+    "shortcutsHint": "Vazio = não registrado. Ex.: CmdOrCtrl+Shift+P",
+    "shortcutReveal": "Abrir configurações",
+    "shortcutFocus45": "Foco 45 min",
+    "shortcutPauseToggle": "Alternar pausa",
+    "shortcutPause30": "Pausar 30 min",
+    "shortcutPause60": "Pausar 1 hora",
+    "shortcutPause120": "Pausar 2 horas",
+    "shortcutPause300": "Pausar 5 horas",
+    "shortcutSkipScheduled": "Ir para a próxima pausa agendada",
+    "shortcutSkipMicrobreak": "Ir para a micro-pausa",
+    "shortcutSkipLongBreak": "Ir para a pausa",
+    "shortcutReset": "Reiniciar ritmo",
+    "suffix": {
+      "secondsLong": "s",
+      "secondsBefore": "s antes",
+      "minutesApart": "min depois",
+      "cycles": "ciclos",
+      "minutesLong": "min",
+      "minutesShortPostpone": "min",
+      "minutesLongPostpone": "min",
+      "minutesAway": "min",
+      "minutes": "min",
+      "times": "×"
+    },
+    "status": {
+      "noBreakScheduled": "Sem pausa agendada",
+      "microbreak": "Micro-pausa",
+      "longBreak": "Pausa",
+      "nextBreak": "{{label}} em {{duration}}",
+      "focus": "Foco {{duration}}",
+      "pause": "Em pausa {{duration}}",
+      "pauseForever": "Em pausa indefinidamente",
+      "blockedBy": "Em pausa por {{match}}",
+      "appRuleActive": "Regra de app ativa",
+      "dndActive": "Não perturbar ativo"
+    },
+    "error": {
+      "loadState": "Não foi possível carregar o estado do Pauza"
+    },
+    "breakCopy": {
+      "clearedDetail": "Sem pausa ativa.",
+      "manualAwaiting": "O tempo acabou. Conclua esta pausa antes de voltar ao trabalho.",
+      "awaitingFinish": "Aguardando confirmação",
+      "actions": {
+        "resumeWork": "Voltar ao trabalho",
+        "done": "Concluído",
+        "later": "Mais tarde",
+        "skip": "Pular"
+      },
+      "defaultPrompt": {
+        "microbreak": "Levante-se, relaxe ombros e pescoço, olhe para longe.",
+        "longBreak": "Afaste-se da mesa por alguns minutos para que seu corpo e mente se recuperem."
+      }
+    },
+    "previewAction": {
+      "save": "Prévia: configurações atualizadas.",
+      "pause": "Prévia: pausado 30 min.",
+      "pauseForever": "Prévia: pausa indefinida.",
+      "focus": "Prévia: foco ativado.",
+      "focusCleared": "Prévia: foco encerrado.",
+      "resume": "Prévia: retomado.",
+      "reset": "Prévia: ritmo reiniciado.",
+      "autostartOn": "Prévia: inicialização automática ativada.",
+      "autostartOff": "Prévia: inicialização automática desativada.",
+      "done": "Prévia: pausa concluída.",
+      "later": "Prévia: pausa adiada.",
+      "skip": "Prévia: pausa pulada."
+    },
+    "preBreakSoundHint": "Som suave antes de o cronômetro terminar para você concluir sua tarefa.",
+    "previewSound": "Ouvir",
+    "appExclusionsSearch": "Pesquisar nos apps em execução",
+    "appExclusionsSearchPlaceholder": "Nome do app…",
+    "appExclusionsSearchLoading": "Carregando…",
+    "appExclusionsSearchEmpty": "Sem resultados",
+    "appExclusionsManualHint": "Ou insira manualmente nome de processo (uma entrada por linha)",
+    "appExclusionsAdd": "Clique para adicionar à lista de exclusões"
   }
 }

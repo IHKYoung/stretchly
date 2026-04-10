@@ -10,7 +10,7 @@
 - `apps/desktop/src/App.tsx`
 - `apps/desktop/src-tauri/src/state.rs`
 - `apps/desktop/src-tauri/src/commands.rs`
-- `apps/desktop/legacy-utils/defaultSettings.js`
+- `app/utils/defaultSettings.js`（仅作原版参考）
 
 ## 1. 当前设置页已经提供的设置
 
@@ -34,10 +34,10 @@
 
 ### 提醒与打断
 
-- 微休息提前提醒开关
-- 微休息提前提醒秒数
-- 休息提前提醒开关
-- 休息提前提醒秒数
+- 微休息提前提示开关
+- 微休息提前提示秒数
+- 休息提前提示开关
+- 休息提前提示秒数
 - 微休息允许延后
 - 微休息每次延后分钟数
 - 休息允许延后
@@ -67,7 +67,13 @@
 ### 通用
 
 - 开机自启动
+- 在 tray 显示下次休息时间
 - 语言
+
+补充说明：
+
+- 当前“提前提示”不再只代表系统通知。
+- 对桌面端现实现状，更准确的语义是：在 break 到点前的 lead time 内，Pauza 会进入一个可见的 heads-up 阶段，并同步到设置页运行时状态与 tray 文本；若系统通知可用，也可以额外投递一次辅助通知。
 
 ## 2. 当前 Tauri 已经支持，但前端还没放出来的设置
 
@@ -79,6 +85,7 @@
 - 休息延后次数上限：`long_break_postpones_limit`
 - 微休息手动结束：`microbreak_manual_finish`
 - 休息手动结束：`long_break_manual_finish`
+- 当前运行时补充规则：`延后当前休息` 只在 break 倒计时开始后的前 `10s` 可用；`完成当前休息` 不再允许提前触发，只保留给 `manualAwaiting` 阶段。
 
 ### 多屏与显示细节
 
@@ -108,11 +115,14 @@
 
 - 这些项已经存在于 `PauzaSettings`，或者已经被 `shortcut_bindings()` 读取。
 - 也就是说，如果你决定把它们重新加回设置页，主要是前端信息架构和交互表达的问题，不是后端能力缺失的问题。
-- 当前 `breakBackdrop`、`breakCustomBackdrop*`、`breakIdeasEnabled`、`microbreakStartSound`、`microbreakEndSound`、`longBreakStartSound`、`longBreakEndSound`、`breakSoundVolume` 和 `current_time_in_breaks` 都已经是前台可见设置；`idle_opportunity_seconds` 仍保持 hidden setting，不直接暴露给用户。
+- 当前 `breakBackdrop`、`breakCustomBackdrop*`、`breakIdeasEnabled`、`microbreakStartSound`、`microbreakEndSound`、`longBreakStartSound`、`longBreakEndSound`、`breakSoundVolume` 与 `current_time_in_breaks` 都已经是前台可见设置；`idle_opportunity_seconds` 再次回到 hidden compatibility field，当前 host 实际采用的是内置的递减阈值曲线：
+  - 微休息：`6s -> 3s -> 1s -> 45s deadline`
+  - 休息：`8s -> 4s -> 1s -> 90s deadline`
+  - 这些策略值目前都不单独暴露为设置项。
 
 ## 3. 历史设置基线里有过，但当前 Tauri 还没接回来的候选设置
 
-下面这些项在迁移副本 `apps/desktop/legacy-utils/defaultSettings.js` 里仍能看到，但当前 Tauri `PauzaSettings` 没有对应真源。它们不是“直接加 UI”就能生效的项，而是“要先恢复或重写后端能力”的候选项。
+下面这些项在原版参考文件 `app/utils/defaultSettings.js` 里仍能看到，但当前 Tauri `PauzaSettings` 没有对应真源。它们不是“直接加 UI”就能生效的项，而是“要先恢复或重写后端能力”的候选项。
 
 ### 外观与主题
 

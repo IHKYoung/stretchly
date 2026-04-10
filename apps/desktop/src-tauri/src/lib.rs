@@ -24,7 +24,7 @@ pub fn run() {
                 use tauri_plugin_autostart::MacosLauncher;
 
                 app.handle().plugin(tauri_plugin_autostart::init(
-                    MacosLauncher::LaunchAgent,
+                    MacosLauncher::AppleScript,
                     None::<Vec<&str>>,
                 ))?;
                 shell::setup_desktop_shell(&app.handle())?;
@@ -50,7 +50,8 @@ pub fn run() {
             commands::skip_to_next_microbreak,
             commands::skip_to_next_long_break,
             commands::reset_breaks,
-            commands::toggle_autostart
+            commands::toggle_autostart,
+            commands::list_running_app_names
         ])
         .run(tauri::generate_context!())
         .expect("error while running tauri application");

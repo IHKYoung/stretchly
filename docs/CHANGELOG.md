@@ -17,8 +17,11 @@
 
 ## 未发布
 
+## 0.1.1 - 2026-04-10
+
 ### 调整
 
+- 将 `apps/desktop` 的“提前提醒”收敛为真正可见的 `heads-up cue`：due 前会先在设置页运行态和 tray 文本中显示“即将开始 / Up next”，系统通知退居辅助；通知失败也不再静默
 - 将产品名称统一调整为 `Pauza`
 - 将后续变更日志迁移到 `docs/CHANGELOG.md`，统一改为中文维护
 - 将原根目录英文 `CHANGELOG.md` 归档到 `docs/archive/CHANGELOG.upstream.en.md`
@@ -50,23 +53,42 @@
 - 继续收敛 `apps/desktop` 的休息体验：break 卡片进一步改成更通透的玻璃材质，window 模式比例收敛到 16:9，自定义壁纸在设置页改为完整预览，并补上微休息 / 休息的结束提示音
 - 将 `apps/desktop` 的多语言结构升级为“每语言一份消息文件 + 每语言一份配置文件 + 自动生成共享 registry”：legacy `app/locales/*.json` 现会同步到 `apps/desktop/src/locales/messages/`，前端和 Rust host 共用 `registry.generated.json`，不再手写 `zh-CN/en` 双分支
 - 将 `apps/desktop` 的 locale 真源进一步切到桌面端目录本身：`scripts/sync_desktop_locales.py` 不再从 legacy `app/locales` 或 `app/preferences.html` 回灌，桌面端改为直接维护 `apps/desktop/src/locales/{messages,config}` 并生成共享 registry
-- 将 `apps/desktop` break 消息页的提示语单独收口到 `apps/desktop/src/locales/break-message-copy.json`，不再混在通用 locale 资源里分散维护
+- 将 `apps/desktop` break 消息页提示语继续收口为单一真源，但不再保留 `break-message-copy.*` 过渡文件；当前统一维护在 `apps/desktop/src/locales/messages/*.json` 的 `ui.breakCopy.*`
 - 将根级测试和迁移期 JS 领域辅助模块统一搬到 `apps/desktop/legacy-utils`，并让默认运行、构建、测试链路彻底停止依赖 `app/`
+- 继续做减法：移除 `apps/desktop/legacy-utils` 与依赖它的根级旧测试，默认测试链路只保留当前 desktop locale / break 文案真源校验；`app/` 继续仅作为原版参考目录存在
+- 继续清理非主体开发资产：删除 `coverage/`、`examples/`、`output/` 与根目录旧 `README` 展示素材
+- 继续清理根级说明/发布元数据：将 `README.md`、`CONTRIBUTING.md`、`CODE_OF_CONDUCT.md`、`LICENSE`、`net.hovancik.Pauza.desktop`、`net.hovancik.Pauza.metainfo.xml` 的有用信息提炼到 `docs/RootMetadataArchive.md`，根目录只保留主体开发相关文件
 - 整理 `apps/desktop` 设置页中的运行时动作边界：顶部 `恢复提醒` 现仅在暂停态出现，focus 态改为独立的 `结束专注`，`重置节奏` 单独收进 `节奏控制` 区并明确不会自动解除暂停
+- 统一当前开发者显示名：desktop locale、归档 locale、应用元数据与仓库 README 中的 `Jan Hovancik` 现统一替换为 `Clarke Young`；`LICENSE` 历史版权归属保持不变
+- 将当前版本统一提升为 `0.1.1`，并在根 `README.md` 补充本版概览、产品主张以及“官网先行，Vercel 部署 + 下载入口”的下一阶段方向
+- 先将根 `package.json` / `package-lock.json` 的遗留版本出口收口到与 `apps/desktop`、Tauri 配置和 Cargo manifest 一致的单一版本线，为本轮统一提升到 `0.1.1` 打下基础
+- 修复 `apps/desktop` 设置页的语言切换链路：语言选择现改为下拉，完整 locale 列表可见，前后端运行时不再把现有语言强制回退到 `zh-CN/en`
+- 调整 `apps/desktop` 节奏页的 preset 和手动输入交互：微休息/休息四组参数现统一保留 5 个候选项，自定义输入允许先清空再录入，并在提交时再 clamp
+- 调整 `apps/desktop` 的智能提醒默认节奏：smart 模式的空档阈值默认收紧到 `6s`，设置页“智能暂停”分组也重新暴露 `等待空档` 秒数，让用户可直接微调
+- 继续做减法：`apps/desktop` 设置页已收回 smart reminder 的 `等待空档` 调节项，前台只保留 `智能提醒 / 强制提醒` 选择，阈值和等待上限重新回到内部策略
+- 将 `apps/desktop` 的 smart reminder 内部策略继续从“单一短空档 + deadline”收敛为递减阈值曲线：微休息改为 `6s -> 3s -> 1s -> 45s deadline`，休息改为 `8s -> 4s -> 1s -> 90s deadline`
 
 ### 修复
 
 - 修复 `apps/desktop` 在 macOS 上顶部菜单栏 tray icon 右键时的原生菜单闪退；tray 根 context menu 现按平台分支为 macOS 使用 `Submenu`，避免在 root `Menu` 上直接挂普通 `MenuItem`
 - 修复 `apps/desktop` 的 tray 菜单会在后台 1s tick 中被反复重建的问题；tray 现在只在菜单内容有效变化时刷新，不再让已展开的原生菜单一闪即逝
+- 修复 `apps/desktop` 顶部 tray 倒计时和右键 tray 菜单状态不同步的问题：tray 标题现按秒同步真实剩余时间，已展开菜单里的状态文本也会原地实时更新；同时新增设置项控制顶部倒计时是否显示，并补上该项的多语言兼容回退
 - 修复 `apps/desktop` break 在 window 模式下仍缩成右下角小浮窗的问题：windowed 宿主 profile 现统一居中，并约占当前工作区 `80% x 80%`，不再保留 microbreak 角落卡片逻辑
 - 修复 `apps/desktop` fullscreen 休息窗口在点击 `跳过` 后可能残留黑屏的问题：break close path 现在会先退出 fullscreen，再销毁窗口实例，不再只隐藏 fullscreen break
 - 修复 `apps/desktop` break prompt 点击 `完成休息 / 稍后 / 跳过` 时可能直接退出应用的问题：break CTA 现先返回 `DesktopSnapshot`，再异步销毁当前 break webview，避免在 `invoke` 回包过程中同步 teardown 当前窗口
 - 修复 `apps/desktop` fullscreen break 在 macOS 上可能出现顶部空白的问题：break 宿主 fullscreen 现统一经由 helper 处理，macOS 改走 simple fullscreen，close path 也会同步兜底退出 simple/native fullscreen
+- 修复 `apps/desktop` 在 macOS 全屏工作区里 break 窗口无法覆盖当前工作屏幕的问题：break 宿主窗口现在会额外 patch 原生 `NSWindow` 的 `CanJoinAllSpaces | MoveToActiveSpace | FullScreenAuxiliary`，并直接抬到最高 native level；显示后还会主动 front 到当前 Space
 - 修复 `apps/desktop` 在 macOS 上顶部 tray icon 发糊且偏大的问题：tray 现直接 patch Pauza 自己的 `NSStatusItem`，并使用 1x/2x template image；同时重画了小尺寸 tray SVG，避免 glyph 贴满菜单栏槽位
 - 修复 `apps/desktop` 在 macOS 上 Dock icon 偏大的问题：应用图标现为更保守的安全边距构图，release `.app` 也不再执行额外的 Dock runtime patch，优先使用系统 bundle icon
 - 修复图标生成链中的两个真实故障：`graphics/generate_icon_assets.py` 不再对同一路径做 ffmpeg 原地覆盖，`ensure_srgb` 也恢复兼容输出路径参数，图标资源可重新稳定生成
 - 修复 `apps/desktop` 设置页里开始音下拉直接露出 `ui.microbreakStartSound` / `ui.longBreakStartSound` 字段名的问题：相关 locale key 已补齐
 - 修复 `apps/desktop` 设置页里的中文文案混入 `break window` / `break prompt` 等英文术语的问题，相关提示改回用户向中文表达
+- 修复 `apps/desktop` 保存微休息/休息设置时会打断当前 break 状态机的问题：设置更新现仅在没有 active break flow 且未阻塞时才重排 schedule，当前 break 和已排队 next break 会保持到下一轮结束/触发
+- 修复 `apps/desktop` break 页交互语总是落在固定 prompt 的问题：当前实现已改回直接从 `miniBreakIdeas` / `longBreakIdeas` 读取 `.text`，并删除 `ui.breakCopy.prompts` 过渡字段；固定 10m/30m 节奏下也不再因为简单取模而一直命中同一条
+- 修复 `apps/desktop` 智能提醒可能无限等待的问题：smart 模式当前会先等短空档，但如果你一直持续输入/操作，也会在 bounded wait cap 后自动开始，不再无限 defer
+- 修复 `apps/desktop` 智能提醒过于机械的问题：smart 模式现在不再只看单一 idle 阈值，而是先等更明显的空档，再逐步放宽阈值，最后到达 deadline 时直接开始
+- 修复 `apps/desktop` break CTA 过宽的问题：倒计时进行中不再允许提前完成，`Later` 也从“前 30% 时间可用”收紧为仅在倒计时开始后的前 10 秒可用
+- 修复 `apps/desktop` 设置页切换语言时可能卡住的问题：整页文案与 `dir/lang` 现在会等 autosave 成功后再切换，snapshot 轮询也不再被语言草稿变化重建
 
 ### 文档
 

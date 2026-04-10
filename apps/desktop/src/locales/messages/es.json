@@ -105,7 +105,7 @@
       "ourWebsite": "visite nuestro sitio web",
       "dot": ".",
       "developedBy": "Desarrollado por",
-      "janH": "Clarke Young",
+      "clarkeY": "Clarke Young",
       "designedBy": "Diseño de icono e interfaz de usuario por Colin Shanley",
       "checkNewVersion": "Comprobar actualizaciones de la app automáticamente"
     },
@@ -228,303 +228,747 @@
   },
   "miniBreakIdeas": {
     "aaa": {
-      "text": "Ve por un vaso de agua."
+      "text": "Ve a por un vaso de agua. No eres un cactus."
     },
     "aab": {
-      "text": "Mira lenta y completamente hacia la izquierda, luego hacia la derecha."
+      "text": "Tu botella de agua te está mirando con decepción. Dale un trago."
     },
     "aac": {
-      "text": "Mira lenta y completamente hacia arriba, luego hacia abajo."
-    },
-    "aaf": {
-      "text": "Estira las piernas."
+      "text": "Control de hidratación: ¿cuándo fue la última vez que bebiste agua?"
     },
     "aad": {
-      "text": "Cierra los ojos y respira profundamente varias veces."
+      "text": "Un café está bien, pero tu cuerpo prefiere agua. Bebe un poco."
     },
     "aae": {
-      "text": "Cierra los ojos y relájate."
+      "text": "Mira lentamente hacia la izquierda del todo, luego hacia la derecha."
     },
-    "aaj": {
-      "text": "Dobla el cuello a cada lado lentamente y mantén la postura entre 5 y 10 segundos."
-    },
-    "aah": {
-      "text": "¿Estás sentado correctamente?"
-    },
-    "aap": {
-      "text": "Cierra los ojos y cuenta las respiraciones."
-    },
-    "aaq": {
-      "text": "Cierra los ojos y nombra las cosas que oyes."
-    },
-    "aar": {
-      "text": "Coloca la punta de los dedos en tus hombros. Gira los hombros hacia delante durante 10 segundos, y después hacia atrás."
-    },
-    "aay": {
-      "text": "Haz una cosa cada vez."
-    },
-    "aau": {
-      "text": "Ponte en pie y da una zancada. Mantén la postura 10 segundos y después cambia de pierna."
-    },
-    "abf": {
-      "text": "Uno a uno, toca con la punta de cada dedo la punta del pulgar para formar una O."
-    },
-    "abh": {
-      "text": "Cierra la mano en un puño y después ábrela estirando y girando los dedos todo lo que puedas."
-    },
-    "abk": {
-      "text": "Ponte en pie con los brazos a los lados. Mueve los hombros hacia atrás juntando las paletillas y mantén la postura."
+    "aaf": {
+      "text": "Mira lentamente hacia arriba del todo, luego hacia abajo."
     },
     "aag": {
-      "text": "Estira los brazos."
+      "text": "Mira algo a 6 metros durante 20 segundos — la regla 20-20-20."
+    },
+    "aah": {
+      "text": "Parpadea rápido 20 veces. Tus ojos resecos te lo agradecerán."
     },
     "aai": {
-      "text": "Gira la cabeza a cada lado lentamente y mantén la postura 10 segundos."
+      "text": "Cierra los ojos y gira suavemente los globos oculares en círculos."
+    },
+    "aaj": {
+      "text": "Con los ojos cerrados, mira lentamente hacia arriba y luego hacia abajo."
     },
     "aak": {
-      "text": "Levántate de la silla y estírate."
+      "text": "Con los ojos cerrados, mira lentamente hacia la izquierda y luego hacia la derecha."
     },
     "aal": {
-      "text": "Enfoca un objeto que esté a 20 metros o más."
+      "text": "Frota las manos hasta que estén calientes y ponlas sobre los ojos cerrados."
     },
     "aam": {
-      "text": "Piensa un momento en algo que aprecies."
+      "text": "Mira por la ventana 30 segundos. ¿Recuerdas que existe el exterior?"
     },
     "aan": {
-      "text": "Tómate un momento para sonreír por estar vivo."
+      "text": "Aparta la vista de la pantalla y enfoca algo verde. A los ojos les encanta el verde."
     },
     "aao": {
-      "text": "Un puesto de trabajo ergonómico es aquél del que te apartas de vez en cuando."
+      "text": "Deja que un poco de luz natural llegue a tus ojos."
+    },
+    "aap": {
+      "text": "Cierra los ojos y haz unas cuantas respiraciones profundas."
+    },
+    "aaq": {
+      "text": "Cierra los ojos y relájate."
+    },
+    "aar": {
+      "text": "Cierra los ojos y cuenta tus respiraciones."
     },
     "aas": {
-      "text": "Sube el brazo derecho, estíralo sobre tu cabeza hacia la derecha y mantén la postura 10 segundos. Repite por el otro lado."
+      "text": "Inhala 4 segundos, aguanta 7, exhala 8. La técnica 4-7-8."
     },
     "aat": {
-      "text": "Con la mano derecha, agarra uno a uno cada dedo de la mano izquierda y apriétalo. Repite con la otra mano."
+      "text": "Haz 3 respiraciones lentas. Inhala por la nariz, exhala por la boca."
+    },
+    "aau": {
+      "text": "Respira tan profundo que se te hinche la barriga. Eso es respiración diafragmática."
     },
     "aav": {
-      "text": "Cierra los ojos y tan solo siente cualquier cosa que suceda en ese momento, sin juzgar."
+      "text": "No hagas absolutamente nada durante 20 segundos. Más difícil de lo que parece."
     },
     "aaw": {
-      "text": "Enfoca cada 20 minutos y durante 20 segundos un objeto a 6 metros de distancia."
+      "text": "Revisa tu postura: hombros atrás, pies planos en el suelo."
     },
     "aax": {
-      "text": "Si necesitas ayuda, pídela."
+      "text": "Cambia de posición en la silla."
+    },
+    "aay": {
+      "text": "Baja los hombros. Los tenías pegados a las orejas todo este rato."
     },
     "aaz": {
-      "text": "¿Estás dedicando tu atención sabiamente?"
+      "text": "Desaprieta la mandíbula. No sabías que la tenías apretada, ¿verdad?"
     },
     "aba": {
-      "text": "Cambia tu postura sentado."
+      "text": "Endereza la columna. Imagina que un hilo te tira hacia arriba desde la coronilla."
     },
     "abb": {
-      "text": "Expón tus ojos a la luz natural."
+      "text": "Estar sentado es el nuevo fumar. Levántate un momento."
     },
     "abc": {
-      "text": "Con los ojos cerrados, con cuidado y lentamente eleva la mirada al cielo y al suelo alternativamente."
+      "text": "Gira lentamente la cabeza hacia un lado y mantén 10 segundos. Cambia."
     },
     "abd": {
-      "text": "Con los ojos cerrado, con cuidado y lentamente mueve los ojos a la izquierda y luego a la derecha."
+      "text": "Inclina la cabeza hacia un lado y mantén 5-10 segundos."
     },
     "abe": {
-      "text": "Sacude las manos para aliviarlas."
+      "text": "Tira suavemente de una oreja hacia el hombro. Siente el estiramiento del cuello."
+    },
+    "abf": {
+      "text": "Rota el cuello en un círculo lento y suave."
     },
     "abg": {
-      "text": "Cierra la mano en un puño y luego ve abriéndola llevando los dedos hacia arriba, como si le dijeras a alguien que parara."
+      "text": "Inclina la cabeza adelante, atrás, izquierda, derecha. Reinicio completo de brújula."
+    },
+    "abh": {
+      "text": "Rota los hombros hacia adelante 10 segundos, luego hacia atrás."
     },
     "abi": {
-      "text": "Siéntate derecho, con los brazo colgando a los lados, y rota la cabeza lentamente haciendo círculos amplios."
-    },
-    "abl": {
-      "text": "Ponte en pie con los brazos alzados a la altura de los hombros. Mueve las manos hacia la espalda, mantén un segundo y vuelve."
+      "text": "Sube los hombros hasta las orejas y déjalos caer. Repite 5 veces."
     },
     "abj": {
-      "text": "Ponte en pie, cruza el brazo derecho sobre la cabeza y coloca la mano sobre la oreja izquierda, dobla la cabeza hacia el hombro derecho hasta notar el estiramiento. Repite con el otro brazo."
+      "text": "Junta los omóplatos y mantén 5 segundos."
     },
-    "abo": {
-      "text": "Colóquese de pie con los pies separados a la altura de los hombros, baje el cuerpo como si estuviera sentado en una silla y, a continuación, vuelva a ponerse de pie. Repítelo varias veces."
+    "abk": {
+      "text": "Levanta el brazo derecho por encima de la cabeza, inclínate a la izquierda, mantén 10 seg. Cambia."
     },
-    "abq": {
-      "text": "Colócate frente a una pared y apoya las manos en ella, luego haz varias flexiones."
-    },
-    "abr": {
-      "text": "Siéntese en el borde de la silla y extienda una pierna hacia delante, manteniendo la posición durante 10-15 segundos. Repite con la otra pierna."
-    },
-    "abt": {
-      "text": "Mantenga un brazo estirado hacia arriba y, con el otro, empuje suavemente el codo del primer brazo hacia la cabeza. Mantén la posición durante 10-15 segundos. Repite con el otro brazo."
-    },
-    "abu": {
-      "text": "Incline la cabeza hacia un lado, luego hacia el otro y, a continuación, inclínela suavemente hacia delante y hacia atrás."
-    },
-    "abw": {
-      "text": "Póngase de pie, apoye un pie en un objeto cercano, como una silla o un taburete, y baje hasta tocarse los dedos de los pies. Repite con la otra pierna."
-    },
-    "aby": {
-      "text": "Siéntese en el borde de una silla o en el suelo y junte las plantas de los pies, presionando suavemente con los codos para estirar la cara interna de los muslos."
-    },
-    "abn": {
-      "text": "Ponte de pie y apoya un pie en un objeto cercano, como una silla o un taburete. Mantenga la rodilla flexionada y aguante durante 10-15 segundos. Repita con el otro pie."
+    "abl": {
+      "text": "Cruza un brazo sobre el pecho y tira suavemente con la otra mano. Cambia."
     },
     "abm": {
-      "text": "Siéntate en el borde de la silla, gira el torso hacia un lado y mantén la posición durante 10-15 segundos. Repite la operación en el otro lado."
+      "text": "Sube un brazo recto, usa el otro para empujar el codo hacia atrás. Mantén 10 seg. Cambia."
     },
-    "abx": {
-      "text": "Colóquese en el umbral de una puerta y ponga un brazo a cada lado del umbral, luego inclínese suavemente hacia delante hasta que sienta un estiramiento en el pecho."
+    "abn": {
+      "text": "Entrelaza los dedos detrás de la espalda y abre el pecho estirando."
     },
-    "abs": {
-      "text": "De pie frente a una pared, ponga un pie atrás y el otro adelante, luego apóyese en la pared. Repite con la otra pierna."
-    },
-    "abv": {
-      "text": "Pasa un brazo por el pecho, agarra el codo con la otra mano y tira suavemente de él hacia el pecho. Repite con el otro brazo."
+    "abo": {
+      "text": "Entrelaza los dedos y empuja las palmas hacia el techo. ¡Estira!"
     },
     "abp": {
-      "text": "Colócate de pie con la espalda y las manos apoyadas en una pared y, a continuación, mueve lentamente los brazos hacia arriba y hacia abajo como si estuvieras haciendo ángeles de nieve."
+      "text": "Extiende los brazos a los lados. Haz círculos pequeños. Quema más rápido de lo que crees."
+    },
+    "abq": {
+      "text": "Sacude las manos para liberar tensión."
+    },
+    "abr": {
+      "text": "Junta las palmas delante del pecho y presiona. Namasté, currante."
+    },
+    "abs": {
+      "text": "Toca cada yema del dedo con el pulgar formando una O."
+    },
+    "abt": {
+      "text": "Cierra el puño, luego abre los dedos y estíralos al máximo."
+    },
+    "abu": {
+      "text": "Cierra el puño, luego abre la mano como diciendo '¡para!'."
+    },
+    "abv": {
+      "text": "Aprieta cada dedo de la mano izquierda con la derecha. Cambia de mano."
+    },
+    "abw": {
+      "text": "Estira las muñecas: extiende el brazo y tira suavemente de los dedos hacia ti."
+    },
+    "abx": {
+      "text": "Rota las muñecas 10 veces en cada sentido."
+    },
+    "aby": {
+      "text": "Pon la mano plana sobre la mesa y separa los dedos suavemente."
+    },
+    "abz": {
+      "text": "Tamborilea los dedos en la mesa uno a uno, del meñique al pulgar. Ahora al revés."
+    },
+    "aca": {
+      "text": "Date un masaje en las manos. Te lo has ganado."
+    },
+    "acb": {
+      "text": "Ponte de pie y estírate. Tu columna lo estaba deseando."
+    },
+    "acc": {
+      "text": "Siéntate en el borde de la silla, gira el torso a un lado, mantén 10 seg. Cambia."
+    },
+    "acd": {
+      "text": "Arquea la espalda como un gato, luego déjala caer. Gato-vaca de oficina."
+    },
+    "ace": {
+      "text": "Pon ambas manos detrás de la zona lumbar y arquéate suavemente hacia atrás."
+    },
+    "acf": {
+      "text": "Ponte de espaldas a la pared y desliza los brazos arriba y abajo — ángeles de pared."
+    },
+    "acg": {
+      "text": "Estira las piernas."
+    },
+    "ach": {
+      "text": "Levántate y haz una zancada. Mantén 10 segundos con cada pierna."
+    },
+    "aci": {
+      "text": "Levántate y haz unas sentadillas. La silla está ahí por si acaso."
+    },
+    "acj": {
+      "text": "Haz 10 elevaciones de talones en tu sitio. Fitness sigiloso."
+    },
+    "ack": {
+      "text": "Extiende una pierna recta mientras estás sentado. Mantén 10 seg. Cambia."
+    },
+    "acl": {
+      "text": "Rota los tobillos en círculos — en un sentido y luego en el otro."
+    },
+    "acm": {
+      "text": "Apunta y flexiona los pies 10 veces. Tus tobillos están abandonados."
+    },
+    "acn": {
+      "text": "Ponte a la pata coja 30 segundos. Cambia. El equilibrio se entrena."
+    },
+    "aco": {
+      "text": "Mueve los dedos de los pies dentro de los zapatos. Sí, todos."
+    },
+    "acp": {
+      "text": "Levántate y marcha en el sitio 30 segundos."
+    },
+    "acq": {
+      "text": "Haz unas flexiones contra la pared. Nadie te ve. Probablemente."
+    },
+    "acr": {
+      "text": "Haz 5 fondos en la silla usando el borde."
+    },
+    "acs": {
+      "text": "Contrae y suelta cada músculo de los pies a la frente. Reinicio corporal total."
+    },
+    "act": {
+      "text": "Arruga la cara 5 segundos, luego suelta. Tensión facial: eliminada."
+    },
+    "acu": {
+      "text": "Ponte en el marco de una puerta e inclínate suavemente hacia adelante para estirar el pecho."
+    },
+    "acv": {
+      "text": "Cierra los ojos y nombra los sonidos que escuchas."
+    },
+    "acw": {
+      "text": "Cierra los ojos y observa qué viene a la mente, sin juzgar."
+    },
+    "acx": {
+      "text": "Piensa en algo por lo que estés agradecido ahora mismo."
+    },
+    "acy": {
+      "text": "Sonríe. Estás vivo y eso mola bastante."
+    },
+    "acz": {
+      "text": "Haz una foto mental de cómo se siente tu cuerpo. ¿Algún punto de tensión?"
+    },
+    "ada": {
+      "text": "Piensa en algo bonito que le dirías a un amigo, y luego dítelo a ti mismo."
+    },
+    "adb": {
+      "text": "Fíjate en 5 cosas de la habitación en las que nunca te habías fijado."
+    },
+    "adc": {
+      "text": "Deja el móvil boca abajo 60 segundos. No va a pasar nada. Lo prometo."
+    },
+    "add": {
+      "text": "Tu teclado no te va a echar de menos. Levántate."
+    },
+    "ade": {
+      "text": "Tu espalda acaba de poner una reclamación formal. Hora de estirar."
+    },
+    "adf": {
+      "text": "Levanta la vista de la pantalla. Plot twist: el mundo es en 3D."
+    },
+    "adg": {
+      "text": "Bosteza. Aunque sea fingido, desencadena uno real. Pruébalo."
+    },
+    "adh": {
+      "text": "Abrázate. Cruza los brazos y aprieta. El autocariño no es raro."
+    },
+    "adi": {
+      "text": "Mini pausa bailable: solo 10 segundos. Sabes que quieres."
+    },
+    "adj": {
+      "text": "Finge que tiras de una cuerda por encima de la cabeza. Estiramiento lateral desbloqueado."
+    },
+    "adk": {
+      "text": "Masajéate las sienes en pequeños círculos 10 segundos. Calma instantánea."
+    },
+    "adl": {
+      "text": "Tu monitor ha llamado. Dice que llevas demasiado tiempo demasiado cerca."
+    },
+    "adm": {
+      "text": "La siesta no es una opción ahora, pero un buen estiramiento sí."
     }
   },
   "longBreakIdeas": {
     "aaa": {
-      "title": "Solo no",
-      "text": "¿Se te hace difícil tomarte un descanso solo? Intenta hacerlo con algún compañero de trabajo. Además de hacer más fácil el tomar un descanso, tendrás la oportunidad de conocerlos mejor. Tomar descansos juntos incrementa la productividad."
+      "title": "Mejor en compañía",
+      "text": "¿Te cuesta tomarte un descanso tú solo? Prueba a descansar con un compañero de trabajo. Además de cumplir con el descanso, os conoceréis mejor. Tomar descansos juntos aumenta la productividad."
+    },
+    "aab": {
+      "title": "Aléjate",
+      "text": "¿Has notado que las mejores ideas llegan en la ducha? Tu cerebro resuelve problemas cuando le das espacio. Aléjate del ordenador y piensa en otra cosa completamente distinta."
     },
     "aac": {
       "title": "Microdescansos",
-      "text": "El descanso es una pieza clave para asegurar el buen funcionamiento del sistema musculoesquelético. Los descansos frecuentes pueden reducir la duración de una tarea y disminuir el riesgo de lesión ergonómica."
-    },
-    "aab": {
-      "text": "¿Has notado cómo tu mente puede resolver cosas por sí misma? Todo lo que se necesita es alejarse del ordenador y tomar un descanso para pensar sobre algo completamente distinto.",
-      "title": "Aléjate"
+      "text": "Los descansos cortos y frecuentes reducen la tensión repetitiva y mantienen tu sistema musculoesquelético sano. Es la pieza clave para rendir sin lesionarte."
     },
     "aad": {
-      "text": "Diversas investigaciones sugieren que los ejercicios basados en la contemplación ayudan a reducir la ansiedad, la depresión, el estrés, el dolor, y ayudan a mejorar la salud general, la salud mental, y la calidad de vida. ¿No sabes cómo empezar? Hay muchas apps para ayudarte.",
-      "title": "Meditación"
+      "title": "Meditación",
+      "text": "La meditación mindfulness reduce la ansiedad, el estrés e incluso el dolor físico. ¿No sabes por dónde empezar? Prueba una app de meditación guiada de 5 minutos."
     },
     "aae": {
-      "text": "Mirar a las pantallas durante un tiempo prolongado hace que parpadees menos, y por tanto expones los ojos al aire. Parpadea rápido durante unos segundos para reponer la humedad sobre la córnea y limpiar el polvo de la superficie del ojo.",
-      "title": "Parpadear"
+      "title": "Parpadea más",
+      "text": "Parpadeas hasta un 66% menos cuando miras pantallas, lo que reseca los ojos. Parpadea rápido varias veces, mira a lo lejos y considera usar lágrimas artificiales."
     },
     "aaf": {
-      "text": "Un ángulo o altura incorrectos del teclado, el ratón, el monitor o de la superficie de trabajo puede causar problemas de salud. Toma un tiempo para leer sobre la ergonomía del puesto de trabajo.",
-      "title": "Ergonomía"
-    },
-    "aai": {
-      "text": "¿Te duermes durante el día o tienes problemas para enfocar? Es un signo de que necesitas un descanso.",
-      "title": "Notar"
-    },
-    "aak": {
-      "text": "Nuevas investigaciones muestran que estar sentado durante largos períodos de tiempo contribuye al riesgo de síndrome metabólico, al riesgo de ataques al corazón y en conjunto al riesgo de muerte, entre otros. Tomar descansos regulares caminando puede ayudar a la circulación, contribuyendo a contrarrestar esos problemas.",
-      "title": "Metabolismo"
-    },
-    "aam": {
-      "text": "Come algo de fruta. Lentamente. Nota el sabor, la textura, la frescura.",
-      "title": "Fruta"
-    },
-    "aao": {
-      "text": "¿Vás a tomar un café? Considera caminar durante 5 minutos cada vez que vas a por uno.",
-      "title": "Descanso para un café"
-    },
-    "aan": {
-      "text": "Camina al baño más alejado en tu lugar de trabajo cuando te diriges al lugar de descanso.",
-      "title": "Baños"
-    },
-    "aap": {
-      "title": "Compañeros",
-      "text": "No envíes un correos electrónico o mensajes a los compañeros de la oficina, camina hasta sus mesas para hablar con ellos."
-    },
-    "aaq": {
-      "title": "Aprender",
-      "text": "En un estudio de voluntarios sanos, el investigadores del NIH encontraron que tomar descansos cortos regularmente, puede ayudar a nuestra mente a aprender nuevas habilidades."
-    },
-    "aar": {
-      "text": "Las evidencias sugieren que el ejercicio regular en pequeñas cantidades puede aportar grandes beneficios a la salud, incluyendo reducciones apreciables del estrés.",
-      "title": "Ejercicio"
-    },
-    "aaw": {
-      "text": "Esta rutina contempla un conjunto de ejercicios completos para todo el cuerpo en una fracción de tiempo. Pero como con cualquier ejercicio, ten cuidado. Hay muchas apps para que comiences.",
-      "title": "Rutina de 7 minutos"
-    },
-    "aax": {
-      "text": "Aumenta el pulso hasta los 120 latidos por minutos durante 20 minutos seguidos cuatro o cinco veces por semana haciendo cualquier cosa que te guste. Aumentar el ritmo cardíaco tiene como resultado mejorar la salud cardiovascular.",
-      "title": "Pulso"
-    },
-    "aay": {
-      "text": "Estudios han demostrado que subir escaleras, que se considera una actividad física intensa, quema más calorías por minuto que la carrera ligera.",
-      "title": "Sube las escaleras"
-    },
-    "aaz": {
-      "text": "La terapia con arte se sabe que tiene beneficios para la salud mental, especialmente cuando se emplea para gestionar el estrés. ¿Qué te parece escribir un poema rápido, tomar una fotografía o pintar algo pequeño?",
-      "title": "Practicar el arte"
-    },
-    "abb": {
-      "title": "Almuerzo fuera",
-      "text": "La naturaleza está ligada a las emociones positivas y disminuye el estrés y la ansiedad. Siempre que sea posible, intenta almorzar fuera, rodeado de algo de naturaleza."
-    },
-    "abc": {
-      "text": "Si usas el transporte público regularmente, puedes permanecer de pie en vez de sentado. Si es posible, intenta hacer todos los desplazamientos que puedas caminando o en bici.",
-      "title": "Transporte público"
-    },
-    "abe": {
-      "text": "Mantén un dedo cerca de un ojo y enfócalo. Lentamente aleja el dedo todo lo que puedas , enfoca a lo lejos y de nuevo en el dedo. Acerca de nuevo el dedo al ojo y enfoca algo a lo lejos.",
-      "title": "Cambio de foco"
-    },
-    "abh": {
-      "title": "Respiración lenta",
-      "text": "Nuevas investigaciones sugieran el uso potencial de técnicas de respiración lenta controlada como medio de optimizar parámetros sicológicos que aparecen asociados a la salud y la longevidad."
-    },
-    "abg": {
-      "text": "Aprieta un par de calcetines hechos una bola o una pelota de goma blanda, mantén la presión durante 5 segundos. Repite el proceso varias veces.",
-      "title": "Estrujar las manos"
+      "title": "Ergonomía del escritorio",
+      "text": "Monitor a la altura de los ojos, teclado a la altura de los codos, pies planos en el suelo. Una mala ergonomía causa dolores crónicos. Ajústalo ahora, tu futuro yo te lo agradecerá."
     },
     "aag": {
-      "title": "Moverse",
-      "text": "Hay muchas formas de hacer ejercicio en la oficina. Intenta marchar en el sitio o levantarte varias veces de la silla."
+      "title": "Ejercicio de oficina",
+      "text": "No necesitas un gimnasio para moverte. Marcha en el sitio, haz flexiones contra la mesa o unas sentadillas. Pequeños movimientos suman grandes beneficios al final del día."
     },
     "aah": {
-      "title": "Cambiar",
-      "text": "¿Tienes un balón de ejercicios o un escritorio de trabajo para estar de pie? Considera cambiar tu silla de escritorio por alguno de ellos durante un tiempo."
+      "title": "Cambia de modo",
+      "text": "Si tienes un escritorio elevable o una pelota de ejercicio, ahora es buen momento para cambiar. Alternar posturas reduce la fatiga y mejora el enfoque."
+    },
+    "aai": {
+      "title": "Lee las señales",
+      "text": "¿Te distraes? ¿No te concentras? ¿Relees la misma línea? Son las señales de tu cerebro pidiendo un descanso. No las ignores."
     },
     "aaj": {
-      "title": "Tecnología",
-      "text": "¿Qué te parece dar un paseo desenganchado de la tecnología?"
+      "title": "Paseo sin tecnología",
+      "text": "Deja el móvil y sal a dar un paseo corto. Sin podcasts, sin música, solo tú y tus pensamientos. La caminata silenciosa es sorprendentemente restauradora."
+    },
+    "aak": {
+      "title": "El problema de estar sentado",
+      "text": "Estar sentado mucho tiempo aumenta el riesgo de enfermedades cardíacas, diabetes y problemas de espalda. Hasta 60 segundos de pie cada 30 minutos marcan la diferencia."
     },
     "aal": {
-      "title": "Reuniones activas",
-      "text": "¿Qué te parece trasladar las reuniones de la sala de conferencias al vestíbulo? Caminar no solo quema calorías sino que mejora la sensación de colaboración."
+      "title": "Reuniones caminando",
+      "text": "La próxima vez que tengas una reunión individual, propón caminar en vez de sentarse. Las reuniones caminando aumentan la creatividad y el flujo de ideas."
+    },
+    "aam": {
+      "title": "Snack consciente",
+      "text": "Coge una pieza de fruta y cómela despacio. Fíjate en el sabor, la textura y la frescura. Comer con atención plena mejora la digestión y la satisfacción. La sobremesa existe por algo."
+    },
+    "aan": {
+      "title": "Paseo cafetero",
+      "text": "¿Vas a por café? Convierte el trayecto en un paseo de 5 minutos. Dos pájaros de un tiro."
+    },
+    "aao": {
+      "title": "Tu cerebro en los descansos",
+      "text": "Un estudio del NIH descubrió que nuestro cerebro repasa y consolida habilidades nuevas durante los descansos. No descansar no es trabajar más, es aprender menos."
+    },
+    "aap": {
+      "title": "Muévete un poco, gana mucho",
+      "text": "Incluso pequeñas cantidades de ejercicio regular reducen drásticamente el estrés y mejoran el estado de ánimo. No hace falta correr un maratón; un paseo de 5 minutos cuenta."
+    },
+    "aaq": {
+      "title": "Rutina de estiramientos",
+      "text": "¿Has encontrado unos estiramientos que te gustan? Repítelos varias veces al día. La constancia es más importante que la intensidad."
+    },
+    "aar": {
+      "title": "Círculos de muñeca",
+      "text": "Extiende los brazos con las palmas hacia ti, luego rota lentamente las manos: 4 veces en cada sentido. Alivia la tensión por el uso del ratón y el teclado."
     },
     "aas": {
-      "title": "Repetir",
-      "text": "¿Has hallado tu rutina de estiramientos? No olvides repetirlos más de una vez para combatir mejor los efectos del sedentarismo."
+      "title": "Estiramiento hacia arriba",
+      "text": "Entrelaza las manos detrás de la cabeza, luego levántalas por encima con las palmas hacia el techo. Mantén 15 segundos. Estiramiento para todo el tren superior."
     },
     "aat": {
-      "title": "Muñeca y antebrazo",
-      "text": "Extiende los brazos con las palmas hacia ti, rota entonces lentamente las manos cuatro veces en el sentido de las agujas del reloj, y después cuatro veces en sentido contrario."
+      "title": "La regla 30/1",
+      "text": "Por cada 30 minutos sentado, al menos 1 minuto de movimiento. Pon un temporizador si hace falta. Tu cuerpo necesita recordatorios."
     },
     "aau": {
-      "title": "Estirar la espalda",
-      "text": "Une las manos detrás de la cabeza, elévalas a continuación sobre tu cabeza acabando con las palmas hacia arriba."
+      "title": "Entrenamiento de 7 minutos",
+      "text": "Un entrenamiento de cuerpo completo en solo 7 minutos. Está respaldado por la ciencia y no necesita equipamiento. Busca '7 minute workout' y pruébalo."
     },
     "aav": {
-      "title": "Movilización",
-      "text": "Por cada treinta minutos de que estás parado, deberías moverte al menos un minuto."
+      "title": "Eleva tu frecuencia cardíaca",
+      "text": "Intenta hacer 20 minutos de frecuencia cardíaca elevada (unos 120 lpm) 4-5 veces por semana. No es tanto como parece: caminar rápido cuenta."
+    },
+    "aaw": {
+      "title": "Sube escaleras",
+      "text": "Subir escaleras se clasifica como ejercicio vigoroso y quema más calorías por minuto que correr. Si las tienes cerca, úsalas."
+    },
+    "aax": {
+      "title": "Crea algo",
+      "text": "La arteterapia reduce el estrés comprobadamente. Escribe un haiku, garabatea un monstruo, haz una foto, dobla un origami. Tu cerebro creativo necesita jugar."
+    },
+    "aay": {
+      "title": "Ordena",
+      "text": "Un escritorio desordenado se correlaciona con más estrés. Dedica 5 minutos a organizar tu espacio. Un espacio limpio, una mente clara."
+    },
+    "aaz": {
+      "title": "Come al aire libre",
+      "text": "La exposición a la naturaleza reduce el cortisol. Cuando puedas, come fuera. Si no puedes salir, al menos siéntate junto a una ventana."
     },
     "aba": {
-      "title": "Despejar",
-      "text": "Un espacio limpio ayuda a enfocar el trabajo y a menudo está ligado a las emociones positivas como la felicidad."
+      "title": "El poder del bostezo",
+      "text": "Bostezar no es solo aburrimiento: enfría el cerebro y produce lágrimas que lubrican los ojos. Bosteza a propósito y nota el efecto calmante."
+    },
+    "abb": {
+      "title": "Cambio de enfoque",
+      "text": "Pon un dedo cerca de la cara y enfócalo. Aléjalo lentamente y luego mira algo distante. Repite. Ejercita los músculos oculares."
+    },
+    "abc": {
+      "title": "Palmeo ocular",
+      "text": "Pon las manos calientes sobre los ojos cerrados y apoya los codos en la mesa. Respira despacio 30 segundos. Una recarga visual rápida."
     },
     "abd": {
-      "title": "Bostezar",
-      "text": "Bostezar puede ayudar, ya que produce lágrimas que humedecen y lubrican los ojos."
+      "title": "Aprieta algo",
+      "text": "Coge una pelota antiestrés, unos calcetines o lo que tengas a mano. Aprieta 5 segundos, suelta. Repite. Libera tensión física de forma discreta."
+    },
+    "abe": {
+      "title": "Respiración lenta",
+      "text": "Respirar lento de forma controlada (unas 6 respiraciones por minuto) activa el sistema nervioso parasimpático: el modo de calma y digestión. Prueba 1 minuto."
     },
     "abf": {
-      "title": "Palmas",
-      "text": "Sentado, coloca los codos en la mesa cerca del borde. Échate hacia delante colocando las manos sobre los ojos. Cierra los ojos, inhala lentamente por la nariz y aguanta unos segundos. Continua respirando profundamente."
+      "title": "Visualización",
+      "text": "Cierra los ojos e imagínate en un lugar tranquilo: una playa, un bosque, una montaña. Concéntrate en las imágenes, sonidos y sensaciones de ese entorno."
+    },
+    "abg": {
+      "title": "Anclaje 5-4-3-2-1",
+      "text": "¿Te sientes abrumado? Identifica 5 cosas que ves, 4 que puedes tocar, 3 que oyes, 2 que hueles y 1 que saboreas. Te devuelve al presente."
+    },
+    "abh": {
+      "title": "La ciencia de la siesta",
+      "text": "Una siesta de 10-20 minutos mejora la alerta y el rendimiento sin aturdimiento posterior. La NASA descubrió que mejora un 34% la capacidad de atención. ¡Viva la siesta!"
     },
     "abi": {
-      "title": "Visualización creativa",
-      "text": "Cierra los ojos e imagínate en un lugar tranquilo y relajante, como una playa o un bosque, concentrándote en las imágenes, los sonidos y las sensaciones de ese entorno."
+      "title": "El reinicio Pomodoro",
+      "text": "Trabaja 25 minutos, descansa 5. Tras cuatro rondas, descanso largo. La técnica Pomodoro no es solo productividad, es proteger tu cerebro del agotamiento."
     },
     "abj": {
-      "title": "¿Abrumado?",
-      "text": "Prueba la técnica 5-4-3-2-1: Identifica 5 cosas que puedes ver, 4 cosas que puedes tocar, 3 cosas que puedes escuchar, 2 cosas que puedes oler y 1 cosa que puedes saborear."
+      "title": "Pausa para garabatear",
+      "text": "Garabatear durante los descansos mejora la concentración y la retención de memoria hasta un 29%. Coge un boli y deja volar la mano."
+    },
+    "abk": {
+      "title": "Descanso de una canción",
+      "text": "Pon tu canción favorita y escúchala de verdad, no como ruido de fondo. Escuchar música activamente reduce el cortisol y eleva la dopamina."
+    },
+    "abl": {
+      "title": "Momento de gratitud",
+      "text": "Escribe 3 cosas por las que estés agradecido ahora mismo. Practicar la gratitud regularmente aumenta la felicidad y reduce la ansiedad."
+    },
+    "abm": {
+      "title": "Reinicio con agua fría",
+      "text": "Échate agua fría en la cara o sujeta un vaso frío contra las muñecas. El frío activa el reflejo de inmersión, reduce el ritmo cardíaco y aclara la mente."
+    },
+    "abn": {
+      "title": "Habla con una planta",
+      "text": "Si tienes una planta en la mesa, revísala. Riégala, gírala. Si no tienes, piensa en conseguir una. Las plantas mejoran la calidad del aire y el estado de ánimo."
+    },
+    "abo": {
+      "title": "Vaciado mental",
+      "text": "Coge un papel y apunta todo lo que tengas en la cabeza: tareas, preocupaciones, ideas random. Sacar los pensamientos de la mente reduce la carga cognitiva."
+    },
+    "abp": {
+      "title": "Acaricia a tu mascota",
+      "text": "Si trabajas desde casa con una mascota, dedícale un minuto. Acariciar animales baja el cortisol y la tensión arterial. Es ciencia pura."
+    },
+    "abq": {
+      "title": "Terapia de risa",
+      "text": "Mira un vídeo gracioso de 2 minutos o lee unos chistes. La risa libera endorfinas, baja el cortisol y relaja los músculos. Es medicina gratis."
+    },
+    "abr": {
+      "title": "Dosis de aire fresco",
+      "text": "Abre una ventana o sal fuera 60 segundos. El aire fresco aumenta el oxígeno en el cerebro, mejora la concentración y da un reinicio sensorial."
+    },
+    "abs": {
+      "title": "Escaneo corporal",
+      "text": "Empezando por los pies, sube la atención por todo el cuerpo. Fíjate dónde acumulas tensión: mandíbula, hombros, ceño. Notar es el primer paso para soltar."
+    },
+    "abt": {
+      "title": "Yoga de escritorio",
+      "text": "Gato-vaca sentado, torsión espinal, flexión hacia adelante: puedes hacer yoga sin levantarte de la silla. Solo 3 minutos mejoran la flexibilidad y el enfoque."
+    },
+    "abu": {
+      "title": "Lee una página",
+      "text": "Ten un libro cerca y lee solo una página en el descanso. La ficción transporta tu mente, la no ficción despierta la curiosidad. Ambas ganan al scroll infinito."
+    },
+    "abv": {
+      "title": "El ciclo de 90 minutos",
+      "text": "Tu cerebro funciona en ciclos ultradianos de 90 minutos de alta y baja energía. Trabajar alineado con estos ciclos maximiza tu rendimiento y reduce el agotamiento."
+    },
+    "abw": {
+      "title": "Descanso de curiosidad",
+      "text": "Busca un dato aleatorio sobre algo que te interese. Aprender algo nuevo en el descanso activa el sistema de recompensa del cerebro y refresca tu enfoque."
+    },
+    "abx": {
+      "title": "Respiración cuadrada",
+      "text": "Inhala 4 tiempos, mantén 4, exhala 4, mantén 4. Usada por fuerzas especiales para mantener la calma bajo presión. Si funciona para ellos, funciona para ti."
+    },
+    "aby": {
+      "title": "Baila un poco",
+      "text": "Pon una canción y baila lo que dure. Cierra la puerta si hace falta. Bailar libera endorfinas, mejora la coordinación y es imposible estar estresado bailando."
+    },
+    "abz": {
+      "title": "Llama a alguien",
+      "text": "Usa el descanso para llamar a alguien que te importa, solo para saludar. La conexión social es uno de los mayores indicadores de longevidad y felicidad."
+    },
+    "aca": {
+      "title": "Dosis de sol",
+      "text": "Intenta tomar 10-15 minutos de sol al día. Regula tu ritmo circadiano, aumenta la vitamina D y mejora el ánimo. Tu cuerpo es un poco como una planta."
+    },
+    "acb": {
+      "title": "Relajación progresiva",
+      "text": "Tensa cada grupo muscular 5 segundos y luego suelta. Empieza por los pies, sube hasta la cara. Al final sentirás el contraste entre tensión y relajación."
+    },
+    "acc": {
+      "title": "Momento descalzo",
+      "text": "Quítate los zapatos y siente el suelo bajo los pies. Si puedes, camina sobre hierba. La estimulación sensorial de los pies conecta con el presente."
+    },
+    "acd": {
+      "title": "Carta a tu yo futuro",
+      "text": "Escribe una nota rápida a tu yo del futuro: una meta, un deseo, un recordatorio. Te conecta con lo que de verdad importa más allá del ruido diario."
+    },
+    "ace": {
+      "title": "Limpieza digital",
+      "text": "Cierra todas las pestañas que no uses. ¿Notificaciones sin leer acumulándose? Límpialas. El desorden digital fragmenta la atención igual que el físico."
+    },
+    "acf": {
+      "title": "La regla de los 2 minutos",
+      "text": "Si algo que tienes en mente lleva menos de 2 minutos, hazlo ahora en el descanso. Envía ese correo, archiva ese documento. Las pequeñas acciones liberan espacio mental."
+    },
+    "acg": {
+      "title": "Auditoría de postura",
+      "text": "Ponte de espaldas contra la pared con talones, glúteos, hombros y cabeza tocándola. Esa es la postura neutral. Memorízala y vuelve a ella durante el día."
+    },
+    "ach": {
+      "title": "Pausa aromática",
+      "text": "Huele algo agradable: granos de café, una vela, aceites esenciales o aire fresco. Las señales olfativas llegan directamente al sistema límbico y pueden calmar al instante."
+    },
+    "aci": {
+      "title": "Observa las nubes",
+      "text": "Si puedes ver el cielo, dedica un minuto a observar las nubes. Es el salvapantallas original, antes de que existieran las pantallas."
     }
+  },
+  "ui": {
+    "loading": "Cargando Pauza…",
+    "preview": {
+      "status": "Vista previa",
+      "detail": "Vista previa del navegador",
+      "action": "Modo de vista previa activo."
+    },
+    "title": "Pauza",
+    "heroHeadline": "Mantén el ritmo de trabajo con una interfaz tranquila",
+    "heroSubtitle": "Los ajustes más usados al frente, las opciones avanzadas al fondo.",
+    "settingsCategories": "Categorías de ajustes",
+    "settingsCategoriesHint": "Cambia de categoría a la izquierda, ve los ajustes a la derecha.",
+    "currentCategory": "Categoría actual",
+    "overview": "Resumen",
+    "overviewHint": "Estado general, últimas acciones y acceso rápido.",
+    "liveOverview": "Resumen en vivo",
+    "liveOverviewHint": "Ritmo actual, estado de la app y ventana de pausa de un vistazo.",
+    "quickActions": "Acciones rápidas",
+    "quickActionsHint": "Estas acciones actúan directamente sobre el ritmo en curso.",
+    "savePanel": "Guardar cambios",
+    "savePanelHint": "Los cambios solo se aplican después de guardar.",
+    "nextBreakLabel": "Próximo descanso",
+    "currentBreakLabel": "Descanso actual",
+    "lastActionLabel": "Última acción",
+    "runtimeLabel": "Entorno",
+    "platformLabel": "Plataforma",
+    "versionLabel": "Versión",
+    "breakFeelLabel": "Estilo de descanso",
+    "placementLabel": "Posición",
+    "pendingChanges": "Cambios sin guardar",
+    "synced": "Sincronizado",
+    "saving": "Guardando…",
+    "allSet": "Listo",
+    "noCurrentBreak": "Sin descanso activo",
+    "liveSignals": "Señales en vivo",
+    "general": "General",
+    "preferences": "Preferencias",
+    "currentStatus": "Estado actual",
+    "language": "Idioma",
+    "languageChinese": "Chino simplificado",
+    "languageEnglish": "Inglés",
+    "launchOnLogin": "Iniciar al arrancar",
+    "enabled": "Activado",
+    "disabled": "Desactivado",
+    "schedule": "Ritmo",
+    "interruptions": "Recordatorios e interrupciones",
+    "sectionScheduleHint": "Solo los ajustes de ritmo que cambias a diario.",
+    "microbreaks": "Microdescansos",
+    "microbreaksHint": "Pausas cortas durante el trabajo.",
+    "longBreaks": "Descansos",
+    "longBreaksHint": "Descanso completo tras varios ciclos.",
+    "interval": "Intervalo",
+    "every": "Frecuencia",
+    "durationLabel": "Duración",
+    "behavior": "Comportamiento",
+    "allowPostpone": "Permitir posponer",
+    "signals": "Señales",
+    "sectionSignalsHint": "Hacer que Pauza decida mejor cuándo mostrar recordatorios.",
+    "naturalBreaks": "Descansos naturales",
+    "naturalBreaksHint": "Reinicio automático tras ausencia suficiente.",
+    "resetAfter": "Reiniciar tras",
+    "dnd": "No molestar",
+    "dndHint": "Pausar recordatorios cuando este modo esté activo",
+    "sectionSurfaceHint": "Controlar la intensidad y la posición de la ventana de descanso.",
+    "sectionGeneralHint": "Pocas preferencias globales, intencionalmente mínimas.",
+    "notificationsCategory": "Recordatorios y posposición",
+    "notificationsCategoryHint": "Sonido antes del descanso. Opciones de posposición aquí.",
+    "surfaceCategory": "Interrupción y visualización",
+    "surfaceCategoryHint": "Intensidad, posición y rigurosidad de la ventana de descanso.",
+    "smartPause": "Pausa inteligente",
+    "smartPauseHint": "Pauza busca primero un momento claro y relaja el umbral gradualmente.",
+    "generalAndShortcuts": "General y atajos",
+    "generalAndShortcutsHint": "Gestionar idioma, inicio automático y atajos de teclado.",
+    "advanced": "Avanzado",
+    "sectionAdvancedHint": "Más control, compatibilidad y atajos.",
+    "appExclusions": "Exclusiones de apps",
+    "appExclusionsHint": "Apps para las que se pausa o reanuda el recordatorio.",
+    "appExclusionsEnable": "Activar",
+    "appRulePause": "Pausar si coincide",
+    "appRuleResume": "Reanudar solo si coincide",
+    "pause30": "Pausar 30 min",
+    "focus45": "Enfoque 45 min",
+    "resume": "Reanudar",
+    "clearFocus": "Terminar enfoque",
+    "save": "Guardar",
+    "revert": "Deshacer",
+    "defaults": "Valores por defecto",
+    "preBreakNotifications": "Sonido de aviso",
+    "beforeLabel": "Antes",
+    "postpone": "Posponer",
+    "scheduleControl": "Control de ritmo",
+    "resetScheduleHint": "Recalcular los próximos descansos desde ahora.",
+    "postponeCategoryHint": "Configurar por separado la duración y el límite de posposiciones.",
+    "limitLabel": "Límite",
+    "breakSurface": "Ventana de descanso",
+    "breakDisplayMode": "Modo de visualización",
+    "breakBackdrop": "Tema de fondo",
+    "breakBackdropHint": "Elegir un fondo atmosférico para la ventana de descanso.",
+    "breakBackdropPaper": "Papel",
+    "breakBackdropDawn": "Amanecer",
+    "breakBackdropForest": "Bosque",
+    "breakBackdropNight": "Noche",
+    "breakBackdropCustom": "Fondo personalizado",
+    "customWallpaper": "Fondo personalizado",
+    "customWallpaperHint": "Subir una imagen local como fondo de la ventana de descanso.",
+    "customWallpaperChoose": "Elegir imagen",
+    "customWallpaperReplace": "Reemplazar imagen",
+    "customWallpaperRemove": "Eliminar",
+    "customWallpaperEmpty": "Sin fondo personalizado seleccionado",
+    "customWallpaperEmptyHint": "Sin imagen, se usará el tema predeterminado.",
+    "customWallpaperReady": "La imagen se comprime y guarda localmente como fondo de descanso.",
+    "breakIdeas": "Consejos de descanso",
+    "breakIdeasHint": "Mostrar un consejo breve en cada descanso.",
+    "breakSounds": "Sonidos de descanso",
+    "breakSoundsHint": "Sonido de aviso antes del descanso y sonido de fin al terminar.",
+    "microbreakStartSound": "Aviso de microdescanso",
+    "microbreakEndSound": "Fin de microdescanso",
+    "longBreakStartSound": "Aviso de descanso",
+    "longBreakEndSound": "Fin de descanso",
+    "breakSoundVolume": "Volumen",
+    "breakSoundSilence": "Silencio",
+    "breakSoundCrystalGlass": "Copa de cristal",
+    "breakSoundWindChime": "Carillón",
+    "breakSoundTicToc": "Tic tac",
+    "breakSoundReverie": "Ensoñación",
+    "reminderMode": "Modo de recordatorio",
+    "reminderModeHint": "Inteligente espera un momento claro; Forzado interrumpe de inmediato.",
+    "reminderModeSmart": "Inteligente",
+    "reminderModeForced": "Forzado",
+    "window": "Ventana",
+    "fullscreen": "Pantalla completa",
+    "promptStyleGentle": "Suave",
+    "promptStyleBalanced": "Equilibrado",
+    "promptStyleImmersive": "Inmersivo",
+    "allScreens": "Todas las pantallas",
+    "screenPrimary": "Pantalla principal",
+    "screenCursor": "Pantalla con el cursor",
+    "showTimeToBreakInTray": "Mostrar próximo descanso en la bandeja",
+    "currentTimeInBreaks": "Mostrar hora en la ventana de descanso",
+    "currentTimeInBreaksHint": "Mostrar la hora del sistema arriba a la derecha.",
+    "strictModes": "Modos estrictos",
+    "strictModesHint": "Controlar si los descansos pueden omitirse y si se requiere finalización manual.",
+    "microbreakStrict": "Microdescanso estricto",
+    "longBreakStrict": "Descanso estricto",
+    "manualFinish": "Finalizar manualmente tras el temporizador",
+    "showTrayMenuInStrictMode": "Menú de bandeja en modo estricto",
+    "shortcuts": "Atajos de teclado",
+    "shortcutsHint": "Vacío = sin registrar. Ej.: CmdOrCtrl+Shift+P",
+    "shortcutReveal": "Abrir ajustes",
+    "shortcutFocus45": "Enfoque 45 min",
+    "shortcutPauseToggle": "Alternar pausa",
+    "shortcutPause30": "Pausar 30 min",
+    "shortcutPause60": "Pausar 1 h",
+    "shortcutPause120": "Pausar 2 h",
+    "shortcutPause300": "Pausar 5 h",
+    "shortcutSkipScheduled": "Ir al próximo descanso programado",
+    "shortcutSkipMicrobreak": "Ir al microdescanso",
+    "shortcutSkipLongBreak": "Ir al descanso",
+    "shortcutReset": "Reiniciar ritmo",
+    "suffix": {
+      "secondsLong": "s",
+      "secondsBefore": "s antes",
+      "minutesApart": "min después",
+      "cycles": "ciclos",
+      "minutesLong": "min",
+      "minutesShortPostpone": "min",
+      "minutesLongPostpone": "min",
+      "minutesAway": "min",
+      "minutes": "min",
+      "times": "×"
+    },
+    "status": {
+      "noBreakScheduled": "Sin descanso programado",
+      "microbreak": "Microdescanso",
+      "longBreak": "Descanso",
+      "nextBreak": "{{label}} en {{duration}}",
+      "focus": "Enfoque {{duration}}",
+      "pause": "Pausado {{duration}}",
+      "pauseForever": "Pausado indefinidamente",
+      "blockedBy": "Pausado por {{match}}",
+      "appRuleActive": "Regla de app activa",
+      "dndActive": "No molestar activo"
+    },
+    "error": {
+      "loadState": "No se pudo cargar el estado de Pauza"
+    },
+    "breakCopy": {
+      "clearedDetail": "Sin descanso activo.",
+      "manualAwaiting": "El tiempo terminó. Completa este descanso antes de volver.",
+      "awaitingFinish": "Esperando confirmación",
+      "actions": {
+        "resumeWork": "Volver al trabajo",
+        "done": "Listo",
+        "later": "Más tarde",
+        "skip": "Omitir"
+      },
+      "defaultPrompt": {
+        "microbreak": "Levántate, relaja hombros y cuello, mira a lo lejos.",
+        "longBreak": "Aléjate de tu escritorio unos minutos para que tu cuerpo y mente se recuperen."
+      }
+    },
+    "previewAction": {
+      "save": "Vista previa: ajustes actualizados.",
+      "pause": "Vista previa: pausado 30 min.",
+      "pauseForever": "Vista previa: pausado indefinidamente.",
+      "focus": "Vista previa: enfoque activado.",
+      "focusCleared": "Vista previa: enfoque terminado.",
+      "resume": "Vista previa: reanudado.",
+      "reset": "Vista previa: ritmo reiniciado.",
+      "autostartOn": "Vista previa: inicio automático activado.",
+      "autostartOff": "Vista previa: inicio automático desactivado.",
+      "done": "Vista previa: descanso completado.",
+      "later": "Vista previa: descanso pospuesto.",
+      "skip": "Vista previa: descanso omitido."
+    },
+    "preBreakSoundHint": "Reproducir un sonido suave antes de que termine el temporizador para concluir tu tarea.",
+    "previewSound": "Escuchar",
+    "appExclusionsSearch": "Buscar en apps en ejecución",
+    "appExclusionsSearchPlaceholder": "Nombre de la app…",
+    "appExclusionsSearchLoading": "Cargando…",
+    "appExclusionsSearchEmpty": "Sin resultados",
+    "appExclusionsManualHint": "O introduce manualmente nombre de proceso o fragmento de ruta (una entrada por línea)",
+    "appExclusionsAdd": "Clic para añadir a la lista de exclusiones"
   }
 }

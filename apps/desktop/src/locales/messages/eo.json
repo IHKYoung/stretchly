@@ -99,7 +99,7 @@
       "ourWebsite": "visitu nian retejon",
       "dot": ".",
       "developedBy": "Programis de",
-      "janH": "Clarke Young",
+      "clarkeY": "Clarke Young",
       "designedBy": "Bildsimbolo kaj interfaca aspektigo de Colin Shanley",
       "checkNewVersion": "Aŭtomate kontroli ĝisdatigojn de la programo"
     },
@@ -213,44 +213,748 @@
     "appExclusion": "Regulo por ekskluzivi aplikaĵojn"
   },
   "miniBreakIdeas": {
-    "aai": {
-      "text": "Malrapide turnu la kapon flanken kaj tenu dum 10 sekundoj."
-    },
     "aaa": {
-      "text": "Iru preni glason de akvo."
+      "text": "Iru preni glason da akvo."
     },
     "aab": {
-      "text": "Rigardu malrapide tutmaldekstren poste tutdekstren."
+      "text": "Via akvo-botelo rigardas vin akuze. Trinku iom."
     },
     "aac": {
-      "text": "Rigardu malrapide tutsupren, poste malsupren."
+      "text": "Hidrata kontrolo: kiam vi laste trinkis akvon?"
     },
     "aad": {
-      "text": "Fermu viajn okulojn kaj prenu kelkajn profondajn spirojn."
+      "text": "Malrapide rigardu tutmaldekstren, poste tutdekstren."
     },
     "aae": {
-      "text": "Fermu viajn okulojn kaj malstreĉu vin."
+      "text": "Malrapide rigardu tutsupren, poste malsupren."
     },
     "aaf": {
-      "text": "Etendu viajn krurojn."
+      "text": "Rigardu ion 6 metrojn for dum 20 sekundoj — la regulo 20-20-20."
     },
     "aag": {
-      "text": "Etendu viajn brakojn."
+      "text": "Palpebrumu rapide 20-foje. Viaj sekaj okuloj dankos vin."
     },
     "aah": {
-      "text": "Ĉu via sidpozo estas ĝusta?"
+      "text": "Fermu la okulojn kaj milde ruligu ilin en cirkloj."
+    },
+    "aai": {
+      "text": "Kun fermitaj okuloj, malrapide rigardu supren, poste malsupren."
     },
     "aaj": {
-      "text": "Malrapide klinu la kapon flanken kaj tenu dum 5-10 sekundoj."
+      "text": "Kun fermitaj okuloj, malrapide rigardu maldekstren, poste dekstren."
     },
     "aak": {
-      "text": "Stariĝu de via seĝo kaj streĉu."
+      "text": "Frotu viajn manojn ĝis varmaj, poste milde metu ilin super la fermitajn okulojn."
+    },
+    "aal": {
+      "text": "Rigardu tra la fenestro dum 30 sekundoj. Ĉu vi memoras la eksteran mondon?"
+    },
+    "aam": {
+      "text": "Rigardu for de la ekrano kaj fokusiĝu al io verda. Okuloj amas verdon."
+    },
+    "aan": {
+      "text": "Lasu iom da natura lumo atingi viajn okulojn."
+    },
+    "aao": {
+      "text": "Fermu viajn okulojn kaj prenu kelkajn profundajn spirojn."
+    },
+    "aap": {
+      "text": "Fermu viajn okulojn kaj malstreĉiĝu."
+    },
+    "aaq": {
+      "text": "Fermu viajn okulojn kaj kalkulu viajn spirojn."
+    },
+    "aar": {
+      "text": "Enspiru por 4 sekundoj, tenu 7, elspiru 8. La tekniko 4-7-8."
+    },
+    "aas": {
+      "text": "Prenu 3 malrapidajn spirojn. Enen tra la nazo, elen tra la buŝo."
+    },
+    "aat": {
+      "text": "Prenu unu profundan spiron tiom grandan, ke via ventro ekspandiĝas. Tio estas diafragma spirado."
+    },
+    "aau": {
+      "text": "Faru absolute nenion dum 20 sekundoj. Pli malfacile ol ĝi sonas."
+    },
+    "aav": {
+      "text": "Kontrolu vian sidpozicion — ŝultrojn malantaŭen, piedojn plate sur la planko."
+    },
+    "aaw": {
+      "text": "Ŝanĝu vian sidpozicion."
+    },
+    "aax": {
+      "text": "Demetu viajn ŝultrojn. Ili estis ĉe viaj oreloj la tutan tempon."
+    },
+    "aay": {
+      "text": "Malstreĉu vian makzelon. Vi ne rimarkis, ke ĝi estis streĉita, ĉu?"
+    },
+    "aaz": {
+      "text": "Rektigu vian spinon. Imagu ŝnuron tirantan vin supren de la kapo."
+    },
+    "aba": {
+      "text": "Sidado estas la nova fumado. Stariĝu por unu minuto."
+    },
+    "abb": {
+      "text": "Malrapide turnu la kapon flanken kaj tenu dum 10 sekundoj. Ŝanĝu."
+    },
+    "abc": {
+      "text": "Malrapide klinu la kapon flanken kaj tenu dum 5-10 sekundoj."
     },
     "abd": {
-      "text": "Kun fermitaj okuloj movu viajn okulojn malrapide kaj milde maldekstren kaj dekstren."
+      "text": "Milde tiru unu orelon al la ŝultro. Sentu la kolostreĉon."
     },
     "abe": {
-      "text": "Skuu viajn manojn por malstreĉi."
+      "text": "Rotaciu vian kolon en malrapida, milda cirklo."
+    },
+    "abf": {
+      "text": "Klinu la kapon antaŭen, malantaŭen, maldekstren, dekstren. Plena kompasa restarigo."
+    },
+    "abg": {
+      "text": "Ruligu viajn ŝultrojn antaŭen dum 10 sekundoj, poste malantaŭen."
+    },
+    "abh": {
+      "text": "Levu viajn ŝultrojn al la oreloj kaj demetu ilin. Ripetu 5-foje."
+    },
+    "abi": {
+      "text": "Premu viajn skapolojn kune kaj tenu dum 5 sekundoj."
+    },
+    "abj": {
+      "text": "Levu la dekstran brakon super la kapon, kliniĝu maldekstren, tenu 10 sekundojn. Ŝanĝu."
+    },
+    "abk": {
+      "text": "Krucigu unu brakon trans la bruston kaj milde tiru ĝin per la alia mano. Ŝanĝu."
+    },
+    "abl": {
+      "text": "Tenu unu brakon rekte supren, per la alia milde puŝu la kubeton malantaŭen. Tenu 10 sekundojn. Ŝanĝu."
+    },
+    "abm": {
+      "text": "Interloku viajn fingrojn malantaŭ la dorso kaj streĉu la bruston malfermite."
+    },
+    "abn": {
+      "text": "Interplektu viajn fingrojn kaj puŝu la manplatojn al la plafono. Streĉiĝu!"
+    },
+    "abo": {
+      "text": "Tenu viajn brakojn rekte flanken. Faru malgrandajn cirklojn. Bruliĝas pli rapide ol vi pensus."
+    },
+    "abp": {
+      "text": "Skuu viajn manojn por liberigi tension."
+    },
+    "abq": {
+      "text": "Tuŝu ĉiun fingropinton al via dikfingro, farante O-formon."
+    },
+    "abr": {
+      "text": "Faru pugnon, poste malfermu la fingrojn kaj larĝe streĉu ilin."
+    },
+    "abs": {
+      "text": "Faru pugnon, poste disfaldi la fingrojn kvazaŭ vi dirus 'haltu'."
+    },
+    "abt": {
+      "text": "Premu ĉiun fingron de la maldekstra mano per la dekstra. Ŝanĝu manojn."
+    },
+    "abu": {
+      "text": "Streĉu viajn pojnojn — etendu la brakon, milde tiru la fingrojn malantaŭen."
+    },
+    "abv": {
+      "text": "Rotaciu viajn pojnojn 10-foje dekstrume, poste maldekstrume."
+    },
+    "abw": {
+      "text": "Metu la manon plate sur la tablon kaj milde disigu viajn fingrojn."
+    },
+    "abx": {
+      "text": "Tamburumu viajn fingrojn sur la tablon unu post alia, de la etfingro al la dikfingro. Nun inversigu."
+    },
+    "aby": {
+      "text": "Donu al vi mem manmasaĝon. Vi meritas ĝin."
+    },
+    "abz": {
+      "text": "Stariĝu kaj streĉiĝu. Via spino atendis."
+    },
+    "aca": {
+      "text": "Sidu sur la rando de la seĝo, tordu la torson flanken, tenu 10 sekundojn. Ŝanĝu."
+    },
+    "acb": {
+      "text": "Arku la dorson kiel kato, poste lasu ĝin kliniĝi. Kata streĉo, oficeja versio."
+    },
+    "acc": {
+      "text": "Metu ambaŭ manojn malantaŭ la suban dorson kaj milde arku malantaŭen."
+    },
+    "acd": {
+      "text": "Staru kun la dorso kontraŭ la muro kaj malrapide glitu la brakojn supren kaj malsupren — muranĝeloj."
+    },
+    "ace": {
+      "text": "Streĉu viajn krurojn."
+    },
+    "acf": {
+      "text": "Stariĝu kaj faru elanĝon. Tenu 10 sekundojn ĉiun kruron."
+    },
+    "acg": {
+      "text": "Stariĝu kaj faru kelkajn genufleksojn. Via seĝo estas tuj tie por se io malbonas."
+    },
+    "ach": {
+      "text": "Faru 10 surpintiĝojn ĉe via tablo. Ŝtela trejnado."
+    },
+    "aci": {
+      "text": "Etendu unu kruron rekte antaŭen dum vi sidas. Tenu 10 sekundojn. Ŝanĝu."
+    },
+    "acj": {
+      "text": "Ruligu viajn maleolojn en cirkloj — dekstrume, poste maldekstrume."
+    },
+    "ack": {
+      "text": "Pintu kaj fleksu viajn piedojn 10-foje. Viaj maleoloj estis neglektitaj."
+    },
+    "acl": {
+      "text": "Staru sur unu piedo dum 30 sekundoj. Ŝanĝu. Ekvilibro estas kapablo."
+    },
+    "acm": {
+      "text": "Movigu viajn piedfingrojn en la ŝuoj. Jes, ĉiujn."
+    },
+    "acn": {
+      "text": "Stariĝu kaj marŝu surloke dum 30 sekundoj."
+    },
+    "aco": {
+      "text": "Faru kelkajn murpuŝojn. Probable neniu rigardas."
+    },
+    "acp": {
+      "text": "Faru 5 tablotrenojn uzante la randon de via seĝo."
+    },
+    "acq": {
+      "text": "Streĉu kaj malstreĉu ĉiun muskolon de la piedfingroj ĝis la frunto. Plena korpa restarigo."
+    },
+    "acr": {
+      "text": "Kuntiru la vizaĝon dum 5 sekundoj, poste malstreĉu. Vizaĝa tensio: forigita."
+    },
+    "acs": {
+      "text": "Staru en pordokadro kaj kliniĝu antaŭen milde por streĉi la bruston."
+    },
+    "act": {
+      "text": "Fermu viajn okulojn kaj nomu la sonojn, kiujn vi aŭdas."
+    },
+    "acu": {
+      "text": "Fermu viajn okulojn kaj rimarku kio venas al la menso, sen juĝo."
+    },
+    "acv": {
+      "text": "Pensu pri io, por kiu vi dankas ĝuste nun."
+    },
+    "acw": {
+      "text": "Ridetu. Vi vivas kaj tio estas sufiĉe mojosa."
+    },
+    "acx": {
+      "text": "Prenu mensan foton pri kiel via korpo sentas. Ĉu estas iuj tensaj lokoj?"
+    },
+    "acy": {
+      "text": "Pensu pri io afabla, kiun vi dirus al amiko, kaj diru ĝin al vi mem."
+    },
+    "acz": {
+      "text": "Rimarku 5 aĵojn en la ĉambro, kiujn vi neniam antaŭe atentis."
+    },
+    "ada": {
+      "text": "Fermu viajn okulojn kaj bildigu vian feliĉan lokon dum 20 sekundoj."
+    },
+    "adb": {
+      "text": "Metu vian telefonon vizaĝe malsupren dum 60 sekundoj. Nenio okazos. Promeso."
+    },
+    "adc": {
+      "text": "Via klavaro ne sopiros pri vi. Stariĝu."
+    },
+    "add": {
+      "text": "Via dorso ĵus deponis formalan plendon. Tempo streĉiĝi."
+    },
+    "ade": {
+      "text": "Rigardu for de la ekrano. Surprizo: la mondo estas tridemencia."
+    },
+    "adf": {
+      "text": "Oscedzu. Eĉ falsa oscedo ekigas veran. Provu."
+    },
+    "adg": {
+      "text": "Malfermu la buŝon larĝe, poste fermu malrapide. Makzela tensio: liberigita."
+    },
+    "adh": {
+      "text": "Brakumu vin mem. Krucigu la brakojn kaj premu. Memzorgado ne estas stranga."
+    },
+    "adi": {
+      "text": "Eta danc-paŭzeto — nur 10 sekundoj. Vi scias, ke vi deziras."
+    },
+    "adj": {
+      "text": "Ŝajnigu, ke vi tiras ŝnuron super via kapo. Flanka streĉo malŝlosita."
+    },
+    "adk": {
+      "text": "Premu viajn manplatojn kune antaŭ la brusto kaj tenu. Namaste, kodisto."
+    },
+    "adl": {
+      "text": "Masaĝu viajn tempiojn en malgrandaj cirkloj dum 10 sekundoj. Tuja kvieto."
+    },
+    "adm": {
+      "text": "Via monitoro vokis. Ĝi diras, ke vi estas tro proksime jam tro longe."
     }
+  },
+  "longBreakIdeas": {
+    "aaa": {
+      "title": "Kune estas pli bone",
+      "text": "Ĉu estas malfacile paŭzi sola? Provu paŭzi kun kolego. Vi pli persistos kaj kunligos super komunaj plendoj pri limdatoj. Sociaj paŭzoj plibonigas produktivecon."
+    },
+    "aab": {
+      "title": "Foriru de la ekrano",
+      "text": "Ĉu vi iam rimarkis, ke viaj plej bonaj ideoj venas dum vi duŝas? Tio estas ĉar via cerbo solvas problemojn fone. Foriru de la ekrano kaj pensu pri io tute malrilata."
+    },
+    "aac": {
+      "title": "Mikropaŭzoj gravas",
+      "text": "Mallongaj, oftaj paŭzoj reduktas ripetan streĉon kaj sanigus vian muskoloskeletat sistemon. Pensu pri ili kiel prizorgado de la homa maŝino."
+    },
+    "aad": {
+      "title": "Meditado",
+      "text": "Konscia meditado reduktas anksion, streson kaj eĉ fizikan doloron. Ne certas kie komenci? Eĉ 5 minutoj da fokusita spirado validas. Estas dekduoj da senpagaj apoj por gvidado."
+    },
+    "aae": {
+      "title": "Palpebrumu pli",
+      "text": "Vi palpebrumas ĝis 66% malpli kiam vi rigardas ekranojn, kio sekigas viajn okulojn. Rapide palpebrumu kelkfoje por refreŝigi vian larmofilmon. Viaj okuloj faras tiom por vi — redonu la favoron."
+    },
+    "aaf": {
+      "title": "Tabel-ergonomio",
+      "text": "Monitoro je okulnivelo, klavaro je kubutnivelo, piedoj plate sur la planko. Malbona ergonomio kaŭzas veran damaĝon laŭlonge. Dediĉu 2 minutojn por kontroli vian aranĝon — via estonta memo dankos vin."
+    },
+    "aag": {
+      "title": "Oficeja trejnado",
+      "text": "Vi ne bezonas gimnastikejon por moviĝi. Marŝu surloke, faru tablajn puŝojn, aŭ provu kelkajn genufleksojn. Eĉ 60 sekundoj da movado restarigas vian energinivelon."
+    },
+    "aah": {
+      "title": "Ŝanĝu pozicion",
+      "text": "Se vi havas star-tablon aŭ stabilecan pilkon, nun estas bona tempo por ŝanĝi. Alterne inter sidado kaj starado reduktas lacigon kaj tenas viajn muskolojn aktivaj."
+    },
+    "aai": {
+      "title": "Legu la signojn",
+      "text": "Ĉu vi revemas? Ĉu vi havas problemojn fokusiĝi? Ĉu vi relegas la saman linion? Ĉi tiuj estas la ĝentila maniero de via cerbo diri: prenu paŭzon jam."
+    },
+    "aaj": {
+      "title": "Promenado sen teknologio",
+      "text": "Lasu vian telefonon kaj faru mallongan promenon. Neniuj podkastoj, neniu muziko — nur vi kaj viaj pensoj. Estas surprize refreŝige en mondo de konstanta enigo."
+    },
+    "aak": {
+      "title": "La problemo de sidado",
+      "text": "Longa sidado pliigas vian riskon por kora malsano, diabeto kaj dorsaj problemoj. 5-minuta promenado ĉiuhore povas signife kompensi tiujn efikojn. Via korpo estis konstruita por moviĝi."
+    },
+    "aal": {
+      "title": "Piedira kunsido",
+      "text": "Venontfoje kiam vi havas unu-al-unu renkonton, sugestu piediron anstataŭ sidi. Piedinaj kunsidoj plibonigas kreivon ĝis 60%, laŭ Stanford-esploro."
+    },
+    "aam": {
+      "title": "Konscia manĝetado",
+      "text": "Prenu frukton kaj manĝu ĝin malrapide. Rimarku la guston, teksturon kaj freŝecon. Estas eta meditado kaŝvestita kiel manĝeto."
+    },
+    "aan": {
+      "title": "Kafa promenado",
+      "text": "Ĉu vi iras por kafo? Faru el ĝi ankaŭ 5-minuton promenadeton. Du birdoj, unu lateo."
+    },
+    "aao": {
+      "title": "Via cerbo dum paŭzoj",
+      "text": "NIH-studo trovis, ke niaj cerboj ekzercas kaj konsolidas novajn kapablojn dum ripozo — ne dum praktiko. Paŭzoj laŭvorte faras vin pli bona ĉe tio, kion vi faras."
+    },
+    "aap": {
+      "title": "Moviĝu iomete, gajnu multe",
+      "text": "Eĉ malgrandaj kvantoj da regula ekzercado draste reduktas streson kaj plibonigas humoron. Vi ne bezonas horon — 10 minutoj da movado povas ŝanĝi vian tutan tagon."
+    },
+    "aaq": {
+      "title": "Streĉ-rutino",
+      "text": "Ĉu vi trovis aron da streĉoj, kiuj plaĉas al vi? Ripetu ilin plurajn fojojn dum la tago. Konsistenco venkas intensivecon kontraŭ la efikoj de longa sidado."
+    },
+    "aar": {
+      "title": "Pojnaj cirkloj",
+      "text": "Etendu viajn brakojn kun la manplatoj al vi, poste malrapide rotaciu viajn manojn — 4-foje dekstrume, 4-foje maldekstrume. Viaj pojnoj traktas pli da streso ol vi pensas."
+    },
+    "aas": {
+      "title": "Supra etendo",
+      "text": "Klaku viajn manojn malantaŭ la kapon, poste levu ilin super la kapon kun manplatoj al la plafono. Tenu 10 sekundojn. Sentu vian dorson vekiĝi."
+    },
+    "aat": {
+      "title": "La regulo 30/1",
+      "text": "Por ĉiu 30 minutoj da sidado, faru almenaŭ 1 minuton da movado. Agordu tempilon se necese. Malgrandaj kutimoj kumulas al grandaj sanaj avantaĝoj."
+    },
+    "aau": {
+      "title": "7-minuta trejnado",
+      "text": "Plenkorpa trejnado en nur 7 minutoj. Ĝi baziĝas sur scienco kaj bezonas nenian ekipaĵon. Estas multaj senpagaj apoj por gvidi vin tra ĝi."
+    },
+    "aav": {
+      "title": "Altenigu la koron",
+      "text": "Celu 20 minutojn da pliigita korfrekvenco (ĉirkaŭ 120 bpm), 4-5 fojojn semajne. Ne gravas kion vi faras — dancu, kuretu, ludu kun via hundo. Via koro ne juĝas."
+    },
+    "aaw": {
+      "title": "Uzu la ŝtuparojn",
+      "text": "Ŝtupar-supreniro estas klasifikita kiel energia ekzercado kaj bruligas pli da kalorioj ol kureti. Venontfoje, preterpasu la lifton. Viaj kruroj plendos, sed via koro festos."
+    },
+    "aax": {
+      "title": "Kreu ion",
+      "text": "Artterapio estas pruvita redukti streson. Skribu hajkon, griffonu monstron, fotu ion belan. Kreiveco estas restartiga butono por via cerbo."
+    },
+    "aay": {
+      "title": "Ordigu la tablon",
+      "text": "Malordigita tablo korelatas kun pli alta streso. Dediĉu 5 minutojn por organizi vian laborspacon. Pura spaco, klara menso."
+    },
+    "aaz": {
+      "title": "Manĝu ekstere",
+      "text": "Natura ekspono reduktas kortizolon, la streshormonon. Se eble, prenu vian tagmanĝon ekstere. Eĉ sidi apud fenestro kun vido al verdaĵo helpas."
+    },
+    "aba": {
+      "title": "La potenco de oscedo",
+      "text": "Oscedi ne estas nur enuo — ĝi malvarmigas vian cerbon kaj produktas larmojn, kiuj lubrikas viajn okulojn. Faru grandan falsan oscedon. Via korpo realiĝos ĝin."
+    },
+    "abb": {
+      "title": "Fokus-ŝanĝado",
+      "text": "Tenu fingron proksime al via vizaĝo kaj fokusiĝu al ĝi. Malrapide movu ĝin for, poste rigardu malproksimen, poste reen. Ĉi tio ekzercas la muskolojn de via okula lenso."
+    },
+    "abc": {
+      "title": "Okula palmado",
+      "text": "Kovru viajn varmajn manojn super viaj fermitaj okuloj kaj ripozigu la kubutojn sur la tablo. Spiru malrapide tra la nazo. Eĉ 30 sekundoj da mallumo restartigas vian vidan sistemon."
+    },
+    "abd": {
+      "title": "Premu ion",
+      "text": "Prenu stresan pilkon aŭ ion premeblan. Tenu dum 5 sekundoj, liberigu, ripetu. Ĝi malstreĉas manajn tensiojn kaj sentas strange kontentigantan."
+    },
+    "abe": {
+      "title": "Malrapida spirado",
+      "text": "Kontrolita malrapida spirado (ĉirkaŭ 6 spiroj minute) aktivigas la parasimpatan nervan sistemon, reduktante sangopremon kaj anksion. Ĝi estas kiel ĝisdatigo por via nerva sistemo."
+    },
+    "abf": {
+      "title": "Bildigado",
+      "text": "Fermu viajn okulojn kaj bildigu vin en trankvila loko — plaĝo, arbaro, montopinto. Fokusiĝu al la sonoj, odoroj kaj sentoj. Eta mensa ferio, nul vojaĝkostoj."
+    },
+    "abg": {
+      "title": "5-4-3-2-1 grondigo",
+      "text": "Ĉu vi sentas superŝarĝon? Nomu 5 aĵojn, kiujn vi vidas, 4 kiujn vi povas tuŝi, 3 kiujn vi aŭdas, 2 kiujn vi flaras, 1 kiun vi gustumas. Ĉi tiu grondiga tekniko revenigas vin al la nuna momento."
+    },
+    "abh": {
+      "title": "Scienco pri dormeto",
+      "text": "10-20 minuta dormeto plibonigas viglecon kaj rendimenton sen kapordo. NASA trovis, ke pilotoj kiuj dormis 26 minutojn plibonigis rendimenton je 34%. Se sufiĉas por astronaŭtoj, sufiĉas por vi."
+    },
+    "abi": {
+      "title": "La restarigo Pomodoro",
+      "text": "Laboru 25 minutojn, paŭzu 5. Post kvar raŭndoj, faru pli longan paŭzon. La Pomodoro-tekniko ne estas nur produktiveca truko — ĝi estas sana menso-strategio."
+    },
+    "abj": {
+      "title": "Griffona paŭzo",
+      "text": "Griffonado dum paŭzoj efektive plibonigas koncentriĝon kaj memoran tenadon ĝis 29%, laŭ studo pri Aplikata Kogna Psikologio. Do prenu plumon kaj lasu vian manon vagadi."
+    },
+    "abk": {
+      "title": "Unu-kanta paŭzo",
+      "text": "Aŭskultu vian plej ŝatatan kanton kaj vere aŭskultu ĝin — ne kiel fonmuzikon, sed kiel la ĉefan aranĝon. Muziko aktivigas la cerban rekompenc-sistemon kaj reduktas kortizolon."
+    },
+    "abl": {
+      "title": "Dankemo-momento",
+      "text": "Skribu 3 aĵojn, pro kiuj vi dankas ĝuste nun. Studoj montras, ke regula dankemo rekabligas vian cerbon por pozitiveco kaj reduktas streshormonojn."
+    },
+    "abm": {
+      "title": "Malvarma akva restartigo",
+      "text": "Sprucaĵu malvarman akvon sur vian vizaĝon aŭ tenu malvarman glason kontraŭ viajn pojnojn. La malvarmo ekigas vian plonĝreflekson, kiu malrapidigas la koran ritmon kaj trankviligas la nervan sistemon tuj."
+    },
+    "abn": {
+      "title": "Parolu al planto",
+      "text": "Se vi havas tablan planton, kontrolu ĝin. Akvu ĝin, turnu ĝin. Se vi ne havas, eble estas tempo. Plantoj reduktas streson kaj plibonigas aerkvalitecon. Ili estas la perfektaj silentaj kolegoj."
+    },
+    "abo": {
+      "title": "Cerba elverŝo",
+      "text": "Prenu paperon kaj skribu ĉion en via menso — taskojn, zorgojn, hazardajn pensojn. Eltiri el la kapo kaj surkuri paperon liberigas mensan RAM-on."
+    },
+    "abp": {
+      "title": "Karesadu vian dorlotbeston",
+      "text": "Se vi laboras hejme kun dorlotbesto, prenu minuton por karesi ĝin. Karesado de bestoj malaltigas kortizolon kaj altigas oksitocino. Ĝi estas science aprobita stresoliberigo."
+    },
+    "abq": {
+      "title": "Ridterapio",
+      "text": "Spektu 2-minutan amuzan filmeton aŭ legu kelkajn ŝercojn. Rido ekigas endorfinojn, malaltigas streshormonojn kaj malstreĉas viajn muskolojn ĝis 45 minutoj."
+    },
+    "abr": {
+      "title": "Freŝa aera doso",
+      "text": "Malfermu fenestron aŭ paŝu eksteren dum 60 sekundoj. Freŝa aero pliigas oksigenon al via cerbo, plibonigante koncentriĝon, serotonin-nivelojn kaj energion."
+    },
+    "abs": {
+      "title": "Korpa skano",
+      "text": "Komencante de la piedfingroj, malrapide movu vian atenton supren tra via korpo. Rimarku kie vi tenas tension. Agnosku ĝin, spiru en ĝin, kaj lasu ĝin foriri."
+    },
+    "abt": {
+      "title": "Tabla jogao",
+      "text": "Sidanta kato-bovo, spina tordo, antaŭa kliniĝo — vi povas fari jogaon sen forlasi vian seĝon. Via spino ne zorgas pri via vestaro aŭ loko, ĝi nur volas moviĝi."
+    },
+    "abu": {
+      "title": "Legu paĝon",
+      "text": "Tenu libron apude kaj legu nur unu paĝon dum via paŭzo. Fikcio transportas vian menson aliloken. Nefikcio nutras ĝin per io nova. Ambaŭflanke, vi gajnas."
+    },
+    "abv": {
+      "title": "La 90-minuta ciklo",
+      "text": "Via cerbo funkcias en 90-minutaj ultradiaj cikloj de alta kaj malalta energio. Laborado kun ĉi tiuj naturaj ritmoj anstataŭ kontraŭ ili igas vin pli produktiva kaj malpli elĉerpita."
+    },
+    "abw": {
+      "title": "Scivolemo-paŭzo",
+      "text": "Serĉu unu hazardan fakton pri io, kio interesas vin. Lerni ion novan dum paŭzo aktivigas la rekompencajn cirkvitojn de via cerbo alimaniere ol labori."
+    },
+    "abx": {
+      "title": "Kesta spirado",
+      "text": "Enspiru por 4 sekundoj, tenu 4, elspiru 4, tenu 4. Uzata de maraj fokusoj por resti trankvila sub premo. Se ĝi funkcias por ili, ĝi funkcios por via retpoŝtuko."
+    },
+    "aby": {
+      "title": "Dancu ĝin for",
+      "text": "Metu kanton kaj dancu dum ĝia daŭro. Fermu la pordon se necese. Dancado liberigas endorfinojn, plibonigas kunordadon kaj igas vin senti vivantan. Neniu aspektas bonega dancante sola, kaj tio estas la senco."
+    },
+    "abz": {
+      "title": "Telefonu al iu",
+      "text": "Uzu vian paŭzon por telefoni al iu, pri kiu vi zorgas — nur por diri saluton. Socia konekto estas unu el la plej fortaj antaŭdiriloj de feliĉo kaj longevivo."
+    },
+    "aca": {
+      "title": "Sunluma dozo",
+      "text": "Ricevu 10-15 minutojn da sunlumo se eble. Ĝi reguligas vian cirkadianan ritmon, plifortigas vitamino-D-produktadon kaj plibonigas vian humoron. Via korpo estas ankaŭ sune funkciigata."
+    },
+    "acb": {
+      "title": "Progresiva malstreĉo",
+      "text": "Streĉu ĉiun muskolan grupon dum 5 sekundoj, poste malstreĉu. Komencu de piedoj, movu al surkruroj, femuroj, abdomeno, manoj, brakoj, ŝultroj kaj vizaĝo. Tuta tensio-liberigo en malpli ol 3 minutoj."
+    },
+    "acc": {
+      "title": "Nudpieda momento",
+      "text": "Demetu viajn ŝuojn kaj sentu la plankon sub viaj piedoj. Se vi povas, marŝu sur herbon. Kontakto kun la tero reduktas inflamon kaj plibonigas dormon."
+    },
+    "acd": {
+      "title": "Skribu al via estonta memo",
+      "text": "Skribu rapidan noton al via estonta memo — celon, deziron, memorigilon. Ĝi konstruas mem-kontinuecon kaj tenas vin konektita al tio, kio gravas preter la hodiaŭa tasko-listo."
+    },
+    "ace": {
+      "title": "Cifereca ordigado",
+      "text": "Fermu ĉiujn retumilajn foliojn, kiujn vi ne uzas. Ĉu nelegitaj sciigoj stakas? Purigu ilin. Cifereca malordo kreas kognan ŝarĝon, same kiel fizika malordo."
+    },
+    "acf": {
+      "title": "La 2-minuta regulo",
+      "text": "Se io en via menso prenos malpli ol 2 minutojn, faru ĝin nun dum via paŭzo. Purigi malgrandajn taskojn forigas la mensan pezon de nefinitaj aferoj."
+    },
+    "acg": {
+      "title": "Kontrolo de sintenado",
+      "text": "Staru kontraŭ muro kun viaj kalkanoj, sidvangoj, ŝultroj kaj kapo tuŝante ĝin. Tiel sentas bona sintenado. Provu rekrei tiun senton kiam vi residos."
+    },
+    "ach": {
+      "title": "Odora paŭzo",
+      "text": "Flaru ion agrablan — kafograjnojn, kandelon, esencajn oleojn aŭ freŝan aeron. Odorsento estas rekte konektita al via emocia cerbo kaj povas tuje ŝanĝi vian humoron."
+    },
+    "aci": {
+      "title": "Nubospektado",
+      "text": "Se vi povas vidi la ĉielon, pasigu minuton rigardante la nubojn. Ĝi estas la originala ekranŝparo — kaj ĝi donas al via cerbo la specon de milda fokuso, kiu antaŭenigas krean pensadon."
+    }
+  },
+  "ui": {
+    "loading": "Ŝarĝas Pauza…",
+    "preview": {
+      "status": "Antaŭrigardo",
+      "detail": "Antaŭrigardo en retumilo",
+      "action": "Antaŭrigarda reĝimo estis aktivigita."
+    },
+    "title": "Pauza",
+    "heroHeadline": "Protektu vian laborritmon per trankvila interfaco",
+    "heroSubtitle": "Oftaj agordoj antaŭe, altnivelajn kontrolojn malantaŭe.",
+    "settingsCategories": "Agordkategorioj",
+    "settingsCategoriesHint": "Ŝanĝu kategorion maldekstre, vidu agordojn dekstre.",
+    "currentCategory": "Aktuala kategorio",
+    "overview": "Superrigardo",
+    "overviewHint": "Statusa resumo, lastaj agadoj kaj rapida aliro.",
+    "liveOverview": "Rekta superrigardo",
+    "liveOverviewHint": "Vidu aktualan ritmon, apstaton kaj paŭzan fenestron.",
+    "quickActions": "Rapidaj agoj",
+    "quickActionsHint": "Ĉi tiuj agoj rekte influas la aktualan ritmon.",
+    "savePanel": "Konservi ŝanĝojn",
+    "savePanelHint": "Ŝanĝoj efektiviĝas nur post konservado.",
+    "nextBreakLabel": "Sekva paŭzo",
+    "currentBreakLabel": "Aktuala paŭzo",
+    "lastActionLabel": "Lasta ago",
+    "runtimeLabel": "Rultempa",
+    "platformLabel": "Platformo",
+    "versionLabel": "Versio",
+    "breakFeelLabel": "Paŭza stilo",
+    "placementLabel": "Fenestra pozicio",
+    "pendingChanges": "Nekonservitaj ŝanĝoj",
+    "synced": "Sinkronigita",
+    "saving": "Konservas…",
+    "allSet": "Ĉio preta",
+    "noCurrentBreak": "Neniu aktiva paŭzo",
+    "liveSignals": "Rektaj signaloj",
+    "general": "Ĝenerala",
+    "preferences": "Preferoj",
+    "currentStatus": "Aktuala stato",
+    "language": "Lingvo",
+    "languageChinese": "Simpligita ĉina",
+    "languageEnglish": "Angla",
+    "launchOnLogin": "Lanĉi ĉe ensaluto",
+    "enabled": "Ŝaltita",
+    "disabled": "Malŝaltita",
+    "schedule": "Horaro",
+    "interruptions": "Sciigoj kaj interrompoj",
+    "sectionScheduleHint": "Montras nur ritmajn agordojn, kiujn vi ĉiutage ĝustigas.",
+    "microbreaks": "Mikropaŭzoj",
+    "microbreaksHint": "Mallongaj reŝargoj dum laboro.",
+    "longBreaks": "Longaj paŭzoj",
+    "longBreaksHint": "Plena ripozo post pluraj cikloj.",
+    "interval": "Intervalo",
+    "every": "Ofteco",
+    "durationLabel": "Daŭro",
+    "behavior": "Konduto",
+    "allowPostpone": "Permesi prokraston",
+    "signals": "Signaloj",
+    "sectionSignalsHint": "Helpu Pauza elekti la ĝustan momenton por sciigi.",
+    "naturalBreaks": "Naturaj paŭzoj",
+    "naturalBreaksHint": "Aŭtomata restarigo kiam vi forestis sufiĉe longe.",
+    "resetAfter": "Restarigi post",
+    "dnd": "Ne ĝenu",
+    "dndHint": "Paŭzu kiam sistema fokusreĝimo estas aktiva",
+    "sectionSurfaceHint": "Kontrolu interrompan intensoon kaj paŭzfenestran pozicion.",
+    "sectionGeneralHint": "Minimumaj ĝeneralaj preferoj.",
+    "notificationsCategory": "Sciigoj kaj prokrastoj",
+    "notificationsCategoryHint": "Administru antaŭsciigan tempon kaj prokrastregulojn.",
+    "surfaceCategory": "Interrompo kaj aranĝo",
+    "surfaceCategoryHint": "Kontrolu montrimanieron, pozicion kaj striktecon.",
+    "smartPause": "Inteligenta paŭzo",
+    "smartPauseHint": "Pauza unue serĉas naturajn momentojn, poste iom post iom malstreĉiĝas.",
+    "generalAndShortcuts": "Ĝenerala kaj klavkombino",
+    "generalAndShortcutsHint": "Administru lingvon, aŭtomatan startigon kaj klavkombinojn.",
+    "advanced": "Altnivela",
+    "sectionAdvancedHint": "Pli profunda kontrolo, kongruecaj opcioj kaj klavkombinoj.",
+    "appExclusions": "Ap-esceptoj",
+    "appExclusionsHint": "Apoj, kiuj paŭzigas aŭ rekomencas sciigojn.",
+    "appExclusionsEnable": "Aktivigi",
+    "appRulePause": "Paŭzigi ĉe kongruo",
+    "appRuleResume": "Rekomenci nur ĉe kongruo",
+    "pause30": "Paŭzi 30 min",
+    "focus45": "Fokuso 45 min",
+    "resume": "Daŭrigi",
+    "clearFocus": "Fini fokuson",
+    "save": "Konservi",
+    "revert": "Reveni",
+    "defaults": "Defaŭltoj",
+    "preBreakNotifications": "Antaŭsciigo",
+    "beforeLabel": "antaŭe",
+    "postpone": "Poste",
+    "scheduleControl": "Horara kontrolo",
+    "resetScheduleHint": "Restarigi la tempigilon ekde nun.",
+    "postponeCategoryHint": "Agordu apartajn prokrasttempojn kaj limojn por mikropaŭzoj kaj longaj paŭzoj.",
+    "limitLabel": "Limo",
+    "breakSurface": "Paŭza fenestro",
+    "breakDisplayMode": "Montra reĝimo",
+    "breakBackdrop": "Fona temo",
+    "breakBackdropHint": "Elektu atmosferan fonon por la paŭza fenestro.",
+    "breakBackdropPaper": "Papero",
+    "breakBackdropDawn": "Aŭroro",
+    "breakBackdropForest": "Arbaro",
+    "breakBackdropNight": "Nokto",
+    "breakBackdropCustom": "Propra",
+    "customWallpaper": "Propra fono",
+    "customWallpaperHint": "Alŝutu lokan bildon kiel paŭzan fonon.",
+    "customWallpaperChoose": "Elekti bildon",
+    "customWallpaperReplace": "Ŝanĝi bildon",
+    "customWallpaperRemove": "Forigi",
+    "customWallpaperEmpty": "Neniu propra fono elektita",
+    "customWallpaperEmptyHint": "Sen bildo uziĝas la defaŭlta temo.",
+    "customWallpaperReady": "La bildo estas kunpremita kaj konservita loke kiel paŭza fono.",
+    "breakIdeas": "Paŭzaj konsiloj",
+    "breakIdeasHint": "Montri mallongan konsilon ĉe ĉiu paŭzo.",
+    "breakSounds": "Paŭzaj sonoj",
+    "breakSoundsHint": "Ludi sonojn antaŭ paŭzo kaj ĉe fino.",
+    "microbreakStartSound": "Starta sono de mikropaŭzo",
+    "microbreakEndSound": "Fina sono de mikropaŭzo",
+    "longBreakStartSound": "Starta sono de longa paŭzo",
+    "longBreakEndSound": "Fina sono de longa paŭzo",
+    "breakSoundVolume": "Laŭteco",
+    "breakSoundSilence": "Silento",
+    "breakSoundCrystalGlass": "Kristala glaso",
+    "breakSoundWindChime": "Ventsonorilo",
+    "breakSoundTicToc": "Tik-tak",
+    "breakSoundReverie": "Revado",
+    "reminderMode": "Memorigila reĝimo",
+    "reminderModeHint": "Inteligenta serĉas naturajn momentojn, deviga interrompas tuj.",
+    "reminderModeSmart": "Inteligenta",
+    "reminderModeForced": "Deviga",
+    "window": "Fenestro",
+    "fullscreen": "Plenekrano",
+    "promptStyleGentle": "Milda",
+    "promptStyleBalanced": "Ekvilibra",
+    "promptStyleImmersive": "Absorbiga",
+    "allScreens": "Ĉiuj ekranoj",
+    "screenPrimary": "Ĉefa ekrano",
+    "screenCursor": "Ekrano kun kursoro",
+    "showTimeToBreakInTray": "Montri tempon ĝis paŭzo en la statbreto",
+    "currentTimeInBreaks": "Montri aktualan horon en la paŭza fenestro",
+    "currentTimeInBreaksHint": "Montras sisteman horon supre dekstre.",
+    "strictModes": "Striktaj reĝimoj",
+    "strictModesHint": "Kontrolu ĉu paŭzoj estas preterlaseblaj.",
+    "microbreakStrict": "Strikta mikropaŭzo",
+    "longBreakStrict": "Strikta longa paŭzo",
+    "manualFinish": "Mana finigo post la tempigilo",
+    "showTrayMenuInStrictMode": "Montri menuon en strikta reĝimo",
+    "shortcuts": "Klavkombinoj",
+    "shortcutsHint": "Lasu malplena por malaktivigi. Ekz.: CmdOrCtrl+Shift+P",
+    "shortcutReveal": "Malfermi agordojn",
+    "shortcutFocus45": "Fokuso 45 min",
+    "shortcutPauseToggle": "Ŝalti paŭzon",
+    "shortcutPause30": "Paŭzi 30 min",
+    "shortcutPause60": "Paŭzi 1 horon",
+    "shortcutPause120": "Paŭzi 2 horojn",
+    "shortcutPause300": "Paŭzi 5 horojn",
+    "shortcutSkipScheduled": "Salti al sekva paŭzo",
+    "shortcutSkipMicrobreak": "Salti al mikropaŭzo",
+    "shortcutSkipLongBreak": "Salti al longa paŭzo",
+    "shortcutReset": "Restarigi horaron",
+    "suffix": {
+      "secondsLong": "sekundoj",
+      "secondsBefore": "sekundoj antaŭe",
+      "minutesApart": "minutoj",
+      "cycles": "cikloj",
+      "minutesLong": "minutoj",
+      "minutesShortPostpone": "min",
+      "minutesLongPostpone": "min",
+      "minutesAway": "minutoj",
+      "minutes": "min",
+      "times": "fojoj"
+    },
+    "status": {
+      "noBreakScheduled": "Neniu planita paŭzo",
+      "microbreak": "Mikropaŭzo",
+      "longBreak": "Longa paŭzo",
+      "nextBreak": "{{label}} post {{duration}}",
+      "focus": "Fokuso {{duration}}",
+      "pause": "Paŭzo {{duration}}",
+      "pauseForever": "Senlima paŭzo",
+      "blockedBy": "Paŭzita de {{match}}",
+      "appRuleActive": "Ap-regulo aktiva",
+      "dndActive": "Ne-ĝenu aktiva"
+    },
+    "error": {
+      "loadState": "Ne povis ŝargi la staton de Pauza"
+    },
+    "breakCopy": {
+      "clearedDetail": "Neniu aktiva paŭzo nuntempe.",
+      "manualAwaiting": "Tempo finiĝis. Finu ĉi tiun paŭzon antaŭ ol reveni al laboro.",
+      "awaitingFinish": "Atendas finon",
+      "actions": {
+        "resumeWork": "Reveni al laboro",
+        "done": "Farite",
+        "later": "Poste",
+        "skip": "Preterlasi"
+      },
+      "defaultPrompt": {
+        "microbreak": "Stariĝu, streĉu ŝultrojn kaj kolon, rigardu malproksimen.",
+        "longBreak": "Foriru de la skribotablo kelkajn minutojn por ripozi korpon kaj menson."
+      }
+    },
+    "previewAction": {
+      "save": "Antaŭrigardo: Agordoj ĝisdatigitaj.",
+      "pause": "Antaŭrigardo: Paŭzo 30 min.",
+      "pauseForever": "Antaŭrigardo: Senlima paŭzo.",
+      "focus": "Antaŭrigardo: Fokuso aktivigita.",
+      "focusCleared": "Antaŭrigardo: Fokuso finita.",
+      "resume": "Antaŭrigardo: Daŭrigita.",
+      "reset": "Antaŭrigardo: Horaro restarigita.",
+      "autostartOn": "Antaŭrigardo: Aŭtomata startigo ŝaltita.",
+      "autostartOff": "Antaŭrigardo: Aŭtomata startigo malŝaltita.",
+      "done": "Antaŭrigardo: Paŭzo finita.",
+      "later": "Antaŭrigardo: Paŭzo prokrastita.",
+      "skip": "Antaŭrigardo: Paŭzo preterlasita."
+    },
+    "preBreakSoundHint": "Milda sono antaŭ la tempofino por fini vian taskon.",
+    "previewSound": "Aŭskulti",
+    "appExclusionsSearch": "Serĉi inter rulantaj apoj",
+    "appExclusionsSearchPlaceholder": "Ap-nomo…",
+    "appExclusionsSearchLoading": "Ŝarĝas…",
+    "appExclusionsSearchEmpty": "Neniuj rezultoj",
+    "appExclusionsManualHint": "Tajpu procezan nomon (unu por linio)",
+    "appExclusionsAdd": "Alklaku por aldoni al esceptlisto"
   }
 }

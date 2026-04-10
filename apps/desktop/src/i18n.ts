@@ -2,6 +2,10 @@ import localeRegistryJson from './locales/registry.generated.json'
 
 export type AppLanguage = string
 export type TranslationTree = string | TranslationTree[] | { [key: string]: TranslationTree }
+export type BreakIdeaEntry = {
+  title: string | null
+  text: string
+}
 
 export type AppLanguageConfig = {
   code: string
@@ -26,36 +30,35 @@ const defaultLanguage = localeRegistry.defaultLanguage
 const defaultConfig = languageConfigs.get(defaultLanguage) ?? localeRegistry.languages[0]
 
 export const AVAILABLE_LANGUAGE_CONFIGS = [...localeRegistry.languages]
-export const DESKTOP_LANGUAGE_CONFIGS = AVAILABLE_LANGUAGE_CONFIGS.filter(
-  (config) => config.desktopReady,
-).sort((left, right) => {
+export const DESKTOP_LANGUAGE_CONFIGS = [...AVAILABLE_LANGUAGE_CONFIGS].sort((left, right) => {
   if (left.code === defaultLanguage) {
     return -1
   }
   if (right.code === defaultLanguage) {
     return 1
   }
-  return left.code.localeCompare(right.code)
+  return left.label.localeCompare(right.label, 'en')
 })
 
+function canonicalLanguage(language?: string): string | undefined {
+  switch (language) {
+    case 'zh':
+    case 'zh_CN':
+    case 'zh-Hans':
+    case 'zh-Hans-CN':
+      return 'zh-CN'
+    default:
+      return language
+  }
+}
+
 function rawConfig(language?: string): AppLanguageConfig {
-  return (language ? languageConfigs.get(language) : undefined) ?? defaultConfig
+  const canonical = canonicalLanguage(language)
+  return (canonical ? languageConfigs.get(canonical) : undefined) ?? defaultConfig
 }
 
 function resolvedConfig(language?: string): AppLanguageConfig {
-  const seen = new Set<string>()
-  let current = rawConfig(language)
-
-  while (!current.desktopReady && !seen.has(current.code)) {
-    seen.add(current.code)
-    const next = languageConfigs.get(current.fallback)
-    if (!next) {
-      break
-    }
-    current = next
-  }
-
-  return current.desktopReady ? current : defaultConfig
+  return rawConfig(language)
 }
 
 function bundleChain(language?: string): TranslationTree[] {
@@ -89,6 +92,13 @@ export function getLanguageConfig(language?: string): AppLanguageConfig {
 
 export function normalizeLanguage(language?: string): AppLanguage {
   return resolvedConfig(language).code
+}
+
+export function resolveUiLanguage(
+  draftLanguage?: AppLanguage,
+  persistedLanguage?: AppLanguage,
+): AppLanguage {
+  return normalizeLanguage(persistedLanguage ?? draftLanguage)
 }
 
 function lookup(bundle: TranslationTree, key: string): TranslationTree | null {
@@ -128,6 +138,51 @@ export function tList(language: AppLanguage, key: string): string[] {
     const value = lookup(bundle, key)
     if (Array.isArray(value) && value.every((entry) => typeof entry === 'string')) {
       return [...value]
+    }
+  }
+
+  return []
+}
+
+export function tBreakIdeaList(
+  language: AppLanguage,
+  kind: 'microbreak' | 'longBreak',
+): string[] {
+  return tBreakIdeaEntries(language, kind).map((entry) => entry.text)
+}
+
+export function tBreakIdeaEntries(
+  language: AppLanguage,
+  kind: 'microbreak' | 'longBreak',
+): BreakIdeaEntry[] {
+  const key = kind === 'microbreak' ? 'miniBreakIdeas' : 'longBreakIdeas'
+
+  for (const bundle of bundleChain(language)) {
+    const value = lookup(bundle, key)
+    if (!value || typeof value === 'string' || Array.isArray(value)) {
+      continue
+    }
+
+    const prompts = Object.values(value)
+      .map((entry) => {
+        if (!entry || typeof entry === 'string' || Array.isArray(entry)) {
+          return null
+        }
+
+        const text = entry.text
+        if (typeof text !== 'string') {
+          return null
+        }
+
+        return {
+          title: typeof entry.title === 'string' ? entry.title : null,
+          text,
+        }
+      })
+      .filter((entry): entry is BreakIdeaEntry => Boolean(entry))
+
+    if (prompts.length > 0) {
+      return prompts
     }
   }
 

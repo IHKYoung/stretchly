@@ -99,7 +99,7 @@
       "ourWebsite": "odwiedź naszą stronę",
       "dot": ".",
       "developedBy": "Stworzona przez",
-      "janH": "Clarke Young",
+      "clarkeY": "Clarke Young",
       "designedBy": "Ikony oraz UI Colin Shanley",
       "checkNewVersion": "Automatycznie sprawdzaj aktualizacje"
     },
@@ -220,234 +220,748 @@
     "appExclusion": "Zasada wyjątku aplikacji"
   },
   "miniBreakIdeas": {
-    "aac": {
-      "text": "Powoli spójrz w górę, następnie w dół."
-    },
     "aaa": {
       "text": "Idź po szklankę wody."
     },
     "aab": {
-      "text": "Powoli spójrz w lewo, następnie w prawo."
+      "text": "Twoja butelka z wodą na ciebie patrzy. Napij się."
+    },
+    "aac": {
+      "text": "Kontrola nawodnienia: kiedy ostatnio piłeś wodę?"
     },
     "aad": {
-      "text": "Zamknij oczy i weź kilka głębokich oddechów."
+      "text": "Czas na łyk wody. Twój mózg składa się w 75% z wody."
     },
     "aae": {
-      "text": "Zamknij oczy i zrelaksuj się."
+      "text": "Woda to paliwo dla mózgu. Zatankuj."
     },
     "aaf": {
-      "text": "Rozciągnij mięśnie nóg."
+      "text": "Nawet lekkie odwodnienie obniża koncentrację. Napij się."
     },
     "aag": {
-      "text": "Rozciągnij ramiona."
+      "text": "Wypij szklankę wody. Twoje nerki ci podziękują."
     },
     "aah": {
-      "text": "Czy twoja pozycja siedząca jest prawidłowa?"
+      "text": "Zrób sobie herbatę albo napij się wody. Zasługujesz."
     },
     "aai": {
-      "text": "Powoli skręć głowę w bok i zatrzymaj na 10 sekund."
+      "text": "Zamknij oczy na 20 sekund. Niech odpoczną."
     },
     "aaj": {
-      "text": "Powoli przechyl głowę na bok i przytrzymaj przez 5-10 sekund."
+      "text": "Popatrz przez okno na coś dalekiego. Oczy ci podziękują."
     },
     "aak": {
-      "text": "Wstań i przeciągnij się."
+      "text": "Zasada 20-20-20: co 20 min patrz 20 sekund na coś 20 stóp dalej."
     },
     "aal": {
-      "text": "Spójrz na coś oddalone co najmniej 20 metrów."
+      "text": "Pomrugaj szybko 15 razy. Twoje oczy są suche jak Sahara."
     },
     "aam": {
-      "text": "Poświęć chwilę, aby pomyśleć o czymś, co doceniasz."
+      "text": "Odwróć wzrok od ekranu. Znajdź najdalszy punkt w pokoju."
     },
     "aan": {
-      "text": "Poświęć chwilę, aby docenić to, że żyjesz."
+      "text": "Rozejrzyj się po pokoju. Ekran nie jest całym światem."
     },
     "aao": {
-      "text": "Prawdziwie ergonomiczne miejsce pracy to takie, od którego regularnie odchodzisz."
+      "text": "Zamknij oczy i delikatnie je pomasuj przez opuszki palców."
     },
     "aap": {
-      "text": "Zamknij oczy i policz swoje oddechy."
+      "text": "Popatrz w górę, w dół, w lewo, w prawo. Joga dla oczu."
     },
     "aaq": {
-      "text": "Zamknij oczy i nazwij to, co słyszysz."
+      "text": "Weź trzy głębokie oddechy. Wdech nosem, wydech ustami."
     },
     "aar": {
-      "text": "Połóż opuszki palców na ramionach. Poruszaj ramionami do przodu przez 10 sekund, a następnie do tyłu."
+      "text": "Oddychaj przez 4 sekundy wdech, 4 sekundy wydech. Powtórz 5 razy."
     },
     "aas": {
-      "text": "Podnieś prawą rękę, wyciągnij ją nad głową w lewo i przytrzymaj przez 10 sekund. Powtórz po drugiej stronie."
-    },
-    "aaw": {
-      "text": "Skup się co 20 minut przez 20 sekund na obiekcie w odległości 20 metrów."
-    },
-    "aax": {
-      "text": "Jeśli potrzebujesz pomocy, poproś o nią."
-    },
-    "aay": {
-      "text": "Rób jedną rzecz na raz."
-    },
-    "aaz": {
-      "text": "Czy mądrze poświęcasz uwagę?"
-    },
-    "aba": {
-      "text": "Zmień pozycję siedzącą."
-    },
-    "abb": {
-      "text": "Wystaw swoje oczy na naturalne światło."
+      "text": "Zatrzymaj się. Weź jeden świadomy oddech. Gotowe."
     },
     "aat": {
-      "text": "Prawą ręką chwyć kolejno każdy palec lewej ręki i ściśnij. Powtórz po drugiej stronie."
+      "text": "Oddychaj przeponą, nie klatką piersiową. Poczuj różnicę."
     },
     "aau": {
-      "text": "Wstań i zrób wypad. Przytrzymaj tak przez 10 sekund i zmień nogę."
-    },
-    "abc": {
-      "text": "Mając zamknięte oczy, powoli i delikatnie przesuwaj oczy w górę i dół."
-    },
-    "abd": {
-      "text": "Mając zamknięte oczy, polowi i delikatnie przesuwaj wzrok w lewo i w prawo."
+      "text": "Wdech na 4, zatrzymaj na 4, wydech na 4. Oddech pudełkowy."
     },
     "aav": {
-      "text": "Zamknij oczy i skup się na tym co Ciebie otacza, nie oceniając tego."
+      "text": "Wydech dwa razy dłuższy niż wdech. Układ nerwowy się uspokoi."
     },
-    "abi": {
-      "text": "Usiądź prosto, z rękami opuszczonymi wzdłuż ciała, i powoli obracaj szyją w jednym kierunku, wykonując duży krąg."
+    "aaw": {
+      "text": "Połóż rękę na brzuchu. Poczuj jak się unosi przy oddechu."
+    },
+    "aax": {
+      "text": "Ziewaj. Serio, ziewanie dotlenia mózg. Nie wstydź się."
+    },
+    "aay": {
+      "text": "Wyprostuj się. Tak, do ciebie mówię."
+    },
+    "aaz": {
+      "text": "Sprawdź swoją postawę. Ramiona w dół i do tyłu."
+    },
+    "aba": {
+      "text": "Czy siedzisz prosto? Prawdopodobnie nie. Popraw się."
+    },
+    "abb": {
+      "text": "Wyobraź sobie, że ktoś ciągnie cię za sznurek na czubku głowy."
+    },
+    "abc": {
+      "text": "Obie stopy na podłodze. Plecy proste. Lepiej."
+    },
+    "abd": {
+      "text": "Twój kręgosłup właśnie zapłakał. Wyprostuj się."
     },
     "abe": {
-      "text": "Wstrząśnij rękami, aby poczuć ulgę."
+      "text": "Przyciągnij łopatki do siebie. Oddychaj. Puść."
     },
     "abf": {
-      "text": "Po kolei dotykaj czubkiem każdego palca do czubka kciuka, tak aby utworzyły kształt litery O."
+      "text": "Podnieś brodę, opuść ramiona. Królowa postawy."
     },
     "abg": {
-      "text": "Zaciśnij pięść, a następnie wyprostuj palce do góry, tak aby wskazywały na sufit, jakbyś kazał komuś się zatrzymać."
+      "text": "Powoli przekręć głowę w prawo, potem w lewo. Poczuj ulgę."
     },
     "abh": {
-      "text": "Zaciśnij pięść, a następnie rozłóż palce i rozciągnij je tak daleko, jak tylko możesz."
+      "text": "Przechyl głowę na bok. Przytrzymaj 15 sekund. Zmień stronę."
+    },
+    "abi": {
+      "text": "Zrób powolne kółka głową. Trzy w jedną, trzy w drugą stronę."
     },
     "abj": {
-      "text": "Stań prosto i powoli przechyl głowę w kierunku ramienia, używając tej samej ręki, aż poczujesz rozciąganie."
+      "text": "Dotknij brodą klatki piersiowej. Poczuj rozciąganie karku."
     },
     "abk": {
-      "text": "Stań prosto z rękami wzdłuż ciała. Ściśnij łopatki razem i przytrzymaj."
+      "text": "Cofnij głowę, jakbyś robił podwójny podbródek. Dobry rozciąg."
     },
     "abl": {
-      "text": "Stań prosto z ramionami uniesionymi wzdłuż barków. Przesuń ręce lekko za plecy, przytrzymaj przez sekundę i wróć."
+      "text": "Obróć głowę i popatrz za siebie. Zmień stronę."
     },
     "abm": {
-      "text": "Usiądź na krawędzi krzesła, skręć tułów w jedną stronę i przytrzymaj przez 10-15 sekund. Powtórz na drugą stronę."
+      "text": "Unieś ramiona do uszu, przytrzymaj 5 sek., puść. Powtórz 3x."
     },
     "abn": {
-      "text": "Wstań i postaw jedną stopę na pobliskim obiekcie, takim jak krzesło lub stopień. Utrzymuj kolano zgięte i przytrzymaj przez 10-15 sekund. Powtórz z drugą stopą."
+      "text": "Zrób kółka ramionami. 10 do przodu, 10 do tyłu."
     },
     "abo": {
-      "text": "Stań z stopami rozstawionymi na szerokość barków, opuść ciało w dół, jakbyś siadał na krześle, a następnie wstań. Powtórz kilka razy."
+      "text": "Ściśnij łopatki razem na 5 sekund. Oddychaj."
     },
     "abp": {
-      "text": "Stań plecami i rękami przy ścianie, a następnie powoli poruszaj ramionami w górę i w dół, jakbyś robił aniołki na śniegu."
+      "text": "Ramiona napięte? Opuść je o 5 cm. Tak lepiej."
     },
     "abq": {
-      "text": "Stań przodem do ściany i połóż na niej ręce, a następnie wykonaj kilka pompek."
-    },
-    "abt": {
-      "text": "Unieś jedną rękę pionowo w górę, potem drugą ręką delikatnie popchnij łokieć pierwszej ręki w stronę głowy. Przytrzymaj przez 10-15 sekund. Zrób to samo z drugą ręką."
+      "text": "Wyciągnij ręce do góry i porządnie się przeciągnij."
     },
     "abr": {
-      "text": "Usiądź na krawędzi krzesła i wyciągnij jedną nogę prosto przed siebie, przytrzymując ją przez 10-15 sekund. Powtórz to samo z drugą nogą."
-    },
-    "abv": {
-      "text": "Wyciągnij jedną rękę przez klatkę piersiową, chwyć łokieć drugą ręką i delikatnie przyciągnij go do klatki piersiowej. Powtórz z drugą ręką."
-    },
-    "abw": {
-      "text": "Wstań, postaw jedną nogę na jakimś przedmiocie w pobliżu, np. na krześle lub stopniu, i sięgnij w dół, aby dotknąć palców u stóp. Powtórz z drugą nogą."
+      "text": "Złap się za łokieć i delikatnie przyciągnij w bok. Zmień stronę."
     },
     "abs": {
-      "text": "Stań twarzą do ściany, jedną nogę ustaw z tyłu, a drugą z przodu, następnie pochyl się w stronę ściany. Powtórz z drugą nogą."
+      "text": "Wyciągnij rękę, palce w górę, delikatnie naciągnij. Zmień rękę."
+    },
+    "abt": {
+      "text": "Zrób kółka nadgarstkami. 10 w jedną, 10 w drugą stronę."
     },
     "abu": {
-      "text": "Pochyl głowę w bok, następnie w drugi bok, a potem delikatnie przechylaj ją do przodu i do tyłu."
+      "text": "Rozłóż i zaciśnij palce 10 razy. Rozgrzej dłonie."
+    },
+    "abv": {
+      "text": "Potrząśnij dłońmi jak mokrymi. 15 sekund."
+    },
+    "abw": {
+      "text": "Naciśnij każdy palec kciukiem. Taki mikro-masaż."
     },
     "abx": {
-      "text": "Stań w drzwiach, umieść jedną rękę po każdej stronie drzwi, a następnie delikatnie pochyl się do przodu, aż poczujesz rozciągnięcie w klatce piersiowej."
+      "text": "Złóż dłonie jak do modlitwy i naciśnij na siebie. Rozciąg nadgarstków."
     },
     "aby": {
-      "text": "Usiądź na skraju krzesła lub na podłodze, złącz stopy podeszwami do siebie i delikatnie naciskaj łokciami, aby rozciągnąć wewnętrzną stronę ud."
+      "text": "Dotknij kciukiem kolejno każdego palca. Szybciej. Jeszcze szybciej."
+    },
+    "abz": {
+      "text": "Ściśnij piłeczkę antystresową. Albo wyobraź sobie, że ją masz."
+    },
+    "aca": {
+      "text": "Skręć tułów w prawo, chwyć oparcie krzesła. Zmień stronę."
+    },
+    "acb": {
+      "text": "Wstań i dotknij palcami stóp. Albo spróbuj."
+    },
+    "acc": {
+      "text": "Wyciągnij ręce przed siebie i zaokrąglij plecy. Koci grzbiet."
+    },
+    "acd": {
+      "text": "Połóż ręce na biodrach i delikatnie wygij się do tyłu."
+    },
+    "ace": {
+      "text": "Pochyl się na krześle na boki. Rozciągnij boczne mięśnie."
+    },
+    "acf": {
+      "text": "Wstań, ręce w górę, wyciągnij się jak po przebudzeniu."
+    },
+    "acg": {
+      "text": "Wstań i zrób 10 przysiadów. Albo 5. Albo chociaż 1."
+    },
+    "ach": {
+      "text": "Wyprostuj nogi pod biurkiem i napnij mięśnie na 10 sekund."
+    },
+    "aci": {
+      "text": "Unieś się na palcach stóp 15 razy. Łydki ci podziękują."
+    },
+    "acj": {
+      "text": "Wstań i zrób kilka kroków. Krew musi krążyć."
+    },
+    "ack": {
+      "text": "Skrzyżuj nogę, połóż kostkę na kolanie. Delikatnie naciśnij. Zmień."
+    },
+    "acl": {
+      "text": "Wyciągnij nogi i obracaj stopami w kółko."
+    },
+    "acm": {
+      "text": "Wstań, przeciągnij się jak kot po drzemce."
+    },
+    "acn": {
+      "text": "Zrób 10 pajacyków. Tak, przy biurku. Nikt nie patrzy."
+    },
+    "aco": {
+      "text": "Pójdź na krótki spacer. 2 minuty wystarczą."
+    },
+    "acp": {
+      "text": "Zrób 5 pompek. Albo pompki od ściany. Liczy się."
+    },
+    "acq": {
+      "text": "Wstań i pochodź na miejscu przez 30 sekund."
+    },
+    "acr": {
+      "text": "Zatańcz przy biurku. Nikt cię nie widzi (prawdopodobnie)."
+    },
+    "acs": {
+      "text": "Zrób plank na 20 sekund. Albo na ile dasz radę."
+    },
+    "act": {
+      "text": "Pobiegaj w miejscu przez 30 sekund. Krew ruszy."
+    },
+    "acu": {
+      "text": "Zamknij oczy i posłuchaj otoczenia przez 30 sekund."
+    },
+    "acv": {
+      "text": "Wymień 3 rzeczy, za które jesteś wdzięczny. Teraz."
+    },
+    "acw": {
+      "text": "Poczuj swoje stopy na podłodze. Bądź tu i teraz."
+    },
+    "acx": {
+      "text": "Uśmiechnij się. Nawet wymuszony uśmiech poprawia nastrój."
+    },
+    "acy": {
+      "text": "Rozluźnij szczękę. Prawdopodobnie ją zaciskasz."
+    },
+    "acz": {
+      "text": "Rozluźnij czoło. Zmarszczki nie pomagają w kodowaniu."
+    },
+    "ada": {
+      "text": "Skup się na jednym dźwięku wokół siebie. 15 sekund."
+    },
+    "adb": {
+      "text": "Sprawdź, gdzie trzymasz napięcie. Rozluźnij to miejsce."
+    },
+    "adc": {
+      "text": "Powiedz sobie coś miłego. Nie musisz na głos."
+    },
+    "add": {
+      "text": "Poczuj temperaturę powietrza na skórze. Bądź obecny."
+    },
+    "ade": {
+      "text": "Przerwa na januszowanie: sprawdź, czy nie masz za dużo otwartych zakładek. Zamknij 10."
+    },
+    "adf": {
+      "text": "Jak w korpo: idź po kawę, nawet jeśli pracujesz z domu."
+    },
+    "adg": {
+      "text": "Piątunia incoming! A nie, to wtorek... ale przerwa i tak się należy."
+    },
+    "adh": {
+      "text": "Twój kręgosłup ma więcej pretensji niż twój szef. Wyprostuj się."
+    },
+    "adi": {
+      "text": "Wypij wodę. Nie kawę. Wiem, wiem, ale chociaż spróbuj."
+    },
+    "adj": {
+      "text": "Przeciągnij się jak Burek na słońcu. Nie wstydź się."
+    },
+    "adk": {
+      "text": "Zrób sobie herbatkę. Polska tradycja obowiązuje."
+    },
+    "adl": {
+      "text": "Wstań od biurka. Nawet Janusz robi przerwy (na schabowego)."
+    },
+    "adm": {
+      "text": "Zamknij oczy na chwilę. To nie lenistwo, to optymalizacja."
     }
   },
   "longBreakIdeas": {
-    "aab": {
-      "title": "Odsuń się",
-      "text": "Czy kiedykolwiek zauważyłeś, jak twój mózg potrafi sam rozwiązać problemy? Wystarczy tylko oderwać się od komputera i zrobić sobie przerwę, aby pomyśleć o czymś zupełnie innym."
-    },
     "aaa": {
-      "text": "Czy ciężko Ci jest robić sobie przerwy sam? Spróbuj robić je z współpracownikiem. Oprócz tego, że łatwiej będzie Ci się trzymać tych przerw, będziesz miał szansę lepiej poznać swojego współpracownika. Robienie przerw razem zwiększa produktywność.",
-      "title": "Nie sam"
+      "title": "Razem raźniej",
+      "text": "Trudno ci robić przerwy samemu? Spróbuj odpoczywać ze współpracownikiem. Będziecie się wzajemnie motywować i przy okazji ponarzekać na deadliny. Badania pokazują, że wspólne przerwy zwiększają produktywność."
+    },
+    "aab": {
+      "title": "Odejdź od ekranu",
+      "text": "Zauważyłeś, że najlepsze pomysły przychodzą pod prysznicem? To dlatego, że mózg rozwiązuje problemy w tle. Odejdź od monitora i pomyśl o czymś zupełnie innym."
     },
     "aac": {
-      "title": "Mikroprzerwa",
-      "text": "Odpoczynek stanowi podstawowy element w utrzymaniu wydajności układu mięśniowo-szkieletowego. Regularne przerwy mogą zmniejszyć czas wykonywania zadania i przyczynić się do obniżenia narażenia na ryzyko urazów ergonomicznych."
+      "title": "Mikroprzerwy",
+      "text": "Krótkie, częste przerwy zmniejszają obciążenie powtarzalne i utrzymują twój układ mięśniowo-szkieletowy w zdrowiu. Traktuj je jak przegląd techniczny ludzkiej maszyny."
     },
     "aad": {
-      "text": "Badania naukowe sugerują, że ćwiczenia oparte na uważności pomagają zmniejszyć lęk, depresję, stres i ból, a także poprawić ogólne zdrowie, zdrowie psychiczne i jakość życia. Nie wiesz, jak zacząć? Istnieje wiele aplikacji, które mogą Ci pomóc.",
-      "title": "Medytacja"
-    },
-    "aaf": {
-      "title": "Ergonomia",
-      "text": "Nieprawidłowa wysokość i kąt ustawienia klawiatury, myszy, monitora lub powierzchni roboczej mogą powodować problemy zdrowotne. Znajdź chwilę, aby dowiedzieć się więcej o ergonomii stanowiska pracy."
-    },
-    "aag": {
-      "title": "Ruch",
-      "text": "Istnieje wiele możliwości ćwiczeń w biurze. Spróbuj maszerować w miejscu lub robić pompki przy biurku."
-    },
-    "aah": {
-      "title": "Zmiana",
-      "text": "Masz piłkę do ćwiczeń lub stojące biurko? Zastanów się nad tym, aby na jakiś czas zastąpić swoje krzesło biurowe jednym z nich."
-    },
-    "aai": {
-      "title": "Powiadomienie",
-      "text": "Czy masz problemy z koncentracją lub myślisz o czymś innym? To może być sygnał, że potrzebujesz przerwy."
+      "title": "Medytacja",
+      "text": "Medytacja to nie siedzenie w pozycji lotosu. Wystarczy 5 minut skupienia na oddechu. Badania pokazują, że regularna praktyka zmniejsza stres i poprawia koncentrację. Spróbuj apki Headspace lub Calm."
     },
     "aae": {
-      "text": "Długotrwałe patrzenie na ekrany powoduje, że rzadziej mrugamy, co naraża nasze oczy na działanie powietrza. Szybko mrugaj przez kilka sekund, aby odnowić film łzowy i oczyścić powierzchnię oka z kurzu.",
-      "title": "Mrugnięcie"
+      "title": "Mrugaj częściej",
+      "text": "Podczas pracy przy ekranie mrugamy 3-4 razy rzadziej niż normalnie. To prowadzi do suchości oczu i zmęczenia wzroku. Mrugaj świadomie przez następną minutę. Twoje oczy ci podziękują."
     },
-    "aal": {
-      "title": "Aktywne Spotkania"
+    "aaf": {
+      "title": "Ergonomia biurka",
+      "text": "Górna krawędź monitora powinna być na wysokości oczu. Stopy płasko na podłodze. Łokcie pod kątem 90°. Poświęć 2 minuty na poprawienie ustawień. Twój kręgosłup zapamięta to na długo."
     },
-    "aam": {
-      "title": "Owoc",
-      "text": "Zjedz jakiś owoc. Powoli, bez pośpiechu. Zauważ jaki ma smak, teksturę i świeżość."
+    "aag": {
+      "title": "Trening biurowy",
+      "text": "Zrób 10 przysiadów, 10 pompek od biurka i 10 uniesień na palcach. Zajmie ci to 3 minuty, a poczujesz się jakbyś wrócił z siłowni. No, prawie."
     },
-    "aao": {
-      "text": "Idziesz na przerwę kawową? Rozważ 5-minutowy spacer za każdym razem gdy sięgasz po filiżankę.",
-      "title": "Przerwa kawowa"
+    "aah": {
+      "title": "Zmień coś",
+      "text": "Pracujesz siedząc? Wstań. Pracujesz stojąc? Usiądź. Zmiana pozycji co 30-60 minut to najprostszy sposób na uniknięcie bólu pleców i poprawę krążenia."
     },
-    "aap": {
-      "title": "Koledzy",
-      "text": "Nie wysyłaj maili i wiadomości do kolegów z pracy, podejdź do ich biurek by się z nimi komunikować."
-    },
-    "aaq": {
-      "text": "W badaniu na zdrowych osobach, badacze z NIH zauważyli, że krótkie przerwy, wcześnie i często, mogą pomóc naszym mózgom zdobywać nowe umiejętności.",
-      "title": "Uczenie się"
-    },
-    "aar": {
-      "title": "Ćwiczenia",
-      "text": "Badania sugerują, że małe ilości regularnych ćwiczeń mogą przynieść ogromne korzyści zdrowotne, w tym znacząco zredukować stres."
-    },
-    "aat": {
-      "title": "Nadgarstek i przedramię"
-    },
-    "aau": {
-      "title": "Rozciąganie pleców"
+    "aai": {
+      "title": "Czytaj sygnały",
+      "text": "Twoje ciało mówi do ciebie: sztywny kark, obolałe plecy, suche oczy. Przestań ignorować te sygnały. Każdy z nich to zaproszenie do krótkiej przerwy."
     },
     "aaj": {
-      "text": "Co powiesz na spacer bez urządzeń?"
+      "title": "Spacer bez telefonu",
+      "text": "Wyjdź na 10-minutowy spacer BEZ telefonu. Niech twoje oczy odpoczną od ekranów, a mózg od powiadomień. Zauważ kolory, dźwięki, zapachy wokół siebie."
     },
     "aak": {
-      "title": "Metabolizm"
+      "title": "Problem z siedzeniem",
+      "text": "Siedzenie dłużej niż 8 godzin dziennie zwiększa ryzyko chorób serca o 15%. Wstań co 30 minut choćby na minutę. To nie lenistwo — to profilaktyka zdrowotna."
+    },
+    "aal": {
+      "title": "Spacerowe spotkania",
+      "text": "Następne spotkanie 1-na-1 zrób na spacerze. Ruch pobudza kreatywność, a brak ekranu sprzyja szczerszym rozmowom. Steve Jobs tak robił i chyba coś z tego wyszło."
+    },
+    "aam": {
+      "title": "Świadome jedzenie",
+      "text": "Następną przekąskę zjedz bez ekranu. Poczuj smak, teksturę, zapach. Świadome jedzenie pomaga lepiej trawić i sprawia, że jesz mniej, bo zauważasz moment sytości."
+    },
+    "aan": {
+      "title": "Spacer po kawę",
+      "text": "Zamiast robić kawę w kuchni, wyjdź do najbliższej kawiarni. Dodatkowe 10 minut spaceru da ci więcej niż podwójna porcja kofeiny."
+    },
+    "aao": {
+      "title": "Mózg na przerwie",
+      "text": "Twój mózg zużywa 20% energii ciała. Po 90 minutach skupionej pracy potrzebuje regeneracji. Przerwa to nie strata czasu — to ładowanie baterii procesora."
+    },
+    "aap": {
+      "title": "Rusz się trochę",
+      "text": "5 minut ruchu co godzinę zmniejsza ryzyko cukrzycy typu 2 o 30%. To mniej niż jeden odcinek TikToka, a efekt zdrowotny kolosalny."
+    },
+    "aaq": {
+      "title": "Rozciąganie",
+      "text": "Zrób pełną rundę rozciągania: szyja, ramiona, nadgarstki, plecy, nogi. 5 minut systematycznego rozciągania zmniejsza napięcie mięśniowe o 40%."
+    },
+    "aar": {
+      "title": "Kółka nadgarstkami",
+      "text": "Jako ktoś, kto spędza godziny przy klawiaturze, twoje nadgarstki zasługują na specjalną uwagę. Kółka, rozciąganie, ściskanie — 3 minuty profilaktyki tunelu nadgarstka."
     },
     "aas": {
-      "title": "Powtarzanie"
+      "title": "Wyciągnij się w górę",
+      "text": "Wstań, wyciągnij ręce nad głowę i rozciągnij się na boki. Poczuj jak kręgosłup się wydłuża. Dodaj skręty tułowia. Jak świeżo narodzony człowiek."
+    },
+    "aat": {
+      "title": "Zasada 30/1",
+      "text": "Co 30 minut siedzenia wstań na 1 minutę. Prosta zasada, łatwa do zapamiętania, a efekt jest udowodniony naukowo. Ustaw timer i trzymaj się tego."
+    },
+    "aau": {
+      "title": "Trening 7-minutowy",
+      "text": "Naukowy trening 7-minutowy: 12 ćwiczeń po 30 sekund z 10-sekundowymi przerwami. Wymaga tylko krzesła i ściany. Wygoogluj 'scientific 7-minute workout'."
+    },
+    "aav": {
+      "title": "Podnieś tętno",
+      "text": "Zrób 20 pajacyków, 10 przysiadów i 10 burpees. Podwyższone tętno przez 3-5 minut poprawia przepływ krwi do mózgu i zwiększa produkcję endorfin."
+    },
+    "aaw": {
+      "title": "Weź schody",
+      "text": "Następnym razem wybierz schody zamiast windy. Wchodzenie po schodach spala 3x więcej kalorii niż chodzenie po płaskim i wzmacnia serce."
+    },
+    "aax": {
+      "title": "Stwórz coś",
+      "text": "Narysuj coś, napisz wiersz, zbuduj wieżę z długopisów. Twórcza przerwa aktywuje inne obszary mózgu niż praca analityczna i działa jak reset."
+    },
+    "aay": {
+      "title": "Posprzątaj",
+      "text": "Uporządkuj biurko: wyrzuć zbędne kartki, ułóż kable, przetrzyj monitor. Czyste otoczenie to czysty umysł. Badania to potwierdzają."
+    },
+    "aaz": {
+      "title": "Jedz na dworze",
+      "text": "Następny posiłek zjedz na świeżym powietrzu. Nawet na balkonie. Naturalne światło i zmiana otoczenia pomagają trawić i redukują stres."
+    },
+    "aba": {
+      "title": "Moc ziewania",
+      "text": "Ziewanie to naturalny mechanizm chłodzenia mózgu i poprawy uwagi. Ziewaj celowo 5-6 razy. Tak, wyglądasz głupio. Ale twój mózg ci dziękuje."
+    },
+    "abb": {
+      "title": "Zmiana fokusa",
+      "text": "Patrz na kciuk trzymany na wyciągniętej ręce, potem na odległy punkt. Powtórz 10 razy. To ćwiczenie mięśni oka, które zapobiega zmęczeniu wzroku."
+    },
+    "abc": {
+      "title": "Palmowanie oczu",
+      "text": "Rozetrzyj dłonie do ciepła, połóż na zamknięte oczy. 60 sekund ciemności i ciepła. Oczy regenerują się szybciej niż po godzinie patrzenia w ekran."
+    },
+    "abd": {
+      "title": "Ściśnij coś",
+      "text": "Piłeczka antystresowa, gumowa kaczka, poduszka — ściskaj i puszczaj rytmicznie. Rozładowuje napięcie w dłoniach i obniża poziom kortyzolu."
+    },
+    "abe": {
+      "title": "Wolne oddychanie",
+      "text": "Oddychaj 6 razy na minutę (wdech 5 sek., wydech 5 sek.) przez 5 minut. Ten rytm synchronizuje się z naturalnym rytmem serca i obniża ciśnienie krwi."
+    },
+    "abf": {
+      "title": "Wizualizacja",
+      "text": "Zamknij oczy i wyobraź sobie miejsce, w którym czujesz się najbezpieczniej. Plaża, góry, babcina kuchnia. 3 minuty wizualizacji obniżają kortyzol jak 30 minut drzemki."
+    },
+    "abg": {
+      "title": "Uziemienie 5-4-3-2-1",
+      "text": "Wymień 5 rzeczy, które widzisz, 4 które słyszysz, 3 które czujesz dotykiem, 2 które wąchasz, 1 którą smakujesz. Technika uziemiająca, idealna na chwile stresu."
+    },
+    "abh": {
+      "title": "Nauka o drzemce",
+      "text": "Drzemka 10-20 minut zwiększa czujność i produktywność na kolejne 3 godziny. Ustaw alarm — dłużej niż 30 minut wejdziesz w głęboki sen i będziesz groggy."
+    },
+    "abi": {
+      "title": "Reset Pomodoro",
+      "text": "Technika Pomodoro: 25 minut pracy, 5 minut przerwy. Po 4 cyklach — dłuższa przerwa 15-30 minut. Twój mózg lubi rytm i przewidywalność."
+    },
+    "abj": {
+      "title": "Przerwa na rysowanie",
+      "text": "Bazgroły to nie strata czasu. Rysowanie podczas myślenia poprawia zapamiętywanie o 29%. Weź kartkę i rysuj cokolwiek. Nawet kółka i kwadraty."
+    },
+    "abk": {
+      "title": "Przerwa na muzykę",
+      "text": "Włącz ulubioną piosenkę i słuchaj z zamkniętymi oczami. Muzyka aktywuje ośrodki nagrody w mózgu i redukuje stres. Jedna piosenka = 3-4 minuty regeneracji."
+    },
+    "abl": {
+      "title": "Chwila wdzięczności",
+      "text": "Zapisz 3 rzeczy, za które jesteś dziś wdzięczny. Praktyka wdzięczności poprawia sen, obniża ciśnienie i zwiększa odporność psychiczną. 2 minuty, które zmieniają nastawienie."
+    },
+    "abm": {
+      "title": "Reset zimną wodą",
+      "text": "Opłucz nadgarstki zimną wodą przez 30 sekund. Stymulacja receptorów zimna pobudza układ nerwowy i działa jak naturalny kofeinowy zastrzyk."
+    },
+    "abn": {
+      "title": "Pogadaj z rośliną",
+      "text": "Podlej biurkową roślinę, obejrzyj jej liście, powiedz jej coś miłego. Kontakt z zielenią obniża ciśnienie krwi. A roślina potrzebuje CO₂, więc obie strony korzystają."
+    },
+    "abo": {
+      "title": "Zrzut mózgu",
+      "text": "Wypisz wszystko, co ci chodzi po głowie — zadania, obawy, pomysły. Wyrzuć to na papier. Twój mózg nie jest dyskiem — jest procesorem. Zwolnij mu RAM."
+    },
+    "abp": {
+      "title": "Pogłaskaj zwierzaka",
+      "text": "Jeśli masz zwierzaka — pogłaskaj go przez 5 minut. Kontakt ze zwierzętami obniża kortyzol i ciśnienie. Jeśli nie masz — obejrzyj filmik z kotami. Też działa."
+    },
+    "abq": {
+      "title": "Terapia śmiechem",
+      "text": "Obejrzyj jeden mem, krótki filmik komediowy albo przypomnij sobie coś zabawnego. Śmiech uwalnia endorfiny i zwiększa tolerancję bólu. Poważnie."
+    },
+    "abr": {
+      "title": "Zastrzyk świeżego powietrza",
+      "text": "Otwórz okno lub wyjdź na dwór na 5 minut. Podwyższony poziom CO₂ w pomieszczeniu obniża funkcje poznawcze o 15%. Świeże powietrze to natychmiastowy upgrade."
+    },
+    "abs": {
+      "title": "Skanowanie ciała",
+      "text": "Zamknij oczy i mentalnie 'przeskanuj' ciało od stóp do głowy. Gdzie czujesz napięcie? Rozluźnij te miejsca świadomie. 3 minuty body scanu to jak reset systemu."
+    },
+    "abt": {
+      "title": "Joga biurkowa",
+      "text": "Skręt na krześle, kot-krowa w siedzącej pozycji, wyciągnięcie ramion nad głowę. 5 pozycji jogi, które możesz zrobić nie wstając od biurka. YouTube: 'desk yoga 5 min'."
+    },
+    "abu": {
+      "title": "Przeczytaj stronę",
+      "text": "Weź fizyczną książkę i przeczytaj jedną stronę. Czytanie z papieru angażuje mózg inaczej niż ekran i daje oczom naturalny punkt skupienia."
+    },
+    "abv": {
+      "title": "Cykl 90-minutowy",
+      "text": "Twój mózg działa w 90-minutowych cyklach (ultradiański rytm). Po 90 minutach intensywnej pracy potrzebuje 15-20 minut regeneracji. Nie walcz z biologią — współpracuj."
+    },
+    "abw": {
+      "title": "Przerwa na ciekawość",
+      "text": "Wygoogluj jedną rzecz, która cię fascynuje ale nie ma nic wspólnego z pracą. Dinozaury? Historia widelca? Kosmos? 5 minut ciekawości odświeża perspektywę."
+    },
+    "abx": {
+      "title": "Oddech pudełkowy",
+      "text": "Wdech 4 sek. → zatrzymanie 4 sek. → wydech 4 sek. → zatrzymanie 4 sek. Powtórz 4 cykle. Technika stosowana przez Navy SEALs do kontroli stresu."
+    },
+    "aby": {
+      "title": "Zatańcz to",
+      "text": "Włącz ulubiony kawałek i tańcz przez 3 minuty. Nie musisz umieć tańczyć — liczy się ruch. Taniec łączy ćwiczenie z muzyką i produkuje serotoninę."
+    },
+    "abz": {
+      "title": "Zadzwoń do kogoś",
+      "text": "Zamiast pisać, zadzwoń do kogoś na 5 minut. Głos drugiego człowieka pobudza produkcję oksytocyny. SMS nie ma tego efektu. Tak, nawet do mamy."
+    },
+    "aca": {
+      "title": "Dawka słońca",
+      "text": "Wyjdź na 10 minut na słońce (nawet pochmurne). Naturalne światło reguluje rytm dobowy i produkcję witaminy D. Twój zegar biologiczny kalibruje się automatycznie."
+    },
+    "acb": {
+      "title": "Relaksacja progresywna",
+      "text": "Napnij mięśnie stóp na 5 sek., puść. Potem łydki. Potem uda. Idź w górę ciała. Progresywna relaksacja mięśni to sprawdzona metoda na obniżenie napięcia fizycznego."
+    },
+    "acc": {
+      "title": "Chwila boso",
+      "text": "Zdejmij buty i poczuj podłogę stopami. Jeśli masz dostęp do trawy — jeszcze lepiej. 'Grounding' redukuje stany zapalne i poprawia jakość snu."
+    },
+    "acd": {
+      "title": "Napisz do przyszłego siebie",
+      "text": "Napisz jednozdaniowy list do siebie za rok. Co chcesz pamiętać z dzisiejszego dnia? To ćwiczenie daje perspektywę i redukuje stres związany z drobiazgami."
+    },
+    "ace": {
+      "title": "Cyfrowe porządki",
+      "text": "Zamknij 5 zbędnych zakładek w przeglądarce. Wyczyść 10 maili. Wyłącz 1 powiadomienie. Cyfrowy porządek to mentalny porządek. Mniej szumu = więcej fokusa."
+    },
+    "acf": {
+      "title": "Zasada 2 minut",
+      "text": "Czy jest coś, co zajmie mniej niż 2 minuty? Zrób to teraz. Odpowiedz na maila, odłóż kubek, wyrzuć śmieci. Małe zwycięstwa napędzają motywację."
+    },
+    "acg": {
+      "title": "Audyt postawy",
+      "text": "Sprawdź: czy ekran jest na wysokości oczu? Czy stopy dotykają podłogi? Czy nadgarstki są proste? Poświęć 3 minuty na kalibrację stanowiska pracy."
+    },
+    "ach": {
+      "title": "Przerwa zapachowa",
+      "text": "Powąchaj kawę, olejek eteryczny, krem do rąk — cokolwiek przyjemnego. Zmysł węchu jest bezpośrednio połączony z ośrodkami emocji i pamięci w mózgu."
+    },
+    "aci": {
+      "title": "Obserwowanie chmur",
+      "text": "Jeśli masz okno — popatrz na chmury przez 3 minuty. To naturalna forma medytacji. Chmury się zmieniają, myśli płyną, napięcie ustępuje. Jak reboot dla głowy."
     }
+  },
+  "ui": {
+    "loading": "Ładowanie Pauza…",
+    "preview": {
+      "status": "Podgląd",
+      "detail": "Podgląd w przeglądarce",
+      "action": "Tryb podglądu aktywny."
+    },
+    "title": "Pauza",
+    "heroHeadline": "Utrzymuj rytm pracy w spokojnym interfejsie",
+    "heroSubtitle": "Najważniejsze ustawienia z przodu, zaawansowane opcje z tyłu.",
+    "settingsCategories": "Kategorie ustawień",
+    "settingsCategoriesHint": "Zmień kategorię po lewej, przeglądaj ustawienia po prawej.",
+    "currentCategory": "Bieżąca kategoria",
+    "overview": "Przegląd",
+    "overviewHint": "Podsumowanie statusu, ostatnie akcje i szybki dostęp.",
+    "liveOverview": "Podgląd na żywo",
+    "liveOverviewHint": "Bieżący rytm, status aplikacji i okno przerwy na pierwszy rzut oka.",
+    "quickActions": "Szybkie akcje",
+    "quickActionsHint": "Te akcje wpływają bezpośrednio na bieżący rytm.",
+    "savePanel": "Zapisz zmiany",
+    "savePanelHint": "Zmiany zostaną zastosowane dopiero po zapisaniu.",
+    "nextBreakLabel": "Następna przerwa",
+    "currentBreakLabel": "Bieżąca przerwa",
+    "lastActionLabel": "Ostatnia akcja",
+    "runtimeLabel": "Środowisko",
+    "platformLabel": "Platforma",
+    "versionLabel": "Wersja",
+    "breakFeelLabel": "Styl przerwy",
+    "placementLabel": "Pozycja okna",
+    "pendingChanges": "Niezapisane zmiany",
+    "synced": "Zsynchronizowano",
+    "saving": "Zapisywanie…",
+    "allSet": "Gotowe",
+    "noCurrentBreak": "Brak aktywnej przerwy",
+    "liveSignals": "Sygnały na żywo",
+    "general": "Ogólne",
+    "preferences": "Preferencje",
+    "currentStatus": "Bieżący status",
+    "language": "Język",
+    "languageChinese": "Chiński uproszczony",
+    "languageEnglish": "Angielski",
+    "launchOnLogin": "Uruchom przy logowaniu",
+    "enabled": "Włączone",
+    "disabled": "Wyłączone",
+    "schedule": "Rytm",
+    "interruptions": "Przypomnienia i przerywniki",
+    "sectionScheduleHint": "Tylko ustawienia rytmu, które dostosujesz na co dzień.",
+    "microbreaks": "Mikroprzerwy",
+    "microbreaksHint": "Krótkie przerywniki podczas pracy.",
+    "longBreaks": "Przerwy",
+    "longBreaksHint": "Pełna przerwa ekranowa po kilku cyklach.",
+    "interval": "Interwał",
+    "every": "Częstotliwość",
+    "durationLabel": "Czas trwania",
+    "behavior": "Zachowanie",
+    "allowPostpone": "Pozwól na odroczenie",
+    "signals": "Sygnały",
+    "sectionSignalsHint": "Pozwól Pauza inteligentniej decydować, kiedy pokazywać przypomnienia.",
+    "naturalBreaks": "Naturalne przerwy",
+    "naturalBreaksHint": "Automatyczny reset po wystarczająco długiej nieobecności.",
+    "resetAfter": "Resetuj po",
+    "dnd": "Nie przeszkadzać",
+    "dndHint": "Wstrzymaj przypomnienia, gdy ten tryb jest aktywny",
+    "sectionSurfaceHint": "Kontroluj intensywność przerywnika i pozycję okna przerwy.",
+    "sectionGeneralHint": "Kilka globalnych preferencji. Domyślnie minimalistyczne.",
+    "notificationsCategory": "Przypomnienia i odraczanie",
+    "notificationsCategoryHint": "Dźwięk przed przerwą. Opcje odraczania tutaj.",
+    "surfaceCategory": "Przerywnik i wyświetlanie",
+    "surfaceCategoryHint": "Intensywność, pozycja i surowość okna przerwy.",
+    "smartPause": "Inteligentna pauza",
+    "smartPauseHint": "Pauza najpierw szuka oczywistego momentu i stopniowo obniża próg.",
+    "generalAndShortcuts": "Ogólne i skróty",
+    "generalAndShortcutsHint": "Zarządzaj językiem, autostartem i globalnymi skrótami klawiszowymi.",
+    "advanced": "Zaawansowane",
+    "sectionAdvancedHint": "Więcej kontroli, opcji kompatybilności i skrótów.",
+    "appExclusions": "Wyjątki aplikacji",
+    "appExclusionsHint": "Aplikacje, dla których przypomnienia są wstrzymywane lub wznawiane.",
+    "appExclusionsEnable": "Włącz",
+    "appRulePause": "Wstrzymaj przy dopasowaniu",
+    "appRuleResume": "Wznów tylko przy dopasowaniu",
+    "pause30": "Pauza 30 min",
+    "focus45": "Fokus 45 min",
+    "resume": "Wznów",
+    "clearFocus": "Zakończ fokus",
+    "save": "Zapisz",
+    "revert": "Cofnij",
+    "defaults": "Wartości domyślne",
+    "preBreakNotifications": "Dźwięk ostrzegawczy",
+    "beforeLabel": "Przed",
+    "postpone": "Odrocz",
+    "scheduleControl": "Kontrola rytmu",
+    "resetScheduleHint": "Oblicz ponownie następne przerwy od teraz.",
+    "postponeCategoryHint": "Ustaw czas i limit odroczeń oddzielnie.",
+    "limitLabel": "Limit",
+    "breakSurface": "Okno przerwy",
+    "breakDisplayMode": "Tryb wyświetlania",
+    "breakBackdrop": "Motyw tła",
+    "breakBackdropHint": "Wybierz klimatyczne tło dla okna przerwy.",
+    "breakBackdropPaper": "Papier",
+    "breakBackdropDawn": "Świt",
+    "breakBackdropForest": "Las",
+    "breakBackdropNight": "Noc",
+    "breakBackdropCustom": "Własne tło",
+    "customWallpaper": "Własne tło",
+    "customWallpaperHint": "Prześlij lokalne zdjęcie jako tło okna przerwy.",
+    "customWallpaperChoose": "Wybierz obraz",
+    "customWallpaperReplace": "Zmień obraz",
+    "customWallpaperRemove": "Usuń",
+    "customWallpaperEmpty": "Nie wybrano własnego tła",
+    "customWallpaperEmptyHint": "Bez obrazu zostanie użyty domyślny motyw.",
+    "customWallpaperReady": "Obraz zostanie skompresowany i zapisany lokalnie jako tło przerwy.",
+    "breakIdeas": "Porady na przerwie",
+    "breakIdeasHint": "Wyświetl krótką poradę podczas każdej przerwy.",
+    "breakSounds": "Dźwięki przerwy",
+    "breakSoundsHint": "Dźwięk ostrzegawczy przed przerwą i dźwięk końcowy po niej.",
+    "microbreakStartSound": "Ostrzeżenie o mikroprzerwie",
+    "microbreakEndSound": "Koniec mikroprzerwy",
+    "longBreakStartSound": "Ostrzeżenie o przerwie",
+    "longBreakEndSound": "Koniec przerwy",
+    "breakSoundVolume": "Głośność",
+    "breakSoundSilence": "Cisza",
+    "breakSoundCrystalGlass": "Kryształowy kieliszek",
+    "breakSoundWindChime": "Dzwonki wietrzne",
+    "breakSoundTicToc": "Tik-tak",
+    "breakSoundReverie": "Zaduma",
+    "reminderMode": "Tryb przypomnienia",
+    "reminderModeHint": "Inteligentny szuka naturalnego momentu; Wymuszony przerywa natychmiast.",
+    "reminderModeSmart": "Inteligentny",
+    "reminderModeForced": "Wymuszony",
+    "window": "Okno",
+    "fullscreen": "Pełny ekran",
+    "promptStyleGentle": "Delikatny",
+    "promptStyleBalanced": "Wyważony",
+    "promptStyleImmersive": "Immersyjny",
+    "allScreens": "Wszystkie ekrany",
+    "screenPrimary": "Ekran główny",
+    "screenCursor": "Ekran z kursorem",
+    "showTimeToBreakInTray": "Pokaż następną przerwę w zasobniku",
+    "currentTimeInBreaks": "Pokaż czas w oknie przerwy",
+    "currentTimeInBreaksHint": "Czas systemowy w prawym górnym rogu okna przerwy.",
+    "strictModes": "Tryby ścisłe",
+    "strictModesHint": "Kontroluj, czy przerwy można pominąć i czy wymagane jest ręczne potwierdzenie.",
+    "microbreakStrict": "Ścisła mikroprzerwa",
+    "longBreakStrict": "Ścisła przerwa",
+    "manualFinish": "Zakończ ręcznie po timerze",
+    "showTrayMenuInStrictMode": "Menu zasobnika w trybie ścisłym",
+    "shortcuts": "Skróty klawiszowe",
+    "shortcutsHint": "Puste = niezarejestrowane. Format np.: CmdOrCtrl+Shift+P",
+    "shortcutReveal": "Otwórz ustawienia",
+    "shortcutFocus45": "Fokus 45 min",
+    "shortcutPauseToggle": "Przełącz pauzę",
+    "shortcutPause30": "Pauza 30 min",
+    "shortcutPause60": "Pauza 1 godz.",
+    "shortcutPause120": "Pauza 2 godz.",
+    "shortcutPause300": "Pauza 5 godz.",
+    "shortcutSkipScheduled": "Przejdź do następnej zaplanowanej przerwy",
+    "shortcutSkipMicrobreak": "Przejdź do mikroprzerwy",
+    "shortcutSkipLongBreak": "Przejdź do przerwy",
+    "shortcutReset": "Resetuj rytm",
+    "suffix": {
+      "secondsLong": "s",
+      "secondsBefore": "s przed",
+      "minutesApart": "min co",
+      "cycles": "cykle",
+      "minutesLong": "min",
+      "minutesShortPostpone": "min",
+      "minutesLongPostpone": "min",
+      "minutesAway": "min",
+      "minutes": "min",
+      "times": "×"
+    },
+    "status": {
+      "noBreakScheduled": "Brak zaplanowanej przerwy",
+      "microbreak": "Mikroprzerwa",
+      "longBreak": "Przerwa",
+      "nextBreak": "{{label}} za {{duration}}",
+      "focus": "Fokus {{duration}}",
+      "pause": "Wstrzymano {{duration}}",
+      "pauseForever": "Wstrzymano na czas nieokreślony",
+      "blockedBy": "Wstrzymano przez {{match}}",
+      "appRuleActive": "Reguła aplikacji aktywna",
+      "dndActive": "Nie przeszkadzać aktywne"
+    },
+    "error": {
+      "loadState": "Nie udało się załadować stanu Pauza"
+    },
+    "breakCopy": {
+      "clearedDetail": "Brak aktywnej przerwy.",
+      "manualAwaiting": "Czas minął. Zakończ tę przerwę przed powrotem do pracy.",
+      "awaitingFinish": "Oczekiwanie na zakończenie",
+      "actions": {
+        "resumeWork": "Wróć do pracy",
+        "done": "Gotowe",
+        "later": "Później",
+        "skip": "Pomiń"
+      },
+      "defaultPrompt": {
+        "microbreak": "Wstań, rozluźnij ramiona i szyję, popatrz w dal.",
+        "longBreak": "Odejdź od biurka na kilka minut, aby ciało i umysł mogły odpocząć."
+      }
+    },
+    "previewAction": {
+      "save": "Podgląd: ustawienia zaktualizowane.",
+      "pause": "Podgląd: wstrzymano 30 min.",
+      "pauseForever": "Podgląd: wstrzymano na czas nieokreślony.",
+      "focus": "Podgląd: fokus włączony.",
+      "focusCleared": "Podgląd: fokus zakończony.",
+      "resume": "Podgląd: wznowiono.",
+      "reset": "Podgląd: rytm zresetowany.",
+      "autostartOn": "Podgląd: autostart włączony.",
+      "autostartOff": "Podgląd: autostart wyłączony.",
+      "done": "Podgląd: przerwa zakończona.",
+      "later": "Podgląd: przerwa odroczona.",
+      "skip": "Podgląd: przerwa pominięta."
+    },
+    "preBreakSoundHint": "Delikatny dźwięk przed końcem timera, abyś mógł dokończyć zadanie.",
+    "previewSound": "Odsłuchaj",
+    "appExclusionsSearch": "Szukaj wśród uruchomionych aplikacji",
+    "appExclusionsSearchPlaceholder": "Nazwa aplikacji…",
+    "appExclusionsSearchLoading": "Ładowanie…",
+    "appExclusionsSearchEmpty": "Brak wyników",
+    "appExclusionsManualHint": "Lub wpisz ręcznie nazwę procesu (jedna na linię)",
+    "appExclusionsAdd": "Kliknij, aby dodać do listy wyjątków"
   }
 }

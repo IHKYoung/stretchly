@@ -104,7 +104,7 @@
       "ourWebsite": "besök vår hemsida",
       "dot": ".",
       "developedBy": "Utvecklad av",
-      "janH": "Clarke Young",
+      "clarkeY": "Clarke Young",
       "designedBy": "Ikon- och användargränssnittsdesign av Colin Shanley",
       "checkNewVersion": "Sök automatiskt efter appuppdateringar"
     },
@@ -220,303 +220,747 @@
   },
   "miniBreakIdeas": {
     "aaa": {
-      "text": "Gå och ta ett glas vatten."
+      "text": "Hämta ett glas vatten."
     },
     "aab": {
-      "text": "Titta långsamt hela vägen åt vänster, sedan höger."
+      "text": "Din vattenflaska dömer dig. Ta en klunk."
     },
     "aac": {
-      "text": "Titta sakta hela vägen upp, sedan ner."
+      "text": "Hydreringskoll: när drack du senast vatten?"
     },
     "aad": {
-      "text": "Blunda och ta några djupa andetag."
+      "text": "Drick vatten. Kaffe räknas inte."
     },
     "aae": {
-      "text": "Blunda och slappna av."
-    },
-    "aaj": {
-      "text": "Luta sakta huvud till sida och håll i 5-10 sekunder."
-    },
-    "aak": {
-      "text": "Stå upp från din stol och sträck på dig."
-    },
-    "aal": {
-      "text": "Fokusera om dina ögon på ett föremål minst 20 meter bort."
-    },
-    "aan": {
-      "text": "Ta en stund att le över att vara vid liv."
-    },
-    "aao": {
-      "text": "En verkligt ergonomisk arbetsstation är en som du regelbundet trycker ifrån."
-    },
-    "aap": {
-      "text": "Blunda och räkna dina andetag."
-    },
-    "aaq": {
-      "text": "Blunda och namnge det du hör."
-    },
-    "aam": {
-      "text": "Ta en stund att tänka på något du uppskattar."
-    },
-    "aax": {
-      "text": "Om du behöver hjälp, be om det."
-    },
-    "aay": {
-      "text": "Gör en sak i taget."
-    },
-    "aaw": {
-      "text": "Fokusera var 20:e minut i 20 sekunder på ett föremål på 20 fots avstånd."
-    },
-    "aaz": {
-      "text": "Används din uppmärksamhet klokt?"
-    },
-    "abj": {
-      "text": "Stå upp och luta långsamt huvudet mot axeln med samma hand tills du känner en sträckning."
-    },
-    "abk": {
-      "text": "Stå upp med armarna vid din sida. Pressa ihop skulderbladen och håll."
+      "text": "Fyll på vattenflaskan. Din kropp tackar dig."
     },
     "aaf": {
-      "text": "Sträck på benen."
+      "text": "Vatten är livets dryck. Ta en klunk nu."
     },
     "aag": {
-      "text": "Sträck på dina armar."
+      "text": "Påminnelse: du är mest vatten. Fyll på."
     },
     "aah": {
-      "text": "Är din sittställning korrekt?"
+      "text": "En klunk vatten gör underverk. Testa."
     },
     "aai": {
-      "text": "Vrid sakta huvud till sida och håll i 10 sekunder."
+      "text": "Titta bort från skärmen i 20 sekunder."
+    },
+    "aaj": {
+      "text": "Följ 20-20-20-regeln: titta på något 20 meter bort i 20 sekunder."
+    },
+    "aak": {
+      "text": "Blunda och slappna av i ögonen."
+    },
+    "aal": {
+      "text": "Rulla ögonen i cirklar. Ingen dömer dig."
+    },
+    "aam": {
+      "text": "Fokusera på något långt borta genom fönstret."
+    },
+    "aan": {
+      "text": "Blinka medvetet tio gånger. Dina ögon behöver det."
+    },
+    "aao": {
+      "text": "Gnugga handflatorna varma och lägg dem över ögonen."
+    },
+    "aap": {
+      "text": "Titta upp från skärmen och andas djupt."
+    },
+    "aaq": {
+      "text": "Ta tre djupa andetag. In genom näsan, ut genom munnen."
     },
     "aar": {
-      "text": "Placera fingertopparna på dina axlar. Rulla axlarna framåt i 10 sekunder, sedan bakåt."
+      "text": "Andas in i fyra sekunder, håll i fyra, andas ut i fyra."
     },
     "aas": {
-      "text": "Lyft din högra arm, sträck den över huvudet till vänster och håll i 10 sekunder. Upprepa på andra sidan."
+      "text": "Slappna av i axlarna medan du andas ut."
     },
     "aat": {
-      "text": "Med din högra hand, ta tag i varje finger på din vänstra hand i tur och ordning och kläm. Upprepa på andra sidan."
+      "text": "Andas med magen. Känn hur den höjer sig."
     },
     "aau": {
-      "text": "Stå upp och gör ett utfall. Håll i 10 sekunder och gör sedan det andra benet."
+      "text": "En lång utandning aktiverar parasympatiska nervsystemet."
     },
     "aav": {
-      "text": "Blunda och märk helt enkelt vad som än uppstår i det aktuella ögonblicket, utan att döma."
+      "text": "Andas ut dubbelt så långsamt som du andas in."
+    },
+    "aaw": {
+      "text": "Slut ögonen och ta fem medvetna andetag."
+    },
+    "aax": {
+      "text": "Andas lugnt. Ingenting är så bråttom som det känns."
+    },
+    "aay": {
+      "text": "Sitt upp rakt. Tack."
+    },
+    "aaz": {
+      "text": "Räta upp ryggen. Du sitter ihopsjunken igen."
     },
     "aba": {
-      "text": "Ändra din sittställning."
-    },
-    "abc": {
-      "text": "Med slutna ögon lyfter du långsamt och försiktigt ögonen mot taket och tillbaka ner till golvet."
-    },
-    "abd": {
-      "text": "Med slutna ögon, flytta långsamt och försiktigt dina ögon till vänster, sedan långsamt till höger."
-    },
-    "abe": {
-      "text": "Skaka ut händerna för att få lite lättnad."
-    },
-    "abf": {
-      "text": "En i taget, rör vid spetsen av varje finger mot toppen av tummen så att de får en O-form."
-    },
-    "abg": {
-      "text": "Gör en knytnäve och skjut sedan upp fingrarna tills de pekar mot taket, som om du säger åt någon att sluta."
-    },
-    "abh": {
-      "text": "Gör en knytnäve och lufta sedan ut fingrarna och sträck ut dem så långt du kan."
-    },
-    "abi": {
-      "text": "Sitt högt med armarna hängande längs dina sidor och vrid långsamt nacken i en riktning i en stor cirkel."
-    },
-    "abl": {
-      "text": "Stå upp med armarna höjda längs axlarna. Flytta händerna något bakom ryggen, håll i en sekund och gå tillbaka."
+      "text": "Justera stolen så fötterna vilar platt på golvet."
     },
     "abb": {
-      "text": "Utsätt dina ögon för naturligt ljus."
+      "text": "Axlarna ner från öronen. Slappna av."
     },
-    "abo": {
-      "text": "Stå med fötterna axelbrett isär, sänk ner kroppen som om du satt tillbaka i en stol och ställ dig sedan upp igen. Upprepa flera gånger."
+    "abc": {
+      "text": "Tänk dig en tråd som drar dig uppåt från hjässan."
     },
-    "abr": {
-      "text": "Sitt på kanten av din stol och sträck ut ett ben rakt ut framför dig, håll i 10-15 sekunder. Upprepa med det andra benet."
+    "abd": {
+      "text": "Kontrollera din hållning. Lagom rak, inte stel."
     },
-    "abs": {
-      "text": "Stå vänd mot en vägg, lägg en fot bakåt och den andra foten framåt och luta dig sedan mot väggen. Upprepa med det andra benet."
+    "abe": {
+      "text": "Skjut tillbaka axlarna och öppna bröstkorgen."
     },
-    "abv": {
-      "text": "Sträck ena armen över bröstet, håll i armbågen med den andra handen och dra den försiktigt in mot bröstet. Upprepa med den andra armen."
+    "abf": {
+      "text": "Sätt båda fötterna på golvet. Känn kontakten."
     },
-    "abw": {
-      "text": "Stå upp, sätt en fot på ett närliggande föremål, som en stol eller trappall, och sträck dig ner för att röra vid tårna. Upprepa med det andra benet."
+    "abg": {
+      "text": "Luta huvudet åt sidan och sträck nacken."
+    },
+    "abh": {
+      "text": "Rulla huvudet långsamt i en halvcirkel."
+    },
+    "abi": {
+      "text": "Sänk hakan mot bröstet och känn sträckningen i nacken."
+    },
+    "abj": {
+      "text": "Titta långsamt åt vänster, sedan åt höger."
+    },
+    "abk": {
+      "text": "Rotera huvudet i mjuka cirklar. Nacken tackar dig."
+    },
+    "abl": {
+      "text": "Massera nacken med fingrarna i trettio sekunder."
     },
     "abm": {
-      "text": "Sitt på kanten av din stol, vrid bålen åt sidan och håll i 10-15 sekunder. Upprepa på andra sidan."
+      "text": "Dra axlarna upp mot öronen, håll, och släpp."
     },
     "abn": {
-      "text": "Stå upp och sätt en fot på ett närliggande föremål, som en stol eller pall. Håll ditt knä böjt och håll i 10-15 sekunder. Upprepa med den andra foten."
+      "text": "Rulla axlarna bakåt fem gånger."
+    },
+    "abo": {
+      "text": "Rulla axlarna framåt fem gånger."
     },
     "abp": {
-      "text": "Stå med din rygg och dina händer på en vägg, flytta sedan långsamt armarna upp och ner som om du gjorde snöänglar."
+      "text": "Dra ihop skulderbladen som om du klämmer en penna."
     },
     "abq": {
-      "text": "Stå vänd mot en vägg och placera händerna på den, gör sedan flera armhävningar."
+      "text": "Sträck ut ena armen och dra den mot bröstet."
+    },
+    "abr": {
+      "text": "Skaka loss axlarna. Släpp spänningen."
+    },
+    "abs": {
+      "text": "Sträck ut fingrarna brett och knyt sedan nävarna."
     },
     "abt": {
-      "text": "Håll en arm rakt upp och använd sedan den andra armen för att försiktigt trycka armbågen på den första armen mot ditt huvud. Håll i 10-15 sekunder. Upprepa med den andra armen."
+      "text": "Rotera handlederna i cirklar åt båda hållen."
     },
     "abu": {
-      "text": "Luta huvudet åt ena sidan, sedan åt andra sidan och luta det sedan försiktigt framåt och bakåt."
+      "text": "Skaka händerna som om du skakar av vatten."
+    },
+    "abv": {
+      "text": "Tryck handflatorna mot varandra i tio sekunder."
+    },
+    "abw": {
+      "text": "Böj handleden uppåt och nedåt med andra handen."
     },
     "abx": {
-      "text": "Stå i en dörröppning och placera en arm på var sida om dörröppningen, luta dig sedan försiktigt framåt tills du känner en sträckning i bröstet."
+      "text": "Trumma fingrarna på bordet som om du spelar piano."
     },
     "aby": {
-      "text": "Sitt på kanten av en stol eller på golvet och placera fotsulorna mot varandra, tryck försiktigt ner med armbågarna för att sträcka ut dina inre lår."
+      "text": "Massera handflatan med tummen på andra handen."
+    },
+    "abz": {
+      "text": "Sträck varje finger individuellt. Visa dem lite kärlek."
+    },
+    "aca": {
+      "text": "Vrid överkroppen åt ena sidan, håll i fem sekunder."
+    },
+    "acb": {
+      "text": "Luta dig bakåt i stolen och sträck ryggen."
+    },
+    "acc": {
+      "text": "Res dig upp och böj dig framåt mot tårna."
+    },
+    "acd": {
+      "text": "Sitt rak och vrid bålen åt varje sida."
+    },
+    "ace": {
+      "text": "Gör kattrygg och sedan ko-rygg i stolen."
+    },
+    "acf": {
+      "text": "Sträck armarna rakt upp och luta åt sidan."
+    },
+    "acg": {
+      "text": "Sträck ut benen under skrivbordet."
+    },
+    "ach": {
+      "text": "Ställ dig upp och gör fem knäböj."
+    },
+    "aci": {
+      "text": "Res dig och gå på stället i trettio sekunder."
+    },
+    "acj": {
+      "text": "Lyft knäna omväxlande medan du sitter."
+    },
+    "ack": {
+      "text": "Ställ dig på tå och ner igen, tio gånger."
+    },
+    "acl": {
+      "text": "Gå en kort runda runt skrivbordet."
+    },
+    "acm": {
+      "text": "Ställ dig upp och sträck hela kroppen."
+    },
+    "acn": {
+      "text": "Gör fem armhävningar mot skrivbordet."
+    },
+    "aco": {
+      "text": "Hoppa på stället fem gånger. Ingen ser dig."
+    },
+    "acp": {
+      "text": "Ställ dig upp och skaka hela kroppen."
+    },
+    "acq": {
+      "text": "Gör en kort promenad till köket och tillbaka."
+    },
+    "acr": {
+      "text": "Ställ dig upp, sträck armarna ovanför huvudet och gäspa stort."
+    },
+    "acs": {
+      "text": "Ta en kort promenad i korridoren."
+    },
+    "act": {
+      "text": "Res dig och gör en stor sträckning som en katt."
+    },
+    "acu": {
+      "text": "Stanna upp och lyssna på tre ljud runt dig."
+    },
+    "acv": {
+      "text": "Känn dina fötter mot golvet. Var närvarande."
+    },
+    "acw": {
+      "text": "Observera ditt andetag utan att ändra det."
+    },
+    "acx": {
+      "text": "Titta ut genom fönstret och bara observera."
+    },
+    "acy": {
+      "text": "Lägg märke till tre saker du kan se just nu."
+    },
+    "acz": {
+      "text": "Ta en medveten paus. Bara trettio sekunder."
+    },
+    "ada": {
+      "text": "Känn temperaturen i rummet. Varm? Kall? Lagom?"
+    },
+    "adb": {
+      "text": "Notera hur din kropp känns just nu, utan att döma."
+    },
+    "adc": {
+      "text": "Dags för fikapaus! Åtminstone en sträckning."
+    },
+    "add": {
+      "text": "Lagom mycket sittande är bäst. Ställ dig upp."
+    },
+    "ade": {
+      "text": "Fredagsmys börjar med en bra hållning."
+    },
+    "adf": {
+      "text": "Du har suttit längre än en IKEA-köresa. Rör på dig."
+    },
+    "adg": {
+      "text": "Även Zlatan tar pauser. Sträck på dig."
+    },
+    "adh": {
+      "text": "Paus som en proffs. Sträck dig som om ingen ser."
+    },
+    "adi": {
+      "text": "Din kontorsstol är inte en soffa. Sitt lagom."
+    },
+    "adj": {
+      "text": "Ta en mikropaus. Det är hygge, fast svenskt."
+    },
+    "adk": {
+      "text": "Sträck dig som om du når efter kanelbullen på översta hyllan."
+    },
+    "adl": {
+      "text": "Dags att röra sig! Ditt tangentbord behöver också vila."
+    },
+    "adm": {
+      "text": "Ge dig själv en applåd. Med sträckta armar."
     }
   },
   "longBreakIdeas": {
-    "aae": {
-      "text": "Att titta på skärmar under lång tid gör att du blinkar mindre, vilket gör att dina ögon exponeras för luften. Blinka snabbt i några sekunder för att fräscha upp tårfilmen och ta bort damm från ögonytan.",
-      "title": "Blinka"
-    },
-    "aad": {
-      "text": "Forskningsstudier tyder på att mindfulness-baserade övningar hjälper till att minska ångest, depression, stress och smärta och hjälper till att förbättra allmän hälsa, mental hälsa och livskvalitet. Är du osäker på hur du ska börja? Det finns många appar som hjälper dig.",
-      "title": "Meditation"
-    },
-    "aal": {
-      "title": "Aktiva möten",
-      "text": "Vad sägs om att flytta möten från konferensrummet till hallen? Att gå förbränner inte bara kalorier utan det kan till och med främja en känsla av samarbete."
-    },
-    "aak": {
-      "text": "Ny forskning visar att sittande under långa perioder bidrar till risken för bland annat metabolt syndrom, hjärtinfarkt och stroke och total dödsrisk. Att ta regelbundna promenadpauser kan hjälpa din cirkulation och motverka några av dessa problem.",
-      "title": "Ämnesomsättning"
-    },
-    "aaq": {
-      "text": "I en studie av friska frivilliga fann NIH-forskare att ta korta pauser, tidigt och ofta, kan hjälpa våra hjärnor att lära sig nya färdigheter.",
-      "title": "Inlärning"
-    },
-    "aas": {
-      "title": "Upprepa",
-      "text": "Har du hittat din Pauza-rutin? Glöm inte att upprepa det mer än en gång för att bättre bekämpa effekterna av långvarigt sittande."
-    },
-    "aat": {
-      "title": "Handled och underarm",
-      "text": "Sträck ut armarna med handflatorna vända mot dig och rotera sedan långsamt händerna fyra gånger medurs, sedan fyra gånger moturs."
-    },
-    "aar": {
-      "title": "Träning",
-      "text": "Bevis tyder på att små mängder regelbunden träning kan ge dramatiska hälsofördelar, inklusive mätbart minskad stress."
-    },
-    "aau": {
-      "title": "Sträckning av ryggen",
-      "text": "Sätt ihop händerna bakom huvudet och lyft dem sedan upp ovanför huvudet och avsluta med handflatorna uppåt."
-    },
-    "aav": {
-      "title": "Mobilisera",
-      "text": "För varje trettio minuters stagnation bör du ha minst en minuts stimulering."
-    },
-    "aaz": {
-      "title": "Skapa konst",
-      "text": "Konstterapi är känt för att ha stora mentala hälsofördelar, särskilt när det kommer till stresshantering. Vad sägs om att skriva en snabb dikt, ta en bild eller måla något litet?"
-    },
-    "aaw": {
-      "title": "7 minuters träningspass",
-      "text": "Det här träningspasset innehåller en träningsrutin för hela kroppen på en bråkdel av tiden. Men som med all träning, var försiktig. Det finns många appar för att komma igång."
-    },
-    "aax": {
-      "title": "Puls",
-      "text": "Höj din puls till 120 slag per minut under 20 minuter i rad fyra eller fem gånger i veckan och gör allt du tycker om. Att regelbundet höja din puls resulterar i förbättrad kardiovaskulär hälsa."
-    },
-    "aay": {
-      "title": "Ta trappan",
-      "text": "Studier har visat att trappor, som anses vara intensiv fysisk aktivitet, bränner fler kalorier per minut än att jogga."
-    },
-    "abd": {
-      "title": "Gapande",
-      "text": "Gäspning kan vara väldigt användbart, eftersom det producerar tårar för att fukta och smörja ögonen."
-    },
-    "abe": {
-      "title": "Fokusbyte",
-      "text": "Håll ett finger nära ögat och fokusera på det. Flytta långsamt bort fingret, fokusera långt på avstånd och sedan tillbaka till fingret. För tillbaka fingret och fokusera på något långt borta."
-    },
-    "abc": {
-      "text": "Om du åker kollektivt regelbundet kan du stå istället för att sitta. Om det är möjligt, försök att ersätta så många av dina dagliga resor som möjligt med promenader eller cykling.",
-      "title": "Kollektivtrafik"
-    },
     "aaa": {
-      "title": "Inte ensam",
-      "text": "Tycker du att det är svårt att ta en paus ensam? Försök att göra det med en kollega. Förutom att göra det enklare att hålla sig till pauser kommer du att ha en chans att lära känna dem bättre. Att ta pauser tillsammans ökar produktiviteten."
+      "title": "Bättre tillsammans",
+      "text": "Svårt att ta pauser ensam? Testa att ta rast med en kollega. Ni håller varandra ansvariga och kan klaga på deadlines tillsammans. Forskning visar att sociala pauser ökar produktiviteten."
     },
     "aab": {
-      "title": "Gå bort",
-      "text": "Har du någonsin lagt märke till hur din hjärna kan ta reda på saker själv? Allt som krävs är att gå bort från datorn och ta en paus för att tänka på något som inte har med det att göra."
+      "title": "Gå ifrån",
+      "text": "Har du märkt att dina bästa idéer kommer i duschen? Det beror på att hjärnan löser problem i bakgrunden. Gå bort från skärmen och tänk på något helt annat."
     },
     "aac": {
-      "text": "Vila är en nyckelkomponent för att säkerställa prestationsförmågan hos muskuloskeletala systemet. Frekventa pauser kan minska varaktigheten av en uppgift och hjälpa till att minska exponeringen för ergonomisk skaderisk.",
-      "title": "Mikropauser"
+      "title": "Mikropauser",
+      "text": "Korta, frekventa pauser minskar belastningsskador och håller rörelseapparaten frisk. Se dem som underhåll för den mänskliga maskinen."
+    },
+    "aad": {
+      "title": "Meditation",
+      "text": "Meditation handlar inte om att tömma tankarna. Det handlar om att märka dem utan att fastna. Börja med fem minuter och fokusera på andningen."
+    },
+    "aae": {
+      "title": "Blinka mer",
+      "text": "Vi blinkar 66 procent mindre vid en skärm. Det leder till torra, trötta ögon. Blinka medvetet under pausen och överväg ögondroppar om det behövs."
     },
     "aaf": {
-      "title": "Ergonomi",
-      "text": "Felaktig höjd och vinkel på tangentbordet, musen, skärmen eller arbetsytan kan orsaka hälsoproblem. Ta dig tid att läsa om skrivbordsergonomi."
+      "title": "Skrivbordsergonomi",
+      "text": "Skärmens överkant ska vara i ögonhöjd, armarna i nittio graders vinkel. En liten justering nu kan bespara dig månader av värk senare."
     },
     "aag": {
-      "title": "Flytta",
-      "text": "Det finns många sätt du kan träna på ditt kontor. Prova att marschera på plats eller göra armhävningar på skrivbordet."
+      "title": "Kontorsträning",
+      "text": "Gör armhävningar mot skrivbordet, knäböj vid stolen eller utfall i korridoren. Ingen utrustning behövs, bara viljan att se lite löjlig ut."
     },
     "aah": {
-      "title": "Ändra",
-      "text": "Har du en stabilitetsboll eller stående skrivbord? Överväg att byta ut din skrivbordsstol med dem ett tag."
+      "title": "Byt uppgift",
+      "text": "Att byta uppgift eller arbetsyta ger hjärnan en mjuk omstart. Flytta till ett annat rum eller byt till en annan typ av uppgift."
     },
     "aai": {
-      "title": "Observera",
-      "text": "Dagdrömmer du eller har du svårt att fokusera? Det är ett tecken på att du behöver ta en paus."
-    },
-    "aam": {
-      "title": "Frukt",
-      "text": "Ta dig tid och ät lite frukt. Långsamt. Lägg märke till smaken, konsistensen, friskheten."
-    },
-    "aan": {
-      "title": "Badrum",
-      "text": "Gå till badrummet längst bort i arbetsplatsen när du går till toaletten."
-    },
-    "aao": {
-      "text": "Ska du på fikapaus? Överväg att ta en 5 minuters promenad varje gång du går för en.",
-      "title": "Fika"
-    },
-    "aap": {
-      "title": "Kollegor",
-      "text": "Skicka inte e-post eller meddelanden till kontorskollegor, gå till deras skrivbord för att kommunicera med dem."
-    },
-    "aba": {
-      "text": "Ett rent utrymme hjälper ditt fokus på jobbet och är ofta kopplat till positiva känslor som lycka.",
-      "title": "Rensa"
-    },
-    "abb": {
-      "title": "Lunch ute",
-      "text": "Naturen är kopplad till positiva känslor och minskad stress och ångest. När det är möjligt, försök att ta din dagliga lunchrast utomhus, omgiven av lite grönska."
-    },
-    "abg": {
-      "title": "Klämningar i händerna",
-      "text": "Kläm ihop ett par strumpor eller en mjuk gummiboll, håll i 5 sekunder. Upprepa hela processen några gånger."
-    },
-    "abh": {
-      "title": "Långsam andning",
-      "text": "Ny forskning tyder på potential för användning av kontrollerade långsamma andningstekniker som ett sätt att optimera fysiologiska parametrar som verkar vara förknippade med hälsa och livslängd."
-    },
-    "abf": {
-      "text": "När du sitter, spänn armbågarna på skrivbordet och nära skrivbordskanten. Låt din vikt falla framåt och lägg händerna över ögonen. Blunda och andas långsamt genom näsan och håll i några sekunder. Fortsätt djupa andetag.",
-      "title": "Gömma i handflatan"
-    },
-    "abi": {
-      "title": "Fantasifull visualisering",
-      "text": "Blunda och föreställ dig att du befinner dig på en fridfull och lugnande plats, som en strand eller en skog, med fokus på sevärdheterna, ljuden och förnimmelserna i den miljön."
+      "title": "Läs kroppens signaler",
+      "text": "Huvudvärk, stela axlar, grumlig syn – kroppen ger dig signaler. Lyssna innan det blir kroniskt."
     },
     "aaj": {
-      "title": "Teknologi",
-      "text": "Vad sägs om att ta en promenad utan teknologi?"
+      "title": "Teknikfri promenad",
+      "text": "Lämna telefonen och gå en kort promenad. Bara tio minuter utan skärm kan sänka stressnivåerna märkbart."
+    },
+    "aak": {
+      "title": "Sittproblemet",
+      "text": "Forskning visar att långvarigt sittande ökar risken för hjärtsjukdom, diabetes och ryggproblem. Ställ dig upp regelbundet – din framtida jag tackar dig."
+    },
+    "aal": {
+      "title": "Promenadmöten",
+      "text": "Nästa gång du har ett samtal, testa att gå. Promenadmöten ökar kreativiteten och gör samtalet mer avslappnat."
+    },
+    "aam": {
+      "title": "Medvetet mellanmål",
+      "text": "Ät inte framför skärmen. Ta din frukt eller nötter, sätt dig någon annanstans och smaka faktiskt på maten."
+    },
+    "aan": {
+      "title": "Kaffepromenad",
+      "text": "Istället för att dricka kaffet vid skrivbordet, gå en runda med koppen. Rörelse plus koffein är en vinnande kombination."
+    },
+    "aao": {
+      "title": "Hjärnan och pauser",
+      "text": "Hjärnan bearbetar och konsoliderar information under vila. Pauser gör dig inte lat – de gör dig smartare."
+    },
+    "aap": {
+      "title": "Rör dig lite, vinn mycket",
+      "text": "Bara två minuters rörelse per timme kan motverka effekterna av långvarigt sittande. Det behöver inte vara ett träningspass."
+    },
+    "aaq": {
+      "title": "Stretchrutin",
+      "text": "Följ en enkel stretchrutin: nacke, axlar, rygg, höfter, ben. Fem minuter kan lösa upp timmar av spänning."
+    },
+    "aar": {
+      "title": "Handledsrotationer",
+      "text": "Rotera handlederna i cirklar, tio gånger åt varje håll. Sedan spreta fingrarna och knyt nävarna omväxlande. Perfekt mot musarm."
+    },
+    "aas": {
+      "title": "Sträck uppåt",
+      "text": "Ställ dig upp, sträck armarna mot taket och stå på tå. Håll i fem sekunder. Känn hur ryggraden sträcks ut."
+    },
+    "aat": {
+      "title": "30/1-regeln",
+      "text": "Var trettionde minut, rör dig i minst en minut. Ställ en timer. Det är en liten investering med stor avkastning."
+    },
+    "aau": {
+      "title": "7-minutersträning",
+      "text": "Följ en vetenskapligt beprövad sjuminutersträning. Tolv övningar, trettio sekunder vardera. Allt du behöver är en stol och en vägg."
+    },
+    "aav": {
+      "title": "Höj pulsen",
+      "text": "Några minuters snabb rörelse – hopp, armhävningar, löpning på stället – ökar blodflödet och skärper fokus."
+    },
+    "aaw": {
+      "title": "Ta trapporna",
+      "text": "Välj trapporna istället för hissen. Det är gratis träning som dessutom sparar tid i väntan på hissen."
+    },
+    "aax": {
+      "title": "Skapa något",
+      "text": "Rita, skriv, vik papper. Kreativa pauser aktiverar andra delar av hjärnan och ger analytiska kretsar en chans att vila."
+    },
+    "aay": {
+      "title": "Rensa skrivbordet",
+      "text": "Ett rent skrivbord är som en ren tanke. Ta fem minuter att organisera, slänga skräp och skapa ordning."
+    },
+    "aaz": {
+      "title": "Ät utomhus",
+      "text": "Om vädret tillåter, ta lunchen utomhus. Dagsljus, frisk luft och naturliga vyer minskar stress och förbättrar humöret."
+    },
+    "aba": {
+      "title": "Gäspningens kraft",
+      "text": "Gäspning kyler ner hjärnan och ökar vakenhet. Framkalla en gäspning medvetet – det är legitimt hälsosamt."
+    },
+    "abb": {
+      "title": "Fokusväxling",
+      "text": "Titta på ett föremål nära dig, sedan på något långt bort. Upprepa tio gånger. Det tränar ögats fokuseringsförmåga."
+    },
+    "abc": {
+      "title": "Ögonpalming",
+      "text": "Gnugga handflatorna varma och kuppa dem över ögonen i en minut. Mörkret och värmen lugnar ögonmusklerna."
+    },
+    "abd": {
+      "title": "Kläm på något",
+      "text": "En stressboll eller liknande aktiverar handmusklerna och kan sänka spänning i hela överkroppen. Kläm och släpp rytmiskt."
+    },
+    "abe": {
+      "title": "Långsam andning",
+      "text": "Sakta ner andningen till sex andetag per minut. Det aktiverar lugn-och-ro-systemet och sänker blodtrycket."
+    },
+    "abf": {
+      "title": "Visualisering",
+      "text": "Blunda och föreställ dig en plats där du känner dig lugn. Havet, skogen, fjällen – var som helst. Stanna där i två minuter."
+    },
+    "abg": {
+      "title": "5-4-3-2-1-grounding",
+      "text": "Fem saker du ser, fyra du kan röra, tre du hör, två du luktar, en du smakar. Jordningstekniken tar dig tillbaka till nuet."
+    },
+    "abh": {
+      "title": "Powernap-vetenskap",
+      "text": "En tupplur på tio till tjugo minuter förbättrar alerthet och prestation utan att ge groggighet. Ställ ett alarm och vila."
+    },
+    "abi": {
+      "title": "Pomodoro-reset",
+      "text": "Pomodorotekniken: tjugofem minuter fokus, fem minuters paus. Var fjärde runda tar du en längre paus. Strukturerade pauser ökar uthålligheten."
     },
     "abj": {
-      "title": "Överväldigad?",
-      "text": "Prova 5-4-3-2-1 jordningstekniken: Identifiera 5 saker du kan se, 4 saker du kan röra vid, 3 saker du kan höra, 2 saker du kan lukta och 1 sak du kan smaka."
+      "title": "Klotterpaus",
+      "text": "Klottra fritt i några minuter. Det stimulerar kreativiteten och hjälper hjärnan att bearbeta information. Inget konstnärskap krävs."
+    },
+    "abk": {
+      "title": "En-låt-paus",
+      "text": "Sätt på din favoritlåt och gör inget annat. Lyssna aktivt. Musik sänker kortisol och höjer dopamin."
+    },
+    "abl": {
+      "title": "Tacksamhetsstund",
+      "text": "Skriv ner tre saker du är tacksam för just nu. Det tar trettio sekunder och skiftar hjärnans fokus till det positiva."
+    },
+    "abm": {
+      "title": "Kallvattenreset",
+      "text": "Skölj händerna och ansiktet med kallt vatten. Det aktiverar dykningsreflexen, sänker pulsen och skärper uppmärksamheten."
+    },
+    "abn": {
+      "title": "Prata med en växt",
+      "text": "Har du en krukväxt? Vattna den, titta på den, prata med den. Grönska minskar stress och förbättrar luftkvaliteten."
+    },
+    "abo": {
+      "title": "Hjärndump",
+      "text": "Skriv ner allt som snurrar i huvudet utan att censurera. Papper eller anteckningsapp – bara dumpa. Det frigör mentalt utrymme."
+    },
+    "abp": {
+      "title": "Klappa ditt husdjur",
+      "text": "Har du ett husdjur i närheten? Att klappa ett djur sänker blodtrycket och ökar oxytocinet. Win-win för er båda."
+    },
+    "abq": {
+      "title": "Skrattterapi",
+      "text": "Titta på ett roligt klipp eller tänk på något som fick dig att skratta. Skratt ökar syresättningen och släpper ut endorfiner."
+    },
+    "abr": {
+      "title": "Frisk luft-fix",
+      "text": "Öppna ett fönster eller gå ut en minut. Frisk luft ökar syresättningen och rensar tankarna. Speciellt viktigt vintertid."
+    },
+    "abs": {
+      "title": "Kroppsskanning",
+      "text": "Blunda och skanna kroppen uppifrån och ner. Notera var du känner spänning. Andas in i det spända området och släpp."
+    },
+    "abt": {
+      "title": "Skrivbordsyoga",
+      "text": "Katt-ko i stolen, sittande vridning, framåtfällning. Enkel yoga vid skrivbordet löser upp spänningar utan att du behöver en matta."
+    },
+    "abu": {
+      "title": "Läs en sida",
+      "text": "Läs en sida i en bok – på papper. Det ger ögonen skärmfri tid och ger hjärnan en annan typ av stimulans."
+    },
+    "abv": {
+      "title": "90-minuterscykeln",
+      "text": "Hjärnan arbetar i ultradian cykler på ungefär nittio minuter. Planera dina pauser efter denna rytm för maximal effektivitet."
+    },
+    "abw": {
+      "title": "Nyfikenhetspaus",
+      "text": "Googla något du alltid undrat över. Eller titta på en kort dokumentär. Nyfikenhet aktiverar belöningssystemet i hjärnan."
+    },
+    "abx": {
+      "title": "Fyrkantsandning",
+      "text": "Andas in i fyra sekunder, håll i fyra, andas ut i fyra, håll i fyra. Upprepa fyra gånger. Militären använder detta mot stress."
+    },
+    "aby": {
+      "title": "Dansa loss",
+      "text": "Sätt på en låt och dansa fritt i tre minuter. Det kombinerar fysisk rörelse, musik och glädje. Stäng dörren om du vill."
+    },
+    "abz": {
+      "title": "Ring någon",
+      "text": "Ring en vän eller familjemedlem. Bara två minuter. Mänsklig kontakt stärker välmåendet mer än de flesta produktivitetshack."
+    },
+    "aca": {
+      "title": "Solljusdos",
+      "text": "Gå ut i solen i fem minuter. Solljus reglerar dygnsrytmen, höjer D-vitaminnivåerna och förbättrar humöret."
+    },
+    "acb": {
+      "title": "Progressiv avslappning",
+      "text": "Spänn och slappna av varje muskelgrupp i tur och ordning. Börja med fötterna och arbeta uppåt. Hela kroppen på fem minuter."
+    },
+    "acc": {
+      "title": "Barfotastund",
+      "text": "Ta av skorna och känn golvet under fötterna. Att gå barfota, även inomhus, stimulerar fotsulans nerver och förbättrar balansen."
+    },
+    "acd": {
+      "title": "Skriv till ditt framtida jag",
+      "text": "Skriv ett kort meddelande till dig själv om sex månader. Vad hoppas du? Vad vill du minnas? Det ger perspektiv."
+    },
+    "ace": {
+      "title": "Digital storstädning",
+      "text": "Stäng onödiga flikar, radera gamla filer, avprenumerera ett nyhetsbrev. Fem minuter av digital rensning minskar mentalt brus."
+    },
+    "acf": {
+      "title": "Tvåminutersregeln",
+      "text": "Om något tar mindre än två minuter, gör det nu. Svara på det mejlet, disk koppen, fixa den lilla grejen. Det frigör mental energi."
+    },
+    "acg": {
+      "title": "Hållningsrevision",
+      "text": "Ställ dig mot en vägg: hälar, rumpa, skulderblad och bakhuvud ska röra väggen. Det är din referenshållning."
+    },
+    "ach": {
+      "title": "Doftpaus",
+      "text": "Lukta på kaffe, en citron, lavendel eller din favoritdoft. Luktsinnet kopplar direkt till hjärnans känslocentrum och kan förändra ditt humör direkt."
+    },
+    "aci": {
+      "title": "Molntittande",
+      "text": "Gå till fönstret och titta på molnen. Hitta former. Det är meditation för de som inte orkar meditera, och det funkar lika bra."
     }
+  },
+  "ui": {
+    "loading": "Laddar Pauza…",
+    "preview": {
+      "status": "Förhandsvisning",
+      "detail": "Webbläsarförhandsvisning",
+      "action": "Förhandsvisningsläge aktivt."
+    },
+    "title": "Pauza",
+    "heroHeadline": "Håll arbetsrytmen med ett lugnare gränssnitt",
+    "heroSubtitle": "De viktigaste inställningarna fram, avancerade alternativ bak.",
+    "settingsCategories": "Inställningskategorier",
+    "settingsCategoriesHint": "Byt kategori till vänster, se inställningarna till höger.",
+    "currentCategory": "Aktuell kategori",
+    "overview": "Översikt",
+    "overviewHint": "Statussammanfattning, senaste åtgärder och snabbåtkomst.",
+    "liveOverview": "Liveöversikt",
+    "liveOverviewHint": "Aktuell rytm, appstatus och pausfönster på en blick.",
+    "quickActions": "Snabbåtgärder",
+    "quickActionsHint": "Dessa åtgärder påverkar den pågående rytmen direkt.",
+    "savePanel": "Spara ändringar",
+    "savePanelHint": "Ändringar tillämpas först efter att du sparar.",
+    "nextBreakLabel": "Nästa paus",
+    "currentBreakLabel": "Aktuell paus",
+    "lastActionLabel": "Senaste åtgärd",
+    "runtimeLabel": "Körmiljö",
+    "platformLabel": "Plattform",
+    "versionLabel": "Version",
+    "breakFeelLabel": "Pausstil",
+    "placementLabel": "Visningsposition",
+    "pendingChanges": "Osparade ändringar",
+    "synced": "Synkroniserat",
+    "saving": "Sparar…",
+    "allSet": "Klart",
+    "noCurrentBreak": "Ingen aktiv paus",
+    "liveSignals": "Livesignaler",
+    "general": "Allmänt",
+    "preferences": "Inställningar",
+    "currentStatus": "Aktuell status",
+    "language": "Språk",
+    "languageChinese": "Förenklad kinesiska",
+    "languageEnglish": "Engelska",
+    "launchOnLogin": "Starta vid inloggning",
+    "enabled": "På",
+    "disabled": "Av",
+    "schedule": "Rytm",
+    "interruptions": "Påminnelser och avbrott",
+    "sectionScheduleHint": "Bara de rytminställningar du justerar dagligen.",
+    "microbreaks": "Mikropauser",
+    "microbreaksHint": "Korta avbrott under arbetet.",
+    "longBreaks": "Pauser",
+    "longBreaksHint": "Fullständig skärmfrihet efter flera omgångar.",
+    "interval": "Intervall",
+    "every": "Frekvens",
+    "durationLabel": "Varaktighet",
+    "behavior": "Beteende",
+    "allowPostpone": "Tillåt uppskjutning",
+    "signals": "Signaler",
+    "sectionSignalsHint": "Låt Pauza avgöra smartare när påminnelser visas.",
+    "naturalBreaks": "Naturliga pauser",
+    "naturalBreaksHint": "Automatisk återställning efter tillräckligt lång frånvaro.",
+    "resetAfter": "Återställ efter",
+    "dnd": "Stör ej",
+    "dndHint": "Pausa påminnelser när detta läge är aktivt",
+    "sectionSurfaceHint": "Styr avbrottsstyrka och pausfönstrets position.",
+    "sectionGeneralHint": "Några globala inställningar. Minimalistiskt som standard.",
+    "notificationsCategory": "Påminnelser och uppskjutning",
+    "notificationsCategoryHint": "Ljud före pausen. Uppskjutningsinställningar här.",
+    "surfaceCategory": "Avbrott och visning",
+    "surfaceCategoryHint": "Intensitet, position och stränghet för pausfönstret.",
+    "smartPause": "Smart paus",
+    "smartPauseHint": "Pauza letar först efter ett tydligt tillfälle och sänker sedan tröskeln gradvis.",
+    "generalAndShortcuts": "Allmänt och genvägar",
+    "generalAndShortcutsHint": "Hantera språk, autostart och globala tangentbordsgenvägar.",
+    "advanced": "Avancerat",
+    "sectionAdvancedHint": "Mer kontroll, kompatibilitetsalternativ och genvägar.",
+    "appExclusions": "Appundantag",
+    "appExclusionsHint": "Appar där påminnelser pausas eller återupptas.",
+    "appExclusionsEnable": "Aktivera",
+    "appRulePause": "Pausa vid matchning",
+    "appRuleResume": "Återuppta bara vid matchning",
+    "pause30": "Pausa 30 min",
+    "focus45": "Fokusskydd 45 min",
+    "resume": "Återuppta",
+    "clearFocus": "Avsluta fokus",
+    "save": "Spara",
+    "revert": "Ångra",
+    "defaults": "Standardvärden",
+    "preBreakNotifications": "Förvarningsljud",
+    "beforeLabel": "Före",
+    "postpone": "Skjut upp",
+    "scheduleControl": "Rytmkontroll",
+    "resetScheduleHint": "Beräkna nästa paus från och med nu.",
+    "postponeCategoryHint": "Ställ in uppskjutningstid och -gräns separat.",
+    "limitLabel": "Gräns",
+    "breakSurface": "Pausfönster",
+    "breakDisplayMode": "Visningsläge",
+    "breakBackdrop": "Bakgrundstema",
+    "breakBackdropHint": "Välj en stämningsfull bakgrund för pausfönstret.",
+    "breakBackdropPaper": "Papper",
+    "breakBackdropDawn": "Gryning",
+    "breakBackdropForest": "Skog",
+    "breakBackdropNight": "Natt",
+    "breakBackdropCustom": "Egen bakgrund",
+    "customWallpaper": "Egen bakgrund",
+    "customWallpaperHint": "Ladda upp en lokal bild som bakgrund för pausfönstret.",
+    "customWallpaperChoose": "Välj bild",
+    "customWallpaperReplace": "Byt bild",
+    "customWallpaperRemove": "Ta bort",
+    "customWallpaperEmpty": "Ingen egen bakgrund vald",
+    "customWallpaperEmptyHint": "Utan bild används standardtemat.",
+    "customWallpaperReady": "Bilden komprimeras och sparas lokalt som pausbakgrund.",
+    "breakIdeas": "Paustips",
+    "breakIdeasHint": "Visa ett kort tips vid varje paus.",
+    "breakSounds": "Pausljud",
+    "breakSoundsHint": "Förvarningsljud före pausen och slutljud efter.",
+    "microbreakStartSound": "Mikropaus-förvarning",
+    "microbreakEndSound": "Mikropaus slut",
+    "longBreakStartSound": "Paus-förvarning",
+    "longBreakEndSound": "Paus slut",
+    "breakSoundVolume": "Volym",
+    "breakSoundSilence": "Tyst",
+    "breakSoundCrystalGlass": "Kristallglas",
+    "breakSoundWindChime": "Vindspel",
+    "breakSoundTicToc": "Tick-tack",
+    "breakSoundReverie": "Dagdröm",
+    "reminderMode": "Påminnelseläge",
+    "reminderModeHint": "Smart söker en naturlig paus först; Tvingad avbryter exakt vid tiden.",
+    "reminderModeSmart": "Smart",
+    "reminderModeForced": "Tvingad",
+    "window": "Fönster",
+    "fullscreen": "Helskärm",
+    "promptStyleGentle": "Mjuk",
+    "promptStyleBalanced": "Balanserad",
+    "promptStyleImmersive": "Omslutande",
+    "allScreens": "Alla skärmar",
+    "screenPrimary": "Huvudskärm",
+    "screenCursor": "Skärm med markören",
+    "showTimeToBreakInTray": "Visa nästa paus i systemfältet",
+    "currentTimeInBreaks": "Visa tid i pausfönstret",
+    "currentTimeInBreaksHint": "Systemtiden uppe till höger i pausfönstret.",
+    "strictModes": "Strikta lägen",
+    "strictModesHint": "Styr om pauser kan hoppas över och om manuell bekräftelse krävs.",
+    "microbreakStrict": "Strikt mikropaus",
+    "longBreakStrict": "Strikt paus",
+    "manualFinish": "Avsluta manuellt efter timer",
+    "showTrayMenuInStrictMode": "Systemfältsmeny i strikt läge",
+    "shortcuts": "Genvägar",
+    "shortcutsHint": "Tomt = ej registrerat. Format t.ex.: CmdOrCtrl+Shift+P",
+    "shortcutReveal": "Öppna inställningar",
+    "shortcutFocus45": "Fokusskydd 45 min",
+    "shortcutPauseToggle": "Växla paus",
+    "shortcutPause30": "Pausa 30 min",
+    "shortcutPause60": "Pausa 1 timme",
+    "shortcutPause120": "Pausa 2 timmar",
+    "shortcutPause300": "Pausa 5 timmar",
+    "shortcutSkipScheduled": "Hoppa till nästa planerade paus",
+    "shortcutSkipMicrobreak": "Hoppa till mikropaus",
+    "shortcutSkipLongBreak": "Hoppa till paus",
+    "shortcutReset": "Återställ rytm",
+    "suffix": {
+      "secondsLong": "s",
+      "secondsBefore": "s före",
+      "minutesApart": "min efter",
+      "cycles": "omgångar",
+      "minutesLong": "min",
+      "minutesShortPostpone": "min",
+      "minutesLongPostpone": "min",
+      "minutesAway": "min",
+      "minutes": "min",
+      "times": "×"
+    },
+    "status": {
+      "noBreakScheduled": "Ingen paus planerad",
+      "microbreak": "Mikropaus",
+      "longBreak": "Paus",
+      "nextBreak": "{{label}} om {{duration}}",
+      "focus": "Fokus {{duration}}",
+      "pause": "Pausad {{duration}}",
+      "pauseForever": "Pausad på obestämd tid",
+      "blockedBy": "Pausad av {{match}}",
+      "appRuleActive": "Appregel aktiv",
+      "dndActive": "Stör ej aktivt"
+    },
+    "error": {
+      "loadState": "Kunde inte ladda Pauzas status"
+    },
+    "breakCopy": {
+      "clearedDetail": "Ingen aktiv paus.",
+      "manualAwaiting": "Tiden är ute. Avsluta denna paus innan du fortsätter.",
+      "awaitingFinish": "Väntar på avslut",
+      "actions": {
+        "resumeWork": "Fortsätt arbeta",
+        "done": "Klar",
+        "later": "Senare",
+        "skip": "Hoppa över"
+      },
+      "defaultPrompt": {
+        "microbreak": "Res dig, slappna av i axlarna och titta långt bort.",
+        "longBreak": "Gå ifrån skrivbordet några minuter och låt kropp och sinne återhämta sig."
+      }
+    },
+    "previewAction": {
+      "save": "Förhandsvisning: inställningar uppdaterade.",
+      "pause": "Förhandsvisning: pausat 30 min.",
+      "pauseForever": "Förhandsvisning: pausat på obestämd tid.",
+      "focus": "Förhandsvisning: fokus aktiverat.",
+      "focusCleared": "Förhandsvisning: fokus avslutat.",
+      "resume": "Förhandsvisning: återupptagit.",
+      "reset": "Förhandsvisning: rytm återställd.",
+      "autostartOn": "Förhandsvisning: autostart aktiverad.",
+      "autostartOff": "Förhandsvisning: autostart inaktiverad.",
+      "done": "Förhandsvisning: paus avslutad.",
+      "later": "Förhandsvisning: paus uppskjuten.",
+      "skip": "Förhandsvisning: paus överhoppad."
+    },
+    "preBreakSoundHint": "Mjukt ljud innan timern tar slut så du kan avsluta din uppgift.",
+    "previewSound": "Lyssna",
+    "appExclusionsSearch": "Sök bland körande appar",
+    "appExclusionsSearchPlaceholder": "Appnamn…",
+    "appExclusionsSearchLoading": "Laddar…",
+    "appExclusionsSearchEmpty": "Inga resultat",
+    "appExclusionsManualHint": "Eller ange processnamn manuellt (en per rad)",
+    "appExclusionsAdd": "Klicka för att lägga till i undantagslistan"
   }
 }

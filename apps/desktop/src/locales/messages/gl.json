@@ -98,7 +98,7 @@
       "ourWebsite": "visita a nosa web",
       "dot": ".",
       "developedBy": "Desenvolto por",
-      "janH": "Clarke Young",
+      "clarkeY": "Clarke Young",
       "designedBy": "Deseño da icona e da interfaz de usuario por Colin Shanley"
     },
     "heart": {
@@ -210,256 +210,747 @@
   },
   "miniBreakIdeas": {
     "aaa": {
-      "text": "Vai por un vaso de agua."
+      "text": "Bebe un vaso de auga agora mesmo."
     },
     "aab": {
-      "text": "Mira de vagar e de todo á esquerda, e despois á dereita."
+      "text": "Descansa a vista — mira algo a 6 metros durante 20 segundos."
     },
     "aac": {
-      "text": "Mira de vagar e de todo cara arriba, e despois cara abaixo."
+      "text": "Fai tres respiracións profundas e pausadas."
     },
     "aad": {
-      "text": "Pecha os ollos e colle aire de maneira profunda varias veces."
+      "text": "Endereita as costas e senta correctamente."
     },
     "aae": {
-      "text": "Pecha os ollos e reláxate."
+      "text": "Move o pescozo — inclínao á dereita e á esquerda."
     },
     "aaf": {
-      "text": "Estira as pernas."
+      "text": "Sobe e baixa os ombreiros varias veces."
     },
     "aag": {
-      "text": "Estira os brazos."
+      "text": "Estira os dedos e as bonecas das mans."
     },
     "aah": {
-      "text": "Estás a sentar nunha postura correcta?"
+      "text": "Levántate e estira as costas un momento."
     },
     "aai": {
-      "text": "De vagar, Xira a cabeza a cada lado e mantén a postura 10 segundos."
+      "text": "Move os pés aínda que esteas sentado/a."
     },
     "aaj": {
-      "text": "De vagar, xira o pescozo a cada lado e mantén a postura entre 5 e 10 segundos."
+      "text": "Estírate por completo — tenta tocar o teito."
     },
     "aak": {
-      "text": "Levántate da cadeira e estírate."
+      "text": "Relaxa os músculos da cara."
     },
     "aal": {
-      "text": "Enfoca a mirada nun obxecto que estea a 20 metros ou máis."
+      "text": "Aparta a vista da pantalla e busca algo verde."
     },
     "aam": {
-      "text": "Pensa un momento nalgo que aprecies."
+      "text": "Inspira fondo e solta o aire amodo."
     },
     "aan": {
-      "text": "Tómate un momento para sonrir por estar vivo."
+      "text": "Rota os ombreiros cara adiante e cara atrás."
     },
     "aao": {
-      "text": "Un lugar de traballo ergonómico é aquel do que te apartas de cando en vez."
+      "text": "Estira os brazos cara adiante e empurra as palmas."
     },
     "aap": {
-      "text": "Pecha os ollos e conta respiracións."
+      "text": "Pecha os ollos e fai tres respiracións."
     },
     "aaq": {
-      "text": "Pecha os ollos e di o nome das cousas que escoitas."
+      "text": "Rota o pescozo lentamente nun círculo."
     },
     "aar": {
-      "text": "Pon a punta dos dedos nos teus ombreiros. Xira os ombreiros en círculos cara diante durante 10 segundos, e despois cara atrais."
+      "text": "Flexiona e estira os pés varias veces."
     },
     "aas": {
-      "text": "Sube o brazo dereito, estírao sobre a túa cabeza cara a esquerda, e mantén a postura 10 segundos. Repíteo co outro brazo."
+      "text": "Sobe os ombreiros ata as orellas e sóltalos."
     },
     "aat": {
-      "text": "Coa man dereita, arra cada dedo ta túa man esquerda e aprétao. Repite coa outra man."
+      "text": "Abre e pecha os dedos das mans varias veces."
     },
     "aau": {
-      "text": "Ponte de pé e da unha zancada. Mantén a postura 10 segundos e despois cambia de perna."
+      "text": "Levántate un momento e move o corpo."
     },
     "aav": {
-      "text": "Pecha os ollos e sinte calquer cousa que ocorra neste preciso instante, sen xulgar."
+      "text": "Revisa a túa postura — tes as costas rectas?"
     },
     "aaw": {
-      "text": "Concéntrate cada 20 minutos, durante 20 segundos, nun obxecto que estéa 6 metros de distancia."
+      "text": "Fai círculos coas bonecas das mans."
     },
     "aax": {
-      "text": "Se precisas axuda, pídea."
+      "text": "Mira pola fiestra e deixa descansar os ollos."
     },
     "aay": {
-      "text": "Fai unha cousa de cada vez."
+      "text": "Move os xeonllos arriba e abaixo mentres estás sentado/a."
     },
     "aaz": {
-      "text": "¿Estás a invertir a túa atención con sabedoría?"
+      "text": "Vai por un vaso de auga — a hidratación é clave."
     },
     "aba": {
-      "text": "Cambia a maneira en que estás a sentar."
+      "text": "Relaxa a mandíbula — quizais estás apertándoa."
     },
     "abb": {
-      "text": "Expón os teus ollos á luz natural."
+      "text": "Aplica a regra 20-20-20: mira a 20 pés durante 20 segundos."
     },
     "abc": {
-      "text": "Cos ollos pechados, de vagar e con coidado,levanta os ollos cara o teito e báixaos cara o chan despois."
+      "text": "Move os dedos dos pés dentro do calzado."
     },
     "abd": {
-      "text": "Cos ollos pechados, de vagar e con coidado, move os ollos á esquerda e despois á dereita."
+      "text": "Inclina a cabeza cara un ombreiro e logo cara o outro."
     },
     "abe": {
-      "text": "Sacude as mans para que se alivien."
+      "text": "Respira co abdome — alonga a expiración."
     },
     "abf": {
-      "text": "De un en un, toca coa punta de cada dedo de cada man a punta do pulgar para formar unha O."
+      "text": "Estira as coxas — sobe un xeonllo ata o peito."
     },
     "abg": {
-      "text": "Pecha a man nun puño e despois abre os dedos levándoos cara arriba, como se lle mandases a alguén parar."
+      "text": "Fai flexións contra a mesa ou a parede."
     },
     "abh": {
-      "text": "Pecha a man nun puño e despois ábrea estirando os dedos todo o que podas."
+      "text": "Axita as mans como se estiveses secándoas."
     },
     "abi": {
-      "text": "Senta coa espalda recta, os brazos colgando aos lados, e rota a cabeza de vagar facendo círculos amplos."
+      "text": "Masaxea as tempas cos dedos."
     },
     "abj": {
-      "text": "Levántate e cruza o brazo por riba da cabeza ata tocar a orella contraria coa man, e dobra a cabeza cara o ombreiro ata notar cómo estira. Repite co outro brazo."
+      "text": "Fai círculos cos nocellos dos pés."
     },
     "abk": {
-      "text": "Levántate e pon os brazos aos lados. Move os ombreiros cara atrais xuntando as omoplatas e mantén a postura uns segundos."
+      "text": "Busca algo que te faga sorrir ao teu redor."
     },
     "abl": {
-      "text": "Levántate cos brazos levantados á altura dos ombreiros. Move as mans cara a espalda, mantén un segundo, e volve."
+      "text": "Baixa os ombreiros — seguro que os tes moi arriba."
+    },
+    "abm": {
+      "text": "Fai respiración cadrada: inspira 4, mantén 4, expira 4, mantén 4."
+    },
+    "abn": {
+      "text": "Axusta a cadeira para que esteas cómodo/a."
+    },
+    "abo": {
+      "text": "Fai elevacións de talóns de pé."
+    },
+    "abp": {
+      "text": "Rola unha botella de auga baixo o pé."
+    },
+    "abq": {
+      "text": "Pestanexa varias veces para refrescar os ollos."
+    },
+    "abr": {
+      "text": "Estira o trapecio — tira da cabeza cara un lado coa man."
+    },
+    "abs": {
+      "text": "Move as mans facendo jazz hands!"
+    },
+    "abt": {
+      "text": "Inspira fondo e sorrí sen motivo."
+    },
+    "abu": {
+      "text": "Aparta a vista da pantalla e conta cinco cousas que vexas."
+    },
+    "abv": {
+      "text": "Masaxea as mans — preme os puntos de presión."
+    },
+    "abw": {
+      "text": "Fai unha flexión lateral — estira o brazo por riba da cabeza."
+    },
+    "abx": {
+      "text": "Fai un chin tuck — empurra a barbela cara atrás."
+    },
+    "aby": {
+      "text": "Axita os brazos como se foses paxaro."
+    },
+    "abz": {
+      "text": "Rota as bonecas en sentido horario e antihorario."
+    },
+    "aca": {
+      "text": "Fai unha torsión espinal sentado/a — xira a cada lado."
+    },
+    "acb": {
+      "text": "Proba a respiración cadrada: inspira 4, mantén 4, expira 4."
+    },
+    "acc": {
+      "text": "Libera toda a tensión do corpo agora mesmo."
+    },
+    "acd": {
+      "text": "Fai extensións de perna sentado/a — endereita o xeonllo."
+    },
+    "ace": {
+      "text": "Estira os dedos en forma de estrela."
+    },
+    "acf": {
+      "text": "Axusta o monitor á altura dos ollos."
+    },
+    "acg": {
+      "text": "Bebe auga — o cerebro tamén precisa hidratación."
+    },
+    "ach": {
+      "text": "Fai un chest opener — xunta as escápulas."
+    },
+    "aci": {
+      "text": "Pensa en tres cousas polas que estás agradecido/a."
+    },
+    "acj": {
+      "text": "Fai pequenos círculos cos brazos."
+    },
+    "ack": {
+      "text": "Tamborilea cos dedos na mesa como se foses percusionista."
+    },
+    "acl": {
+      "text": "Inspira fondo e lembra un momento feliz."
+    },
+    "acm": {
+      "text": "Revisa o brillo da pantalla — está demasiado forte?"
+    },
+    "acn": {
+      "text": "Fai un figure-four stretch de pé se podes."
+    },
+    "aco": {
+      "text": "Relaxa os ollos — técnica do palming."
+    },
+    "acp": {
+      "text": "Move os brazos facendo snow angels."
+    },
+    "acq": {
+      "text": "Come unha froita ou un snack saudable."
+    },
+    "acr": {
+      "text": "Estira os antebrazos — abre o brazo e tira dos dedos cara atrás."
+    },
+    "acs": {
+      "text": "Masaxea a caluga uns segundos."
+    },
+    "act": {
+      "text": "Fai un pelvic tilt sentado/a — move as cadeiras."
+    },
+    "acu": {
+      "text": "Pensa en algo que esperas con ilusión."
+    },
+    "acv": {
+      "text": "Estira os isquiotibiais sentado/a."
+    },
+    "acw": {
+      "text": "Abre a fiestra e respira aire fresco."
+    },
+    "acx": {
+      "text": "Fai ioga facial — pon caras graciosas!"
+    },
+    "acy": {
+      "text": "Axusta a cadeira para que as costas estean cómodas."
+    },
+    "acz": {
+      "text": "A quen lle darías as grazas hoxe?"
+    },
+    "ada": {
+      "text": "Aperta e solta unha pelota antiestrés ou un coxín."
+    },
+    "adb": {
+      "text": "Conta cada respiración — de un a dez."
+    },
+    "adc": {
+      "text": "Bebiches auga dabondo hoxe?"
+    },
+    "add": {
+      "text": "Move os ollos en círculos — horario e antihorario."
+    },
+    "ade": {
+      "text": "Dáte unha palmada nas costas — vas ben, segue así!"
+    },
+    "adf": {
+      "text": "Estira as plantas dos pés — levántate e estira os talóns."
+    },
+    "adg": {
+      "text": "Fai unha pausa consciente — como te sentes agora?"
+    },
+    "adh": {
+      "text": "Inclina a orella cara o ombreiro lentamente."
+    },
+    "adi": {
+      "text": "Move todos os dedos — de mans e pés."
+    },
+    "adj": {
+      "text": "Fai un body scan rápido — onde tes tensión?"
+    },
+    "adk": {
+      "text": "Sorrí e agradece que o corpo che funciona."
+    },
+    "adl": {
+      "text": "Goza dun momento de calma galega — sen présas."
+    },
+    "adm": {
+      "text": "A morriña tamén se cura con descanso."
     }
   },
   "longBreakIdeas": {
     "aaa": {
-      "title": "A soas non",
-      "text": "Cóstache tomar un descanso a soas? Tenta facelo cun compañeiro ou compañeira. Ademáis de facelo máis doado, terás a oportunidade de coñecer ás persoas. Tomar descansos conxuntos incrementa a productividade."
+      "title": "Pausa Pomodoro",
+      "text": "Remataches un ciclo Pomodoro! Levántate, estírate e prémiate cunha pausa merecida."
     },
     "aab": {
-      "title": "Apártate",
-      "text": "Notaches que a túa mente pode resolver cousas por sí mesma? Só precisa afastarse do ordenador e descansar para pensar sobre algo totalmente distinto."
+      "title": "Sesta Rápida",
+      "text": "Fai unha sesta de 10-15 minutos. Pon o espertador — non te durmas de máis!"
     },
     "aac": {
-      "title": "Descansos breves",
-      "text": "Acougar é unha peza esencial para facilitar o rendemento adecuado do sistema musculoesquelético. Descansar con frecuencia axuda a reducir a duración dunha tarefa e disminúe o risco de lesións ergonómicas."
+      "title": "Debuxo Libre",
+      "text": "Colle un papel e debuxa o que queiras — unha casa, un gato, a Catedral de Santiago."
     },
     "aad": {
-      "title": "Meditación",
-      "text": "Diversas investigacións suxiren que os exercicios baseados na contemplación axudan a reducir a ansiedade, a depresión, o estrés, a dor, e axudan a mellorar a saúde xeral, a saúde mental, e a calidade de vida. Non sabes por onde comezar? Hay un montón de aplicacións que che poden axudar."
+      "title": "Momento Musical",
+      "text": "Pon a túa canción favorita e gózaa — canta, baila ou simplemente escoita."
     },
     "aae": {
-      "title": "Parpadear",
-      "text": "Mirar pantallas durante lapsos longos de tempo fai que parpadees menos veces, e polo tanto expós os ollos ao aire. Pecha rápido as pálpebras varias veces durante uns segundos para repoñer a humidade sobre a córnea e limpar o pó da superficie dos ollos."
+      "title": "Diario de Gratitude",
+      "text": "Escribe tres cousas polas que estás agradecido/a hoxe. Fai ben ao ánimo."
     },
     "aaf": {
-      "title": "Ergonomía",
-      "text": "Un ángulo ou altura incorrecta do teclado, o rato, o monitor, ou da superficie de traballo pode causar problemas de saúde. Tómate un tempo para ler sobre a ergonomía no lugar de traballo."
+      "title": "Auga Fría",
+      "text": "Lava a cara con auga fría ou pon un pano frío nos ollos — refresca de verdade!"
     },
     "aag": {
-      "title": "Moverse",
-      "text": "Hai moitas maneiras de facer exercicio na oficina. Intenta andar quedando no sitio ou levantarte varias veces da cadeira."
+      "title": "Coida as Plantas",
+      "text": "Rega as plantas ou simplemente párate a miralas. Terapia verde."
     },
     "aah": {
-      "title": "Cambiar",
-      "text": "Tes un balón de exercicios ou un escritorio para estar de pé? Considera cambiar a cadeira por algún deles durante un tempo."
+      "title": "Baleirado Mental",
+      "text": "Escribe todo o que tes na cabeza nun papel — sen filtro nin xuízo. Limpa a mente."
     },
     "aai": {
-      "title": "Observarse",
-      "text": "Dúrmeste durante o día ou tes problemas para concentráreste? É un síntoma de que precisas un descanso."
+      "title": "Terapia Animal",
+      "text": "Se tes mascota, xoga con ela agora. Se non, mira vídeos de animais fofos."
     },
     "aaj": {
-      "title": "Tecnoloxía",
-      "text": "Qué che parece dar un paseo sen aparatos tecnolóxicos?"
+      "title": "Momento de Risa",
+      "text": "Mira un vídeo gracioso ou lembra o mellor chiste que escoitaches."
     },
     "aak": {
-      "title": "Metabolismo",
-      "text": "Investigacións emerxentes demostran que sentar durante lapsos longos de tempo contribúe ao risco de síndrome metabólico, ao risco de problemas cardíacos, e a outros. Tomar descansos con frecuencia e camiñando pode favorecer a circulación, mitigando esos riscos."
+      "title": "Aire Fresco",
+      "text": "Sal fóra e respira aire fresco. Deixa que o vento galego che toque a cara."
     },
     "aal": {
-      "title": "Reunións activas",
-      "text": "Qué che parece facer as reunións da sala de conferencias no vestíbulo? Camiñar non só queima calorías, tamén mellora a sensación de colaboración."
+      "title": "Body Scan",
+      "text": "De cabeza a pés, revisa cada parte do corpo e libera a tensión que atopes."
     },
     "aam": {
-      "title": "Froita",
-      "text": "Tómate tempo e come algo de froita. De vagar. Fíxate no sabor, na textura, e na frescura."
+      "title": "Ioga na Mesa",
+      "text": "Fai posturas sinxelas de ioga na cadeira — cat-cow sentado/a, torsión e flexión."
     },
     "aan": {
-      "title": "Baños",
-      "text": "Camiña ata o baño que estea máis lonxe do teu lugar de traballo cando te dirixas a descansar."
+      "title": "Lectura Breve",
+      "text": "Colle un libro e le 5 páxinas. Ficción, ensaio, poesía — o que prefiras."
     },
     "aao": {
-      "title": "Descanso para o café",
-      "text": "Vas tomar un café? Considera camiñar durante 5 minutos cada vez que vas buscar un."
+      "title": "Ciclo de 90 Minutos",
+      "text": "Se levas 90 minutos enfocado/a, este é o momento perfecto para resetear."
     },
     "aap": {
-      "title": "Compañeirismo",
-      "text": "No mandes emails ou mensaxes aos compañeiros e compañeiras da oficina, cambiña ata as súas mesas para comunicarte."
+      "title": "Curiosidade do Día",
+      "text": "Busca un dato curioso ou unha trivialidade — aprender algo novo cada día!"
     },
     "aaq": {
-      "title": "Aprender",
-      "text": "Nun estudio de voluntarios sanos, os investigadores do NIH observaron que tomar descansos breves con regularidade pode axudar á nosa mente a aprender habilidades novas."
+      "title": "Respiración Cadrada",
+      "text": "Inspira 4 tempos, mantén 4, expira 4, mantén 4. Repite 4 veces para a calma."
     },
     "aar": {
-      "title": "Exercicio",
-      "text": "As probas suxiren que o exercicio regular en pequenas doses pode aportar grandes beneficios á saúde, incluíndo reducións apreciábeis do estrés."
+      "title": "A Bailar!",
+      "text": "Pon música e baila como se ninguén te vise — na cociña, no salón, onde sexa!"
     },
     "aas": {
-      "title": "Repetir",
-      "text": "Atopaches a túa rutina para estirar? Lembra repetir máis dunha vez para mitigar mellor os efectos do sedentarismo."
+      "title": "Chamar a Alguén",
+      "text": "Chama ou manda mensaxe a un amigo ou familiar. A conexión é autocoidado."
     },
     "aat": {
-      "title": "Bonecas e antebrazos",
-      "text": "Extende os brazos coas palmas cara ti, e despois xira de vagar as mans catro veces no sentido do reloxo, e despois catro veces no outro sentido."
+      "title": "Terapia Solar",
+      "text": "Sal ao sol 5-10 minutos. Vitamina D galega cando aparece!"
     },
     "aau": {
-      "title": "Estirar a espalda",
-      "text": "Xunta as mans detráis da cabeza, e despois levántaas á vez sobre a cabeza para acabar coas palmas cara arriba."
+      "title": "Relaxación Progresiva",
+      "text": "Tensa cada grupo muscular 5 segundos e solta. Dos pés á cabeza."
     },
     "aav": {
-      "title": "Móvete",
-      "text": "Por cada trinta minutos de estancamento motor, deberías estimularte polo menos durante un minuto."
+      "title": "Pés Descalzos",
+      "text": "Camiña descalzo/a polo chan ou pola herba — sente o contacto coa terra."
     },
     "aaw": {
-      "title": "Rutina de 7 minutos",
-      "text": "Esta rutina contempla un conxunto de exercicios completos para todo o corpo nunha fracción de tempo. Coma en calquer exercicio, ten precaución. Hay moitas aplicacións para comezar."
+      "title": "Carta ao Teu Futuro",
+      "text": "Escribe unha nota breve ao teu eu do futuro — que lle dirías?"
     },
     "aax": {
-      "title": "Pulso",
-      "text": "Aumenta o pulso ata os 120 latidos por minuto, durante 20 minutos seguidos, catra ou cinco veces á semana, facendo calquer cousa que che guste. Aumentar o ritmo cardíaco ten como resultado mellorar a saúde cardiovascular."
+      "title": "Desintoxicación Dixital",
+      "text": "Deixa o móbil noutra habitación 10 minutos. Non vas perder nada importante."
     },
     "aay": {
-      "title": "Empregalas escaleiras",
-      "text": "Estudos demostraron que subir escaleiras - que se considera unha actividade física intensa - queima máis calorías más calorías por minuto que unha carreira lixeira."
+      "title": "Regra dos 2 Minutos",
+      "text": "Tes unha tarefa pequena pendente? Se se fai en 2 minutos, faino agora."
     },
     "aaz": {
-      "title": "Practica o arte",
-      "text": "A terapia con arte sábese beneficiosa para a saúde mental, con especialidade para xestionar o estrés. Qué che parece escribir un poema rápido, sacar unha foto, ou pintar algunha argallada?"
+      "title": "Reset Postural",
+      "text": "Levántate, estira todo o corpo e volve sentar correctamente. Como novo/a."
     },
     "aba": {
-      "title": "Despexa",
-      "text": "Un espazo limpo axuda a concentrarse no traballo e a miúdo está ligado a emocións positivas como a ledicia."
+      "title": "Aromaterapia",
+      "text": "Cheira aceite esencial, café ou unha flor. Deixa que os sentidos relaxen."
     },
     "abb": {
-      "title": "Come fóra",
-      "text": "A natureza está ligada ás emocicións positivas e disminúe o estrés e a ansiedade. Cando podas, tenta comer fóra rodeado de algo de natureza."
+      "title": "Mirar as Nubes",
+      "text": "Mira as nubes e imaxina formas — un dragón? Unha empanada? Ti decides."
     },
     "abc": {
-      "title": "Transporte público",
-      "text": "Si usas transporte público con regularidade, podes quedar de pé en lugar de sentar. Si podes, tenta facer todos os desprazamentos que podas camiñando ou en bici."
+      "title": "Estiramento Completo",
+      "text": "Estira todo o corpo de cabeza a pés. Tenta tocar o teito e o chan."
     },
     "abd": {
-      "title": "Bostezar",
-      "text": "Bostezar pode ser certamente beneficioso dado que produce lágrimas que humidifican e lubrican os ollos."
+      "title": "Café ou Té Consciente",
+      "text": "Prepara unha bebida quente e gózaa amodo — sen multitarefa."
     },
     "abe": {
-      "title": "Cambio de enfoque",
-      "text": "Mantén un dedo cerca dun ollo e enfócao. De vagar, afasta o dedo e enfócate na distancia ao lonxe, e despois volve a enfocar o dedo. Acerca o dedo de volta e volve enfocar algo que estea lonxe."
+      "title": "Paseo Curto",
+      "text": "Sal e camiña 5-10 minutos. Non precisas un destino."
     },
     "abf": {
-      "title": "Palmas",
-      "text": "Mentras estás a sentar, coloca os cóbados na mesa, preto do borde. Bótate cara adiante colocando as mans sobre os ollos. Pecha os ollos e colle aire de vagar pola nariz e aguanta uns segundos. Despois respira profundamente."
+      "title": "Ordenar o Espazo",
+      "text": "Ordena a mesa — tira o lixo, organiza as cousas. Espazo limpo, mente clara."
     },
     "abg": {
-      "title": "Estrujar las manos",
-      "text": "Aprete un par de calcetíns con forma bola ou unha bola de goma suave, manteña durante 5 segundos. Repita todo o proceso varias veces."
+      "title": "Preparar un Lanche",
+      "text": "Prepara un lanche saudable — froita, noces ou pan con queixo."
     },
     "abh": {
-      "title": "Respiración lenta",
-      "text": "Investigacións emerxentes suxiren o uso potencial de técnicas de respiración lenta controlada como medio de optimizár parámetros psicolóxicos que aparecen asociados á saúde e á lonxevidade."
+      "title": "Estiramento Xeral",
+      "text": "Fai unha rutina de estiramento completa — pescozo, ombreiros, costas, pernas."
+    },
+    "abi": {
+      "title": "Momento de Escritura",
+      "text": "Escribe sobre o teu día ou os teus plans para mañá."
+    },
+    "abj": {
+      "title": "Silencio e Reflexión",
+      "text": "Senta en silencio, pecha os ollos e non penses en nada durante 5 minutos."
+    },
+    "abk": {
+      "title": "Música Relaxante",
+      "text": "Pon música calmada — lo-fi, clásica, sons da natureza ou gaitas suaves."
+    },
+    "abl": {
+      "title": "Movemento Activo",
+      "text": "Fai jumping jacks, sentadillas ou marcha no sitio durante 3 minutos."
+    },
+    "abm": {
+      "title": "Spa de Ollos",
+      "text": "Tapa os ollos cunha toalla morna ou coas palmas durante 3 minutos."
+    },
+    "abn": {
+      "title": "Control de Hidratación",
+      "text": "Bebe dous vasos de auga e rechea a botella."
+    },
+    "abo": {
+      "title": "Agradecemento",
+      "text": "Pensa en cinco persoas que alegran a túa vida e agrádecello mentalmente."
+    },
+    "abp": {
+      "title": "Conexión Social",
+      "text": "Escribe ou chama a alguén con quen non falaches hai tempo."
+    },
+    "abq": {
+      "title": "Pausa Creativa",
+      "text": "Debuxa, escribe un poema ou fai papiroflexia — non ten que ser perfecto!"
+    },
+    "abr": {
+      "title": "Meditación Breve",
+      "text": "Fai unha meditación guiada de 5 minutos — hai moitas gratis en liña."
+    },
+    "abs": {
+      "title": "Liberar Pescozo e Ombreiros",
+      "text": "Rota o pescozo e os ombreiros lentamente para soltar a tensión."
+    },
+    "abt": {
+      "title": "Mini Día de Pernas",
+      "text": "Fai wall sits ou elevacións de talóns durante 1 minuto."
+    },
+    "abu": {
+      "title": "Escada Respiratoria",
+      "text": "Respira: inspira 2 tempos, expira 2. Logo 3-3, 4-4, ata 8-8."
+    },
+    "abv": {
+      "title": "Pausa para os Pés",
+      "text": "Quita o calzado e masaxea os pés. Merécelo."
+    },
+    "abw": {
+      "title": "Mirar pola Fiestra",
+      "text": "Mira pola fiestra e deixa vagar a mente uns minutos."
+    },
+    "abx": {
+      "title": "Ordenación Rápida",
+      "text": "Escolla un caixón ou carpeta e organízao en 5 minutos."
+    },
+    "aby": {
+      "title": "Coidado de Brazos e Bonecas",
+      "text": "Estira brazos e bonecas — sobre todo se levas moito tecleando."
+    },
+    "abz": {
+      "title": "Mobilidade da Columna",
+      "text": "Fai cat-cow stretches — move a columna arriba e abaixo."
+    },
+    "aca": {
+      "title": "Comer Consciente",
+      "text": "Se estás a comer, goza cada bocado — presta atención ao sabor e textura."
+    },
+    "acb": {
+      "title": "Abrir as Cadeiras",
+      "text": "Fai un figure-four sentado/a ou círculos de cadeira de pé."
+    },
+    "acc": {
+      "title": "Reto de Equilibrio",
+      "text": "Mantente nun pé 30 segundos por cada lado — adestramento de equilibrio!"
+    },
+    "acd": {
+      "title": "Control de Temperatura",
+      "text": "Tes calor ou frío? Axusta o ambiente para estar cómodo/a."
+    },
+    "ace": {
+      "title": "Celebrar Pequenos Logros",
+      "text": "Que fixeches hoxe? Aínda que sexa pequeno, celébrao!"
+    },
+    "acf": {
+      "title": "Mensaxe de Ánimo",
+      "text": "Diche a ti mesmo/a: 'Vou ben. Merezco esta pausa.'"
+    },
+    "acg": {
+      "title": "Xogar un Pouco",
+      "text": "Xoga a algo sinxelo — un puzle, un Wordle, o que che apeteza."
+    },
+    "ach": {
+      "title": "Reflexión Tranquila",
+      "text": "Reflexiona: que aprendiches esta semana?"
+    },
+    "aci": {
+      "title": "Descanso con Morriña",
+      "text": "Ás veces a mellor pausa é lembrar de onde vés. Descansa con carinho."
     }
+  },
+  "ui": {
+    "loading": "Cargando Pauza…",
+    "preview": {
+      "status": "Vista previa",
+      "detail": "Vista previa no navegador",
+      "action": "O modo de vista previa foi activado."
+    },
+    "title": "Pauza",
+    "heroHeadline": "Protexe o ritmo de traballo cunha interface serena",
+    "heroSubtitle": "Axustes frecuentes diante, controis avanzados detrás.",
+    "settingsCategories": "Categorías de configuración",
+    "settingsCategoriesHint": "Cambia de categoría á esquerda, consulta a configuración á dereita.",
+    "currentCategory": "Categoría actual",
+    "overview": "Resumo",
+    "overviewHint": "Resumo de estado, actividade recente e acceso rápido.",
+    "liveOverview": "Resumo en directo",
+    "liveOverviewHint": "Consulta o ritmo actual, o estado da aplicación e a xanela de descanso.",
+    "quickActions": "Accións rápidas",
+    "quickActionsHint": "Estas accións afectan directamente o ritmo actual.",
+    "savePanel": "Gardar cambios",
+    "savePanelHint": "Os cambios só se aplican despois de gardar.",
+    "nextBreakLabel": "Próximo descanso",
+    "currentBreakLabel": "Descanso actual",
+    "lastActionLabel": "Última acción",
+    "runtimeLabel": "Tempo de execución",
+    "platformLabel": "Plataforma",
+    "versionLabel": "Versión",
+    "breakFeelLabel": "Estilo de descanso",
+    "placementLabel": "Posición da xanela",
+    "pendingChanges": "Cambios sen gardar",
+    "synced": "Sincronizado",
+    "saving": "Gardando…",
+    "allSet": "Todo listo",
+    "noCurrentBreak": "Ningún descanso activo",
+    "liveSignals": "Sinais en directo",
+    "general": "Xeral",
+    "preferences": "Preferencias",
+    "currentStatus": "Estado actual",
+    "language": "Idioma",
+    "languageChinese": "Chinés simplificado",
+    "languageEnglish": "Inglés",
+    "launchOnLogin": "Iniciar ao entrar",
+    "enabled": "Activado",
+    "disabled": "Desactivado",
+    "schedule": "Horario",
+    "interruptions": "Notificacións e interrupcións",
+    "sectionScheduleHint": "Só amosa os axustes de ritmo que axustas a diario.",
+    "microbreaks": "Microdescansos",
+    "microbreaksHint": "Recargas breves durante o traballo.",
+    "longBreaks": "Descansos longos",
+    "longBreaksHint": "Descanso completo tras varios ciclos.",
+    "interval": "Intervalo",
+    "every": "Frecuencia",
+    "durationLabel": "Duración",
+    "behavior": "Comportamento",
+    "allowPostpone": "Permitir aprazar",
+    "signals": "Sinais",
+    "sectionSignalsHint": "Axuda a Pauza a escoller o momento adecuado para avisar.",
+    "naturalBreaks": "Descansos naturais",
+    "naturalBreaksHint": "Reinicio automático cando levas fóra tempo abondo.",
+    "resetAfter": "Reiniciar tras",
+    "dnd": "Non molestar",
+    "dndHint": "Pausa cando o modo de concentración do sistema está activo",
+    "sectionSurfaceHint": "Controla a intensidade da interrupción e a posición da xanela de descanso.",
+    "sectionGeneralHint": "Preferencias globais mínimas.",
+    "notificationsCategory": "Notificacións e aprazamento",
+    "notificationsCategoryHint": "Xestiona o tempo de preaviso e as regras de aprazamento.",
+    "surfaceCategory": "Interrupción e disposición",
+    "surfaceCategoryHint": "Controla como se amosa, a posición e o nivel de esixencia.",
+    "smartPause": "Pausa intelixente",
+    "smartPauseHint": "Pauza busca primeiro momentos naturais e logo relaxa gradualmente.",
+    "generalAndShortcuts": "Xeral e atallos",
+    "generalAndShortcutsHint": "Xestiona o idioma, o inicio automático e os atallos.",
+    "advanced": "Avanzado",
+    "sectionAdvancedHint": "Control máis profundo, opcións de compatibilidade e atallos.",
+    "appExclusions": "Exclusións de aplicacións",
+    "appExclusionsHint": "Aplicacións que pausan ou retoman as notificacións.",
+    "appExclusionsEnable": "Activar",
+    "appRulePause": "Pausar ao coincidir",
+    "appRuleResume": "Retomar só ao coincidir",
+    "pause30": "Pausa 30 min",
+    "focus45": "Concentración 45 min",
+    "resume": "Retomar",
+    "clearFocus": "Finalizar concentración",
+    "save": "Gardar",
+    "revert": "Reverter",
+    "defaults": "Valores predeterminados",
+    "preBreakNotifications": "Preaviso",
+    "beforeLabel": "antes",
+    "postpone": "Máis tarde",
+    "scheduleControl": "Control de horario",
+    "resetScheduleHint": "Reinicia o temporizador dende agora.",
+    "postponeCategoryHint": "Configura tempos e límites de aprazamento separados para microdescansos e descansos longos.",
+    "limitLabel": "Límite",
+    "breakSurface": "Xanela de descanso",
+    "breakDisplayMode": "Modo de visualización",
+    "breakBackdrop": "Tema de fondo",
+    "breakBackdropHint": "Escolle un fondo ambiental para a xanela de descanso.",
+    "breakBackdropPaper": "Papel",
+    "breakBackdropDawn": "Aurora",
+    "breakBackdropForest": "Bosque",
+    "breakBackdropNight": "Noite",
+    "breakBackdropCustom": "Personalizado",
+    "customWallpaper": "Fondo personalizado",
+    "customWallpaperHint": "Sube unha imaxe local como fondo de descanso.",
+    "customWallpaperChoose": "Escoller imaxe",
+    "customWallpaperReplace": "Cambiar imaxe",
+    "customWallpaperRemove": "Eliminar",
+    "customWallpaperEmpty": "Ningún fondo personalizado seleccionado",
+    "customWallpaperEmptyHint": "Sen imaxe úsase o tema predeterminado.",
+    "customWallpaperReady": "A imaxe comprímese e gárdase localmente como fondo de descanso.",
+    "breakIdeas": "Consellos de descanso",
+    "breakIdeasHint": "Amosa un consello breve en cada descanso.",
+    "breakSounds": "Sons de descanso",
+    "breakSoundsHint": "Reproduce sons antes de comezar o descanso e ao rematar.",
+    "microbreakStartSound": "Son de inicio de microdescanso",
+    "microbreakEndSound": "Son de fin de microdescanso",
+    "longBreakStartSound": "Son de inicio de descanso longo",
+    "longBreakEndSound": "Son de fin de descanso longo",
+    "breakSoundVolume": "Volume",
+    "breakSoundSilence": "Silencio",
+    "breakSoundCrystalGlass": "Copa de cristal",
+    "breakSoundWindChime": "Campaíña de vento",
+    "breakSoundTicToc": "Tic-tac",
+    "breakSoundReverie": "Ensoño",
+    "reminderMode": "Modo de recordatorio",
+    "reminderModeHint": "Intelixente busca momentos naturais, forzado interrompe inmediatamente.",
+    "reminderModeSmart": "Intelixente",
+    "reminderModeForced": "Forzado",
+    "window": "Xanela",
+    "fullscreen": "Pantalla completa",
+    "promptStyleGentle": "Suave",
+    "promptStyleBalanced": "Equilibrado",
+    "promptStyleImmersive": "Inmersivo",
+    "allScreens": "Todas as pantallas",
+    "screenPrimary": "Pantalla principal",
+    "screenCursor": "Pantalla co cursor",
+    "showTimeToBreakInTray": "Amosar tempo ata o descanso na barra de estado",
+    "currentTimeInBreaks": "Amosar hora actual na xanela de descanso",
+    "currentTimeInBreaksHint": "Amosa a hora do sistema na esquina superior dereita.",
+    "strictModes": "Modos estritos",
+    "strictModesHint": "Controla se se poden omitir os descansos.",
+    "microbreakStrict": "Microdescanso estrito",
+    "longBreakStrict": "Descanso longo estrito",
+    "manualFinish": "Finalización manual tras o temporizador",
+    "showTrayMenuInStrictMode": "Amosar menú en modo estrito",
+    "shortcuts": "Atallos",
+    "shortcutsHint": "Deixa en branco para desactivar. Ex.: CmdOrCtrl+Shift+P",
+    "shortcutReveal": "Abrir configuración",
+    "shortcutFocus45": "Concentración 45 min",
+    "shortcutPauseToggle": "Alternar pausa",
+    "shortcutPause30": "Pausa 30 min",
+    "shortcutPause60": "Pausa 1 hora",
+    "shortcutPause120": "Pausa 2 horas",
+    "shortcutPause300": "Pausa 5 horas",
+    "shortcutSkipScheduled": "Saltar ao próximo descanso",
+    "shortcutSkipMicrobreak": "Saltar ao microdescanso",
+    "shortcutSkipLongBreak": "Saltar ao descanso longo",
+    "shortcutReset": "Reiniciar horario",
+    "suffix": {
+      "secondsLong": "segundos",
+      "secondsBefore": "segundos antes",
+      "minutesApart": "minutos",
+      "cycles": "ciclos",
+      "minutesLong": "minutos",
+      "minutesShortPostpone": "min",
+      "minutesLongPostpone": "min",
+      "minutesAway": "minutos",
+      "minutes": "min",
+      "times": "veces"
+    },
+    "status": {
+      "noBreakScheduled": "Ningún descanso programado",
+      "microbreak": "Microdescanso",
+      "longBreak": "Descanso longo",
+      "nextBreak": "{{label}} en {{duration}}",
+      "focus": "Concentración {{duration}}",
+      "pause": "Pausa {{duration}}",
+      "pauseForever": "Pausa indefinida",
+      "blockedBy": "Pausado por {{match}}",
+      "appRuleActive": "Regra de aplicación activa",
+      "dndActive": "Non molestar activo"
+    },
+    "error": {
+      "loadState": "Non se puido cargar o estado de Pauza"
+    },
+    "breakCopy": {
+      "clearedDetail": "Non hai ningún descanso activo.",
+      "manualAwaiting": "Acabouse o tempo. Completa este descanso antes de volver ao traballo.",
+      "awaitingFinish": "Agardando finalización",
+      "actions": {
+        "resumeWork": "Volver ao traballo",
+        "done": "Feito",
+        "later": "Máis tarde",
+        "skip": "Omitir"
+      },
+      "defaultPrompt": {
+        "microbreak": "Levántate, estira ombreiros e pescozo, mira á lonxe.",
+        "longBreak": "Afástase da mesa uns minutos para descansar corpo e mente."
+      }
+    },
+    "previewAction": {
+      "save": "Vista previa: Configuración actualizada.",
+      "pause": "Vista previa: Pausa 30 min.",
+      "pauseForever": "Vista previa: Pausa indefinida.",
+      "focus": "Vista previa: Concentración activada.",
+      "focusCleared": "Vista previa: Concentración finalizada.",
+      "resume": "Vista previa: Retomado.",
+      "reset": "Vista previa: Horario reiniciado.",
+      "autostartOn": "Vista previa: Inicio automático activado.",
+      "autostartOff": "Vista previa: Inicio automático desactivado.",
+      "done": "Vista previa: Descanso completado.",
+      "later": "Vista previa: Descanso aprazado.",
+      "skip": "Vista previa: Descanso omitido."
+    },
+    "preBreakSoundHint": "Un son suave antes de rematar o tempo para rematar a tarefa.",
+    "previewSound": "Escoitar",
+    "appExclusionsSearch": "Buscar entre as aplicacións en execución",
+    "appExclusionsSearchPlaceholder": "Nome da aplicación…",
+    "appExclusionsSearchLoading": "Cargando…",
+    "appExclusionsSearchEmpty": "Sen resultados",
+    "appExclusionsManualHint": "Escribe o nome do proceso (un por liña)",
+    "appExclusionsAdd": "Preme para engadir á lista de exclusións"
   }
 }

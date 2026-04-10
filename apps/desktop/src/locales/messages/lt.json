@@ -54,7 +54,7 @@
     "about": {
       "tagline": "Prisimink pertraukėles",
       "designedBy": "Ženkliukas ir vartotojo sąsajos išvaizda - Colin Shanley",
-      "janH": "Clarke Young",
+      "clarkeY": "Clarke Young",
       "developedBy": "Sukūrė",
       "dot": ".",
       "ourWebsite": "apsilankykite mūsų svetainėje",
@@ -220,303 +220,739 @@
   },
   "miniBreakIdeas": {
     "aaa": {
-      "text": "Išgerkite stiklinę vandens."
+      "text": "Eik pasipilti stiklinę vandens."
     },
     "aab": {
-      "text": "Lėtai pažiūrėk į kairę, po to į dešinę."
+      "text": "Tavo vandens buteliukas tave teisia. Gurkštelk."
     },
     "aac": {
-      "text": "Lėtai pažiūrėk į viršų, po to į dešinę."
+      "text": "Hidratacijos patikra: kada paskutinį kartą gėrei vandens?"
     },
     "aad": {
-      "text": "Užsimerk ir giliai įkvėpk keletą kartų."
+      "text": "Lėtai pažvelk iki galo kairėn, tada dešinėn."
     },
     "aae": {
-      "text": "Užsimerk ir atsipalaiduok."
+      "text": "Lėtai pažvelk iki galo aukštyn, tada žemyn."
     },
     "aaf": {
-      "text": "Pratampyk kojas."
+      "text": "Pažvelk į objektą 6 metrų atstumu 20 sekundžių — 20-20-20 taisyklė."
     },
     "aag": {
-      "text": "Pratampyk rankas."
+      "text": "Greitai sumirksėk 20 kartų. Tavo sausos akys padėkos."
     },
     "aah": {
-      "text": "Ar tavo sėdėjimo laikysena taisyklinga?"
-    },
-    "abi": {
-      "text": "Sėdėkite išsitiesę, rankos kabo šonuose, ir lėtai pasukite kaklą viena kryptimi dideliu ratu."
-    },
-    "abj": {
-      "text": "Atsistokite išsitiesę ir ta pačia ranka lėtai pakreipkite galvą link peties, kol pajusite tempimą."
+      "text": "Užmerk akis ir švelniai pasuk akių obuolius ratu."
     },
     "aai": {
-      "text": "Lėtai pasukite galvą į šoną ir palaikykite 10 sekundžių."
-    },
-    "aal": {
-      "text": "Nukreipkite akis į objektą, esantį bent už 20 metrų."
+      "text": "Užsimerkęs lėtai pažvelk aukštyn link lubų, tada žemyn."
     },
     "aaj": {
-      "text": "Lėtai pakreipkite galvą į šoną ir palaikykite 5-10 sekundžių."
+      "text": "Užsimerkęs lėtai pažvelk kairėn, tada dešinėn."
     },
     "aak": {
-      "text": "Atsistokite nuo kėdės ir išsitieskite."
+      "text": "Patrink delnus vienas į kitą, kol sušils, tada švelniai uždėk ant užmerktų akių."
     },
-    "aap": {
-      "text": "Užmerkite akis ir skaičiuokite įkvėpimus."
-    },
-    "aaq": {
-      "text": "Užmerkite akis ir įvardykite dalykus, kuriuos girdite."
+    "aal": {
+      "text": "Pažiūrėk pro langą 30 sekundžių. Prisimeni išorinį pasaulį?"
     },
     "aam": {
-      "text": "Skirkite šiek tiek laiko pagalvoti apie tai, ką vertinate."
+      "text": "Pažvelk šalin nuo ekrano ir sufokusuok žvilgsnį į kažką žalią. Akys myli žalią."
     },
     "aan": {
-      "text": "Gyvybingai nusišypsokite."
+      "text": "Leisk natūraliai šviesai pasiekti tavo akis."
     },
     "aao": {
-      "text": "Tikrai ergonomiška darbo vieta yra tokia, nuo kurios reguliariai atsitraukiate."
+      "text": "Užmerk akis ir keliskart giliai įkvėpk."
+    },
+    "aap": {
+      "text": "Užmerk akis ir atsipalaiduok."
+    },
+    "aaq": {
+      "text": "Užmerk akis ir suskaičiuok savo kvėpavimus."
     },
     "aar": {
-      "text": "Padėkite pirštų galiukus ant pečių. 10 sekundžių sukite pečius į priekį, paskui atgal."
+      "text": "Įkvėpk per 4, sulaikyk 7, iškvėpk per 8. Technika 4-7-8."
     },
     "aas": {
-      "text": "Pakelkite dešinę ranką, ištieskite ją virš galvos į kairę ir palaikykite 10 sekundžių. Pakartokite kitoje pusėje."
+      "text": "Padaryk 3 lėtus kvėpavimus. Pro nosį vidun, pro burną laukan."
     },
     "aat": {
-      "text": "Dešine ranka paeiliui suimkite kiekvieną kairės rankos pirštą ir suspauskite. Pakartokite kitoje pusėje."
+      "text": "Padaryk tokį gilų įkvėpimą, kad pilvas išsipūstų. Tai diafragminis kvėpavimas."
     },
     "aau": {
-      "text": "Atsistokite ir atlikite įtūpstą. Laikykite 10 sekundžių, tada atlikite kitą koją."
+      "text": "20 sekundžių nedaryk absoliučiai nieko. Sunkiau nei skamba."
     },
     "aav": {
-      "text": "Užmerkite akis ir tiesiog pastebėkite tai, kas vyksta dabartiniu momentu, to nevertinant."
+      "text": "Patikrink laikyseną — pečiai atgal, pėdos ant grindų."
     },
     "aaw": {
-      "text": "Kas 20 minučių 20 sekundžių sutelkite dėmesį į objektą, esantį 20 pėdų atstumu."
+      "text": "Pakeisk sėdėjimo padėtį."
     },
     "aax": {
-      "text": "Jei reikia pagalbos, paprašykite jos."
+      "text": "Nuleisk pečius. Jie visą laiką buvo prie ausų."
     },
     "aay": {
-      "text": "Darykite po vieną dalyką vienu metu."
+      "text": "Atpalaiduok žandikaulį. Net nežinojai, kad jis buvo suspaustas, tiesa?"
     },
     "aaz": {
-      "text": "Ar jūsų dėmesys naudojamas protingai?"
+      "text": "Ištiesk stuburą. Įsivaizduok, kad virvutė traukia tave aukštyn nuo viršugalvio."
     },
     "aba": {
-      "text": "Pakeiskite savo sėdėjimo padėtį."
+      "text": "Sėdėjimas — naujas rūkymas. Atsistok minutei."
     },
     "abb": {
-      "text": "Atskleiskite akis natūraliai šviesai."
+      "text": "Lėtai pasuk galvą į vieną pusę ir palaikyk 10 sekundžių. Keisk."
     },
     "abc": {
-      "text": "Užsimerkę lėtai ir švelniai pakelkite akis į lubas ir grįžkite žemyn iki grindų."
+      "text": "Lėtai palenk galvą į šoną ir palaikyk 5-10 sekundžių."
     },
     "abd": {
-      "text": "Užmerkę akis lėtai ir švelniai perkelkite akis į kairę, tada lėtai į dešinę."
-    },
-    "abf": {
-      "text": "Po vieną kiekvieno piršto galiuku palieskite nykščio galiuką, kad jie sudarytų O formą."
-    },
-    "abh": {
-      "text": "Sugniaužkite kumštį, o tada ištieskite pirštus ir ištieskite juos kuo toliau."
-    },
-    "abg": {
-      "text": "Sugniaužkite kumštį, o tada pirštus stumkite aukštyn, kol jie bus nukreipti į lubas, tarsi liepdami kam nors sustoti."
-    },
-    "abk": {
-      "text": "Atsistokite išsitiesę, rankas laikydami prie šonų. Suspauskite pečių mentes ir palaikykite."
-    },
-    "abl": {
-      "text": "Atsistokite tiesiai, rankas iškėlę išilgai pečių. Rankas šiek tiek perkelkite už nugaros, palaikykite sekundę ir grįžkite atgal."
+      "text": "Švelniai patrauk ausį link peties. Pajusk kaklo tempimą."
     },
     "abe": {
-      "text": "Pakratykite rankas, kad gautumėte palengvėjimą."
+      "text": "Lėtai pasuk kaklą švelniais ratais."
     },
-    "abr": {
-      "text": "Atsisėskite ant kėdės krašto ir ištieskite vieną koją tiesiai prieš save, palaikykite 10-15 sekundžių. Pakartokite su kita koja."
+    "abf": {
+      "text": "Palenk galvą pirmyn, atgal, kairėn, dešinėn. Pilnas kompaso atstatymas."
     },
-    "abt": {
-      "text": "Vieną ranką laikykite tiesiai į viršų, o kita ranka švelniai stumkite pirmosios rankos alkūnę link galvos. Laikykite 10-15 sekundžių. Pakartokite su kita ranka."
+    "abg": {
+      "text": "Pasuk pečius pirmyn 10 sekundžių, tada atgal."
     },
-    "abv": {
-      "text": "Ištieskite vieną ranką per krūtinę, kita ranka suimkite alkūnę ir švelniai pritraukite ją prie krūtinės. Pakartokite su kita ranka."
+    "abh": {
+      "text": "Pakelk pečius iki ausų ir nuleisk. Pakartok 5 kartus."
     },
-    "abw": {
-      "text": "Atsistokite, vieną koją pastatykite ant šalia esančio daikto, pavyzdžiui, kėdės ar taburetės, ir palieskite kojų pirštus. Pakartokite su kita koja."
+    "abi": {
+      "text": "Suspauski mentis ir palaikyk 5 sekundes."
+    },
+    "abj": {
+      "text": "Pakelk dešinę ranką virš galvos, pasilenk kairėn, palaikyk 10 sekundžių. Keisk puses."
+    },
+    "abk": {
+      "text": "Permesk vieną ranką per krūtinę ir švelniai pritrauk kita. Keisk."
+    },
+    "abl": {
+      "text": "Laikyk vieną ranką tiesiai aukštyn, kita švelniai pastumk alkūnę atgal. Palaikyk 10 sekundžių. Keisk."
     },
     "abm": {
-      "text": "Atsisėskite ant kėdės krašto, pasukite liemenį į vieną pusę ir pabūkite 10-15 sekundžių. Pakartokite į kitą pusę."
+      "text": "Susikabink pirštais už nugaros ir ištempk krūtinę."
     },
     "abn": {
-      "text": "Atsistokite ir vieną koją pastatykite ant šalia esančio daikto, pavyzdžiui, kėdės ar taburetės. Laikykite sulenktą kelį ir palaikykite 10-15 sekundžių. Pakartokite su kita koja."
+      "text": "Susipink pirštus ir stumk delnus link lubų. Tempimas!"
     },
     "abo": {
-      "text": "Atsistokite taip, kad kojos būtų pečių plotyje, lenkitės žemyn tarsi sėstumėtės ant kėdės, po to vėl atsistokite. Pakartokite kelis kartus."
-    },
-    "abq": {
-      "text": "Atsistokite žiūrėdami į sieną ir atsiremkite į ją rankomis, paskui padarykite kelis atsispaudimus."
-    },
-    "abs": {
-      "text": "Atsistokite veidu į sieną, vieną koją pastatykite atgal, kitą - į priekį, tuomet atsiremkite į sieną. Pakartokite su kita koja."
-    },
-    "abu": {
-      "text": "Pakreipkite galvą į vieną, paskui į kitą pusę, po to švelniai palenkite ją į priekį ir atgal."
-    },
-    "abx": {
-      "text": "Atsistokite tarpduryje ir rankomis atsiremkite į abu statramsčius, tuomet švelniai lenkitės į priekį tol, kol pajusite tempimą krūtinėje."
-    },
-    "aby": {
-      "text": "Atsisėskite ant kėdės krašto arba ant grindų, suglauskite kojų padus ir švelniai prispauskite alkūnėmis taip, kad ištemptumėte vidinę šlaunų pusę."
+      "text": "Laikyk rankas tiesiai į šonus. Daryk mažus ratelius. Dega greičiau nei manai."
     },
     "abp": {
-      "text": "Atsistokite, nugara ir rankomis atsiremkite į sieną, tuomet lėtai judinkite rankas aukštyn ir žemyn."
+      "text": "Papurtyk rankas, kad atpalaiduotum įtampą."
+    },
+    "abq": {
+      "text": "Kiekvienu pirštu paliesk nykštį, darydamas O formą."
+    },
+    "abr": {
+      "text": "Sugniaužk kumštį, tada išskleisk pirštus ir ištempk juos plačiai."
+    },
+    "abs": {
+      "text": "Sugniaužk kumštį, tada išskėsk pirštus lyg sakytum 'stop'."
+    },
+    "abt": {
+      "text": "Suspauski kiekvieną kairės rankos pirštą dešine. Keisk rankas."
+    },
+    "abu": {
+      "text": "Ištempk riešus — ištiesk ranką, švelniai patrauk pirštus atgal."
+    },
+    "abv": {
+      "text": "Pasuk riešus ratu 10 kartų į vieną pusę, tada į kitą."
+    },
+    "abw": {
+      "text": "Padėk ranką plokščiai ant stalo ir švelniai išskėsk pirštus."
+    },
+    "abx": {
+      "text": "Pastuksėk pirštais ant stalo po vieną, nuo mažylio iki nykščio. Atbuline tvarka."
+    },
+    "aby": {
+      "text": "Padaryk sau rankų masažą. Nusipelnei."
+    },
+    "abz": {
+      "text": "Atsistok ir pasitempk. Tavo stuburas to laukė."
+    },
+    "aca": {
+      "text": "Atsisėsk ant kėdės krašto, pasuk liemenį į vieną pusę, palaikyk 10 sekundžių. Keisk."
+    },
+    "acb": {
+      "text": "Išlenkk nugarą kaip katė, tada leisk jai nusileisti. Katės-karvės tempimas, biuro versija."
+    },
+    "acc": {
+      "text": "Padėk abi rankas už apatinės nugaros dalies ir švelniai atsilenkk atgal."
+    },
+    "acd": {
+      "text": "Atsistok prie sienos ir lėtai slystėk rankomis aukštyn žemyn — sieniniai angelai."
+    },
+    "ace": {
+      "text": "Ištempk kojas."
+    },
+    "acf": {
+      "text": "Atsistok ir padaryk išpuolį. Palaikyk 10 sekundžių kiekvienai kojai."
+    },
+    "acg": {
+      "text": "Atsistok ir padaryk kelis pritūpimus. Kėdė čia pat, jei kas nors nepavyks."
+    },
+    "ach": {
+      "text": "Padaryk 10 atsistojimų ant pirštų prie stalo. Slaptas fitnesas."
+    },
+    "aci": {
+      "text": "Ištiesk vieną koją tiesiai sėdėdamas. Palaikyk 10 sekundžių. Keisk."
+    },
+    "acj": {
+      "text": "Pasuk kulkšnis ratais — pagal laikrodžio rodyklę, tada prieš."
+    },
+    "ack": {
+      "text": "Tempk ir lenkk pėdas 10 kartų. Kulkšnys buvo apleistos."
+    },
+    "acl": {
+      "text": "Stovėk ant vienos kojos 30 sekundžių. Keisk. Pusiausvyra — tai įgūdis."
+    },
+    "acm": {
+      "text": "Pajudink kojų pirštus batuose. Taip, visus."
+    },
+    "acn": {
+      "text": "Atsistok ir žygiuok vietoje 30 sekundžių."
+    },
+    "aco": {
+      "text": "Padaryk kelis atsispaudimus nuo sienos. Niekas nežiūri. Tikriausiai."
+    },
+    "acp": {
+      "text": "Padaryk 5 atramas nuo kėdės krašto."
+    },
+    "acq": {
+      "text": "Įtempk ir atpalaiduok kiekvieną raumenį nuo kojų pirštų iki kaktos. Pilnas atstatymas."
+    },
+    "acr": {
+      "text": "Susiraukšlėk veidą 5 sekundėms, tada atpalaiduok. Veido įtampa: pašalinta."
+    },
+    "acs": {
+      "text": "Atsistok tarpdury ir švelniai pasilenk pirmyn, kad išteptum krūtinę."
+    },
+    "act": {
+      "text": "Mini šokių pertraukėlė — tik 10 sekundžių. Žinai, kad nori."
+    },
+    "acu": {
+      "text": "Įsivaizduok, kad trauki virvę virš galvos. Šoninis tempimas atrakintas."
+    },
+    "acv": {
+      "text": "Suspauski delnus prieš krūtinę ir palaikyk. Namaste, programuotojau."
+    },
+    "acw": {
+      "text": "Masuok smilkinius mažais ratukais 10 sekundžių. Momentinis ramumas."
+    },
+    "acx": {
+      "text": "Apsikabink. Sukryžiuok rankas ir suspauski. Rūpintis savimi nėra keista."
+    },
+    "acy": {
+      "text": "Užmerk akis ir įvardink garsus, kuriuos girdi."
+    },
+    "acz": {
+      "text": "Užmerk akis ir stebėk, kas ateina į galvą, neteisdamas."
+    },
+    "ada": {
+      "text": "Pagalvok apie tai, už ką dabar esi dėkingas."
+    },
+    "adb": {
+      "text": "Nusišypsokit. Esi gyvas, ir tai yra gana šaunu."
+    },
+    "adc": {
+      "text": "Padaryk psichinę nuotrauką, kaip jaučiasi tavo kūnas. Kur yra įtampa?"
+    },
+    "add": {
+      "text": "Pagalvok apie vieną gražų dalyką, kurį pasakytum draugui, tada pasakyk sau."
+    },
+    "ade": {
+      "text": "Pastebėk 5 daiktus kambaryje, į kuriuos niekada nekreipei dėmesio."
+    },
+    "adf": {
+      "text": "Užmerk akis ir 20 sekundžių įsivaizduok savo laimingą vietą."
+    },
+    "adg": {
+      "text": "Padėk telefoną ekranu žemyn 60 sekundžių. Nieko neatsitiks. Pažadu."
+    },
+    "adh": {
+      "text": "Pažvelk aukštyn nuo ekrano. Siužeto posūkis: pasaulis yra 3D."
+    },
+    "adi": {
+      "text": "Nusižiovauk. Net apsimestinis sukelia tikrą. Pabandyk."
+    },
+    "adj": {
+      "text": "Atidaryk burną plačiai, tada lėtai uždaryk. Žandikaulio įtampa: atleista."
+    },
+    "adk": {
+      "text": "Tavo nugara pateikė oficialų skundą. Laikas tempimui."
+    },
+    "adl": {
+      "text": "Tavo klaviatūra tavęs nepasiges. Atsistok."
+    },
+    "adm": {
+      "text": "Tavo monitorius skambino. Sako, kad buvai per arti per ilgai."
     }
   },
   "longBreakIdeas": {
     "aaa": {
-      "title": "Ne vienas",
-      "text": "Ar jums sunku pailsėti vienam? Pabandykite tai padaryti su bendradarbiu. Be to, kad bus lengviau laikytis pertraukų, turėsite galimybę geriau jį pažinti. Pertraukas darant kartu padidėja produktyvumas."
+      "title": "Geriau kartu",
+      "text": "Sunku daryti pertraukas vienam? Pabandyk su kolega. Labiau laikysitės ir susidraugausite, kartu skundžiantis dėl terminų. Tyrimai rodo, kad socialinės pertraukos didina produktyvumą."
     },
     "aab": {
-      "text": "Ar kada nors pastebėjote, kad jūsų smegenys gali viską išsiaiškinti pačios? Tereikia atsitraukti nuo kompiuterio ir padaryti pertraukėlę, kad pagalvotumėte apie ką nors visiškai nesusijusio.",
-      "title": "Atsitraukite"
+      "title": "Atsitrauk",
+      "text": "Pastebėjai, kad geriausios idėjos ateina duše? Taip yra todėl, kad smegenys sprendžia problemas fone. Atsitrauk nuo ekrano ir pagalvok apie kažką visiškai nesusijusio."
     },
     "aac": {
-      "text": "Poilsis yra pagrindinis komponentas, užtikrinantis raumenų ir kaulų sistemos veiklą. Dažnos pertraukėlės gali sutrumpinti užduoties trukmę ir sumažinti ergonominių sužalojimų riziką.",
-      "title": "Mikro pertraukėlės"
+      "title": "Mikropertraukos",
+      "text": "Trumpos, dažnos pertraukos mažina pasikartojantį įtampą ir palaiko raumenų-skeleto sistemą sveiką. Galvok apie jas kaip apie žmogaus mašinos techninę priežiūrą."
     },
     "aad": {
       "title": "Meditacija",
-      "text": "Tyrimai rodo, kad sąmoningumu pagrįsti pratimai padeda sumažinti nerimą, depresiją, stresą ir skausmą bei pagerinti bendrą sveikatą, psichinę sveikatą ir gyvenimo kokybę. Nežinote, kaip pradėti? Yra daug programų, kurios jums padės."
+      "text": "Sąmoningumo meditacija mažina nerimą, stresą ir net fizinį skausmą. Nežinai, nuo ko pradėti? Net 5 minutės susikaupusio kvėpavimo skaičiuojasi. Yra daugybė nemokamų programėlių."
     },
     "aae": {
-      "title": "Pamirksėkite",
-      "text": "Ilgai žiūrėdami į ekraną mažiau mirksite, todėl jūsų akys yra veikiamos oro. Kelias sekundes greitai mirksėkite, kad atsinaujintų ašarų plėvelė ir nuo akių paviršiaus pasišalintų dulkės."
+      "title": "Mirksėk dažniau",
+      "text": "Žiūrėdamas į ekraną mirksėji iki 66% rečiau, dėl ko akys išsausėja. Greitai pamirksėk kelias sekundes, kad atnaujintum ašarų plėvelę. Tavo akys tiek daug daro — atsilygink."
     },
     "aaf": {
-      "title": "Ergonomika",
-      "text": "Netinkamas klaviatūros, pelės, monitoriaus ar darbinio paviršiaus aukštis ir kampas gali sukelti sveikatos problemų. Skirkite šiek tiek laiko ir paskaitykite apie stalo ergonomiką."
+      "title": "Darbo vietos ergonomika",
+      "text": "Monitorius akių lygyje, klaviatūra alkūnių aukštyje, pėdos ant grindų. Bloga ergonomika laikui bėgant sukelia tikrą žalą. Skirkite 2 minutes savo darbo vietos patikrai — ateities tu padėkos."
     },
     "aag": {
-      "title": "Judesys",
-      "text": "Yra daugybė būdų, kaip galite mankštintis savo biure. Pabandykite žygiuoti vietoje arba daryti stalo atsispaudimus."
-    },
-    "aai": {
-      "title": "Pastebėkite",
-      "text": "Ar svajojate ar jums sunku susikaupti? Tai ženklas, kad reikia padaryti pertrauką."
+      "title": "Biuro treniruotė",
+      "text": "Nereikia sporto salės judėjimui. Žygiuok vietoje, daryk atsispaudimus nuo stalo ar kelis pritūpimus. Net 60 sekundžių judėjimo atnaujina energiją."
     },
     "aah": {
-      "text": "Ar turite stabilumo kamuolį ar stovintį darbo stalą? Apsvarstykite galimybę kuriam laikui pakeisti savo stalo kėdę jais.",
-      "title": "Pokyčiai"
+      "title": "Pakeisk poziciją",
+      "text": "Turi reguliuojamą stalą ar balansavimo kamuolį? Puikus laikas pakeisti. Kaitaliojimas tarp sėdėjimo ir stovėjimo mažina nuovargį."
+    },
+    "aai": {
+      "title": "Atpažink ženklus",
+      "text": "Svajoji? Sunku susikaupti? Skaitai tą pačią eilutę iš naujo? Tai smegenys mandagiai sako: padaryk pagaliau pertrauką."
     },
     "aaj": {
-      "title": "Technologijos",
-      "text": "O kaip apie pasivaikščiojimą be technologijų?"
+      "title": "Pasivaikščiojimas be technologijų",
+      "text": "Palik telefoną ir trumpai pasivaikščiok. Be podkastų, be muzikos — tik tu ir tavo mintys. Stebėtinai gaivina nuolatinių dirgiklių pasaulyje."
     },
     "aak": {
-      "title": "Metabolizmas",
-      "text": "Nauji tyrimai rodo, kad ilgas sėdėjimas padidina metabolinio sindromo, širdies priepuolio ir insulto riziką bei bendrą mirties riziką. Reguliarios vaikščiojimo pertraukėlės gali pagerinti jūsų kraujotaką ir padėti įveikti kai kurias iš šių problemų."
+      "title": "Sėdėjimo problema",
+      "text": "Ilgas sėdėjimas didina širdies ligų, diabeto ir nugaros problemų riziką. 5 minučių pasivaikščiojimas kas valandą gali žymiai tai kompensuoti. Tavo kūnas buvo sukurtas judėti."
     },
     "aal": {
-      "title": "Aktyvūs susitikimai",
-      "text": "O kaip apie susitikimų perkėlimą iš konferencijų salės į salę? Vaikščiojimas ne tik degina kalorijas, bet ir gali skatinti bendradarbiavimo jausmą."
+      "title": "Susitikimai einant",
+      "text": "Kitą kartą, kai turėsi pokalbį vienas su vienu, pasiūlyk eiti vietoj sėdėti. Susitikimai einant padidina kūrybiškumą iki 60%, pagal Stanfordo tyrimą."
     },
     "aam": {
-      "title": "Vaisiai",
-      "text": "Neskubėkite ir suvalgykite vaisių. Lėtai. Atkreipkite dėmesį į skonį, tekstūrą, šviežumą."
+      "title": "Sąmoningas užkandžiavimas",
+      "text": "Paimk vaisių ir valgyk lėtai. Pajusk skonį, tekstūrą ir gaivumą. Mini meditacija, persirengusi užkandžiu."
     },
     "aan": {
-      "text": "Eidami į tualetą eikite į tolimiausią tualetą darbo vietoje.",
-      "title": "Tualetas"
+      "title": "Kavos pasivaikščiojimas",
+      "text": "Eini kavos? Paversk tai ir 5 minučių pasivaikščiojimu. Du zuikiai vienu šūviu — atsiprašau, viena latte."
     },
     "aao": {
-      "title": "Kavos pertraukėlė",
-      "text": "Einate kavos pertraukėlės? Apsvarstykite galimybę 5 minutes pasivaikščioti kiekvieną kartą, kai einate į ją."
+      "title": "Tavo smegenys pertraukose",
+      "text": "NIH tyrimas nustatė, kad smegenys kartoja ir įtvirtina naujus įgūdžius poilsio metu — ne praktikos. Pertraukos pažodžiui daro tave geresnį tuo, ką darai."
     },
     "aap": {
-      "title": "Kolegos",
-      "text": "Nesiųskite el. laiškų ir nesiųskite žinučių biuro kolegoms, eikite prie jų darbo stalo ir bendraukite su jais."
+      "title": "Judėk truputį, gauk daug",
+      "text": "Net nedideli reguliaraus judėjimo kiekiai dramatiškai mažina stresą ir gerina nuotaiką. Nereikia valandos — 10 minučių judėjimo gali pakeisti visą dieną."
     },
     "aaq": {
-      "title": "Mokymasis",
-      "text": "Tirdami sveikus savanorius, NIH mokslininkai nustatė, kad trumpos pertraukėlės, anksti ir dažnai, gali padėti mūsų smegenims išmokti naujų įgūdžių."
+      "title": "Tempimo rutina",
+      "text": "Radai tempimų rinkinį, kuris tau tinka? Kartok juos kelis kartus per dieną. Nuoseklumas nugali intensyvumą kovojant su ilgo sėdėjimo pasekmėmis."
     },
     "aar": {
-      "title": "Pratimai",
-      "text": "Įrodymai rodo, kad nedidelis reguliarios mankštos kiekis gali turėti didelę naudą sveikatai, įskaitant pastebimą streso sumažinimą."
+      "title": "Riešų sukiniai",
+      "text": "Ištiesk rankas delnais į save, tada lėtai sukiok — 4 kartus pagal laikrodžio rodyklę, 4 prieš. Riešai patiria daugiau streso, nei manai."
     },
     "aas": {
-      "text": "Ar radote savo tempimo rutiną? Nepamirškite to pakartoti daugiau nei vieną kartą, kad geriau kovotumėte su ilgo sėdėjimo padariniais.",
-      "title": "Pakartokite"
+      "title": "Pasiekimas virš galvos",
+      "text": "Susikabink rankomis už galvos, tada pakelk jas virš galvos delnais link lubų. Palaikyk 10 sekundžių. Pajusk, kaip nugara atsibunda."
     },
     "aat": {
-      "title": "Riešas ir dilbis",
-      "text": "Ištieskite rankas delnais į save, tada lėtai pasukite rankas keturis kartus pagal laikrodžio rodyklę, tada keturis kartus prieš laikrodžio rodyklę."
+      "title": "30/1 taisyklė",
+      "text": "Už kiekvieną 30 minučių sėdėjimo — bent 1 minutę judėjimo. Nustatyk laikmatį, jei reikia. Maži įpročiai susideda į didelius sveikatos privalumus."
     },
     "aau": {
-      "title": "Nugaros tempimas",
-      "text": "Sujunkite rankas už galvos, tada pakelkite jas virš galvos, delnais į viršų."
+      "title": "7 minučių treniruotė",
+      "text": "Viso kūno treniruotė vos per 7 minutes. Pagrįsta mokslu ir nereikia jokios įrangos. Yra daugybė nemokamų programėlių, kurios veda per ją."
     },
     "aav": {
-      "title": "Mobilumas",
-      "text": "Kiekvieną trisdešimties stagnacijos minučių turėtumėte turėti bent vieną minutę stimuliacijos."
-    },
-    "aay": {
-      "text": "Tyrimai parodė, kad lipimas laiptais, kuris laikomas intensyvaus intensyvumo fizine veikla, sudegina daugiau kalorijų per minutę nei bėgiojimas.",
-      "title": "Lipkite laiptais"
-    },
-    "aaz": {
-      "title": "Kurkite meną",
-      "text": "Yra žinoma, kad meno terapija turi didelę naudą psichinei sveikatai, ypač kai kalbama apie streso valdymą. Kodėl neparašyti greito eilėraščio, nenufotografuoti ar nenupiešti ką nors nedidelio?"
-    },
-    "aba": {
-      "text": "Švari erdvė padeda sutelkti dėmesį į darbą ir dažnai yra susijusi su teigiamomis emocijomis, tokiomis kaip laimė.",
-      "title": "Atsisakykite netvarkos"
-    },
-    "abb": {
-      "text": "Gamta yra susijusi su teigiamomis emocijomis ir sumažėjusiu stresu bei nerimu. Kai tik įmanoma, pabandykite padaryti dienos pietų pertrauką lauke, apsupti žalumos.",
-      "title": "Pietūs lauke"
-    },
-    "abc": {
-      "title": "Viešasis transportas",
-      "text": "Jei reguliariai naudojatės viešuoju transportu, galite stovėti, o ne sėdėti. Jei įmanoma, stenkitės kuo daugiau savo kasdienių kelionių pakeisti pėsčiomis ar važiavimu dviračiu."
-    },
-    "abe": {
-      "title": "Dėmesio nukreipimas",
-      "text": "Laikykite vieną pirštą prie akies ir sutelkite dėmesį į jį. Lėtai atitraukite pirštą, sufokusuokite dėmesį į tolį, o tada atgal į pirštą. Patraukite pirštą atgal ir sutelkite dėmesį į kažką toli dar kartą."
-    },
-    "abd": {
-      "title": "Žiovulys",
-      "text": "Žiovulys gali būti tikrai naudingas, nes jis gamina ašaras, kurios padeda drėkinti ir sutepti akis."
-    },
-    "abf": {
-      "title": "Delnai",
-      "text": "Sėdėdami priglauskite alkūnes prie stalo ir prisiglauskite prie stalo krašto. Tegul jūsų svoris nukrenta į priekį, o tuomet uždėkite rankas ant akių. Užmerkite akis ir lėtai įkvėpkite per nosį ir palaikykite kelias sekundes. Tęskite gilų kvėpavimą."
-    },
-    "abg": {
-      "title": "Rankų suspaudimai",
-      "text": "Suspauskite porą susuktų kojinių arba minkštą guminį kamuoliuką, palaikykite 5 sekundes. Viską pakartokite keletą kartų."
-    },
-    "abh": {
-      "title": "Lėtas kvėpavimas",
-      "text": "Nauji tyrimai rodo, kad galima naudoti kontroliuojamo lėto kvėpavimo metodus kaip priemonę optimizuoti fiziologinius parametrus, kurie, atrodo, yra susiję su sveikata ir ilgaamžiškumu."
+      "title": "Pakelk širdies ritmą",
+      "text": "Tikslas — 20 minučių pakelto širdies ritmo (apie 120 dūžių/min), 4-5 kartus per savaitę. Nesvarbu ką darai — šok, bėk, žaisk su šunimi. Tavo širdis neteisia."
     },
     "aaw": {
-      "title": "7 minučių treniruotė",
-      "text": "Ši treniruotė per trumpą laiką apima viso kūno mankštą. Tačiau, kaip ir atliekant bet kokį pratimą, būkite atsargūs. Yra daug programėlių, kurios padės jums pradėti."
+      "title": "Lipk laiptais",
+      "text": "Lipimas laiptais klasifikuojamas kaip intensyvus mankšta ir degina daugiau kalorijų per minutę nei bėgimas. Kitą kartą praleisk liftą. Kojos skundsis, bet širdis švęs."
     },
     "aax": {
-      "title": "Pulsas",
-      "text": "Padidinkite pulso dažnį iki 120 dūžių per minutę 20 minučių keturis ar penkis kartus per savaitę darydami viską, kas jums patinka. Reguliarus širdies susitraukimų dažnio didinimas pagerina širdies ir kraujagyslių sistemos būklę."
+      "title": "Sukurk kažką",
+      "text": "Meno terapija įrodytai mažina stresą. Parašyk haiku, nupiešk pabaisą, nufotografuok kažką gražaus. Kūrybiškumas — smegenų perkrovimo mygtukas."
+    },
+    "aay": {
+      "title": "Sutvarkyk",
+      "text": "Netvarkinga darbo vieta koreliuoja su didesniu stresu. Skirkite 5 minutes darbo vietos sutvarkymui. Švari vieta, švari galva."
+    },
+    "aaz": {
+      "title": "Valgyk lauke",
+      "text": "Gamtos poveikis mažina kortizolį — streso hormoną. Kai galima, valgyk pietų lauke. Net sėdėjimas prie lango su žalumos vaizdu padeda."
+    },
+    "aba": {
+      "title": "Žiovavimo galia",
+      "text": "Žiovavimas — ne tik nuobodulys — jis aušina smegenis ir gamina ašaras, kurios drėkina akis. Drąsiai apsimesk, kad žiovaujy. Kūnas pavers tai tikru."
+    },
+    "abb": {
+      "title": "Fokuso keitimas",
+      "text": "Laikyk pirštą arti veido ir sufokusuok žvilgsnį. Lėtai atitrauk jį, tada pažvelk į tolį, tada atgal. Tai lavina raumenį, valdantį akies lęšį."
+    },
+    "abc": {
+      "title": "Akių dengimas delnais",
+      "text": "Uždėk šiltus delnus ant užmerktų akių ir atremk alkūnes ant stalo. Lėtai kvėpuok pro nosį. Net 30 sekundžių tamsos atnaujina regėjimo sistemą."
+    },
+    "abd": {
+      "title": "Spauski kažką",
+      "text": "Pagriebk streso kamuoliuką, kojinių porą ar bet ką suspaudžiamą. Palaikyk 5 sekundes, paleisk, kartok. Atpalaiduoja rankų įtampą ir keistai malonu."
+    },
+    "abe": {
+      "title": "Lėtas kvėpavimas",
+      "text": "Kontroliuojamas lėtas kvėpavimas (apie 6 kvėpavimai per minutę) aktyvuoja parasimpatinę nervų sistemą, mažina kraujospūdį ir nerimą. Kaip programinės įrangos atnaujinimas tavo nervų sistemai."
+    },
+    "abf": {
+      "title": "Vizualizacija",
+      "text": "Užmerk akis ir įsivaizduok ramią vietą — paplūdimį, mišką, kalno viršūnę. Susikaupk ties garsais, kvapais ir pojūčiais. Mini atostogos galvoje, nulis kelionės išlaidų."
+    },
+    "abg": {
+      "title": "5-4-3-2-1 įžeminimas",
+      "text": "Jautiesi priblokštas? Įvardink 5 dalykus, kuriuos matai, 4, kuriuos gali paliesti, 3, kuriuos girdi, 2, kuriuos uodi, 1, kurį ragauji. Ši technika grąžina tave į dabartinį momentą."
+    },
+    "abh": {
+      "title": "Galios snūstelėjimo mokslas",
+      "text": "10-20 min snūstelėjimas didina budrumą ir veikimą be mieguistumo. NASA nustatė, kad pilotai, snūstelėję 26 minutes, pagerino veiklą 34%. Jei tinka astronautams — tinka ir tau."
     },
     "abi": {
-      "title": "Įsivaizdavimas",
-      "text": "Užsimerkite ir įsivaizduokite save ramioje, raminančioje vietoje, pavyzdžiui, paplūdimyje ar miške, ir susitelkite į šios aplinkos vaizdus, garsus ir pojūčius."
+      "title": "Pomodoro atstatymas",
+      "text": "Dirbk 25 minutes, pertrauka 5 minutes. Po keturių ciklų — ilgesnė pertrauka. Pomodoro technika — ne tik produktyvumo triukas, tai proto sveikatos strategija."
     },
     "abj": {
-      "title": "Užvaldė emocijos?",
-      "text": "Išbandykite įsižeminimo pratimą „5-4-3-2-1“: pastebėkite 5 dalykus, kuriuos matote, 4 – paliečiamus, 3 – skleidžiančius garsą, 2 – kvepiančius ir vieną, kurį galėtumėte paragauti."
+      "title": "Piešinėjimo pertrauka",
+      "text": "Piešinėjimas pertraukų metu pagerina koncentraciją ir atminties išlaikymą iki 29%, pagal tyrimą Applied Cognitive Psychology. Griebk rašiklį ir leisk rankai klaidžioti."
+    },
+    "abk": {
+      "title": "Vienos dainos pertrauka",
+      "text": "Paleisk mėgstamą dainą ir iš tikrųjų klausykis — ne kaip fono, o kaip pagrindinio įvykio. Muzika aktyvuoja smegenų atlygio sistemą ir mažina kortizolį."
+    },
+    "abl": {
+      "title": "Dėkingumo momentas",
+      "text": "Užrašyk 3 dalykus, už kuriuos esi dėkingas dabar. Tyrimai rodo, kad reguliari dėkingumo praktika perkonfigūruoja smegenis pozityvumui ir mažina streso hormonus."
+    },
+    "abm": {
+      "title": "Šalto vandens atstatymas",
+      "text": "Aptaškyk veidą šaltu vandeniu arba palaikyk šaltą stiklinę prie riešų. Šaltis sukelia nardymo refleksą, kuris sulėtina širdies ritmą ir akimirksniu nuramina nervų sistemą."
+    },
+    "abn": {
+      "title": "Pasikalbėk su augalu",
+      "text": "Turi augalą ant stalo? Patikrink jį. Palaistykit, pasuk. Jei neturi — gal laikas įsigyti. Augalai mažina stresą ir gerina oro kokybę. Jie tobuli tylūs kolegos."
+    },
+    "abo": {
+      "title": "Minčių iškrovimas",
+      "text": "Griebk popieriaus lapą ir užrašyk viską, kas galvoje — užduotis, rūpesčius, atsitiktines mintis. Perkėlimas iš galvos ant popieriaus atlaisvina psichinę RAM."
+    },
+    "abp": {
+      "title": "Paglosty augintinį",
+      "text": "Dirbi iš namų su augintiniu? Skirkite minutę jį paglostyti. Gyvūnų glostymas mažina kortizolį ir didina oksitociną. Moksliškai patvirtintas streso malšinimas."
+    },
+    "abq": {
+      "title": "Juoko terapija",
+      "text": "Pažiūrėk 2 minučių juokingą vaizdo įrašą arba perskaityk kelis juokelius. Juokas sukelia endorfinus, mažina streso hormonus ir atpalaiduoja raumenis iki 45 minučių."
+    },
+    "abr": {
+      "title": "Gryno oro dozė",
+      "text": "Atidaryk langą arba išeik laukan 60 sekundžių. Grynas oras padidina deguonies tiekimą smegenims, gerina koncentraciją, serotonino lygį ir energiją."
+    },
+    "abs": {
+      "title": "Kūno skenavimas",
+      "text": "Nuo kojų pirštų lėtai kelk dėmesį aukštyn per kūną. Pastebėk, kur laikai įtampą. Pripažink ją, įkvėpk į ją ir paleisk."
+    },
+    "abt": {
+      "title": "Biuro joga",
+      "text": "Sėdima katės-karvės poza, stuburo sukimas, lenkimas pirmyn — jogą gali daryti nepalikdamas kėdės. Tavo stuburui nesvarbu apranga ar vieta, jis tiesiog nori judėti."
+    },
+    "abu": {
+      "title": "Perskaityk puslapį",
+      "text": "Laikyk knygą šalia ir pertraukos metu perskaityk vieną puslapį. Grožinė literatūra perkelia mintis kitur. Mokslinė — pamaitina kažkuo nauju. Bet kuriuo atveju laimi."
+    },
+    "abv": {
+      "title": "90 minučių ciklas",
+      "text": "Tavo smegenys dirba 90 minučių ultradianiais aukštos ir žemos energijos ciklais. Darbas su šiais natūraliais ritmais, o ne prieš juos, daro tave produktyvesnį ir mažiau išsekusį."
+    },
+    "abw": {
+      "title": "Smalsumo pertrauka",
+      "text": "Surask vieną atsitiktinį faktą apie tai, kas tave domina. Mokymasis kažko naujo pertraukos metu aktyvuoja smegenų atlygio grandines kitaip nei darbas."
+    },
+    "abx": {
+      "title": "Kvadratinis kvėpavimas",
+      "text": "Įkvėpk per 4, sulaikyk 4, iškvėpk per 4, sulaikyk 4. Naudoja JAV Karinio jūrų laivyno kotikai ramybei palaikyti esant spaudimui. Jei veikia jiems — veiks ir tavo pašto dėžutei."
+    },
+    "aby": {
+      "title": "Iššok tai",
+      "text": "Paleisk dainą ir šok jos trukmę. Uždaryk duris, jei reikia. Šokis išlaisvina endorfinus, gerina koordinaciją ir verčia jaustis gyvą. Niekas neatrodo šauniai šokdamas vienas, ir tai yra esmė."
+    },
+    "abz": {
+      "title": "Paskambink kam nors",
+      "text": "Panaudok pertrauką paskambinti žmogui, kuris tau rūpi — tiesiog pasisveikinti. Socialinis ryšys yra vienas stipriausių laimės ir ilgaamžiškumo rodiklių."
+    },
+    "aca": {
+      "title": "Saulės šviesos dozė",
+      "text": "Gaukite 10-15 minučių saulės šviesos, kai įmanoma. Ji reguliuoja cirkadinį ritmą, skatina vitamino D gamybą ir gerina nuotaiką. Tavo kūnas taip pat veikia saulės energija."
+    },
+    "acb": {
+      "title": "Progresyvus atsipalaidavimas",
+      "text": "Įtempk kiekvieną raumenų grupę 5 sekundėms, tada atpalaiduok. Pradėk nuo pėdų, kilk per blauzas, šlaunis, pilvo raumenis, rankas, pečius ir veidą. Visiškas įtampos atpalaidavimas per mažiau nei 3 minutes."
+    },
+    "acc": {
+      "title": "Basų kojų akimirka",
+      "text": "Nusiauk batus ir pajusk grindis po kojomis. Jei gali, pavaikščiok ant žolės. Įžeminimas mažina uždegimą ir gerina miegą."
+    },
+    "acd": {
+      "title": "Rašyk ateities sau",
+      "text": "Parašyk trumpą raštelį ateities sau — tikslą, norą, priminimą. Tai kuria savęs tęstinumą ir palaiko ryšį su tuo, kas svarbu anapus šiandienos užduočių sąrašo."
+    },
+    "ace": {
+      "title": "Skaitmeninis išvalymas",
+      "text": "Uždaryk visus skirtukus, kurių nenaudoji. Kaupiasi neperskaityti pranešimai? Išvalyk juos. Skaitmeninis šiukšlynas kuria kognityvinę apkrovą, kaip ir fizinis."
+    },
+    "acf": {
+      "title": "2 minučių taisyklė",
+      "text": "Jei tai, kas galvoje, užtruks mažiau nei 2 minutes — padaryk tai dabar pertraukos metu. Mažų užduočių atlikimas pašalina neužbaigtų reikalų psichinį svorį."
+    },
+    "acg": {
+      "title": "Laikysenos auditas",
+      "text": "Atsistok prie sienos su kulnais, sėdmenimis, pečiais ir galva prie jos. Taip atrodo gera laikysena. Pabandyk atkurti tą jausmą, kai vėl atsisėsi."
+    },
+    "ach": {
+      "title": "Kvapų pertrauka",
+      "text": "Užuosk kažką malonaus — kavos pupeles, žvakę, eterinius aliejus ar gaivų orą. Uoslė tiesiogiai sujungta su emocinėmis smegenimis ir gali akimirksniu pakeisti nuotaiką."
+    },
+    "aci": {
+      "title": "Debesų stebėjimas",
+      "text": "Jei matai dangų, skirkite minutę debesų stebėjimui. Tai originalus ekrano užsklanda — ir suteikia smegenims švelnų fokusą, skatinantį kūrybinį mąstymą."
+    }
+  },
+  "ui": {
+    "loading": "Kraunama Pauza…",
+    "preview": {
+      "status": "Peržiūra",
+      "detail": "Naršyklės peržiūra",
+      "action": "Peržiūros režimas aktyvus."
+    },
+    "title": "Pauza",
+    "heroHeadline": "Palaikykite darbo ritmą ramia sąsaja",
+    "heroSubtitle": "Svarbiausios nuostatos priekyje, išplėstinės parinktys gale.",
+    "settingsCategories": "Nuostatų kategorijos",
+    "settingsCategoriesHint": "Keiskite kategoriją kairėje, peržiūrėkite nuostatas dešinėje.",
+    "currentCategory": "Dabartinė kategorija",
+    "overview": "Apžvalga",
+    "overviewHint": "Būsenos santrauka, paskutiniai veiksmai ir greita prieiga.",
+    "liveOverview": "Tiesioginė apžvalga",
+    "liveOverviewHint": "Dabartinis ritmas, programos būsena ir pertraukos langas iš pirmo žvilgsnio.",
+    "quickActions": "Greiti veiksmai",
+    "quickActionsHint": "Šie veiksmai tiesiogiai veikia dabartinį ritmą.",
+    "savePanel": "Išsaugoti pakeitimus",
+    "savePanelHint": "Pakeitimai įsigalios tik po išsaugojimo.",
+    "nextBreakLabel": "Kita pertrauka",
+    "currentBreakLabel": "Dabartinė pertrauka",
+    "lastActionLabel": "Paskutinis veiksmas",
+    "runtimeLabel": "Aplinka",
+    "platformLabel": "Platforma",
+    "versionLabel": "Versija",
+    "breakFeelLabel": "Pertraukos stilius",
+    "placementLabel": "Lango pozicija",
+    "pendingChanges": "Neišsaugoti pakeitimai",
+    "synced": "Sinchronizuota",
+    "saving": "Saugoma…",
+    "allSet": "Paruošta",
+    "noCurrentBreak": "Nėra aktyvios pertraukos",
+    "liveSignals": "Tiesioginiai signalai",
+    "general": "Bendra",
+    "preferences": "Nuostatos",
+    "currentStatus": "Dabartinė būsena",
+    "language": "Kalba",
+    "languageChinese": "Supaprastinta kinų",
+    "languageEnglish": "Anglų",
+    "launchOnLogin": "Paleisti prisijungus",
+    "enabled": "Įjungta",
+    "disabled": "Išjungta",
+    "schedule": "Ritmas",
+    "interruptions": "Priminimai ir pertrūkiai",
+    "sectionScheduleHint": "Tik tie ritmo nustatymai, kuriuos koreguojate kasdien.",
+    "microbreaks": "Mikropertraukos",
+    "microbreaksHint": "Trumpi pertrūkiai darbo metu.",
+    "longBreaks": "Pertraukos",
+    "longBreaksHint": "Visiška pertrauka po kelių ciklų.",
+    "interval": "Intervalas",
+    "every": "Dažnumas",
+    "durationLabel": "Trukmė",
+    "behavior": "Elgesys",
+    "allowPostpone": "Leisti atidėti",
+    "signals": "Signalai",
+    "sectionSignalsHint": "Leiskite Pauza protingiau nuspręsti, kada rodyti priminimus.",
+    "naturalBreaks": "Natūralios pertraukos",
+    "naturalBreaksHint": "Automatinis atstatymas po pakankamai ilgos nebuvimo.",
+    "resetAfter": "Atstatyti po",
+    "dnd": "Netrukdyti",
+    "dndHint": "Pristabdyti priminimus, kai šis režimas aktyvus",
+    "sectionSurfaceHint": "Valdykite pertrūkio intensyvumą ir pertraukos lango poziciją.",
+    "sectionGeneralHint": "Kelios globalios nuostatos. Pagal nutylėjimą minimalistinės.",
+    "notificationsCategory": "Priminimai ir atidėjimas",
+    "notificationsCategoryHint": "Garsas prieš pertrauką. Atidėjimo nuostatos čia.",
+    "surfaceCategory": "Pertrūkis ir rodymas",
+    "surfaceCategoryHint": "Pertraukos lango intensyvumas, pozicija ir griežtumas.",
+    "smartPause": "Protinga pauzė",
+    "smartPauseHint": "Pauza pirmiausia ieško akivaizdaus momento ir palaipsniui mažina slenkstį.",
+    "generalAndShortcuts": "Bendra ir spartieji klavišai",
+    "generalAndShortcutsHint": "Tvarkykite kalbą, automatinį paleidimą ir globalius sparčiuosius klavišus.",
+    "advanced": "Išplėstinė",
+    "sectionAdvancedHint": "Daugiau valdymo, suderinamumo parinkčių ir sparčiųjų klavišų.",
+    "appExclusions": "Programų išimtys",
+    "appExclusionsHint": "Programos, kurioms priminimai pristabdomi arba atnaujinami.",
+    "appExclusionsEnable": "Įjungti",
+    "appRulePause": "Pristabdyti aptikus",
+    "appRuleResume": "Atnaujinti tik aptikus",
+    "pause30": "Pauzė 30 min",
+    "focus45": "Fokusas 45 min",
+    "resume": "Tęsti",
+    "clearFocus": "Baigti fokusą",
+    "save": "Išsaugoti",
+    "revert": "Atšaukti",
+    "defaults": "Numatytosios reikšmės",
+    "preBreakNotifications": "Perspėjimo garsas",
+    "beforeLabel": "Prieš",
+    "postpone": "Atidėti",
+    "scheduleControl": "Ritmo valdymas",
+    "resetScheduleHint": "Perskaičiuoti kitas pertraukas nuo dabar.",
+    "postponeCategoryHint": "Nustatykite atidėjimo trukmę ir limitą atskirai.",
+    "limitLabel": "Limitas",
+    "breakSurface": "Pertraukos langas",
+    "breakDisplayMode": "Rodymo režimas",
+    "breakBackdrop": "Fono tema",
+    "breakBackdropHint": "Pasirinkite atmosferinį foną pertraukos langui.",
+    "breakBackdropPaper": "Popierius",
+    "breakBackdropDawn": "Aušra",
+    "breakBackdropForest": "Miškas",
+    "breakBackdropNight": "Naktis",
+    "breakBackdropCustom": "Tinkintas fonas",
+    "customWallpaper": "Tinkintas fonas",
+    "customWallpaperHint": "Įkelkite vietinį paveikslą kaip pertraukos lango foną.",
+    "customWallpaperChoose": "Pasirinkti paveikslą",
+    "customWallpaperReplace": "Pakeisti paveikslą",
+    "customWallpaperRemove": "Pašalinti",
+    "customWallpaperEmpty": "Tinkintas fonas nepasirinktas",
+    "customWallpaperEmptyHint": "Be paveikslo bus naudojama numatytoji tema.",
+    "customWallpaperReady": "Paveikslas suglaudinamas ir saugomas lokaliai kaip pertraukos fonas.",
+    "breakIdeas": "Pertraukos patarimai",
+    "breakIdeasHint": "Rodyti trumpą patarimą kiekvienos pertraukos metu.",
+    "breakSounds": "Pertraukos garsai",
+    "breakSoundsHint": "Perspėjimo garsas prieš pertrauką ir pabaigos garsas po jos.",
+    "microbreakStartSound": "Mikropertraukos perspėjimas",
+    "microbreakEndSound": "Mikropertraukos pabaiga",
+    "longBreakStartSound": "Pertraukos perspėjimas",
+    "longBreakEndSound": "Pertraukos pabaiga",
+    "breakSoundVolume": "Garsumas",
+    "breakSoundSilence": "Tyla",
+    "breakSoundCrystalGlass": "Krištolinė taurė",
+    "breakSoundWindChime": "Vėjo varpeliai",
+    "breakSoundTicToc": "Tik-tak",
+    "breakSoundReverie": "Svajonė",
+    "reminderMode": "Priminimo režimas",
+    "reminderModeHint": "Protingas ieško natūralaus momento; Priverstinis pertraukia iš karto.",
+    "reminderModeSmart": "Protingas",
+    "reminderModeForced": "Priverstinis",
+    "window": "Langas",
+    "fullscreen": "Visas ekranas",
+    "promptStyleGentle": "Švelnus",
+    "promptStyleBalanced": "Subalansuotas",
+    "promptStyleImmersive": "Pasineriamas",
+    "allScreens": "Visi ekranai",
+    "screenPrimary": "Pagrindinis ekranas",
+    "screenCursor": "Ekranas su žymekliu",
+    "showTimeToBreakInTray": "Rodyti kitą pertrauką sistemos dėkle",
+    "currentTimeInBreaks": "Rodyti laiką pertraukos lange",
+    "currentTimeInBreaksHint": "Sistemos laikas viršutiniame dešiniajame pertraukos lango kampe.",
+    "strictModes": "Griežti režimai",
+    "strictModesHint": "Valdykite, ar galima praleisti pertraukas ir ar reikia rankinio patvirtinimo.",
+    "microbreakStrict": "Griežta mikropertrauka",
+    "longBreakStrict": "Griežta pertrauka",
+    "manualFinish": "Baigti rankiniu būdu po laikmačio",
+    "showTrayMenuInStrictMode": "Sistemos dėklo meniu griežtame režime",
+    "shortcuts": "Spartieji klavišai",
+    "shortcutsHint": "Tuščia = neregistruota. Formatas pvz.: CmdOrCtrl+Shift+P",
+    "shortcutReveal": "Atidaryti nuostatas",
+    "shortcutFocus45": "Fokusas 45 min",
+    "shortcutPauseToggle": "Perjungti pauzę",
+    "shortcutPause30": "Pauzė 30 min",
+    "shortcutPause60": "Pauzė 1 val.",
+    "shortcutPause120": "Pauzė 2 val.",
+    "shortcutPause300": "Pauzė 5 val.",
+    "shortcutSkipScheduled": "Pereiti prie kitos suplanuotos pertraukos",
+    "shortcutSkipMicrobreak": "Pereiti prie mikropertraukos",
+    "shortcutSkipLongBreak": "Pereiti prie pertraukos",
+    "shortcutReset": "Atstatyti ritmą",
+    "suffix": {
+      "secondsLong": "s",
+      "secondsBefore": "s prieš",
+      "minutesApart": "min kas",
+      "cycles": "ciklai",
+      "minutesLong": "min",
+      "minutesShortPostpone": "min",
+      "minutesLongPostpone": "min",
+      "minutesAway": "min",
+      "minutes": "min",
+      "times": "×"
+    },
+    "status": {
+      "noBreakScheduled": "Nėra suplanuotos pertraukos",
+      "microbreak": "Mikropertrauka",
+      "longBreak": "Pertrauka",
+      "nextBreak": "{{label}} po {{duration}}",
+      "focus": "Fokusas {{duration}}",
+      "pause": "Pristabdyta {{duration}}",
+      "pauseForever": "Pristabdyta neribotam laikui",
+      "blockedBy": "Pristabdyta dėl {{match}}",
+      "appRuleActive": "Programos taisyklė aktyvi",
+      "dndActive": "Netrukdyti aktyvus"
+    },
+    "error": {
+      "loadState": "Nepavyko įkelti Pauza būsenos"
+    },
+    "breakCopy": {
+      "clearedDetail": "Nėra aktyvios pertraukos.",
+      "manualAwaiting": "Laikas baigėsi. Užbaikite šią pertrauką prieš grįždami prie darbo.",
+      "awaitingFinish": "Laukiama užbaigimo",
+      "actions": {
+        "resumeWork": "Grįžti prie darbo",
+        "done": "Atlikta",
+        "later": "Vėliau",
+        "skip": "Praleisti"
+      },
+      "defaultPrompt": {
+        "microbreak": "Atsistokite, atpalaiduokite pečius ir kaklą, pažvelkite į tolį.",
+        "longBreak": "Pasitraukite nuo stalo kelioms minutėms, kad kūnas ir protas pailsėtų."
+      }
+    },
+    "previewAction": {
+      "save": "Peržiūra: nuostatos atnaujintos.",
+      "pause": "Peržiūra: pristabdyta 30 min.",
+      "pauseForever": "Peržiūra: pristabdyta neribotam laikui.",
+      "focus": "Peržiūra: fokusas įjungtas.",
+      "focusCleared": "Peržiūra: fokusas baigtas.",
+      "resume": "Peržiūra: tęsiama.",
+      "reset": "Peržiūra: ritmas atstatytas.",
+      "autostartOn": "Peržiūra: automatinis paleidimas įjungtas.",
+      "autostartOff": "Peržiūra: automatinis paleidimas išjungtas.",
+      "done": "Peržiūra: pertrauka baigta.",
+      "later": "Peržiūra: pertrauka atidėta.",
+      "skip": "Peržiūra: pertrauka praleista."
     }
   }
 }
