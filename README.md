@@ -2,7 +2,12 @@
 
 当前版本：`0.1.1`
 
-当前仓库默认只维护 Tauri 桌面端，单一真源位于 `apps/desktop/`。根目录脚本只是对 `apps/desktop` 的转发入口。
+当前仓库当前维护两块内容：
+
+- `apps/desktop/`：Pauza 桌面端主实现
+- `apps/site/`：Pauza 单页官网与下载跳转页
+
+根目录脚本默认仍以桌面端为主，网站预览使用单独的 `site:dev` 入口。
 
 ## 0.1.1 概览
 
@@ -68,13 +73,12 @@ npm run desktop:install
 启动桌面端开发环境：
 
 ```bash
-npm start
+npm run dev
 ```
 
-等价命令：
+显式写法：
 
 ```bash
-npm run dev
 npm run desktop:dev
 ```
 
@@ -83,11 +87,32 @@ npm run desktop:dev
 - Vite 前端开发服务
 - Tauri 2 原生桌面壳
 
+## 本地预览官网
+
+启动网站静态预览：
+
+```bash
+npm run site:dev
+```
+
+然后打开：
+
+```text
+http://127.0.0.1:43210
+```
+
+说明：
+
+- 官网目录位于 `apps/site/`
+- 下载按钮统一先进入 `apps/site/download/`
+- 真实下载地址集中维护在 `apps/site/download/targets.js`
+
 ## 常用校验命令
 
 ```bash
 npm test
-npm --prefix apps/desktop run typecheck
+npm run typecheck
+npm run test:coverage
 python3 scripts/sync_desktop_locales.py
 python3 graphics/generate_icon_assets.py
 ```
@@ -95,22 +120,26 @@ python3 graphics/generate_icon_assets.py
 说明：
 
 - `npm test`：运行当前保留的 Vitest 测试
-- `typecheck`：检查 `apps/desktop` 前端 TypeScript
+- `npm run typecheck`：检查 `apps/desktop` 前端 TypeScript
+- `npm run test:coverage`：运行测试并生成覆盖率
 - `sync_desktop_locales.py`：根据 `apps/desktop/src/locales/{messages,config}` 生成共享 locale registry
 - `generate_icon_assets.py`：重生成 Tauri / macOS 打包图标；改过 `graphics/*.svg` 后先跑这条
 
 ## 打包桌面端
 
-根目录当前有效打包命令：
+根目录短入口：
 
 ```bash
 npm run build
-npm run desktop:build
-npm run pack
-npm run dist
 ```
 
-它们都会走同一条 Tauri 打包链路。
+显式写法：
+
+```bash
+npm run desktop:build
+```
+
+两者都会走同一条 Tauri 打包链路。
 
 ### 打包当前机器架构的 macOS 版本
 
@@ -156,4 +185,5 @@ apps/desktop/src-tauri/target/release/bundle/
 ## 说明
 
 - `app/` 目录现在只作为旧版参考，不参与默认运行、构建、测试或 locale 生成
+- `apps/site/` 当前是独立静态站点目录，后续 Vercel 部署建议直接把 root directory 指到这里
 - 如果需要更细的仓库约束、目录职责和工作流说明，查看 `docs/RepositoryGuidelines.md` 与 `docs/CodeMap.md`

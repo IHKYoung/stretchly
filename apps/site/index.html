@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Pauza 是一款更安静的久坐提醒。官网以极简打字机方式展示应用内置的有趣提醒文案，并保留一个简洁下载入口。"
+    />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Pauza | 更安静的久坐提醒</title>
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="preload" href="./fonts/LXGWWenKaiScreen.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <a class="download-button" href="./download/releases/" aria-label="下载 Pauza">
+      <span>下载</span>
+    </a>
+
+    <main class="page-shell">
+      <section class="typewriter-stage" aria-labelledby="typewriter-title">
+        <p class="prompt-line" aria-hidden="true">
+          <span class="prompt-mark">pauza&gt;</span>
+        </p>
+
+        <h1 id="typewriter-title" class="typewriter-copy">
+          <span class="sr-only">Pauza 会循环展示应用内置的提醒文案。</span>
+          <span class="typed-output" data-typed-output aria-hidden="true"></span>
+          <span class="caret" aria-hidden="true"></span>
+        </h1>
+      </section>
+    </main>
+
+    <script src="./copy.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

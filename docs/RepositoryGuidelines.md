@@ -3,6 +3,7 @@
 ## 项目结构与模块组织
 - `README.md`：根目录快速入口，汇总当前有效的运行、测试与打包命令。
 - `app/`：归档中的旧 Electron 壳，仅保留为历史参考；当前默认运行、构建、测试链路都不再依赖它。
+- `apps/site/`：Pauza 单页官网与下载跳转页，采用纯静态 HTML/CSS/JS 实现，后续适合直接作为 Vercel root directory。
 - `apps/desktop/components.json`、`apps/desktop/src/components/ui/*`、`apps/desktop/src/lib/utils.ts`：Tauri 前台的 Tailwind/shadcn 组件基座。
 - `apps/desktop/src/App.tsx`、`apps/desktop/src/styles.css`：新的 Tauri 设置工作台与 break prompt 视觉层。
 - `apps/desktop/src-tauri/src/*.rs`：新的 Rust host，负责设置持久化、调度、系统信号、tray、shortcut、notification、窗口命令与运行时状态。
@@ -13,17 +14,18 @@
 - `scripts/`、`.githooks/`：本仓库的工作流校验、任务脚手架与 Git hooks。
 
 ## 构建、测试与开发命令
-- `npm start`：启动 `apps/desktop` 的 Tauri 桌面端。
-- `npm run dev`：同 `npm start`，用于本地开发。
+- `npm run dev`：启动 `apps/desktop` 的 Tauri 桌面端。
 - `npm run desktop:install`：安装 `apps/desktop` 的前端与 Tauri 依赖。
 - `npm run desktop:dev`：启动新的 Tauri 2 桌面壳（Vite `127.0.0.1:43179`，HMR `43180`）。
-- `npm run desktop:build`：构建新的 Tauri 2 安装产物。
+- `npm run build`：根级短入口，转发到 `apps/desktop` 的 Tauri 2 打包链路。
+- `npm run desktop:build`：显式构建新的 Tauri 2 安装产物。
+- `npm run typecheck`：检查 `apps/desktop` 前端 TypeScript。
+- `npm run site:dev`：使用本地静态服务器预览 `apps/site` 官网（默认 `127.0.0.1:43210`）。
 - `python3 graphics/generate_icon_assets.py`：根据 `graphics/app-icon.svg` 与 `graphics/tray-icon.svg` 重新生成 Tauri / packaging 图标资源；修改图标源文件后必须先跑这条命令。
 - `npm test`：运行当前保留的 desktop 相关 Vitest 测试。
-- `npm run coverage`：运行测试并按需生成覆盖率产物到本地 `coverage/`；该目录属于临时生成物，不应作为长期仓库资产保留。
+- `npm run test:coverage`：运行测试并按需生成覆盖率产物到本地 `coverage/`；该目录属于临时生成物，不应作为长期仓库资产保留。
+- `npm run test:watch`：以 watch 模式运行当前保留的 Vitest 测试。
 - `npm run lint`：执行 Standard 风格检查。
-- `npm run pack`：当前等价于 `npm run desktop:build`。
-- `npm run dist`：当前等价于 `npm run desktop:build`。
 - `python3 scripts/ensure_workflow_ready.py --target . --hooks required`：补齐并校验 Codex 工作流资产。
 - `python3 scripts/sync_desktop_locales.py`：从 `apps/desktop/src/locales/{messages,config}` 生成并校验桌面端共享 `registry.generated.json`。
 - `python3 scripts/validate_workflow_docs.py`：检查 docs/specs、plans、logs 的门禁字段。
@@ -33,6 +35,8 @@
 - 代码主体使用 ESM 风格的原生 JavaScript；除 `vitest.config.ts` 外没有前端框架或 TypeScript 业务层。
 - `apps/desktop` 是单一真源；新的桌面端能力、构建链路和测试依赖都应收口到这里，不要继续把 `app/**` 接回默认链路。
 - `app/**` 当前只作为原版参考目录存在；如果真要恢复其中的旧行为，应直接迁入 `apps/desktop/src-tauri/**` 或 `apps/desktop/src/**`，不要再在 `apps/` 下保留过渡兼容层。
+- `apps/site/**` 当前是纯静态站点，不应为了官网再引入新的 npm 依赖或复杂构建栈；下载目标地址统一维护在 `apps/site/download/targets.js`。
+- 根 `package.json` 现在只保留一套短入口（`dev/build/typecheck`）和显式命名空间（`desktop:*`、`site:*`、`test:*`）；不要再回填 `start/pack/dist` 这类纯重复别名。
 - 修改 Tauri 前台时，同时考虑浏览器 preview fallback，避免只在原生 runtime 下可看。
 - 新的 Tauri 前台默认以 Tailwind CSS v4 + shadcn 风格组件演进；新增交互应优先复用 `src/components/ui/*`，不要回退到整页手写样式类。
 - 修改桌面端多语言时，只维护 `apps/desktop/src/locales/messages/*.json` 与 `apps/desktop/src/locales/config/*.json`；不要重新引入 `break-message-copy.*`、`overrides/` 或 `app/locales` 回灌。

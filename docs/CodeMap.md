@@ -8,12 +8,13 @@
 - `README.md`：根目录快速入口，汇总当前有效的运行、测试与打包命令。
 - `app/`：归档中的旧 Electron 壳；当前默认运行、构建、测试链路都不再依赖该目录。
 - `apps/desktop/`：当前唯一有效的桌面端主实现，包含前台、Rust host 与 locale 真源。
+- `apps/site/`：Pauza 单页官网与下载跳转目录；纯静态实现，后续适合作为 Vercel 部署根目录。
 - `build/`：打包所需图标与安装器资源。
 - `docs/`：变更日志、项目理解文档、任务 specs、plans 与 logs。
 - `graphics/`：应用图标源文件与生成脚本；其中 `app-icon.svg` 面向 Dock / bundle，`tray-icon.svg` 面向 macOS tray，小尺寸几何单独维护，`generate_icon_assets.py` 负责把两者展开为打包资源。
 - `scripts/`：工作流脚本、校验器与任务脚手架。
 - `test/`：Vitest 测试用例与测试辅助资源。
-- `package.json`：根级 npm scripts；`start/dev/build/pack/dist` 全部转发到 `apps/desktop`。
+- `package.json`：根级 npm scripts；当前只保留 `dev/build/typecheck` 短入口，以及 `desktop:*`、`site:*`、`test:*` 命名空间命令。
 - `vitest.config.ts`：Vitest 运行与覆盖率配置。
 
 ## app/（archived）
@@ -39,6 +40,7 @@
 
 ## apps/desktop/src-tauri/
 - `apps/desktop/src-tauri/tauri.conf.json`：Tauri 2 应用配置、窗口尺寸与 bundle icon 列表。
+- `apps/desktop/src-tauri/icons/`：当前正式 bundle / tray 图标输出目录；其中 `icon-alt-nw45.{svg,png}` 是从网页 favicon 演化出的透明底候选图标素材，不参与当前默认打包链路。
 - `apps/desktop/src-tauri/src/i18n.rs`：Rust host 侧共享 locale lookup 与插值层，消费 `registry.generated.json` 并与前端使用同一语言 fallback 规则。
 - `apps/desktop/src-tauri/src/lib.rs`：插件装配、状态初始化、engine 启动与命令注册入口。
 - `apps/desktop/src-tauri/src/commands.rs`：设置、pause/focus、break actions、autostart 与主窗口命令边界。
@@ -46,6 +48,18 @@
 - `apps/desktop/src-tauri/src/platform.rs`：idle / DND / app exclusion 的跨平台轻量探测层；`idle_ms` 已与 `natural_breaks` 开关解耦，始终可供智能提醒使用。
 - `apps/desktop/src-tauri/src/shell.rs`：tray 菜单、托盘点击、全局快捷键与 break/main window 生命周期；macOS 下还负责定向 patch Pauza 自己的 `NSStatusItem` tray image，并在开发态兜底 Dock icon。
 - `apps/desktop/src-tauri/src/state.rs`：`PauzaSettings`、`RuntimeState`、`DesktopSnapshot` 的运行时真源，现已覆盖通知、postpone、`reminder_mode`、manual finish、break surface、自定义壁纸 / cue / start/end sound、shortcut 配置，并通过 i18n 层输出本地化状态文案。
+
+## apps/site/
+- `apps/site/index.html`：官网单页首页；当前采用纯白纸面背景与极简打字机舞台，只保留一个下载按钮。
+- `apps/site/favicon.svg`：官网与下载页共用的站点图标；当前已改为透明底，开口朝向左上，作为桌面端候选图标的几何来源。
+- `apps/site/styles.css`：官网视觉层，负责纸面/网格质感、中央舞台与下载按钮样式。
+- `apps/site/script.js`：首页打字机脚本，负责逐字输入、停留、退格和下一条文案切换。
+- `apps/site/copy.js`：官网循环展示的提醒文案真源，当前精选自桌面端内嵌提醒文案。
+- `apps/site/fonts/LXGWWenKaiScreen.ttf`：官网自带的 `LXGW WenKai Screen` 字体资源，用于实现“落霞孤鹜 / 霞鹜”风格。
+- `apps/site/download/targets.js`：网站下载目标地址真源；首页 CTA 只连到站内稳定路由，真实 URL 统一在这里维护。
+- `apps/site/download/redirect.js`：下载跳转页的统一逻辑，负责 loading、fallback 和自动跳转。
+- `apps/site/download/styles.css`：下载跳转页的共享视觉样式。
+- `apps/site/download/*/index.html`：按平台拆分的稳定下载路由页面。
 
 ## test/
 - `test/translations.js`：桌面端 `apps/desktop/src/locales/messages/*.json` 的多语言资源一致性测试。

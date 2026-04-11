@@ -49,7 +49,7 @@ jobs:
     - name: Rebuild native modules for Node.js
       run: npm rebuild node-desktop-idle-v2
     - name: Run tests with coverage
-      run: npm run coverage
+      run: npm run test:coverage
       env:
         CI: true
         DISPLAY: ':0'

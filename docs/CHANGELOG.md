@@ -17,6 +17,16 @@
 
 ## 未发布
 
+### 新增
+
+- 新增 `apps/site` 单页官网原型：当前首页已重设计为纯白纸面背景 + 极简打字机舞台，循环展示 App 内嵌的提醒文案，并只保留一个下载按钮
+- 新增 `apps/site/download/**` 稳定下载跳转层：首页按钮不直接散落第三方下载地址，真实目标 URL 统一收口到 `targets.js`
+- 新增一版透明底的候选图标素材 `apps/desktop/src-tauri/icons/icon-alt-nw45.{svg,png}`：来自网页端 `favicon`，并把开口方向调整到西北 45 度附近，便于后续和当前正式图标对比评估
+
+### 调整
+
+- 整理根 `package.json` 的 repo 级脚本入口：删除 `start/pack/dist/test-single` 等重复或低价值脚本，新增 `typecheck` 与 `test:*` 命名，保留一套短入口（`dev/build/typecheck`）和一套显式命名空间（`desktop:*`、`site:*`、`test:*`）
+
 ## 0.1.1 - 2026-04-10
 
 ### 调整

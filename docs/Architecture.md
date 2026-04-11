@@ -1,7 +1,7 @@
 # Architecture
 
 ## 总览
-Pauza 当前的桌面端单一真源是 `apps/desktop`。根 `package.json` 的 `start/dev/build/pack/dist/postinstall` 全部转发到 Tauri 2 桌面壳；`app/**` 只作为归档参考保留，不再参与默认运行、构建、测试或 locale 生成链路。当前架构目标不是继续维护“双壳并行”，而是把所有有效桌面端资产持续收口到 `apps/desktop`。
+Pauza 当前的可运行资产分为两层：`apps/desktop` 负责桌面端产品本体，`apps/site` 负责单页官网与下载稳定路由。根 `package.json` 的 `start/dev/build/pack/dist/postinstall` 继续转发到 Tauri 2 桌面壳，新增的 `site:dev` 只承担官网本地预览；`app/**` 只作为归档参考保留，不再参与默认运行、构建、测试或 locale 生成链路。当前架构目标不是继续维护“双壳并行”，而是把桌面端与官网分别收口到明确目录与职责边界。
 
 ## 运行时分层
 - 前台层：`apps/desktop/src/App.tsx`、`src/components/ui/*`、`src/styles.css` 组成设置页与 break prompt 的 React 前台；浏览器 preview 与原生 runtime 共用同一 UI 代码。
@@ -9,6 +9,15 @@ Pauza 当前的桌面端单一真源是 `apps/desktop`。根 `package.json` 的 
 - 文案层：`apps/desktop/src/locales/messages/*.json` 与 `config/*.json` 是桌面端唯一有效的文案真源；break prompt 专属提示语也通过 `messages/*.json` 中的 `ui.breakCopy.*` 维护。`scripts/sync_desktop_locales.py` 生成 `registry.generated.json`，供前端 `i18n.ts` 与 Rust host `i18n.rs` 共享。
 - 前台 helper：`apps/desktop/src/lib/break-prompt.ts` 负责 break 主题、提示音映射、自定义壁纸压缩与 break prompt 辅助逻辑。
 - Rust host：`apps/desktop/src-tauri/src/lib.rs`、`commands.rs`、`shell.rs`、`state.rs`、`engine.rs`、`platform.rs` 组成宿主层，负责设置持久化、调度、tray、shortcut、notification、窗口生命周期与系统状态采集。
+
+## 官网分层
+- `apps/site/index.html` + `styles.css` + `copy.js` + `script.js` 组成单页官网本体，不引入额外前端依赖或构建链。
+- `apps/site/fonts/LXGWWenKaiScreen.ttf` 是官网自带字体资源，避免官网依赖外部字体 CDN。
+- `apps/site/download/targets.js` 是官网侧唯一的下载目标地址真源；首页 CTA 不直接持有外部下载 URL。
+- `apps/site/download/*/index.html` 与 `redirect.js` 共同组成稳定下载路由层：
+  - 当目标地址已配置时，页面做短暂倒计时后自动跳转，并保留手动打开入口。
+  - 当目标地址留空时，页面停留在 fallback 状态并输出 `console.warn`，避免用户遇到死链或空白页。
+- 官网首页当前只承担“品牌气质表达 + 下载入口”职责：中央打字机舞台循环展示精选提醒文案，站点不与桌面端运行时共享状态，也不依赖桌面端构建流程。
 
 ## Tauri 核心时序
 1. `lib.rs` 在 setup 时初始化 `PauzaState`，从 app config 目录加载或创建 `settings.json`。

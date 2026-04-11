@@ -5,6 +5,15 @@
 - `apps/desktop/src/components/ui/*`：主设置页和 break prompt 共用的基础控件。
 - `apps/desktop/src/styles.css`：主界面的设计 token、布局和动效。
 - `apps/desktop/src/locales/messages/*.json`：当前唯一有效的 UI 文案真源；break 消息页提示语统一维护在 `ui.breakCopy.*`。
+- `apps/site/index.html`：当前官网单页入口；负责用一块极简打字机舞台展示 Pauza 的提醒文案，并保留单一下载按钮。
+- `apps/site/download/*/index.html`：平台/用途拆分的稳定下载路由页；当前真实下载地址统一由 `apps/site/download/targets.js` 提供。
+
+## 官网站点
+- 官网当前采用纯静态 `HTML + CSS + JS` 实现，目标是先承接品牌表达和下载入口，而不是演化成多页内容站。
+- 首页当前进一步收敛为单舞台结构：纯白纸面背景上只保留一块中央文案展示区和右上角下载按钮。
+- 视觉语言改为更纯净的“草稿纸 / 网格纸”方向：白底、淡网格、极弱噪点和细边框，不再使用多卡片信息布局。
+- 主视觉文案采用打字机式逐字输入、停留、退格、切换；展示内容精选自 App 已内嵌的提醒文案，并使用 `LXGW WenKai Screen` 字体资源实现更有书写感的中文气质。
+- 下载按钮不直接硬编码外部文件地址，而是统一先进入站内稳定路由；这样后续无论接 GitHub Releases、R2 还是其他对象存储，都不需要改首页 CTA。
 
 ## 前端实现模式
 - 当前桌面端前台采用 `React + TypeScript + Tauri command` 模式，不再以旧 Electron 的 `html + preload + renderer` 作为默认实现。
