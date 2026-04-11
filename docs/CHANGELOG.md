@@ -22,10 +22,26 @@
 - 新增 `apps/site` 单页官网原型：当前首页已重设计为纯白纸面背景 + 极简打字机舞台，循环展示 App 内嵌的提醒文案，并只保留一个下载按钮
 - 新增 `apps/site/download/**` 稳定下载跳转层：首页按钮不直接散落第三方下载地址，真实目标 URL 统一收口到 `targets.js`
 - 新增一版透明底的候选图标素材 `apps/desktop/src-tauri/icons/icon-alt-nw45.{svg,png}`：来自网页端 `favicon`，并把开口方向调整到西北 45 度附近，便于后续和当前正式图标对比评估
+- 新增 `docs/PauzaV1SixStepPlan.md`，把 Pauza 后续定位、onboarding、主窗口、低打扰能力、反馈闭环与付费边界整理成 6 个连续步骤
 
 ### 调整
 
 - 整理根 `package.json` 的 repo 级脚本入口：删除 `start/pack/dist/test-single` 等重复或低价值脚本，新增 `typecheck` 与 `test:*` 命名，保留一套短入口（`dev/build/typecheck`）和一套显式命名空间（`desktop:*`、`site:*`、`test:*`）
+- 继续收敛 `apps/site` 官网首页：打字机单条文案现会完整停留约 `10s`，主舞台改为明显居中的 `80%` 视口宽度，并补上 pointer aura、滚动 sweep、点击 burst 与调侃提醒气泡等轻交互层
+- 继续收敛 `apps/site` 首页结构：中央舞台已去掉卡片壳，`Pauza>` 改为左上角终端提示头，首页更接近纸面上的终端输出感
+- 继续收敛 `apps/site` 终端感细节：`Pauza>` 提示头进一步加重，主输出文案宽度现按浏览器宽度 `80%` 收敛，粒子反馈也从光点改为更偏 `0 / 1 / #` 的符号字元
+- 继续收敛 `apps/site` 的字体与粒子语义：全站现统一使用 `LXGW WenKai Screen`，`Pauza>`、下载按钮、互动提示和粒子都不再混用另一套字体；粒子数量、字号和 `0 / 1 / # / @ / ！ / ¥ / $` 符号密度也同步提高
+- 将 `README.md`、`docs/RepositoryGuidelines.md`、`docs/CodeMap.md`、`docs/Architecture.md` 与 `docs/UI.md` 的当前真源口径统一为“仓库现仅维护 `apps/desktop` 与 `apps/site`”，不再把已删除的旧 `app/` 目录写成现存模块
+
+### 修复
+
+- 修复 `apps/desktop` break prompt 文案容易被从中间截断的问题：当前改为“整句优先，超长句按分句换行”，中文会在逗号/句号等自然停顿处独立成行，不再在任意字位折断
+- 修复 `apps/desktop` 顶部菜单点击 `跳到下一次休息` 后可能直接卡死的问题：tray 菜单事件不再在点击路径里立刻整棵 `set_menu()` 重建，而是等 native 菜单关闭后再延后按需刷新
+- 修复 `apps/desktop` 在 macOS 全屏工作区里到点后 break prompt 可能不浮出，以及设置页数字输入每击键回弹/卡住的问题：break 窗口现会显式激活 app，数字 stepper 现改为“本地草稿 -> blur/Enter/按钮提交”模式
+
+### 移除
+
+- 移除旧 Electron `app/**` 目录及其页面、preload/renderer、音频、图片与旧 locale 资产；当前工作树不再保留双壳并行结构
 
 ## 0.1.1 - 2026-04-10
 
@@ -80,6 +96,7 @@
 
 ### 修复
 
+- 修复 `apps/desktop` 顶部菜单点击 `跳到` 类动作后可能直接卡死的问题：tray 菜单事件不再在点击路径里立刻整棵 `set_menu()` 重建，而是等 native 菜单关闭后再延后按需刷新，避开 macOS 宿主菜单生命周期冲突
 - 修复 `apps/desktop` 在 macOS 上顶部菜单栏 tray icon 右键时的原生菜单闪退；tray 根 context menu 现按平台分支为 macOS 使用 `Submenu`，避免在 root `Menu` 上直接挂普通 `MenuItem`
 - 修复 `apps/desktop` 的 tray 菜单会在后台 1s tick 中被反复重建的问题；tray 现在只在菜单内容有效变化时刷新，不再让已展开的原生菜单一闪即逝
 - 修复 `apps/desktop` 顶部 tray 倒计时和右键 tray 菜单状态不同步的问题：tray 标题现按秒同步真实剩余时间，已展开菜单里的状态文本也会原地实时更新；同时新增设置项控制顶部倒计时是否显示，并补上该项的多语言兼容回退
@@ -88,6 +105,7 @@
 - 修复 `apps/desktop` break prompt 点击 `完成休息 / 稍后 / 跳过` 时可能直接退出应用的问题：break CTA 现先返回 `DesktopSnapshot`，再异步销毁当前 break webview，避免在 `invoke` 回包过程中同步 teardown 当前窗口
 - 修复 `apps/desktop` fullscreen break 在 macOS 上可能出现顶部空白的问题：break 宿主 fullscreen 现统一经由 helper 处理，macOS 改走 simple fullscreen，close path 也会同步兜底退出 simple/native fullscreen
 - 修复 `apps/desktop` 在 macOS 全屏工作区里 break 窗口无法覆盖当前工作屏幕的问题：break 宿主窗口现在会额外 patch 原生 `NSWindow` 的 `CanJoinAllSpaces | MoveToActiveSpace | FullScreenAuxiliary`，并直接抬到最高 native level；显示后还会主动 front 到当前 Space
+- 修复 `apps/desktop` 在 macOS 上到点后 window 模式 break 仍可能停留在后台的问题：non-focusable break 路径现在除了 `present_break_window()` 外，还会显式激活 `NSApplication`，让提示更可靠地切到当前全屏 Space
 - 修复 `apps/desktop` 在 macOS 上顶部 tray icon 发糊且偏大的问题：tray 现直接 patch Pauza 自己的 `NSStatusItem`，并使用 1x/2x template image；同时重画了小尺寸 tray SVG，避免 glyph 贴满菜单栏槽位
 - 修复 `apps/desktop` 在 macOS 上 Dock icon 偏大的问题：应用图标现为更保守的安全边距构图，release `.app` 也不再执行额外的 Dock runtime patch，优先使用系统 bundle icon
 - 修复图标生成链中的两个真实故障：`graphics/generate_icon_assets.py` 不再对同一路径做 ffmpeg 原地覆盖，`ensure_srgb` 也恢复兼容输出路径参数，图标资源可重新稳定生成
@@ -99,6 +117,7 @@
 - 修复 `apps/desktop` 智能提醒过于机械的问题：smart 模式现在不再只看单一 idle 阈值，而是先等更明显的空档，再逐步放宽阈值，最后到达 deadline 时直接开始
 - 修复 `apps/desktop` break CTA 过宽的问题：倒计时进行中不再允许提前完成，`Later` 也从“前 30% 时间可用”收紧为仅在倒计时开始后的前 10 秒可用
 - 修复 `apps/desktop` 设置页切换语言时可能卡住的问题：整页文案与 `dir/lang` 现在会等 autosave 成功后再切换，snapshot 轮询也不再被语言草稿变化重建
+- 修复 `apps/desktop` 设置页数字输入手动编辑时会卡住的问题：`CompactNumber` 现改为本地草稿编辑，只在 `blur / Enter / 加减按钮` 时提交 clamp 后的值，支持临时清空、多位数输入和 `Escape` 恢复
 
 ### 文档
 

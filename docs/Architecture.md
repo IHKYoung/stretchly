@@ -1,11 +1,12 @@
 # Architecture
 
 ## 总览
-Pauza 当前的可运行资产分为两层：`apps/desktop` 负责桌面端产品本体，`apps/site` 负责单页官网与下载稳定路由。根 `package.json` 的 `start/dev/build/pack/dist/postinstall` 继续转发到 Tauri 2 桌面壳，新增的 `site:dev` 只承担官网本地预览；`app/**` 只作为归档参考保留，不再参与默认运行、构建、测试或 locale 生成链路。当前架构目标不是继续维护“双壳并行”，而是把桌面端与官网分别收口到明确目录与职责边界。
+Pauza 当前的可运行资产分为两层：`apps/desktop` 负责桌面端产品本体，`apps/site` 负责单页官网与下载稳定路由。根 `package.json` 当前只保留 `dev/build/typecheck` 短入口，以及 `desktop:*`、`site:*`、`test:*` 命名空间脚本；旧 Electron 壳已从当前工作树移除，不再保留“双壳并行”目录。当前架构目标是把桌面端与官网分别收口到明确目录与职责边界，并通过 docs 与 git 历史承载历史追溯。
 
 ## 运行时分层
 - 前台层：`apps/desktop/src/App.tsx`、`src/components/ui/*`、`src/styles.css` 组成设置页与 break prompt 的 React 前台；浏览器 preview 与原生 runtime 共用同一 UI 代码。
 - 设置页前台对语言采用“双层边界”：`form.language` 只表示用户草稿选择，真正驱动整页 labels 与 `document lang/dir` 的则是 `DesktopSnapshot.settings.language`；只有保存回包成功后才切换可见语言。
+- 设置页 `CompactNumber` 也采用“双层边界”：输入框内部 `draft` 允许临时空值和多位数，只有 `blur / Enter / step button` 才提交到 `form` 与 autosave，避免每击键直写 `update_settings`。
 - 文案层：`apps/desktop/src/locales/messages/*.json` 与 `config/*.json` 是桌面端唯一有效的文案真源；break prompt 专属提示语也通过 `messages/*.json` 中的 `ui.breakCopy.*` 维护。`scripts/sync_desktop_locales.py` 生成 `registry.generated.json`，供前端 `i18n.ts` 与 Rust host `i18n.rs` 共享。
 - 前台 helper：`apps/desktop/src/lib/break-prompt.ts` 负责 break 主题、提示音映射、自定义壁纸压缩与 break prompt 辅助逻辑。
 - Rust host：`apps/desktop/src-tauri/src/lib.rs`、`commands.rs`、`shell.rs`、`state.rs`、`engine.rs`、`platform.rs` 组成宿主层，负责设置持久化、调度、tray、shortcut、notification、窗口生命周期与系统状态采集。
@@ -23,7 +24,7 @@ Pauza 当前的可运行资产分为两层：`apps/desktop` 负责桌面端产�
 1. `lib.rs` 在 setup 时初始化 `PauzaState`，从 app config 目录加载或创建 `settings.json`。
 2. `engine.rs` 启动后台 1s tick，周期性调用 `platform.rs` 获取 idle / DND / app exclusion 信号。
 3. `state.rs::tick()` 根据当前阻塞态、休息计划、pre-break notification、due-but-protected、active break 与 manual-awaiting 状态计算下一步动作，并返回 `EngineActions`。
-4. `shell.rs` 根据动作显示/隐藏 break prompt、维持 tray/shortcut 与主窗口行为；当前 break window 只保留单一默认 window profile，并由 `fullscreen` 决定是否改为全屏呈现。其中 macOS tray context menu 现在显式使用 `Submenu` 作为根菜单以匹配 `muda` 的平台约束；break 窗口在 macOS 上还会额外 patch 原生 `NSWindow` 的 `CanJoinAllSpaces | MoveToActiveSpace | FullScreenAuxiliary` 与最高 native level，确保在全屏 Space 中也能覆盖当前工作屏幕。
+4. `shell.rs` 根据动作显示/隐藏 break prompt、维持 tray/shortcut 与主窗口行为；当前 break window 只保留单一默认 window profile，并由 `fullscreen` 决定是否改为全屏呈现。其中 macOS tray context menu 现在显式使用 `Submenu` 作为根菜单以匹配 `muda` 的平台约束；break 窗口在 macOS 上还会额外 patch 原生 `NSWindow` 的 `CanJoinAllSpaces | MoveToActiveSpace | FullScreenAuxiliary` 与最高 native level，并在 non-focusable/windowed 路径显示后显式激活 `NSApplication`，确保在全屏 Space 中也能覆盖当前工作屏幕。
 5. `engine.rs` 的后台 tick 不再每秒无条件重建 tray menu，而是只在 tray 菜单内容有效变化时刷新，避免 macOS 原生菜单刚展开就被替换。
 6. 前台通过 `commands.rs` 读写 `DesktopSnapshot`；设置页和 break prompt 始终消费同一份运行时状态，pause/focus/skip/reset/autostart 都经同一命令面闭环。
 
@@ -70,4 +71,4 @@ Pauza 当前的可运行资产分为两层：`apps/desktop` 负责桌面端产�
 - 产品行为：`apps/desktop/src-tauri/src/{state,engine,platform,shell,commands}.rs`
 - UI 外观：`apps/desktop/src/App.tsx`、`apps/desktop/src/components/ui/*`、`apps/desktop/src/styles.css`
 - 文案与 locale：`apps/desktop/src/locales/{messages,config}/`
-- `app/**` 仅在需要追溯历史行为时作为只读参考，不再是默认开发入口。
+- 历史行为追溯：优先查看 git 历史、`docs/历史版本整理.md` 与既有 task specs，而不是恢复旧 Electron 壳目录。

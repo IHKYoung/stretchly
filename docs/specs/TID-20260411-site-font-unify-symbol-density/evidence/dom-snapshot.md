@@ -1,0 +1,13 @@
+- generic [ref=e1]:
+  - link "下载 Pauza" [ref=e2] [cursor=pointer]:
+    - /url: ./download/releases/
+    - generic [ref=e3]: 下载
+  - main [ref=e4]:
+    - region "Pauza 会循环展示应用内置的提醒文案。" [active] [ref=e5]:
+      - paragraph [ref=e6]:
+        - generic [ref=e7]: Pauza>
+      - generic [ref=e8]:
+        - heading "Pauza 会循环展示应用内置的提醒文案。" [level=1] [ref=e9]:
+          - generic [ref=e10]: Pauza 会循环展示应用内置的提醒文案。
+          - text: 水杯空了？你的身体可不是仙人掌。
+        - paragraph [ref=e12]: 点一下，收一条不太客气的休息提醒。

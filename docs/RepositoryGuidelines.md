@@ -2,7 +2,6 @@
 
 ## 项目结构与模块组织
 - `README.md`：根目录快速入口，汇总当前有效的运行、测试与打包命令。
-- `app/`：归档中的旧 Electron 壳，仅保留为历史参考；当前默认运行、构建、测试链路都不再依赖它。
 - `apps/site/`：Pauza 单页官网与下载跳转页，采用纯静态 HTML/CSS/JS 实现，后续适合直接作为 Vercel root directory。
 - `apps/desktop/components.json`、`apps/desktop/src/components/ui/*`、`apps/desktop/src/lib/utils.ts`：Tauri 前台的 Tailwind/shadcn 组件基座。
 - `apps/desktop/src/App.tsx`、`apps/desktop/src/styles.css`：新的 Tauri 设置工作台与 break prompt 视觉层。
@@ -34,7 +33,7 @@
 ## 开发约束与建议
 - 代码主体使用 ESM 风格的原生 JavaScript；除 `vitest.config.ts` 外没有前端框架或 TypeScript 业务层。
 - `apps/desktop` 是单一真源；新的桌面端能力、构建链路和测试依赖都应收口到这里，不要继续把 `app/**` 接回默认链路。
-- `app/**` 当前只作为原版参考目录存在；如果真要恢复其中的旧行为，应直接迁入 `apps/desktop/src-tauri/**` 或 `apps/desktop/src/**`，不要再在 `apps/` 下保留过渡兼容层。
+- 旧 Electron 壳已从当前工作树移除；如果需要追溯历史行为，应从 git 历史或既有 docs/specs 中提炼后直接迁入 `apps/desktop/src-tauri/**` 或 `apps/desktop/src/**`，不要重新恢复双壳并行目录。
 - `apps/site/**` 当前是纯静态站点，不应为了官网再引入新的 npm 依赖或复杂构建栈；下载目标地址统一维护在 `apps/site/download/targets.js`。
 - 根 `package.json` 现在只保留一套短入口（`dev/build/typecheck`）和显式命名空间（`desktop:*`、`site:*`、`test:*`）；不要再回填 `start/pack/dist` 这类纯重复别名。
 - 修改 Tauri 前台时，同时考虑浏览器 preview fallback，避免只在原生 runtime 下可看。
@@ -44,8 +43,8 @@
 - 根 `README.md` 现在只保留当前有效的运行/打包入口说明；历史根 README、社区治理文件、LICENSE 与 Linux 发布元数据的归档参考统一看 `docs/RootMetadataArchive.md`。
 - 修改 Tauri host 时，优先从 `state.rs -> engine.rs -> platform.rs -> shell.rs -> commands.rs` 这条链路理解调度、系统信号和窗口行为。
 - 修改 macOS 图标时，不要只替换 PNG：
-  - tray icon 应保持 template image 语义，并同时提供 1x / 2x 表示，优先保证小尺寸几何和安全边距，而不是把大图硬缩到菜单栏。
+- tray icon 应保持 template image 语义，并同时提供 1x / 2x 表示，优先保证小尺寸几何和安全边距，而不是把大图硬缩到菜单栏。
   - Dock icon 在正式 `.app` 中应优先使用 bundle 内的 `icon.icns`，运行时 patch 只作为未打包开发态的兜底。
   - `graphics/app-icon.svg` 需要保留足够安全边距；如果图标填满 1024 画布，Dock 中通常会比系统应用显得更大一圈。
-- 设置项变更至少同步检查 `apps/desktop/src-tauri/src/state.rs`、`apps/desktop/src/App.tsx`、`app/utils/defaultSettings.js`（仅作历史参考）、托盘/休息窗口使用点，以及 locale registry / 当前 `docs/` 说明。
+- 设置项变更至少同步检查 `apps/desktop/src-tauri/src/state.rs`、`apps/desktop/src/App.tsx`、托盘/休息窗口使用点，以及 locale registry / 当前 `docs/` 说明。
 - 当前工作区已有大量未提交改动；初始化和后续开发都应避免回滚与当前任务无关的文件。

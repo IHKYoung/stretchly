@@ -18,17 +18,31 @@
       <span>下载</span>
     </a>
 
+    <div class="interaction-layer" data-interaction-layer aria-hidden="true"></div>
+
     <main class="page-shell">
-      <section class="typewriter-stage" aria-labelledby="typewriter-title">
+      <section
+        class="typewriter-stage"
+        aria-labelledby="typewriter-title"
+        aria-describedby="interaction-hint"
+        data-typewriter-stage
+        tabindex="0"
+      >
         <p class="prompt-line" aria-hidden="true">
-          <span class="prompt-mark">pauza&gt;</span>
+          <span class="prompt-mark">Pauza&gt;</span>
         </p>
 
-        <h1 id="typewriter-title" class="typewriter-copy">
-          <span class="sr-only">Pauza 会循环展示应用内置的提醒文案。</span>
-          <span class="typed-output" data-typed-output aria-hidden="true"></span>
-          <span class="caret" aria-hidden="true"></span>
-        </h1>
+        <div class="terminal-output">
+          <h1 id="typewriter-title" class="typewriter-copy">
+            <span class="sr-only">Pauza 会循环展示应用内置的提醒文案。</span>
+            <span class="typed-output" data-typed-output aria-hidden="true"></span>
+            <span class="caret" aria-hidden="true"></span>
+          </h1>
+
+          <p id="interaction-hint" class="interaction-hint">
+            点一下，收一条不太客气的休息提醒。
+          </p>
+        </div>
       </section>
     </main>
 

@@ -3,6 +3,7 @@ import { useEffect, useEffectEvent, useRef, useState, type ChangeEvent, type Rea
 
 import { Button } from '@/components/ui/button'
 import { pickBreakPromptEntry } from '@/lib/break-ideas'
+import { splitBreakPromptLines } from '@/lib/break-copy-layout'
 import {
   Select,
   SelectContent,
@@ -341,15 +342,6 @@ function clockLabel(language: AppLanguage, value = Date.now()) {
   }).format(value)
 }
 
-function clampNumber(value: string, min: number, max: number) {
-  const parsed = Number(value)
-  if (!Number.isFinite(parsed)) {
-    return min
-  }
-
-  return Math.min(max, Math.max(min, Math.round(parsed)))
-}
-
 function playBreakSound(sound: BreakSound, volume: number) {
   const soundUrl = getBreakSoundUrl(sound)
   if (!soundUrl || volume <= 0) {
@@ -380,30 +372,73 @@ function CompactNumber({
   step?: number
   onChange: (next: number) => void
 }) {
+  const [draft, setDraft] = useState(String(value))
+  const draftValue = commitDraftNumber(draft, value, min, max)
+
+  useEffect(() => {
+    setDraft(String(value))
+  }, [value])
+
+  const commitDraft = () => {
+    const nextValue = commitDraftNumber(draft, value, min, max)
+    setDraft(String(nextValue))
+    if (nextValue !== value) {
+      onChange(nextValue)
+    }
+  }
+
+  const stepDraft = (delta: number) => {
+    const nextValue = Math.min(max, Math.max(min, draftValue + delta))
+    setDraft(String(nextValue))
+    if (nextValue !== value) {
+      onChange(nextValue)
+    }
+  }
+
   return (
     <div className="flex items-center gap-1.5">
       <div className="flex h-7 items-center overflow-hidden rounded-md bg-black/[0.04]">
         <button
           type="button"
-          onClick={() => onChange(Math.max(min, value - step))}
-          disabled={value <= min}
+          onMouseDown={(event) => event.preventDefault()}
+          onClick={() => stepDraft(-step)}
+          disabled={draftValue <= min}
           className="flex h-full w-6 items-center justify-center border-r border-black/[0.06] text-[13px] text-muted-foreground transition-colors hover:bg-black/[0.04] hover:text-foreground disabled:opacity-30"
           aria-label="decrease"
         >
           −
         </button>
         <input
-          type="number"
-          min={min}
-          max={max}
-          value={value}
-          onChange={(event) => onChange(clampNumber(event.target.value, min, max))}
-          className="w-9 bg-transparent text-center text-[13px] font-medium text-foreground outline-none [appearance:textfield] [&::-webkit-inner-spin-button]:appearance-none [&::-webkit-outer-spin-button]:appearance-none"
+          type="text"
+          inputMode="numeric"
+          pattern="[0-9]*"
+          value={draft}
+          onChange={(event) => {
+            const nextDraft = event.target.value
+            if (isNumericDraft(nextDraft)) {
+              setDraft(nextDraft)
+            }
+          }}
+          onBlur={commitDraft}
+          onKeyDown={(event) => {
+            if (event.key === 'Enter') {
+              event.preventDefault()
+              commitDraft()
+              event.currentTarget.blur()
+            }
+            if (event.key === 'Escape') {
+              event.preventDefault()
+              setDraft(String(value))
+              event.currentTarget.blur()
+            }
+          }}
+          className="w-12 bg-transparent px-1 text-center text-[13px] font-medium text-foreground outline-none"
         />
         <button
           type="button"
-          onClick={() => onChange(Math.min(max, value + step))}
-          disabled={value >= max}
+          onMouseDown={(event) => event.preventDefault()}
+          onClick={() => stepDraft(step)}
+          disabled={draftValue >= max}
           className="flex h-full w-6 items-center justify-center border-l border-black/[0.06] text-[13px] text-muted-foreground transition-colors hover:bg-black/[0.04] hover:text-foreground disabled:opacity-30"
           aria-label="increase"
         >
@@ -744,6 +779,8 @@ function BreakWindow({
     language,
     settings,
   })
+  const titleLines = splitBreakPromptLines(promptCopy.title, language, 'hero')
+  const bodyLines = splitBreakPromptLines(promptCopy.body, language, 'detail')
   const countdownText = formatCountdown(currentBreak?.manualAwaiting ? 0 : remaining)
   const palette = buildBreakPresentationPalette(contrastMode, scene)
   const backgroundStyle = hasCustomBackdrop
@@ -849,7 +886,7 @@ function BreakWindow({
         ) : null}
 
         {/* Text content — centered column */}
-        <div className="flex w-full max-w-[min(86vw,600px)] flex-col items-center gap-4 text-center">
+        <div className="flex w-full max-w-[min(90vw,720px)] flex-col items-center gap-4 text-center">
           {promptCopy.eyebrow ? (
             <div
               className="inline-flex rounded-full border px-4 py-1.5 text-[12px] font-medium tracking-[0.18em]"
@@ -865,25 +902,44 @@ function BreakWindow({
           ) : null}
 
           <div
-            className="type-break text-balance text-[clamp(1.55rem,3.6vw,2.7rem)] leading-[1.4]"
+            className={cn(
+              'type-break text-balance leading-[1.4]',
+              titleLines.length >= 4
+                ? 'text-[clamp(1.3rem,3vw,2.2rem)]'
+                : 'text-[clamp(1.55rem,3.6vw,2.7rem)]',
+            )}
             style={{
               color: palette.textPrimary,
               textShadow: palette.textShadow,
             }}
           >
-            {promptCopy.title}
+            {titleLines.map((line, index) => (
+              <span
+                key={`title-${index}-${line}`}
+                className={cn('mx-auto block max-w-full', index > 0 && 'mt-[0.28em]')}
+              >
+                {line}
+              </span>
+            ))}
           </div>
 
-          {promptCopy.body ? (
-            <p
-              className="type-break max-w-[40ch] text-pretty text-[clamp(0.88rem,1.5vw,1.1rem)] leading-[1.85] opacity-75"
+          {bodyLines.length > 0 ? (
+            <div
+              className="type-break flex max-w-[min(88vw,42rem)] flex-col items-center text-[clamp(0.88rem,1.5vw,1.1rem)] leading-[1.85] opacity-75"
               style={{
                 color: palette.textSecondary,
                 textShadow: palette.bodyShadow,
               }}
             >
-              {promptCopy.body}
-            </p>
+              {bodyLines.map((line, index) => (
+                <p
+                  key={`body-${index}-${line}`}
+                  className={cn('max-w-full text-balance', index > 0 && 'mt-[0.18em]')}
+                >
+                  {line}
+                </p>
+              ))}
+            </div>
           ) : null}
         </div>
 

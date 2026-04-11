@@ -20,6 +20,7 @@ const MAIN_WINDOW_LABEL: &str = "main";
 const BREAK_WINDOW_PREFIX: &str = "break";
 const TRAY_ID: &str = "pauza-tray";
 const BREAK_WINDOW_DESTROY_DELAY_MS: u64 = 75;
+const TRAY_MENU_REFRESH_DELAY_MS: u64 = 150;
 static LAST_TRAY_REFRESH_KEY: OnceLock<Mutex<Option<TrayRefreshKey>>> = OnceLock::new();
 static LAST_TRAY_MENU_TEXT_UPDATER: OnceLock<Mutex<Option<Box<dyn TrayMenuTextUpdater>>>> =
     OnceLock::new();
@@ -205,6 +206,8 @@ pub fn show_break_window<R: Runtime>(app: &AppHandle<R>) -> Result<(), String> {
             let _ = present_break_window(&window);
             if focusable {
                 let _ = window.set_focus();
+            } else {
+                let _ = activate_break_application(&window);
             }
         }
 
@@ -310,8 +313,12 @@ fn build_tray<R: Runtime>(app: &AppHandle<R>) -> tauri::Result<()> {
             let handle = app.clone();
             let action = event.id.as_ref().to_string();
             thread::spawn(move || {
-                handle_tray_action(&handle, &action);
-                let _ = refresh_tray(&handle);
+                let should_refresh = handle_tray_action(&handle, &action);
+                if should_refresh {
+                    // macOS native tray menus are sensitive to set_menu() during dismissal.
+                    thread::sleep(Duration::from_millis(TRAY_MENU_REFRESH_DELAY_MS));
+                    let _ = refresh_tray_if_needed(&handle);
+                }
             });
         })
         .on_tray_icon_event(|tray, event| {
@@ -460,10 +467,11 @@ unsafe fn build_retina_template_tray_image(
     }
 }
 
-fn handle_tray_action<R: Runtime>(app: &AppHandle<R>, action: &str) {
+fn handle_tray_action<R: Runtime>(app: &AppHandle<R>, action: &str) -> bool {
     match action {
         "open" => {
             let _ = reveal_main_window(app);
+            false
         }
         "skip-scheduled" => {
             if app
@@ -472,75 +480,93 @@ fn handle_tray_action<R: Runtime>(app: &AppHandle<R>, action: &str) {
             {
                 let _ = close_break_window(app);
             }
+            true
         }
         "skip-microbreak" => {
             if app.state::<PauzaState>().skip_to_microbreak("tray") {
                 let _ = close_break_window(app);
             }
+            true
         }
         "skip-long-break" => {
             if app.state::<PauzaState>().skip_to_long_break("tray") {
                 let _ = close_break_window(app);
             }
+            true
         }
         "pause-30" => {
             if app.state::<PauzaState>().pause_for_minutes(30, "tray") {
                 let _ = close_break_window(app);
             }
+            true
         }
         "pause-60" => {
             if app.state::<PauzaState>().pause_for_minutes(60, "tray") {
                 let _ = close_break_window(app);
             }
+            true
         }
         "pause-120" => {
             if app.state::<PauzaState>().pause_for_minutes(120, "tray") {
                 let _ = close_break_window(app);
             }
+            true
         }
         "pause-300" => {
             if app.state::<PauzaState>().pause_for_minutes(300, "tray") {
                 let _ = close_break_window(app);
             }
+            true
         }
         "pause-forever" => {
             if app.state::<PauzaState>().pause_for_minutes(0, "tray") {
                 let _ = close_break_window(app);
             }
+            true
         }
         "resume" => {
             if app.state::<PauzaState>().resume("tray") {
                 let _ = close_break_window(app);
             }
+            true
         }
         "focus-25" => {
             if app.state::<PauzaState>().start_focus_session(25, "tray") {
                 let _ = close_break_window(app);
             }
+            true
         }
         "focus-45" => {
             if app.state::<PauzaState>().start_focus_session(45, "tray") {
                 let _ = close_break_window(app);
             }
+            true
         }
         "focus-60" => {
             if app.state::<PauzaState>().start_focus_session(60, "tray") {
                 let _ = close_break_window(app);
             }
+            true
         }
         "reset" => {
             if app.state::<PauzaState>().reset_breaks("tray") {
                 let _ = close_break_window(app);
             }
+            true
         }
         "hide" => {
             let _ = hide_main_window(app);
+            false
         }
-        "toggle-autostart" => toggle_autostart_from_tray(app),
+        "toggle-autostart" => {
+            toggle_autostart_from_tray(app);
+            true
+        }
         "quit" => {
             app.exit(0);
+            false
         }
-        _ => {}
+        _ => false,
     }
 }
 
@@ -1296,6 +1322,30 @@ fn present_break_window<R: Runtime>(window: &WebviewWindow<R>) -> Result<(), Str
 
 #[cfg(not(target_os = "macos"))]
 fn present_break_window<R: Runtime>(_window: &WebviewWindow<R>) -> Result<(), String> {
+    Ok(())
+}
+
+#[cfg(target_os = "macos")]
+fn activate_break_application<R: Runtime>(window: &WebviewWindow<R>) -> Result<(), String> {
+    use objc2::{class, msg_send, runtime::AnyObject};
+    run_macos_native_break_window_patch(
+        window,
+        "activate_break_application",
+        |_ns_window: *mut AnyObject| {
+            unsafe {
+                let app: *mut AnyObject = msg_send![class!(NSApplication), sharedApplication];
+                if !app.is_null() {
+                    let _: () = msg_send![app, activateIgnoringOtherApps: true];
+                }
+            }
+
+            Ok(())
+        },
+    )
+}
+
+#[cfg(not(target_os = "macos"))]
+fn activate_break_application<R: Runtime>(_window: &WebviewWindow<R>) -> Result<(), String> {
     Ok(())
 }
 
