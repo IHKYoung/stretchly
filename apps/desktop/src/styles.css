@@ -209,6 +209,34 @@
     font-feature-settings: "kern" 1;
     font-kerning: normal;
   }
+
+  .break-terminal-prompt {
+    display: inline-flex;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    font-size: clamp(1rem, 1.15vw, 1.32rem);
+    letter-spacing: 0.12em;
+    line-height: 1;
+  }
+
+  .break-terminal-prompt::after {
+    content: "";
+    flex: 1;
+    min-width: 4rem;
+    height: 1px;
+    margin-left: 0.95rem;
+    background: linear-gradient(90deg, var(--terminal-line), color-mix(in srgb, var(--terminal-line) 45%, transparent) 72%, transparent);
+  }
+
+  .break-terminal-prompt-mark {
+    font-weight: 800;
+    text-shadow: 0 0 1px rgba(18, 20, 23, 0.14);
+  }
+
+  .break-terminal-output {
+    min-height: clamp(13rem, 28vh, 18rem);
+  }
 }
 
 @layer utilities {
@@ -222,6 +250,10 @@
 
   .animate-break-breathe {
     animation: break-breathe 5s ease-in-out infinite;
+  }
+
+  .animate-break-caret {
+    animation: break-caret-blink 1s steps(1) infinite;
   }
 }
 
@@ -258,5 +290,17 @@
   50% {
     opacity: 1;
     transform: scale(1.015);
+  }
+}
+
+@keyframes break-caret-blink {
+  0%,
+  49% {
+    opacity: 1;
+  }
+
+  50%,
+  100% {
+    opacity: 0;
   }
 }

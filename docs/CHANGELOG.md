@@ -32,16 +32,21 @@
 - 继续收敛 `apps/site` 终端感细节：`Pauza>` 提示头进一步加重，主输出文案宽度现按浏览器宽度 `80%` 收敛，粒子反馈也从光点改为更偏 `0 / 1 / #` 的符号字元
 - 继续收敛 `apps/site` 的字体与粒子语义：全站现统一使用 `LXGW WenKai Screen`，`Pauza>`、下载按钮、互动提示和粒子都不再混用另一套字体；粒子数量、字号和 `0 / 1 / # / @ / ！ / ¥ / $` 符号密度也同步提高
 - 将 `README.md`、`docs/RepositoryGuidelines.md`、`docs/CodeMap.md`、`docs/Architecture.md` 与 `docs/UI.md` 的当前真源口径统一为“仓库现仅维护 `apps/desktop` 与 `apps/site`”，不再把已删除的旧 `app/` 目录写成现存模块
+- 将 `apps/desktop` 的 break prompt 升级为居中的终端打字风格：顶部保留 `Pauza>` prompt，正文重新与时间、倒计时、CTA 共用中轴；微休息每次只显示一条 prompt，长休息在整句打完后停留 `30s` 再轮播
+- 将 `apps/site` 官网下载入口收口回首页单按钮：点击时前端先解析 GitHub `latest release` 的 Apple Silicon DMG，失败时回退到 pinned 稳定链接；本地版本元数据同步统一提升到 `0.1.2`
 
 ### 修复
 
 - 修复 `apps/desktop` break prompt 文案容易被从中间截断的问题：当前改为“整句优先，超长句按分句换行”，中文会在逗号/句号等自然停顿处独立成行，不再在任意字位折断
 - 修复 `apps/desktop` 顶部菜单点击 `跳到下一次休息` 后可能直接卡死的问题：tray 菜单事件不再在点击路径里立刻整棵 `set_menu()` 重建，而是等 native 菜单关闭后再延后按需刷新
 - 修复 `apps/desktop` 在 macOS 全屏工作区里到点后 break prompt 可能不浮出，以及设置页数字输入每击键回弹/卡住的问题：break 窗口现会显式激活 app，数字 stepper 现改为“本地草稿 -> blur/Enter/按钮提交”模式
+- 修复 `apps/desktop` 设置页点击与改时间仍可能卡死的问题：前端 autosave 现改为串行/合并保存，Rust `update_settings` 也不再每次都无条件重绑快捷键和整棵 tray rebuild；普通设置变化只走按需轻量刷新
+- 修复 `apps/desktop` break preview 中 prompt 顺序会因模拟 `startedAtMs` 每轮变动而重新抽签的问题：预览态现使用稳定起始时间，方便真实观察打字与轮播节奏
 
 ### 移除
 
 - 移除旧 Electron `app/**` 目录及其页面、preload/renderer、音频、图片与旧 locale 资产；当前工作树不再保留双壳并行结构
+- 移除 `apps/site/download/**` 旧中转页面与样式文件；官网不再通过单独下载页面做跳转
 
 ## 0.1.1 - 2026-04-10
 

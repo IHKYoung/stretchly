@@ -1,40 +1,25 @@
 import { expect } from 'vitest'
 
-import { tBreakIdeaList } from '../apps/desktop/src/i18n'
-import { pickBreakPrompt, pickBreakPromptIndex } from '../apps/desktop/src/lib/break-ideas'
+import { pickBreakPromptEntry, rotateBreakPromptEntries } from '../apps/desktop/src/lib/break-ideas'
+import { tBreakIdeaEntries } from '../apps/desktop/src/i18n'
 
-describe('Desktop break ideas source and selection', () => {
-  it('reads break prompts from locale idea sources', () => {
-    const zhMicrobreakIdeas = tBreakIdeaList('zh-CN', 'microbreak')
-    const enLongBreakIdeas = tBreakIdeaList('en', 'longBreak')
+describe('Desktop break prompt rotation', () => {
+  it('keeps microbreak prompts to a single stable entry per break', () => {
+    const startedAtMs = 1712505600000
 
-    expect(zhMicrobreakIdeas.length).toBeGreaterThan(20)
-    expect(typeof zhMicrobreakIdeas[0]).toBe('string')
-    expect(zhMicrobreakIdeas[0].length).toBeGreaterThan(0)
-    expect(enLongBreakIdeas.length).toBeGreaterThan(20)
-    expect(enLongBreakIdeas[0]).toContain('Find it hard to take breaks alone?')
+    expect(rotateBreakPromptEntries('zh-CN', 'microbreak', startedAtMs)).toEqual([
+      pickBreakPromptEntry('zh-CN', 'microbreak', startedAtMs),
+    ])
   })
 
-  it('does not collapse fixed 10-minute and 30-minute schedules into one repeated prompt', () => {
-    const sourceLength = 50
-    const startedAtMs = 1_700_000_000_000
+  it('rotates through the full prompt list without dropping entries', () => {
+    const startedAtMs = 1712505600000
+    const source = tBreakIdeaEntries('en', 'longBreak')
+    const rotated = rotateBreakPromptEntries('en', 'longBreak', startedAtMs)
 
-    expect(pickBreakPromptIndex('microbreak', startedAtMs, sourceLength)).not.toBe(
-      pickBreakPromptIndex('microbreak', startedAtMs + 10 * 60_000, sourceLength),
-    )
-    expect(pickBreakPromptIndex('longBreak', startedAtMs, sourceLength)).not.toBe(
-      pickBreakPromptIndex('longBreak', startedAtMs + 30 * 60_000, sourceLength),
-    )
-  })
-
-  it('keeps one prompt stable for the same break instance', () => {
-    const startedAtMs = 1_700_000_000_000
-
-    expect(pickBreakPrompt('zh-CN', 'microbreak', startedAtMs)).toBe(
-      pickBreakPrompt('zh-CN', 'microbreak', startedAtMs),
-    )
-    expect(pickBreakPrompt('en', 'longBreak', startedAtMs)).toBe(
-      pickBreakPrompt('en', 'longBreak', startedAtMs),
-    )
+    expect(rotated).toHaveLength(source.length)
+    expect(
+      new Set(rotated.map((entry) => `${entry.title ?? ''}::${entry.text}`)).size,
+    ).toBe(source.length)
   })
 })

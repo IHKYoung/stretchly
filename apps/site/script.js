@@ -4,6 +4,7 @@ const outputEl = document.querySelector('[data-typed-output]')
 const stageEl = document.querySelector('[data-typewriter-stage]')
 const layerEl = document.querySelector('[data-interaction-layer]')
 const rootEl = document.documentElement
+const downloadButtonEl = document.querySelector('[data-download-button]')
 
 const HOLD_DELAY = 10000
 const MAX_ACTIVE_BUBBLES = 4
@@ -308,6 +309,65 @@ const nextNudge = () => {
   return text
 }
 
+const getDownloadConfig = () => {
+  const targets = window.PAUZA_DOWNLOAD_TARGETS || {}
+  const macosTarget = targets.macosAppleSilicon
+
+  if (!macosTarget || typeof macosTarget !== 'object') {
+    return {
+      fallbackUrl: downloadButtonEl?.href || '',
+      latestReleaseApi: '',
+      assetNameSuffix: '',
+    }
+  }
+
+  return {
+    fallbackUrl: String(macosTarget.fallbackUrl || downloadButtonEl?.href || '').trim(),
+    latestReleaseApi: String(macosTarget.latestReleaseApi || '').trim(),
+    assetNameSuffix: String(macosTarget.assetNameSuffix || '').trim(),
+  }
+}
+
+let latestDownloadUrlPromise = null
+
+const resolveLatestDownloadUrl = async () => {
+  const config = getDownloadConfig()
+  if (!config.latestReleaseApi || !config.assetNameSuffix) {
+    return config.fallbackUrl
+  }
+
+  if (!latestDownloadUrlPromise) {
+    latestDownloadUrlPromise = window
+      .fetch(config.latestReleaseApi, {
+        headers: {
+          Accept: 'application/vnd.github+json',
+        },
+      })
+      .then(async (response) => {
+        if (!response.ok) {
+          throw new Error(`GitHub API responded with ${response.status}`)
+        }
+
+        const release = await response.json()
+        const assets = Array.isArray(release.assets) ? release.assets : []
+        const matchedAsset = assets.find((asset) =>
+          String(asset && asset.name ? asset.name : '').endsWith(config.assetNameSuffix)
+        )
+
+        return String(
+          matchedAsset && matchedAsset.browser_download_url ? matchedAsset.browser_download_url : ''
+        ).trim()
+      })
+      .catch((error) => {
+        console.warn('[Pauza site] Failed to resolve latest GitHub release asset.', error)
+        return ''
+      })
+  }
+
+  const latestUrl = await latestDownloadUrlPromise
+  return latestUrl || config.fallbackUrl
+}
+
 const spawnNudge = (x, y) => {
   if (!layerEl) {
     return
@@ -425,4 +485,28 @@ if (stageEl && layerEl) {
       }
     })
   }
+}
+
+if (downloadButtonEl) {
+  const config = getDownloadConfig()
+  if (config.fallbackUrl) {
+    downloadButtonEl.href = config.fallbackUrl
+  }
+
+  void resolveLatestDownloadUrl().then((latestUrl) => {
+    if (latestUrl) {
+      downloadButtonEl.href = latestUrl
+    }
+  })
+
+  downloadButtonEl.addEventListener('click', async (event) => {
+    event.preventDefault()
+    const targetUrl = await resolveLatestDownloadUrl()
+    if (!targetUrl) {
+      return
+    }
+
+    downloadButtonEl.href = targetUrl
+    window.location.assign(targetUrl)
+  })
 }

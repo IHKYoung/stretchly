@@ -32,16 +32,30 @@ export function pickBreakPrompt(
   return pickBreakPromptEntry(language, kind, startedAtMs)?.text ?? ''
 }
 
+export function rotateBreakPromptEntries(
+  language: AppLanguage,
+  kind: BreakIdeaKind,
+  startedAtMs: number,
+): BreakIdeaEntry[] {
+  const source = tBreakIdeaEntries(language, kind)
+
+  if (source.length <= 1) {
+    return source
+  }
+
+  const startIndex = pickBreakPromptIndex(kind, startedAtMs, source.length)
+
+  if (kind === 'microbreak') {
+    return [source[startIndex]]
+  }
+
+  return source.map((_, index) => source[(startIndex + index) % source.length])
+}
+
 export function pickBreakPromptEntry(
   language: AppLanguage,
   kind: BreakIdeaKind,
   startedAtMs: number,
 ): BreakIdeaEntry | null {
-  const source = tBreakIdeaEntries(language, kind)
-
-  if (source.length === 0) {
-    return null
-  }
-
-  return source[pickBreakPromptIndex(kind, startedAtMs, source.length)]
+  return rotateBreakPromptEntries(language, kind, startedAtMs)[0] ?? null
 }

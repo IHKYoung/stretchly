@@ -2,7 +2,7 @@ import { invoke } from '@tauri-apps/api/core'
 import { useEffect, useEffectEvent, useRef, useState, type ChangeEvent, type ReactNode } from 'react'
 
 import { Button } from '@/components/ui/button'
-import { pickBreakPromptEntry } from '@/lib/break-ideas'
+import { rotateBreakPromptEntries } from '@/lib/break-ideas'
 import { splitBreakPromptLines } from '@/lib/break-copy-layout'
 import {
   Select,
@@ -51,6 +51,9 @@ type ReminderMode = 'smart' | 'forced'
 type TargetScreen = 'primary' | 'cursor'
 type SettingsCategory = 'schedule' | 'preferences'
 type PreviewRuntimeMode = 'default' | 'paused' | 'focus'
+
+const PREVIEW_BREAK_OFFSET_MS = 6_000
+const PREVIEW_BREAK_STARTED_AT_MS = Date.now() - PREVIEW_BREAK_OFFSET_MS
 
 type PauzaSettings = {
   language: AppLanguage
@@ -217,7 +220,7 @@ function previewSnapshot(): DesktopSnapshot {
   const previewMode = breakMode ? 'default' : previewRuntimeMode()
   const previewNext = previewNextBreak(settings)
   const currentBreakDurationMs = settings.microbreakDurationSeconds * 1_000
-  const previewBreakStartedAtMs = Date.now() - 6_000
+  const previewBreakStartedAtMs = PREVIEW_BREAK_STARTED_AT_MS
   const previewBreakEndsAtMs = previewBreakStartedAtMs + currentBreakDurationMs
   const pauseDurationMs = 30 * 60_000
   const focusDurationMs = 45 * 60_000
@@ -649,7 +652,99 @@ type BreakPromptCopy = {
   body: string
 }
 
-function resolveBreakPromptCopy({
+type BreakPromptTypingPhase = 'idle' | 'title' | 'body'
+
+const BREAK_PROMPT_HOLD_MS = 30_000
+const BREAK_PROMPT_SWITCH_GAP_MS = 520
+
+function getBreakTypewriterDelay(char: string, phase: Exclude<BreakPromptTypingPhase, 'idle'>) {
+  if (char === '\n') {
+    return 0
+  }
+
+  if (/[，、]/.test(char)) {
+    return phase === 'body' ? 104 : 148
+  }
+
+  if (/[。！？.!?]/.test(char)) {
+    return phase === 'body' ? 156 : 220
+  }
+
+  if (/[:：；;]/.test(char)) {
+    return phase === 'body' ? 124 : 176
+  }
+
+  return phase === 'body' ? 28 : 44
+}
+
+function buildBreakPromptCopy(
+  copy: BreakPromptCopy,
+  language: AppLanguage,
+): BreakPromptCopy {
+  return {
+    eyebrow: copy.eyebrow,
+    title: splitBreakPromptLines(copy.title, language, 'hero').join('\n'),
+    body: splitBreakPromptLines(copy.body, language, 'detail').join('\n'),
+  }
+}
+
+function resolveBreakPromptSequence({
+  currentBreak,
+  language,
+  settings,
+}: {
+  currentBreak: CurrentBreakSnapshot | null
+  language: AppLanguage
+  settings: PauzaSettings
+}): BreakPromptCopy[] {
+  if (!currentBreak) {
+    return [buildBreakPromptCopy({
+      eyebrow: '',
+      title: '',
+      body: t(language, 'ui.breakCopy.clearedDetail'),
+    }, language)]
+  }
+
+  if (currentBreak.manualAwaiting) {
+    return [buildBreakPromptCopy({
+      eyebrow: currentBreak.title,
+      title: t(language, 'ui.breakCopy.manualAwaiting'),
+      body: '',
+    }, language)]
+  }
+
+  const promptEntries = settings.breakIdeasEnabled
+    ? rotateBreakPromptEntries(language, currentBreak.kind, currentBreak.startedAtMs)
+    : []
+  const fallbackBody = t(language, `ui.breakCopy.defaultPrompt.${currentBreak.kind}`)
+
+  if (promptEntries.length > 0) {
+    return promptEntries.map((entry) =>
+      buildBreakPromptCopy(
+        entry.title
+          ? {
+              eyebrow: entry.title === currentBreak.title ? '' : currentBreak.title,
+              title: entry.title,
+              body: entry.text,
+            }
+          : {
+              eyebrow: currentBreak.title,
+              title: entry.text,
+              body: '',
+            },
+        language,
+      ),
+    )
+  }
+
+  return [buildBreakPromptCopy({
+    eyebrow: currentBreak.title,
+    title: fallbackBody,
+    body: '',
+  }, language)]
+}
+
+function initialAnimatedBreakPrompt({
   currentBreak,
   language,
   settings,
@@ -658,37 +753,23 @@ function resolveBreakPromptCopy({
   language: AppLanguage
   settings: PauzaSettings
 }): BreakPromptCopy {
-  if (!currentBreak) {
-    return {
-      eyebrow: '',
-      title: '',
-      body: t(language, 'ui.breakCopy.clearedDetail'),
-    }
-  }
+  const initialPrompt =
+    resolveBreakPromptSequence({
+      currentBreak,
+      language,
+      settings,
+    })[0] ?? { eyebrow: '', title: '', body: '' }
+  const prefersReducedMotion =
+    typeof window.matchMedia === 'function' &&
+    window.matchMedia('(prefers-reduced-motion: reduce)').matches
 
-  if (currentBreak.manualAwaiting) {
-    return {
-      eyebrow: currentBreak.title,
-      title: t(language, 'ui.breakCopy.manualAwaiting'),
-      body: '',
-    }
-  }
-
-  const promptEntry = settings.breakIdeasEnabled
-    ? pickBreakPromptEntry(language, currentBreak.kind, currentBreak.startedAtMs)
-    : null
-  const fallbackBody = t(language, `ui.breakCopy.defaultPrompt.${currentBreak.kind}`)
-  if (promptEntry?.title) {
-    return {
-      eyebrow: promptEntry.title === currentBreak.title ? '' : currentBreak.title,
-      title: promptEntry.title,
-      body: promptEntry.text,
-    }
+  if (!currentBreak || currentBreak.manualAwaiting || prefersReducedMotion) {
+    return initialPrompt
   }
 
   return {
-    eyebrow: currentBreak.title,
-    title: promptEntry?.text ?? fallbackBody,
+    eyebrow: initialPrompt.eyebrow,
+    title: '',
     body: '',
   }
 }
@@ -771,16 +852,19 @@ function BreakWindow({
     settings.breakBackdrop === 'custom' && Boolean(settings.breakCustomBackdropDataUrl)
   const scene = getBreakScene(hasCustomBackdrop ? 'custom' : settings.breakBackdrop)
   const [contrastMode, setContrastMode] = useState<BreakContrastMode>(scene.contrastMode)
+  const [animatedPrompt, setAnimatedPrompt] = useState<BreakPromptCopy>(() =>
+    initialAnimatedBreakPrompt({
+      currentBreak,
+      language,
+      settings,
+    }),
+  )
+  const [typingPhase, setTypingPhase] = useState<BreakPromptTypingPhase>('idle')
   const lastEndSoundRef = useRef<string | null>(null)
   const endSoundTimerRef = useRef<number | null>(null)
   const breakKey = currentBreak ? `${currentBreak.kind}:${currentBreak.startedAtMs}` : null
-  const promptCopy = resolveBreakPromptCopy({
-    currentBreak,
-    language,
-    settings,
-  })
-  const titleLines = splitBreakPromptLines(promptCopy.title, language, 'hero')
-  const bodyLines = splitBreakPromptLines(promptCopy.body, language, 'detail')
+  const titleLines = animatedPrompt.title ? animatedPrompt.title.split('\n') : []
+  const bodyLines = animatedPrompt.body ? animatedPrompt.body.split('\n') : []
   const countdownText = formatCountdown(currentBreak?.manualAwaiting ? 0 : remaining)
   const palette = buildBreakPresentationPalette(contrastMode, scene)
   const backgroundStyle = hasCustomBackdrop
@@ -862,6 +946,115 @@ function BreakWindow({
     settings.microbreakEndSound,
   ])
 
+  useEffect(() => {
+    const promptSequence = resolveBreakPromptSequence({
+      currentBreak,
+      language,
+      settings,
+    })
+    const initialPrompt = promptSequence[0] ?? { eyebrow: '', title: '', body: '' }
+    const prefersReducedMotion =
+      typeof window.matchMedia === 'function' &&
+      window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    const timerHandles = new Set<number>()
+    let cancelled = false
+
+    const pause = (ms: number) =>
+      new Promise<void>((resolve) => {
+        const handle = window.setTimeout(() => {
+          timerHandles.delete(handle)
+          resolve()
+        }, ms)
+        timerHandles.add(handle)
+      })
+
+    const cleanupTimers = () => {
+      for (const handle of timerHandles) {
+        window.clearTimeout(handle)
+      }
+      timerHandles.clear()
+    }
+
+    if (!currentBreak || currentBreak.manualAwaiting || prefersReducedMotion) {
+      setAnimatedPrompt(initialPrompt)
+      setTypingPhase('idle')
+
+      return () => {
+        cancelled = true
+        cleanupTimers()
+      }
+    }
+
+    const typeField = async (
+      phase: Exclude<BreakPromptTypingPhase, 'idle'>,
+      text: string,
+    ) => {
+      if (!text) {
+        return
+      }
+
+      setTypingPhase(phase)
+
+      for (let length = 1; length <= text.length; length += 1) {
+        if (cancelled) {
+          return
+        }
+
+        const nextText = text.slice(0, length)
+        setAnimatedPrompt((current) => ({
+          ...current,
+          [phase]: nextText,
+        }))
+        await pause(getBreakTypewriterDelay(text[length - 1], phase))
+      }
+    }
+
+    void (async () => {
+      for (let index = 0; !cancelled; index = (index + 1) % promptSequence.length) {
+        const nextPrompt = promptSequence[index] ?? initialPrompt
+        setAnimatedPrompt({
+          eyebrow: nextPrompt.eyebrow,
+          title: '',
+          body: '',
+        })
+
+        await typeField('title', nextPrompt.title)
+        if (cancelled) {
+          return
+        }
+
+        await typeField('body', nextPrompt.body)
+        if (cancelled) {
+          return
+        }
+
+        setTypingPhase('idle')
+
+        if (promptSequence.length <= 1) {
+          return
+        }
+
+        await pause(BREAK_PROMPT_HOLD_MS)
+        if (cancelled) {
+          return
+        }
+
+        await pause(BREAK_PROMPT_SWITCH_GAP_MS)
+      }
+    })()
+
+    return () => {
+      cancelled = true
+      cleanupTimers()
+    }
+  }, [
+    breakKey,
+    currentBreak?.manualAwaiting,
+    currentBreak?.title,
+    language,
+    settings.breakIdeasEnabled,
+  ])
+
   return (
     <main className="relative min-h-screen overflow-hidden" style={backgroundStyle}>
       <div
@@ -886,61 +1079,87 @@ function BreakWindow({
         ) : null}
 
         {/* Text content — centered column */}
-        <div className="flex w-full max-w-[min(90vw,720px)] flex-col items-center gap-4 text-center">
-          {promptCopy.eyebrow ? (
-            <div
-              className="inline-flex rounded-full border px-4 py-1.5 text-[12px] font-medium tracking-[0.18em]"
-              style={{
-                color: palette.chipText,
-                background: palette.chipBackground,
-                borderColor: palette.chipBorder,
-                backdropFilter: 'blur(18px)',
-              }}
-            >
-              {promptCopy.eyebrow}
-            </div>
-          ) : null}
-
-          <div
-            className={cn(
-              'type-break text-balance leading-[1.4]',
-              titleLines.length >= 4
-                ? 'text-[clamp(1.3rem,3vw,2.2rem)]'
-                : 'text-[clamp(1.55rem,3.6vw,2.7rem)]',
-            )}
+        <div className="break-terminal-shell flex w-full max-w-[min(90vw,820px)] flex-col gap-4">
+          <p
+            className="break-terminal-prompt type-break"
             style={{
-              color: palette.textPrimary,
-              textShadow: palette.textShadow,
+              color: palette.textSecondary,
+              ['--terminal-line' as string]: palette.chipBorder,
             }}
           >
-            {titleLines.map((line, index) => (
-              <span
-                key={`title-${index}-${line}`}
-                className={cn('mx-auto block max-w-full', index > 0 && 'mt-[0.28em]')}
-              >
-                {line}
-              </span>
-            ))}
-          </div>
+            <span className="break-terminal-prompt-mark" style={{ color: palette.textPrimary }}>
+              Pauza&gt;
+            </span>
+          </p>
 
-          {bodyLines.length > 0 ? (
+          <div className="break-terminal-output flex flex-col items-center gap-4 text-center">
+            {animatedPrompt.eyebrow ? (
+              <p
+                className="type-break text-[12px] leading-6 tracking-[0.12em] sm:text-[13px]"
+                style={{
+                  color: palette.textSecondary,
+                  textShadow: palette.bodyShadow,
+                }}
+              >
+                {animatedPrompt.eyebrow}
+              </p>
+            ) : null}
+
             <div
-              className="type-break flex max-w-[min(88vw,42rem)] flex-col items-center text-[clamp(0.88rem,1.5vw,1.1rem)] leading-[1.85] opacity-75"
+                className={cn(
+                  'type-break leading-[1.42]',
+                  titleLines.length >= 4
+                    ? 'text-[clamp(1.28rem,3vw,2.08rem)]'
+                    : 'text-[clamp(1.5rem,3.5vw,2.55rem)]',
+              )}
               style={{
-                color: palette.textSecondary,
-                textShadow: palette.bodyShadow,
+                color: palette.textPrimary,
+                textShadow: palette.textShadow,
               }}
             >
-              {bodyLines.map((line, index) => (
-                <p
-                  key={`body-${index}-${line}`}
-                  className={cn('max-w-full text-balance', index > 0 && 'mt-[0.18em]')}
+              {titleLines.map((line, index) => (
+                <span
+                  key={`title-${index}-${line}`}
+                  className={cn('mx-auto block max-w-full text-balance', index > 0 && 'mt-[0.28em]')}
                 >
                   {line}
-                </p>
+                  {typingPhase === 'title' && index === titleLines.length - 1 ? (
+                    <span
+                      aria-hidden="true"
+                      className="ml-[0.08em] inline-block h-[0.92em] w-[0.08em] animate-break-caret align-[-0.08em]"
+                      style={{ background: palette.textPrimary }}
+                    />
+                  ) : null}
+                </span>
               ))}
             </div>
-          ) : null}
+
+            {bodyLines.length > 0 ? (
+              <div
+                className="type-break flex max-w-[min(88vw,44rem)] flex-col items-center text-[clamp(0.9rem,1.45vw,1.06rem)] leading-[1.9]"
+                style={{
+                  color: palette.textSecondary,
+                  textShadow: palette.bodyShadow,
+                }}
+              >
+                {bodyLines.map((line, index) => (
+                  <p
+                    key={`body-${index}-${line}`}
+                    className={cn('max-w-full text-balance', index > 0 && 'mt-[0.18em]')}
+                  >
+                    {line}
+                    {typingPhase === 'body' && index === bodyLines.length - 1 ? (
+                      <span
+                        aria-hidden="true"
+                        className="ml-[0.08em] inline-block h-[0.92em] w-[0.08em] animate-break-caret align-[-0.08em]"
+                        style={{ background: palette.textSecondary }}
+                      />
+                    ) : null}
+                  </p>
+                ))}
+              </div>
+            ) : null}
+          </div>
         </div>
 
         {/* Countdown + meter + actions */}
@@ -1041,6 +1260,8 @@ function App() {
   const [form, setForm] = useState<PauzaSettings>(defaultSettings())
   const [busyAction, setBusyAction] = useState<string | null>(null)
   const [dirty, setDirty] = useState(false)
+  const [formRevision, setFormRevision] = useState(0)
+  const [saveRetryToken, setSaveRetryToken] = useState(0)
   const [error, setError] = useState<string | null>(null)
   const [activeCategory, setActiveCategory] = useState<SettingsCategory>('schedule')
   const customBackdropInputRef = useRef<HTMLInputElement | null>(null)
@@ -1048,6 +1269,10 @@ function App() {
   const [runningApps, setRunningApps] = useState<string[] | null>(null)
   const [appSearchQuery, setAppSearchQuery] = useState('')
   const [appSearchLoading, setAppSearchLoading] = useState(false)
+  const latestFormRevisionRef = useRef(0)
+  const latestFormRef = useRef(form)
+  const saveInFlightRef = useRef(false)
+  const pendingSaveRetryRef = useRef(false)
 
   const breakMode = isBreakWindow()
   // Keep copy and document direction on the persisted locale until the save roundtrip completes.
@@ -1110,6 +1335,10 @@ function App() {
     }
   }, [snapshot, dirty])
 
+  useEffect(() => {
+    latestFormRef.current = form
+  }, [form])
+
   // Pre-break sound: schedule a sound X seconds before the next break
   useEffect(() => {
     if (preBreakSoundTimerRef.current !== null) {
@@ -1154,60 +1383,82 @@ function App() {
     snapshot?.settings.longBreakStartSound,
   ])
 
+  const flushSettingsSave = useEffectEvent(async (settingsToSave: PauzaSettings, saveRevision: number) => {
+    if (saveInFlightRef.current) {
+      pendingSaveRetryRef.current = true
+      return
+    }
+
+    let shouldRetry = false
+    saveInFlightRef.current = true
+    pendingSaveRetryRef.current = false
+
+    try {
+      setBusyAction('save settings')
+      setError(null)
+
+      if (!hasTauriRuntime()) {
+        setSnapshot((current) => ({
+          ...(current ?? previewSnapshot()),
+          settings: settingsToSave,
+          status: t(settingsToSave.language, 'ui.preview.status'),
+          statusDetail: t(settingsToSave.language, 'ui.preview.detail'),
+          lastAction: t(settingsToSave.language, 'ui.previewAction.save'),
+        }))
+      } else {
+        const next = await invoke<DesktopSnapshot>('update_settings', { settings: settingsToSave })
+        setSnapshot(next)
+      }
+
+      if (latestFormRevisionRef.current === saveRevision) {
+        setDirty(false)
+      } else {
+        shouldRetry = true
+      }
+    } catch (saveError) {
+      setError(saveError instanceof Error ? saveError.message : 'Failed to save settings')
+    } finally {
+      saveInFlightRef.current = false
+      setBusyAction(null)
+      if (shouldRetry || pendingSaveRetryRef.current) {
+        pendingSaveRetryRef.current = false
+        setSaveRetryToken((current) => current + 1)
+      }
+    }
+  })
+
   useEffect(() => {
     if (breakMode || !dirty) {
       return
     }
 
     let cancelled = false
-    const timer = window.setTimeout(async () => {
-      try {
-        setBusyAction('save settings')
-        setError(null)
-
-        if (!hasTauriRuntime()) {
-          if (!cancelled) {
-            setSnapshot((current) => ({
-              ...(current ?? previewSnapshot()),
-              settings: form,
-              status: t(form.language, 'ui.preview.status'),
-              statusDetail: t(form.language, 'ui.preview.detail'),
-              lastAction: t(form.language, 'ui.previewAction.save'),
-            }))
-            setDirty(false)
-          }
-          return
-        }
-
-        const next = await invoke<DesktopSnapshot>('update_settings', { settings: form })
-        if (!cancelled) {
-          setSnapshot(next)
-          setDirty(false)
-        }
-      } catch (saveError) {
-        if (!cancelled) {
-          setError(saveError instanceof Error ? saveError.message : 'Failed to save settings')
-        }
-      } finally {
-        if (!cancelled) {
-          setBusyAction(null)
-        }
+    const timer = window.setTimeout(() => {
+      if (cancelled) {
+        return
       }
+      void flushSettingsSave(latestFormRef.current, latestFormRevisionRef.current)
     }, 220)
 
     return () => {
       cancelled = true
       window.clearTimeout(timer)
     }
-  }, [breakMode, dirty, form])
+  }, [breakMode, dirty, formRevision, saveRetryToken])
+
+  const markFormDirty = () => {
+    latestFormRevisionRef.current += 1
+    setFormRevision(latestFormRevisionRef.current)
+    setDirty(true)
+  }
 
   const updateForm = <K extends keyof PauzaSettings>(key: K, value: PauzaSettings[K]) => {
-    setDirty(true)
+    markFormDirty()
     setForm((current) => ({ ...current, [key]: value }))
   }
 
   const updateFormPatch = (patch: Partial<PauzaSettings>) => {
-    setDirty(true)
+    markFormDirty()
     setForm((current) => ({ ...current, ...patch }))
   }
 

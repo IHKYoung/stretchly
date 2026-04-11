@@ -30,17 +30,13 @@ http://127.0.0.1:43210
 
 ## 下载链接配置
 
-首页下载按钮不会直接写死第三方下载地址，而是先进入站内稳定路由：
-
-- `/download/macos-apple-silicon/`
-- `/download/macos-intel/`
-- `/download/releases/`
-
-真实目标 URL 统一维护在：
+首页只有一个下载按钮，直接请求真实下载链接。下载目标配置维护在：
 
 ```text
 apps/site/download/targets.js
 ```
+
+当前按钮会优先请求 GitHub Releases API，自动解析最新 release 中名称以 `_aarch64.dmg` 结尾的资产；如果 API 不可用，则回退到 `targets.js` 里配置的固定稳定链接。
 
 后续如果从 GitHub Releases 换到 R2 / S3，只需要修改这个文件。
 

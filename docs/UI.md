@@ -52,12 +52,15 @@
 - 当前设置页不再直接暴露 `idle_opportunity_seconds` 阈值；提醒策略继续采用 host 内部的递减阈值曲线，避免用户为提醒方式承担额外参数心智。
 - “提前提示”现在表达的是 due 前的可见 cue，而不是承诺一定弹出系统通知；即使系统层没有显示通知，设置页状态和 tray 文本也会进入 heads-up 阶段。
 - Tauri 主窗口默认尺寸调整为 `960x640`，最小尺寸为 `800x600`，避免设置页继续被压到不可用尺寸。
+- 设置页 autosave 当前已从“可重入的 debounce 保存”收敛为串行/合并保存：保存进行中继续点击设置项或修改时间时，新的草稿会进入下一轮，而不是并发发起第二个宿主保存。
 
 ## Tauri Break Prompt
 - break 页面现在直接填满宿主窗口本身，不再在 break window 里再套一张固定宽度的小卡片。
 - window 模式下，break 宿主窗口现统一居中，窗口比例按 16:9 收敛，并优先以内聚的大窗呈现；不再为 microbreak 保留右下角小浮窗分支。
 - break prompt 现进一步收敛为单列纯净布局：中央只保留一条交互语、数字倒计时和细条形进度，不再保留双栏、cue card、break kind 标签或环形倒计时；玻璃卡片也改得更轻、更通透。
 - break prompt 的中央文案现已从“普通段落自动换行”改为“整句优先、超长句按分句换行”；中文不再从任意字位折断，长句会在逗号/句号等自然停顿处独立成行。
+- break prompt 的中央文案现已接入更接近官网的终端 typewriter 展示：文案区会以 `Pauza>` prompt 作为开头，随后逐字打出当前提示语。
+- 微休息现在固定只显示一条稳定提示语，不在同一次 break 内继续切换；长休息则会按本次 break 的开始时间稳定轮播，并在完整显示后约 `30s` 切到下一条。
 - break 背景不再只有单层浅色底，现支持 `paper / dawn / forest / night` 预设主题，以及用户上传的自定义壁纸；自定义图在前端压缩后存入本地设置，后续 break 可直接复用。
 - 顶部仅在 `currentTimeInBreaks` 打开时显示当前时间；底部 CTA 会按当前阶段收紧：倒计时进行中不再显示提前完成，`Later` 也只在倒计时开始后的前 10 秒内出现。
 - fullscreen break 的宿主层现在按平台处理：macOS 使用 simple fullscreen，避免 native fullscreen/titlebar 语义造成顶部空白；其他平台继续沿用标准 fullscreen。
