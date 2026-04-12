@@ -41,6 +41,7 @@
 - 修复 `apps/desktop` 顶部菜单点击 `跳到下一次休息` 后可能直接卡死的问题：tray 菜单事件不再在点击路径里立刻整棵 `set_menu()` 重建，而是等 native 菜单关闭后再延后按需刷新
 - 修复 `apps/desktop` 在 macOS 全屏工作区里到点后 break prompt 可能不浮出，以及设置页数字输入每击键回弹/卡住的问题：break 窗口现会显式激活 app，数字 stepper 现改为“本地草稿 -> blur/Enter/按钮提交”模式
 - 修复 `apps/desktop` 设置页点击与改时间仍可能卡死的问题：前端 autosave 现改为串行/合并保存，Rust `update_settings` 也不再每次都无条件重绑快捷键和整棵 tray rebuild；普通设置变化只走按需轻量刷新
+- 修复 `apps/desktop` 设置页保存节奏配置时仍可能出现 macOS 彩球卡死的问题：真正根因是后台 `sync_tray_menu_text()` 持有 `LAST_TRAY_MENU_TEXT_UPDATER` 锁时调用 `MenuItem::set_text()`，而设置保存触发的 tray rebuild 会在主线程 `register_tray_menu_text_updater()` 路径争用同一把锁；当前改为锁内只 clone updater、锁外再执行 `set_text()`，消除后台 tick 与主线程 tray rebuild 的锁反转死锁
 - 修复 `apps/desktop` break preview 中 prompt 顺序会因模拟 `startedAtMs` 每轮变动而重新抽签的问题：预览态现使用稳定起始时间，方便真实观察打字与轮播节奏
 
 ### 移除

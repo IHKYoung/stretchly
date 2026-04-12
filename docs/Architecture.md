@@ -7,9 +7,11 @@ Pauza 当前的可运行资产分为两层：`apps/desktop` 负责桌面端产�
 - 前台层：`apps/desktop/src/App.tsx`、`src/components/ui/*`、`src/styles.css` 组成设置页与 break prompt 的 React 前台；浏览器 preview 与原生 runtime 共用同一 UI 代码。
 - 设置页前台对语言采用“双层边界”：`form.language` 只表示用户草稿选择，真正驱动整页 labels 与 `document lang/dir` 的则是 `DesktopSnapshot.settings.language`；只有保存回包成功后才切换可见语言。
 - 设置页 `CompactNumber` 也采用“双层边界”：输入框内部 `draft` 允许临时空值和多位数，只有 `blur / Enter / step button` 才提交到 `form` 与 autosave，避免每击键直写 `update_settings`。
+- 设置页 autosave 现已改为串行/合并保存：同一时刻最多只有一轮 `update_settings` 在飞；保存进行中若继续修改，只会把新的 `formRevision` 合并进下一轮，而不是并发叠加多个宿主设置更新。
 - 文案层：`apps/desktop/src/locales/messages/*.json` 与 `config/*.json` 是桌面端唯一有效的文案真源；break prompt 专属提示语也通过 `messages/*.json` 中的 `ui.breakCopy.*` 维护。`scripts/sync_desktop_locales.py` 生成 `registry.generated.json`，供前端 `i18n.ts` 与 Rust host `i18n.rs` 共享。
 - 前台 helper：`apps/desktop/src/lib/break-prompt.ts` 负责 break 主题、提示音映射、自定义壁纸压缩与 break prompt 辅助逻辑。
 - Rust host：`apps/desktop/src-tauri/src/lib.rs`、`commands.rs`、`shell.rs`、`state.rs`、`engine.rs`、`platform.rs` 组成宿主层，负责设置持久化、调度、tray、shortcut、notification、窗口生命周期与系统状态采集。
+- `shell.rs` 的 tray 文本热更新现在有一条明确并发不变量：不得在持有 `LAST_TRAY_MENU_TEXT_UPDATER` 锁时调用 `MenuItem::set_text()`。后台 tick 只能在锁内 clone 当前 updater，再在锁外执行主线程派发；否则会形成“后台线程持锁等待主线程 `set_text()` 完成，主线程在 `create_tray_menu() -> register_tray_menu_text_updater()` 中等待同一把锁”的 lock inversion deadlock，表现为设置保存时的 macOS 彩球。
 
 ## 官网分层
 - `apps/site/index.html` + `styles.css` + `copy.js` + `script.js` 组成单页官网本体，不引入额外前端依赖或构建链。
@@ -27,6 +29,8 @@ Pauza 当前的可运行资产分为两层：`apps/desktop` 负责桌面端产�
 4. `shell.rs` 根据动作显示/隐藏 break prompt、维持 tray/shortcut 与主窗口行为；当前 break window 只保留单一默认 window profile，并由 `fullscreen` 决定是否改为全屏呈现。其中 macOS tray context menu 现在显式使用 `Submenu` 作为根菜单以匹配 `muda` 的平台约束；break 窗口在 macOS 上还会额外 patch 原生 `NSWindow` 的 `CanJoinAllSpaces | MoveToActiveSpace | FullScreenAuxiliary` 与最高 native level，并在 non-focusable/windowed 路径显示后显式激活 `NSApplication`，确保在全屏 Space 中也能覆盖当前工作屏幕。
 5. `engine.rs` 的后台 tick 不再每秒无条件重建 tray menu，而是只在 tray 菜单内容有效变化时刷新，避免 macOS 原生菜单刚展开就被替换。
 6. 前台通过 `commands.rs` 读写 `DesktopSnapshot`；设置页和 break prompt 始终消费同一份运行时状态，pause/focus/skip/reset/autostart 都经同一命令面闭环。
+7. `commands.rs::update_settings()` 现采用差异驱动的 host refresh：`PauzaSettings` 未变化时直接短路；shortcut 绑定未变化时不重绑；语言未变化时不做整棵 tray menu rebuild，其余设置最多走 `refresh_tray_if_needed()`。
+8. 与上条并行成立的一条更底层约束是：之前“autosave 并发 + host 全量刷新”只解释了为何设置保存更容易撞上宿主刷新，并不是最终根因；真正导致 beachball 的是 `sync_tray_menu_text()` 与 `register_tray_menu_text_updater()` 围绕 `LAST_TRAY_MENU_TEXT_UPDATER` 的锁反转。当前实现通过 `Arc` 化 updater 并在锁外执行 `set_text()` 来打破互锁。
 
 ## 关键状态
 - `PauzaState.settings`：Tauri 端的本地配置真源，已覆盖 notification、postpone、manual finish、`reminder_mode`、surface、fullscreen、break backdrop / custom wallpaper、cue 开关、start/end sound、shortcut，以及当前只为兼容保留的 `idle_opportunity_seconds` 字段。

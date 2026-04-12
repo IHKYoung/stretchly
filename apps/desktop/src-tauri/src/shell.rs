@@ -3,7 +3,7 @@ use crate::{
     state::{BreakKind, DesktopSnapshot, PauzaSettings, PauzaState, ShortcutAction},
 };
 use std::{
-    sync::{mpsc, Mutex, OnceLock},
+    sync::{mpsc, Arc, Mutex, OnceLock},
     thread,
     time::{Duration, SystemTime, UNIX_EPOCH},
 };
@@ -22,7 +22,8 @@ const TRAY_ID: &str = "pauza-tray";
 const BREAK_WINDOW_DESTROY_DELAY_MS: u64 = 75;
 const TRAY_MENU_REFRESH_DELAY_MS: u64 = 150;
 static LAST_TRAY_REFRESH_KEY: OnceLock<Mutex<Option<TrayRefreshKey>>> = OnceLock::new();
-static LAST_TRAY_MENU_TEXT_UPDATER: OnceLock<Mutex<Option<Box<dyn TrayMenuTextUpdater>>>> =
+type TrayMenuTextUpdateFn = Arc<dyn Fn(&str, &str) -> Result<(), String> + Send + Sync>;
+static LAST_TRAY_MENU_TEXT_UPDATER: OnceLock<Mutex<Option<TrayMenuTextUpdateFn>>> =
     OnceLock::new();
 
 trait TrayMenuContainer<R: Runtime> {
@@ -40,23 +41,6 @@ impl<R: Runtime> TrayMenuContainer<R> for Submenu<R> {
         self.append(item)
     }
 }
-
-trait TrayMenuTextUpdater: Send {
-    fn sync(&self, status: &str, detail: &str) -> Result<(), String>;
-}
-
-struct LiveTrayMenuTextUpdater<R: Runtime> {
-    status_item: MenuItem<R>,
-    detail_item: MenuItem<R>,
-}
-
-impl<R: Runtime> TrayMenuTextUpdater for LiveTrayMenuTextUpdater<R> {
-    fn sync(&self, status: &str, detail: &str) -> Result<(), String> {
-        self.status_item.set_text(status).map_err(app_error)?;
-        self.detail_item.set_text(detail).map_err(app_error)
-    }
-}
-
 #[derive(Debug, Clone, Copy)]
 struct Bounds {
     x: i32,
@@ -658,17 +642,22 @@ fn register_tray_menu_text_updater<R: Runtime + 'static>(
 ) {
     let cache = LAST_TRAY_MENU_TEXT_UPDATER.get_or_init(|| Mutex::new(None));
     let mut updater = cache.lock().expect("tray menu text updater lock poisoned");
-    *updater = Some(Box::new(LiveTrayMenuTextUpdater {
-        status_item,
-        detail_item,
+    *updater = Some(Arc::new(move |status: &str, detail: &str| {
+        status_item.set_text(status).map_err(app_error)?;
+        detail_item.set_text(detail).map_err(app_error)
     }));
 }
 
 fn sync_tray_menu_text(snapshot: &DesktopSnapshot) -> Result<(), String> {
     let cache = LAST_TRAY_MENU_TEXT_UPDATER.get_or_init(|| Mutex::new(None));
-    let updater = cache.lock().expect("tray menu text updater lock poisoned");
-    if let Some(updater) = updater.as_ref() {
-        updater.sync(&snapshot.status, &snapshot.status_detail)?;
+    // Clone the Arc under the lock (cheap), then release the lock BEFORE calling
+    // set_text. This prevents a lock-inversion deadlock: set_text dispatches to
+    // the main thread and blocks the calling thread; if the main thread is
+    // simultaneously waiting to acquire this lock (in register_tray_menu_text_updater),
+    // neither thread can proceed. Releasing the lock before the dispatch avoids this.
+    let update_fn = cache.lock().expect("tray menu text updater lock poisoned").clone();
+    if let Some(f) = update_fn {
+        f(&snapshot.status, &snapshot.status_detail)?;
     }
     Ok(())
 }
