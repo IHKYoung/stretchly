@@ -6,7 +6,7 @@
 - Level: moderate  <!-- trivial | moderate | complex -->
 - Lane: deep    <!-- fast | deep -->
 - Execution Profile: single-task  <!-- single-task | sequential-phases | merge-gate -->
-- Status: IN_PROGRESS  <!-- INIT | IN_PROGRESS | REVIEW | DONE | BLOCKED -->
+- Status: DONE  <!-- INIT | IN_PROGRESS | REVIEW | DONE | BLOCKED -->
 
 ## Links
 - Plan (daily): ../../plans/2026-04-20.md
@@ -30,8 +30,9 @@
 - Execution Mode: single-agent-fallback
 - Fallback Reason Code: other-blocked
 - Escalation Summary: 当前 session 未获用户显式授权调用 `spawn_agent`，且上层工具策略要求仅在用户明确要求子 agent 时才可 delegation；因此在限定范围内采用单 agent 执行本轮 `0.1.3` 收口与发布。
-- Retention Decision: pending
+- Retention Decision: keep
 
 ## Notes
 - 根目录当前存在一批未追踪的翻译生成脚本与中间 JSON/TXT；本轮不会把这些文件纳入正式版本，而是通过 `.gitignore` 明确排除。
 - 当前 `apps/site` 目录内的 workflow mirror 是正式版本资产的一部分，会一并纳入 `0.1.3`。
+- 已验证本地产物 `Pauza_0.1.3_aarch64.dmg` 存在，并已发布到 `https://github.com/IHKYoung/Pauza/releases/tag/v0.1.3`。

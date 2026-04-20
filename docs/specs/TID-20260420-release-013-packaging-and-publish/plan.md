@@ -6,7 +6,7 @@
 - Level: moderate
 - Lane: deep
 - Execution Profile: single-task
-- Status: IN_PROGRESS
+- Status: DONE
 
 ## Requirement Brief
 - Goal restatement: 把当前未提交的 desktop / site / docs 变更整理成 `0.1.3`，统一版本真源、补齐发布文档、打本地 macOS 包，并完成 GitHub release / commit 的发布动作。
@@ -108,11 +108,11 @@
 - rationale: 用户已明确要求发布 `0.1.3`，本轮不涉及历史重写、生产服务写入或提权操作
 
 ## Task Breakdown & Definition of Done (DoD)
-- [ ] Task-1: 收口版本真源、发布文档与 site release workflow
+- [x] Task-1: 收口版本真源、发布文档与 site release workflow
   - DoD: `0.1.3` 版本号、README、CHANGELOG、CodeMap、Architecture、site playbook 与 task docs 全部对齐
-- [ ] Task-2: 重建 locale registry 并完成本地验证
+- [x] Task-2: 重建 locale registry 并完成本地验证
   - DoD: locale registry 已重建，测试/validator/build 通过
-- [ ] Task-3: 打本地 macOS 包并发布 GitHub release
+- [x] Task-3: 打本地 macOS 包并发布 GitHub release
   - DoD: 生成 `Pauza_0.1.3_aarch64.dmg`，`v0.1.3` release 存在且资产可见
 - [ ] Task-4: 生成并推送代码提交
   - DoD: commit / audit / push 完成，剩余工作树不包含本轮正式版本文件
