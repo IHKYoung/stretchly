@@ -26,7 +26,7 @@ Pauza 当前的可运行资产分为两层：`apps/desktop` 负责桌面端产�
 1. `lib.rs` 在 setup 时初始化 `PauzaState`，从 app config 目录加载或创建 `settings.json`。
 2. `engine.rs` 启动后台 1s tick，周期性调用 `platform.rs` 获取 idle / DND / app exclusion 信号。
 3. `state.rs::tick()` 根据当前阻塞态、休息计划、pre-break notification、due-but-protected、active break 与 manual-awaiting 状态计算下一步动作，并返回 `EngineActions`。
-4. `shell.rs` 根据动作显示/隐藏 break prompt、维持 tray/shortcut 与主窗口行为；当前 break window 只保留单一默认 window profile，并由 `fullscreen` 决定是否改为全屏呈现。其中 macOS tray context menu 现在显式使用 `Submenu` 作为根菜单以匹配 `muda` 的平台约束；break 窗口在 macOS 上还会额外 patch 原生 `NSWindow` 的 `CanJoinAllSpaces | MoveToActiveSpace | FullScreenAuxiliary` 与最高 native level，并在 non-focusable/windowed 路径显示后显式激活 `NSApplication`，确保在全屏 Space 中也能覆盖当前工作屏幕。
+4. `shell.rs` 根据动作显示/隐藏 break prompt、维持 tray/shortcut 与主窗口行为；当前 break window 只保留单一默认 window profile，并由 `fullscreen` 决定是否改为全屏呈现。其中 macOS tray context menu 现在显式使用 `Submenu` 作为根菜单以匹配 `muda` 的平台约束；break 窗口在 macOS 上还会额外 patch 原生 `NSWindow` 的 `CanJoinAllSpaces | MoveToActiveSpace | FullScreenAuxiliary` 与最高 native level，并在 non-focusable/windowed 路径显示后显式激活 `NSApplication`，确保在全屏 Space 中也能覆盖当前工作屏幕。对 Pauza 来说，这三个 collection behavior bits 需要一起保留；单独移除 `MoveToActiveSpace` / `FullScreenAuxiliary` 会回退成“break 在别的屏幕或后台 Space 自己开始”的无感状态。app setup 也会在 bundle identifier 可用时请求 macOS 通知权限，避免 bundle 环境下提醒仅走旧通知中心路径而被系统静默降级。
 5. `engine.rs` 的后台 tick 不再每秒无条件重建 tray menu，而是只在 tray 菜单内容有效变化时刷新，避免 macOS 原生菜单刚展开就被替换。
 6. 前台通过 `commands.rs` 读写 `DesktopSnapshot`；设置页和 break prompt 始终消费同一份运行时状态，pause/focus/skip/reset/autostart 都经同一命令面闭环。
 7. `commands.rs::update_settings()` 现采用差异驱动的 host refresh：`PauzaSettings` 未变化时直接短路；shortcut 绑定未变化时不重绑；语言未变化时不做整棵 tray menu rebuild，其余设置最多走 `refresh_tray_if_needed()`。

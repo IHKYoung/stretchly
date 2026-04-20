@@ -475,6 +475,279 @@
     },
     "adm": {
       "text": "Näyttösi soitti. Se sanoi, että olet ollut liian lähellä liian kauan."
+    },
+    "adn": {
+      "text": "Koodisi ei debuggaa itseään kun istut tässä. Eikä silloin kun seisot ylhäälläkään. Mutta selkärankasi ainakin antaa anteeksi."
+    },
+    "ado": {
+      "text": "Selitä bugisi kuvitteelliselle kumiankkalle. Jos se ei toimi, selitä seinälle. Seinät ovat erinomaisia kuuntelijoita."
+    },
+    "adp": {
+      "text": "Ranteesi ovat kirjoittaneet tuhansia sanoja tänään. Venyttele niitä — ojenna käsivarsi ja vedä sormia hellästi taaksepäin."
+    },
+    "adq": {
+      "text": "Tee jotain tyhmää. Tee näköjäljitelmä kollegastasi. Pomppaa paikallasi. Elämä on liian lyhyt pelkälle vakavuudelle."
+    },
+    "adr": {
+      "text": "Pidä pikkukatetta. Nosta käsiäsi ylös kuin juuri ratkaisit maailman vaikeimman bugin, vaikka olet vain venytellyt."
+    },
+    "ads": {
+      "text": "Jos käytät kahta monitoria, katso toiseen keskittyen silmien liikkumatta. Tuntuuko oudolta? Hyvä, taukoja tarvitaan."
+    },
+    "adt": {
+      "text": "Kävele kolme askelta eteenpäin. Nyt kolme askelta taaksepäin. Tuollahan voit kirjoittaa O(n) algoritmin."
+    },
+    "adu": {
+      "text": "Nauti siitä, ettet tällä hetkellä debuggaa mitään. Jokainen bugiton hetki on lahja maailmankaikkeudelta."
+    },
+    "adv": {
+      "text": "Käännä päätäsi hitaasti vasemmalle. Nyt oikealle. Jos kuulit naksahduksen, et ole yksin."
+    },
+    "adw": {
+      "text": "Silmäsi ovat tuijottaneet pikseleitä liian kauan. Katso jotain 6 metrin päässä vähintään 20 sekunnin ajan."
+    },
+    "adx": {
+      "text": "Hengitä sisään 4 sekuntia, pidätä 4 sekuntia, uloshengitys 4 sekuntia. Tai vaan hengitä. Se riittää myös."
+    },
+    "ady": {
+      "text": "Purista käsiäsi nyrkkiin, sitten avaa ne täysin. Toista muutama kerta. Kätesi huomaavat eron."
+    },
+    "adz": {
+      "text": "Nosta olkapäitäsi korville asti, pidä hetki, päästä irti. Tuntuuko se oudolta? Koska niin se on."
+    },
+    "aea": {
+      "text": "Pomppaa kevyesti kantapäilläsi. Jos kukaan kysyy, olet testaamassa maanjäristyksen kestävyyttä."
+    },
+    "aeb": {
+      "text": "Sulje silmäsi ja laske kymmeneen. Jos ehdit kuuteen asti ennen kuin ajattelet koodia, ansaitset mitalin."
+    },
+    "aec": {
+      "text": "Juo vähän vettä. Ja ei, kahvi ei laske. No okei, laske, mutta juo silti vettä."
+    },
+    "aed": {
+      "text": "Kävele näytöltäsi pois. Ihan vaan kävele. Koodi on edelleen siellä kun palaat. Lupaan."
+    },
+    "aee": {
+      "text": "Venytä käsivarsiasi vastakkaisille puolille kuin yrittäisit halata koko internetiä. Sitten päästä irti."
+    },
+    "aef": {
+      "text": "Pidä katse kaukana näytöstä 20 sekuntia. Ajattele jotain miellyttävää, kuten bugiton koodi."
+    },
+    "aeg": {
+      "text": "Ravista kättäsi kuin yrittäisit ravisteella vettä niistä pois. Nyt olet hyvä."
+    },
+    "aeh": {
+      "text": "Taivuta niskasi sivulle, korva kohti olkapäätä. Vaihda puolta. Jos se naksuu, olet tehnyt tätä liian kauan."
+    },
+    "aei": {
+      "text": "Nouse seisomaan. Istu alas. Teit juuri yhden toiston. Tarvitset vain 9999 lisää aloittaaksesi."
+    },
+    "aej": {
+      "text": "Haukottele. Pakota se jos tarvitsee. Kehosi ei tiedä eroa oikean ja teeskennellyn välillä."
+    },
+    "aek": {
+      "text": "Ravistele jalkojasi kuin koittaisit ravistaa ne irti kehostasi. Verisuonesi kiittävät."
+    },
+    "ael": {
+      "text": "Näytä peukalo ylös peilillesi tai web-kamerallesi. Teit sen. Olet tauon sankari."
+    },
+    "aem": {
+      "text": "Pureskele purkkaa tai syö jotain rapeaa. Leukalihaksesi ovat myös lihaksia."
+    },
+    "aen": {
+      "text": "Katso ikkunasta ulos. Jos ei ole ikkunaa, kuvittele sellainen. Mielikuvituksesi ei kaipaa näyttöä."
+    },
+    "aeo": {
+      "text": "Käännä ranteesi hitaasti ympäri kuin käännät näkymätöntä nuppia. Se on therapeuttisempaa kuin luulet."
+    },
+    "aep": {
+      "text": "Laita kämmenet yhteen ja paina kevyesti. Pidä 5 sekuntia. Onnittelut, teit yogan."
+    },
+    "aeq": {
+      "text": "Pudista päätäsi kuin sanoisit 'ei' ärsyttävälle bugille. Koska siihen kyllä sanot ei."
+    },
+    "aer": {
+      "text": "Sulje silmäsi ja kuvittele olevasi rannalla. Nyt kuvittele, että siellä ei ole hyttysiä. Täydellisyys."
+    },
+    "aes": {
+      "text": "Hiero ohimoitasi hitailla ympyräliikkeillä. Kuvittele hierovasi bugiasi pois. Hienoa, jatka koodaamista."
+    },
+    "aet": {
+      "text": "Paina kainaloseuduillesi ja pyöritä vartaloasi. Kuin Hula Hoop, mutta vähemmän koordinaatiota vaativaa."
+    },
+    "aeu": {
+      "text": "Tee laiska-vatsalihas: jännitä vatsalihaksia 3 sekunnin ajan. Nyt voit sanoa tehneesi vatsalihasharjoituksia."
+    },
+    "aev": {
+      "text": "Näytä kieli peilillesi. Jos et ole ujo, näytä se kollegallesi. Jos olet etänä, näytä kissallesi."
+    },
+    "aew": {
+      "text": "Nosta toinen jalka maasta ja seiso toisella jalalla 10 sekuntia. Tasapaino on elämän metafora."
+    },
+    "aex": {
+      "text": "Räpyttele silmiäsi 10 kertaa nopeasti. Nyt olet virallisesti vilkuttanut silmämarathonin."
+    },
+    "aey": {
+      "text": "Kierrä hartiasi taaksepäin 5 kertaa, sitten eteenpäin 5 kertaa. Symmetria on kaunista."
+    },
+    "aez": {
+      "text": "Nojaa taaksepäin ja venytä vatsalihaksia. Kuvittele olevasi kissa auringossa. Kehra jos haluat."
+    },
+    "afa": {
+      "text": "Heiluta varpaita kengissäsi. Heillä on ollut vaikea päivä siellä alhaalla."
+    },
+    "afb": {
+      "text": "Levitä sormesi täysin auki, sitten laita ne kokoon. Tee tämä 5 kertaa. Kädet = venytetty."
+    },
+    "afc": {
+      "text": "Vedä toinen polvi rintaa kohti seisaaltaan. Vaihda jalkaa. Tervetuloa laiskan joga-tunnille."
+    },
+    "afd": {
+      "text": "Ravista käsiäsi ilmassa kuin yrittäisit kuivata ne. Nyt ne ovat kuvitteellisesti puhtaat."
+    },
+    "afe": {
+      "text": "Hiero niskaa hitaasti ylhäältä alas. Kuvittele hierovasi viikonlopun koodausistunnon pois."
+    },
+    "aff": {
+      "text": "Heiluta päätäsi hitaasti puolelta toiselle. Kyllä-pudistus koodiin, ei-pudistus bugille."
+    },
+    "afg": {
+      "text": "Laita kädet selän taakse ja lukitse sormet. Työnnä rintakehä ulos. Tunne se venytys."
+    },
+    "afh": {
+      "text": "Hiero korvalehtiäsi. Siellä on refleksologian pisteitä. Tai ainakin se tuntuu hyvältä."
+    },
+    "afi": {
+      "text": "Pidä syvä, dramaattinen huokaus. Kuvittele puhaltavasi kaiken stressin pois kuin syntymäpäiväkynttilät."
+    },
+    "afj": {
+      "text": "Koukista ja ojenna nilkkoja. Ne ovat kantaneet sinua kaikkien näiden bugien läpi."
+    },
+    "afk": {
+      "text": "Heiluta käsiäsi pään yläpuolella kuin olet konsertissa. Lisäpisteet jos hyrähdat jotain."
+    },
+    "afl": {
+      "text": "Paina kämmeniä yhteen rukoilevan asentoon. Rukoile, ettei tuotanto hajoa taas."
+    },
+    "afm": {
+      "text": "Hiero poskiluitasi kevyesti. Irroita leukaa. Olet saattanut purra hammasta merge-konfliktien aikana."
+    },
+    "afn": {
+      "text": "Pyöritä ranteita molempiin suuntiin. Kuin ohjaisit kahta pikkuruista helikopteria."
+    },
+    "afo": {
+      "text": "Heiluta jalkojasi vuorotellen edestakaisin istuen. Passiivista liikettä on silti liikettä."
+    },
+    "afp": {
+      "text": "Paina sormenpäitä yhteen muodostaen pyramidin. Kuvittele olevasi pahis, joka juonii. Tai vain venyttele."
+    },
+    "afq": {
+      "text": "Ojenna käsivarret eteen ja pyyhi kämmenet sisään ja ulos. Se on venytys ja tanssi samaan aikaan."
+    },
+    "afr": {
+      "text": "Haukottele suuresti ja venytä käsiäsi ylös. Puolipakkoinen, puolivapaaehtoinen liike."
+    },
+    "afs": {
+      "text": "Kokeile koskettaa varpaita seisoen. Jos et yllä, ei hätää. Fysiikka on vain fysiikkaa."
+    },
+    "aft": {
+      "text": "Heilauta päätäsi kuin kuuntelet musiikkia. Bonuspisteet jos laulat mukanasi äänettömästi."
+    },
+    "afu": {
+      "text": "Venytä kädet ylös kuin haluat koskettaa kattoa. Sitten päästä irti ja rentoudu."
+    },
+    "afv": {
+      "text": "Katso kaukana olevaa kohdetta. Anna silmiesi tarkentua. Jatka siihen kauan kunnes tunnet itsesi oudoksi."
+    },
+    "afw": {
+      "text": "Käännä kasvot kohti aurinkoa tai lamppua. Imeytä valo. Olet kasvi nyt."
+    },
+    "afx": {
+      "text": "Pidä rauhallinen hengitys nenän kautta ja ulos suusta. Sisään rauha, ulos bugit."
+    },
+    "afy": {
+      "text": "Raaputa päätäsi. Masseeraa päänahkaasi. Se on ansainnut sen."
+    },
+    "afz": {
+      "text": "Tee jotain ihan typerää. Huuda hiljaa. Tanssi paikallasi. Elämä on liian lyhyttä jumiutumiseen."
+    },
+    "aga": {
+      "text": "Hiero käsiäsi kuin teet saippuavaahtoa. Kuvittele huuhtelevasi bugeja pois."
+    },
+    "agb": {
+      "text": "Taivuta niskaa eteenpäin kunnes leuka koskettaa rintaa. Pidä, sitten nosta pää hitaasti."
+    },
+    "agc": {
+      "text": "Pura itsesi tuolista ja laita kädet lantiolle. Seiso ylpeästi. Olet supersankari."
+    },
+    "agd": {
+      "text": "Heilauta sormia kuin soitat näkymätöntä pianoa. Jokainen näppäinpainallus ilman koodausvirhettä."
+    },
+    "age": {
+      "text": "Sulje silmät ja hengitä syvään. Kuvittele jokainen sisäänhengitys tuovan energiaa, uloshengitys viemään väsymyksen."
+    },
+    "agf": {
+      "text": "Hyppää kevyesti paikallasi 5 kertaa. Verenkierto kiittää, naapurit ehkä eivät."
+    },
+    "agg": {
+      "text": "Pura kätesi ylös kuin venyttelet. Hauko suuresti. Ole dramaattinen."
+    },
+    "agh": {
+      "text": "Heiluta jalkaasi jalkapohjan nojassa. Älä potki vahingossa työpöytää."
+    },
+    "agi": {
+      "text": "Laita käsi sydämelle ja toinen vatsalle. Hengitä syvälle. Tunne kehosi toimivan."
+    },
+    "agj": {
+      "text": "Hiero kämmenselkää toisella kädellä. Vaihda käsiä. Liian monella on pienet, toisiaan hierovat kädet."
+    },
+    "agk": {
+      "text": "Pomppaa kantapäillä kevyesti. Kuvittele olevasi basketball-pelaaja ennen vapaaheittoa."
+    },
+    "agl": {
+      "text": "Kiristä kaikki lihakset 5 sekunnin ajaksi, sitten päästä vallan irti. Tunne rentoutuminen."
+    },
+    "agm": {
+      "text": "Hieronta ohimoille, pieni ympyräliike. Aivoillesi tuntuu hyvältä, vaikka ne ovatkin pääsi sisällä."
+    },
+    "agn": {
+      "text": "Heiluta käsiäsi kuin hyvästelet jotakuta. Hyvästi, stressi. Hyvästi, merge-konfliktit."
+    },
+    "ago": {
+      "text": "Purista kädet nyrkkiin, avaa, purista, avaa. Tunne voima. Tunnista lihaksesi."
+    },
+    "agp": {
+      "text": "Ojenna jalka ja vedä varpaat kohti itseäsi. Vaihda jalkaa. Sinulla on nyt venytetyt pohkeet."
+    },
+    "agq": {
+      "text": "Ravista päätäsi kevyesti kuin kylmäkoira. Jos hiuksesi lentävät, onnistuit."
+    },
+    "agr": {
+      "text": "Heilauta lantiota sivulta toiselle. Kuin tanssi, mutta toimistossa."
+    },
+    "ags": {
+      "text": "Pidä käsivarret suorina ja pyöritä niitä pieninä ympyröinä. Tunne poltto. Tai ainakin pieni kiusaus."
+    },
+    "agt": {
+      "text": "Pura käsiä taakse ja lukitse sormet. Työnnä rintakehä ulos ja hengitä syvään."
+    },
+    "agu": {
+      "text": "Heiluta päätäsi ylös ja alas kuin nyökkäät. Kyllä paremmalle istuma-asennolle. Ei niska-jumille."
+    },
+    "agv": {
+      "text": "Purista lapaluiden väliin ikään kuin yrittäisit puristaa kynää niiden väliin. Pidä, päästä irti."
+    },
+    "agw": {
+      "text": "Hiero kasvojasi kämmenten välissä kevyesti. Tunne energian palautuminen ihoosi."
+    },
+    "agx": {
+      "text": "Ojenna varret sivuille ja pyöritä niitä pieninä ympyröinä. Tunne olkapäissä venytys."
+    },
+    "agy": {
+      "text": "Katso ylös kattoon ja pidä 5 sekuntia. Katso alas lattiaan ja pidä 5 sekuntia. Niskavenytys saavutettu."
+    },
+    "agz": {
+      "text": "Heilauta jaloista vuorotellen kuin kävelet paikallasi. Tai marssi. Mikä vaan saa verenkierron liikkeelle."
     }
   },
   "longBreakIdeas": {
@@ -721,6 +994,250 @@
     "aci": {
       "title": "Pilviä katsellen",
       "text": "Jos näet taivaan, käytä minuutti pilvien katseluun. Se on alkuperäinen näytönsäästäjä — ja antaa aivoillesi pehmeän fokuksen joka edistää luovaa ajattelua."
+    },
+    "acj": {
+      "title": "Kumiankan viisaus",
+      "text": "Koodarit käyttävät kumiankkoja koodin selittämiseen ja bugien löytämiseen. Mutta oikea taika? Koodin ääreltä poistuminen. Aivot käsittelevät ongelmia taustalla kun et pakota niitä. Kävele pois. Anna aivoille aikaa. Ne ratkaisevat bugin kun et katso."
+    },
+    "ack": {
+      "title": "RSI ei ole kunniamerkki",
+      "text": "Rasitusvammat koskettavat jopa 64% tietokonetyöntekijöistä. Varhaiset merkit — pistelyä, jäykkyyttä, heikkoutta — ovat varoituksia, eivät mitaleja. Sivuuta ne nyt, ja ne seuraavat sinua vuosia. Venyttele ranteita. Pidä taukoja. Urasi kestää pidempään kun käsivartesi tekevät niin."
+    },
+    "acl": {
+      "title": "Käännösajan venytys",
+      "text": "Odotatko buildia, deploymenttia tai testiajoa? Se ei ole kuollutta aikaa — se on ilmaista venytysaikaa. Nouse seisomaan, venyttele käsivarsia, pyöritä niskaa. Kun koodi kääntyy, kehosi palautuu. Kahden minuutin venytys nyt on pienempi hinta kuin kahden viikon niskakipu myöhemmin."
+    },
+    "acm": {
+      "title": "Huomion sirpaleet",
+      "text": "Keskivertotyöntekijä tarkistaa sähköpostin tai viestit 6 minuutin välein. Jokainen tarkistus maksaa kontekstinvaihdon — 23 minuuttia keskittymisen palauttamiseen. Sulje Slack. Hiljennä ilmoitukset. Anna aivoillesi mahdollisuus keskittyä. Keskeytymättömyys on lahja itsellesi."
+    },
+    "acn": {
+      "title": "Kiireen paradoksi",
+      "text": "Stanfordin tutkimus osoittaa, että työskentely ilman taukoja ei tee sinusta nopeampaa — se tekee sinusta hitaampaa ja virhealttiimpaa. Aivoilla on biologinen raja kuinka kauan ne voivat keskittyä. Kun pakota yli sen, tuottavuus romahtaa. Tauko ei ole kustannus — se on investointi."
+    },
+    "aco": {
+      "title": "Katselmuksen jälkeinen palautuminen",
+      "text": "Selvisit juuri koodikatselmuksesta? Tai annoit sellaisen? Kummassakin aivoihisi ovat olleet hyperkriittisessä tilassa. Aika nollata. Kävele ympäri korttelia. Juo vettä. Katso ikkunasta. Anna mielesi siirtyä kritiikistä luovuuteen ennen kuin hyppäät seuraavaan tehtävään."
+    },
+    "acp": {
+      "title": "Tyhjä sivu, täysi keho",
+      "text": "Kirjoittajan tukkeutuma ei ole luovuusongelma — se on usein kehon ongelma. Kun olet fyysisesti jännittynyt, aivosi jumittuvat. Nouse ylös. Ravistele käsiä. Tee 10 kyykkyä. Fyysiset liikkeet laukaisevat mielensisäisen jumiin. Kehosi avaa ajatuksesi."
+    },
+    "acq": {
+      "title": "Iltapäivän notkahdus",
+      "text": "Tuo lounaan jälkeinen energianotkahdus johtuu vuorokausirytmistäsi, ei vain siitä mitä söit. Sen sijaan että tartuisit kahviin, tee 5 minuutin nopea kävely. Liike nostaa sykettä, lisää happea aivoihin ja auttaa sinua selättämään notkahduksen paremmin kuin kofeiini."
+    },
+    "acr": {
+      "title": "Kuolleen jalan syndrooma",
+      "text": "Istuminen puristaa jalkojesi verisuonia ja vähentää verenkiertoa. 90 minuutin istumisen jälkeen jalkasi saattavat tuntua puutuneelta, raskaalta tai pisteleväiseltä. Nouse ylös. Kävele. Heiluta jalkoja. Verenkierron täytyy liikkua — ja sinun täytyy liikkua sen kanssa."
+    },
+    "acs": {
+      "title": "Lonkankoukistajien SOS",
+      "text": "Lonkankoukistajasi lyhenevät ja kiristyvät pitkittyneen istumisen jälkeen, vetäen lantiota eteenpäin ja aiheuttaen alaselkäkipua. Seiso ylös, vedä polvi rintaa kohti ja pidä 20 sekuntia. Vaihda puolta. Se on yksinkertainen liike, joka estää vuosien kivut."
+    },
+    "act": {
+      "title": "Rintakehän kierto",
+      "text": "Keskiselkäsi (rintaselkäranka) lukkiutuu kumartuessa näppäimistön ääressä. Istu tuolin reunalla, kierrä ylävartaloa vasemmalle, ota kiinni selkänojasta ja vedä kevyesti. Pidä 15 sekuntia, vaihda puolelle. Selkärangassasi on 33 nikamaa ja ne kaikki ansaitsevat liikkua."
+    },
+    "acu": {
+      "title": "Kyynärvarren pelastus",
+      "text": "Kyynärvarsissa on 20 lihasta, jotka ohjaavat sormiasi ja ranteitasi. Tuntien näppäilyn ja hiiren käytön jälkeen ne ovat tiukkana. Venytä vasenta kättä oikealla kädellä, purista kyynärvartta peukalolla. Toista toiselle puolelle. Tunne lihasten vapautuvan paineen alta."
+    },
+    "acv": {
+      "title": "Kävele ja puhu",
+      "text": "Onko puhelu tulossa? Ota se kävellessä. Stanfordin tutkimus osoitti kävelyn nostavan luovaa tuotosta 60%. Liike virkistää ajatuksia ja parantaa keskittymistä. Jos puhelusi ei vaadi kameraa, käytä sitä tekosyynä kävelylle. Aivoillesi ja keholle tuntuu hyvältä."
+    },
+    "acw": {
+      "title": "Portaiden voima",
+      "text": "Portaissa kiipeäminen 3 minuuttia lisää energiaa tehokkaammin kuin 30 mg kofeiinia, tutkimusten mukaan. Se nostaa sykettä, stimuloi verenkiertoa ja laukaisee endorfiineja. Seuraavan kerran kun tarvitset piristystä, ohita hissi ja ota portaat. Reisisi ja aivoihisi kiittävät."
+    },
+    "acx": {
+      "title": "Näyttö ja uni",
+      "text": "Kirkkaille näytöille altistuminen illalla tukahduttaa melatoniinin tuotantoa jopa 50%. Jos on myöhäinen ilta, himmennä näyttöä, käytä yötilaa tai — vielä parempi — sammuta laite kokonaan. Sininen valo erottaa sinut unesta. Anna silmillesi ja aivoillesi tauko."
+    },
+    "acy": {
+      "title": "Sinisen valon totuus",
+      "text": "Sininen valo näytöistä ei todennäköisesti vahingoita verkkokalvoasi, mutta se lisää digitaalista silmärasitusta. Oireet: kuivat silmät, sumeat näkymät, päänsärky. Ota 20-20-20 sääntö: 20 minuutin välein katso 6 metrin päähän 20 sekunnin ajan. Silmäsi palautuvat."
+    },
+    "acz": {
+      "title": "Korvaväsymys",
+      "text": "Kuulokkeiden käyttö yli 60 minuuttia kerrallaan voi aiheuttaa korvaväsymystä, paineen kertymistä ja jopa kuulovaurioita. Ota ne pois 10 minuutiksi. Anna korvillesi hengittää. Hiljaisuus on äänimaailma, jota aliarvostat kunnes annat sille mahdollisuuden."
+    },
+    "ada": {
+      "title": "Päätöksentekoakku",
+      "text": "Teet noin 35 000 päätöstä päivässä, ja jokainen kuluttaa rajallista resurssiyksikköä. Iltapäivällä päätöksentekokykysi heikkenee. Siksi lopetat koodaamisen ja selaat Stack Overflowta. Tauko nollaa akkua. Kävely, vesi, venytys — ne eivät ole tauon tuhlaamista, vaan voiman palauttamista."
+    },
+    "adb": {
+      "title": "Stressinapostelu-tarkistus",
+      "text": "Stressisyöminen ei ole nälästä — se on kortisolin käskemistä aivoille etsiä lohtua. Seuraavan kerran kun haluat välipalaa, kysy: olenko nälkäinen vai stressaantunut? Jos jälkimmäinen, kävele sen sijaan. Liike vähentää kortisolia tehokkaammin kuin karkkibaari."
+    },
+    "adc": {
+      "title": "Eristäytymisen ansa",
+      "text": "Syvä keskittyminen on välttämätöntä luovalle ja tekniselle työlle, mutta pitkittynyt eristäytyminen nostaa kortisolia ja laskee mielialaa. Jopa 5 minuutin sosiaalinen vuorovaikutus — kahvilla jutustelu, nopea viesti ystävälle — nollaa järjestelmän. Olet sosiaalinen eläin. Käytä sitä."
+    },
+    "add": {
+      "title": "Seisomapöydän sekoitus",
+      "text": "Seisomapöydät eivät ole taikaa — paikallaan seisominen tuntikausia on melkein yhtä pahaa kuin istuminen. Avain on liike. Vaihda istumisen ja seisomisen välillä. Heiluta painoa jalalta toiselle. Kävele pois ja takaisin. Seisomapöytä + liikkumattomuus = tuhlattua rahaa."
+    },
+    "ade": {
+      "title": "Tuolijooga: istuva kyyhky",
+      "text": "Aseta oikea nilkka vasemman polven päälle. Istu suorana ja nojaa hellästi eteenpäin kunnes tunnet venytyksen oikeassa lonkassa. Pidä 20 sekuntia. Vaihda puolta. Lonkkasi ovat tiukassa. Tämä vapauttaa ne."
+    },
+    "adf": {
+      "title": "Lämpötila ja keskittyminen",
+      "text": "Cornellin tutkimus osoitti, että toimiston lämpötilan nostaminen 20°C:sta 25°C:een vähensi näppäilyvirheitä 44%. Kylmä jännittää lihaksia ja hajottaa keskittymisen. Jos palelet, lämmitä tilaa. Jos et voi, pue lisää tai käy kävelyllä lämpimässä."
+    },
+    "adg": {
+      "title": "Äänihygienia",
+      "text": "Jatkuva taustamelu — avotoimistot, ilmoitukset, lyriikilliset musiikki — lisää kognitiivista kuormaa 66%. Hiljaisuus tai valkea kohina auttavat keskittymään. Jos et voi hallita ympäristöä, hallitse korviasi. Hiljennä ilmoitukset. Käytä kohinanvaimennuskuulokkeita. Suojaa ajatteluasi."
+    },
+    "adh": {
+      "title": "Koodikannan paino",
+      "text": "Monimutkaisen järjestelmän pitäminen työmuistissa on yksi kognitiivisesti raskaimmista tehtävistä mitä ihminen tekee. Muutaman tunnin jälkeen aivojen etuotsalohko väsyy. Tauko on ainoa tapa nollata se. Kävelylle meneminen ei ole töiden välttämistä — se on aivojesi huoltamista."
+    },
+    "adi": {
+      "title": "Git commit ja venytys",
+      "text": "Ennen kuin painat sen commitin, työnnä itsesi pois tuolistasi. Tee siitä rituaali: jokainen commit = yksi venytys. Nouse, venytä kädet ylös, taivuta sivuille. Se vie 15 sekuntia ja muistuttaa sinua että olet fyysinen olento, ei vain aivojen kanta."
+    },
+    "adj": {
+      "title": "Sanojen merkityksen katoaminen",
+      "text": "On psykologinen ilmiö nimeltä 'semanttinen kyllästyminen' — kun tuijotat sanaa niin kauan, että se menettää merkityksensä. Se tapahtuu koodillekin. Kun muuttujanimet tai logiikka alkavat näyttää abstrakteilta hieroglyyfeiltä, on aika kävellä pois. Palaat tuoreilla silmillä."
+    },
+    "adk": {
+      "title": "Kävelykonsepti",
+      "text": "Monet kuuluisat kirjailijat — Dickens, Beethoven, Darwin — ottivat pitkiä päivittäisiä kävelyitä osana luovaa prosessiaan. Kävely ei ole ajattelun keskeytys; se on ajattelun työkalu. Seuraavan kerran kun olet jumissa ongelman kanssa, älä istu siinä. Kävele sen läpi."
+    },
+    "adl": {
+      "title": "Määräaikaahdistus",
+      "text": "Määräaikaa edeltävä stressi laukaisee taistele-tai-pakene-vasteen, joka kaventaa ajatteluasi ja lisää virheitä. Ironiaa: mitä enemmän paniikoit, sitä hitaammaksi tulet. 5 minuutin tauko — hengitystä, venyttelyä, kävely — rauhoittaa hermostoa ja palauttaa kirkkauden. Olet nopeampi levänneenä."
+    },
+    "adm": {
+      "title": "Lähetysrituaali",
+      "text": "Painoit juuri lähetä? Lähetit sähköpostin? Mergesit PR:n? Älä aloita heti seuraavaa tehtävää. Anna aivoillesi minuutti juhlia. Venytä, hengitä, nauti valmiiksi saamisesta. Jatkuva työn virtaus ilman palkintoja loppuu. Tunnista saavutukset, vaikka pieniä."
+    },
+    "adn": {
+      "title": "Glykeeminen vuoristorata",
+      "text": "Tuo energianotkahdus iltapäivällä? Se on osittain verensokerin laskusta, jonka laukaisi runsashiilihydraattinen lounas. Sen sijaan että tarttuisit makeaan, mene kävelylle. 10 minuutin kävely vakauttaa verensokerin ilman insuliinipiikkiä. Pysyt virkeänä pidempään."
+    },
+    "ado": {
+      "title": "Puutuneiden jalkojen protokolla",
+      "text": "Pistely tai puutuminen jaloissa istumisen jälkeen johtuu puristuneista hermoista ja vähentyneestä verenkierrosta. Nouse ylös. Kävele ympäri. Heiluta jalkoja. Ravistele ne irti. Hermot palautuvat kun paine poistuu. Älä vain istu siinä ja odota — liiku."
+    },
+    "adp": {
+      "title": "Valaistustarkistus",
+      "text": "Huono valaistus aiheuttaa silmärasitusta, päänsärkyä ja väsymystä. Näyttösi pitäisi olla suunnilleen samassa kirkkaudessa kuin ympäröivä valo. Liian kirkas tai liian himmee aiheuttaa rasitusta. Säädä näyttö, muuta tilaa. Silmäsi tekevät kovasti töitä — auta niitä."
+    },
+    "adq": {
+      "title": "Kuuloke-taukoprotokolla",
+      "text": "Audiologit suosittelevat 60/60-sääntöä: enintään 60% äänenvoimakkuudesta enintään 60 minuutin ajan kerrallaan. Riitä se. Ota kuulokkeet pois. Anna korvillesi ja aivoillesi tauko. Hiljaisuus on aliarvostamatonta. Käytä sitä."
+    },
+    "adr": {
+      "title": "Mikrotreeni",
+      "text": "Et tarvitse kuntosalia. Tee juuri nyt 10 kyykkyä, 10 punnerrusta (tai seinäpunnerrusta) ja 10 pohjenousua. Kesti alle 2 minuuttia. Olet juuri tehnyt enemmän liikuntaa kuin 80% toimistotyöntekijöistä tänään. Tunne voima."
+    },
+    "ads": {
+      "title": "Tulostusvelho",
+      "text": "Kirjoittajat ja toimittajat: kokeile tulostaa luonnos ja lue se paperilla. Huomaat virheitä, joita ruutusi ei näytä. Aivosi käsittelevät fyysistä tekstiä eri tavalla. Paperi hidastaa sinua — ja se on hyvä asia."
+    },
+    "adt": {
+      "title": "Selkärangan puristuksen purku",
+      "text": "Selkärangassa puristuu painovoiman alla koko päivän. Kokeile tätä: seiso jalat hartioiden leveydellä, kietoa sormet, käännä kämmenet ylöspäin ja työnnä kädet kattoa kohti. Pidä 15 sekuntia. Tunne nikamien venyminen. Anna tilaasi takaisin."
+    },
+    "adu": {
+      "title": "Huomiovero",
+      "text": "Jokainen ilmoitus, jokainen merkki, jokainen lukematon viesti on pieni vero huomiolle. Päivän aikana se summautuu massiiviseksi kognitiiviseksi taakaksi. Sulje Slack. Hiljennä puhelin. Poista merkit. Anna aivoillesi tauko jatkuvasta hälytykseltä."
+    },
+    "adv": {
+      "title": "Rannehoitoasema",
+      "text": "Ranteesi käsittelevät noin 40 000 näppäinpainallusta päivässä. Ojenna oikea käsi, kämmen lattiaan päin, ja käytä vasenta kättä vetämään sormia hellästi itseäsi kohti. Pidä 15 sekuntia. Vaihda. Rannetunneloireyhtymä ei ole väistämätöntä — se on ehkäistävissä."
+    },
+    "adw": {
+      "title": "Debuggauskävely",
+      "text": "Stanfordin ja muiden yliopistojen tutkimukset vahvistavat, että kävely parantaa luovaa ongelmanratkaisua jopa 60%. Jumissa bugissa? Älä tuijota siihen — kävele sen läpi. Aivosi käsittelevät ongelmaa taustalla. Ratkaisu tulee kun lopetat pakottamisen."
+    },
+    "adx": {
+      "title": "Lihasmuistin nollaus",
+      "text": "Kehosi mukautuu mihin tahansa asentoon, jota pidät pisimpään. Tuntien istumisen jälkeen lihaksesi muistavat kirjaimellisesti kumaraasennon. Nouse ylös. Venytä vastakkaiseen suuntaan. Venytä kädet ylös, taivuta taaksepäin. Opeta kehollesi uudelleen miltä suora tuntuu."
+    },
+    "ady": {
+      "title": "Silmälihastreeni",
+      "text": "Silmissäsi on kuusi lihasta kummassakin, ja kiinteän näyttöetäisyyden tuijottaminen tekee niistä jäykät. Kokeile tätä: katso vasemmalle, pidä 3 sekuntia. Oikealle, pidä. Ylös, pidä. Alas, pidä. Tunne silmälihaksesi työskentelevän. Ne tarvitsevat treeniä kuten mikä tahansa lihas."
+    },
+    "adz": {
+      "title": "Aivojen harjoittelutiede",
+      "text": "Neurotiede osoittaa, että aivoihisi toistavat ja vakiinnuttavat taitoja levon aikana, eivät harjoittelun aikana. NIH-tutkimukset osoittavat, että 10 minuutin lepo vahvistaa oppimista enemmän kuin 10 minuuttia lisää harjoittelua. Tauko ei ole viivytys — se on miten oppii."
+    },
+    "aea": {
+      "title": "Välipalalla tarkoituksella",
+      "text": "Jos aiot syödä välipalaa, tee se laskelmoidusti. Pähkinät, tumma suklaa, marjat ja vihreä tee sisältävät kaikki yhdisteitä, jotka parantavat kognitiota. Chipsit ja sokeri antavat spikin ja romahduksen. Ruoki aivoja, älä pelkästään kravingeja."
+    },
+    "aeb": {
+      "title": "Kortisolinollaus",
+      "text": "Istuminen stressaantuneessa, kumarassa asennossa todella nostaa kortisolitasoja. Amy Cuddyn tutkimus (kiistelty mutta mielenkiintoinen) ehdottaa, että voimakkaat asennot voivat vähentää stressiä. Seiso suorana, kädet lantiolle, rintakehä esiin. Pidä 2 minuuttia. Tunne muutos."
+    },
+    "aec": {
+      "title": "Mikrotorkun tiede",
+      "text": "6 minuutin torkut parantavat muistin vahvistumista, Düsseldorfin yliopiston tutkimuksen mukaan. Vielä lyhyempi kuin perinteinen 20 minuutin päiväunet, mikrotorkut parantavat valppautta ilman unisumuisuutta. Sulje silmät, aseta ajastin. Pieni lepo, iso tuotto."
+    },
+    "aed": {
+      "title": "Kävelymeditaatio",
+      "text": "Kävele hitaasti ja tarkoituksenmukaisesti 3 minuuttia. Keskity kunkin askeleen tuntumaan — kantapää varpaaseen, painon siirtyminen, jalkapohjan koske maahan. Ei puhelinta, ei ajatuksia tehtävistä. Vain kävely. Se on meditaatio liikkeessä."
+    },
+    "aee": {
+      "title": "Triggerpiste-terapia",
+      "text": "Tunnetko tuon kyhmyn lapaluun ja selkärangan välissä? Se on triggerpiste rhomboid-lihaksessa. Makaa lattialle tennispallon päällä ja rullaa hitaasti. Se tekee kipeää. Hyvä. Kipu on solmun irtipäästämistä. Hengitä lävitse. Tunne vapauden."
+    },
+    "aef": {
+      "title": "Näyttöetäisyyden tarkistus",
+      "text": "Näyttösi pitäisi olla noin 50-70 senttimetrin päässä silmistäsi — suunnilleen käsivarren mitan. Liian lähellä on rasitusta, liian kaukana saa sinut kumaramaan. Säädä nyt. Silmäsi ja niskasi kiittävät."
+    },
+    "aeg": {
+      "title": "Luova kiertotie",
+      "text": "Neurotiede kutsuu sitä 'hautomiseksi' — ilmiö, jossa ongelmasta poistuminen antaa aivojesi ratkaista sen. Jumissa ongelmasssa? Lakkaa puristamasta. Kävele, suihkussa, tee jotain muuta. Ratkaisu tulee kun et etsi sitä."
+    },
+    "aeh": {
+      "title": "Verenkierron tarkistuspiste",
+      "text": "30 minuutin istumisen jälkeen verenvirtaus jalkojen valtimoissa vähenee merkittävästi. Tunneiksi pitkitetty istuminen nostaa verihyytymien ja sydänsairauksien riskiä. Nouse joka puoli tunti. Kävele. Nouda vettä. Mene vessaan. Liike ei ole luksus — se on biologia."
+    },
+    "aei": {
+      "title": "Leukahelaus ja TMJ",
+      "text": "Stressi, keskittyminen ja näyttötyö aiheuttavat usein tiedostamatonta leuan puremista, mikä voi johtaa TMJ-kiputiloihin. Laita kieli suun kattoon ja anna leuan roikkua auki 10 sekuntia. Toista. Leuka rentoutuu. Jos pureskelet hammasta työtä tehdessä, opetteele havaitsemaan se."
+    },
+    "aej": {
+      "title": "Nestetys ja aivovoima",
+      "text": "Jopa lievä kuivuminen (1-2% kehon painosta) heikentää keskittymistä, lisää koettua tehtävän vaikeutta ja hidastaa reaktioaikoja. Juo vettä. Ei kahvia, ei energiajuomaa — vettä. Aivoihisi ovat 75% vettä. Pidä ne täytettynä."
+    },
+    "aek": {
+      "title": "Välilehtivararikko",
+      "text": "Jos sinulla on yli 20 selainvälilehteä auki, et monitoimita — keräät kognitiivista taakkaa. Sulje kaikki. Julistaa välilehtivararikko. Aloita alusta yhdellä tehtävällä. Vapaudu uudessa tyhjyydessä. Keskity."
+    },
+    "ael": {
+      "title": "Kyynärhermotarkistus",
+      "text": "Pisteleekö pikkusormesi ja nimetön sormesi tai menevätkö ne puutuviksi? Se on todennäköisesti kyynärhermosi puristumista kyynärpäässä. Venytä käsivartta, ravista käsiä, vältä tukeutumista kyynärpäihin tuntikausin. Vahingoitunut hermo tarkoittaa viikkoja toipumista."
+    },
+    "aem": {
+      "title": "Seinävenytyspaketti",
+      "text": "Seiso seinää vasten käsivarren mitan päässä. Laita molemmat kädet seinälle olkapäiden korkeudelle ja nojaa eteenpäin. Pidä 15 sekuntia. Tunne rintalihaksissa ja olkapäissä venytyksen. Tuntikausia näppäimistöllä kaareutuminen tiukentaa rintakehää. Tämä avaa sen."
+    },
+    "aen": {
+      "title": "Keskittymisen osinko",
+      "text": "DeskTimen tutkimus parhaiten suoriutuvista työntekijöistä löysi tuottavimman kaavan: 52 minuuttia keskittynyttä työtä, 17 minuutin tauko. Se ei ole laiskuutta — se on rytmi. Aivoilla on rajalliset resurssit. Käytä ne, täytä ne, käytä uudestaan."
+    },
+    "aeo": {
+      "title": "D-vitamiinitarkistus",
+      "text": "Jos työskentelet sisällä koko päivän, olet todennäköisesti puutteellinen D-vitamiinissa — jopa 42% aikuisista on. D-vitamiini vaikuttaa mielialaan, energiatasoon ja immuunijärjestelmään. Kävele ulos 10 minuutiksi. Päästä iho aurinkoon. Se on ilmainen lääke."
+    },
+    "aep": {
+      "title": "Nilkan liikkuvuus",
+      "text": "Nilkkasi tukevat koko kehon painoa, mutta niitä venytetään harvoin. Kokeile tätä: seiso yhdellä jalalla ja piirrä toisen jalalla aakkosset ilmaan nilkkaa käyttäen. Vaihda jalkaa. Tunne liikerata palaavan. Nilkkaliikkuvuus vaikuttaa polviisi ja lonkkaihisi."
+    },
+    "aeq": {
+      "title": "Viivyttelyn paradoksi",
+      "text": "Viivyttely ei ole laiskuutta — se on tunnesäätelyn ongelma. Vältät tehtäviä, jotka laukaisevat ahdistusta, tylsyyttä tai pelkoa. Ratkaisu ei ole enemmän kurinalaisuutta — se on pienemmät askeleet. Pilkko tehtävä. Tee yksi osa. Tauko. Jatka. Liike voittaa kyhjöttämisen."
+    },
+    "aer": {
+      "title": "Päivänpäätös-rauhoittuminen",
+      "text": "Ennen kuin suljet kannettavan, käytä 3 minuuttia kirjoittamaan mitä saavutit, mikä on kesken ja mikä on huomenna. Tyhjennä työmuisti. Se vähentää unettomuutta, vähentää ahdistusta ja auttaa sinua aloittamaan tuoreena seuraavana päivänä. Sulkeminen on taito."
     }
   },
   "ui": {

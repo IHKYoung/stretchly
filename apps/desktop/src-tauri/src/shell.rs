@@ -57,6 +57,7 @@ struct BreakWindowProfile {
     y: i32,
     decorations: bool,
     focusable: bool,
+    #[cfg_attr(target_os = "macos", allow(dead_code))]
     always_on_top: bool,
     fullscreen: bool,
     skip_taskbar: bool,
@@ -102,6 +103,9 @@ pub fn setup_desktop_shell<R: Runtime>(app: &AppHandle<R>) -> tauri::Result<()> 
     if let Some(window) = app.get_webview_window(MAIN_WINDOW_LABEL) {
         attach_main_window_behavior(window);
     }
+
+    #[cfg(target_os = "macos")]
+    request_notification_permission();
 
     Ok(())
 }
@@ -185,8 +189,10 @@ pub fn show_break_window<R: Runtime>(app: &AppHandle<R>) -> Result<(), String> {
 
             let _ = window.unminimize();
             window.set_title(&title).map_err(app_error)?;
-            window.show().map_err(app_error)?;
+            // Set level 1000 and fix collection behavior BEFORE show() so the window
+            // enters the display system at the correct level from the start.
             configure_break_window_native_behavior(&window, profile)?;
+            window.show().map_err(app_error)?;
             let _ = present_break_window(&window);
             if focusable {
                 let _ = window.set_focus();
@@ -1184,6 +1190,10 @@ fn configure_break_window<R: Runtime>(
         .set_decorations(profile.decorations)
         .map_err(app_error)?;
     window.set_focusable(focusable).map_err(app_error)?;
+    // On macOS the window level is set natively in configure_break_window_native_behavior
+    // to avoid a race: tao's set_always_on_top dispatches setLevel:3 asynchronously via GCD,
+    // which would fire *after* our synchronous setLevel:1000 and silently reset it to 3.
+    #[cfg(not(target_os = "macos"))]
     window
         .set_always_on_top(profile.always_on_top)
         .map_err(app_error)?;
@@ -1218,6 +1228,13 @@ fn set_break_window_fullscreen<R: Runtime>(
     }
 }
 
+// Pauza needs the break window to follow the user's active fullscreen Space instead of
+// sitting on a different desktop or monitor. In practice we need the same trio of native
+// collection behavior bits that previously fixed the fullscreen-space visibility bug:
+//   - CanJoinAllSpaces
+//   - MoveToActiveSpace
+//   - FullScreenAuxiliary
+// Removing the latter two regresses back to "the break started somewhere else".
 #[cfg(target_os = "macos")]
 const BREAK_WINDOW_COLLECTION_BEHAVIOR_BITS: usize = (1 << 0) | (1 << 1) | (1 << 8);
 #[cfg(target_os = "macos")]
@@ -1228,6 +1245,50 @@ fn break_window_level(profile: BreakWindowProfile) -> isize {
     let _ = profile;
     BREAK_WINDOW_LEVEL_HIGHEST
 }
+
+#[cfg(target_os = "macos")]
+fn break_window_collection_behavior(current: usize) -> usize {
+    current | BREAK_WINDOW_COLLECTION_BEHAVIOR_BITS
+}
+
+#[cfg(target_os = "macos")]
+fn request_notification_permission() {
+    use objc2::{class, exception, msg_send, runtime::AnyObject};
+    use std::ffi::c_void;
+    use std::panic::AssertUnwindSafe;
+
+    // Ask macOS to register this app for prominent (banner/alert) notifications via
+    // UNUserNotificationCenter. The deprecated NSUserNotificationCenter used by notify-rust
+    // may default to "Silent" delivery on newer macOS unless the app has explicit
+    // UNUserNotificationCenter authorization. A nil completion handler is valid — the system
+    // simply won't call back with the result, but the authorization dialog is still shown.
+    //
+    // IMPORTANT: `currentNotificationCenter` crashes with NSInternalInconsistencyException if
+    // the process has no bundle identifier (e.g. `tauri dev` runs a bare binary, not an .app).
+    // The exception is thrown inside dispatch_once on a different thread, so exception::catch
+    // cannot intercept it. Guard by checking bundleIdentifier first; skip in dev.
+    let _ = exception::catch(AssertUnwindSafe(|| unsafe {
+        let main_bundle: *mut AnyObject = msg_send![class!(NSBundle), mainBundle];
+        if main_bundle.is_null() {
+            return;
+        }
+        let bundle_id: *mut AnyObject = msg_send![main_bundle, bundleIdentifier];
+        if bundle_id.is_null() {
+            return; // not a .app bundle (e.g. tauri dev) — skip
+        }
+        let center: *mut AnyObject =
+            msg_send![class!(UNUserNotificationCenter), currentNotificationCenter];
+        if !center.is_null() {
+            let options: usize = 1 | 2 | 4; // badge | sound | alert
+            let _: () = msg_send![
+                center,
+                requestAuthorizationWithOptions: options,
+                completionHandler: std::ptr::null::<c_void>()
+            ];
+        }
+    }));
+}
+
 
 #[cfg(target_os = "macos")]
 fn run_macos_native_break_window_patch<R: Runtime>(
@@ -1272,11 +1333,9 @@ fn configure_break_window_native_behavior<R: Runtime>(
         "configure_break_window_native_behavior",
         move |ns_window: *mut AnyObject| {
             unsafe {
-                let collection_behavior: usize = msg_send![ns_window, collectionBehavior];
-                let _: () = msg_send![
-                    ns_window,
-                    setCollectionBehavior: collection_behavior | BREAK_WINDOW_COLLECTION_BEHAVIOR_BITS
-                ];
+                let behavior: usize = msg_send![ns_window, collectionBehavior];
+                let new_behavior = break_window_collection_behavior(behavior);
+                let _: () = msg_send![ns_window, setCollectionBehavior: new_behavior];
                 let _: () = msg_send![ns_window, setLevel: break_window_level(profile)];
             }
 
@@ -1322,9 +1381,18 @@ fn activate_break_application<R: Runtime>(window: &WebviewWindow<R>) -> Result<(
         "activate_break_application",
         |_ns_window: *mut AnyObject| {
             unsafe {
-                let app: *mut AnyObject = msg_send![class!(NSApplication), sharedApplication];
-                if !app.is_null() {
-                    let _: () = msg_send![app, activateIgnoringOtherApps: true];
+                let ns_app: *mut AnyObject =
+                    msg_send![class!(NSApplication), sharedApplication];
+                if !ns_app.is_null() {
+                    // [NSApp activate] is the macOS 14+ replacement for the removed
+                    // activateIgnoringOtherApps:. Fall back to the old API on older systems.
+                    let sel = objc2::runtime::Sel::register(c"activate");
+                    let responds: bool = msg_send![ns_app, respondsToSelector: sel];
+                    if responds {
+                        let _: () = msg_send![ns_app, activate];
+                    } else {
+                        let _: () = msg_send![ns_app, activateIgnoringOtherApps: true];
+                    }
                 }
             }
 
@@ -1573,6 +1641,10 @@ mod tests {
             ..fullscreen
         };
 
+        assert_eq!(
+            super::break_window_collection_behavior(0),
+            super::BREAK_WINDOW_COLLECTION_BEHAVIOR_BITS
+        );
         assert_eq!(
             super::BREAK_WINDOW_COLLECTION_BEHAVIOR_BITS,
             (1 << 0) | (1 << 1) | (1 << 8)

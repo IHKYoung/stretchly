@@ -1,6 +1,6 @@
 # Pauza
 
-当前版本：`0.1.1`
+当前版本：`0.1.3`
 
 当前仓库当前维护两块内容：
 
@@ -9,18 +9,17 @@
 
 根目录脚本默认仍以桌面端为主，网站预览使用单独的 `site:dev` 入口。旧 Electron `app/` 壳已从当前工作树移除，如需追溯历史实现请查看 git 历史与 `docs/` 归档文档。
 
-## 0.1.1 概览
+## 0.1.3 概览
 
-`0.1.1` 是当前这一轮大规模收口后的可提交版本，重点不再是“继续 patch 旧 Electron 壳”，而是把产品、运行链路、文案真源和桌面体验统一收进当前的 `apps/desktop`。
+`0.1.3` 是当前这一轮“收口未提交工作树 + 本地打包 + GitHub release”后的正式版本，重点不再只是补局部 patch，而是把桌面端稳定性、多语言 break 文案库、官网 release 流程和下载入口一起收成一个可发布快照。
 
 这一版的核心变化：
 
 - 桌面端默认运行链路已经统一到 `Tauri 2 + React + TypeScript + Rust host`
-- 设置页和 break prompt 继续收敛成更克制、更像桌面工具的体验
-- 多语言、break 文案、tray/runtime 文案已经统一到新的 locale registry
-- 调度、smart reminder、tray、fullscreen break、语言切换等关键稳定性问题都做了修复
-- 官网单页与站内稳定下载路由已经并入当前版本基线
-- 仓库中与主体产品无关的旧资产、旧说明和过渡结构继续被清理，旧 Electron `app/` 壳也已从当前工作树完全移除
+- macOS fullscreen Space 下的 break 浮出策略继续加固：break 窗口重新保留 `CanJoinAllSpaces | MoveToActiveSpace | FullScreenAuxiliary` 组合，并在 app setup 时补做通知权限请求
+- 多语言 break 文案库继续扩充：当前 50 个 locale 的 `miniBreakIdeas` / `longBreakIdeas` 均已批量扩写，并重新生成共享 `registry.generated.json`
+- 官网下载入口与 release 工作流正式收口：`apps/site` 新增一键发布脚本、Release Playbook 和独立 workflow mirror，首页 pinned 下载链接可随版本自动更新
+- 本轮未提交的 desktop / site / docs 变更已统一整理到 `0.1.3`，并以本地 macOS 打包产物为发布输入
 
 ## 产品主张
 
@@ -31,18 +30,18 @@ Pauza 不是一个“粗暴打断工作”的提醒器。它更接近一个安�
 - 把运行时动作、设置项、系统状态和语言文案都收口到单一真源，减少漂移和意外
 - 界面应该像一个克制的桌面工具，而不是一个噪音很重的控制台
 
-## 下一阶段：官网部署与下载链路
+## 下一阶段：下载分发与体验验证
 
-`0.1.1` 当前已经包含官网单页原型与下载稳定路由，下一阶段不再是“从 0 搭网站”，而是把现有 `apps/site` 正式部署出去，并接上真实下载产物与版本说明。接下来会重点推进：
+`0.1.3` 已经把官网 pinned 下载链接、release 脚本和本地 macOS 打包链路收口到同一条发布流程里。下一阶段不再是“把版本发出去”，而是继续验证桌面端体验和官网分发闭环。接下来会重点推进：
 
-1. 使用 Vercel 部署 `apps/site`
-2. 将 `apps/site/download/targets.js` 接上真实下载地址或 Release
-3. 在官网补充更稳定的版本说明、截图与下载说明
+1. 继续验证 macOS 全屏工作区、通知权限和 break 可见性的真实机行为
+2. 在官网补充更稳定的版本说明、截图和 release note 摘要
+3. 视需要决定代码仓库与 release 仓库的长期关系，减少当前双仓分流造成的发布歧义
 
 网站内容建议优先强调：
 
 - “更自然的 break，而不是粗暴打断”
-- “更克制的 desktop experience”
+- “全屏工作区里也能可靠浮出的提醒”
 - “focus session / smart reminder / heads-up cue / break prompt” 这一套完整闭环
 
 ## 环境要求
@@ -176,7 +175,7 @@ apps/desktop/src-tauri/target/release/bundle/
 常见文件：
 
 - `apps/desktop/src-tauri/target/release/bundle/macos/Pauza.app`
-- `apps/desktop/src-tauri/target/release/bundle/dmg/Pauza_0.1.1_*.dmg`
+- `apps/desktop/src-tauri/target/release/bundle/dmg/Pauza_0.1.3_*.dmg`
 
 ## 说明
 

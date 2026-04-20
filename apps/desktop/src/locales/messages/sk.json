@@ -500,6 +500,279 @@
     },
     "adm": {
       "text": "Zatvor oči na chvíľu. To nie je lenivosť, to je optimalizácia."
+    },
+    "adn": {
+      "text": "Kód sa sám neopraví, kým tu sedíš. Ani keď vstaneš, ale aspoň chrbtica ti odpustí."
+    },
+    "ado": {
+      "text": "Vysvetli chybu imaginárnej gumenej kačičke. Ak to nepomôže, vysvetli to stene. Steny sú skvelé posluchačky."
+    },
+    "adp": {
+      "text": "Zápästia dnes napísali tisíce slov. Prečiahni ich — vystri paže a jemne zatiahni prsty dozadu."
+    },
+    "adq": {
+      "text": "Celú kódovú základňu si mal v hlave. Na 20 sekúnd ju tam nechaj chvíľu oddýchnuť."
+    },
+    "adr": {
+      "text": "Čakáš na build? Ideálne. Vstaň a prečiahni sa. Toto sa dá zarátať do odpracovaných hodín."
+    },
+    "ads": {
+      "text": "Máš 47 neprečítaných Slack správ. Vydržia ešte 20 sekúnd. Zamrkaj."
+    },
+    "adt": {
+      "text": "\"Som príliš zaneprázdnený na prestávku\" — takto skončíš na tej dlhšej, nedobrovoľnej."
+    },
+    "adu": {
+      "text": "Mozog po code review je vyčerpaný. Zavri oči a nechaj neuróny prestať sa hádať."
+    },
+    "adv": {
+      "text": "Tvorivá blokáda? Vstaň. Urob 10 krokov. Sadni späť. Ten odstavec sa bude báť tvojho návratu."
+    },
+    "adw": {
+      "text": "Únava z rozhodovania je skutočná. Prestaň vyberať. Len sa 20 sekúnd nadýchaj."
+    },
+    "adx": {
+      "text": "Je tretia poobede a ty odpadáš. Cukor v krvi klesol. Vstaň, prečiahni sa a daj si Horalku."
+    },
+    "ady": {
+      "text": "Máš nohy aj pod stolom. Pripomeň im to vstávaním."
+    },
+    "adz": {
+      "text": "Tvoje bedrá sú v polohe embrya už niekoľko hodín. Vstaň a urob výpad."
+    },
+    "aea": {
+      "text": "Stred chrbta ti stuhol. Zapleti ruky za hlavu a jemne sa prehni dozadu."
+    },
+    "aeb": {
+      "text": "Strečing predlaktia: vystri ruku, dlaňou hore, jemne zatiahni prsty dolu. Prevencia RSI za 10 sekúnd."
+    },
+    "aec": {
+      "text": "Na ďalší hovor skús chodiť pri rozhovore. Mozog funguje lepšie v pohybe."
+    },
+    "aed": {
+      "text": "Schody existujú. Vyjdi pár. Tvoj kardiovaskulárny systém ti pošle ďakovný list."
+    },
+    "aee": {
+      "text": "Jas tvojho monitora: zodpovedá miestnosti, alebo si tvoja tvár baterka? Nastav ho."
+    },
+    "aef": {
+      "text": "Modré svetlo ti nezničí život, ale monitor je asi príliš jasný. Trochu ho stlm."
+    },
+    "aeg": {
+      "text": "Slúchadlá máš na ušiach hodiny. Daj im pauzu. Nie sú stvorené na maratón."
+    },
+    "aeh": {
+      "text": "Kvalita dnešného spánku sa začína teraz. Odhliadni od obrazovky a nechaj oči chvíľu oddýchnuť."
+    },
+    "aei": {
+      "text": "Siahneš po čipskách? Skús radšej hrsť orieškov. Mozog beží na lepšom palive, ako si myslíš."
+    },
+    "aej": {
+      "text": "Hlboká práca je skvelá. Hlboká izolácia nie. Kedy si naposledy hovoril s ľudskou bytosťou?"
+    },
+    "aek": {
+      "text": "Ak máš stojací stôl, prepni polohu. Ak nie, vstaň aj tak."
+    },
+    "ael": {
+      "text": "Točenie v sede: pravú ruku na ľavé koleno, otočiť, držať 10 sekúnd. Vymeniť. Joga na stoličke, žiadna rohožka."
+    },
+    "aem": {
+      "text": "Je ti v miestnosti príliš teplo? Nižšia teplota zlepšuje sústredenie. Otvor okno alebo nastav termostat."
+    },
+    "aen": {
+      "text": "Odlož slúchadlá. Počúvaj skutočné zvuky okolo teba 20 sekúnd."
+    },
+    "aeo": {
+      "text": "Celý mentálny model systému máš v hlave. To vyčerpáva. Na chvíľu ho pusť."
+    },
+    "aep": {
+      "text": "git commit -m \"dal som si prestávku\". Najlepší commit message, čo dnes napíšeš."
+    },
+    "aeq": {
+      "text": "Stack Overflow ti nevie pomôcť so strečingom. Vstaň. Toto musíš urobiť sám."
+    },
+    "aer": {
+      "text": "Deadline sa nepohne, ak sa 20 sekúnd prečiahneš. Ale tvoje stavce áno. V dobrom zmysle."
+    },
+    "aes": {
+      "text": "Hľadíš na ten istý odstavec 10 minút? Vytlač ho a označ perom. Zmeň médium, zmeň perspektívu."
+    },
+    "aet": {
+      "text": "Práve si odoslal niečo? Vydal draft? Vstaň a urob víťazný strečing. Zaslúžiš si to."
+    },
+    "aeu": {
+      "text": "Trasy pred deadlinom? Pohni telom. Úzkosť sídli v nehybnosti."
+    },
+    "aev": {
+      "text": "Skontroluj jas monitora. Ak v ňom vidíš vlastný odraz, je príliš jasný pre túto miestnosť."
+    },
+    "aew": {
+      "text": "Zjedz desiatu ďalej od klávesnice. Omrvinky nepatria medzi klávesy."
+    },
+    "aex": {
+      "text": "5-minútová prechádzka vyvolá viac nápadov ako 30 minút zírania na prázdnu stránku. Hovorí to veda."
+    },
+    "aey": {
+      "text": "Máš otvorených 38 záložiek. Zavri tie, čo nikdy neprečítaš. Nie je to hromadenie... no dobre, je to hromadenie."
+    },
+    "aez": {
+      "text": "Keď si prečítal tú istú vetu päťkrát a stále nedáva zmysel, mozog ti hovorí: odíď odtiaľto."
+    },
+    "afa": {
+      "text": "Pre chrbát neexistuje Ctrl+Z. Vstaň a postaraj sa oň teraz."
+    },
+    "afb": {
+      "text": "Druhý monitor ťa nevidí pri strečingu. Smelo do toho, nesúdi."
+    },
+    "afc": {
+      "text": "Káva nie je náhrada za odpočinok. To vieš. Popri nej vypij aj trochu vody."
+    },
+    "afd": {
+      "text": "Chyba tam bude aj keď sa vrátiš. Ale uvidíš ju sviežim pohľadom."
+    },
+    "afe": {
+      "text": "Práve si strávil 10 minút pomenovaním premennej. Mozog si zaslúži prestávku."
+    },
+    "aff": {
+      "text": "Porady skončili. Vydýchni. Pomaly otoč hlavou doľava, potom doprava."
+    },
+    "afg": {
+      "text": "Schránka prežije bez teba 60 sekúnd. Pozri sa von oknom."
+    },
+    "afh": {
+      "text": "Ak ti kŕči ruka na myši, prepni na druhú ruku na minútu. Bude to divné. O to ide."
+    },
+    "afi": {
+      "text": "Brnenie prstov? To sú nervy, čo žiadajú strečing. Krúženie zápästím, 10-krát každým smerom."
+    },
+    "afj": {
+      "text": "Príliš dlho stojíš? Sadni si na chvíľu. Ide o striedanie, nie o utrpenie."
+    },
+    "afk": {
+      "text": "Čas na AFK. Doslova. Odíď od klávesnice."
+    },
+    "afl": {
+      "text": "Ak máš na stole rastlinu, pozri sa na ňu. Ak umiera, je to metafora. Zalej vás oboch."
+    },
+    "afm": {
+      "text": "Otvor okno. Čerstvý vzduch robí pre mozog to, čo studený reštart pre počítač."
+    },
+    "afn": {
+      "text": "Pritiahni bradu k hrudníku a drž 10 sekúnd. Zadná strana krku sa celý deň kŕčila."
+    },
+    "afo": {
+      "text": "Stiahni zadok v sede. Drž 5 sekúnd. Pusti. Nikto nevie. Tajný fitness program."
+    },
+    "afp": {
+      "text": "Strečing stehenných svalov v sede: vystri jednu nohu, siahni po prstoch nôh, drž 10 sekúnd. Vymeň nohy."
+    },
+    "afq": {
+      "text": "Oči produkujú menej sĺz pri sústredení na obrazovku. Pomaly a vedome zamrkaj 10-krát."
+    },
+    "afr": {
+      "text": "Hlboké dýchanie znižuje krvný tlak v reálnom čase. Nádych na 4, výdych na 6. Zopakuj trikrát."
+    },
+    "afs": {
+      "text": "Vstaň a nechaj gravitáciu dekomprimovať chrbticu. Len nechaj visieť ruky a dýchaj 15 sekúnd."
+    },
+    "aft": {
+      "text": "Poznáš 200 klávesových skratiek. Čas naučiť sa jednu telesnú skratku: vstaň, prečiahni sa, sadni. Opakuj."
+    },
+    "afu": {
+      "text": "Prepni IDE do svetlého režimu na 5 minút. Alebo tmavého. Zmeň niečo. Resetuj zrakový kortex."
+    },
+    "afv": {
+      "text": "Hľadel si na blikajúci kurzor. Teraz zavri oči a nič nevidz 20 sekúnd. Čistý luxus."
+    },
+    "afw": {
+      "text": "Pozri sa von a nájdi najvzdialenejší predmet, čo vidíš. Sústreď sa naň. Tvoje očné svaly to potrebovali."
+    },
+    "afx": {
+      "text": "Prejdi do kuchyne. Nie za účelom. Len tak choď. Pohyb je liek."
+    },
+    "afy": {
+      "text": "Nájdi schody a prečiahni si lýtka na okraji schodíka. Drž 15 sekúnd každú stranu."
+    },
+    "afz": {
+      "text": "Uši máš pod slúchadlami hodiny. Odlož ich a vychutnaj si ticho."
+    },
+    "aga": {
+      "text": "Hmla v hlave? To je prefrontálny kortex na dne. Vstaň, pohni sa a nechaj ho rebootovať."
+    },
+    "agb": {
+      "text": "Multitasking je mýtus. Mozog len prepína kontext s overheadom. Daj si jednovláknovú prestávku."
+    },
+    "agc": {
+      "text": "Každý context switch ťa stojí 23 minút opätovného sústredenia. Táto prestávka stojí 20 sekúnd. Urob si počet."
+    },
+    "agd": {
+      "text": "Perfekcionizmus je prokrastinácia v laboratornom plášti. Odíď. Hotovo je lepšie ako dokonale."
+    },
+    "age": {
+      "text": "Máš pocit podvodníka? Každý ho má niekedy. Vstaň a prečiahni sa — podvodníci sa o seba nestarajú."
+    },
+    "agf": {
+      "text": "Obnovovanie emailu každých 30 sekúnd nie je produktivita. Vstaň. To je produktivita."
+    },
+    "agg": {
+      "text": "Tvorivá blokáda? Zmeň fyzickú polohu. Nová poloha, nová perspektíva."
+    },
+    "agh": {
+      "text": "Dolná časť chrbta má sťažnosť. Posuň sa na kraj stoličky a 30 sekúnd seď vzpriamene."
+    },
+    "agi": {
+      "text": "Bolesť ramien je komentár code review tvojho tela: Vyžaduje zmeny. Rozkrúť ich dozadu 10-krát."
+    },
+    "agj": {
+      "text": "Bolesť zápästia po kódovaní? Jemne stiahni päste a pomaly krúž. 10 krúžkov každým smerom."
+    },
+    "agk": {
+      "text": "Prekríž jeden členok cez opačné koleno a nakloň sa dopredu. Otváranie bedier. Drž 15 sekúnd. Vymeň."
+    },
+    "agl": {
+      "text": "Pozri kolegovi do očí a povedz niečo pekné. Ľudský kontakt prekoná akékoľvek notifikácie."
+    },
+    "agm": {
+      "text": "Počúvaj prírodný zvuk 30 sekúnd — dážď, vtáky, šumenie Tatier. Nervový systém sa upokojí."
+    },
+    "agn": {
+      "text": "Hlboké sústredenie je šprint, nie maratón. Práve si šprintoval. Vydýchaj si chôdzou."
+    },
+    "ago": {
+      "text": "Kontrola polohy: nakláňaš sa k monitoru, akoby ti bol dlžný peniaze? Sadni dozadu."
+    },
+    "agp": {
+      "text": "Zjedz niečo. Ale tentoraz to ochutnaj. Žuj pomaly. Obedná prestávka nie je speedrun."
+    },
+    "agq": {
+      "text": "Kedy si naposledy pil vodu? Nie kávu. Vodu. Choď."
+    },
+    "agr": {
+      "text": "Ak je vonku denné svetlo, vystav sa mu. Tvoj cirkadiánny rytmus ťa prosí."
+    },
+    "ags": {
+      "text": "Je ti v miestnosti príliš chladno alebo teplo? Uprav to. Tepelný komfort priamo ovplyvňuje sústredenie."
+    },
+    "agt": {
+      "text": "Box breathing: nádych na 4, drž 4, výdych na 4, drž 4. Obľúbená slučka nervového systému."
+    },
+    "agu": {
+      "text": "Zdvihni obočie čo najvyššie. Drž 5 sekúnd. Pusti. Čelo bolo napätejšie, ako si si myslel."
+    },
+    "agv": {
+      "text": "Roztvor prsty čo najširšie. Drž 5 sekúnd. Teraz stiahni pevnú päsť. Zopakuj trikrát."
+    },
+    "agw": {
+      "text": "Zapoj jadro tela v sede. Pritiahni pupok k chrbtici a drž 10 sekúnd."
+    },
+    "agx": {
+      "text": "Stoj na špičkách 10 sekúnd. Teraz sa hojdaj späť na päty. Opakuj. Mikrotréning rovnováhy."
+    },
+    "agy": {
+      "text": "Všimni si dýchanie. Nemeň ho. Len si ho všimni. To je mindfulness a práve si to urobil."
+    },
+    "agz": {
+      "text": "Toto upozornenie napísal človek, ktorý tiež ignoruje upozornenia na prestávky. Nebuď ako my. Prečiahni sa."
     }
   },
   "longBreakIdeas": {
@@ -746,6 +1019,250 @@
     "aci": {
       "title": "Pozorovanie oblakov",
       "text": "Ak máš okno — pozeraj sa na oblaky 3 minúty. Je to prirodzená forma meditácie. Oblaky sa menia, myšlienky plynú, napätie ustupuje. Ako reboot pre hlavu."
+    },
+    "acj": {
+      "title": "Múdrosť gumenej kačičky",
+      "text": "Programátori používajú gumené kačičky na vysvetlenie kódu a hľadanie chýb. Ale skutočná mágia? Úplne sa vzdialiť od problému. Podvedomie ďalej spracúva, kým sa prečiahneš. Vrátiš sa a riešenie je tam — len tak."
+    },
+    "ack": {
+      "title": "RSI nie je vyznamenanie",
+      "text": "Syndróm opakovanej záťaže postihuje až 64 % pracovníkov pri počítači. Prvé príznaky — brnenie, stuhnutosť, bolesti zápästí — sa ľahko ignorujú a neskôr draho liečia. Prečiahni si predlaktia: vystri ruku, dlaňou dolu, a jemne pritiahni prsty k sebe. Drž 15 sekúnd každú stranu."
+    },
+    "acl": {
+      "title": "Strečing počas kompilácie",
+      "text": "Čakáš na build, deploy alebo test suite? To nie je mŕtvy čas — je to čas na strečing zadarmo. Vstaň, skús sa dotknúť palcov nôh a pomaly sa natiahni späť. Kód aj chrbtica budú pripravení, keď to dobehne."
+    },
+    "acm": {
+      "title": "Pozornosť v troskách",
+      "text": "Priemerný pracovník znalostí kontroluje email alebo správy každých 6 minút. Každá kontrola stojí context switch, z ktorého sa zotaví 23 minút. Počas tejto prestávky daj telefón obrazovkou dolu a zavri chat aplikácie. Získaj späť pozornosť jednu prestávku po druhej."
+    },
+    "acn": {
+      "title": "Paradox zaneprázdnenosti",
+      "text": "Výskum zo Stanfordu ukazuje, že práca bez prestávok ťa nerobí rýchlejším — robí ťa pomalším, menej presným a náchylnejším na chyby, ktoré opravíš ešte dlhšie. Brať prestávky nie je lenivosť. Je to inžinierska efektívnosť."
+    },
+    "aco": {
+      "title": "Zotavenie po code review",
+      "text": "Prežil si práve code review? Alebo si ho dal? V každom prípade mozog bol v hyperkritickej móde. Čas prepnúť. Vstaň, roztras ruky, rozkrúť ramená a nechaj mozog prejsť z režimu sudcu do režimu odpočinku."
+    },
+    "acp": {
+      "title": "Prázdna stránka, celé telo",
+      "text": "Tvorivá blokáda nie je problém kreativity — je to často problém tela. Keď si fyzicky napätý, myseľ sa tiež stiahne. Choď sa prejsť 5 minút. Prečiahni ruky nad hlavu. Slová sa vrátia a budú lepšie."
+    },
+    "acq": {
+      "title": "Popoludňajší pád o 15:00",
+      "text": "Ten pokles energie po obede spôsobuje cirkadiánny rytmus, nielen to, čo si jedol. Namiesto kofeínu skús 5-minútovú prechádzku alebo ľahký strečing. Pohyb prirodzene zvyšuje kortizol a resetuje bdelosť bez neskoršieho kofeínového pádu."
+    },
+    "acr": {
+      "title": "Syndróm mŕtvych nôh",
+      "text": "Sedenie stláča cievy v nohách a obmedzuje krvný obeh. Po 90 minútach sedenia môže prietok krvi do nôh klesnúť o 50 %. Vstaň, prechádzaj sa alebo urob 10 dvíhaní na špičkách. Nohy aj kardiovaskulárny systém ti poďakujú."
+    },
+    "acs": {
+      "title": "SOS bedrové flexory",
+      "text": "Bedrové flexory sa skracujú a tuhnú po dlhom sedení, ťahajú panvu dopredu a spôsobujú bolesť chrbta. Skús toto: vstaň, urob výpad nohou dozadu a tlač boky dopredu. Drž 30 sekúnd každú stranu. Toto je najzanedbávanejší strečing pracovníka pri stole."
+    },
+    "act": {
+      "title": "Hrudný zvrat",
+      "text": "Hrudná chrbtica sa zatuhnúva od hrbenia nad klávesnicou. Sadni na kraj stoličky, skríž ruky cez hrudník a pomaly sa otáčaj doľava a doprava. Drž každú stranu 10 sekúnd. Malo by si cítiť, ako sa veci zaradili späť na miesto."
+    },
+    "acu": {
+      "title": "Záchrana predlaktí",
+      "text": "Tvoje predlaktia obsahujú 20 svalov, ktoré ovládajú prsty a zápästia. Po hodinách písania a myšovania sú vyčerpané. Vystri jednu ruku dlaňou od seba a druhou rukou jemne zatiahni prsty dozadu. Drž 15 sekúnd. Vymeň. Zopakuj dvakrát."
+    },
+    "acv": {
+      "title": "Choď a hovor",
+      "text": "Čaká ťa hovor? Daj si ho počas chôdze. Stanfordský výskum zistil, že chôdza zvyšuje kreatívny výstup o 60 %. Nepotrebuješ bežecký pás — len choď po miestnosti alebo von. Nápady budú ostrejšie a telo ti poďakuje."
+    },
+    "acw": {
+      "title": "Sila schodov",
+      "text": "Lezenie po schodoch len 3 minúty zvyšuje energiu efektívnejšie ako 30 miligramov kofeínu, podľa štúdie University of Georgia. Ak máš prístup k schodom, urob pár kôl počas tejto prestávky. Je to rýchle, zadarmo a funguje vždy."
+    },
+    "acx": {
+      "title": "Obrazovka a spánok",
+      "text": "Vystavenie jasným obrazovkám večer potláča produkciu melatonínu až o 50 %. Ak je po 17:00, zvažuj stlmenie obrazovky alebo zapnutie nočného režimu. Tvoj dnešný spánok sa rozhoduje podľa toho, čo tvoje oči vidia práve teraz."
+    },
+    "acy": {
+      "title": "Realita modrého svetla",
+      "text": "Modré svetlo z obrazoviek pravdepodobne nepoškodí sietnice, ale prispieva k digitálnej únave očí a môže narušiť spánkový cyklus. Riešením nie sú drahé okuliare — je to pravidelné odhliadnutie, nastavenie jasu a prestávky ako táto."
+    },
+    "acz": {
+      "title": "Únava uší",
+      "text": "Nosenie slúchadiel dlhšie ako 60 minút naraz môže spôsobiť únavu uší, tlak a pri vysokej hlasitosti aj poškodenie sluchu. Odlož ich na túto prestávku. Nechaj uši dýchať. Ak musíš mať zvuk, skús reproduktory na strednej hlasitosti."
+    },
+    "ada": {
+      "title": "Batéria rozhodovania",
+      "text": "Robíš asi 35 000 rozhodnutí denne a každé vyčerpáva obmedzený zdroj. Poobede kvalita rozhodnutí výrazne klesá — to je únava z rozhodovania. Počas tejto prestávky prestaň vyberať. Nescrolluj, nevoľ, neplánuj. Len buď."
+    },
+    "adb": {
+      "title": "Audit jedenia zo stresu",
+      "text": "Jedenie zo stresu nie je o hlade — ide o kortizol, ktorý hovorí mozgu, že potrebuje útechu. Nabudúce, keď siahneš po desiatu, zastav sa a spýtaj sa: som hladný, alebo v strese? Ak v strese, skús najprv 5 hlbokých nádychov. Ak si stále hladný, jedz — ale vyber niečo výživné."
+    },
+    "adc": {
+      "title": "Pasca izolácie",
+      "text": "Hlboké sústredenie je nevyhnutné pre kreatívnu a technickú prácu, ale predĺžená izolácia zvyšuje kortizol a znižuje oxytocín. Využi túto prestávku na pozdravenie niekoho — kolegu, suseda, člena rodiny. Aj krátka sociálna interakcia resetuje tvoju stresovú základňu."
+    },
+    "add": {
+      "title": "Tanec pri stojacom stole",
+      "text": "Stojacie stoly nie sú mágia — státie bez pohybu hodiny je takmer také zlé ako sedenie. Kľúčom je striedanie. Ak si stál, sadni si. Ak si sedel, vstaň. Presuň váhu, pohni prstami nôh alebo pochoduj na mieste. Pohyb, nie poloha, je cieľom."
+    },
+    "ade": {
+      "title": "Joga na stoličke: holub",
+      "text": "Prekríž pravý členok cez ľavé koleno. Seď vzpriamene a jemne sa nakloň dopredu, kým nepocítiš strečing v pravom bedrí a zadku. Drž 30 sekúnd a vymeň strany. Toto je jeden z najlepších strečingov na otvorenie bedier bez opustenia stoličky."
+    },
+    "adf": {
+      "title": "Teplota a sústredenie",
+      "text": "Výskum z Cornellu zistil, že zvýšenie teploty kancelárie z 20 °C na 25 °C znížilo chyby pri písaní o 44 % a zvýšilo výstup o 150 %. Ak ti je zima, ohrej sa. Ak je ti príliš teplo, schlaď sa. Termostat je nástroj produktivity."
+    },
+    "adg": {
+      "title": "Zvuková hygiena",
+      "text": "Neustály hluk na pozadí — otvorené kancelárie, notifikácie, hudba s textom — zvyšuje kognitívnu záťaž až o 66 %. Počas tejto prestávky vypni všetok zvuk. Seď v tichu 2 minúty. Spočiatku to môže byť divné. Tak vieš, že si to potreboval."
+    },
+    "adh": {
+      "title": "Váha kódovej základne",
+      "text": "Udržiavanie zložitého systému v pracovnej pamäti je jedna z najnákladnejších kognitívnych úloh, čo ľudia robia. Preto sa cítiš vyčerpaný po dni samého sedenia. Využi túto prestávku na zámerné vyprázdnenie mysle. Zapiš, kde si, a potom pusť."
+    },
+    "adi": {
+      "title": "Git commit a strečing",
+      "text": "Pred tým, ako pushneš commit, vytlač aj seba zo stoličky. Urob z toho rituál: každý commit = jeden strečing. Počas produktívneho dňa je to 10 až 20 mikroprestávok vstavaných do workflow. Zlepší sa tvoja história verzií aj tvoja zdravotná história."
+    },
+    "adj": {
+      "title": "Slová strácajú zmysel",
+      "text": "Existuje psychologický jav nazvaný sémantická saturácia — keď hľadíš na slovo tak dlho, že prestane vyzerať skutočne. Ak edituješ ten istý odstavec 20 minút, je to tvoj signál. Odíď. Keď sa vrátiš, text bude pôsobiť sviežo a chyby budú zrejmé."
+    },
+    "adk": {
+      "title": "Prechádzka a tvorba",
+      "text": "Mnohí slávni autori — Dickens, Beethoven, Darwin — chodili na dlhé každodenné prechádzky ako súčasť tvorivého procesu. Nepotrebuješ 2 hodiny. Aj 5 minút chôdze presunie mozog z fokusovaného do difúzneho módu, kde sa dejú kreatívne spojenia."
+    },
+    "adl": {
+      "title": "Úzkosť pred deadlinom",
+      "text": "Stres pred deadlinom spúšťa reakciu boj alebo útek, čo zužuje myslenie a zvyšuje chyby. Paradoxne, najlepšia vec pred deadlinom je dať si prestávku. Pohyb metabolizuje stresové hormóny a obnovuje širší pohľad, ktorý potrebuješ na silný záver."
+    },
+    "adm": {
+      "title": "Rituál odoslania",
+      "text": "Práve si stlačil odoslať? Poslal email? Mergoval PR? Nezačínaj hneď ďalšiu úlohu. Daj mozgu chvíľu, aby registroval dokončenie. Vstaň, prečiahni sa, možno aj oslávuj. Uznanie míľnikov — aj malých — predchádza vyhoreniu."
+    },
+    "adn": {
+      "title": "Glykemická horská dráha",
+      "text": "Ten pokles energie, čo cítiš poobede? Čiastočne je to pokles krvného cukru spôsobený sacharidovým obedom. Pre stabilnú energiu kombinuj sacharidy s bielkovinami a vlákninou. Ale teraz sa len pohni — 5-minútová prechádzka stabilizuje hladinu glukózy a rozptyľuje hmlu."
+    },
+    "ado": {
+      "title": "Protokol pre znecitlivené nohy",
+      "text": "Brnenie alebo necitlivosť nôh po sedení je spôsobená stlačenými nervami a zníženým prietokom krvi. Vstaň a zatras každou nohou 10 sekúnd. Potom urob 10 krokov pochodom na mieste. Krvný obeh obnovený, citlivosť vrátená, produktivita pokračuje."
+    },
+    "adp": {
+      "title": "Audit osvetlenia",
+      "text": "Zlé osvetlenie spôsobuje únavu očí, bolesti hlavy a celkovú únavu. Obrazovka by mala mať zhruba rovnaký jas ako okolie — nie žiariaci obdĺžnik v tmavej miestnosti. Uprav lampu alebo osvetlenie miestnosti teraz. Oči ihneď pocítia rozdiel."
+    },
+    "adq": {
+      "title": "Protokol prestávky pre slúchadlá",
+      "text": "Audiológovia odporúčajú pravidlo 60/60: najviac 60 % hlasitosti, najviac 60 minút naraz. Uši nemajú prah bolesti pre postupné poškodenie — strata sluchu prichádza potichu. Odlož slúchadlá na celú túto prestávku."
+    },
+    "adr": {
+      "title": "Mikrotréning",
+      "text": "Nepotrebuješ posilňovňu. Teraz urob 10 drepov, 10 klikov (alebo kliky pri stene) a 10 dvíhaní na špičkách. Celkový čas: pod 3 minúty. Celkový prínos: lepší krvný obeh, zvýšený pulz, dávka endorfínov a spokojný pocit úspechu."
+    },
+    "ads": {
+      "title": "Trik s výtlačkom",
+      "text": "Autori a editori: skúste vytlačiť draft a čítať ho na papieri. Zachytíš chyby, ktoré oči trénované na obrazovku prehliadajú. Fyzický úkon držania papiera a používania pera aktivuje iné kognitívne dráhy ako editácia na obrazovke. Stará škola? Áno. Efektívne? Absolútne."
+    },
+    "adt": {
+      "title": "Dekompresia chrbtice",
+      "text": "Chrbtica sa celý deň stláča pod vplyvom gravitácie. Skús toto: stoj so chodidlami na šírku ramien, prepleť prsty nad hlavou a natiahni sa čo najvyššie. Drž 15 sekúnd. Možno si momentálne skutočne o centimeter alebo dva vyšší."
+    },
+    "adu": {
+      "title": "Daň z pozornosti",
+      "text": "Každá notifikácia, každý odznak, každá neprečítaná správa je malá daň na tvoju pozornosť. Za deň sa to nasčítava na hodiny strateného sústredenia. Počas tejto prestávky vypni všetky notifikácie. Keď sa vrátiš, budeš mať plný rozpočet pozornosti na to, čo je dôležité."
+    },
+    "adv": {
+      "title": "Starostlivosť o zápästia",
+      "text": "Tvoje zápästia zvládajú asi 40 000 úderov klávesov denne. Vystri pravú ruku, dlaňou dolu, a ľavou rukou jemne zatiahni prsty dolu a dozadu. Drž 15 sekúnd. Vymeň. Potom pomaly striedaj päsť a roztiahnuté prsty 10-krát. Šľachy ti poďakujú."
+    },
+    "adw": {
+      "title": "Debugovacia prechádzka",
+      "text": "Štúdie na Stanforde a iných univerzitách potvrdzujú, že chôdza zlepšuje kreatívne riešenie problémov až o 60 %. Ak uviazneš na chybe alebo dizajnovom rozhodnutí, prestaň hľadieť na obrazovku. Choď 5 minút. Riešenie sa skôr objaví, keď ho nehľadáš."
+    },
+    "adx": {
+      "title": "Reset svalovej pamäte",
+      "text": "Telo sa prispôsobuje polohe, v ktorej stráviš najviac času. Po hodinách sedenia sa svaly doslova tvarujú okolo tej polohy. Vstaň a urob opak: prihni chrbát, otvor hrudník, natiahni sa nahor. Pripomeň svalom, aké je to byť vzpriamený."
+    },
+    "ady": {
+      "title": "Tréning očných svalov",
+      "text": "Každé oko má šesť svalov a zíranie na fixnú vzdialenosť obrazovky ich tuží. Skús toto: drž pero na dĺžku ruky, sústreď sa naň, potom presuň pohľad na niečo 6 metrov ďaleko. Striedaj 10-krát. Je to ako strečing, ale pre oči."
+    },
+    "adz": {
+      "title": "Veda o mozgových skúšobniach",
+      "text": "Neuroveda ukazuje, že mozog opakuje a konsoliduje zručnosti počas odpočinku, nie počas cvičenia. Výskumníci NIH zistili, že prestávky vedú k rýchlejšiemu nadobúdaniu zručností. Táto prestávka teda nie je prokrastinácia — je to doslova spôsob, akým tvoj mozog zdokonaľuje to, čo práve precvičoval."
+    },
+    "aea": {
+      "title": "Desiatuj so zmyslom",
+      "text": "Ak budeš mať desiatu, urob ju zmysluplnou. Orechy, horká čokoláda, bobule a zelený čaj obsahujú zlúčeniny, ktoré podporujú sústredenie a znižujú zápal. Vynechaj čokoládku z automatu. Mozog funguje najlepšie na skutočnom jedle, nie na cukrových špičkách."
+    },
+    "aeb": {
+      "title": "Reset kortizolu",
+      "text": "Sedenie v stresovej, schúlenej polohe skutočne zvyšuje hladinu kortizolu. Výskum Amy Cuddy naznačuje, že expanzívne polohy znižujú stresové hormóny. Vstaň, polož ruky na boky a stoj vzpriamene 2 minúty. Poloha Supermana. Plášť nie je potrebný."
+    },
+    "aec": {
+      "title": "Veda o mikrospánku",
+      "text": "6-minútový spánok zlepšuje konsolidáciu pamäte, podľa výskumu Univerzity v Düsseldorfe. Nemusíš zaspať — len zavri oči a oddychuj pár minút. Aj samotný prechod k spánku aktivuje siete spracovania pamäte."
+    },
+    "aed": {
+      "title": "Meditácia pri chôdzi",
+      "text": "Choď pomaly a zámerne 3 minúty. Sústreď sa na pocit každého kroku — päta k špičke, prenos váhy, podlaha pod tebou. Toto je meditácia pri chôdzi a kombinuje výhody pohybu a všímavosti v jednej jednoduchej praxi."
+    },
+    "aee": {
+      "title": "Terapia spúšťacích bodov",
+      "text": "Cítiš ten uzol medzi lopatkou a chrbticou? To je spúšťací bod v romboidnom svale. Pritlač tenisovú loptičku alebo päsť naň a aplikuj pevný tlak 30 sekúnd. Uvoľni pomaly. Urob obe strany. Kancelárska svalová terapia, žiadna objednávka nie je potrebná."
+    },
+    "aef": {
+      "title": "Kontrola vzdialenosti monitora",
+      "text": "Monitor by mal byť asi 50 až 70 centimetrov od tvojich očí — zhruba dĺžka paže. Príliš blízko zvyšuje únavu očí; príliš ďaleko ťa núti nakláňať sa dopredu. Zmerай to teraz. Ak si sa celý deň pomaly priblížil k obrazovke, odsuň ju späť."
+    },
+    "aeg": {
+      "title": "Kreatívna obchádzka",
+      "text": "Neuroveda to nazýva inkubácia — jav, pri ktorom vzdialenie sa od problému umožní predvolenej sieti tvojho mozgu nájsť riešenia, ktoré si nemohol vidieť pri sústredení. Daj si 5-minútovú prestávku a rob niečo úplne nesúvisiace. Čmáraj, prečiahni sa alebo hľaď na oblaky. Mozog stále pracuje."
+    },
+    "aeh": {
+      "title": "Kontrolný bod krvného obehu",
+      "text": "Po 30 minútach sedenia sa rýchlosť prietoku krvi cez tepny nôh výrazne znižuje. Riešenie je jednoduché: vstaň a choď len 5 minút. Štúdie ukazujú, že to stačí na obnovenie normálneho prietoku krvi a ochranu cievneho zdravia."
+    },
+    "aei": {
+      "title": "Úľava pre čeľusť a TMK",
+      "text": "Stres, sústredenosť a práca pri obrazovke často spôsobujú nevedomé stisknutie čeľuste, čo môže viesť k bolesti TMK, bolestiam hlavy a poškodeniu zubov. Otvor ústa dokorán, drž 5 sekúnd, potom jemne pohybuj čeľusťou doľava a doprava. Masíruj svaly tesne pod ušami v malých krúžkoch."
+    },
+    "aej": {
+      "title": "Hydratácia a mozgový výkon",
+      "text": "Dokonca mierna dehydratácia (1 až 2 % telesnej hmotnosti) zhoršuje sústredenie, zvyšuje vnímanú náročnosť úloh a zhoršuje náladu. Mozog je zhruba 75 % vody. Vypij 200 až 250 ml vody teraz. Nie kávu. Nie limonádu. Vodu. Tvoje neuróny sú smädné."
+    },
+    "aek": {
+      "title": "Bankrot záložiek",
+      "text": "Ak máš otvorených viac ako 20 záložiek v prehliadači, nemultitaskuješ — hromadiš kognitívny dlh. Každá otvorená záložka je nevyriešené rozhodnutie. Počas tejto prestávky vyhláš bankrot záložiek. Zavri všetko, čo nebudeš potrebovať v nasledujúcej hodine. Mentálna úľava je okamžitá."
+    },
+    "ael": {
+      "title": "Kontrola lakťového nervu",
+      "text": "Brnú ti malíček a prstenník, alebo strácajú citlivosť? Pravdepodobne sa ti komprimuje lakťový nerv v lakti. Vyhýbaj sa opieraniu lakťov o tvrdé povrchy pri písaní. Úplne vystri ruky, natiahni ich a potras rukami 10 sekúnd."
+    },
+    "aem": {
+      "title": "Kombo strečing pri stene",
+      "text": "Stoj otočený k stene na dĺžku paže. Polož obe ruky na stenu vo výške ramien a nakloň sa dopredu s rovným chrbtom. Drž 15 sekúnd — to je hrudník. Teraz sa otoč bokom, polož jednu ruku na stenu a otáčaj sa od nej. Drž 15 sekúnd každú stranu. Hrudník a ramená otvorené."
+    },
+    "aen": {
+      "title": "Dividenda sústredenia",
+      "text": "Štúdia DeskTime o najproduktívnejších pracovníkoch zistila najefektívnejší vzorec: 52 minút sústredené práce nasledované 17-minútovou prestávkou. Prestávka nie je stratený čas — je to to, čo robí sústredený čas skutočne sústredený. Práve teraz investuješ do svojej ďalšej produktívnej hodiny."
+    },
+    "aeo": {
+      "title": "Vitamín D pri stole",
+      "text": "Ak pracuješ celý deň vnútri, pravdepodobne ti chýba vitamín D — chýba až 42 % dospelých. Vitamín D ovplyvňuje náladu, imunitu a zdravie kostí. Vyjdi von na 5 minút, ak je slnečno. Koža syntetizuje vitamín D už po 10 minútach vystavenia slnku."
+    },
+    "aep": {
+      "title": "Pohyblivosť členkov",
+      "text": "Členky nesú celú hmotnosť tela, ale len zriedka sa naťahujú. Skús toto: stoj na jednej nohe a druhou nohou pomaly kreslí abecedu. Áno, všetkých 26 písmen. Vymeň nohy. Trvá to asi 90 sekúnd na nohu a dramaticky zlepšuje stabilitu členkov."
+    },
+    "aeq": {
+      "title": "Paradox prokrastinácie",
+      "text": "Prokrastinácia nie je lenivosť — je to problém emocionálnej regulácie. Vyhýbaš sa úlohám, ktoré vyvolávajú negatívne pocity: úzkosť, nudu, pochybnosti o sebe. 5-minútová prestávka s fyzickým pohybom môže tieto emócie regulovať natoľko, aby začatie opäť pôsobilo možné. Najprv sa pohni, motivácia príde neskôr."
+    },
+    "aer": {
+      "title": "Záverečný rituál dňa",
+      "text": "Pred zavretím laptopu si daj 3 minúty na zapísanie toho, čo si dosiahol, čo čaká a jednej veci, na ktorú si hrdý. Tento vypínací rituál vytvára kognitívne uzavretie, zabraňuje pracovným myšlienkam v invázii do večera a dáva ti rozjazd na zajtrajšok."
     }
   },
   "ui": {

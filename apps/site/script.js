@@ -328,6 +328,22 @@ const getDownloadConfig = () => {
   }
 }
 
+const getAssetNameFromUrl = (value) => {
+  if (!value) {
+    return ''
+  }
+
+  try {
+    const url = new URL(value, window.location.href)
+    const segments = url.pathname.split('/')
+    return String(segments[segments.length - 1] || '').trim()
+  } catch {
+    const sanitized = String(value).split('#')[0].split('?')[0]
+    const segments = sanitized.split('/')
+    return String(segments[segments.length - 1] || '').trim()
+  }
+}
+
 let latestDownloadUrlPromise = null
 
 const resolveLatestDownloadUrl = async () => {
@@ -353,10 +369,18 @@ const resolveLatestDownloadUrl = async () => {
         const matchedAsset = assets.find((asset) =>
           String(asset && asset.name ? asset.name : '').endsWith(config.assetNameSuffix)
         )
-
-        return String(
+        const matchedAssetName = String(matchedAsset && matchedAsset.name ? matchedAsset.name : '').trim()
+        const matchedAssetUrl = String(
           matchedAsset && matchedAsset.browser_download_url ? matchedAsset.browser_download_url : ''
         ).trim()
+        const pinnedAssetName = getAssetNameFromUrl(config.fallbackUrl)
+
+        // Keep the pinned release authoritative when GitHub "latest" still points to an older asset.
+        if (pinnedAssetName && matchedAssetName && matchedAssetName !== pinnedAssetName) {
+          return config.fallbackUrl
+        }
+
+        return matchedAssetUrl
       })
       .catch((error) => {
         console.warn('[Pauza site] Failed to resolve latest GitHub release asset.', error)

@@ -491,6 +491,279 @@
     },
     "adm": {
       "text": "Espreguiça-te como se ninguém estivesse a ver — porque provavelmente ninguém está."
+    },
+    "adn": {
+      "text": "O teu código não se vai depurar sozinho enquanto estás aí sentado. Aliás, também não se depura se te levantares. Mas pelo menos a tua coluna vai perdoar-te."
+    },
+    "ado": {
+      "text": "Explica o teu bug a um pato de borracha imaginário. Se não resultar, explica à parede. As paredes são ótimas ouvintes."
+    },
+    "adp": {
+      "text": "Os teus pulsos já escreveram milhares de palavras hoje. Estica-os — estende o braço e puxa suavemente os dedos para trás."
+    },
+    "adq": {
+      "text": "Tens carregado uma base de código inteira na cabeça. Larga-a por 20 segundos."
+    },
+    "adr": {
+      "text": "À espera que o build acabe? Perfeito. Levanta-te e alonga. É tempo faturável."
+    },
+    "ads": {
+      "text": "Tens 47 mensagens não lidas no Slack. Podem esperar mais 20 segundos. Pisca os olhos."
+    },
+    "adt": {
+      "text": "'Estou ocupado demais para fazer uma pausa' é exatamente assim que acabas por fazer uma muito mais longa, sem quereres."
+    },
+    "adu": {
+      "text": "O cérebro pós-code-review é real. Fecha os olhos e deixa os teus neurónios parar de discutir."
+    },
+    "adv": {
+      "text": "Bloqueio criativo? Levanta-te. Dá 10 passos. Senta-te de novo. O parágrafo vai temer o teu regresso."
+    },
+    "adw": {
+      "text": "A fadiga de decisão é real. Para de escolher. Respira apenas durante 20 segundos."
+    },
+    "adx": {
+      "text": "É a quebra das 15h. O teu açúcar baixou. Levanta-te, alonga e vai buscar qualquer coisa para comer."
+    },
+    "ady": {
+      "text": "As tuas pernas existem debaixo da secretária. Lembra-as levantando-te."
+    },
+    "adz": {
+      "text": "Os teus flexores da anca estão em posição fetal há horas. Levanta-te e faz um avanço."
+    },
+    "aea": {
+      "text": "A tua região dorsal está bloqueada. Entrecruza as mãos atrás da cabeça e arqueia suavemente para trás."
+    },
+    "aeb": {
+      "text": "Alongamento do antebraço: estende o braço com a palma para cima e puxa suavemente os dedos para baixo. Prevenção de LER em 10 segundos."
+    },
+    "aec": {
+      "text": "Na próxima chamada, experimenta andar enquanto falas. O teu cérebro funciona melhor em movimento."
+    },
+    "aed": {
+      "text": "As escadas existem. Sobe algumas. O teu sistema cardiovascular vai enviar-te um postal de agradecimento."
+    },
+    "aee": {
+      "text": "O brilho do teu ecrã: está ajustado à sala, ou a tua cara está a servir de lanterna? Regula-o."
+    },
+    "aef": {
+      "text": "A luz azul não vai arruinar a tua vida, mas o teu ecrã está provavelmente demasiado brilhante. Baixa um bocadinho."
+    },
+    "aeg": {
+      "text": "Os teus auscultadores estão postos há horas. Dá uma pausa aos teus ouvidos. Não foram feitos para maratonas."
+    },
+    "aeh": {
+      "text": "A qualidade do teu sono desta noite começa agora. Desvia o olhar do ecrã e deixa os teus olhos descansar."
+    },
+    "aei": {
+      "text": "A ir buscar batatas fritas? Experimenta antes um punhado de frutos secos. O teu cérebro funciona com combustível melhor do que pensas."
+    },
+    "aej": {
+      "text": "O trabalho focado é ótimo. O isolamento total não é. Quando foi a última vez que falaste com um ser humano?"
+    },
+    "aek": {
+      "text": "Se tens uma secretária de pé, agora é boa altura para mudar de posição. Se não tens, levanta-te na mesma."
+    },
+    "ael": {
+      "text": "Torção sentado: coloca a mão direita no joelho esquerdo, torce, aguenta 10 segundos. Troca. Yoga na cadeira, sem tapete necessário."
+    },
+    "aem": {
+      "text": "A tua sala está quente demais? Temperaturas mais frescas melhoram a concentração. Entreabre uma janela ou ajusta o termostato."
+    },
+    "aen": {
+      "text": "Tira os auscultadores. Ouve os sons à tua volta durante 20 segundos."
+    },
+    "aeo": {
+      "text": "Tens carregado um modelo mental do sistema inteiro na cabeça. É esgotante. Larga-o por um momento."
+    },
+    "aep": {
+      "text": "git commit -m \"fiz uma pausa\". A melhor mensagem de commit que vais escrever hoje."
+    },
+    "aeq": {
+      "text": "O Stack Overflow não te pode ajudar a alongar. Levanta-te. Isto é uma das poucas coisas que tens de fazer tu mesmo."
+    },
+    "aer": {
+      "text": "O prazo não vai mudar se alongares durante 20 segundos. Mas as tuas vértebras vão. Para melhor."
+    },
+    "aes": {
+      "text": "A olhar para o mesmo parágrafo há 10 minutos? Imprime-o e risca-o com uma caneta. Muda o suporte, muda a perspetiva."
+    },
+    "aet": {
+      "text": "Acabaste de fazer deploy? Submeteste um rascunho? Levanta-te e faz um alongamento de vitória. Mereceste."
+    },
+    "aeu": {
+      "text": "Nervos antes do prazo? Move o corpo. A ansiedade vive na imobilidade."
+    },
+    "aev": {
+      "text": "Verifica o brilho do ecrã. Se consegues ver o teu reflexo, está demasiado brilhante para a sala."
+    },
+    "aew": {
+      "text": "Come o teu snack longe do teclado. As migalhas de pastel de nata não têm lugar entre as teclas."
+    },
+    "aex": {
+      "text": "Uma caminhada de 5 minutos gera mais ideias do que 30 minutos a olhar para uma página em branco. A ciência confirma."
+    },
+    "aey": {
+      "text": "Tens 38 abas abertas. Fecha as que nunca vais ler. Não é acumulação compulsiva, é... está bem, é mesmo acumulação compulsiva."
+    },
+    "aez": {
+      "text": "Quando já leste a mesma frase cinco vezes e ainda não faz sentido, é o teu cérebro a dizer: vai dar uma volta."
+    },
+    "afa": {
+      "text": "Não existe Ctrl+Z para a tua coluna. Levanta-te e cuida dela agora."
+    },
+    "afb": {
+      "text": "O teu segundo monitor não te consegue ver a alongar. Vai em frente, não te julga."
+    },
+    "afc": {
+      "text": "A bica não substitui o descanso. Mas tu já sabias isso. Bebe água ao lado dela."
+    },
+    "afd": {
+      "text": "O bug ainda lá vai estar quando voltares. Mas vais vê-lo com olhos novos."
+    },
+    "afe": {
+      "text": "Acabaste de passar 10 minutos a escolher o nome de uma variável. O teu cérebro merece uma pausa."
+    },
+    "aff": {
+      "text": "As reuniões acabaram. Descomprime. Roda o pescoço devagar para a esquerda e depois para a direita."
+    },
+    "afg": {
+      "text": "A tua caixa de entrada vai sobreviver sem ti durante 60 segundos. Olha pela janela."
+    },
+    "afh": {
+      "text": "Se a tua mão do rato tem cãibras, muda para a outra mão por um minuto. Parece estranho. Esse é o objetivo."
+    },
+    "afi": {
+      "text": "Dedos a formiguear? São os teus nervos a pedir um alongamento. Círculos com o pulso, 10 em cada direção."
+    },
+    "afj": {
+      "text": "Estás de pé há demasiado tempo? Senta-te um bocado. O objetivo é alternar, não martirizar-te."
+    },
+    "afk": {
+      "text": "Está na hora de ir AFK. Literalmente. Afasta-te do Teclado."
+    },
+    "afl": {
+      "text": "Se tens uma planta na secretária, vê como ela está. Se está a morrer, é uma metáfora. Rega-a a ela e a ti mesmo."
+    },
+    "afm": {
+      "text": "Abre uma janela. O ar fresco faz pelo teu cérebro o que um reinício a frio faz ao teu computador."
+    },
+    "afn": {
+      "text": "Encosta o queixo ao peito e aguenta 10 segundos. A parte de trás do teu pescoço esteve contraída o dia todo."
+    },
+    "afo": {
+      "text": "Contrai os glúteos enquanto estás sentado. Aguenta 5 segundos. Relaxa. Ninguém sabe. Fitness secreto."
+    },
+    "afp": {
+      "text": "Alongamento dos isquiotibiais sentado: estende uma perna, alcança os dedos do pé, aguenta 10 segundos. Troca de perna."
+    },
+    "afq": {
+      "text": "Os teus olhos produzem menos lágrimas quando estás focado no ecrã. Pisca devagar e conscientemente 10 vezes."
+    },
+    "afr": {
+      "text": "A respiração profunda baixa a tensão arterial em tempo real. Inspira 4 tempos, expira 6. Repete três vezes."
+    },
+    "afs": {
+      "text": "Levanta-te e deixa a gravidade descomprimir a tua coluna. Deixa os braços soltos e respira durante 15 segundos."
+    },
+    "aft": {
+      "text": "Sabes 200 atalhos de teclado. Está na hora de aprender um atalho do corpo: levanta, alonga, senta. Repete."
+    },
+    "afu": {
+      "text": "Muda o teu IDE para o modo claro durante 5 minutos. Ou para o modo escuro. Muda qualquer coisa. Reinicia o córtex visual."
+    },
+    "afv": {
+      "text": "Tens estado a olhar para um cursor a piscar. Agora fecha os olhos e não vejas nada durante 20 segundos. Puro luxo."
+    },
+    "afw": {
+      "text": "Olha pela janela e encontra a coisa mais distante que consegues ver. Foca-te nela. Os teus músculos oculares precisavam disso."
+    },
+    "afx": {
+      "text": "Vai à cozinha. Sem razão nenhuma. Só anda. O movimento é a medicina."
+    },
+    "afy": {
+      "text": "Encontra uma escada e alonga as panturrilhas na beira de um degrau. Aguenta 15 segundos em cada lado."
+    },
+    "afz": {
+      "text": "Os teus ouvidos estiveram debaixo dos auscultadores durante horas. Tira-os e aprecia o silêncio."
+    },
+    "aga": {
+      "text": "Cabeça enevoada? É o teu córtex pré-frontal a ficar sem bateria. Levanta-te, move-te e deixa-o reiniciar."
+    },
+    "agb": {
+      "text": "O multitasking é um mito. O teu cérebro está apenas a fazer context-switching com overhead. Faz uma pausa single-threaded."
+    },
+    "agc": {
+      "text": "Cada mudança de contexto custa-te 23 minutos para te refocar. Esta pausa custa-te 20 segundos. Faz as contas."
+    },
+    "agd": {
+      "text": "O perfeccionismo é procrastinação de bata. Afasta-te. Feito é melhor do que perfeito."
+    },
+    "age": {
+      "text": "Sentes síndrome do impostor? Toda a gente sente às vezes. Levanta-te e alonga — impostores não cuidam de si próprios."
+    },
+    "agf": {
+      "text": "Atualizar o email de 30 em 30 segundos não é produtividade. Levanta-te. Isso sim é produtividade."
+    },
+    "agg": {
+      "text": "Bloqueio criativo? Muda a tua posição física. Nova postura, nova perspetiva."
+    },
+    "agh": {
+      "text": "A tua zona lombar tem uma reclamação. Desloca-te para a borda da cadeira e senta-te bem direito durante 30 segundos."
+    },
+    "agi": {
+      "text": "A dor nos ombros é o comentário de code review do teu corpo: 'Precisa de alterações.' Roda-os para trás 10 vezes."
+    },
+    "agj": {
+      "text": "Dor nos pulsos depois de programar? Faz punhos suaves e roda devagar. 10 círculos em cada direção."
+    },
+    "agk": {
+      "text": "Cruza um tornozelo sobre o joelho oposto e inclina-te para a frente. Abertura da anca. Aguenta 15 segundos. Troca."
+    },
+    "agl": {
+      "text": "Olha para um colega nos olhos e diz-lhe algo agradável. A ligação humana supera qualquer notificação."
+    },
+    "agm": {
+      "text": "Ouve um som da natureza durante 30 segundos — chuva, pássaros, oceano. O teu sistema nervoso vai desacelerar."
+    },
+    "agn": {
+      "text": "Foco intenso é um sprint, não uma maratona. Acabaste de correr. Agora recupera."
+    },
+    "ago": {
+      "text": "Verificação de postura: estás a inclinar-te para o ecrã como se ele te devesse dinheiro? Senta-te direito."
+    },
+    "agp": {
+      "text": "Come qualquer coisa. Mas saboreia desta vez. Mastiga devagar. A tua pausa para almoço não é um speedrun."
+    },
+    "agq": {
+      "text": "Quando foi a última vez que bebeste água? Não bica. Água. Vai buscar."
+    },
+    "agr": {
+      "text": "Se há luz do dia disponível, expõe-te a ela. O teu ritmo circadiano está a implorar."
+    },
+    "ags": {
+      "text": "A tua sala está fria ou quente demais? Ajusta. O conforto térmico afeta diretamente a concentração."
+    },
+    "agt": {
+      "text": "Respiração em caixa: inspira 4, segura 4, expira 4, segura 4. O loop favorito do teu sistema nervoso."
+    },
+    "agu": {
+      "text": "Levanta as sobrancelhas o máximo que consegues. Aguenta 5 segundos. Relaxa. A tua testa estava mais tensa do que pensavas."
+    },
+    "agv": {
+      "text": "Abre os dedos o mais largo que consegues. Aguenta 5 segundos. Agora faz um punho firme. Repete três vezes."
+    },
+    "agw": {
+      "text": "Ativa o teu core enquanto estás sentado. Puxa o umbigo em direção à coluna e aguenta 10 segundos."
+    },
+    "agx": {
+      "text": "Fica na ponta dos pés durante 10 segundos. Agora recua para os calcanhares. Repete. Treino de equilíbrio micro."
+    },
+    "agy": {
+      "text": "Repara na tua respiração. Não a mudes. Só repara. Isso é mindfulness, e acabaste de o praticar."
+    },
+    "agz": {
+      "text": "Este lembrete de pausa foi escrito por um humano que também ignora lembretes de pausa. Não sejas como nós. Alonga."
     }
   },
   "longBreakIdeas": {
@@ -737,6 +1010,250 @@
     "aci": {
       "title": "Observar as nuvens",
       "text": "Olha pela janela e observa as nuvens. Isto obriga os olhos ao foco distante e o cérebro a uma atenção aberta e não dirigida — exatamente o que precisa após trabalho concentrado."
+    },
+    "acj": {
+      "title": "A sabedoria do pato de borracha",
+      "text": "Os programadores usam patos de borracha para explicar o código e encontrar bugs — mas a verdadeira magia é afastar-te completamente do problema. O teu subconsciente continua a processar enquanto te espreguiças. Volta e a solução simplesmente... aparece."
+    },
+    "ack": {
+      "title": "RSI não é medalha de honra",
+      "text": "As lesões por esforço repetitivo afetam até 64% dos trabalhadores de computador. Os primeiros sinais — formigueiro, rigidez, dor nos pulsos — são fáceis de ignorar e caros de tratar depois. Estira os antebraços: estende o braço com a palma virada para baixo e puxa suavemente os dedos na tua direção. Mantém 15 segundos de cada lado."
+    },
+    "acl": {
+      "title": "O alongamento do tempo de compilação",
+      "text": "À espera de um build, deploy ou suite de testes? Isso não é tempo morto — é tempo de alongamento gratuito. Levanta-te, toca nos dedos dos pés (ou tenta) e endireita-te devagar. O teu código e a tua coluna estarão prontos quando terminar."
+    },
+    "acm": {
+      "title": "A atenção fragmentada",
+      "text": "O trabalhador médio do conhecimento verifica o email ou mensagens a cada 6 minutos. Cada verificação implica uma mudança de contexto que demora 23 minutos a recuperar. Durante esta pausa, vira o telemóvel ao contrário e fecha as aplicações de chat. Recupera a tua capacidade de atenção uma pausa de cada vez."
+    },
+    "acn": {
+      "title": "O paradoxo do estar sempre ocupado",
+      "text": "Investigação de Stanford mostra que trabalhar sem pausas não te torna mais rápido — torna-te mais lento, menos preciso e mais propenso a cometer erros que demorarás ainda mais a corrigir. Fazer pausas não é preguiça. É eficiência de engenharia."
+    },
+    "aco": {
+      "title": "Recuperação pós-code review",
+      "text": "Acabaste de sobreviver a um code review? Ou fizeste um? De qualquer forma, o teu cérebro esteve em modo hipercrítico. Levanta-te, sacode as mãos, roda os ombros e deixa o teu cérebro passar do 'modo juiz' para o 'modo descanso'."
+    },
+    "acp": {
+      "title": "Página em branco, corpo inteiro",
+      "text": "O bloqueio do escritor não é um problema de criatividade — muitas vezes é um problema do corpo. Quando estás fisicamente tenso, a tua mente também se contrai. Dá uma volta de 5 minutos e estica os braços para cima. As palavras voltam, e ficam melhores."
+    },
+    "acq": {
+      "title": "A sonolência das 15 horas",
+      "text": "Essa quebrada de energia a meio da tarde é causada pelo teu ritmo circadiano, não só pelo que almoçaste. Em vez de te lançares para mais uma bica, tenta uma caminhada de 5 minutos ou alguns alongamentos ligeiros. O movimento aumenta o cortisol naturalmente e repõe o teu estado de alerta sem a quebrada pós-cafeína mais tarde."
+    },
+    "acr": {
+      "title": "A síndrome das pernas adormecidas",
+      "text": "Estar sentado comprime os vasos sanguíneos das pernas e reduz a circulação. Após 90 minutos sentado, o fluxo sanguíneo para as pernas pode cair 50%. Levanta-te, dá uma volta ou faz 10 elevações de calcanhar. As tuas pernas — e o teu sistema cardiovascular — agradecem."
+    },
+    "acs": {
+      "title": "SOS flexores da anca",
+      "text": "Os teus flexores da anca encurtam e ficam tensos após longos períodos sentado, puxando a pélvis para a frente e causando dor lombar. Tenta isto: levanta-te, recua um pé numa posição de avanço e empurra as ancas para a frente. Mantém 30 segundos de cada lado. É o alongamento mais negligenciado de quem trabalha à secretária."
+    },
+    "act": {
+      "title": "A rotação torácica",
+      "text": "A tua coluna torácica (zona média das costas) fica bloqueada de tanto te inclinares sobre o teclado. Senta-te na borda da cadeira, cruza os braços sobre o peito e roda lentamente para a esquerda e para a direita. Mantém cada lado 10 segundos. Deves sentir as coisas a voltar ao lugar."
+    },
+    "acu": {
+      "title": "Salvar os antebraços",
+      "text": "Os teus antebraços têm 20 músculos que controlam os dedos e os pulsos. Após horas a escrever e a usar o rato, estão esgotados. Estende um braço com a palma virada para fora e puxa suavemente os dedos para trás com a outra mão. Mantém 15 segundos, troca e repete duas vezes."
+    },
+    "acv": {
+      "title": "Andar e falar",
+      "text": "Tens uma chamada a seguir? Faz-a a andar. Investigação de Stanford descobriu que caminhar aumenta a produção criativa em 60%. Não precisas de uma passadeira motorizada — basta passeares pelo quarto ou sair lá para fora. As tuas ideias serão mais afiadas e o teu corpo agradecer-te-á."
+    },
+    "acw": {
+      "title": "O poder das escadas",
+      "text": "Subir escadas durante apenas 3 minutos aumenta a energia de forma mais eficaz do que 30 miligramas de cafeína, segundo um estudo norte-americano. Se tens acesso a umas escadas, faz algumas subidas durante esta pausa. É rápido, gratuito e resulta sempre."
+    },
+    "acx": {
+      "title": "Ecrã e sono",
+      "text": "A exposição a ecrãs brilhantes ao fim do dia suprime a produção de melatonina até 50%. Se já passaram das 17h, considera escurecer o ecrã ou ativar o modo noturno. O teu sono esta noite está a ser decidido pelo que os teus olhos veem agora mesmo."
+    },
+    "acy": {
+      "title": "A realidade da luz azul",
+      "text": "A luz azul dos ecrãs provavelmente não vai danificar as tuas retinas, mas contribui para a fadiga ocular digital e pode perturbar o teu ciclo de sono. A solução não são óculos caros — é olhar regularmente para outro lado, ajustar o brilho e fazer pausas como esta."
+    },
+    "acz": {
+      "title": "Fadiga auricular",
+      "text": "Usar auscultadores durante mais de 60 minutos seguidos pode causar fadiga auricular, acumulação de pressão e até danos auditivos a volumes elevados. Tira-os durante esta pausa e deixa os teus ouvidos respirar. Se precisas mesmo de som, tenta usar altifalantes a um volume moderado por um bocado."
+    },
+    "ada": {
+      "title": "A bateria das decisões",
+      "text": "Tomas cerca de 35.000 decisões por dia, e cada uma esgota um recurso finito. A partir da tarde, a qualidade das tuas decisões diminui significativamente — é a 'fadiga de decisão'. Durante esta pausa, para de escolher: não faças scroll, não escolhas, não planeies. Fica apenas quieto."
+    },
+    "adb": {
+      "title": "Auditoria ao snacking de stress",
+      "text": "Comer por stress não é por fome — é o cortisol a dizer ao cérebro que precisa de conforto. Da próxima vez que fores a um snack, para e pergunta-te: estou com fome ou estou stressado? Se estiveres stressado, tenta primeiro 5 respirações profundas. Se ainda estiveres com fome depois disso, come — mas escolhe algo que te nutra."
+    },
+    "adc": {
+      "title": "A armadilha do isolamento",
+      "text": "O foco profundo é essencial para o trabalho criativo e técnico, mas o isolamento prolongado aumenta o cortisol e diminui a oxitocina. Usa esta pausa para cumprimentar alguém — um colega, um vizinho, um familiar. Mesmo uma breve interação social repõe o teu nível base de stress."
+    },
+    "add": {
+      "title": "O shuffle da secretária de pé",
+      "text": "As secretárias de pé não são solução mágica — ficar parado de pé durante horas é quase tão mau como estar sentado. A chave é alternar: se tens estado de pé, senta-te um bocado; se estás sentado, levanta-te. Muda o peso, mexe os dedos dos pés ou marcha no lugar. O objetivo é o movimento, não a posição."
+    },
+    "ade": {
+      "title": "Yoga na cadeira: pombo sentado",
+      "text": "Cruza o tornozelo direito sobre o joelho esquerdo. Senta-te direito e inclina-te suavemente para a frente até sentires o alongamento na anca e glúteo direitos. Mantém 30 segundos e troca de lado. É um dos melhores alongamentos de abertura de ancas que podes fazer sem sair da cadeira."
+    },
+    "adf": {
+      "title": "Temperatura e concentração",
+      "text": "Investigação de Cornell descobriu que aumentar a temperatura do escritório de 20°C para 25°C reduziu os erros de digitação em 44% e aumentou a produção em 150%. Se estás com frio, aquece; se estás quente de mais, arrefece. O teu termostato é uma ferramenta de produtividade."
+    },
+    "adg": {
+      "title": "Higiene sonora",
+      "text": "O ruído de fundo constante — escritórios de plano aberto, notificações, música com letra — aumenta a carga cognitiva até 66%. Durante esta pausa, remove todo o áudio e fica em silêncio durante 2 minutos. Pode parecer estranho ao início. Esse desconforto é sinal de que precisavas mesmo disso."
+    },
+    "adh": {
+      "title": "O peso da codebase",
+      "text": "Manter um sistema complexo na memória de trabalho é uma das tarefas cognitivamente mais dispendiosas que os humanos fazem. É por isso que te sentes exausto após um dia de 'apenas estar sentado'. Aproveita esta pausa para descarregar deliberadamente o teu estado mental: escreve onde estás e depois larga tudo."
+    },
+    "adi": {
+      "title": "Git commit e alongamento",
+      "text": "Antes de fazeres push desse commit, faz push de ti mesmo fora da cadeira. Torna-o um ritual: cada commit equivale a um alongamento. Num dia produtivo, são 10 a 20 micropausas integradas no teu workflow. O teu histórico de versões e a tua saúde melhoram ao mesmo tempo."
+    },
+    "adj": {
+      "title": "Palavras que perdem sentido",
+      "text": "Existe um fenómeno psicológico chamado 'saciação semântica' — quando ficas a olhar para uma palavra tanto tempo que ela deixa de parecer real. Se levaste 20 minutos a editar o mesmo parágrafo, é esse o sinal. Afasta-te. Quando voltares, o texto vai parecer fresco e os erros serão óbvios."
+    },
+    "adk": {
+      "title": "O rascunho da caminhada",
+      "text": "Muitos escritores famosos — Dickens, Beethoven, Darwin — faziam longas caminhadas diárias como parte do seu processo criativo. Não precisas de 2 horas: mesmo 5 minutos a caminhar mudam o teu cérebro do modo focado para o modo difuso, onde acontecem as conexões criativas."
+    },
+    "adl": {
+      "title": "A ansiedade dos prazos",
+      "text": "O stress pré-prazo ativa a tua resposta de luta ou fuga, o que estreita o teu pensamento e aumenta os erros. Paradoxalmente, a melhor coisa que podes fazer antes de um prazo é fazer uma pausa. O movimento metaboliza as hormonas do stress e restaura o pensamento abrangente de que precisas para acabar bem."
+    },
+    "adm": {
+      "title": "O ritual da entrega",
+      "text": "Acabaste de submeter? Enviaste o email? Fizeste merge do PR? Não passes imediatamente para a próxima tarefa. Dá ao teu cérebro um momento para registar a conclusão — levanta-te, espreguiça-te, talvez até celebra. Reconhecer marcos, mesmo os pequenos, previne o burnout."
+    },
+    "adn": {
+      "title": "A montanha-russa glicémica",
+      "text": "Aquela quebrada de energia a meio da tarde? É em parte uma descida do açúcar no sangue provocada por almoços ricos em hidratos de carbono. Para energia sustentada, combina hidratos com proteína e fibra. Mas agora, mexe-te simplesmente — uma caminhada de 5 minutos estabiliza os níveis de glicose e dissipa o nevoeiro mental."
+    },
+    "ado": {
+      "title": "Protocolo para pernas dormentes",
+      "text": "O formigueiro ou dormência nas pernas após estar sentado é causado por nervos comprimidos e fluxo sanguíneo reduzido. Levanta-te e sacode cada perna durante 10 segundos. Depois faz 10 passos de marcha no lugar. Fluxo sanguíneo restaurado, sensação devolvida, produtividade retomada."
+    },
+    "adp": {
+      "title": "Auditoria à iluminação",
+      "text": "A iluminação fraca causa tensão ocular, dores de cabeça e fadiga. O teu ecrã deve ter aproximadamente o mesmo brilho que a tua envolvente — não um retângulo luminoso numa sala às escuras. Ajusta o candeeiro da secretária ou as luzes da sala agora. Os teus olhos sentirão a diferença imediatamente."
+    },
+    "adq": {
+      "title": "Protocolo de pausa dos auscultadores",
+      "text": "Os audiólogos recomendam a regra dos 60/60: não mais de 60% de volume durante no máximo 60 minutos seguidos. Os teus ouvidos não têm um limiar de dor para os danos graduais — a perda de audição espreita-te devagar. Tira os auscultadores durante toda esta pausa."
+    },
+    "adr": {
+      "title": "O micro-treino",
+      "text": "Não precisas de ginásio. Agora mesmo, faz 10 agachamentos, 10 flexões (ou flexões na parede) e 10 elevações de calcanhar. Tempo total: menos de 3 minutos. Benefício total: melhor fluxo sanguíneo, frequência cardíaca elevada, endorfinas libertadas e uma satisfação muito bem justificada."
+    },
+    "ads": {
+      "title": "O truque da impressão",
+      "text": "Escritores e editores: tenta imprimir o rascunho e lê-lo em papel. Vais apanhar erros que os teus olhos treinados para ecrã deixam escapar. O ato físico de segurar papel e usar uma caneta ativa vias cognitivas diferentes da edição digital. Antiquado? Sim. Eficaz? Absolutamente."
+    },
+    "adt": {
+      "title": "Descompressão da coluna",
+      "text": "A tua coluna comprime-se com a gravidade ao longo do dia. Tenta isto: fica de pé com os pés à largura dos ombros, entrelança os dedos acima da cabeça e estica-te o mais alto que conseguires. Mantém 15 segundos. Neste momento podes ser mesmo um centímetro ou dois mais alto."
+    },
+    "adu": {
+      "title": "O imposto da atenção",
+      "text": "Cada notificação, cada badge, cada mensagem não lida é um pequeno imposto sobre a tua atenção. Ao longo do dia, isso soma-se a horas de foco perdido. Durante esta pausa, desliga todas as notificações. Quando voltares, terás um orçamento de atenção completo para gastar no que realmente importa."
+    },
+    "adv": {
+      "title": "Estação de cuidados aos pulsos",
+      "text": "Os teus pulsos gerem cerca de 40.000 teclas por dia. Estende o braço direito com a palma virada para baixo e usa a mão esquerda para puxar suavemente os dedos para baixo e para trás — mantém 15 segundos e troca. Depois faz movimentos lentos de punho fechado para mão aberta 10 vezes. Os teus tendões agradecem."
+    },
+    "adw": {
+      "title": "A caminhada do debug",
+      "text": "Estudos de Stanford e de outras universidades confirmam que caminhar melhora a resolução criativa de problemas até 60%. Se estás preso num bug ou numa decisão de design, para de olhar para o ecrã. Caminha 5 minutos. A solução tem mais probabilidade de aparecer quando não a estás a procurar."
+    },
+    "adx": {
+      "title": "Reset à memória muscular",
+      "text": "O teu corpo adapta-se à posição que mantém durante mais tempo. Após horas sentado, os teus músculos literalmente moldam-se a essa postura. Levanta-te e faz o oposto: arqueia as costas, abre o peito, estende os braços para cima. Lembra aos teus músculos como é estar direito."
+    },
+    "ady": {
+      "title": "Exercício para os olhos",
+      "text": "Os teus olhos têm seis músculos cada um, e fixar o ecrã à mesma distância torna-os rígidos. Tenta isto: segura uma caneta ao comprimento do braço, foca nela e depois muda o foco para algo a 6 metros de distância. Alterna 10 vezes. É como alongar, mas para os teus olhos."
+    },
+    "adz": {
+      "title": "A ciência do ensaio cerebral",
+      "text": "A neurociência mostra que o teu cérebro reproduz e consolida competências durante o descanso, não durante a prática. Investigadores do NIH descobriram que fazer pausas leva a uma aquisição de competências mais rápida. Por isso esta pausa não é procrastinação — é literalmente como o teu cérebro melhora no que acabaste de praticar."
+    },
+    "aea": {
+      "title": "Petiscar com intenção",
+      "text": "Se vais petiscar, faz valer a pena. Frutos secos, chocolate negro, frutos vermelhos e chá verde contêm compostos que apoiam a concentração e reduzem a inflamação. Salta o chocolate da máquina de venda automática. O teu cérebro funciona melhor com comida a sério, não com picos de açúcar."
+    },
+    "aeb": {
+      "title": "O reset do cortisol",
+      "text": "Estar sentado numa postura encurvada e stressada aumenta os níveis de cortisol. A investigação de Amy Cuddy (debatida mas intrigante) sugere que posturas expansivas baixam as hormonas do stress. Levanta-te, põe as mãos nas ancas e fica direito durante 2 minutos. Pose de super-herói. Capa opcional."
+    },
+    "aec": {
+      "title": "A ciência da microssesta",
+      "text": "Uma sesta de 6 minutos melhora a consolidação da memória, segundo investigação da Universidade de Düsseldorf. Não precisas de adormecer — basta fechares os olhos e descansares alguns minutos. Mesmo a transição para o sono ativa as redes de processamento de memória."
+    },
+    "aed": {
+      "title": "Meditação a caminhar",
+      "text": "Caminha lenta e deliberadamente durante 3 minutos. Concentra-te na sensação de cada passo — calcanhar até à ponta do pé, a mudança de peso, o chão debaixo de ti. Isto é meditação a caminhar, e combina os benefícios do movimento e da atenção plena numa prática simples."
+    },
+    "aee": {
+      "title": "Terapia de pontos de tensão",
+      "text": "Sentes aquele nó entre a omoplata e a espinha? É um ponto de gatilho no teu músculo rombóide. Pressiona uma bola de ténis (ou o teu punho) contra ele e aplica pressão firme durante 30 segundos. Solta devagar e faz os dois lados. Terapia muscular de escritório, sem marcação necessária."
+    },
+    "aef": {
+      "title": "Verifica a distância ao ecrã",
+      "text": "O teu monitor deve estar a cerca de 50 a 70 centímetros dos teus olhos — aproximadamente ao comprimento do braço. Muito perto aumenta a tensão ocular; muito longe faz-te inclinar para a frente. Mede agora. Se te foste aproximando do ecrã ao longo do dia, empurra-o para trás."
+    },
+    "aeg": {
+      "title": "O desvio criativo",
+      "text": "A neurociência chama-lhe 'incubação' — o fenómeno em que afastar-te de um problema deixa a rede de modo padrão do teu cérebro encontrar soluções que não conseguias ver enquanto estavas focado. Faz uma pausa de 5 minutos a fazer algo completamente diferente: garatuja, alonga-te ou olha para as nuvens. O teu cérebro continua a trabalhar."
+    },
+    "aeh": {
+      "title": "Ponto de controlo da circulação",
+      "text": "Após 30 minutos sentado, a velocidade do fluxo sanguíneo pelas artérias das tuas pernas diminui significativamente. A solução é simples: levanta-te e caminha apenas 5 minutos. Estudos mostram que isso é suficiente para restaurar o fluxo sanguíneo normal e proteger a tua saúde vascular."
+    },
+    "aei": {
+      "title": "Alívio da mandíbula e da ATM",
+      "text": "O stress, a concentração e o trabalho em ecrã causam frequentemente contração involuntária da mandíbula, o que pode levar a dor na ATM, dores de cabeça e danos nos dentes. Abre bem a boca, mantém 5 segundos e depois move suavemente a mandíbula para a esquerda e para a direita. Massaja os músculos logo abaixo dos ouvidos em círculos pequenos."
+    },
+    "aej": {
+      "title": "Hidratação e poder cerebral",
+      "text": "Mesmo uma desidratação ligeira (1-2% do peso corporal) prejudica a concentração, aumenta a dificuldade percebida das tarefas e piora o humor. O teu cérebro é aproximadamente 75% água — não 75% bica. Bebe 200-250 ml de água agora. Os teus neurónios estão ressequidos."
+    },
+    "aek": {
+      "title": "Falência de separadores",
+      "text": "Se tens mais de 20 separadores abertos no browser, não estás a fazer multitasking — estás a acumular dívida cognitiva. Cada separador aberto é uma decisão por resolver. Durante esta pausa, declara falência de separadores: fecha tudo o que não vais precisar na próxima hora. O alívio mental é imediato."
+    },
+    "ael": {
+      "title": "Verifica o nervo cubital",
+      "text": "O teu mindinho e o dedo anelar formigam ou ficam dormentes? É provável que seja o teu nervo cubital a ser comprimido no cotovelo. Evita apoiar os cotovelos em superfícies duras enquanto escreves. Estende os braços completamente, estica-os para fora e sacode as mãos durante 10 segundos."
+    },
+    "aem": {
+      "title": "Combo de alongamentos na parede",
+      "text": "Fica de frente para uma parede ao comprimento do braço. Coloca ambas as mãos na parede à altura dos ombros e inclina-te para a frente com as costas direitas — mantém 15 segundos para o peito. Agora vira de lado, coloca uma mão na parede e roda para longe dela, mantendo 15 segundos de cada lado. Peito e ombros: abertos."
+    },
+    "aen": {
+      "title": "O dividendo do foco",
+      "text": "Um estudo do DeskTime sobre os trabalhadores mais produtivos encontrou o padrão mais eficaz: 52 minutos de trabalho focado seguidos de uma pausa de 17 minutos. A pausa não é tempo desperdiçado — é o que torna o tempo focado realmente focado. Estás a investir na tua próxima hora produtiva agora mesmo."
+    },
+    "aeo": {
+      "title": "Verificação de vitamina D",
+      "text": "Se trabalhas em espaços fechados durante todo o dia, provavelmente tens deficiência em vitamina D — até 42% dos adultos têm. A vitamina D afeta o humor, a imunidade e a saúde óssea. Sai lá para fora 5 minutos se houver sol. A tua pele sintetiza vitamina D com apenas 10 minutos de exposição solar."
+    },
+    "aep": {
+      "title": "Mobilidade dos tornozelos",
+      "text": "Os teus tornozelos suportam todo o peso do teu corpo mas raramente são alongados. Tenta isto: fica em pé numa perna e traça lentamente o alfabeto com o outro pé. Sim, todas as 26 letras. Troca de pé. Demora cerca de 90 segundos por pé e melhora dramaticamente a estabilidade dos tornozelos."
+    },
+    "aeq": {
+      "title": "O paradoxo da procrastinação",
+      "text": "A procrastinação não é preguiça — é um problema de regulação emocional. Evitas tarefas que desencadeiam sentimentos negativos como ansiedade, tédio ou dúvida sobre ti mesmo. Uma pausa de 5 minutos com movimento físico pode regular essas emoções o suficiente para recomeçar a parecer possível. Move-te primeiro, motiva-te depois."
+    },
+    "aer": {
+      "title": "O ritual do fim do dia",
+      "text": "Antes de fechares o portátil, tira 3 minutos para escrever o que conseguiste fazer, o que está pendente e uma coisa de que te orgulhas. Este 'ritual de encerramento' cria um fecho cognitivo, evita que pensamentos de trabalho invadam a tua noite e dá-te uma vantagem logo de manhã."
     }
   },
   "ui": {

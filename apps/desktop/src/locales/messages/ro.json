@@ -492,6 +492,279 @@
     },
     "adm": {
       "text": "Monitorul tău a sunat. Zice că ai stat prea aproape prea mult timp."
+    },
+    "adn": {
+      "text": "Codul tău nu se va debuga singur cât stai jos. Nici dacă te ridici, de altfel. Dar măcar coloana vertebrală te va ierta."
+    },
+    "ado": {
+      "text": "Explică bug-ul tău unei rațe de cauciuc imaginare. Dacă nu merge, explică-l peretelui. Pereții sunt ascultători excelenți."
+    },
+    "adp": {
+      "text": "Mâinile tale au tastat mii de cuvinte azi. Întinde-le — extinde brațul și trage ușor degetele înapoi."
+    },
+    "adq": {
+      "text": "Ții o întreagă bază de cod în cap. Pune-o jos 20 de secunde."
+    },
+    "adr": {
+      "text": "Aștepți să se termine build-ul? Perfect. Ridică-te și întinde-te. Ăsta e timp facturabil."
+    },
+    "ads": {
+      "text": "Ai 47 de mesaje necitite pe Slack. Pot mai aștepta 20 de secunde. Clipește."
+    },
+    "adt": {
+      "text": "„Sunt prea ocupat ca să fac o pauză” e exact cum ajungi să faci una mult mai lungă și involuntară."
+    },
+    "adu": {
+      "text": "Creierul post-code-review e real. Închide ochii și lasă neuronii să se oprească din certat."
+    },
+    "adv": {
+      "text": "Blocare creativă? Ridică-te. Fă 10 pași. Întoarce-te. Paragraful te va teme la înapoiere."
+    },
+    "adw": {
+      "text": "Oboseala decizională e reală. Oprește-te din ales. Respiră 20 de secunde."
+    },
+    "adx": {
+      "text": "E căderea de la ora 15. Glicemia a scăzut. Ridică-te, întinde-te și ia ceva de mâncare."
+    },
+    "ady": {
+      "text": "Picioarele tale există și sub birou. Amintește-le asta ridicându-te."
+    },
+    "adz": {
+      "text": "Flexorii șoldului tău au stat în poziție fetală de ore. Ridică-te și fă un lunge."
+    },
+    "aea": {
+      "text": "Spatele mijlociu e blocat. Împreunează mâinile la ceafă și arcuiește ușor spre spate."
+    },
+    "aeb": {
+      "text": "Stretching pentru antebraț: extinde brațul cu palma în sus și trage ușor degetele în jos. Prevenție RSI în 10 secunde."
+    },
+    "aec": {
+      "text": "La următorul apel, încearcă să mergi în timp ce vorbești. Creierul tău funcționează mai bine în mișcare."
+    },
+    "aed": {
+      "text": "Scările există. Urcă câteva. Sistemul tău cardiovascular îți va trimite o felicitare."
+    },
+    "aee": {
+      "text": "Luminozitatea ecranului: se potrivește cu camera, sau fața ta e o lanternă? Ajusteaz-o."
+    },
+    "aef": {
+      "text": "Lumina albastră nu îți va distruge viața, dar ecranul e probabil prea luminos. Mai dă-l o treaptă."
+    },
+    "aeg": {
+      "text": "Căștile sunt pe cap de ore. Dă-ți urechile o pauză. Nu sunt proiectate pentru maratoane."
+    },
+    "aeh": {
+      "text": "Calitatea somnului de azi noapte începe acum. Ia-ți ochii de pe ecran și lasă-i să se odihnească."
+    },
+    "aei": {
+      "text": "Vrei chips-uri? Încearcă o mână de nuci. Creierul tău funcționează pe combustibil mai bun decât crezi."
+    },
+    "aej": {
+      "text": "Munca profundă e grozavă. Izolarea profundă, nu. Când ai vorbit ultima dată cu un om?"
+    },
+    "aek": {
+      "text": "Dacă ai un birou reglabil, e momentul să schimbi poziția. Dacă nu, ridică-te oricum."
+    },
+    "ael": {
+      "text": "Răsucire pe scaun: pune mâna dreaptă pe genunchiul stâng, răsucește, ține 10 secunde. Schimbă. Yoga pe scaun, fără saltea necesară."
+    },
+    "aem": {
+      "text": "E prea cald în cameră? Temperaturile mai reci îmbunătățesc concentrarea. Deschide fereastra sau reglează termostatul."
+    },
+    "aen": {
+      "text": "Scoate căștile. Ascultă sunetele reale din jurul tău 20 de secunde."
+    },
+    "aeo": {
+      "text": "Ai ținut modelul mental al întregului sistem în cap. E epuizant. Lasă-l pentru un moment."
+    },
+    "aep": {
+      "text": "git commit -m \"am_luat_o_pauza\". Cel mai bun mesaj de commit pe care îl vei scrie azi."
+    },
+    "aeq": {
+      "text": "Stack Overflow nu te poate ajuta să te întinzi. Ridică-te. Ăsta e singurul lucru pe care trebuie să-l faci singur."
+    },
+    "aer": {
+      "text": "Deadline-ul nu se va muta dacă te întinzi 20 de secunde. Dar vertebrele tale o vor face. Într-un mod bun."
+    },
+    "aes": {
+      "text": "Fixezi același paragraf de 10 minute? Printează-l și marchează-l cu un pix. Schimbă mediul, schimbă perspectiva."
+    },
+    "aet": {
+      "text": "Tocmai ai livrat ceva? Ai trimis un draft? Ridică-te și fă un stretch de victorie. L-ai meritat."
+    },
+    "aeu": {
+      "text": "Nervi înainte de deadline? Mișcă-ți corpul. Anxietatea trăiește în imobilitate."
+    },
+    "aev": {
+      "text": "Verifică luminozitatea ecranului. Dacă îți vezi reflexia în el, e prea luminos pentru cameră."
+    },
+    "aew": {
+      "text": "Mănâncă gustarea departe de tastatură. Firimiturile tale nu au ce căuta între taste."
+    },
+    "aex": {
+      "text": "O plimbare de 5 minute generează mai multe idei decât 30 de minute de privit o pagină albă. Știința o confirmă."
+    },
+    "aey": {
+      "text": "Ai 38 de tab-uri deschise. Închide-le pe cele pe care nu le vei citi niciodată. Nu e colecționare compulsivă, e... bine, e colecționare compulsivă."
+    },
+    "aez": {
+      "text": "Când ai citit aceeași propoziție de cinci ori și tot nu are sens, creierul tău îți spune: pleacă de acolo."
+    },
+    "afa": {
+      "text": "Nu există Ctrl+Z pentru coloana ta vertebrală. Ridică-te și ai grijă de ea acum."
+    },
+    "afb": {
+      "text": "Al doilea monitor nu te poate vedea când te întinzi. Hai, nu te judecă."
+    },
+    "afc": {
+      "text": "Cafeaua nu înlocuiește odihna. Dar știai asta. Bea și ceva apă alături de ea."
+    },
+    "afd": {
+      "text": "Bug-ul va fi tot acolo când te întorci. Dar îl vei vedea cu ochi proaspeți."
+    },
+    "afe": {
+      "text": "Tocmai ai petrecut 10 minute numind o variabilă. Creierul tău merită o pauză."
+    },
+    "aff": {
+      "text": "Meetingurile s-au terminat. Decomprimă-te. Rotește gâtul încet spre stânga, apoi spre dreapta."
+    },
+    "afg": {
+      "text": "Inbox-ul tău va supraviețui fără tine 60 de secunde. Privește pe fereastră."
+    },
+    "afh": {
+      "text": "Dacă mâna pe mouse te doare, schimbă mâinile un minut. Se simte ciudat. Ăsta e și scopul."
+    },
+    "afi": {
+      "text": "Degetele furnicăte? Sunt nervii tăi care cer un stretching. Rotații de încheieturi, câte 10 în fiecare direcție."
+    },
+    "afj": {
+      "text": "Ai stat prea mult în picioare? Stai jos puțin. Ideea e să alternezi, nu să suferi."
+    },
+    "afk": {
+      "text": "E timpul să fii AFK. Literal. Depărtează-te de Tastatură."
+    },
+    "afl": {
+      "text": "Dacă ai o plantă pe birou, verifică-o. Dacă moare, e o metaforă. Udați-vă pe amândoi."
+    },
+    "afm": {
+      "text": "Deschide o fereastră. Aerul proaspăt face pentru creierul tău ce face un restart la rece pentru calculator."
+    },
+    "afn": {
+      "text": "Pune bărbia la piept și ține 10 secunde. Ceafa ta s-a contractat toată ziua."
+    },
+    "afo": {
+      "text": "Contractă fesierii în timp ce ești așezat. Ține 5 secunde. Eliberează. Nimeni nu știe. Fitness secret."
+    },
+    "afp": {
+      "text": "Stretching ischiocrural pe scaun: extinde un picior, atinge vârfurile, ține 10 secunde. Schimbă piciorul."
+    },
+    "afq": {
+      "text": "Ochii tăi produc mai puține lacrimi când ești concentrat pe ecran. Clipește lent și deliberat de 10 ori."
+    },
+    "afr": {
+      "text": "Respirația profundă scade tensiunea arterială în timp real. Inspiră 4 timpi, expiră 6. Repetă de trei ori."
+    },
+    "afs": {
+      "text": "Ridică-te și lasă gravitația să decomprime coloana. Lasă brațele să atârne și respiră 15 secunde."
+    },
+    "aft": {
+      "text": "Știi 200 de scurtături de tastatură. E vremea să înveți una pentru corp: ridică-te, întinde-te, stai jos. Repetă."
+    },
+    "afu": {
+      "text": "Schimbă IDE-ul pe light mode 5 minute. Sau pe dark mode. Schimbă ceva. Resetează cortexul vizual."
+    },
+    "afv": {
+      "text": "Ai privit un cursor care clipește. Acum închide ochii și nu vedea nimic 20 de secunde. Lux pur."
+    },
+    "afw": {
+      "text": "Privește pe fereastră și găsește cel mai îndepărtat lucru pe care îl poți vedea. Focusează-te pe el. Mușchii ochilor tăi aveau nevoie de asta."
+    },
+    "afx": {
+      "text": "Mergi în bucătărie. Nu pentru ceva anume. Doar mergi. Mișcarea e medicamentul."
+    },
+    "afy": {
+      "text": "Găsește o scară și întinde-ți gambele pe marginea unei trepte. Ține 15 secunde pe fiecare parte."
+    },
+    "afz": {
+      "text": "Urechile tale au stat sub căști de ore. Scoate-le și bucură-te de liniște."
+    },
+    "aga": {
+      "text": "Ceață mentală? Cortexul prefrontal e la rezervă. Ridică-te, mișcă-te și lasă-l să rebooteaze."
+    },
+    "agb": {
+      "text": "Multitaskingul e un mit. Creierul tău doar schimbă contextul cu overhead. Ia o pauză single-threaded."
+    },
+    "agc": {
+      "text": "Fiecare schimbare de context îți costă 23 de minute să te refocalizezi. Această pauză costă 20 de secunde. Fă calculul."
+    },
+    "agd": {
+      "text": "Perfecționismul e procrastinare cu halat de laborator. Retrage-te. Livrat e mai bun decât perfect."
+    },
+    "age": {
+      "text": "Te simți un impostor? Toată lumea se simte uneori. Ridică-te și întinde-te — impostori nu fac self-care."
+    },
+    "agf": {
+      "text": "A-ți reîmprospăta emailul la 30 de secunde nu e productivitate. Ridică-te. Ăsta e productivitate."
+    },
+    "agg": {
+      "text": "Blocare creativă? Schimbă-ți poziția fizică. Postură nouă, perspectivă nouă."
+    },
+    "agh": {
+      "text": "Spatele inferior are o plângere. Mută-te pe marginea scaunului și stai drept 30 de secunde."
+    },
+    "agi": {
+      "text": "Durerea de umeri e comentariul de code review al corpului tău: „Necesită modificări.” Rotește-i înapoi de 10 ori."
+    },
+    "agj": {
+      "text": "Durere la încheieturi după programat? Fă pumni ușori și rotește lent. 10 cercuri în fiecare direcție."
+    },
+    "agk": {
+      "text": "Pune o gleznă pe genunchiul opus și apleacă-te ușor înainte. Deschizător de șold. Ține 15 secunde. Schimbă."
+    },
+    "agl": {
+      "text": "Privește un coleg în ochi și spune ceva frumos. Conexiunea umană bate orice notificare."
+    },
+    "agm": {
+      "text": "Ascultă un sunet din natură 30 de secunde — ploaie, păsări, ocean. Sistemul tău nervos va decelera."
+    },
+    "agn": {
+      "text": "Focusul profund e un sprint, nu un maraton. Tocmai ai sprintat. Du-te la o plimbare."
+    },
+    "ago": {
+      "text": "Verificare postură: te apleci spre ecran ca și cum ți-ar datora bani? Dă-te pe spate."
+    },
+    "agp": {
+      "text": "Mănâncă ceva. Dar gustă de data asta. Mestecă lent. Pauza de masă nu e un speedrun."
+    },
+    "agq": {
+      "text": "Când ai băut ultima oară apă? Nu cafea. Apă. Mergi acum."
+    },
+    "agr": {
+      "text": "Dacă e lumină naturală afară, expune-ți puțin pielea la ea. Ritmul tău circadian o cere."
+    },
+    "ags": {
+      "text": "E camera prea rece sau prea caldă? Regleaz-o. Confortul termic afectează direct concentrarea."
+    },
+    "agt": {
+      "text": "Respirație box: inspiră 4, ține 4, expiră 4, ține 4. Loopul preferat al sistemului nervos."
+    },
+    "agu": {
+      "text": "Ridică-ți sprâncenele cât poți de sus. Ține 5 secunde. Eliberează. Fruntea ta era mai tensionată decât credeai."
+    },
+    "agv": {
+      "text": "Desfă degetele cât poți de larg. Ține 5 secunde. Acum fă un pumn strâns. Repetă de trei ori."
+    },
+    "agw": {
+      "text": "Activează-ți mușchii abdominali în timp ce ești așezat. Trage buricul spre coloană și ține 10 secunde."
+    },
+    "agx": {
+      "text": "Stai pe vârfuri 10 secunde. Acum dă-te pe călcâie. Repetă. Antrenament micro de echilibru."
+    },
+    "agy": {
+      "text": "Observă-ți respirația. Nu o schimba. Doar observ-o. Ăsta e mindfulness, și tocmai l-ai practicat."
+    },
+    "agz": {
+      "text": "Acest reminder de pauză a fost scris de un om care ignoră și el reminderele de pauze. Nu fi ca noi. Întinde-te."
     }
   },
   "longBreakIdeas": {
@@ -738,6 +1011,250 @@
     "aci": {
       "title": "Privitul norilor",
       "text": "Dacă poți vedea cerul, petrece un minut urmărind norii. E screensaver-ul original — și dă creierului tău acel focus moale care promovează gândirea creativă."
+    },
+    "acj": {
+      "title": "Înțelepciunea rației de cauciuc",
+      "text": "Programatorii folosesc rațe de cauciuc pentru a explica codul și a găsi bug-uri. Dar adevărata magie? Să te îndepărtezi complet de problemă. Subconștientul tău continuă să proceseze în timp ce te întinzi. Întoarce-te și soluția e... pur și simplu acolo."
+    },
+    "ack": {
+      "title": "RSI nu e o medalie de onoare",
+      "text": "Sindromul de suprasolicitare afectează până la 64% dintre cei care lucrează la calculator. Primele semne — furnicături, rigiditate, dureri la încheieturi — sunt ușor de ignorat și scumpe de tratat mai târziu. Întinde antebrațul: extinde brațul cu palma în jos și trage ușor degetele spre tine. Ține 15 secunde pe fiecare parte."
+    },
+    "acl": {
+      "title": "Stretching în timpul build-ului",
+      "text": "Aștepți un build, un deploy sau un suite de teste? Nu e timp pierdut — e timp liber de stretching. Ridică-te, încearcă să-ți atingi vârfurile picioarelor și ridică-te lent înapoi. Codul și coloana ta vor fi ambele gata când se termină."
+    },
+    "acm": {
+      "title": "Atenția se fragmentează ușor",
+      "text": "Un angajat obișnuit verifică emailul sau mesajele la fiecare 6 minute. Fiecare verificare costă o schimbare de context din care recuperarea durează 23 de minute. În această pauză, pune telefonul cu fața în jos și închide aplicațiile de chat. Recucerește-ți atenția câte o pauză pe rând."
+    },
+    "acn": {
+      "title": "Paradoxul celui ocupat",
+      "text": "Cercetătorii de la Stanford au demonstrat că a lucra fără pauze nu te face mai rapid — te face mai lent, mai inexact și mai predispus la greșeli pe care vei petrece și mai mult timp corectându-le. A lua pauze nu înseamnă lene. Înseamnă inginerie a eficienței."
+    },
+    "aco": {
+      "title": "Recuperare după code review",
+      "text": "Tocmai ai supraviețuit unui code review? Sau ai dat unul? Oricum ar fi, creierul tău a fost în mod hipercritic. E vremea să schimbi viteza. Ridică-te, scutură mâinile, rotește umerii și lasă creierul să treacă din „mod judecător” în „mod odihnă.”"
+    },
+    "acp": {
+      "title": "Pagina albă, corpul tensionat",
+      "text": "Blocajul creativ nu e o problemă de creativitate — e adesea o problemă a corpului. Când ești fizic tensionat, mintea ta se strânge și ea. Plimbă-te 5 minute. Întinde brațele deasupra capului. Cuvintele vor veni înapoi, și vor fi mai bune."
+    },
+    "acq": {
+      "title": "Căderea de la ora 15",
+      "text": "Acea scădere de energie de după-amiază e cauzată de ritmul tău circadian, nu doar de ce ai mâncat. În loc să ajungi la cafeină, încearcă o plimbare de 5 minute sau câteva stretching-uri ușoare. Mișcarea crește cortizolul în mod natural și îți resetează vigilența fără căderea ulterioară de după cafea."
+    },
+    "acr": {
+      "title": "Sindromul picioarelor amorțite",
+      "text": "Statul pe scaun comprimă vasele de sânge din picioare și reduce circulația. După 90 de minute de stat jos, fluxul sanguin spre picioare poate scădea cu 50%. Ridică-te, plimbă-te sau fă 10 ridicări pe vârfuri. Picioarele tale — și sistemul cardiovascular — îți vor mulțumi."
+    },
+    "acs": {
+      "title": "SOS flexori șold",
+      "text": "Flexorii șoldului se scurtează și se rigidizează după ce stai mult timp jos, trăgând pelvisul înainte și cauzând dureri lombare. Încearcă asta: ridică-te, fă un pas înapoi cu un picior într-un lunge și împinge șoldurile înainte. Ține 30 de secunde pe fiecare parte. Acesta e cel mai neglijat stretching pentru cei de la birou."
+    },
+    "act": {
+      "title": "Răsucire toracică",
+      "text": "Coloana toracică (mijlocul spatelui) se blochează din cauza aplecării peste tastatură. Stai pe marginea scaunului, încrucișează brațele peste piept și rotește lent la stânga și la dreapta. Ține fiecare parte 10 secunde. Ar trebui să simți cum se pune totul la loc."
+    },
+    "acu": {
+      "title": "Salvarea antebrațelor",
+      "text": "Antebrațele tale conțin 20 de mușchi care îți controlează degetele și încheieturile. După ore de tastat și folosit mouse-ul, sunt epuizate. Extinde un braț cu palma orientată departe și trage ușor degetele înapoi cu cealaltă mână. Ține 15 secunde. Schimbă. Repetă de două ori."
+    },
+    "acv": {
+      "title": "Mergi și vorbește",
+      "text": "Ai un apel în curând? Dă-l în timp ce mergi. Cercetătorii de la Stanford au descoperit că mersul pe jos crește producția creativă cu 60%. Nu ai nevoie de o bandă de alergat — plimbă-te prin cameră sau mergi afară. Ideile tale vor fi mai clare și corpul tău îți va mulțumi."
+    },
+    "acw": {
+      "title": "Puterea scărilor",
+      "text": "Urcatul scărilor timp de doar 3 minute crește energia mai eficient decât 30 de miligrame de cafeină, conform unui studiu de la Universitatea din Georgia. Dacă ai acces la o scară, fă câteva ture în această pauză. E rapid, gratuit și funcționează de fiecare dată."
+    },
+    "acx": {
+      "title": "Ecranul și somnul",
+      "text": "Expunerea la ecrane luminoase seara suprimă producția de melatonină cu până la 50%. Dacă e după ora 17, ia în considerare să diminuezi ecranul sau să activezi modul nocturn. Somnul tău de azi noapte este determinat de ce văd ochii tăi chiar acum."
+    },
+    "acy": {
+      "title": "Realitatea luminii albastre",
+      "text": "Lumina albastră de la ecrane probabil nu îți va deteriora retina, dar contribuie la oboseala oculară digitală și poate perturba ciclul tău de somn. Soluția nu sunt ochelarii scumpi — e să privești în altă direcție regulat, să ajustezi luminozitatea și să iei pauze ca aceasta."
+    },
+    "acz": {
+      "title": "Oboseala urechilor",
+      "text": "Purtarea căștilor mai mult de 60 de minute la rând poate cauza oboseală auriculară, acumulare de presiune și chiar deteriorarea auzului la volume mari. Scoate-le pentru această pauză. Lasă urechile să respire. Dacă trebuie să ai sunet, încearcă difuzoarele la un volum moderat."
+    },
+    "ada": {
+      "title": "Bateria decizională",
+      "text": "Iei aproximativ 35.000 de decizii pe zi, și fiecare epuizează o resursă finită. Spre după-amiază, calitatea deciziilor scade semnificativ — asta e „oboseala decizională.” În această pauză, oprește-te din ales. Nu da scroll, nu alege, nu planifica. Fii doar liniștit."
+    },
+    "adb": {
+      "title": "Auditul gustărilor de stres",
+      "text": "Mâncatul de stres nu e despre foame — e cortizolul care spune creierului că are nevoie de confort. Data viitoare când ajungi la o gustare, oprește-te și întreabă-te: îmi e foame sau sunt stresat? Dacă ești stresat, încearcă 5 respirații profunde mai întâi. Dacă tot îți e foame după aceea, mănâncă — dar alege ceva care te alimentează."
+    },
+    "adc": {
+      "title": "Capcana izolării",
+      "text": "Focusul profund e esențial pentru munca creativă și tehnică, dar izolarea prelungită crește cortizolul și scade oxitocina. Folosește această pauză pentru a spune salut cuiva — un coleg, un vecin, un membru al familiei. Chiar și o scurtă interacțiune socială îți resetează nivelul de bază al stresului."
+    },
+    "add": {
+      "title": "Birourile reglabile nu sunt magie",
+      "text": "Birourile reglabile nu sunt magice — a sta în picioare ore întregi e aproape la fel de rău ca a sta pe scaun. Cheia e alternarea. Dacă ai stat în picioare, stai jos un pic. Dacă ai stat jos, ridică-te. Schimbă-ți greutatea, mișcă degetele de la picioare sau fă pași pe loc. Mișcarea, nu poziția, e scopul."
+    },
+    "ade": {
+      "title": "Yoga pe scaun: porumbelul",
+      "text": "Încrucișează glezna dreaptă peste genunchiul stâng. Stai drept și apleacă-te ușor înainte până simți un stretching în șoldul și fesierul drept. Ține 30 de secunde, apoi schimbă. Acesta e unul dintre cele mai bune stretching-uri de deschidere a șoldului pe care le poți face fără să pleci de pe scaun."
+    },
+    "adf": {
+      "title": "Temperatura și focusul",
+      "text": "Cercetătorii de la Cornell au descoperit că ridicarea temperaturii biroului de la 20°C la 25°C a redus erorile de tastare cu 44% și a crescut producția cu 150%. Dacă ți-e frig, încălzește-te. Dacă ți-e prea cald, răcorește-te. Termostatul tău e un instrument de productivitate."
+    },
+    "adg": {
+      "title": "Igiena sonoră",
+      "text": "Zgomotul de fundal constant — open space-uri, notificări, muzică cu versuri — crește sarcina cognitivă cu până la 66%. În această pauză, elimină orice sunet. Stai în liniște 2 minute. Poate părea ciudat la început. Asta înseamnă că aveai nevoie de asta."
+    },
+    "adh": {
+      "title": "Greutatea bazei de cod",
+      "text": "A ține un sistem complex în memoria de lucru e una dintre cele mai costisitoare sarcini cognitive pe care le fac oamenii. De aceea te simți epuizat după o zi de „stat doar pe scaun.” Folosește această pauză pentru a-ți goli deliberat starea mentală. Notează unde te-ai oprit, apoi dă-i drumul."
+    },
+    "adi": {
+      "title": "Git commit și stretching",
+      "text": "Înainte să faci push la acel commit, împinge-te și tu din scaun. Fă-l un ritual: fiecare commit = un stretching. Într-o zi productivă, asta înseamnă 10-20 de micropauze integrate în fluxul tău de lucru. Atât istoricul versiunilor, cât și istoricul sănătății tale se îmbunătățesc."
+    },
+    "adj": {
+      "title": "Cuvintele își pierd sensul",
+      "text": "Există un fenomen psihologic numit „saturație semantică” — când privești un cuvânt atât de mult încât nu mai arată real. Dacă editezi același paragraf de 20 de minute, acela e semnalul tău. Retrage-te. Când te întorci, textul va părea proaspăt și erorile vor fi evidente."
+    },
+    "adk": {
+      "title": "Schița din mers",
+      "text": "Mulți scriitori faimoși — Dickens, Beethoven, Darwin — făceau plimbări zilnice lungi ca parte a procesului lor creativ. Nu ai nevoie de 2 ore. Chiar și 5 minute de mers pe jos îți schimbă creierul din modul focalizat în modul difuz, unde se fac conexiunile creative."
+    },
+    "adl": {
+      "title": "Anxietatea de deadline",
+      "text": "Stresul pre-deadline declanșează răspunsul tău de luptă sau fugă, care îți îngustează gândirea și crește erorile. Paradoxal, cel mai bun lucru pe care îl poți face înainte de un deadline este să iei o pauză. Mișcarea metabolizează hormonii de stres și restaurează gândirea largă de care ai nevoie să termini bine."
+    },
+    "adm": {
+      "title": "Ritualul livrării",
+      "text": "Tocmai ai apăsat submit? Ai trimis emailul? Ai mergeruit PR-ul? Nu începe imediat următoarea sarcină. Dă-i creierului un moment să înregistreze finalizarea. Ridică-te, întinde-te, poate chiar sărbătorește. Recunoașterea etapelor — chiar și a celor mici — previne burnout-ul."
+    },
+    "adn": {
+      "title": "Roller-coasterul glicemic",
+      "text": "Acea cădere de energie pe care o simți după-amiaza? E parțial o scădere a glicemiei declanșată de prânzurile bogate în carbohidrați. Pentru energie susținută, combină carbohidrații cu proteine și fibre. Dar acum, doar mișcă-te — o plimbare de 5 minute stabilizează nivelul de glucoză și elimină ceața mentală."
+    },
+    "ado": {
+      "title": "Protocol pentru picioare amorțite",
+      "text": "Furnicăturile sau amorțeala în picioare după ce stai jos sunt cauzate de nervii comprimați și fluxul de sânge redus. Ridică-te și scutură fiecare picior 10 secunde. Apoi fă 10 pași de marș pe loc. Fluxul de sânge restaurat, senzația revenită, productivitatea reluată."
+    },
+    "adp": {
+      "title": "Auditul iluminatului",
+      "text": "Iluminatul slab cauzează oboseală oculară, dureri de cap și oboseală generală. Ecranul tău ar trebui să fie la aproximativ aceeași luminozitate cu împrejurimile — nu un dreptunghi strălucitor într-o cameră întunecată. Ajustează lampa de birou sau luminile camerei acum. Ochii tăi vor simți imediat diferența."
+    },
+    "adq": {
+      "title": "Protocolul pentru căști",
+      "text": "Audiologii recomandă regula 60/60: nu mai mult de 60% volum pentru nu mai mult de 60 de minute la rând. Urechile tale nu au un prag de durere pentru deteriorarea graduală — pierderea auzului vine pe nesimțite. Scoate căștile pentru întreaga durată a acestei pauze."
+    },
+    "adr": {
+      "title": "Mini-antrenament la birou",
+      "text": "Nu ai nevoie de sală. Acum, fă 10 genuflexiuni, 10 flotări (sau flotări la perete) și 10 ridicări pe vârfuri. Timp total: sub 3 minute. Beneficiu total: flux de sânge îmbunătățit, ritm cardiac crescut, endorfine eliberate și o satisfacție de sine sănătoasă."
+    },
+    "ads": {
+      "title": "Trucul cu printul",
+      "text": "Scriitori și editori: încearcă să printezi schița și s-o citești pe hârtie. Vei prinde erori pe care ochii tăi obișnuiți cu ecranul le ratează. Actul fizic de a ține hârtia și de a folosi un pix activează căi cognitive diferite față de editarea pe ecran. Old school? Da. Eficient? Absolut."
+    },
+    "adt": {
+      "title": "Decomprimarea coloanei",
+      "text": "Coloana ta se comprimă sub gravitație toată ziua. Încearcă asta: stai cu picioarele depărtate la lățimea umerilor, împletește-ți degetele deasupra capului și întinde-te cât poți de sus. Ține 15 secunde. E posibil să fii chiar cu un centimetru sau doi mai înalt acum."
+    },
+    "adu": {
+      "title": "Taxa pe atenție",
+      "text": "Fiecare notificare, fiecare insignă, fiecare mesaj necitit e o taxă mică pe atenția ta. Într-o zi, acestea se adună la ore de focus pierdut. În această pauză, oprește toate notificările. Când te întorci, vei avea un buget de atenție complet de cheltuit pe ce contează."
+    },
+    "adv": {
+      "title": "Stația de îngrijire a încheieturilor",
+      "text": "Încheieturile tale gestionează aproximativ 40.000 de apăsări de taste pe zi. Extinde brațul drept cu palma spre podea și folosește mâna stângă pentru a trage ușor degetele în jos și înapoi. Ține 15 secunde. Schimbă. Apoi fă mișcări lente de pumn-și-palmă de 10 ori. Tendoanele tale îți vor mulțumi."
+    },
+    "adw": {
+      "title": "Plimbarea de debug",
+      "text": "Studii de la Stanford și alte universități confirmă că mersul îmbunătățește rezolvarea creativă de probleme cu până la 60%. Dacă ești blocat pe un bug sau o decizie de design, oprește-te din privitul ecranului. Mergi 5 minute. Soluția e mai probabil să apară când nu o cauți."
+    },
+    "adx": {
+      "title": "Resetarea memoriei musculare",
+      "text": "Corpul tău se adaptează la orice poziție ții cel mai mult timp. După ore de stat jos, mușchii tăi se remodelează literalmente în jurul acelei posturi. Ridică-te și fă opusul: arcuiește spatele, deschide pieptul, întinde brațele deasupra capului. Amintește-le mușchilor cum arată „drept”."
+    },
+    "ady": {
+      "title": "Antrenamentul mușchilor ochilor",
+      "text": "Ochii tăi au câte șase mușchi fiecare, iar privitul la o distanță fixă față de ecran îi rigidizează. Încearcă asta: ține un pix la lungimea brațului, focusează-te pe el, apoi schimbă focusul pe ceva la 6 metri distanță. Alternează de 10 ori. E ca stretching-ul, dar pentru ochi."
+    },
+    "adz": {
+      "title": "Știința repetiției în repaus",
+      "text": "Neuroștiința arată că creierul tău repetă și consolidează abilitățile în timpul repausului, nu în timpul practicii. Cercetătorii NIH au descoperit că pauzele duc la dobândirea mai rapidă a abilităților. Deci această pauză nu e procrastinare — e literalmente modul în care creierul tău devine mai bun la ce ai practicat."
+    },
+    "aea": {
+      "title": "Gustare cu scop",
+      "text": "Dacă tot vrei să mănânci o gustare, fă-o să conteze. Nucile, ciocolata neagră, fructele de pădure și ceaiul verde conțin compuși care susțin focusul și reduc inflamația. Sari peste batoanele de la automat. Creierul tău funcționează cel mai bine cu alimente reale, nu cu vârfuri de zahăr."
+    },
+    "aeb": {
+      "title": "Resetarea cortizolului",
+      "text": "Statul într-o postură stresată, aplecată, crește de fapt nivelul de cortizol. Cercetările lui Amy Cuddy (dezbătute, dar intrigante) sugerează că posturile expansive scad hormonii de stres. Ridică-te, pune mâinile pe șolduri și stai drept 2 minute. Poza Superman. Fără capă necesară."
+    },
+    "aec": {
+      "title": "Știința micro-somnului",
+      "text": "Un pui de somn de 6 minute îmbunătățește consolidarea memoriei, conform cercetărilor de la Universitatea din Düsseldorf. Nu trebuie să adormi — doar închide ochii și odihnește-te câteva minute. Chiar și tranziția spre somn activează rețelele de procesare a memoriei."
+    },
+    "aed": {
+      "title": "Meditație în mers",
+      "text": "Mergi lent și deliberat 3 minute. Concentrează-te pe senzația fiecărui pas — călcâi spre vârf, schimbarea greutății, podeaua de sub tine. Aceasta e meditație în mers și combină beneficiile mișcării cu mindfulness-ul într-o practică simplă."
+    },
+    "aee": {
+      "title": "Terapia punctelor de tensiune",
+      "text": "Simți acel nod dintre omoplat și coloană? E un punct de tensiune în mușchiul romboid. Apasă o minge de tenis (sau pumnul tău) pe el și aplică presiune fermă 30 de secunde. Eliberează lent. Fă ambele părți. Terapie musculară de birou, fără programare necesară."
+    },
+    "aef": {
+      "title": "Verificarea distanței față de ecran",
+      "text": "Monitorul tău ar trebui să fie la aproximativ 50-70 de centimetri de ochi — aproximativ lungimea unui braț. Prea aproape crește oboseala oculară; prea departe te face să te apleci înainte. Măsoară acum. Dacă ai tot avansat spre ecran pe parcursul zilei, dă-l înapoi."
+    },
+    "aeg": {
+      "title": "Deturnarea creativă",
+      "text": "Neuroștiința o numește „incubație” — fenomenul prin care îndepărtarea de o problemă lasă rețeaua de mod implicit a creierului să găsească soluții pe care nu le puteai vedea în timp ce erai focalizat. Ia o pauză de 5 minute făcând ceva complet neconectat. Mâzgălește, întinde-te sau privește norii. Creierul tău încă lucrează."
+    },
+    "aeh": {
+      "title": "Punctul de control al circulației",
+      "text": "După 30 de minute de stat jos, rata fluxului de sânge prin arterele picioarelor scade semnificativ. Soluția e simplă: ridică-te și mergi doar 5 minute. Studiile arată că asta e suficient pentru a restabili fluxul normal de sânge și pentru a-ți proteja sănătatea vasculară."
+    },
+    "aei": {
+      "title": "Relaxarea maxilarului",
+      "text": "Stresul, concentrarea și munca la ecran cauzează adesea încleștarea inconștientă a maxilarului, care poate duce la dureri ATM, dureri de cap și deteriorarea dinților. Deschide gura larg, ține 5 secunde, apoi mișcă ușor maxilarul la stânga și la dreapta. Masează mușchii de sub urechi în cercuri mici."
+    },
+    "aej": {
+      "title": "Hidratarea și puterea creierului",
+      "text": "Chiar și o deshidratare ușoară (1-2% din greutatea corporală) afectează concentrarea, crește dificultatea percepută a sarcinilor și înrăutățește starea de spirit. Creierul tău e aproximativ 75% apă. Bea 200-250 ml de apă acum. Nu cafea. Nu suc. Apă. Neuronii tăi sunt însetați."
+    },
+    "aek": {
+      "title": "Falimentul tab-urilor",
+      "text": "Dacă ai mai mult de 20 de tab-uri deschise în browser, nu faci multitasking — acumulezi datorii cognitive. Fiecare tab deschis e o decizie nerezolvată. În această pauză, declară faliment la tab-uri. Închide tot ce nu vei folosi în ora următoare. Ușurarea mentală e imediată."
+    },
+    "ael": {
+      "title": "Verificarea nervului ulnar",
+      "text": "Degetul mic și inelarul îți furnicăte sau amorțesc? Probabil e nervul ulnar comprimat la cot. Evită să-ți sprijini coatele pe suprafețe dure în timp ce tastezi. Întinde-ți complet brațele, extinde-le și scutură mâinile 10 secunde."
+    },
+    "aem": {
+      "title": "Combinație de stretching la perete",
+      "text": "Stai față în față cu un perete la distanța unui braț. Pune ambele mâini pe perete la înălțimea umerilor și apleacă-te înainte, ținând spatele drept. Ține 15 secunde — asta e pieptul. Acum întoarce-te lateral, pune o mână pe perete și rotește-te departe de el. Ține 15 secunde pe fiecare parte. Piept și umeri: deschiși."
+    },
+    "aen": {
+      "title": "Dividendul focusului",
+      "text": "Un studiu DeskTime pe cei mai performanți angajați a descoperit cel mai productiv tipar: 52 de minute de muncă focalizată urmate de o pauză de 17 minute. Pauza nu e timp pierdut — ea e cea care face timpul focalizat cu adevărat focalizat. Investești acum în următoarea ta oră productivă."
+    },
+    "aeo": {
+      "title": "Vitamina D la birou",
+      "text": "Dacă lucrezi toată ziua în interior, probabil ești deficient în vitamina D — până la 42% dintre adulți sunt. Vitamina D afectează starea de spirit, imunitatea și sănătatea osoasă. Ieși afară 5 minute dacă e soare. Pielea ta sintetizează vitamina D în doar 10 minute de expunere la soare."
+    },
+    "aep": {
+      "title": "Mobilitatea gleznelor",
+      "text": "Gleznele tale susțin întreaga greutate a corpului, dar rareori sunt întinse. Încearcă asta: stai într-un picior și trasează încet alfabetul cu celălalt picior. Da, toate literele. Schimbă piciorul. Durează aproximativ 90 de secunde pe picior și îmbunătățește dramatic stabilitatea gleznei."
+    },
+    "aeq": {
+      "title": "Paradoxul procrastinării",
+      "text": "Procrastinarea nu e lene — e o problemă de reglare emoțională. Eviți sarcinile care declanșează sentimente negative (anxietate, plictiseală, îndoială de sine). O pauză de 5 minute cu mișcare fizică poate regla acele emoții suficient pentru a face startul să pară posibil din nou. Mișcă-te mai întâi, motivează-te mai târziu."
+    },
+    "aer": {
+      "title": "Ritualul de final de zi",
+      "text": "Înainte să închizi laptopul, ia 3 minute pentru a scrie ce ai realizat, ce e în așteptare și un lucru de care ești mândru. Acest „ritual de închidere” creează o închidere cognitivă, previne gândurile legate de muncă să îți invadeze seara și îți dă un start bun pentru mâine."
     }
   },
   "ui": {

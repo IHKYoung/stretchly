@@ -17,12 +17,14 @@
 
 ## 未发布
 
+## 0.1.3 - 2026-04-20
+
 ### 新增
 
-- 新增 `apps/site` 单页官网原型：当前首页已重设计为纯白纸面背景 + 极简打字机舞台，循环展示 App 内嵌的提醒文案，并只保留一个下载按钮
-- 新增 `apps/site/download/**` 稳定下载跳转层：首页按钮不直接散落第三方下载地址，真实目标 URL 统一收口到 `targets.js`
-- 新增一版透明底的候选图标素材 `apps/desktop/src-tauri/icons/icon-alt-nw45.{svg,png}`：来自网页端 `favicon`，并把开口方向调整到西北 45 度附近，便于后续和当前正式图标对比评估
-- 新增 `docs/PauzaV1SixStepPlan.md`，把 Pauza 后续定位、onboarding、主窗口、低打扰能力、反馈闭环与付费边界整理成 6 个连续步骤
+- 新增 `apps/site` release workflow mirror：补齐 `.githooks/`、`docs/**`、`scripts/**` 与 `ReleasePlaybook`，让站点下载链接更新与 GitHub release 发布有可复用的一键流程
+- 新增一轮多语言 break prompt 文案扩充：桌面端 50 个 locale 的 `miniBreakIdeas` / `longBreakIdeas` 同步增加大量新条目，并重新生成共享 locale registry
+- 新增 `TID-20260413-fullscreen-break-current-space-fix` 任务文档包，把本轮 macOS fullscreen Space 回归修复的根因、验证与保留规则正式沉淀
+- 新增 `0.1.3` 本地发布整理：当前未提交的 desktop / site / docs 工作树统一收口到同一版 release 边界
 
 ### 调整
 
@@ -33,7 +35,8 @@
 - 继续收敛 `apps/site` 的字体与粒子语义：全站现统一使用 `LXGW WenKai Screen`，`Pauza>`、下载按钮、互动提示和粒子都不再混用另一套字体；粒子数量、字号和 `0 / 1 / # / @ / ！ / ¥ / $` 符号密度也同步提高
 - 将 `README.md`、`docs/RepositoryGuidelines.md`、`docs/CodeMap.md`、`docs/Architecture.md` 与 `docs/UI.md` 的当前真源口径统一为“仓库现仅维护 `apps/desktop` 与 `apps/site`”，不再把已删除的旧 `app/` 目录写成现存模块
 - 将 `apps/desktop` 的 break prompt 升级为居中的终端打字风格：顶部保留 `Pauza>` prompt，正文重新与时间、倒计时、CTA 共用中轴；微休息每次只显示一条 prompt，长休息在整句打完后停留 `30s` 再轮播
-- 将 `apps/site` 官网下载入口收口回首页单按钮：点击时前端先解析 GitHub `latest release` 的 Apple Silicon DMG，失败时回退到 pinned 稳定链接；本地版本元数据同步统一提升到 `0.1.2`
+- 将 `apps/site` 官网下载入口收口回首页单按钮：点击时前端先解析 GitHub `latest release` 的 Apple Silicon DMG，失败时回退到 pinned 稳定链接；站点 release 脚本会同步更新 pinned URL 到 `0.1.3`
+- 将根 `package.json`、`apps/desktop/package.json`、`apps/desktop/package-lock.json`、`Cargo.toml` 与 `tauri.conf.json` 的版本真源统一提升到 `0.1.3`
 
 ### 修复
 
@@ -43,6 +46,8 @@
 - 修复 `apps/desktop` 设置页点击与改时间仍可能卡死的问题：前端 autosave 现改为串行/合并保存，Rust `update_settings` 也不再每次都无条件重绑快捷键和整棵 tray rebuild；普通设置变化只走按需轻量刷新
 - 修复 `apps/desktop` 设置页保存节奏配置时仍可能出现 macOS 彩球卡死的问题：真正根因是后台 `sync_tray_menu_text()` 持有 `LAST_TRAY_MENU_TEXT_UPDATER` 锁时调用 `MenuItem::set_text()`，而设置保存触发的 tray rebuild 会在主线程 `register_tray_menu_text_updater()` 路径争用同一把锁；当前改为锁内只 clone updater、锁外再执行 `set_text()`，消除后台 tick 与主线程 tray rebuild 的锁反转死锁
 - 修复 `apps/desktop` break preview 中 prompt 顺序会因模拟 `startedAtMs` 每轮变动而重新抽签的问题：预览态现使用稳定起始时间，方便真实观察打字与轮播节奏
+- 修复 `apps/desktop` 在 macOS 全屏工作区里到点后 break 只会在别的屏幕或后台 Space 自己开始的问题：break 宿主窗口重新保留 `CanJoinAllSpaces | MoveToActiveSpace | FullScreenAuxiliary` 组合，不再把后两者从 native `collectionBehavior` 中移除
+- 修复 `apps/desktop` 在 bundle 环境下系统通知可能没有显式权限授权的问题：app setup 现会在确认 bundle identifier 可用后主动请求 macOS 通知权限，避免仅靠旧通知中心路径导致提醒被静默降级
 
 ### 移除
 

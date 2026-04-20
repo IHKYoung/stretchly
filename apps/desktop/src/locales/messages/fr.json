@@ -493,6 +493,279 @@
     },
     "adm": {
       "text": "Mini pause danse — juste 10 secondes. Tu sais que tu en as envie."
+    },
+    "adn": {
+      "text": "Ton code ne va pas se déboguer tout seul pendant que tu restes là. D'ailleurs, même debout, ça ne marchera pas mieux. Mais au moins, ta colonne vertébrale te pardonnera."
+    },
+    "ado": {
+      "text": "Explique ton bug à un canard en plastique imaginaire. Si ça ne marche pas, explique-le au mur. Les murs sont d'excellents auditeurs."
+    },
+    "adp": {
+      "text": "Tes poignets ont tapé des milliers de caractères aujourd'hui. Étire-les : tends le bras et tire doucement les doigts vers l'arrière."
+    },
+    "adq": {
+      "text": "Tu gardes toute une codebase en mémoire vive. Mets-la en veille pendant 20 secondes."
+    },
+    "adr": {
+      "text": "Tu attends que le build se termine ? Parfait. Lève-toi et étire-toi. Les 35h, c'est aussi fait pour ça."
+    },
+    "ads": {
+      "text": "T'as 47 messages Slack non lus. Ils peuvent attendre 20 secondes de plus. Cligne des yeux."
+    },
+    "adt": {
+      "text": "« Je suis trop occupé pour faire une pause » — c'est comme ça qu'on finit par en prendre une bien plus longue et involontaire."
+    },
+    "adu": {
+      "text": "Le cerveau post-code-review, c'est réel. Ferme les yeux et laisse tes neurones arrêter de se disputer."
+    },
+    "adv": {
+      "text": "Panne d'inspiration ? Lève-toi. Fais 10 pas. Rassieds-toi. Le paragraphe aura peur de ton retour."
+    },
+    "adw": {
+      "text": "La fatigue décisionnelle, c'est bien réel. Arrête de choisir. Respire juste pendant 20 secondes."
+    },
+    "adx": {
+      "text": "C'est le coup de barre de 15h — l'heure où même le café ne sert plus à rien. Lève-toi, étire-toi et attrape un encas."
+    },
+    "ady": {
+      "text": "Tes jambes existent en dessous de ton bureau. Rappelle-le-leur en te levant."
+    },
+    "adz": {
+      "text": "Tes fléchisseurs de hanches sont en position fœtale depuis des heures. Lève-toi et fais une fente avant."
+    },
+    "aea": {
+      "text": "Ton dos du milieu est bloqué. Croise les mains derrière la tête et cambre doucement vers l'arrière."
+    },
+    "aeb": {
+      "text": "Étirement des avant-bras : tends le bras, paume vers le haut, et tire doucement les doigts vers le bas. Prévention des TMS en 10 secondes."
+    },
+    "aec": {
+      "text": "Au prochain appel, essaie de marcher en parlant. Ton cerveau fonctionne mieux en mouvement."
+    },
+    "aed": {
+      "text": "Les escaliers existent. Monte-en quelques-uns. Ton système cardiovasculaire t'enverra une carte de remerciement."
+    },
+    "aee": {
+      "text": "La luminosité de ton écran correspond-elle à la lumière de la pièce, ou ton visage fait-il office de lampe torche ? Ajuste-la."
+    },
+    "aef": {
+      "text": "La lumière bleue ne va pas ruiner ta vie, mais ton écran est probablement trop lumineux. Baisse-le d'un cran."
+    },
+    "aeg": {
+      "text": "Ton casque est sur la tête depuis des heures. Laisse tes oreilles souffler. Elles ne sont pas faites pour les marathons."
+    },
+    "aeh": {
+      "text": "La qualité de ton sommeil ce soir commence maintenant. Détourne les yeux de l'écran et laisse-les se reposer."
+    },
+    "aei": {
+      "text": "Tu tends la main vers les chips ? Prends plutôt une poignée de noix. Ton cerveau tourne mieux avec un bon carburant."
+    },
+    "aej": {
+      "text": "Le deep work, c'est bien. L'isolement complet, beaucoup moins. C'était quand, la dernière fois que t'as parlé à un humain ?"
+    },
+    "aek": {
+      "text": "Si t'as un bureau debout, c'est le bon moment pour changer de position. Sinon, lève-toi quand même."
+    },
+    "ael": {
+      "text": "Torsion assise : pose la main droite sur le genou gauche, tourne, tiens 10 secondes. Change de côté. Yoga de bureau, aucun tapis requis."
+    },
+    "aem": {
+      "text": "Ta pièce est trop chaude ? Les températures fraîches améliorent la concentration. Entrouvre une fenêtre ou règle le thermostat."
+    },
+    "aen": {
+      "text": "Enlève ton casque. Écoute les sons réels autour de toi pendant 20 secondes."
+    },
+    "aeo": {
+      "text": "Tu gardes le modèle mental de tout le système dans la tête. C'est épuisant. Lâche-le un instant."
+    },
+    "aep": {
+      "text": "git commit -m 'pris une pause'. Le meilleur message de commit que t'écriras aujourd'hui."
+    },
+    "aeq": {
+      "text": "Stack Overflow ne peut pas t'aider à t'étirer. Lève-toi. C'est la seule chose que tu dois faire toi-même."
+    },
+    "aer": {
+      "text": "La deadline ne bougera pas si tu t'étires 20 secondes. Mais tes vertèbres, si. Dans le bon sens."
+    },
+    "aes": {
+      "text": "Tu fixes le même paragraphe depuis 10 minutes ? Imprime-le et annote-le au stylo. Changer de support, c'est changer de regard."
+    },
+    "aet": {
+      "text": "Tu viens de déployer quelque chose ? Soumis un brouillon ? Lève-toi et fais un étirement de victoire. Tu l'as mérité."
+    },
+    "aeu": {
+      "text": "Stress d'avant deadline ? Bouge-toi. L'anxiété adore l'immobilité."
+    },
+    "aev": {
+      "text": "Vérifie la luminosité de ton écran. Si tu vois ton reflet dedans, c'est trop lumineux pour la pièce."
+    },
+    "aew": {
+      "text": "Mange ton encas loin du clavier. Tes miettes n'ont rien à faire entre les touches."
+    },
+    "aex": {
+      "text": "5 minutes de marche génèrent plus d'idées que 30 minutes à fixer une page blanche. La science le dit."
+    },
+    "aey": {
+      "text": "T'as 38 onglets ouverts. Ferme ceux que tu ne liras jamais. C'est pas de la collection compulsive, c'est... bon, si, complètement."
+    },
+    "aez": {
+      "text": "Quand t'as lu la même phrase cinq fois et qu'elle n'a toujours aucun sens, c'est ton cerveau qui dit : va faire un tour."
+    },
+    "afa": {
+      "text": "Il n'existe pas de Ctrl+Z pour ta colonne vertébrale. Lève-toi et prends-en soin maintenant."
+    },
+    "afb": {
+      "text": "Ton deuxième écran ne peut pas te voir t'étirer. Vas-y, il ne jugera pas."
+    },
+    "afc": {
+      "text": "Le café ne remplace pas le repos. Même le troisième de la journée. Bois un verre d'eau en même temps."
+    },
+    "afd": {
+      "text": "Le bug sera encore là à ton retour. Mais tu le verras avec un œil neuf."
+    },
+    "afe": {
+      "text": "Tu viens de passer 10 minutes à nommer une variable. Ton cerveau mérite une pause."
+    },
+    "aff": {
+      "text": "Les réunions sont terminées. Décompresse. Fais rouler doucement la tête à gauche, puis à droite."
+    },
+    "afg": {
+      "text": "Ta boîte mail survivra sans toi pendant 60 secondes. Regarde par la fenêtre."
+    },
+    "afh": {
+      "text": "Ta main de souris est en crampe ? Passe à l'autre main pendant une minute. C'est bizarre. C'est le but."
+    },
+    "afi": {
+      "text": "Des fourmis dans les doigts ? Ce sont tes nerfs qui réclament un étirement. Rotations de poignets, 10 dans chaque sens."
+    },
+    "afj": {
+      "text": "Debout depuis trop longtemps ? Assieds-toi un peu. Le but, c'est d'alterner, pas de souffrir."
+    },
+    "afk": {
+      "text": "C'est l'heure de passer AFK. Littéralement. Éloigne-toi du clavier."
+    },
+    "afl": {
+      "text": "Si t'as une plante sur ton bureau, vérifie comment elle va. Si elle est en train de mourir, c'est une métaphore. Arrosez-vous tous les deux."
+    },
+    "afm": {
+      "text": "Ouvre une fenêtre. L'air frais fait pour ton cerveau ce qu'un redémarrage à froid fait pour ton ordi."
+    },
+    "afn": {
+      "text": "Pose le menton sur la poitrine et tiens 10 secondes. Ta nuque est crispée depuis ce matin."
+    },
+    "afo": {
+      "text": "Contracte les fessiers en restant assis. Tiens 5 secondes. Relâche. Personne ne s'en doute. Fitness clandestin."
+    },
+    "afp": {
+      "text": "Étirement des ischio-jambiers assis : tends une jambe, atteins tes orteils, tiens 10 secondes. Change de jambe."
+    },
+    "afq": {
+      "text": "Tes yeux produisent moins de larmes quand tu fixes un écran. Cligne lentement et consciemment 10 fois."
+    },
+    "afr": {
+      "text": "La respiration profonde fait baisser la tension artérielle en temps réel. Inspire sur 4, expire sur 6. Répète trois fois."
+    },
+    "afs": {
+      "text": "Lève-toi et laisse la gravité décompresser ta colonne. Laisse juste pendre les bras et respire pendant 15 secondes."
+    },
+    "aft": {
+      "text": "Tu connais 200 raccourcis clavier. Il est temps d'en apprendre un corporel : debout, étirement, assis. Répète."
+    },
+    "afu": {
+      "text": "Passe ton IDE en mode clair pendant 5 minutes. Ou en mode sombre. Change quelque chose. Réinitialise le cortex visuel."
+    },
+    "afv": {
+      "text": "Tu fixes un curseur clignotant depuis trop longtemps. Ferme les yeux et vois le vide pendant 20 secondes. Pur luxe."
+    },
+    "afw": {
+      "text": "Regarde par la fenêtre et trouve la chose la plus lointaine que tu puisses voir. Fais-en la mise au point. Tes muscles oculaires en avaient besoin."
+    },
+    "afx": {
+      "text": "Va jusqu'à la cuisine. Pas pour faire un café, juste pour marcher. Le mouvement, c'est le remède."
+    },
+    "afy": {
+      "text": "Trouve une cage d'escalier et étire les mollets sur le bord d'une marche. Tiens 15 secondes de chaque côté."
+    },
+    "afz": {
+      "text": "Tes oreilles sont sous le casque depuis des heures. Enlève-le et profite du silence."
+    },
+    "aga": {
+      "text": "Brouillard mental ? C'est ton cortex préfrontal à bout de ressources. Lève-toi, bouge et laisse-le redémarrer."
+    },
+    "agb": {
+      "text": "Le multitâche, c'est un mythe. Ton cerveau fait du context-switching avec overhead. Prends une pause single-threaded."
+    },
+    "agc": {
+      "text": "Chaque changement de contexte te coûte 23 minutes pour te reconcentrer. Cette pause te coûte 20 secondes. Fais le calcul."
+    },
+    "agd": {
+      "text": "Le perfectionnisme, c'est de la procrastination en blouse blanche. Décroche. Fait vaut mieux que parfait."
+    },
+    "age": {
+      "text": "Tu te sens comme un imposteur ? Tout le monde ressent ça parfois. Lève-toi et étire-toi — les imposteurs ne font pas attention à eux."
+    },
+    "agf": {
+      "text": "Appuyer sur F5 sur ta messagerie toutes les 30 secondes, c'est pas de la productivité. Lève-toi. Ça, c'est de la productivité."
+    },
+    "agg": {
+      "text": "Blocage créatif ? Change de position physique. Nouvelle posture, nouveau point de vue."
+    },
+    "agh": {
+      "text": "Ton bas du dos a une réclamation. Avance-toi sur le bord de ta chaise et redresse-toi bien pendant 30 secondes."
+    },
+    "agi": {
+      "text": "La douleur aux épaules, c'est le commentaire de code review de ton corps : « Needs changes. » Fais-les rouler vers l'arrière 10 fois."
+    },
+    "agj": {
+      "text": "Douleur aux poignets après avoir codé ? Serre doucement les poings et tourne les poignets lentement. 10 cercles dans chaque sens."
+    },
+    "agk": {
+      "text": "Croise une cheville sur le genou opposé et penche-toi en avant. Ouverture de hanche. Tiens 15 secondes. Change de côté."
+    },
+    "agl": {
+      "text": "Regarde un collègue dans les yeux et dis-lui quelque chose de sympa. Le lien humain bat n'importe quelle notification."
+    },
+    "agm": {
+      "text": "Écoute un son de la nature pendant 30 secondes — pluie, oiseaux, océan. Ton système nerveux va se mettre en mode relax."
+    },
+    "agn": {
+      "text": "La concentration intense, c'est un sprint, pas un marathon. Tu viens de sprinter. Marche un peu pour récupérer."
+    },
+    "ago": {
+      "text": "Check ta posture : tu te penches vers ton écran comme s'il te devait de l'argent ? Recule-toi."
+    },
+    "agp": {
+      "text": "Mange quelque chose. Savoure-le cette fois. Mâche lentement. La pause déj', c'est sacré, non ?"
+    },
+    "agq": {
+      "text": "T'as bu de l'eau quand, pour la dernière fois ? Pas du café. De l'eau. Vas-y."
+    },
+    "agr": {
+      "text": "S'il y a de la lumière du jour, profites-en sur ta peau. Ton rythme circadien t'en supplie."
+    },
+    "ags": {
+      "text": "Ta pièce est trop froide ou trop chaude ? Ajuste. Le confort thermique affecte directement la concentration."
+    },
+    "agt": {
+      "text": "Respiration carrée : inspire 4, bloque 4, expire 4, bloque 4. La boucle préférée de ton système nerveux."
+    },
+    "agu": {
+      "text": "Lève les sourcils aussi haut que possible. Tiens 5 secondes. Relâche. Ton front était plus tendu que tu ne le pensais."
+    },
+    "agv": {
+      "text": "Écarte les doigts autant que tu peux. Tiens 5 secondes. Fais un poing serré. Répète trois fois."
+    },
+    "agw": {
+      "text": "Engage ta sangle abdominale. Rentre le nombril vers la colonne et tiens 10 secondes."
+    },
+    "agx": {
+      "text": "Mets-toi sur la pointe des pieds pendant 10 secondes. Bascule sur les talons. Répète. Mini-entraînement d'équilibre."
+    },
+    "agy": {
+      "text": "Observe ta respiration. Ne la change pas. Observe juste. C'est la pleine conscience, et tu viens de le pratiquer."
+    },
+    "agz": {
+      "text": "Ce rappel de pause a été écrit par un humain qui ignore aussi les rappels de pause. Fais pas comme nous. Étire-toi."
     }
   },
   "longBreakIdeas": {
@@ -739,6 +1012,250 @@
     "aci": {
       "title": "Observer les nuages",
       "text": "Si tu peux voir le ciel, passe une minute à regarder les nuages. C'est l'écran de veille originel — et ça donne à ton cerveau le type d'attention diffuse qui favorise la pensée créative."
+    },
+    "acj": {
+      "title": "La sagesse du canard en plastique",
+      "text": "Les développeurs utilisent un canard en plastique pour expliquer leur code et débusquer les bugs. Mais la vraie magie ? S'éloigner complètement du problème. Ton inconscient continue à tourner en arrière-plan pendant que tu t'étires — reviens, et la solution est là... comme par miracle."
+    },
+    "ack": {
+      "title": "Le TMS, c'est pas une médaille",
+      "text": "Les troubles musculo-squelettiques touchent jusqu'à 64 % des personnes qui bossent sur ordi. Les premiers signes — fourmillements, raideurs, poignets douloureux — sont faciles à ignorer et coûteux à soigner plus tard. Étire tes avant-bras : tends le bras, paume vers le bas, et tire doucement tes doigts vers toi. Tiens 15 secondes de chaque côté."
+    },
+    "acl": {
+      "title": "L'étirement pendant la compilation",
+      "text": "Tu attends qu'un build, un déploiement ou une suite de tests se termine ? C'est du temps libre pour s'étirer, pas du temps mort. Lève-toi, essaie de toucher tes pieds (ou du moins d'essayer), et remonte lentement. Ton code et ta colonne vertébrale seront tous les deux prêts quand ça finira."
+    },
+    "acm": {
+      "title": "Les fragments d'attention",
+      "text": "Un travailleur de la connaissance moyen vérifie ses mails ou messages toutes les 6 minutes. Chaque vérification coûte un changement de contexte dont le cerveau met 23 minutes à récupérer. Pendant cette pause, retourne ton téléphone et ferme tes applis de chat. Reprends le contrôle de ton attention, une pause à la fois."
+    },
+    "acn": {
+      "title": "Le paradoxe du toujours-occupé",
+      "text": "Des recherches de Stanford montrent que bosser sans pause ne te rend pas plus rapide — ça te rend plus lent, moins précis et plus susceptible de faire des erreurs que tu mettras encore plus longtemps à corriger. Faire des pauses, c'est pas être fainéant. C'est de l'ingénierie de l'efficacité — et même la loi française l'a compris avant tout le monde."
+    },
+    "aco": {
+      "title": "La récup' après la code review",
+      "text": "Tu viens de survivre à une code review ? Ou d'en faire une ? Dans les deux cas, ton cerveau était en mode hypercritique. Il est temps de changer de vitesse — lève-toi, secoue les mains, roule les épaules et laisse ton cerveau passer du mode « juge » au mode « repos »."
+    },
+    "acp": {
+      "title": "Page blanche, corps plein",
+      "text": "Le syndrome de la page blanche n'est pas un problème de créativité — c'est souvent un problème corporel. Quand tu es physiquement tendu, ton esprit se resserre aussi. Marche 5 minutes et étire les bras au-dessus de la tête. Les mots reviendront, et ils seront meilleurs."
+    },
+    "acq": {
+      "title": "Le coup de barre de 15h",
+      "text": "Ce petit creux d'après-midi, c'est ton rythme circadien, pas seulement ce que tu as mangé à la cantine. Plutôt que de te jeter sur un café de plus, essaie 5 minutes de marche ou quelques étirements légers. Le mouvement booste naturellement le cortisol et relance ton énergie sans le contre-coup caféiné qui suit."
+    },
+    "acr": {
+      "title": "Syndrome des jambes de plomb",
+      "text": "La position assise comprime les vaisseaux sanguins des jambes et réduit la circulation. Après 90 minutes assis, le flux sanguin dans les jambes peut chuter de 50 %. Lève-toi, marche un peu, ou fais 10 élévations de mollets. Tes jambes — et ton système cardiovasculaire — te remercieront."
+    },
+    "acs": {
+      "title": "SOS fléchisseurs de hanche",
+      "text": "Tes fléchisseurs de hanche raccourcissent et se raidissent après une longue période assise, tirant ton bassin vers l'avant et causant des douleurs lombaires. Essaie ça : lève-toi, fais un grand pas en arrière en fente et pousse tes hanches vers l'avant. Tiens 30 secondes de chaque côté. C'est l'étirement le plus négligé pour les travailleurs sédentaires."
+    },
+    "act": {
+      "title": "La rotation thoracique",
+      "text": "Ta colonne thoracique (milieu du dos) se bloque à force de se pencher sur un clavier. Assieds-toi sur le bord de ta chaise, croise les bras sur la poitrine et tourne-toi lentement à gauche, puis à droite. Tiens chaque côté 10 secondes. Tu devrais sentir les choses se remettre en place."
+    },
+    "acu": {
+      "title": "SOS avant-bras",
+      "text": "Tes avant-bras contiennent 20 muscles qui contrôlent tes doigts et poignets. Après des heures de clavier et de souris, ils sont épuisés. Tends un bras, paume vers l'extérieur, et tire doucement tes doigts en arrière avec l'autre main. Tiens 15 secondes, change de bras, et répète deux fois."
+    },
+    "acv": {
+      "title": "Marche et parle",
+      "text": "Tu as un appel qui arrive ? Prends-le en marchant. Une recherche de Stanford a montré que marcher booste la créativité de 60 %. Pas besoin d'un bureau avec tapis de course — déambule dans ta pièce ou sors marcher dehors. Tes idées seront plus affûtées et ton corps te remerciera."
+    },
+    "acw": {
+      "title": "La puissance des escaliers",
+      "text": "Monter des escaliers pendant juste 3 minutes booste l'énergie plus efficacement que 30 mg de caféine, selon une étude de l'université de Géorgie. Si tu as accès à un escalier, fais quelques allers-retours pendant cette pause. C'est rapide, gratuit et ça marche à chaque fois."
+    },
+    "acx": {
+      "title": "Écran et sommeil : le vrai lien",
+      "text": "L'exposition aux écrans lumineux en soirée peut réduire la production de mélatonine jusqu'à 50 %. S'il est passé 17h, pense à baisser la luminosité de ton écran ou à activer le mode nuit. Le sommeil de cette nuit se décide en ce moment même, selon ce que tes yeux voient."
+    },
+    "acy": {
+      "title": "Lumière bleue : réalité vs mythe",
+      "text": "La lumière bleue des écrans n'endommagera probablement pas ta rétine, mais elle contribue à la fatigue oculaire numérique et peut perturber ton cycle de sommeil. Le remède, ce ne sont pas des lunettes hors de prix — c'est regarder ailleurs régulièrement, ajuster la luminosité et faire des pauses comme celle-là."
+    },
+    "acz": {
+      "title": "La fatigue auditive, c'est réel",
+      "text": "Porter des écouteurs plus de 60 minutes d'affilée peut provoquer fatigue auditive, pression et même des dommages auditifs à fort volume. Enlève-les pendant cette pause. Laisse tes oreilles respirer. Si tu as besoin de son, essaie des enceintes à volume modéré."
+    },
+    "ada": {
+      "title": "La batterie de décisions à plat",
+      "text": "Tu prends environ 35 000 décisions par jour, et chacune consomme une ressource finie. Dans l'après-midi, la qualité de tes décisions baisse significativement — c'est la « fatigue décisionnelle ». Pendant cette pause, arrête de choisir : ne fais pas défiler, ne planifie pas, ne prends rien. Sois juste là, sans rien décider."
+    },
+    "adb": {
+      "title": "L'audit du grignotage émotionnel",
+      "text": "Manger sous le stress, c'est pas une question de faim — c'est le cortisol qui dit à ton cerveau qu'il a besoin d'être réconforté. La prochaine fois que tu tends la main vers la barre chocolatée du distributeur, fais une pause : j'ai faim ou je suis stressé ? Si c'est le stress, essaie d'abord 5 grandes respirations. Si tu as encore faim après, mange — mais choisis quelque chose de nourrissant."
+    },
+    "adc": {
+      "title": "Le piège de l'isolement",
+      "text": "La concentration profonde est essentielle pour le travail créatif et technique, mais l'isolement prolongé augmente le cortisol et diminue l'ocytocine. Profite de cette pause pour dire bonjour à quelqu'un — un collègue, un voisin, un proche. Même une brève interaction sociale remet ton niveau de stress à zéro."
+    },
+    "add": {
+      "title": "Le bureau debout, ça bouge aussi",
+      "text": "Les bureaux debout ne sont pas magiques — rester debout sans bouger pendant des heures, c'est presque aussi mauvais que rester assis. La clé, c'est d'alterner. Si tu étais debout, assieds-toi un peu ; si tu étais assis, lève-toi. Transfère ton poids, gigote les orteils ou marche sur place. Le mouvement, pas la position, c'est le but."
+    },
+    "ade": {
+      "title": "Yoga sur chaise : le pigeon assis",
+      "text": "Croise ta cheville droite sur ton genou gauche. Tiens-toi droit et penche-toi doucement en avant jusqu'à ressentir un étirement dans ta hanche droite et ta fesse. Tiens 30 secondes, puis change de côté. C'est l'un des meilleurs étirements d'ouverture de hanche que tu puisses faire sans quitter ta chaise."
+    },
+    "adf": {
+      "title": "Température et concentration",
+      "text": "Des recherches de Cornell ont montré qu'augmenter la température de bureau de 20 °C à 25 °C a réduit les erreurs de frappe de 44 % et augmenté la productivité de 150 %. Si tu as froid, réchauffe-toi ; si tu as trop chaud, rafraîchis-toi. Ton thermostat est un outil de productivité."
+    },
+    "adg": {
+      "title": "L'hygiène sonore",
+      "text": "Le bruit de fond constant — open space, notifications, musique avec des paroles — augmente la charge cognitive jusqu'à 66 %. Pendant cette pause, coupe tout son. Reste en silence 2 minutes. Ça semblera bizarre au début. C'est exactement ça, le signe que tu en avais besoin."
+    },
+    "adh": {
+      "title": "Le poids mental de ta codebase",
+      "text": "Maintenir un système complexe en mémoire de travail est l'une des tâches cognitivement les plus coûteuses qui existent. C'est pourquoi tu te sens épuisé après une journée à « juste être assis ». Profite de cette pause pour vider délibérément ton état mental. Note où tu en es, puis lâche prise."
+    },
+    "adi": {
+      "title": "Git commit = une pause étirement",
+      "text": "Avant de pusher ce commit, pousse-toi hors de ta chaise. Fais-en un rituel : chaque commit = un étirement. Sur une journée productive, ça fait 10 à 20 micro-pauses intégrées dans ton workflow. Ton historique de commits et ton historique de santé s'améliorent en même temps."
+    },
+    "adj": {
+      "title": "Les mots qui perdent leur sens",
+      "text": "Il existe un phénomène psychologique appelé « satiation sémantique » — quand tu fixes un mot si longtemps qu'il cesse de ressembler à quelque chose de réel. Si tu édites le même paragraphe depuis 20 minutes, c'est le signal. Éloigne-toi. Quand tu reviens, le texte semblera frais et les erreurs sauteront aux yeux."
+    },
+    "adk": {
+      "title": "L'ébauche en marchant",
+      "text": "De nombreux grands noms — Dickens, Beethoven, Darwin — faisaient de longues marches quotidiennes dans leur processus créatif. Tu n'as pas besoin de 2 heures. Même 5 minutes de marche font basculer ton cerveau du mode focalisé au mode diffus, là où les connexions créatives se produisent."
+    },
+    "adl": {
+      "title": "L'angoisse de la deadline",
+      "text": "Le stress pré-deadline déclenche ta réponse combat-ou-fuite, ce qui rétrécit ta pensée et augmente les erreurs. Paradoxalement, la meilleure chose à faire avant une deadline, c'est de faire une pause. Le mouvement métabolise les hormones du stress et restaure la pensée large dont tu as besoin pour finir en beauté."
+    },
+    "adm": {
+      "title": "Le rituel de l'envoi",
+      "text": "Tu viens d'appuyer sur Envoyer ? D'envoyer l'e-mail ? De merger la PR ? Ne commence pas immédiatement la tâche suivante. Donne à ton cerveau un instant pour enregistrer la complétion — lève-toi, étire-toi, fête ça peut-être. Reconnaître les jalons, même petits, prévient le burnout."
+    },
+    "adn": {
+      "title": "Les montagnes russes glycémiques",
+      "text": "Ce coup de barre que tu ressens en milieu d'après-midi ? C'est en partie une chute de glycémie provoquée par un déjeuner trop riche en glucides. Pour une énergie durable, associe glucides, protéines et fibres. Mais là tout de suite, bouge — 5 minutes de marche stabilisent la glycémie et dissipent le brouillard."
+    },
+    "ado": {
+      "title": "Protocole jambes engourdies",
+      "text": "Les fourmillements ou engourdissements dans les jambes après être resté assis sont causés par des nerfs comprimés et une circulation réduite. Lève-toi et secoue chaque jambe pendant 10 secondes. Puis fais 10 pas sur place. Circulation restaurée, sensations retrouvées, productivité relancée."
+    },
+    "adp": {
+      "title": "L'audit de l'éclairage",
+      "text": "Un mauvais éclairage cause fatigue oculaire, maux de tête et épuisement. Ton écran devrait avoir à peu près la même luminosité que ton environnement — pas un rectangle lumineux dans une pièce sombre. Règle ta lampe de bureau ou les lumières de la pièce maintenant. Tes yeux vont immédiatement sentir la différence."
+    },
+    "adq": {
+      "title": "La règle 60/60 des écouteurs",
+      "text": "Les audiologistes recommandent la règle 60/60 : pas plus de 60 % du volume maximum pendant pas plus de 60 minutes d'affilée. Tes oreilles n'ont pas de seuil de douleur pour les dommages graduels — la perte auditive arrive en douce. Enlève tes écouteurs pour toute la durée de cette pause."
+    },
+    "adr": {
+      "title": "Le micro-entraînement sans salle",
+      "text": "Tu n'as pas besoin d'une salle de sport. Là, maintenant : 10 squats, 10 pompes (ou pompes contre le mur) et 10 élévations de mollets. Durée totale : moins de 3 minutes. Bénéfice total : meilleure circulation, rythme cardiaque élevé, endorphines libérées et une satisfaction bien méritée."
+    },
+    "ads": {
+      "title": "L'astuce de la version imprimée",
+      "text": "Écrivains et relecteurs : essaie d'imprimer ton brouillon et de le lire sur papier. Tu repéreras des erreurs que tes yeux habitués à l'écran laissent passer. L'acte physique de tenir du papier et d'utiliser un stylo active des circuits cognitifs différents de la lecture sur écran. Old school ? Oui. Efficace ? Absolument."
+    },
+    "adt": {
+      "title": "La décompression vertébrale",
+      "text": "Ta colonne vertébrale se compresse sous la gravité toute la journée. Essaie ça : debout, pieds à largeur d'épaules, entrelace tes doigts au-dessus de la tête et étire-toi aussi grand que possible. Tiens 15 secondes. Tu es peut-être un ou deux centimètres plus grand en ce moment."
+    },
+    "adu": {
+      "title": "La taxe sur l'attention",
+      "text": "Chaque notification, chaque badge, chaque message non lu est une petite taxe sur ton attention. Sur une journée entière, ça s'accumule en heures de concentration perdues. Pendant cette pause, coupe toutes les notifications. Quand tu reviens, tu auras un budget d'attention complet à investir sur ce qui compte vraiment."
+    },
+    "adv": {
+      "title": "La station de soin des poignets",
+      "text": "Tes poignets encaissent environ 40 000 frappes par jour. Tends le bras droit, paume vers le bas, et avec la main gauche, tire doucement tes doigts vers le bas et en arrière. Tiens 15 secondes. Change de côté. Puis fais 10 mouvements lents d'ouverture et fermeture de poing. Tes tendons te remercient."
+    },
+    "adw": {
+      "title": "La marche de débogage",
+      "text": "Des études de Stanford et d'autres universités confirment que marcher améliore la résolution créative de problèmes jusqu'à 60 %. Si tu es bloqué sur un bug ou une décision d'architecture, arrête de fixer l'écran. Marche 5 minutes. La solution est plus susceptible d'apparaître quand tu ne la cherches pas."
+    },
+    "adx": {
+      "title": "Réinitialise ta mémoire musculaire",
+      "text": "Ton corps s'adapte à la position que tu gardes le plus longtemps. Après des heures assis, tes muscles se remettent littéralement en forme autour de cette posture. Lève-toi et fais l'inverse : cambre le dos, ouvre la poitrine, tends les bras vers le haut. Rappelle à tes muscles ce que « droit » veut dire."
+    },
+    "ady": {
+      "title": "L'entraînement des muscles oculaires",
+      "text": "Tes yeux ont chacun six muscles, et fixer un écran à distance fixe les raidit. Essaie ça : tiens un stylo à bout de bras, focalise-toi dessus, puis fais la mise au point sur quelque chose à 6 mètres. Alterne 10 fois. C'est comme des étirements, mais pour tes yeux."
+    },
+    "adz": {
+      "title": "La science de la répétition cérébrale",
+      "text": "Les neurosciences montrent que ton cerveau rejoue et consolide les compétences pendant le repos, pas pendant la pratique. Des chercheurs du NIH ont découvert que faire des pauses accélérait l'acquisition de nouvelles compétences. Donc cette pause n'est pas de la procrastination — c'est littéralement comment ton cerveau s'améliore."
+    },
+    "aea": {
+      "title": "Grignote avec intention",
+      "text": "Si tu vas grignoter, autant que ça serve à quelque chose. Les noix, le chocolat noir, les fruits rouges et le thé vert contiennent tous des composés qui soutiennent la concentration et réduisent l'inflammation. Laisse tomber la barre du distributeur. Ton cerveau tourne mieux avec de la vraie nourriture, pas des pics de sucre."
+    },
+    "aeb": {
+      "title": "La réinitialisation du cortisol",
+      "text": "Rester assis dans une posture avachie et stressée augmente en fait ton niveau de cortisol. La recherche d'Amy Cuddy (débattue mais intrigante) suggère que les postures expansives réduisent les hormones du stress. Lève-toi, pose les mains sur les hanches et tiens-toi bien droit pendant 2 minutes. La pose Superman. Pas besoin de cape."
+    },
+    "aec": {
+      "title": "La science de la micro-sieste",
+      "text": "Une sieste de 6 minutes améliore la consolidation mémorielle, selon des recherches de l'université de Düsseldorf. Tu n'as pas besoin de t'endormir vraiment — ferme juste les yeux et repose-toi quelques minutes. Même la transition vers le sommeil active les réseaux de traitement de la mémoire."
+    },
+    "aed": {
+      "title": "La marche méditative",
+      "text": "Marche lentement et délibérément pendant 3 minutes. Concentre-toi sur la sensation de chaque pas — du talon à la pointe, le transfert de poids, le sol sous tes pieds. C'est la marche méditative, et elle combine les bienfaits du mouvement et de la pleine conscience en une seule pratique simple."
+    },
+    "aee": {
+      "title": "La thérapie des points de tension",
+      "text": "Tu sens ce nœud entre ton omoplate et ta colonne vertébrale ? C'est un point de tension dans ton muscle rhomboïde. Appuie une balle de tennis (ou ton poing) dessus et maintiens une pression ferme pendant 30 secondes. Relâche lentement. Fais les deux côtés. De la kiné de bureau, sans rendez-vous."
+    },
+    "aef": {
+      "title": "Vérifie la distance de ton écran",
+      "text": "Ton moniteur devrait être à environ 50 à 70 cm de tes yeux — à peu près la longueur d'un bras. Trop près augmente la fatigue oculaire ; trop loin te fait te pencher en avant. Mesure maintenant. Si tu t'es rapproché de ton écran toute la journée, recule-le."
+    },
+    "aeg": {
+      "title": "Le détour créatif",
+      "text": "Les neurosciences appellent ça l'« incubation » — le phénomène par lequel s'éloigner d'un problème laisse le réseau du mode par défaut du cerveau trouver des solutions que tu ne voyais pas en étant focalisé. Fais une pause de 5 minutes en faisant quelque chose de complètement différent. Griffonne, étire-toi ou contemple les nuages. Ton cerveau, lui, continue de travailler."
+    },
+    "aeh": {
+      "title": "Checkpoint circulatoire",
+      "text": "Après 30 minutes assis, le débit sanguin dans les artères de tes jambes diminue significativement. Le remède est simple : lève-toi et marche juste 5 minutes. Des études montrent que c'est suffisant pour rétablir une circulation normale et protéger ta santé vasculaire."
+    },
+    "aei": {
+      "title": "SOS mâchoire et ATM",
+      "text": "Le stress, la concentration et le travail sur écran provoquent souvent un serrement inconscient de la mâchoire, pouvant entraîner des douleurs à l'ATM (articulation temporo-mandibulaire), des maux de tête et des dommages dentaires. Ouvre grand la bouche, tiens 5 secondes, puis bouge doucement la mâchoire de gauche à droite. Masse les muscles juste sous tes oreilles en petits cercles."
+    },
+    "aej": {
+      "title": "Hydratation et puissance cérébrale",
+      "text": "Même une légère déshydratation (1 à 2 % du poids corporel) nuit à la concentration, augmente la difficulté perçue des tâches et détériore l'humeur. Ton cerveau est constitué d'environ 75 % d'eau. Bois 200 à 250 ml d'eau maintenant — pas de café, pas de soda, de l'eau. Tes neurones sont assoiffés."
+    },
+    "aek": {
+      "title": "La faillite des onglets",
+      "text": "Si tu as plus de 20 onglets ouverts dans ton navigateur, tu ne fais pas du multitâche — tu accumules une dette cognitive. Chaque onglet ouvert est une décision non résolue. Pendant cette pause, déclare la faillite des onglets : ferme tout ce dont tu n'auras pas besoin dans l'heure. Le soulagement mental est immédiat."
+    },
+    "ael": {
+      "title": "Vérifie ton nerf ulnaire",
+      "text": "Ton auriculaire et ton annulaire fourmillent ou s'engourdissent ? C'est probablement ton nerf ulnaire comprimé au niveau du coude. Évite de poser les coudes sur des surfaces dures en tapant. Tends les bras complètement, étire-les et secoue les mains pendant 10 secondes."
+    },
+    "aem": {
+      "title": "Le combo d'étirements au mur",
+      "text": "Debout face à un mur, à longueur de bras. Place les deux mains sur le mur à hauteur des épaules et penche-toi en avant, dos droit. Tiens 15 secondes — c'est ta poitrine. Tourne-toi de côté, place une main sur le mur et pivote en t'éloignant de lui. Tiens 15 secondes de chaque côté. Poitrine et épaules : déployées."
+    },
+    "aen": {
+      "title": "Le dividende de la concentration",
+      "text": "Une étude DeskTime sur les travailleurs les plus performants a révélé le schéma le plus productif : 52 minutes de travail focalisé, suivi de 17 minutes de pause. La pause n'est pas du temps perdu — c'est ce qui rend le temps de travail vraiment focalisé. Tu investis en ce moment dans ta prochaine heure productive."
+    },
+    "aeo": {
+      "title": "Vérif vitamine D au bureau",
+      "text": "Si tu travailles en intérieur toute la journée, tu es probablement carencé en vitamine D — jusqu'à 42 % des adultes le sont. La vitamine D affecte l'humeur, l'immunité et la santé osseuse. Sors 5 minutes s'il y a du soleil. Ta peau synthétise la vitamine D en seulement 10 minutes d'exposition solaire."
+    },
+    "aep": {
+      "title": "La mobilité des chevilles",
+      "text": "Tes chevilles supportent tout ton poids corporel mais sont rarement étirées. Essaie ça : tiens-toi sur un pied et trace lentement l'alphabet avec l'autre pied. Oui, les 26 lettres. Change de pied. Ça prend environ 90 secondes par pied et améliore considérablement la stabilité des chevilles."
+    },
+    "aeq": {
+      "title": "Le paradoxe de la procrastination",
+      "text": "La procrastination, c'est pas de la paresse — c'est un problème de régulation émotionnelle. Tu évites les tâches qui déclenchent des émotions négatives : anxiété, ennui, doute de toi-même. Une pause de 5 minutes avec du mouvement physique peut réguler ces émotions suffisamment pour que démarrer redevienne possible. Bouge d'abord, motive-toi ensuite."
+    },
+    "aer": {
+      "title": "Le rituel de fin de journée",
+      "text": "Avant de fermer ton ordi, prends 3 minutes pour noter ce que tu as accompli, ce qui est en attente et une chose dont tu es fier. Ce « rituel d'arrêt » crée une clôture cognitive, empêche les pensées de boulot d'envahir ton apéro, et te donne une longueur d'avance pour demain."
     }
   },
   "ui": {

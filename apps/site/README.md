@@ -36,9 +36,30 @@ http://127.0.0.1:43210
 apps/site/download/targets.js
 ```
 
-当前按钮会优先请求 GitHub Releases API，自动解析最新 release 中名称以 `_aarch64.dmg` 结尾的资产；如果 API 不可用，则回退到 `targets.js` 里配置的固定稳定链接。
+当前按钮会优先请求 GitHub Releases API，自动解析最新 release 中名称以 `_aarch64.dmg` 结尾的资产；如果 API 不可用，或 API 仍返回旧版本资产名，则保留 `targets.js` 里配置的固定稳定链接。
 
 后续如果从 GitHub Releases 换到 R2 / S3，只需要修改这个文件。
+
+## Release 一键发布
+
+站点内置了一个可复用发布脚本：
+
+```bash
+python3 scripts/publish_site_release.py \
+  --asset /Users/changkunyang/CKProjects/Pauza/apps/desktop/src-tauri/target/release/bundle/dmg/Pauza_0.1.3_aarch64.dmg
+```
+
+它会自动：
+
+- 从 dmg 文件名解析版本号
+- 更新 `index.html` 与 `download/targets.js` 里的 pinned 下载链接
+- 使用 `gh` 创建或更新 GitHub Release
+
+完整说明见：
+
+```text
+apps/site/docs/ReleasePlaybook.md
+```
 
 首页循环展示的官网文案维护在：
 

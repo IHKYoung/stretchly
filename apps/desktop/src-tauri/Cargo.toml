@@ -1,6 +1,6 @@
 [package]
 name = "pauza-desktop"
-version = "0.1.2"
+version = "0.1.3"
 description = "Pauza Desktop Foundation"
 authors = ["AhaKnow"]
 edition = "2021"

@@ -488,6 +488,279 @@
     },
     "adm": {
       "text": "Massiere deine Schläfen 10 Sekunden in kleinen Kreisen. Sofortige Ruhe."
+    },
+    "adn": {
+      "text": "Dein Code debuggt sich nicht von allein, während du hier sitzt. Ehrlich gesagt auch nicht, wenn du aufstehst. Aber wenigstens verzeiht dir deine Wirbelsäule."
+    },
+    "ado": {
+      "text": "Erklär deinen Bug einer imaginären Quietscheente. Wenn das nicht klappt, erklär ihn der Wand. Wände sind großartige Zuhörer."
+    },
+    "adp": {
+      "text": "Deine Handgelenke haben heute tausende Wörter getippt. Streck sie mal aus — Arm ausstrecken und sanft die Finger nach hinten ziehen."
+    },
+    "adq": {
+      "text": "Du hast heute ein ganzes Codebase in deinem Kopf. Gönn deinem Gehirn 30 Sekunden Ruhe — nichts denken, einfach nur atmen."
+    },
+    "adr": {
+      "text": "Deine Schultern hängen mittlerweile auf Tastaturhöhe. Roll sie zurück und runter, so als würdest du versuchen, deine Schulterblätter in die Hosentasche zu stecken."
+    },
+    "ads": {
+      "text": "Du starrst auf einen Bildschirm. Der Bildschirm starrt zurück. Blinzel ein paar Mal und schau auf etwas Entferntes — wie das Fenster oder die Träume, die du mal hattest."
+    },
+    "adt": {
+      "text": "Dein Nacken trägt den ganzen Tag deinen Kopf. Zeit für ein bisschen Dankbarkeit — sanfte Nackendrehungen, links und rechts."
+    },
+    "adu": {
+      "text": "Steh auf. Geh ein paar Schritte. Ja, genau jetzt. Die Merge Conflicts laufen nicht weg."
+    },
+    "adv": {
+      "text": "Deine Augen haben heute mehr Pixel gesehen als die meisten Menschen in einer Woche. Schließ sie für 10 Sekunden. Das Display vermisst dich schon."
+    },
+    "adw": {
+      "text": "Tief einatmen durch die Nase, langsam ausatmen durch den Mund. Mach das dreimal. Dein Nervensystem dankt es dir."
+    },
+    "adx": {
+      "text": "Deine Hände haben heute mehr getippt als ein Roman. Schüttel sie aus, als würdest du Wasser abschütteln."
+    },
+    "ady": {
+      "text": "Du sitzt wie ein Fragezeichen. Setz dich gerade hin, als hättest du einen String im Rücken, der dich zur Decke zieht."
+    },
+    "adz": {
+      "text": "Dein unterer Rücken schreit nach Aufmerksamkeit. Steh auf, leg die Hände auf den unteren Rücken und lehn dich sanft nach hinten."
+    },
+    "aea": {
+      "text": "Mikrobreak-Zeit: Steh auf, setz dich hin. Wiederhole fünfmal. Glückwunsch, du hast gerade mehr Sport gemacht als gestern."
+    },
+    "aeb": {
+      "text": "Deine Finger haben Tausende von Tastenanschlägen gemacht. Mach eine Faust, dann spreize die Finger weit auseinander. Dreimal wiederholen."
+    },
+    "aec": {
+      "text": "Schau vom Bildschirm weg und finde etwas Grünes. Pflanzen, ein Bild, das grüne Statuslicht deines Routers — irgendwas."
+    },
+    "aed": {
+      "text": "Deine Kiefermuskeln sind vermutlich angespannt. Öffne deinen Mund weit, dann entspann ihn. Niemand sagt, dass Programmieren entspannt ist."
+    },
+    "aee": {
+      "text": "Roll deine Knöchel im Kreis. Erst in die eine Richtung, dann in die andere. Deine Füße werden den ganzen Tag ignoriert, gib ihnen etwas Liebe."
+    },
+    "aef": {
+      "text": "Nimm deine Hände über den Kopf und streck dich, als würdest du versuchen, die Cloud zu berühren. Die echte Cloud, nicht AWS."
+    },
+    "aeg": {
+      "text": "Deine Augen sind trocken wie deine letzte Commit-Message. Blinzel zehnmal langsam."
+    },
+    "aeh": {
+      "text": "Sitz-Meditation: Fühl, wo dein Körper den Stuhl berührt. Das war's. Du meditierst jetzt. Namaste oder so."
+    },
+    "aei": {
+      "text": "Dreh deinen Oberkörper nach links, dann nach rechts. Stell dir vor, du suchst nach dem Kollegen, der ständig deine Snacks klaut."
+    },
+    "aej": {
+      "text": "Deine Handgelenke sind keine Maschinen. Oh warte, Maschinen bekommen Wartung. Kreise sie in beide Richtungen."
+    },
+    "aek": {
+      "text": "Halte deinen Atem für 4 Sekunden, lass ihn für 4 Sekunden los. Setz deine CPU zurück."
+    },
+    "ael": {
+      "text": "Zieh deine Schultern hoch zu den Ohren, halt sie, dann lass sie fallen. Stell dir vor, du lässt all den Produktionsstress fallen."
+    },
+    "aem": {
+      "text": "Massiere deine Schläfen mit kreisenden Bewegungen. Das ist die Ctrl+Z-Funktion für Kopfschmerzen."
+    },
+    "aen": {
+      "text": "Stell dich hin und heb abwechselnd die Fersen — als würdest du an einem sehr langweiligen Meeting teilnehmen und ungeduldig werden."
+    },
+    "aeo": {
+      "text": "Dein Monitor ist nicht dein ganzes Leben. Schau zur Tür. Schau zum Fenster. Erinnere dich, dass eine Welt da draußen existiert."
+    },
+    "aep": {
+      "text": "Neige deinen Kopf zur rechten Schulter, dann zur linken. Dein Nacken speichert mehr Spannung als dein Git-Repository Merge-Konflikte."
+    },
+    "aeq": {
+      "text": "Mach ein Gesicht wie bei einem überraschten Emoji — Augen weit auf, Mund offen. Entspann dann alles. Gesichtsyoga, wer hätte das gedacht."
+    },
+    "aer": {
+      "text": "Steh auf und mach drei Kniebeugen. Oder eine. Oder denk einfach intensiv über Kniebeugen nach. Auch das zählt irgendwie."
+    },
+    "aes": {
+      "text": "Deine Unterarme sind wahrscheinlich verspannt. Massiere sie mit der anderen Hand, als würdest du deinen Code refactorn — langsam und bewusst."
+    },
+    "aet": {
+      "text": "Schau auf etwas 6 Meter entferntes für 20 Sekunden. Die 20-20-6-Regel, metrisch angepasst für zivilisierte Länder."
+    },
+    "aeu": {
+      "text": "Verschränke deine Finger hinter dem Rücken und streck deine Arme. Öffne deine Brust, als würdest du die Welt umarmen — oder zumindest den Feierabend."
+    },
+    "aev": {
+      "text": "Dein Körper ist zu 60% Wasser und zu 40% Koffein. Nimm einen Schluck von etwas, das nicht Code ist."
+    },
+    "aew": {
+      "text": "Drück deine Handflächen zusammen vor deiner Brust wie in einer Gebetsposition. Halte für 10 Sekunden. Bete für Bug-freien Code."
+    },
+    "aex": {
+      "text": "Beweg deine Augen ohne den Kopf zu bewegen: hoch, runter, links, rechts. Es ist wie Eye-Tracking, nur rückwärts."
+    },
+    "aey": {
+      "text": "Zieh ein Knie zur Brust, halt es, dann das andere. Wenn du umfällst, ist das ein Zeichen, dass du wirklich eine Pause brauchst."
+    },
+    "aez": {
+      "text": "Atme ein während du bis vier zählst, halte für vier, atme aus für vier. Box-Atmung — nicht nur für Boxer und Navy SEALs."
+    },
+    "afa": {
+      "text": "Deine Hüften sind seit Stunden eingefroren. Steh auf und kreise sie. Ja, wie Hula-Hoop. Niemand schaut zu."
+    },
+    "afb": {
+      "text": "Leg deine Hand auf deinen Bauch und atme tief, sodass sich deine Hand hebt. Bauchatmung — so wie du es als Baby konntest, bevor Deadlines dein Leben übernahmen."
+    },
+    "afc": {
+      "text": "Drück deine Schulterblätter zusammen, als würdest du versuchen, einen Bleistift zwischen ihnen zu halten. Halt für 5 Sekunden, dann loslassen."
+    },
+    "afd": {
+      "text": "Mach mit den Füßen Kreise — eine kleine Hommage an die Tatsache, dass sie den ganzen Tag unter dem Schreibtisch gefangen waren."
+    },
+    "afe": {
+      "text": "Schließ deine Augen und stell dir deinen glücklichen Ort vor. Wenn das 'merged PR' ist, urteilen wir nicht."
+    },
+    "aff": {
+      "text": "Nimm deine Hände hinter den Kopf und lehn dich zurück. Streck deine Brust. Du bist der König/die Königin dieses Debuggings."
+    },
+    "afg": {
+      "text": "Massiere deine Kopfhaut mit den Fingerspitzen. Es ist wie eine Kopfmassage, nur dass du sie dir selbst gibst, weil Budget-Kürzungen."
+    },
+    "afh": {
+      "text": "Steh auf und berühre deine Zehen. Oder deine Schienbeine. Oder deine Knie. Wir urteilen nicht über deine Flexibilität."
+    },
+    "afi": {
+      "text": "Dreh deinen Kopf langsam im Kreis. Eine Richtung, dann die andere. Es ist wie Laden, aber für deinen Nacken."
+    },
+    "afj": {
+      "text": "Zieh deine Schultern nach vorne, dann nach hinten. Mach große Kreise. Stell dir vor, du schwimmst durchs Codebase."
+    },
+    "afk": {
+      "text": "Steh auf und marschiere auf der Stelle. Knie hoch. Du machst buchstäblich Fortschritt, im Gegensatz zu deinem Build."
+    },
+    "afl": {
+      "text": "Presse deine Handflächen für 10 Sekunden gegeneinander. Lass los. Spüre das Kribbeln. Das ist Durchblutung, kein Bug."
+    },
+    "afm": {
+      "text": "Schau nach oben zur Decke, dann runter zum Boden. Lass deine Augen die volle Bandbreite durchlaufen, wie ein ordentliches Refactoring."
+    },
+    "afn": {
+      "text": "Leg eine Hand auf deine Brust, eine auf deinen Bauch. Atme so, dass sich die Bauchhand zuerst bewegt. Richtige Atmung freischalten."
+    },
+    "afo": {
+      "text": "Schüttel deinen ganzen Körper aus wie ein nasser Hund. Schüttel die Bugs ab. Schüttel die technische Schuld ab."
+    },
+    "afp": {
+      "text": "Steh auf und lehne dich zur Seite, ein Arm über dem Kopf. Andere Seite. Du bist jetzt eine menschliche Klammer."
+    },
+    "afq": {
+      "text": "Drück deine Zunge an dein Gaumendach. Entspann deinen Kiefer. Das ist die manuelle Override-Funktion für Gesichtsspannung."
+    },
+    "afr": {
+      "text": "Stell dich auf ein Bein. Versuch, 10 Sekunden zu balancieren. Wenn du umfällst, war's ein guter Versuch. Balance ist schwer, genau wie Work-Life-Balance."
+    },
+    "afs": {
+      "text": "Reib deine Hände zusammen schnell, bis sie warm sind. Leg sie dann auf deine geschlossenen Augen. Instant Wellness-Moment."
+    },
+    "aft": {
+      "text": "Streck ein Bein aus und zieh die Zehen zu dir. Spürst du das in der Wade? Das ist das Gefühl, etwas zu spüren."
+    },
+    "afu": {
+      "text": "Atme ein durch die Nase für 4, halte für 7, atme aus für 8. Die 4-7-8-Technik — Mathematik, die tatsächlich entspannt."
+    },
+    "afv": {
+      "text": "Dreh deine Handgelenke in Kreisen, währenddessen machst du Fäuste und spreizt die Finger. Multi-Tasking für deine Hände."
+    },
+    "afw": {
+      "text": "Steh auf und mach die größte Dehnung, die du kannst. Arme hoch, auf Zehenspitzen. Berühre den Himmel, oder zumindest die Decke."
+    },
+    "afx": {
+      "text": "Drück deine Finger nacheinander mit dem Daumen. Fingerfertigkeit-Übung. Oder Vorbereitung auf sehr präzises Tippen."
+    },
+    "afy": {
+      "text": "Setz dich auf die Stuhlkante und drehe deinen Oberkörper nach links, greife die Rückenlehne. Halte. Andere Seite. Wringe deinen Stress aus."
+    },
+    "afz": {
+      "text": "Schau aus dem Fenster. Wenn es kein Fenster gibt, stell dir eins vor. Stell dir vor, draußen zu sein. Vitamin D nur durch Vorstellungskraft."
+    },
+    "aga": {
+      "text": "Heb beide Schultern zu den Ohren, halte für 3 Sekunden, dann lass sie mit einem Seufzer fallen. Seufzen ist jetzt gesund."
+    },
+    "agb": {
+      "text": "Mach kleine Kreise mit deinem Kopf — nicht den ganzen Kreis, nur sanfte halbe Kreise. Dein Nacken ist kein Drehgelenk."
+    },
+    "agc": {
+      "text": "Streck deine Arme zur Seite aus und mach kleine Kreise. Du bist ein Flugzeug. Ein sehr müdes Flugzeug, das gleich landen will."
+    },
+    "agd": {
+      "text": "Zieh deinen Bauchnabel zur Wirbelsäule, halte für 5 Sekunden. Core-Engagement, während du sitzt. Effizienz."
+    },
+    "age": {
+      "text": "Klopfe sanft auf deinen Kopf, Schultern, Arme, Beine. Aufweck-Klopfen. Sag deinem Körper hallo."
+    },
+    "agf": {
+      "text": "Nimm einen tiefen Atemzug und halte ihn, während du alle Muskeln anspannst. Lass alles auf einmal los. Progressive Entspannung, Blitz-Version."
+    },
+    "agg": {
+      "text": "Steh auf und tritt von einem Fuß auf den anderen. Seitliches Gewichtsverlagern. Es ist wie Tanzen, nur mit weniger Rhythmus und mehr Erschöpfung."
+    },
+    "agh": {
+      "text": "Verschränke deine Finger und dreh die Handflächen nach außen. Streck die Arme. Das ist die 'Ich hab's geschafft'-Dehnung."
+    },
+    "agi": {
+      "text": "Zieh ein Knie hoch, umarme es für ein paar Sekunden. Anderes Knie. Gib deinen Beinen die Umarmung, die sie verdienen."
+    },
+    "agj": {
+      "text": "Sitze gerade und ziehe dein Kinn zurück, sodass ein Doppelkinn entsteht. Halte. Das ist die 'Tech-Neck-Korrektur'-Übung."
+    },
+    "agk": {
+      "text": "Dreh deine Füße nach innen, dann nach außen. Deine Knöchel haben Bewegungsumfang. Erinnere sie daran."
+    },
+    "agl": {
+      "text": "Lege eine Hand flach auf den Tisch, hebe jeden Finger einzeln an. Finger-Isolations-Training. Werde eins mit deiner Tastatur."
+    },
+    "agm": {
+      "text": "Steh auf und schwinge deine Arme in entgegengesetzte Richtungen. Twist es aus. Wringe dich wie ein Handtuch."
+    },
+    "agn": {
+      "text": "Gähne groß und bewusst. Strecke dabei deinen Kiefer. Fake Gähnen wird zu echtem Gähnen. Wissenschaft."
+    },
+    "ago": {
+      "text": "Drücke deine Handflächen gegen eine Wand und lehne dich in eine Dehnung. Wand-Push-up-Position, minus das Push-up."
+    },
+    "agp": {
+      "text": "Greife hinter deinen Rücken und verschränke die Finger. Zieh nach unten und öffne deine Brust. Brust-Öffner-Pose."
+    },
+    "agq": {
+      "text": "Hebe abwechselnd die Knie zur Brust, während du sitzt. Sitzende Kniehebungen. So Low-Impact wie möglich."
+    },
+    "agr": {
+      "text": "Massiere deine Ohrläppchen. Akupressur-Punkte oder auch nicht, aber es fühlt sich gut an und das reicht."
+    },
+    "ags": {
+      "text": "Steh auf und mache einen tiefen Ausfallschritt. Andere Seite. Krieger-Pose, nur im Büro und ohne Yoga-Matte."
+    },
+    "agt": {
+      "text": "Lege deine Stirn auf deine verschränkten Arme auf dem Schreibtisch. Kurze Kopf-runter-Pause. Power Nap für 5 Sekunden."
+    },
+    "agu": {
+      "text": "Kreise deine Schultern rückwärts zehnmal. Die Richtung ist wichtig — wir wollen Spannung rückgängig machen, nicht aufbauen."
+    },
+    "agv": {
+      "text": "Steh auf und hebe abwechselnd die Fersen zum Gesäß. Stehende Oberschenkel-Dehnung. Oder eine sehr langsame Fluchtbewegung."
+    },
+    "agw": {
+      "text": "Verschränke die Finger, drehe die Handflächen nach oben und strecke über den Kopf. Streck dich zur Decke. Wachse."
+    },
+    "agx": {
+      "text": "Sitze gerade und lege eine Hand auf die gegenüberliegende Knie. Drehe sanft. Andere Seite. Sitzende Wirbelsäulen-Drehung."
+    },
+    "agy": {
+      "text": "Ziehe deine Schulterblätter nach unten von den Ohren weg. Halte. Das ist die Antihaltung zu allem, was du heute gemacht hast."
+    },
+    "agz": {
+      "text": "Nimm drei volle, tiefe Atemzüge. Nichts weiter. Nur Sauerstoff und die Erinnerung, dass du ein lebendiger Mensch bist, nicht nur ein Code-Produzent."
     }
   },
   "longBreakIdeas": {
@@ -734,6 +1007,250 @@
     "aci": {
       "title": "Wolken beobachten",
       "text": "Schau aus dem Fenster und beobachte die Wolken. Kein Ziel, keine Analyse, einfach schauen. Wolken beobachten ist eine natürliche Form der Achtsamkeit: Dein Gehirn wechselt in den Default-Modus, Stress wird abgebaut, und die Augen entspannen sich beim Fokussieren auf weite Entfernungen."
+    },
+    "acj": {
+      "title": "Mach einen Spaziergang",
+      "text": "Steh auf und geh mindestens 5 Minuten nach draußen. Echte frische Luft, echtes Tageslicht. Falls das Wetter schrecklich ist: Geh im Gebäude herum — Treppenhäuser zählen. Deine Beine werden sich daran erinnern, wofür sie gemacht wurden, und dein Gehirn bekommt einen echten Reset."
+    },
+    "ack": {
+      "title": "Augen-Rettungs-Mission",
+      "text": "Deine Augen haben heute genug Bildschirm gesehen. Geh zum Fenster und schau 5 Minuten auf etwas Weit-entferntes — Bäume, Gebäude, den Horizont. Praktiziere die 20-20-6-Regel: Alle 20 Minuten, 20 Sekunden Pause, schaue auf etwas 6 Meter entfernt. Deine Augenmuskeln sind erschöpft vom Fokussieren auf dieselbe Distanz."
+    },
+    "acl": {
+      "title": "Richtiges Dehnen",
+      "text": "Nimm dir 5 Minuten für ein komplettes Dehnprogramm. Nacken, Schultern, Rücken, Hüften, Beine — der ganze Körper. YouTube hat tausende Schreibtisch-Dehnungen-Videos. Oder mach einfach dein eigenes Ding. Jede Dehnung 20-30 Sekunden halten. Dein Körper ist keine permanente Sitzposition."
+    },
+    "acm": {
+      "title": "Kaffee-Küchen-Pause",
+      "text": "Geh zur Kaffeeküche, aber nicht für Koffein. Füll dein Wasserglas auf, lehn dich an die Theke, rede mit einem Menschen über Nicht-Code-Dinge. Oder steh einfach da und schau in die Leere. Die Kaffeemaschine urteilt nicht. Diese sozialen Mikromomente sind wichtig, auch wenn dein Introverts-Selbst anderer Meinung ist."
+    },
+    "acn": {
+      "title": "Tiefe Atem-Session",
+      "text": "Finde einen ruhigen Ort und mach 5 Minuten Atemübungen. Box-Atmung: 4 Sekunden ein, 4 halten, 4 aus, 4 halten. Oder 4-7-8: 4 ein, 7 halten, 8 aus. Oder einfach nur tiefe, langsame Atemzüge. Dein parasympathisches Nervensystem wird vom Kampf-oder-Flucht-Modus in den Tatsächlich-funktionieren-Modus wechseln."
+    },
+    "aco": {
+      "title": "Snack + Hydration-Check",
+      "text": "Wann hast du das letzte Mal etwas gegessen, das kein Kaffee war? Hol dir einen richtigen Snack — Obst, Nüsse, was auch immer dein Körper braucht. Trink ein volles Glas Wasser. Nein, Kaffee zählt nicht. Dein Gehirn läuft auf Glukose und Flüssigkeit, nicht nur auf Willenskraft und Koffein."
+    },
+    "acp": {
+      "title": "Schreibtisch-Yoga",
+      "text": "Mach eine 5-minütige Yoga-Sequenz an deinem Schreibtisch. Katze-Kuh-Streckungen auf dem Stuhl, sitzende Drehungen, Nackenrollen, Schulterkreisen. Du brauchst keine Matte. Du brauchst keine Flexibilität. Du brauchst nur 5 Minuten und die Bereitschaft, dich leicht albern zu fühlen. Das Albern-Gefühl ist ein Feature, kein Bug."
+    },
+    "acq": {
+      "title": "Power Nap (falls möglich)",
+      "text": "Falls dein Arbeitsplatz es erlaubt: 10-20 Minuten Power Nap. Stell einen Wecker. Nicht länger — sonst wachst du groggy auf. Kurze Nickerchen verbessern nachweislich Kognition, Kreativität und Stimmung. Falls du keinen Schlafraum hast: Kopf auf den Schreibtisch, Ohrstöpsel rein, Timer setzen. Judge dich nicht selbst."
+    },
+    "acr": {
+      "title": "Playlist-Pause",
+      "text": "Leg Kopfhörer auf und hör dir zwei komplette Lieder an, die du liebst. Nichts arbeiten. Nur Musik. Schließ deine Augen, wenn du willst. Lass dein Gehirn in den Sound driften. Musik aktiviert verschiedene Gehirnregionen als Arbeit — gib deinem präfrontalen Kortex eine Pause und lass dein limbisches System spielen."
+    },
+    "acs": {
+      "title": "Schreibtisch aufräumen",
+      "text": "Nimm dir 5 Minuten, um deinen physischen oder digitalen Arbeitsbereich zu organisieren. Schließ Browser-Tabs, sortiere Dateien, wisch deinen Schreibtisch ab, organisiere Kabel. Eine saubere Umgebung = weniger kognitive Belastung. Das ist Prokrastination mit Mehrwert — du vermeidest Arbeit, während du dich produktiv fühlst."
+    },
+    "act": {
+      "title": "Soziale Verbindung",
+      "text": "Schick eine Nachricht an einen Freund, Familienmitglied oder Kollegen über etwas Nicht-arbeitsbezogenes. Nur ein kurzes 'Hey'. Menschen sind soziale Wesen. Selbst Softwareentwickler. Schockierend, aber wahr. Diese kleinen Verbindungen bekämpfen Isolation und erinnern dich daran, dass du außerhalb dieses Projekts existierst."
+    },
+    "acu": {
+      "title": "Kreative Ablenkung",
+      "text": "Mach 5-10 Minuten etwas Kreatives, das nichts mit deiner Arbeit zu tun hat. Kritzle, schreib, spiel ein Instrument, lies ein paar Seiten eines Buchs. Lass dein Gehirn in einen anderen Modus wechseln. Kreativität in einem Bereich befeuert oft Problemlösung in einem anderen. Plus, es ist einfach schön."
+    },
+    "acv": {
+      "title": "Meditation oder Achtsamkeit",
+      "text": "Setz dich bequem hin, schließ deine Augen und mach 5-10 Minuten geführte Meditation. Apps wie Headspace, Calm oder kostenlose YouTube-Videos. Oder praktiziere einfach Achtsamkeit: Fokussiere dich auf deinen Atem, bemerke Gedanken ohne Urteil, lass sie vorbeiziehen. Dein Monkey-Mind wird sich beruhigen. Eventuell."
+    },
+    "acw": {
+      "title": "Steh-Schreibtisch-Zeit",
+      "text": "Falls du einen höhenverstellbaren Schreibtisch hast: Stell ihn hoch und arbeite 20-30 Minuten im Stehen. Falls nicht: Improvisiere mit einem hohen Tisch oder einer Theke. Wechselnde Positionen reduziert Ermüdung und verbessert Durchblutung. Bonus: Du verbrennst ein paar mehr Kalorien. Nicht viele, aber hey, jeder Schritt zählt."
+    },
+    "acx": {
+      "title": "Nachmittagstief-Strategie",
+      "text": "Es ist 15 Uhr und dein Gehirn ist Matsch. Anstatt mehr Koffein: Mach 10 Jumping Jacks, spritz kaltes Wasser ins Gesicht, geh eine Treppe rauf und runter. Körperliche Bewegung bekämpft das Nachmittagstief besser als Koffein. Falls du im Büro bist und Jumping Jacks zu viel sind: Aggressive Treppensteigen funktioniert auch."
+    },
+    "acy": {
+      "title": "Gehirn-Dump-Session",
+      "text": "Nimm Stift und Papier (oder eine leere Datei) und schreib 5 Minuten lang jeden Gedanken in deinem Kopf auf. Keine Filter, keine Struktur. Arbeits-Todos, random Gedanken, Sorgen, Ideen — alles. Gedanken aus dem Kopf zu holen reduziert mentale Überlastung. Es ist wie RAM freigeben für dein Gehirn."
+    },
+    "acz": {
+      "title": "Kälte-Exposition",
+      "text": "Wasch dein Gesicht mit kaltem Wasser für 30 Sekunden. Oder lass kaltes Wasser über deine Handgelenke laufen. Kälte aktiviert deinen Vagusnerv, reduziert Stress und erhöht Wachsamkeit. Es ist wie Strg+Alt+Entf für dein Nervensystem. Wissenschaft, die sich anfühlt wie ein Schock. Das ist der Punkt."
+    },
+    "ada": {
+      "title": "Dankbarkeits-Moment",
+      "text": "Setz dich hin und denk an drei Dinge, für die du heute dankbar bist. Können große Dinge sein (Gesundheit, Familie) oder kleine (der Kaffee war gut, dein Code kompilierte im ersten Versuch). Dankbarkeit verschiebt dein Gehirn von Stress zu Zufriedenheit. Es ist mentales Hacking mit Positivität."
+    },
+    "adb": {
+      "title": "Natur-Verbindung",
+      "text": "Wenn möglich, geh 5-10 Minuten nach draußen in einen Park oder grünen Bereich. Keine Kopfhörer, kein Telefon. Nur du und Bäume. Studien zeigen, dass Zeit in der Natur Cortisol senkt, Stimmung verbessert und Kreativität steigert. Falls keine Natur in der Nähe ist: Schau Naturvideos. Zweitbeste Option."
+    },
+    "adc": {
+      "title": "Progressive Muskelentspannung",
+      "text": "Spanne jede Muskelgruppe für 5 Sekunden an, dann entspanne. Fang bei den Zehen an, arbeite dich nach oben: Füße, Waden, Oberschenkel, Gesäß, Bauch, Brust, Arme, Hände, Nacken, Gesicht. Das lehrt deinen Körper den Unterschied zwischen Spannung und Entspannung. Du hältst wahrscheinlich den ganzen Tag Spannung, ohne es zu merken."
+    },
+    "add": {
+      "title": "Journaling-Pause",
+      "text": "Nimm dir 5-10 Minuten für freies Schreiben. Wie fühlst du dich? Was läuft gut? Was nervt dich? Keine Regeln, keine Struktur. Journaling hilft, Emotionen zu verarbeiten, Klarheit zu gewinnen und Stress zu reduzieren. Außerdem hast du dann später ein peinliches Artefakt, um über deine vergangenen Sorgen zu lachen."
+    },
+    "ade": {
+      "title": "Stretching-Routine",
+      "text": "Mach eine richtige 10-minütige Stretching-Routine. Berühre deine Zehen (oder versuch es), Quad-Stretches, Hüftöffner, Schulterrollen, Nackendehnungen. Halt jede Stretch 20-30 Sekunden. Atme tief. Beweglichkeit ist etwas, das du nicht vermisst, bis es weg ist. Bleib beweglich, mein Freund."
+    },
+    "adf": {
+      "title": "Handy-freie-Zone",
+      "text": "Leg dein Handy komplett weg für 15 Minuten. Nicht nur Face-Down. Weg — in einer Schublade, einer Tasche, einem anderen Raum. Setz dich einfach hin. Oder geh spazieren. Oder starr aus dem Fenster. Merk, wie oft du reflexartig danach greifen willst. Beobachte diese Sucht. Urteile sie. Überwinde sie. Für 15 Minuten."
+    },
+    "adg": {
+      "title": "Quickie-Workout",
+      "text": "Mach eine 7-minütige Workout-Routine. Kniebeugen, Push-ups, Planks, Jumping Jacks, Crunches — was auch immer du kannst. Es gibt tonnenweise Apps und Videos. Kurze, intensive Übungsschübe steigern Energie, Stimmung und Fokus. Du wirst danach nicht buff sein, aber du wirst dich lebendiger fühlen."
+    },
+    "adh": {
+      "title": "Kreatives Problem lösen",
+      "text": "Nimm ein Arbeitsproblem und denk darüber auf komplett nicht-lineare Weise nach. Zeichne es, schreib es als Geschichte, erkläre es einem imaginären Fünfjährigen, denk an absurde Lösungen. Manchmal schaltet sich das analytische Gehirn aus und macht Platz für Kreativität. Die beste Lösung kommt oft, wenn du aufhörst, dich zu bemühen."
+    },
+    "adi": {
+      "title": "Bad nehmen (wenn möglich)",
+      "text": "Falls du remote arbeitest und eine Badewanne hast: Nimm ein 15-minütiges warmes Bad. Füg Bittersalz oder Öle hinzu, wenn du fancy bist. Wärme entspannt Muskeln, Wasser entlastet Gelenke, Einsamkeit gibt mentale Ruhe. Falls du im Büro bist: Ignoriere diesen Vorschlag oder werde wirklich kreativ mit dem Waschraum. Nicht empfohlen."
+    },
+    "adj": {
+      "title": "Lern etwas Neues",
+      "text": "Verbringe 10 Minuten damit, etwas Neues zu lernen, das nichts mit deiner Arbeit zu tun hat. Ein paar Sätze einer Fremdsprache, ein Zaubertrick, Origami, ein historischer Fakt. Dein Gehirn liebt Neuheit. Neue Informationen erzeugen neue neuronale Pfade. Plus, es ist eine gute Cocktailparty-Trivia. Falls du jemals auf Cocktailpartys gehst."
+    },
+    "adk": {
+      "title": "Lachen-Therapie",
+      "text": "Schau dir ein lustiges Video an, lies Comics, ruf einen lustigen Freund an — alles, das dich zum Lachen bringt. Lachen reduziert Stresshormone, erhöht Endorphine und entspannt Muskeln. Es ist wortwörtlich Medizin. Die beste Art. Die Art, die keine Rezepte oder Nebenwirkungen benötigt. Außer vielleicht Bauchweh vom Lachen."
+    },
+    "adl": {
+      "title": "Digital Detox Mini",
+      "text": "Schließ alle Arbeits-Apps für 15 Minuten. Slack, E-Mail, Projektmanagement-Tools — alles. Sag deinem Team Bescheid, wenn du musst. Dann mach etwas komplett Offline. Geh spazieren, lies ein physisches Buch, starr an die Decke. Konstante Konnektivität ist erschöpfend. Dein Gehirn braucht echte Pausen, nicht nur App-Wechsel."
+    },
+    "adm": {
+      "title": "Aufgaben-Dump",
+      "text": "Mach eine komplette Gehirn-Dump aller Aufgaben, Sorgen und To-Dos. Schreib sie alle auf. Dann kategorisiere: Dringend, Wichtig, Später, Niemals. Priorisiere die Liste. Nun hast du einen Plan anstatt mentalem Chaos. Dein Arbeitsgedächtnis ist jetzt frei. Du hast gerade mentales RAM freigegeben."
+    },
+    "adn": {
+      "title": "Blutzucker-Achterbahn",
+      "text": "Dieser Energieabfall am Nachmittag? Teilweise ein Blutzuckertief nach kohlenhydratreichem Mittagessen. Geh 5 Minuten spazieren nach dem Essen — Bewegung stabilisiert den Blutzucker und verhindert den Post-Lunch-Absturz. Oder wähl Protein und gesunde Fette statt Pasta und Brot."
+    },
+    "ado": {
+      "title": "Eingeschlafene-Beine-Protokoll",
+      "text": "Kribbeln oder Taubheit in den Beinen nach dem Sitzen wird durch eingeklemmte Nerven und reduzierten Blutfluss verursacht. Steh auf, schüttle die Beine aus, mach 20 Kniehebungen. Wenn's regelmäßig passiert: Stell einen Timer für jede Stunde und beweg dich. Dauerhafte Nervenkompression ist kein Witz."
+    },
+    "adp": {
+      "title": "Licht-Audit",
+      "text": "Schlechte Beleuchtung verursacht Augenermüdung, Kopfschmerzen und Müdigkeit. Dein Bildschirm sollte ungefähr gleich hell sein wie deine Umgebung — nicht die einzige Lichtquelle im Raum. Position dein Display senkrecht zu Fenstern, um Blendung zu vermeiden. Investiere in eine Schreibtischlampe mit einstellbarer Helligkeit."
+    },
+    "adq": {
+      "title": "Kopfhörer-Pausen-Protokoll",
+      "text": "Audiologen empfehlen die 60/60-Regel: nicht mehr als 60% Lautstärke für nicht mehr als 60 Minuten am Stück. Danach: 5-10 Minuten Pause für deine Ohren. Ständiger Lärm, selbst bei moderater Lautstärke, ermüdet dein Gehör. Deine zukünftigen Ohren werden es dir danken."
+    },
+    "adr": {
+      "title": "Mikro-Workout",
+      "text": "Du brauchst kein Fitnessstudio. Mach jetzt: 10 Kniebeugen, 10 Push-ups (oder Wand-Push-ups), 10 Wadenhebungen. Das dauert 90 Sekunden. Diese Mini-Workouts über den Tag verteilt summieren sich. Bonus: Sie durchbrechen die Sitzfalle und steigern Energie und Stimmung sofort."
+    },
+    "ads": {
+      "title": "Der Ausdruck-Trick",
+      "text": "Schreiber und Redakteure: Versuch, deinen Entwurf auszudrucken und auf Papier zu lesen. Du wirst Fehler entdecken, die dein Bildschirm-müdes Gehirn übersehen hat. Der Medien-Wechsel aktiviert andere Verarbeitungs-Bereiche. Altmodisch, aber effektiv. Bäume, sorry."
+    },
+    "adt": {
+      "title": "Wirbelsäulen-Dekompression",
+      "text": "Deine Wirbelsäule komprimiert sich den ganzen Tag durch die Schwerkraft. Versuch das: Steh mit schulterbreiten Füßen, verschränke die Finger über dem Kopf, Handflächen nach oben, streck dich und steh auf die Zehenspitzen. Halte 10 Sekunden. Spüre, wie sich deine Wirbelsäule streckt."
+    },
+    "adu": {
+      "title": "Die Aufmerksamkeits-Steuer",
+      "text": "Jede Benachrichtigung, jeder Badge, jede ungelesene Nachricht ist eine kleine Steuer auf deine Aufmerksamkeit. Über den Tag summiert sich das zu massiver kognitiver Belastung. Nimm dir 5 Minuten: Schalte alle nicht-dringenden Benachrichtigungen aus. Batch-verarbeite Nachrichten zu festen Zeiten. Deine Konzentration wird es dir danken."
+    },
+    "adv": {
+      "title": "Handgelenk-Pflege-Station",
+      "text": "Deine Handgelenke verarbeiten etwa 40.000 Tastenanschläge pro Tag. Streck deinen rechten Arm aus, Handfläche nach unten, ziehe mit der linken Hand die Finger sanft nach unten. Halte 20 Sekunden. Dann Handfläche nach oben, ziehe Finger nach unten. Wiederhole mit dem anderen Arm. Mach das dreimal täglich."
+    },
+    "adw": {
+      "title": "Der Debug-Spaziergang",
+      "text": "Studien an Stanford und anderen Unis bestätigen: Spazierengehen verbessert kreatives Problemlösen um bis zu 60%. Steckst du bei einem Bug fest? Geh 10 Minuten spazieren ohne Kopfhörer. Lass dein Gehirn im Hintergrund arbeiten. Die Lösung kommt oft, wenn du aufhörst, dich anzustrengen."
+    },
+    "adx": {
+      "title": "Muskelgedächtnis-Reset",
+      "text": "Dein Körper passt sich der Position an, die du am längsten hältst. Nach Stunden des Sitzens denken deine Muskeln buchstäblich, das ist deine neue neutrale Position. Steh auf, streck dich, geh 5 Minuten. Trainiere deinen Körper neu, dass aufrecht stehen normal ist, nicht zusammengesunken sitzen."
+    },
+    "ady": {
+      "title": "Augenmuskel-Workout",
+      "text": "Deine Augen haben je sechs Muskeln, und das Starren auf eine feste Bildschirmdistanz macht sie steif. Versuch das: Halte einen Stift auf Armeslänge. Fokussiere darauf, dann auf etwas 6 Meter entferntes. Wechsel 10 Mal hin und her. Das ist wie Bizeps-Curls für deine Augen."
+    },
+    "adz": {
+      "title": "Gehirn-Probe-Wissenschaft",
+      "text": "Neurowissenschaft zeigt: Dein Gehirn wiederholt und festigt Fähigkeiten während der Ruhe, nicht während der Übung. NIH-Studien zeigen, dass kurze Pausen zwischen Lern-Sessions die Gedächtnisbildung verbessern. Deine Pausen sind nicht Faulenzen — sie sind wenn dein Gehirn den heutigen Input verarbeitet."
+    },
+    "aea": {
+      "title": "Snack mit Sinn",
+      "text": "Wenn du schon snackst, mach es richtig. Nüsse, dunkle Schokolade, Beeren und grüner Tee enthalten alle Verbindungen, die nachweislich die kognitive Funktion steigern. Vermeide zuckerhaltige Snacks — sie geben einen schnellen Schub, gefolgt von einem Absturz. Geh für nachhaltige Energie, nicht für Spikes."
+    },
+    "aeb": {
+      "title": "Der Cortisol-Reset",
+      "text": "In einer gestressten, gebeugten Haltung zu sitzen erhöht tatsächlich den Cortisolspiegel. Amy Cuddys Forschung (umstritten, aber interessant) schlägt vor: 2 Minuten in einer Power-Pose können Stress reduzieren. Steh auf, Hände auf Hüften, Brust raus, Kinn hoch. Fühle dich albern. Mach es trotzdem."
+    },
+    "aec": {
+      "title": "Mikro-Nickerchen-Wissenschaft",
+      "text": "Ein 6-minütiges Nickerchen verbessert die Gedächtniskonsolidierung laut Forschung der Uni Düsseldorf. NASA-Studien zeigen: 26-minütige Nickerchen steigern Leistung um 34% und Wachsamkeit um 54%. Falls möglich: Stell einen 20-Minuten-Timer. Nicht länger oder du wachst groggy auf. Kurz und effektiv."
+    },
+    "aed": {
+      "title": "Geh-Meditation",
+      "text": "Geh 3 Minuten lang langsam und bewusst. Konzentriere dich auf die Empfindung jedes Schrittes — Ferse zu Zehe, Gewichtsverlagerung, Bodenkontakt. Wenn dein Verstand abschweift (wird er), bringe ihn sanft zurück zu deinen Füßen. Das ist Achtsamkeits-Training getarnt als Spaziergang."
+    },
+    "aee": {
+      "title": "Triggerpunkt-Therapie",
+      "text": "Fühlst du diesen Knoten zwischen Schulterblatt und Wirbelsäule? Das ist ein Triggerpunkt im Rhomboid-Muskel — häufig bei Schreibtischarbeitern. Lehne dich gegen eine Wand oder benutze einen Tennisball. Finde den Knoten, drücke sanft 20-30 Sekunden. Atme. Wiederhole. Schmerzhaft, aber befreiend."
+    },
+    "aef": {
+      "title": "Bildschirm-Distanz-Check",
+      "text": "Dein Monitor sollte etwa 50-70 Zentimeter von deinen Augen entfernt sein — ungefähr eine Armlänge. Zu nah zwingt deine Augen zu stark zu konvergieren, was Ermüdung verursacht. Zu weit zwingt dich zum Vorbeugen, was Nacken- und Rückenprobleme verursacht. Mach die Armlängen-Test jetzt."
+    },
+    "aeg": {
+      "title": "Der kreative Umweg",
+      "text": "Neurowissenschaft nennt es 'Inkubation' — das Phänomen, dass das Weggehen von einem Problem dein Gehirn im Hintergrund daran arbeiten lässt. Das Default Mode Network aktiviert sich während Pausen und macht unerwartete Verbindungen. Steckst du fest? Geh weg. Dein Unterbewusstsein übernimmt."
+    },
+    "aeh": {
+      "title": "Durchblutungs-Checkpoint",
+      "text": "Nach 30 Minuten Sitzen sinkt die Durchblutungsrate durch deine Beinarterien erheblich. Studien zeigen: Stundenlanges Sitzen erhöht Risiken für Blutgerinnsel und Herz-Kreislauf-Probleme. Lösung: Stell einen 30-Minuten-Timer. Wenn er klingelt: Steh auf, mach 10 Wadenhebungen, setz dich wieder. Wiederholen."
+    },
+    "aei": {
+      "title": "Kiefer- und TMJ-Linderung",
+      "text": "Stress, Konzentration und Bildschirmarbeit führen oft zu unbewusstem Kieferpressen, was zu TMJ-Problemen, Kopfschmerzen und Zahnschäden führen kann. Übung: Lege deine Zunge sanft an dein Gaumendach. Das verhindert automatisch Pressen. Massiere deine Kiefergelenke in kreisenden Bewegungen. Öffne weit, dann entspanne."
+    },
+    "aej": {
+      "title": "Hydration und Gehirnleistung",
+      "text": "Selbst leichte Dehydrierung (1-2% Körpergewicht) beeinträchtigt Konzentration, erhöht wahrgenommene Aufgabenschwierigkeit und reduziert kognitive Leistung. Dein Gehirn ist zu 75% Wasser. Trink ein volles Glas jetzt. Kein Kaffee — das dehydriert. Klares Wasser. Wenn dein Urin dunkelgelb ist, trinkst du nicht genug."
+    },
+    "aek": {
+      "title": "Tab-Bankrott",
+      "text": "Wenn du mehr als 20 Browser-Tabs offen hast, machst du nicht Multitasking — du sammelst kognitive Schulden an. Jeder Tab ist eine unvollendete Aufgabe, die mentale Ressourcen belegt. Nimm dir 5 Minuten: Schließe alles außer den 3-5 Tabs, die du tatsächlich brauchst. Setze den Rest als Lesezeichen. Spüre die mentale Erleichterung."
+    },
+    "ael": {
+      "title": "Ulnaris-Nerv-Check",
+      "text": "Kribbeln dein kleiner Finger und Ringfinger oder werden taub? Das ist wahrscheinlich dein Ulnaris-Nerv, der am Ellbogen komprimiert wird (der 'lustige Knochen'-Nerv). Streck deinen Arm komplett aus, beuge das Handgelenk nach hinten. Halte 15 Sekunden. Wiederhole 3 Mal. Wenn's chronisch ist: Arzt aufsuchen."
+    },
+    "aem": {
+      "title": "Wand-Stretch-Kombo",
+      "text": "Steh auf Armeslänge vor einer Wand. Lege beide Hände auf Schulterhöhe an die Wand und lehne dich in eine Dehnung — wie eine stehende Push-up-Position. Halte 20 Sekunden. Das öffnet Brust und Schultern — das Gegenteil deiner gebeugten Schreibtischhaltung. Mach es 3 Mal."
+    },
+    "aen": {
+      "title": "Die Fokus-Dividende",
+      "text": "Eine DeskTime-Studie der Top-Performer fand das produktivste Muster: 52 Minuten fokussierte Arbeit, gefolgt von 17 Minuten Pause. Nicht zufällig — das stimmt mit ultradian Rhythmen überein (90-120 Minuten Aufmerksamkeitszyklen). Experimentiere: Arbeite in intensiven Blöcken, dann richtige Pausen. Keine halben Sachen."
+    },
+    "aeo": {
+      "title": "Vitamin-D-Schreibtisch-Check",
+      "text": "Wenn du den ganzen Tag drinnen arbeitest, hast du wahrscheinlich Vitamin-D-Mangel — bis zu 42% der Erwachsenen haben das. Vitamin D beeinflusst Stimmung, Immunfunktion und Knochengesundheit. Lösung: Geh täglich 10-15 Minuten in die Sonne (wenn möglich), oder erwäge Supplements nach Rücksprache mit deinem Arzt."
+    },
+    "aep": {
+      "title": "Knöchel-Mobilität",
+      "text": "Deine Knöchel tragen dein gesamtes Körpergewicht, werden aber selten gedehnt. Versuch das: Steh auf einem Bein und schreib mit dem anderen das Alphabet in die Luft mit deinen Zehen. Andere Seite. Das verbessert Knöchelmobilität und Balance. Bonus: Es ist albern und deshalb lustig."
+    },
+    "aeq": {
+      "title": "Das Prokrastinations-Paradox",
+      "text": "Prokrastination ist keine Faulheit — es ist ein Emotionsregulations-Problem. Du vermeidest Aufgaben, die Angst, Langeweile oder Unsicherheit auslösen. Lösung: Mach nur den ersten Schritt. Nicht die ganze Aufgabe — nur öffne die Datei. Beginne einen Satz. Schreibe eine Zeile Code. Anfangen ist alles."
+    },
+    "aer": {
+      "title": "Feierabend-Ritual",
+      "text": "Bevor du deinen Laptop schließt, nimm dir 3 Minuten: Schreibe auf, was du erreicht hast, was ansteht und was deine oberste Priorität morgen ist. Das gibt deinem Gehirn Erlaubnis loszulassen. Ohne dieses Ritual läufst du Gefahr, den ganzen Abend über Arbeit zu grübeln. Schaffe Abschluss."
     }
   },
   "ui": {

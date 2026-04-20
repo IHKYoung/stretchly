@@ -272,6 +272,279 @@
     },
     "adm": {
       "text": "Su monitor helistas. Ta ütleb, et oled liiga kaua liiga lähedal olnud."
+    },
+    "adn": {
+      "text": "Sinu kood ei paranda end iseenesest, kui sa siia istud. Ausalt öeldes ka siis mitte, kui püsti tõused. Aga vähemalt selgroog andestab."
+    },
+    "ado": {
+      "text": "Seleta oma bug'i kujuteldavale kummipardale. Kui see ei aita, räägi seinaga. Seinad on suurepärased kuulajad."
+    },
+    "adp": {
+      "text": "Sinu randmed on täna tuhandeid sõnu tipitanud. Venita neid — siruta käsi ja tõmba õrnalt sõrmed tagasi."
+    },
+    "adq": {
+      "text": "Oled kogu codebase'i peas hoidnud. Pane ta 20 sekundiks maha."
+    },
+    "adr": {
+      "text": "Ootad build'i valmimist? Ideaalne. Tõuse püsti ja venita. See on töötund."
+    },
+    "ads": {
+      "text": "Sul on 47 lugemata Slack'i sõnumit. Need võivad veel 20 sekundit oodata. Pilguta."
+    },
+    "adt": {
+      "text": "\"Mul pole aega pausiks\" on see, kuidas sa lõpuks palju pikema, sunnitud pausi teed."
+    },
+    "adu": {
+      "text": "Code review järgne aju on päris. Sulge silmad ja lase neuronitel vaielda lõpetada."
+    },
+    "adv": {
+      "text": "Kirjutamisblokk? Tõuse püsti. Kõndi 10 sammu. Istu tagasi. Lõik hakkab sinu naasmist kartma."
+    },
+    "adw": {
+      "text": "Otsuste väsimus on päris. Lõpeta valimine. Lihtsalt hinga 20 sekundit."
+    },
+    "adx": {
+      "text": "Kell on 15. Veresuhkur kukkus. Tõuse, venita ja võta suupiste."
+    },
+    "ady": {
+      "text": "Su jalad on laua all olemas. Tuleta neile meelde püsti tõustes."
+    },
+    "adz": {
+      "text": "Su puusapainutajad on tunde loote asendis olnud. Tõuse ja tee väljapaine."
+    },
+    "aea": {
+      "text": "Su keskselg on kinni. Haara käed kukla taha ja kõverda õrnalt tahapoole."
+    },
+    "aeb": {
+      "text": "Küünarvarre venitus: siruta käsi, peopesa ülesse, ja tõmba sõrmed õrnalt alla. RSI ennetamine 10 sekundiga."
+    },
+    "aec": {
+      "text": "Järgmise kõne ajal proovi kõndides rääkida. Su aju töötab liikumises paremini."
+    },
+    "aed": {
+      "text": "Trepid on olemas. Kõnni neid. Su südame-veresoonkond saadab tänutähte."
+    },
+    "aee": {
+      "text": "Ekraani heledus: kas see sobib ruumiga või on su nägu taskulamp? Reguleeri."
+    },
+    "aef": {
+      "text": "Sinine valgus ei hävita su elu, aga ekraan on tõenäoliselt liiga ere. Tuhmenda ühe võrra."
+    },
+    "aeg": {
+      "text": "Kõrvaklapid on tunde peas olnud. Anna kõrvadele paus. Need pole maratoniks loodud."
+    },
+    "aeh": {
+      "text": "Tänane une kvaliteet algab praegu. Vaata ekraanist ära ja lase silmadel puhata."
+    },
+    "aei": {
+      "text": "Sihid kõrsikeste järgi? Proovi peotäis pähkleid. Su aju töötab paremal kütusel kui arvad."
+    },
+    "aej": {
+      "text": "Süvisfookus on hea. Süvisisolatsioon ei ole. Millal sa viimati inimesega rääkisid?"
+    },
+    "aek": {
+      "text": "Kui sul on seisulaud, siis nüüd on hea aeg vahetada. Kui pole, siis tõuse ikkagi."
+    },
+    "ael": {
+      "text": "Istudes keerdumine: pane parem käsi vasaku põlve peale, keeru, hoia 10 sekundit. Vaheta. Toolijooga, matti pole vaja."
+    },
+    "aem": {
+      "text": "Kas tuba on liiga soe? Jahedamad temperatuurid parandavad fookust. Ava aken või reguleeri termostaati."
+    },
+    "aen": {
+      "text": "Võta kõrvaklapid ära. Kuula tegelikke hääli enda ümber 20 sekundit."
+    },
+    "aeo": {
+      "text": "Oled kogu süsteemi mentaalset mudelit peas hoidnud. See on kurnav. Lase hetkeks lahti."
+    },
+    "aep": {
+      "text": "git commit -m \"tegin pausi\". Parim commit message, mida täna kirjutad."
+    },
+    "aeq": {
+      "text": "Stack Overflow ei aita sul venitada. Tõuse. See on ainus asi, mida pead ise tegema."
+    },
+    "aer": {
+      "text": "Tähtaeg ei nihku, kui 20 sekundit venitad. Aga lülisammas liigub. Heas mõttes."
+    },
+    "aes": {
+      "text": "Vaatad sama lõiku juba 10 minutit? Prindi see välja ja märgi pliiatsiga üle. Muuda meediumit, muuda perspektiivi."
+    },
+    "aet": {
+      "text": "Just deploy'isid midagi? Saatsid mustandit? Tõuse ja tee võiduvenitus. Oled väärt."
+    },
+    "aeu": {
+      "text": "Tähtaja-eelsed närvid? Liigu. Ärevus elab paigal olemises."
+    },
+    "aev": {
+      "text": "Kontrolli ekraani heledust. Kui näed peegeldust, siis on ruumi jaoks liiga ere."
+    },
+    "aew": {
+      "text": "Söö suupiste klaviatuurist eemal. Su krõbised ei kuulu klahvide vahele."
+    },
+    "aex": {
+      "text": "5-minutine jalutuskäik genereerib rohkem ideid kui 30 minutit tühja lehte vahtimist. Teadus ütleb nii."
+    },
+    "aey": {
+      "text": "Sul on 38 tab'i lahti. Sulge need, mida sa kunagi ei loe. See pole koguja... okei, see on koguja."
+    },
+    "aez": {
+      "text": "Kui oled sama lauset viis korda lugenud ja see ikka ei tee mõtet, siis aju ütleb: kõndi ära."
+    },
+    "afa": {
+      "text": "Selgroo jaoks Ctrl+Z ei ole. Tõuse ja hoolitse selle eest kohe."
+    },
+    "afb": {
+      "text": "Su teine monitor ei näe sind venitamas. Mine, ta ei hukka mõista."
+    },
+    "afc": {
+      "text": "Kohv ei asenda puhkust. Aga sa teadsid seda. Joo koos sellega ka vett."
+    },
+    "afd": {
+      "text": "Bug on ikka veel seal, kui tagasi tuled. Aga nägid seda värskete silmadega."
+    },
+    "afe": {
+      "text": "Kulutasid just 10 minutit muutuja nimetamisele. Su aju väärib pausi."
+    },
+    "aff": {
+      "text": "Meetingud on läbi. Dekompresseeri. Keera kaela aeglaselt vasakule, siis paremale."
+    },
+    "afg": {
+      "text": "Su postkast elab sind ilma 60 sekundit üle. Vaata aknast välja."
+    },
+    "afh": {
+      "text": "Kui hiire-käsi krampib, vaheta minutiks käsi. Tundub veider. See ongi eesmärk."
+    },
+    "afi": {
+      "text": "Kipuvad sõrmed? See on sinu närvid, mis paluvad venitust. Randme ringid, 10 mõlemas suunas."
+    },
+    "afj": {
+      "text": "Liiga kaua püsti olnud? Istu natuke. Eesmärk on vaheldus, mitte kannatamine."
+    },
+    "afk": {
+      "text": "Aeg minna AFK. Sõna otseses mõttes. Step Away From Keyboard."
+    },
+    "afl": {
+      "text": "Kui sul on lauataim, vaata järgi. Kui see on suremas, see on metafoor. Kasta mõlemaid."
+    },
+    "afm": {
+      "text": "Ava aken. Värske õhk teeb su ajule seda, mida külm restart arvutile."
+    },
+    "afn": {
+      "text": "Pane lõug rinna peale ja hoia 10 sekundit. Kaela tagumine pool on terve päeva pinges olnud."
+    },
+    "afo": {
+      "text": "Pigista istudes tuharalihast. Hoia 5 sekundit. Vabasta. Keegi ei tea. Salajane fitness."
+    },
+    "afp": {
+      "text": "Istudes reieluu venitus: siruta üks jalg, ulatu varvaste poole, hoia 10 sekundit. Vaheta."
+    },
+    "afq": {
+      "text": "Su silmad toodavad vähem pisaraid, kui keskendud ekraanile. Pilguta aeglaselt ja teadlikult 10 korda."
+    },
+    "afr": {
+      "text": "Sügav hingamine langetab vererõhku reaalajas. Hinga sisse 4, välja 6. Korda kolm korda."
+    },
+    "afs": {
+      "text": "Tõuse ja lase gravitatsioonil selgrogu lahti suruda. Riputa käed ja hinga 15 sekundit."
+    },
+    "aft": {
+      "text": "Tead 200 klaviatuuri kiirkäsku. Aeg õppida üks keha kiirkäsk: tõuse, venita, istu. Korda."
+    },
+    "afu": {
+      "text": "Vaheta IDE hele režiimi 5 minutiks. Või tumedasse. Muuda midagi. Reseti visuaalne korteks."
+    },
+    "afv": {
+      "text": "Oled vilkuvat kursorit vaadanud. Nüüd sulge silmad ja näe 20 sekundit mitte midagi. Luksus."
+    },
+    "afw": {
+      "text": "Vaata aknast välja ja leia kõige kaugem asi, mida näed. Keskenduta sellele. Su silmalihased vajavad seda."
+    },
+    "afx": {
+      "text": "Kõndi kööki. Mitte mingil põhjusel. Lihtsalt kõndi. Liikumine on ravim."
+    },
+    "afy": {
+      "text": "Leia trepp ja venita säärelihast astme serval. Hoia 15 sekundit kummalgi pool."
+    },
+    "afz": {
+      "text": "Su kõrvad on olnud klappide all tunde. Võta need ära ja naudi vaikust."
+    },
+    "aga": {
+      "text": "Ajuudu? See on su prefrontaalne korteks, millel on aku tühi. Tõuse, liigu, lase rebuudida."
+    },
+    "agb": {
+      "text": "Multitasking on müüt. Su aju lihtsalt teeb kontekstivahetus overhead'iga. Võta single-threaded paus."
+    },
+    "agc": {
+      "text": "Iga kontekstivahetuse järel kulub 23 minutit refookuseerimiseks. See paus maksab 20 sekundit. Tee matemaatikat."
+    },
+    "agd": {
+      "text": "Perfektsionism on prokrastineerimine laborikaabust. Kõndi ära. Done on parem kui perfect."
+    },
+    "age": {
+      "text": "Tunned end petisena? Kõik tunnevad vahel. Tõuse ja venita — petised ei tee enesehoolitsust."
+    },
+    "agf": {
+      "text": "E-maili refresh'imine iga 30 sekundi tagant pole produktiivsus. Tõuse püsti. See on produktiivsus."
+    },
+    "agg": {
+      "text": "Loov blokk? Muuda füüsilist asendit. Uus postuur, uus perspektiiv."
+    },
+    "agh": {
+      "text": "Su alaselg esitab kaebuse. Liuku tooli servale ja istu sirgelt 30 sekundit."
+    },
+    "agi": {
+      "text": "Õlavalu on su keha code review kommentaar: \"Vajab muudatusi.\" Keera neid tagasi 10 korda."
+    },
+    "agj": {
+      "text": "Randmevalu pärast kodeerimist? Tee õrnad rusikad ja pööra aeglaselt. 10 ringi kummaski suunas."
+    },
+    "agk": {
+      "text": "Rista pahkluu vastaskülje põlve kohale ja kummarda ette. Puusaavaja. Hoia 15 sekundit. Vaheta."
+    },
+    "agl": {
+      "text": "Vaata kolleegile silma ja ütle midagi toredat. Inimkontakt võidab iga notifikatsiooni."
+    },
+    "agm": {
+      "text": "Kuula 30 sekundit loodusheli — vihm, linnud, ookean. Su närvisüsteem downshift'ib."
+    },
+    "agn": {
+      "text": "Süvisfookus on sprint, mitte maraton. Sa just sprintisid. Kõndi see välja."
+    },
+    "ago": {
+      "text": "Postuuri kontroll: kas kaldu ekraani poole nagu see võlgneks sulle raha? Istu tagasi."
+    },
+    "agp": {
+      "text": "Söö midagi. Aga maitsta seekord. Nähka aeglaselt. Su lõunatund pole speedrun."
+    },
+    "agq": {
+      "text": "Millal sa viimati vett jõid? Mitte kohvi. Vett. Mine."
+    },
+    "agr": {
+      "text": "Kui päevavalgus on saadaval, hangi natuke nahale. Su tsirkaadne rütm palub."
+    },
+    "ags": {
+      "text": "Kas tuba on liiga külm või kuum? Reguleeri. Termiline mugavus mõjutab otseselt kontsentratsiooni."
+    },
+    "agt": {
+      "text": "Box breathing: sisse 4, hoia 4, välja 4, hoia 4. Su närvisüsteemi lemmik tsükkel."
+    },
+    "agu": {
+      "text": "Tõsta kulmud nii kõrgele kui saad. Hoia 5 sekundit. Vabasta. Su otsaesine oli pinges rohkem kui arvasid."
+    },
+    "agv": {
+      "text": "Sirita sõrmi nii laialt kui suudad. Hoia 5 sekundit. Nüüd tee pingul rusikas. Korda kolm korda."
+    },
+    "agw": {
+      "text": "Pinguta istudes kõhtu. Tõmba naba selgroo poole ja hoia 10 sekundit."
+    },
+    "agx": {
+      "text": "Seisa varvaste otsas 10 sekundit. Nüüd kiiguta tagasi kannale. Korda. Mikro-balansitrenn."
+    },
+    "agy": {
+      "text": "Märka oma hingamist. Ära muuda seda. Lihtsalt märka. See on mindfulness ja sa just tegid seda."
+    },
+    "agz": {
+      "text": "See pausimeeldetuletus on kirjutatud inimese poolt, kes samuti pausimeeldetuletusi ignoreerib. Ära ole nagu meie. Venita."
     }
   },
   "preferences": {
@@ -662,6 +935,250 @@
     "aci": {
       "title": "Pilvede vaatamine",
       "text": "Kui näed taevast, kuluta minut pilvede vaatamisele. See on algne ekraanisäästja — ja annab ajule pehmefookuse, mis soodustab loovat mõtlemist."
+    },
+    "acj": {
+      "title": "Kummipaardi tarkus",
+      "text": "Programmeerijad kasutavad kummiparti koodi selgitamiseks ja bugide leidmiseks. Aga päris maagia? Probleemist täielikult eemale astumine. Su alateadvus töötleb edasi, samal ajal kui venitad. Tuled tagasi ja lahendus on lihtsalt... seal."
+    },
+    "ack": {
+      "title": "RSI pole märk",
+      "text": "Repetitive Strain Injury mõjutab kuni 64% arvutitöötajatest. Varajased märgid — kipitus, kangus, randmevalu — on kerge ignoreerida ja kallis hiljem ravida. Venita küünarvarsi: siruta käsi, peopesa alla, ja tõmba õrnalt sõrmed enda poole. Hoia 15 sekundit kummalgi pool."
+    },
+    "acl": {
+      "title": "Compile-time venitus",
+      "text": "Ootad build'i, deploy'd või testikomplekti? See pole surnud aeg — see on tasuta venitusaeg. Tõuse püsti, puuduta varvaseid (või proovi), ja keeru aeglaselt tagasi üles. Su kood ja selgroog on mõlemad valmis, kui lõpetab."
+    },
+    "acm": {
+      "title": "Tähelepanu killud",
+      "text": "Keskmine teadmustöötaja kontrollib e-maili või sõnumeid iga 6 minuti tagant. Iga kontroll maksab kontekstivahetuse, mille taastumiseks kulub 23 minutit. Selle pausi ajal pane telefon ekraaniga alla ja sulge vestlusrakendused. Võida tähelepanu tagasi üks paus korraga."
+    },
+    "acn": {
+      "title": "Hõivatuse paradoks",
+      "text": "Stanfordi uuringud näitavad, et pausideta töötamine ei tee sind kiiremaks — see teeb sind aeglasemaks, vähem täpseks ja tõenäolisemaks tegema vigu, mille parandamiseks kulub veelgi kauem. Pauside tegemine pole laisklus. See on efektiivsuse inseneeria."
+    },
+    "aco": {
+      "title": "Code review järgne taastumine",
+      "text": "Just review'st ellu jäänud? Või tegid ise? Kummalgi juhul on su aju hüperkriitilises režiimis olnud. Aeg vahetada käiku. Tõuse püsti, raputa käsi lahti, keera õlgu ja lase ajul üle minna 'kohtuniku režiimist' 'puhkuse režiimi'."
+    },
+    "acp": {
+      "title": "Tühi leht, täis keha",
+      "text": "Kirjutamisblokk pole loovuse probleem — see on sageli keha probleem. Kui oled füüsiliselt pinges, karmistub ka mõtlemine. Kõndi 5 minutit ringi. Venita käed pea kohale. Sõnad tulevad tagasi ja need on paremad."
+    },
+    "acq": {
+      "title": "Kella 15 kraater",
+      "text": "See lõunajärgne energiakukkumine on põhjustatud su tsirkaadsest rütmist, mitte ainult sellest, mida sõid. Selle asemel, et kohvi järele sirutada, proovi 5-minutilist jalutuskäiku või kerget venitust. Liikumine tõstab kortisool loomulikult ja resedib tähelepanu ilma kofeiini kraaterita hiljem."
+    },
+    "acr": {
+      "title": "Surnud jalgade sündroom",
+      "text": "Istumine surub jalgade veresooned kokku ja vähendab vereringet. Pärast 90 minutit istumist võib verevool jalgadesse langeda 50%. Tõuse püsti, kõndi ringi või tee 10 säärelihase tõusmist. Su jalad — ja südame-veresoonkond — tänavad."
+    },
+    "acs": {
+      "title": "Puusapainutajate SOS",
+      "text": "Su puusapainutajad lühenevad ja pingestuvad pikaajalise istumise järel, tõmmates vaagnat ettepoole ja põhjustades alaseljavalu. Proovi seda: tõuse püsti, sammu üks jalg tagasi väljapainde, ja suruta puusad ettepoole. Hoia 30 sekundit kummalgi pool. See on kõige hooldusetum lauatöötaja venitus."
+    },
+    "act": {
+      "title": "Torakaalse keerdus",
+      "text": "Su rindkere selgroog (keskselg) jääb lukku klaviatuuri kohale kükitamisest. Istu tooli servale, rista käed rinna ette ja keera aeglaselt vasakule ja paremale. Hoia kummalgi pool 10 sekundit. Peaksid tundma, kuidas asjad paika loksuvad."
+    },
+    "acu": {
+      "title": "Küünarvarsi päästmine",
+      "text": "Su küünarvarred sisaldavad 20 lihast, mis kontrollivad sõrmi ja randmeid. Pärast tundide pikkust tipitamist ja hiire kasutamist on need ammendunud. Siruta üks käsi peopesaga väljapoole ja tõmma õrnalt sõrmed teise käega tagasi. Hoia 15 sekundit. Vaheta. Korda kaks korda."
+    },
+    "acv": {
+      "title": "Kõnni ja räägi",
+      "text": "Tuleb kõne? Võta see kõndides vastu. Stanfordi uuringud leidsid, et kõndimine tõstab loovat väljundit 60%. Sa ei vaja jooksulinti-lauda — lihtsalt jaluta oma toas või väljas. Su ideed on teravamad ja keha tänab."
+    },
+    "acw": {
+      "title": "Trepi jõud",
+      "text": "Treppide ronimise jooksul 3 minutit tõstab energiat efektiivsemalt kui 30 milligrammi kofeiin, Georgia ülikooli uuringu järgi. Kui sul on treppide juurdepääs, tee selle pausi ajal paar ringi. See on kiire, tasuta ja töötab iga kord."
+    },
+    "acx": {
+      "title": "Ekraan ja uni",
+      "text": "Eredatele ekraanidele kokkupuude õhtul surub melatoniini tootmist alla kuni 50%. Kui kell on hiljem kui 17, kaalu ekraani tuhmendamist või öörežiimi sisse lülitamist. Su tänast und otsustatakse sellest, mida su silmad praegu näevad."
+    },
+    "acy": {
+      "title": "Sinise valguse tõelisus",
+      "text": "Ekraanide sinine valgus ei kahjusta tõenäoliselt võrkkesta, aga see aitab kaasa digitaalsele silmapingele ja võib häirida su unetsüklit. Lahendus pole kallid prillid — see on regulaarne eemalevaatumine, heleduse reguleerimine ja sellised pausid."
+    },
+    "acz": {
+      "title": "Kõrva väsimus",
+      "text": "Kõrvaklappide kandmine rohkem kui 60 minutit järjest võib põhjustada kõrva väsimust, rõhu kogunemist ja isegi kuulmiskahjustust suurtel helitugevustel. Võta need selle pausi ajaks ära. Lase kõrvadel hingata. Kui pead heli olema, proovi mõõduka helitugevusega kõlareid natukeseks."
+    },
+    "ada": {
+      "title": "Otsuste aku",
+      "text": "Teed päevas umbes 35 000 otsust ja igaüks ammendab piiratud ressurssi. Pärastlõunal langeb su otsuste kvaliteet märkimisväärselt — see on 'otsuste väsimus'. Selle pausi ajal lõpeta valimine. Ära scrolli, ära vali, ära plaani. Lihtsalt ole paigal."
+    },
+    "adb": {
+      "title": "Stressisöögi audit",
+      "text": "Stressisöömine pole nälja pärast — see on kortisool, mis ütleb su ajule, et vajab lohutust. Järgmine kord, kui suupistet sihid, peatu ja küsi: kas olen näljane või stressis? Kui stressis, proovi esmalt 5 sügavat hingetõmmet. Kui pärast seda ikka näljane, söö — aga vali midagi, mis tankib sind."
+    },
+    "adc": {
+      "title": "Isolatsiooni lõks",
+      "text": "Süvisfookus on hädavajalik loovale ja tehnilisele tööle, aga pikaajaline isolatsioon tõstab kortisooli ja langetab oksütotsiin. Kasuta seda pausi, et kellegagi tere öelda — kolleeg, naaber, pereliige. Isegi lühike sotsiaalne suhtlus resedib su stressi baasjoont."
+    },
+    "add": {
+      "title": "Seisulaua shuffle",
+      "text": "Seisulauad pole maagiline — tundide pikkune püstiseismine on peaaegu sama halb kui püstistumine. Võti on vaheldus. Kui oled püsti seisnud, istu natuke. Kui istud, seisa. Nihuta kaalu, liiguta varbaid või marshi paigas. Liikumine, mitte positsioon, on eesmärk."
+    },
+    "ade": {
+      "title": "Toolijooga: istudes tuvi",
+      "text": "Rista parem pahkluu vasaku põlve kohale. Istu sirgelt ja kummarda õrnalt ette, kuni tunned venitust paremas puusas ja tuharas. Hoia 30 sekundit, siis vaheta pool. See on üks parimaid puusaavajaid, mida saad teha toolilt lahkumata."
+    },
+    "adf": {
+      "title": "Temperatuur ja fookus",
+      "text": "Cornelli uuringud leidsid, et kontoriruumi temperatuuri tõstmine 20°C-lt 25°C-le vähendas trükivigu 44% ja tõstis väljundit 150%. Kui oled külm, soojenda. Kui liiga soe, jahuta. Su termostaat on produktiivsuse tööriist."
+    },
+    "adg": {
+      "title": "Helide hügieen",
+      "text": "Pidev taustamüra — avatud kontorid, notifikatsioonid, sõnadega muusika — tõstab kognitiivset koormust kuni 66%. Selle pausi ajal eemalda kogu audio. Istu vaikuses 2 minutit. See võib esmalt veider tunduda. Nii sa tead, et vajas seda."
+    },
+    "adh": {
+      "title": "Codebase'i kaal",
+      "text": "Keerulise süsteemi töömälus hoidmine on üks kognitiivselt kallimaid ülesandeid, mida inimesed teevad. Sellepärast tunned end ammendununa pärast päeva 'lihtsalt istumist'. Võta see paus, et tahtlikult oma mentaalset seisundit tühjendada. Kirjuta kus oled, siis lase lahti."
+    },
+    "adi": {
+      "title": "Git commit ja venitus",
+      "text": "Enne selle commiti push'imist, push'i ennast toolist välja. Tee sellest rituaal: iga commit = üks venitus. Produktiivse päeva jooksul on see 10-20 mikropausi, mis on su töövoogu sisse ehitatud. Su versioonihistooria ja tervisehistooria paranevad mõlemad."
+    },
+    "adj": {
+      "title": "Sõnad kaotavad tähenduse",
+      "text": "On psühholoogiline fenomen nimega 'semantiline satiatsioon' — kui vaatad sõna nii kaua, et see lakkab päris olemast. Kui oled sama lõiku 20 minutit toimetanud, see on su signaal. Kõndi ära. Kui tagasi tuled, tundub tekst värske ja vead on ilmsed."
+    },
+    "adk": {
+      "title": "Jalutuskäigu mustand",
+      "text": "Paljud kuulsad kirjanikud — Dickens, Beethoven, Darwin — tegid pikki päevaseid jalutuskäike osana oma loomingulisest protsessist. Sa ei vaja 2 tundi. Isegi 5 minutit kõndimist nihutab su aju fokuseeritud režiimist hajusasse režiimi, kus loovad seosed juhtuvad."
+    },
+    "adl": {
+      "title": "Tähtaja ärevus",
+      "text": "Tähtaja-eelne stress käivitab su võitle-või-põgene reaktsiooni, mis kitsendab mõtlemist ja suurendab vigu. Paradoksaalselt on parim asi, mida saad enne tähtaega teha, paus. Liikumine metaboliseerib stressihormoone ja taastab laia mõtlemise, mida vajad tugeva lõpetamiseks."
+    },
+    "adm": {
+      "title": "Esitamise rituaal",
+      "text": "Just vajutasid submit? Saatsid e-kirja? Merge'isid PR'i? Ära kohe järgmist ülesannet alusta. Anna ajule hetk lõpetamist registreerida. Tõuse püsti, venita, võib-olla isegi tähistada. Verstaposti märkimine — isegi väikeste — hoiab ära läbipõlemise."
+    },
+    "adn": {
+      "title": "Glükeemiline mägedrada",
+      "text": "See energiakraater, mida tunned pärastlõunal? See on osaliselt veresuhkru langus, mida käivitavad süsivesikuterikkad lõunad. Püsiva energia jaoks paarita süsivesikud valguga ja kiudainetega. Aga praegu lihtsalt liigu — 5-minutine jalutuskäik stabiliseerib glükoosi taset ja puhastab udu."
+    },
+    "ado": {
+      "title": "Tuimade jalgade protokoll",
+      "text": "Jalgade kipitus või tuimus pärast istumist on põhjustatud kokku surutud närvide ja vähenenud verevoorest. Tõuse püsti ja raputa iga jalga 10 sekundit. Siis marši paigas 10 sammu. Verevool taastatud, tunne tagasi, produktiivsus jätkatud."
+    },
+    "adp": {
+      "title": "Valgustuse audit",
+      "text": "Halb valgustus põhjustab silmapinget, peavalu ja väsimust. Su ekraan peaks olema ligikaudu sama ere kui ümbrus — mitte helendav ristkülik pimedas toas. Reguleeri laualampi või toavalguseid praegu. Su silmad tunnevad erinevust kohe."
+    },
+    "adq": {
+      "title": "Kõrvaklappide pausiprotokolli",
+      "text": "Audioloogid soovitavad 60/60 reeglit: mitte rohkem kui 60% helitugevusest mitte rohkem kui 60 minutit järjest. Su kõrvadel pole valu läve järkjärgulise kahjustuse jaoks — kuulmiskahjustus hiilsus sulle peale. Võta kõrvaklapid kogu pausi ajaks ära."
+    },
+    "adr": {
+      "title": "Mikro-treening",
+      "text": "Sa ei vaja jõusaali. Tee praegu 10 kükki, 10 kätekõverdust (või seinakõverdust) ja 10 säärelihase tõusmist. Koguaeg: alla 3 minuti. Kogukasu: parem vereringh, kõrgenenud pulsisagedus, tõusnud endorfiinid ja enesekindel saavutustunne."
+    },
+    "ads": {
+      "title": "Väljatrükk trikk",
+      "text": "Kirjanikud ja toimetajad: proovi oma mustand trükkida ja paberil lugeda. Märkad vigu, mida ekraanile harjunud silmad ei näe. Füüsiline paberipidamine ja pliiatsi kasutamine aktiveerib teisi kognitiivseid rajad kui ekraani toimetamine. Vanakooli? Jah. Efektiivne? Absoluutselt."
+    },
+    "adt": {
+      "title": "Selgroo lahtisurrud",
+      "text": "Su selgroog surub gravitatsiooni all terve päeva kokku. Proovi seda: seisa jalgadega õlgade laiuses lahus, põimi sõrmed pea kohale ja venita nii pikaks kui suudad. Hoia 15 sekundit. Sa võid olla praegu tegelikult sentimeetri või kaks pikem."
+    },
+    "adu": {
+      "title": "Tähelepanu maks",
+      "text": "Iga notifikatsioon, iga badge, iga lugemata sõnum on pisike maks su tähelepanule. Päeva jooksul kogunevad need tundideks kaotatud fookust. Selle pausi ajal lülita kõik notifikatsioonid välja. Kui tagasi tuled, on sul täielik tähelepanu eelarve kulutada sellele, mis on oluline."
+    },
+    "adv": {
+      "title": "Randme hoolduspunkt",
+      "text": "Su randmed käitlevad umbes 40 000 klahvivajutust päevas. Siruta parem käsi, peopesa põranda poole ja kasuta vasakut kätt, et õrnalt tõmmata sõrmed alla ja tagasi. Hoia 15 sekundit. Vaheta. Siis tee aeglased rusikas-ventilaatori liigutusi 10 korda. Su kõõlused tänavad."
+    },
+    "adw": {
+      "title": "Debug'imise jalutuskäik",
+      "text": "Stanfordi ja teiste ülikoolide uuringud kinnitavad, et kõndimine parandab loovat probleemide lahendamist kuni 60%. Kui oled bogi või disainiotsuse külge kinni jäänud, lõpeta ekraani vahtimist. Kõnni 5 minutit. Lahendus ilmub tõenäolisemalt, kui seda ei otsi."
+    },
+    "adx": {
+      "title": "Lihasemälu reset",
+      "text": "Su keha kohaneb sellega, millist positsiooni kõige kauem hoiad. Pärast tundide pikkust istumist vormivad su lihased end sõna otseses mõttes selle positsiooni ümber. Tõuse püsti ja tee vastupidi: kõverda selg, ava rind, ulatu pea kohale. Tuleta lihastel meelde, kuidas 'püsti' tundub."
+    },
+    "ady": {
+      "title": "Silmalihas treening",
+      "text": "Su silmadel on kuus lihast kummalgi ja fikseeritud ekraani kaugusele vahtimist teeb nad kangestunuks. Proovi seda: hoia pliiatsi käeulatuses eemal, fookuseeri sellele, siis nihuta fookus 6 meetrit kaugemale. Vahelde 10 korda. See on nagu venitus, aga su silmadele."
+    },
+    "adz": {
+      "title": "Aju proovisaali teadus",
+      "text": "Neuroteadus näitab, et su aju korrab ja konsolideerib oskusi puhkuse ajal, mitte harjutamise ajal. NIH teadlased leidsid, et pauside tegemine viis kiirema oskuse omandamiseni. Seega see paus pole prokrastineerimine — see on sõna otseses mõttes see, kuidas su aju muutub paremaks selles, mida just harjutasid."
+    },
+    "aea": {
+      "title": "Suupiste eesmärgiga",
+      "text": "Kui hakkad snäkki sööma, tee see kasulikult. Pähklid, tume šokolaad, marjad ja roheline tee sisaldavad kõik ühendeid, mis toetavad fookust ja vähendavad põletikku. Jäta automaadisuhkruplaad vahele. Su aju töötab kõige paremini pärisel toidul, mitte suhkrutippudel."
+    },
+    "aeb": {
+      "title": "Kortisooli reset",
+      "text": "Stressis, küürus positsioonis istumine tõstab tegelikult kortisoolitaset. Amy Cuddy uuringud (vaidlustatud, aga intrigeeriv) viitavad, et ekspansiivsed positsioonid langetavad stressihormoone. Tõuse püsti, pane käed puusale ja seisa sirgelt 2 minutit. Superkangelase poos. Viitta pole vaja."
+    },
+    "aec": {
+      "title": "Mikro-uinaku teadus",
+      "text": "6-minutine uinak parandab mälu konsolideerimist, Düsseldorfi ülikooli uuringu järgi. Sa ei pea magama jääma — lihtsalt sulge silmad ja puhka mõned minutid. Isegi une poole liikumise üleminek aktiveerib mälu töötlevad võrgud."
+    },
+    "aed": {
+      "title": "Kõndimise meditatsioon",
+      "text": "Kõndi aeglaselt ja teadlikult 3 minutit. Keskendu iga jalasmu tunnetusele — kannal varvastele, kaalu nihkumisele, põrandale all. See on kõndimise meditatsioon ja see ühendab liikumise ja mindfulness'i kasud ühes lihtsas praktikas."
+    },
+    "aee": {
+      "title": "Trigger point teraapia",
+      "text": "Tunned seda sõlme abaluuea ja selgroo vahel? See on trigger point su rhomboid lihases. Vajuta selle vastu tennisepalli (või rusikaga) ja rakenda tugev surve 30 sekundiks. Vabasta aeglaselt. Tee mõlemad pooled. Kontori tasemel lihaseteraapia, broneeringuid pole vaja."
+    },
+    "aef": {
+      "title": "Ekraani kauguse kontroll",
+      "text": "Su monitor peaks olema umbes 50-70 sentimeetrit su silmadest — ligikaudu käeulatuse kaugusel. Liiga lähedal suurendab silmapinget; liiga kaugel paneb sind ettepoole kummardama. Mõõda praegu. Kui oled terve päeva ekraani poole hiilimas, lükka tagasi."
+    },
+    "aeg": {
+      "title": "Loov kõrvale kääne",
+      "text": "Neuroteadus nimetab seda 'inkubatsioon' — fenomen, kus probleemist eemale astumine laseb su aju vaikerežiimi võrgul leida lahendusi, mida sa fokuseerituna ei näinud. Võta 5-minutine paus, tehes midagi täiesti seosmatut. Kritseldada, venitada või pilvi vahtida. Su aju töötab ikka veel."
+    },
+    "aeh": {
+      "title": "Vereringe kontrollpunkt",
+      "text": "Pärast 30 minutit istumist väheneb verevool läbi jalgade arterite märkimisväärselt. Lahendus on lihtne: tõuse püsti ja kõndi 5 minutit. Uuringud näitavad, et see piisab normaalse vereringe taastamiseks ja su vaskulaarse tervise kaitsmiseks."
+    },
+    "aei": {
+      "title": "Lõualuu ja TMJ'i leevendus",
+      "text": "Stress, kontsentratsioon ja ekraanitöö põhjustavad sageli teadmatut lõualuu krampi, mis võib viia TMJ'i valu, peavalu ja hammaste kahjustuseni. Ava suu laialt, hoia 5 sekundit, siis liigu lõuga õrnalt vasakule ja paremale. Masseeri lihast kõrvade alt väikeste ringidega."
+    },
+    "aej": {
+      "title": "Hüdratsioon ja ajuvõim",
+      "text": "Isegi kerge dehüdratsioon (1-2% kehakaalust) halvendab kontsentratsiooni, suurendab tajutud ülesande raskust ja halvendab tuju. Su aju on ligikaudu 75% vett. Joo kohe 200-250 ml vett. Mitte kohvi. Mitte limonaad. Vett. Su neuronid on janu sees."
+    },
+    "aek": {
+      "title": "Tabi pankrot",
+      "text": "Kui sul on lahti rohkem kui 20 brauseri tab'i, sa ei multitaski — sa kogud kognitiivset võlga. Iga avatud tab on lahendamata otsus. Selle pausi ajal kuuluta tabide pankrot. Sulge kõik, mida ei vaja järgmise tunni jooksul. Vaimne kergendus on kohene."
+    },
+    "ael": {
+      "title": "Ulnaarse närvi kontroll",
+      "text": "Kas su väike- ja nimissõrm kipuvad või lähevad tuimaks? See on tõenäoliselt su ulnaarne närv, mis kokkusurutud su küünarnukist. Väldi küünarnukkide toetumist kõvadele pindadele tipitamise ajal. Siruta käsi täielikult, venita neid välja ja raputa käsi 10 sekundit."
+    },
+    "aem": {
+      "title": "Seinavenitus kombo",
+      "text": "Seisa seinast käeulatuse kaugusel. Pane mõlemad käed seinale õla kõrgusel ja kummarda ettepoole, hoides selga sirgena. Hoia 15 sekundit — see on rind. Nüüd keera külgsuunas, pane üks käsi seinale ja pöördu sellest ära. Hoia 15 sekundit kummalgi pool. Rind ja õlad: avatud."
+    },
+    "aen": {
+      "title": "Fookuse dividend",
+      "text": "DeskTime'i uuring tipptöötajatest leidis kõige produktiivsema mustri: 52 minutit fokuseeritud tööd, millele järgneb 17-minutine paus. Paus pole raisatud aeg — see on see, mis muudab fokuseeritud aja tegelikult fokuseerituks. Sa investeerid praegu oma järgmisse produktiivsesse tundi."
+    },
+    "aeo": {
+      "title": "D-vitamiini laua kontroll",
+      "text": "Kui töötad terve päeva siseruumides, on sul tõenäoliselt D-vitamiini puudus — kuni 42% täiskasvanutest on. D-vitamiin mõjutab tuju, immuunsust ja luude tervist. Mine vähemalt 5 minutiks välja, kui on päikesevalgust. Su nahk sünteesib D-vitamiini juba 10 minuti päikesevalguse käes olemisega."
+    },
+    "aep": {
+      "title": "Pahkluu liikuvus",
+      "text": "Su pahkluud toetavad kogu keha kaalu, aga neid harva venitada. Proovi seda: seisa ühel jalal ja joonista aeglaselt teise jalaga tähestik. Jah, kõik 26 tähte. Vaheta jalgu. Kulub umbes 90 sekundit jala kohta ja parandab pahkluu stabiilsust dramaatiliselt."
+    },
+    "aeq": {
+      "title": "Prokrastineerimise paradoks",
+      "text": "Prokrastineerimine pole laisus — see on emotsionaalse regulatsiooni probleem. Väldid ülesandeid, mis käivitavad negatiivseid tundeid (ärevus, igavus, enesekahtlus). 5-minutine paus füüsilise liikumisega võib need emotsioonid piisavalt reguleerida, et alustamine tundub jälle võimalik. Liigu enne, motiveeri hiljem."
+    },
+    "aer": {
+      "title": "Päeva lõpu maha keerumine",
+      "text": "Enne kui sulged sülearvuti, võta 3 minutit, et kirjutada üles, mida saavutasid, mis on ootel ja üks asi, millega oled uhke. See 'seisaku rituaal' loob kognitiivse sulguse, takistab tööde mõtetel õhtut sissetungimast ja annab sulle hoo homseks."
     }
   },
   "statusMessages": {

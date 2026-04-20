@@ -484,6 +484,279 @@
     },
     "adm": {
       "text": "Kendine bir alkış tut. Kollarını uzatarak."
+    },
+    "adn": {
+      "text": "Oturarak kodun kendi kendine debug olmayacağını biliyorsun. Kalksan da olmaz zaten. Ama en azından omurgan sana teşekkür eder."
+    },
+    "ado": {
+      "text": "Bug'ını hayali bir lastik ördeğe anlat. İşe yaramazsa duvara anlat — duvarlar sabırla dinler, seni yargılamaz."
+    },
+    "adp": {
+      "text": "Bileklerin bugün binlerce kelime için çalıştı. Kolunu uzat, parmaklarını nazikçe geri çek. Biraz ilgiyi hak ediyorlar."
+    },
+    "adq": {
+      "text": "Tüm kod tabanını kafanda taşıyorsun. 20 saniyeliğine bırak gitsin."
+    },
+    "adr": {
+      "text": "Build mi bekliyorsun? Harika. Kalk ve ger. Bu da mesai saati sayılır."
+    },
+    "ads": {
+      "text": "47 okunmamış Slack mesajın var. 20 saniye daha bekleyebilirler. Gözlerini kırp."
+    },
+    "adt": {
+      "text": "'Mola vermek için çok meşgulüm' diyenler, eninde sonunda çok daha uzun ve istem dışı bir mola veriyorlar."
+    },
+    "adu": {
+      "text": "Kod review'u sonrası beyin yorgunluğu gerçek bir şey. Gözlerini kapat, nöronların tartışmayı bıraksın."
+    },
+    "adv": {
+      "text": "Yazma blokajı mı? Kalk. 10 adım yürü. Geri otur. Paragraf geri dönüşünden etkilensin."
+    },
+    "adw": {
+      "text": "Karar yorgunluğu gerçek. Seçmeyi bırak. Sadece 20 saniye nefes al."
+    },
+    "adx": {
+      "text": "Öğleden sonra çöküşü vakti. Kan şekerin düştü. Kalk, ger ve bir şeyler atıştır."
+    },
+    "ady": {
+      "text": "Masanın altında bacakların var. Kalkarak varlığını hatırlat onlara."
+    },
+    "adz": {
+      "text": "Kalça kasların saatlerdir fetal pozisyonda. Kalk ve bir hamle yap."
+    },
+    "aea": {
+      "text": "Sırt ortası kilitli. Ellerini başının arkasında kavuştur ve nazikçe geriye doğru eğil."
+    },
+    "aeb": {
+      "text": "Ön kol germe: kolunu uzat, avuç içi yukarı baksın, parmaklarını aşağı doğru nazikçe çek. 10 saniyede RSI önlemi."
+    },
+    "aec": {
+      "text": "Bir sonraki aramada yürüyerek konuş. Beynin hareket halinde daha iyi çalışıyor."
+    },
+    "aed": {
+      "text": "Merdivenler var. Biraz çık. Kalp damar sistemin sana teşekkür kartı gönderir."
+    },
+    "aee": {
+      "text": "Ekran parlaklığın odayla uyumlu mu, yoksa yüzün bir el feneri mi oldu? Ayarla."
+    },
+    "aef": {
+      "text": "Mavi ışık hayatını mahvetmez ama ekranın büyük ihtimalle çok parlak. Bir kademe kıs."
+    },
+    "aeg": {
+      "text": "Kulaklıkların saatlerdir kulağında. Kulaklarına mola ver — maraton için tasarlanmamışlar."
+    },
+    "aeh": {
+      "text": "Bu geceki uyku kaliten şu an başlıyor. Ekrandan uzaklaş ve gözlerini dinlendir."
+    },
+    "aei": {
+      "text": "Cips mi arıyorsun? Bir avuç kuruyemiş dene. Beynin sandığından daha iyi yakıtla çalışıyor."
+    },
+    "aej": {
+      "text": "Derin çalışma harika. Derin yalnızlık değil. En son ne zaman bir insanla konuştun?"
+    },
+    "aek": {
+      "text": "Ayaklı masanız varsa pozisyon değiştirme zamanı. Yoksa zaten kalk."
+    },
+    "ael": {
+      "text": "Oturarak bükülme: sağ elini sol dizine koy, döndür, 10 saniye tut. Değiştir. Sandalye yogası — mat gerekmez."
+    },
+    "aem": {
+      "text": "Oda çok mu sıcak? Serin hava odaklanmayı artırır. Pencereyi aç ya da termostata bak."
+    },
+    "aen": {
+      "text": "Kulaklıkları çıkar. 20 saniye çevreni dinle."
+    },
+    "aeo": {
+      "text": "Tüm sistemin zihinsel modelini kafanda taşıyorsun. Bu yorucu bir iş. Bir anlığına bırak gitsin."
+    },
+    "aep": {
+      "text": "git commit -m \"mola aldım\". Bugün yazacağın en iyi commit mesajı bu."
+    },
+    "aeq": {
+      "text": "Stack Overflow seni germene yardım edemez. Kalk. Bu, kendin yapman gereken tek şey."
+    },
+    "aer": {
+      "text": "20 saniye gersen deadline ertelenmez. Ama omurların yerinden oynayacak — iyi anlamda."
+    },
+    "aes": {
+      "text": "10 dakikadır aynı paragrafa mı bakıyorsun? Yazdır ve kalemle işaretle. Ortamı değiştir, bakış açısını değiştir."
+    },
+    "aet": {
+      "text": "Bir şeyi yeni mi bitirdin? Taslak mı gönderdin? Kalk ve zafer gerimesi yap. Hak ettin."
+    },
+    "aeu": {
+      "text": "Deadline öncesi sinirlerin mi bozuluyor? Hareket et. Kaygı hareketsizlikte yaşar."
+    },
+    "aev": {
+      "text": "Ekran parlaklığını kontrol et. Yansımanı görebiliyorsan oda için çok parlak."
+    },
+    "aew": {
+      "text": "Atıştırmacını klavyeden uzakta ye. Kırıntıların tuşların arasına ait değil."
+    },
+    "aex": {
+      "text": "5 dakikalık yürüyüş, boş sayfaya 30 dakika bakmaktan daha fazla fikir üretir. Bunu bilim söylüyor."
+    },
+    "aey": {
+      "text": "38 sekme açık. Hiç okumayacaklarını kapat. İstifçilik değil bu, yani... tamam, istifçilik ama."
+    },
+    "aez": {
+      "text": "Aynı cümleyi beş kez okuyup hâlâ anlam çıkarmıyorsan, beynin sana şunu söylüyor: uzaklaş."
+    },
+    "afa": {
+      "text": "Omurgan için Ctrl+Z yok. Kalk ve şimdi ilgilen."
+    },
+    "afb": {
+      "text": "İkinci monitörün seni germeni göremez. Yap, yargılamaz."
+    },
+    "afc": {
+      "text": "Kahve, dinlenmenin yerini tutmaz. Bunu biliyorsun zaten. Yanında bir su da iç."
+    },
+    "afd": {
+      "text": "Bug geri döndüğünde orada olacak. Ama bu sefer taze gözlerle göreceksin onu."
+    },
+    "afe": {
+      "text": "Bir değişkene isim bulmak için 10 dakika harcadın. Beynin molayı hak etti."
+    },
+    "aff": {
+      "text": "Toplantılar bitti. Gevşe. Boynunu yavaşça sola, sonra sağa döndür."
+    },
+    "afg": {
+      "text": "Gelen kutusu 60 saniye sensiz hayatta kalır. Pencereden dışarı bak."
+    },
+    "afh": {
+      "text": "Fare tutan elin kramp giriyorsa bir dakikalığına el değiştir. Tuhaf hissettiriyor. Amaç da bu zaten."
+    },
+    "afi": {
+      "text": "Parmaklarda karıncalanma mı? Sinirlerinin germeye ihtiyacı var. Bilek döndürme, her yönde 10 kez."
+    },
+    "afj": {
+      "text": "Çok mu uzun süre ayakta kaldın? Biraz otur. Amaç değiştirmek, acı çekmek değil."
+    },
+    "afk": {
+      "text": "AFK vakti. Gerçek anlamda. Klavyeden Uzaklaş."
+    },
+    "afl": {
+      "text": "Masa bitkini varsa kontrol et. Ölüyorsa bu bir metafor. İkinizi de sula."
+    },
+    "afm": {
+      "text": "Bir pencere aç. Taze hava beynine bilgisayarın soğuk yeniden başlatması gibi gelir."
+    },
+    "afn": {
+      "text": "Çeneni göğsüne değdir ve 10 saniye tut. Boynunun arkası tüm gün gergindi."
+    },
+    "afo": {
+      "text": "Oturuyorken kalça kaslarını sık. 5 saniye tut. Bırak. Kimse bilmiyor. Gizli fitness."
+    },
+    "afp": {
+      "text": "Oturarak hamstring germe: bir bacağını uzat, parmaklarına uzan, 10 saniye tut. Bacağı değiştir."
+    },
+    "afq": {
+      "text": "Ekrana odaklandığında gözlerin daha az yaş üretiyor. Yavaş ve bilinçli olarak 10 kez göz kırp."
+    },
+    "afr": {
+      "text": "Derin nefes kan basıncını anlık olarak düşürüyor. 4 sayı nefes al, 6 sayıda ver. Üç kez tekrarla."
+    },
+    "afs": {
+      "text": "Kalk ve yerçekiminin omurganı açmasına izin ver. Kollarını sark ve 15 saniye nefes al."
+    },
+    "aft": {
+      "text": "200 klavye kısayolu biliyorsun. Bir beden kısayolu öğrenme zamanı: kalk, ger, otur. Tekrarla."
+    },
+    "afu": {
+      "text": "IDE'ni 5 dakikalığına açık moda al. Ya da koyu moda. Bir şey değiştir. Görsel korteksi sıfırla."
+    },
+    "afv": {
+      "text": "Yanıp sönen imlece bakıyordun. Şimdi gözlerini kapat ve 20 saniye hiçbir şey görme. Lüks."
+    },
+    "afw": {
+      "text": "Pencereden dışarı bak ve görebildiğin en uzak şeyi bul. Ona odaklan. Göz kasların bunu bekliyordu."
+    },
+    "afx": {
+      "text": "Mutfağa yürü. Bir sebebin olması gerekmiyor. Sadece yürü. Hareket ilacın kendisi."
+    },
+    "afy": {
+      "text": "Bir merdiven bul ve baldır kaslarını basamağın kenarında ger. Her tarafta 15 saniye tut."
+    },
+    "afz": {
+      "text": "Kulakların saatlerdir kulaklık altında. Çıkar ve sessizliğin tadını çıkar."
+    },
+    "aga": {
+      "text": "Beyin sisi mi? Prefrontal korteksin boşalıyor. Kalk, hareket et, yeniden başlamasına izin ver."
+    },
+    "agb": {
+      "text": "Çoklu görev bir efsane. Beynin sadece overhead'li context switching yapıyor. Tek thread'li bir mola al."
+    },
+    "agc": {
+      "text": "Her context switch 23 dakika odaklanma kaybettiriyor. Bu mola sadece 20 saniye. Hesabı yap."
+    },
+    "agd": {
+      "text": "Mükemmeliyetçilik, önlüklü bir ertelemedir. Uzaklaş. Tamamlanmış, mükemmelden iyidir."
+    },
+    "age": {
+      "text": "Sahtekar gibi mi hissediyorsun? Herkes bazen öyle hisseder. Kalk ve ger — sahtekârlar kendine bakım yapmaz."
+    },
+    "agf": {
+      "text": "30 saniyede bir e-postanı yenilemek verimlilik değil. Kalk. İşte bu verimlilik."
+    },
+    "agg": {
+      "text": "Yaratıcılık blokajı mı? Fiziksel pozisyonunu değiştir. Yeni duruş, yeni bakış açısı."
+    },
+    "agh": {
+      "text": "Belin şikâyet ediyor. Sandalyenin kenarına kayar ve 30 saniye dik otur."
+    },
+    "agi": {
+      "text": "Omuz ağrısı vücudunun kod review yorumu: 'Değişiklik gerekli.' Omuzlarını 10 kez geriye döndür."
+    },
+    "agj": {
+      "text": "Kodlamadan sonra bilek ağrısı mı? Nazikçe yumruk yap ve yavaşça döndür. Her yönde 10 daire."
+    },
+    "agk": {
+      "text": "Bir bileği karşı dize koy ve öne eğ. Kalça açıcı. 15 saniye tut. Değiştir."
+    },
+    "agl": {
+      "text": "Bir iş arkadaşına gözünün içine bak ve güzel bir şey söyle. İnsan bağlantısı her bildirimden iyidir."
+    },
+    "agm": {
+      "text": "30 saniye doğa sesi dinle — yağmur, kuşlar, okyanus. Sinir sistemin hız keser."
+    },
+    "agn": {
+      "text": "Derin odaklanma maraton değil, sprint. Az önce sprint attın. Yürüyerek rahatla."
+    },
+    "ago": {
+      "text": "Duruş kontrolü: ekrana sanki sana borçluymuş gibi mi eğiliyorsun? Geri yaslan."
+    },
+    "agp": {
+      "text": "Bir şeyler ye. Ama bu sefer tadına var. Yavaş çiğne. Öğle molası hızlı koşu değil."
+    },
+    "agq": {
+      "text": "En son ne zaman su içtin? Kahve değil. Su. Git."
+    },
+    "agr": {
+      "text": "Gün ışığı varsa biraz tenine değdir. Sirkadiyen ritmin yalvarıyor."
+    },
+    "ags": {
+      "text": "Oda çok soğuk mu, yoksa çok sıcak mı? Ayarla. Termal konfor odaklanmayı doğrudan etkiliyor."
+    },
+    "agt": {
+      "text": "Kutu nefesi: 4 al, 4 tut, 4 ver, 4 tut. Sinir sisteminin favori döngüsü."
+    },
+    "agu": {
+      "text": "Kaşlarını olabildiğince yükselt. 5 saniye tut. Bırak. Alnın sandığından daha gergindi."
+    },
+    "agv": {
+      "text": "Parmaklarını olabildiğince aç. 5 saniye tut. Şimdi sıkı bir yumruk yap. Üç kez tekrarla."
+    },
+    "agw": {
+      "text": "Oturuyorken core'unu çalıştır. Göbeğini omurgana doğru çek ve 10 saniye tut."
+    },
+    "agx": {
+      "text": "10 saniye parmak ucunda dur. Şimdi topuklara geri gel. Tekrarla. Mikro denge egzersizi."
+    },
+    "agy": {
+      "text": "Nefesini fark et. Değiştirme. Sadece fark et. Bu mindfulness — ve az önce yaptın."
+    },
+    "agz": {
+      "text": "Bu hatırlatıcıyı, kendi mola hatırlatıcılarını görmezden gelen bir insan yazdı. Biz gibi olma. Ger."
     }
   },
   "longBreakIdeas": {
@@ -730,6 +1003,250 @@
     "aci": {
       "title": "Bulut seyretme",
       "text": "Pencereye git ve bulutlara bak. Şekiller bul. Meditasyon yapmak istemeyenler için meditasyon. Ve aynı derecede işe yarıyor."
+    },
+    "acj": {
+      "title": "Lastik ördek bilgeliği",
+      "text": "Programcılar kodu açıklamak ve hataları bulmak için lastik ördek kullanır. Ama asıl sihir? Tamamen uzaklaşmak. Gerinirken bilinçaltın işlemeye devam eder. Geri döndüğünde çözüm orada bekliyor olur."
+    },
+    "ack": {
+      "title": "RSI rozet değil",
+      "text": "Tekrarlayan Zorlanma Yaralanması, bilgisayar çalışanlarının yüzde 64'ünü etkiliyor. Erken belirtiler — karıncalanma, tutukluk, bilek ağrısı — görmezden gelmesi kolay ama tedavisi pahalı. Ön kolunu ger: kolunu uzat, avuç içi aşağı baksın ve parmaklarını nazikçe kendine doğru çek. Her tarafta 15 saniye tut."
+    },
+    "acl": {
+      "title": "Derleme zamanı gerimesi",
+      "text": "Build, deploy ya da test suite mi bekliyorsun? Bu ölü zaman değil — bedava germe zamanı. Kalk, ayak parmaklarına uzan (ya da dene) ve yavaşça doğrul. Kod bittiğinde omurganla birlikte hazır olursun."
+    },
+    "acm": {
+      "title": "Dağılan dikkat",
+      "text": "Ortalama bir bilgi çalışanı her 6 dakikada bir e-posta veya mesaj kontrol eder. Her kontrol, 23 dakika toparlanma gerektiren bir context switch'e mal olur. Bu mola boyunca telefonunu yüzüstü bırak ve sohbet uygulamalarını kapat. Dikkatini bir mola bir mola geri kazan."
+    },
+    "acn": {
+      "title": "Meşguliyet paradoksu",
+      "text": "Stanford araştırması, mola vermeden çalışmanın seni hızlandırmadığını gösteriyor — aksine yavaşlatıyor, hata oranını artırıyor ve düzeltmesi daha uzun sürecek hatalar yapmanı sağlıyor. Mola vermek tembellik değil. Mühendislik verimliliği."
+    },
+    "aco": {
+      "title": "Review sonrası iyileşme",
+      "text": "Bir kod review'dan yeni mi kurtuldun? Ya da sen mi verdin? Her iki durumda da beynin aşırı eleştirel modda çalışıyordu. Vites değiştirme zamanı. Kalk, ellerini salla, omuzlarını döndür ve beynin hakim moddan dinlenme moduna geçsin."
+    },
+    "acp": {
+      "title": "Boş sayfa, dolu beden",
+      "text": "Yazma blokajı bir yaratıcılık sorunu değil — çoğunlukla bir beden sorunudur. Fiziksel olarak gergindeyken zihnin de sıkışır. 5 dakika yürü, kollarını başının üzerinde ger. Kelimeler geri gelir ve daha iyi olur."
+    },
+    "acq": {
+      "title": "Öğleden sonra çöküşü",
+      "text": "O öğle sonrası enerji düşüşü ne yediğinden değil, sirkadiyen ritimden kaynaklanıyor. Kafeine uzanmak yerine 5 dakikalık bir yürüyüş ya da hafif bir germe dene. Hareket kortizolu doğal olarak artırır ve sonraki kafein çöküşü olmadan uyanıklığını sıfırlar."
+    },
+    "acr": {
+      "title": "Uyuşan bacaklar sendromu",
+      "text": "Oturmak bacaklardaki kan damarlarını sıkıştırır ve dolaşımı azaltır. 90 dakika oturmanın ardından bacaklara giden kan akışı yüzde 50 düşebilir. Kalk, biraz yürü ya da 10 baldır kaldırma yap. Bacakların — ve kardiyovasküler sistemin — sana teşekkür eder."
+    },
+    "acs": {
+      "title": "Kalça kasları SOS",
+      "text": "Kalça fleksörlerin uzun süre otururken kısalır ve gerginleşir; leğen kemiğini öne çekerek bel ağrısına yol açar. Bunu dene: kalk, bir ayağını geriye at, lunge pozisyonuna gir ve kalçanı öne it. Her tarafta 30 saniye tut. Ofis çalışanlarının en çok ihmal ettiği germe hareketi budur."
+    },
+    "act": {
+      "title": "Göğüs omurgası dönüşü",
+      "text": "Göğüs omurgan klavye üzerinde eğilmekten kilitlenir. Sandalyenin kenarında otur, kollarını göğsünün üzerine çapraz koy ve yavaşça sola sağa dön. Her tarafta 10 saniye tut. Bir şeylerin yerine oturduğunu hissedeceksin."
+    },
+    "acu": {
+      "title": "Ön kol kurtarma",
+      "text": "Ön kollarında parmak ve bileklerini kontrol eden 20 kas var. Saatler süren yazma ve fare kullanımından sonra bunlar bitik durumda. Bir kolunu uzat, avuç içi karşıya baksın ve diğer elinle parmaklarını nazikçe geri çek. 15 saniye tut. Değiştir. İki kez tekrarla."
+    },
+    "acv": {
+      "title": "Yürüyerek konuş",
+      "text": "Yakında bir aramanız mı var? Yürürken al. Stanford araştırması, yürüyüşün yaratıcı üretimi yüzde 60 artırdığını buldu. Koşu bandı masasına gerek yok — odanda ileri geri yürü ya da dışarı çık. Fikirlerin keskinleşir, vücudun teşekkür eder."
+    },
+    "acw": {
+      "title": "Merdiven gücü",
+      "text": "Sadece 3 dakika merdiven çıkmak, Georgia Üniversitesi'nin araştırmasına göre 30 miligram kafeinden daha etkili biçimde enerji yükseltiyor. Merdivene erişimin varsa bu mola süresinde birkaç tur yap. Hızlı, bedava ve her seferinde işe yarıyor."
+    },
+    "acx": {
+      "title": "Ekran ve uyku",
+      "text": "Akşamları parlak ekranlara maruz kalmak melatonin üretimini yüzde 50'ye kadar baskılar. Saat 17:00'yi geçtiyse ekranını kısmayı ya da gece modunu açmayı düşün. Bu geceki uyku kaliten, gözlerinin şu an ne gördüğüyle belirleniyor."
+    },
+    "acy": {
+      "title": "Mavi ışık gerçeği",
+      "text": "Ekranlardan gelen mavi ışık retinana büyük ihtimalle zarar vermez ama dijital göz yorgunluğuna katkıda bulunur ve uyku döngünü bozabilir. Çözüm pahalı gözlükler değil — düzenli olarak uzağa bakmak, parlaklığı ayarlamak ve bunun gibi molalar vermek."
+    },
+    "acz": {
+      "title": "Kulak yorgunluğu",
+      "text": "Kulaklığı 60 dakikadan fazla takmak kulak yorgunluğuna, basınç birikimine ve yüksek ses seviyelerinde işitme hasarına bile yol açabilir. Bu mola için çıkar, kulaklarının nefes almasına izin ver. Ses şarttır diyorsan hoparlörden orta seviyede bir süre dene."
+    },
+    "ada": {
+      "title": "Karar pili",
+      "text": "Günde yaklaşık 35.000 karar veriyorsun ve her biri sınırlı bir kaynağı tüketiyor. Öğleden sonra karar kaliten önemli ölçüde düşüyor — buna 'karar yorgunluğu' deniyor. Bu mola boyunca seçim yapmayı bırak. Kaydırma, seçme, planlama. Sadece dur."
+    },
+    "adb": {
+      "title": "Stres atıştırması denetimi",
+      "text": "Stres yemek açlıkla değil, kortizolün beynine teselli ihtiyacını söylemesiyle ilgili. Bir sonraki seferde atıştırmaya uzanmadan önce dur ve sor: acıktım mı, yoksa stres mi yapıyorum? Stres yapıyorsan önce 5 derin nefes dene. Sonra hâlâ açsan ye — ama sana yakıt verecek bir şey seç."
+    },
+    "adc": {
+      "title": "Yalnızlık tuzağı",
+      "text": "Derin odaklanma yaratıcı ve teknik çalışma için şart ama uzun süreli yalnızlık kortizolü yükseltir ve oksitosini düşürür. Bu molayı birine merhaba demek için kullan — bir iş arkadaşı, komşu ya da aile üyesi. Kısa bir sosyal etkileşim bile stres temelini sıfırlar."
+    },
+    "add": {
+      "title": "Ayaklı masa karıştırması",
+      "text": "Ayaklı masalar sihirli değil — saatler boyunca hareketsiz durmak, hareketsiz oturmak kadar kötü. Amaç değiştirmek. Duruyorsan biraz otur. Oturuyorsan kalk. Ağırlığını kaydır, parmaklarını oynat ya da yerinde yürü. Hedef konum değil, hareket."
+    },
+    "ade": {
+      "title": "Sandalye yogası: oturarak güvercin",
+      "text": "Sağ bileğini sol dizinin üzerine koy. Dik otur ve sağ kalça ile kalça kasında gerginlik hissedene kadar nazikçe öne eğ. 30 saniye tut, sonra taraf değiştir. Bu, sandalyeden kalkmadan yapabileceğin en iyi kalça açıcı germelerden biri."
+    },
+    "adf": {
+      "title": "Sıcaklık ve odaklanma",
+      "text": "Cornell araştırması, ofis sıcaklığının 20°C'den 25°C'ye çıkarılmasının yazma hatalarını yüzde 44 azalttığını ve üretimi yüzde 150 artırdığını buldu. Üşüyorsan ısın. Çok sıcaksan serinle. Termostat bir verimlilik aracıdır."
+    },
+    "adg": {
+      "title": "Ses hijyeni",
+      "text": "Sürekli arka plan gürültüsü — açık ofisler, bildirimler, sözlü müzik — bilişsel yükü yüzde 66'ya kadar artırır. Bu mola boyunca tüm sesi kapat. 2 dakika sessizlikte otur. Başta tuhaf gelebilir. Bu, ihtiyacın olduğunu anlamanın göstergesi."
+    },
+    "adh": {
+      "title": "Kod tabanının ağırlığı",
+      "text": "Karmaşık bir sistemi çalışma belleğinde tutmak insanın yapabileceği en bilişsel açıdan pahalı görevlerden biri. 'Sadece oturduğun' bir günün ardından bitkin hissetmenin nedeni bu. Bu molayı bilinçli olarak zihinsel durumunu boşaltmak için kullan. Nerede olduğunu yaz, sonra bırak gitsin."
+    },
+    "adi": {
+      "title": "Git commit ve germe",
+      "text": "O commit'i push etmeden önce kendini sandalyeden it. Bir ritüel yap: her commit = bir germe. Verimli bir günde bu, iş akışına gömülü 10-20 mikro mola demek. Sürüm geçmişin ve sağlık geçmişin ikisi de iyileşir."
+    },
+    "adj": {
+      "title": "Anlamsızlaşan kelimeler",
+      "text": "'Semantik doyum' denen bir psikolojik olgu var — bir kelimeye o kadar uzun bakarsın ki gerçek gibi görünmemeye başlar. Aynı paragrafı 20 dakikadır düzenliyorsan bu senin sinyalin. Uzaklaş. Döndüğünde metin taze hissettiriyor olacak ve hatalar gözüne çarpacak."
+    },
+    "adk": {
+      "title": "Yürüyerek taslak",
+      "text": "Pek çok ünlü isim — Dickens, Beethoven, Darwin — yaratıcı süreçlerinin bir parçası olarak her gün uzun yürüyüşler yaptı. 2 saate ihtiyacın yok. 5 dakikalık yürüyüş bile beynini odaklı moddan, yaratıcı bağlantıların gerçekleştiği dağıtık moda geçirir."
+    },
+    "adl": {
+      "title": "Deadline kaygısı",
+      "text": "Deadline öncesi stres, savaş ya kaç tepkini tetikler; bu da düşünceni daraltır ve hataları artırır. Paradoks olarak, deadline öncesi yapabileceğin en iyi şey mola vermek. Hareket stres hormonlarını metabolize eder ve güçlü bitiş için ihtiyacın olan geniş düşünceyi geri getirir."
+    },
+    "adm": {
+      "title": "Gönderme ritüeli",
+      "text": "Yeni mi tıkladın? E-postayı mı gönderdin? PR'ı mı birleştirdin? Hemen bir sonraki göreve atlama. Beynine tamamlanmayı kaydetmesi için bir an ver. Kalk, ger, belki kutla bile. Kilometre taşlarını — küçük olanları bile — tanımak tükenmişliği önler."
+    },
+    "adn": {
+      "title": "Kan şekeri yükselip alçalıyor",
+      "text": "Öğleden sonra ortasında hissettiğin enerji çöküşü? Kısmen yüksek karbonhidratlı öğle yemeklerinin tetiklediği kan şekeri düşüşü. Sürekli enerji için karbonhidratları protein ve lifle birleştir. Ama şu an sadece hareket et — 5 dakikalık yürüyüş glikoz seviyelerini stabilize eder ve sisi temizler."
+    },
+    "ado": {
+      "title": "Uyuşan bacaklar protokolü",
+      "text": "Oturmadan sonra bacaklarda karıncalanma veya uyuşma, sıkışan sinirler ve azalan kan akışından kaynaklanır. Kalk ve her bacağı 10 saniye salla. Sonra yerinde 10 adım at. Kan akışı yenilenir, his geri döner, verimlilik devam eder."
+    },
+    "adp": {
+      "title": "Aydınlatma denetimi",
+      "text": "Kötü aydınlatma göz yorgunluğuna, baş ağrısına ve yorgunluğa yol açar. Ekranın, çevrenle yaklaşık aynı parlaklıkta olmalı — karanlık odada parlayan bir dikdörtgen değil. Şimdi masa lambanı veya oda ışıklarını ayarla. Gözlerin farkı anında hisseder."
+    },
+    "adq": {
+      "title": "Kulaklık mola protokolü",
+      "text": "Odyologlar 60/60 kuralını öneriyor: seferinde en fazla 60 dakika, en fazla yüzde 60 ses seviyesi. Kulaklarının kademeli hasar için bir ağrı eşiği yok — işitme kaybı sessizce yaklaşıyor. Tüm bu mola boyunca kulaklıkları çıkar."
+    },
+    "adr": {
+      "title": "Mikro antrenman",
+      "text": "Spor salonuna gerek yok. Şu an 10 squat, 10 şınav (ya da duvara şınav) ve 10 baldır kaldırma yap. Toplam süre: 3 dakikanın altında. Toplam fayda: iyileşen kan akışı, yükselen kalp atış hızı, artan endorfin ve gizli bir gurur duygusu."
+    },
+    "ads": {
+      "title": "Çıktı alma hilesi",
+      "text": "Yazarlar ve editörler: taslağını yazdırıp kâğıtta okumayı dene. Ekrana alışmış gözlerinin kaçırdığı hataları yakalar. Kâğıt tutmak ve kalem kullanmak, ekran düzenlemesininkinden farklı bilişsel yolları etkinleştirir. Eski usul mu? Evet. Etkili mi? Kesinlikle."
+    },
+    "adt": {
+      "title": "Omurga dekompresyonu",
+      "text": "Omurgan tüm gün yerçekimi altında sıkışıyor. Bunu dene: ayaklarını omuz genişliğinde aç, parmaklarını başının üzerinde kenetleye ve olabildiğince uzun uzan. 15 saniye tut. Şu an gerçekten bir iki santimetre daha uzun olabilirsin."
+    },
+    "adu": {
+      "title": "Dikkat vergisi",
+      "text": "Her bildirim, her rozet, her okunmamış mesaj dikkatine küçük bir vergi. Gün boyunca bunlar saatlerce kayıp odaklanmaya dönüşüyor. Bu mola boyunca tüm bildirimleri kapat. Döndüğünde, önemli şeylere harcamak için tam bir dikkat bütçen olacak."
+    },
+    "adv": {
+      "title": "Bilek bakım istasyonu",
+      "text": "Bileklerin günde yaklaşık 40.000 tuş vuruşu işliyor. Sağ kolunu uzat, avuç içi yere baksın ve sol elinle parmaklarını nazikçe aşağı ve geri çek. 15 saniye tut. Değiştir. Sonra yavaş yumruk-yelpaze hareketleri yap, 10 kez. Tendonların sana teşekkür eder."
+    },
+    "adw": {
+      "title": "Debug yürüyüşü",
+      "text": "Stanford ve diğer üniversitelerdeki araştırmalar, yürüyüşün yaratıcı problem çözmeyi yüzde 60'a kadar iyileştirdiğini doğruluyor. Bir bug ya da tasarım kararında sıkıştıysan ekrana bakmayı bırak. 5 dakika yürü. Çözüm, onu ararken değil aramazken beliriyor."
+    },
+    "adx": {
+      "title": "Kas hafızası sıfırlama",
+      "text": "Vücudun en uzun süre tuttuğun pozisyona adapte olur. Saatlerce oturduktan sonra kasların gerçekten o duruşun etrafında şekillenir. Kalk ve tersini yap: sırtını eğ, göğsünü aç, kollarını yukarı uzan. Kaslarına 'dik durmak' nasıl bir şeydir hatırlat."
+    },
+    "ady": {
+      "title": "Göz kası egzersizi",
+      "text": "Her gözünde altı kas var ve sabit bir ekran mesafesine bakmak bunları katılaştırıyor. Bunu dene: bir kalemi kol mesafesinde tut, ona odaklan, sonra 6 metre uzaktaki bir şeye odak kaydır. 10 kez değiştir. Germe gibi, ama gözlerin için."
+    },
+    "adz": {
+      "title": "Beyin tekrarının bilimi",
+      "text": "Nörobilim, beyninin becerileri pratik sırasında değil, dinlenirken tekrar edip pekiştirdiğini gösteriyor. NIH araştırmacıları mola vermenin daha hızlı beceri edinmeye yol açtığını buldu. Yani bu mola erteleme değil — kelimenin tam anlamıyla, beyninin az önce pratik ettiği şeyde nasıl iyileştiği."
+    },
+    "aea": {
+      "title": "Amaçlı atıştırma",
+      "text": "Atıştıracaksan değer ver. Kuruyemiş, bitter çikolata, meyve ve yeşil çay, odaklanmayı destekleyen ve iltihabı azaltan bileşikler içeriyor. Otomattaki şekerlemeyi atla. Beynin şeker dalgalanmaları değil, gerçek gıdayla en iyi çalışıyor."
+    },
+    "aeb": {
+      "title": "Kortizol sıfırlama",
+      "text": "Stresli ve kamburlaşmış bir duruşta oturmak aslında kortizol seviyelerini artırıyor. Amy Cuddy'nin araştırması (tartışmalı ama ilgi çekici), geniş duruşların stres hormonlarını düşürdüğünü öne sürüyor. Kalk, ellerini beline koy ve 2 dakika dik dur. Süpermen pozu. Pelerin gerekmez."
+    },
+    "aec": {
+      "title": "Mikro şekerleme bilimi",
+      "text": "Düsseldorf Üniversitesi'nin araştırmasına göre 6 dakikalık bir şekerleme, bellek pekiştirmeyi iyileştiriyor. Uyumana gerek yok — sadece gözlerini kapat ve birkaç dakika dinlen. Uykuya geçiş bile bellek işleme ağlarını etkinleştiriyor."
+    },
+    "aed": {
+      "title": "Yürüyüş meditasyonu",
+      "text": "3 dakika boyunca yavaş ve bilinçli yürü. Her adımın hissine odaklan — topuktan parmak ucuna, ağırlık kayması, altındaki zemin. Bu yürüyüş meditasyonu; hareketle bilinçli farkındalığın faydalarını tek basit bir pratikte birleştiriyor."
+    },
+    "aee": {
+      "title": "Tetik nokta terapisi",
+      "text": "Kürek kemiği ile omurga arasındaki o düğümü hissediyor musun? Bu, rhomboid kasındaki bir tetik nokta. Bir tenis topu (ya da yumruğunu) bastır ve 30 saniye sıkı basınç uygula. Yavaşça bırak. Her iki tarafı da yap. Ofis kalitesinde kas terapisi — randevu gerekmez."
+    },
+    "aef": {
+      "title": "Ekran mesafesi kontrolü",
+      "text": "Monitörün gözlerinden yaklaşık 50-70 santimetre uzakta olmalı — kol boyu kadar. Çok yakın göz yorgunluğunu artırır; çok uzak öne eğilmene neden olur. Şimdi ölç. Gün boyunca yavaş yavaş ekrana yaklaştıysan geri it."
+    },
+    "aeg": {
+      "title": "Yaratıcı sapma",
+      "text": "Nörobilim buna 'kuluçka' diyor — bir problemden uzaklaşmanın, beyninin varsayılan mod ağının odaklanırken göremediğin çözümler bulmasına izin verdiği olgu. 5 dakika tamamen ilgisiz bir şey yap. Karalama yap, ger ya da bulutlara bak. Beynin hâlâ çalışıyor."
+    },
+    "aeh": {
+      "title": "Dolaşım kontrol noktası",
+      "text": "30 dakika oturduktan sonra bacak arterlerinden geçen kan akışı önemli ölçüde azalıyor. Çözüm basit: kalk ve sadece 5 dakika yürü. Araştırmalar bunun normal kan akışını yeniden sağlamak ve damar sağlığını korumak için yeterli olduğunu gösteriyor."
+    },
+    "aei": {
+      "title": "Çene ve TMJ rahatlaması",
+      "text": "Stres, konsantrasyon ve ekran çalışması çoğu zaman bilinçsiz çene sıkıştırmaya yol açar; bu da TMJ ağrısına, baş ağrılarına ve diş hasarına neden olabilir. Ağzını geniş aç, 5 saniye tut, sonra çeneni nazikçe sağa sola hareket ettir. Kulakların hemen altındaki kasları küçük daireler çizerek masaj yap."
+    },
+    "aej": {
+      "title": "Hidratasyon ve beyin gücü",
+      "text": "Hafif bir dehidrasyon bile (vücut ağırlığının yüzde 1-2'si) konsantrasyonu bozar, algılanan görev zorluğunu artırır ve ruh halini kötüleştirir. Beynin yaklaşık yüzde 75'i su. Şu an 200-250 ml su iç. Kahve değil. Gazlı içecek değil. Su. Nöronların kupkuru."
+    },
+    "aek": {
+      "title": "Sekme iflası",
+      "text": "20'den fazla tarayıcı sekmesi açıksa çoklu görev yapmıyorsun — bilişsel borç biriktiriyorsun. Her açık sekme çözümsüz bir karar. Bu mola boyunca sekme iflası ilan et. Önümüzdeki saatte ihtiyaç duymayacaklarını kapat. Zihinsel rahatlama anında gelir."
+    },
+    "ael": {
+      "title": "Ulnar sinir kontrolü",
+      "text": "Serçe ve yüzük parmağın karıncalanıyor ya da uyuşuyor mu? Bu muhtemelen ulnar sinirinin dirsekte sıkışması. Yazarken dirseklerini sert yüzeylere dayamaktan kaçın. Kollarını tamamen uzat, ger ve ellerini 10 saniye salla."
+    },
+    "aem": {
+      "title": "Duvara germe kombinasyonu",
+      "text": "Bir duvara kol mesafesinde karşı karşıya dur. İki elini de duvarın omuz hizasına koy ve sırtını düz tutarak öne eğ. 15 saniye tut — bu göğsün için. Şimdi yan dön, bir elini duvara koy ve duvardan uzağa dön. Her tarafta 15 saniye tut. Göğüs ve omuzlar: açıldı."
+    },
+    "aen": {
+      "title": "Odaklanma temettüsü",
+      "text": "DeskTime'ın en yüksek performanslı çalışanlar üzerine yaptığı araştırma en verimli örüntüyü buldu: 52 dakika odaklı çalışma, ardından 17 dakika mola. Mola boşa harcanan zaman değil — odaklı zamanı gerçekten odaklı kılan şey bu. Şu an bir sonraki verimli saatine yatırım yapıyorsun."
+    },
+    "aeo": {
+      "title": "D vitamini masa kontrolü",
+      "text": "Tüm gün içeride çalışıyorsan büyük ihtimalle D vitamini eksikliğin var — yetişkinlerin yüzde 42'sinde var. D vitamini ruh halini, bağışıklığı ve kemik sağlığını etkiliyor. Güneş varsa 5 dakika dışarı çık. Cildin sadece 10 dakika güneş maruziyetiyle D vitamini sentezliyor."
+    },
+    "aep": {
+      "title": "Ayak bileği hareketliliği",
+      "text": "Ayak bileklerin tüm vücut ağırlığını taşıyor ama nadiren geriliyor. Bunu dene: bir ayağın üzerinde dur ve diğer ayağınla alfabeyi yavaşça çiz. Evet, tüm harfleri. Ayağını değiştir. Ayak başına yaklaşık 90 saniye sürer ve ayak bileği stabilitesini önemli ölçüde artırır."
+    },
+    "aeq": {
+      "title": "Erteleme paradoksu",
+      "text": "Erteleme tembellik değil — duygusal düzenleme sorunudur. Negatif duygular (kaygı, sıkılma, öz şüphe) tetikleyen görevlerden kaçınıyorsun. Fiziksel hareket içeren 5 dakikalık bir mola, bu duyguları başlamayı mümkün hissettirmek için yeterince düzenleyebilir. Önce hareket et, motivasyon sonra gelir."
+    },
+    "aer": {
+      "title": "Günün kapanış ritüeli",
+      "text": "Laptopunu kapatmadan önce 3 dakika ayır: neler başardığını, nelerin beklediğini ve gurur duyduğun bir şeyi yaz. Bu 'kapanış ritüeli' bilişsel kapanış yaratır, iş düşüncelerinin akşamına sızmasını önler ve yarın için sana güzel bir başlangıç noktası verir."
     }
   },
   "ui": {

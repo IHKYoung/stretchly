@@ -463,6 +463,279 @@
     },
     "adm": {
       "text": "Màn hình vừa gọi. Nó bảo bạn ngồi sát quá lâu rồi."
+    },
+    "adn": {
+      "text": "Code không tự debug được đâu, dù bạn ngồi hay đứng. Nhưng ít nhất cột sống sẽ tha thứ cho bạn nếu đứng dậy."
+    },
+    "ado": {
+      "text": "Giải thích bug cho con vịt cao su tưởng tượng đi. Không được thì giải thích cho bức tường. Tường là người nghe tốt lắm."
+    },
+    "adp": {
+      "text": "Cổ tay đã gõ hàng nghìn chữ hôm nay rồi. Duỗi tay ra — vươn thẳng cánh tay rồi nhẹ nhàng kéo ngón tay về phía sau."
+    },
+    "adq": {
+      "text": "Bạn đang giữ nguyên cả codebase trong đầu. Đặt nó xuống 20 giây thôi."
+    },
+    "adr": {
+      "text": "Đang đợi build xong à? Tuyệt vời. Đứng dậy vươn vai. Đây là thời gian làm việc hợp lệ."
+    },
+    "ads": {
+      "text": "Bạn có 47 tin nhắn Slack chưa đọc. Chúng chờ thêm 20 giây được. Chớp mắt đi."
+    },
+    "adt": {
+      "text": "\"Bận quá không nghỉ được\" chính là cách bạn kết thúc bằng một kỳ nghỉ dài hơn nhiều, không tự nguyện."
+    },
+    "adu": {
+      "text": "Não sau code review là có thật. Nhắm mắt lại và để neuron ngừng cãi nhau."
+    },
+    "adv": {
+      "text": "Bí ý tưởng? Đứng dậy. Đi 10 bước. Ngồi xuống. Đoạn văn sẽ sợ sự trở lại của bạn."
+    },
+    "adw": {
+      "text": "Decision fatigue là có thật. Ngừng chọn lựa. Chỉ cần thở 20 giây."
+    },
+    "adx": {
+      "text": "3 giờ chiều uể oải rồi. Đường huyết giảm. Đứng dậy, vươn vai, kiếm gì ăn nhẹ."
+    },
+    "ady": {
+      "text": "Chân bạn vẫn tồn tại dưới bàn đấy. Nhắc chúng bằng cách đứng dậy."
+    },
+    "adz": {
+      "text": "Hip flexor đã co rúm hàng giờ rồi. Đứng dậy và lunge đi."
+    },
+    "aea": {
+      "text": "Lưng giữa bị cứng rồi. Đan tay sau đầu rồi nhẹ nhàng ngả người ra sau."
+    },
+    "aeb": {
+      "text": "Duỗi cẳng tay: vươn tay, ngửa lòng bàn tay, nhẹ nhàng kéo ngón xuống. Phòng RSI trong 10 giây."
+    },
+    "aec": {
+      "text": "Cuộc gọi tới, thử vừa đi vừa nói. Não hoạt động tốt hơn khi di chuyển."
+    },
+    "aed": {
+      "text": "Cầu thang có đó. Leo vài bậc đi. Hệ tim mạch sẽ gửi thiệp cảm ơn."
+    },
+    "aee": {
+      "text": "Độ sáng màn hình: hợp với phòng hay mặt bạn đang thành đèn pin? Chỉnh lại đi."
+    },
+    "aef": {
+      "text": "Ánh sáng xanh không hủy hoại cuộc đời đâu, nhưng màn hình có lẽ sáng quá. Giảm xuống một chút."
+    },
+    "aeg": {
+      "text": "Đeo tai nghe mấy tiếng rồi. Cho tai nghỉ đi. Tai không được thiết kế để chạy marathon."
+    },
+    "aeh": {
+      "text": "Chất lượng giấc ngủ tối nay bắt đầu từ bây giờ. Nhìn ra khỏi màn hình và cho mắt nghỉ."
+    },
+    "aei": {
+      "text": "Đang với tay lấy snack? Thử một nắm hạt thay vì. Não cần nhiên liệu tốt hơn bạn nghĩ."
+    },
+    "aej": {
+      "text": "Deep work thì tốt. Deep isolation thì không. Lần cuối bạn nói chuyện với người thật là khi nào?"
+    },
+    "aek": {
+      "text": "Có bàn đứng không? Đến lúc đổi tư thế rồi. Không có thì cứ đứng dậy."
+    },
+    "ael": {
+      "text": "Xoay người trên ghế: đặt tay phải lên đầu gối trái, xoay, giữ 10 giây. Đổi bên. Chair yoga, không cần thảm."
+    },
+    "aem": {
+      "text": "Phòng có nóng quá không? Nhiệt độ mát hơn giúp tập trung tốt hơn. Mở cửa sổ hoặc chỉnh điều hòa."
+    },
+    "aen": {
+      "text": "Tháo tai nghe ra. Lắng nghe tiếng thật xung quanh 20 giây."
+    },
+    "aeo": {
+      "text": "Bạn đang giữ mental model của cả hệ thống trong đầu. Mệt lắm. Buông ra một lát."
+    },
+    "aep": {
+      "text": "git commit -m \"đi nghỉ\" — Commit message hay nhất hôm nay."
+    },
+    "aeq": {
+      "text": "Stack Overflow không giúp bạn vươn vai được. Đứng dậy. Cái này phải tự làm."
+    },
+    "aer": {
+      "text": "Deadline không dời nếu bạn vươn vai 20 giây. Nhưng đốt sống thì có. Theo hướng tốt."
+    },
+    "aes": {
+      "text": "Nhìn chằm chằm đoạn văn đó 10 phút rồi? In ra rồi gạch bút đi. Đổi phương tiện, đổi góc nhìn."
+    },
+    "aet": {
+      "text": "Vừa ship xong? Nộp bản thảo rồi? Đứng dậy vươn vai ăn mừng. Xứng đáng lắm."
+    },
+    "aeu": {
+      "text": "Sắp deadline hồi hộp? Vận động đi. Lo lắng thích sống trong sự bất động."
+    },
+    "aev": {
+      "text": "Kiểm tra độ sáng màn hình. Nếu thấy bóng mình phản chiếu, là quá sáng cho phòng rồi."
+    },
+    "aew": {
+      "text": "Ăn vặt xa bàn phím đi. Vụn bánh không nên nằm giữa các phím."
+    },
+    "aex": {
+      "text": "Đi bộ 5 phút tạo nhiều ý tưởng hơn 30 phút nhìn trang trắng. Khoa học bảo thế."
+    },
+    "aey": {
+      "text": "Bạn đang mở 38 tab. Đóng mấy cái không bao giờ đọc đi. Không phải tích trữ... à mà đúng, tích trữ thật."
+    },
+    "aez": {
+      "text": "Đọc câu đó 5 lần mà vẫn không hiểu? Đó là não đang nói: đi ra ngoài."
+    },
+    "afa": {
+      "text": "Không có Ctrl+Z cho cột sống. Đứng dậy chăm sóc nó ngay."
+    },
+    "afb": {
+      "text": "Màn hình thứ hai không thấy bạn vươn vai đâu. Cứ vươn đi, nó không đánh giá."
+    },
+    "afc": {
+      "text": "Cà phê không thay thế nghỉ ngơi. Bạn biết rồi. Uống thêm nước lọc nữa."
+    },
+    "afd": {
+      "text": "Bug vẫn ở đó khi bạn quay lại. Nhưng sẽ nhìn nó bằng đôi mắt mới."
+    },
+    "afe": {
+      "text": "Vừa mất 10 phút đặt tên biến. Não xứng đáng được nghỉ."
+    },
+    "aff": {
+      "text": "Họp xong rồi. Xả stress đi. Xoay cổ chầm chậm sang trái, rồi phải."
+    },
+    "afg": {
+      "text": "Hộp thư sống sót được 60 giây mà không có bạn. Nhìn ra cửa sổ đi."
+    },
+    "afh": {
+      "text": "Tay chuột bị chuột rút? Đổi tay một phút. Lạ lắm. Đó là mục đích."
+    },
+    "afi": {
+      "text": "Ngón tay tê? Đó là dây thần kinh xin được duỗi. Xoay cổ tay 10 vòng mỗi chiều."
+    },
+    "afj": {
+      "text": "Đứng lâu quá rồi? Ngồi xuống chút. Mấu chốt là luân phiên, không phải chịu đựng."
+    },
+    "afk": {
+      "text": "Đến lúc AFK rồi. Đúng nghĩa đen. Bước Xa Khỏi Bàn Phím."
+    },
+    "afl": {
+      "text": "Có cây trên bàn không? Kiểm tra nó đi. Nếu nó sắp chết, đó là ẩn dụ. Tưới nước cho cả hai."
+    },
+    "afm": {
+      "text": "Mở cửa sổ ra. Không khí trong lành làm cho não giống như restart máy tính."
+    },
+    "afn": {
+      "text": "Cúi cằm xuống ngực, giữ 10 giây. Gáy đã co cứng cả ngày rồi."
+    },
+    "afo": {
+      "text": "Siết mông khi ngồi. Giữ 5 giây. Thả. Không ai biết. Tập lén."
+    },
+    "afp": {
+      "text": "Duỗi gân kheo ngồi: duỗi thẳng một chân, với tay chạm ngón chân, giữ 10 giây. Đổi chân."
+    },
+    "afq": {
+      "text": "Mắt tiết ít nước mắt hơn khi nhìn màn hình. Chớp mắt chậm và có chủ đích 10 lần."
+    },
+    "afr": {
+      "text": "Thở sâu hạ huyết áp ngay lập tức. Hít vào 4, thở ra 6. Lặp lại 3 lần."
+    },
+    "afs": {
+      "text": "Đứng dậy để trọng lực giãn cột sống. Buông thõng tay và thở 15 giây."
+    },
+    "aft": {
+      "text": "Bạn thuộc 200 phím tắt. Đến lúc học phím tắt cơ thể: đứng, duỗi, ngồi. Lặp lại."
+    },
+    "afu": {
+      "text": "Đổi IDE sang light mode 5 phút. Hoặc dark mode. Thay đổi gì đó. Reset vỏ não thị giác."
+    },
+    "afv": {
+      "text": "Nhìn con trỏ nhấp nháy mãi rồi. Nhắm mắt không nhìn gì 20 giây. Xa xỉ."
+    },
+    "afw": {
+      "text": "Nhìn ra cửa sổ tìm vật xa nhất có thể. Tập trung vào nó. Cơ mắt cần điều này."
+    },
+    "afx": {
+      "text": "Đi ra bếp. Không cần lý do. Cứ đi. Vận động là thuốc."
+    },
+    "afy": {
+      "text": "Tìm cầu thang duỗi bắp chân trên mép bậc. Giữ 15 giây mỗi bên."
+    },
+    "afz": {
+      "text": "Tai nằm dưới tai nghe mấy tiếng rồi. Tháo ra và tận hưởng sự yên tĩnh."
+    },
+    "aga": {
+      "text": "Não sương mù? Vỏ não trước trán đang cạn kiệt. Đứng dậy, vận động, cho nó reboot."
+    },
+    "agb": {
+      "text": "Multitasking là huyền thoại. Não chỉ đang context-switch với overhead. Nghỉ kiểu single-threaded đi."
+    },
+    "agc": {
+      "text": "Mỗi lần đổi context mất 23 phút để tập trung lại. Nghỉ này mất 20 giây. Tính toán đi."
+    },
+    "agd": {
+      "text": "Cầu toàn là trì hoãn đội lốt khoa học. Bước ra. Done tốt hơn perfect."
+    },
+    "age": {
+      "text": "Cảm thấy mình là kẻ lừa đảo? Ai cũng vậy đôi khi. Đứng dậy vươn vai — kẻ giả mạo không biết tự chăm mình."
+    },
+    "agf": {
+      "text": "Refresh email mỗi 30 giây không phải năng suất. Đứng dậy. Đó mới là năng suất."
+    },
+    "agg": {
+      "text": "Bí sáng tạo? Đổi tư thế. Tư thế mới, góc nhìn mới."
+    },
+    "agh": {
+      "text": "Lưng dưới đang khiếu nại. Dịch ra mép ghế ngồi thẳng lưng 30 giây."
+    },
+    "agi": {
+      "text": "Đau vai là code review của cơ thể: \"Needs changes.\" Xoay vai ra sau 10 lần."
+    },
+    "agj": {
+      "text": "Đau cổ tay sau khi code? Nắm tay nhẹ rồi xoay chậm. 10 vòng mỗi chiều."
+    },
+    "agk": {
+      "text": "Bắt chéo mắt cá chân lên đầu gối đối diện, nghiêng về trước. Mở hông. Giữ 15 giây. Đổi bên."
+    },
+    "agl": {
+      "text": "Nhìn vào mắt đồng nghiệp và nói điều gì đó tốt đẹp. Kết nối con người thắng mọi thông báo."
+    },
+    "agm": {
+      "text": "Nghe âm thanh thiên nhiên 30 giây — mưa, chim, biển. Hệ thần kinh sẽ hạ số."
+    },
+    "agn": {
+      "text": "Deep focus là sprint, không phải marathon. Bạn vừa sprint xong. Đi bộ nghỉ đi."
+    },
+    "ago": {
+      "text": "Kiểm tra tư thế: đang nghiêng vào màn hình như nó nợ tiền à? Dựa lưng lại đi."
+    },
+    "agp": {
+      "text": "Ăn gì đi. Nhưng lần này nếm thử. Nhai chậm. Bữa trưa không phải speedrun."
+    },
+    "agq": {
+      "text": "Lần cuối uống nước là khi nào? Không phải cà phê. Nước lọc. Đi đi."
+    },
+    "agr": {
+      "text": "Nếu có nắng, ra ngoài hứng một chút. Nhịp sinh học đang van xin."
+    },
+    "ags": {
+      "text": "Phòng lạnh quá hay nóng quá? Chỉnh lại. Nhiệt độ ảnh hưởng trực tiếp đến sự tập trung."
+    },
+    "agt": {
+      "text": "Box breathing: hít 4, giữ 4, thở ra 4, giữ 4. Vòng lặp yêu thích của hệ thần kinh."
+    },
+    "agu": {
+      "text": "Nhướn mày cao nhất có thể. Giữ 5 giây. Thả. Trán bạn căng hơn bạn tưởng."
+    },
+    "agv": {
+      "text": "Xòe ngón tay rộng nhất có thể. Giữ 5 giây. Nắm chặt lại. Lặp 3 lần."
+    },
+    "agw": {
+      "text": "Siết cơ core khi ngồi. Kéo rốn về phía cột sống và giữ 10 giây."
+    },
+    "agx": {
+      "text": "Kiễng chân 10 giây. Rồi ngả về gót. Lặp lại. Tập thăng bằng mini."
+    },
+    "agy": {
+      "text": "Chú ý hơi thở. Đừng thay đổi nó. Chỉ cần chú ý. Đó là mindfulness, và bạn vừa làm xong."
+    },
+    "agz": {
+      "text": "Lời nhắc nghỉ này do một con người viết — người cũng hay phớt lờ nhắc nghỉ. Đừng như chúng tôi. Vươn vai đi."
     }
   },
   "longBreakIdeas": {
@@ -709,6 +982,250 @@
     "aci": {
       "title": "Ngắm mây",
       "text": "Nếu nhìn thấy bầu trời, dành một phút ngắm mây. Screensaver nguyên bản — và cho não kiểu tập trung mềm thúc đẩy tư duy sáng tạo."
+    },
+    "acj": {
+      "title": "Trí tuệ vịt cao su",
+      "text": "Lập trình viên dùng vịt cao su để giải thích code và tìm bug. Nhưng phép màu thật sự? Là bước ra khỏi vấn đề hoàn toàn. Tiềm thức vẫn xử lý khi bạn vươn vai. Quay lại và lời giải cứ... ở đó."
+    },
+    "ack": {
+      "title": "RSI không phải huy hiệu",
+      "text": "Chấn thương do lặp lại ảnh hưởng đến 64% người làm việc máy tính. Dấu hiệu sớm — tê, cứng, đau cổ tay — dễ bỏ qua nhưng tốn kém nếu chữa muộn. Duỗi cẳng tay: vươn tay, úp lòng bàn tay, kéo nhẹ ngón về phía mình. Giữ 15 giây mỗi bên."
+    },
+    "acl": {
+      "title": "Duỗi người lúc compile",
+      "text": "Đang đợi build, deploy hay test suite? Đó không phải thời gian chết — là thời gian duỗi người miễn phí. Đứng dậy, cúi chạm ngón chân (hoặc cố gắng), rồi uốn người lên từ từ. Code và cột sống sẽ cùng sẵn sàng."
+    },
+    "acm": {
+      "title": "Mảnh vỡ tập trung",
+      "text": "Trung bình nhân viên văn phòng kiểm tra email hay tin nhắn mỗi 6 phút. Mỗi lần mất 23 phút để tập trung lại. Trong giờ nghỉ này, úp điện thoại và đóng app chat. Lấy lại sự tập trung từng chút một."
+    },
+    "acn": {
+      "title": "Nghịch lý bận rộn",
+      "text": "Nghiên cứu từ Stanford cho thấy làm việc không nghỉ không giúp nhanh hơn — mà chậm hơn, kém chính xác hơn, và dễ mắc lỗi phải sửa lâu hơn. Nghỉ ngơi không phải lười. Đó là kỹ thuật tối ưu hiệu suất."
+    },
+    "aco": {
+      "title": "Hồi phục sau code review",
+      "text": "Vừa sống sót qua code review? Hay vừa review xong? Dù thế nào, não đã ở chế độ soi lỗi quá lâu. Đến lúc chuyển số. Đứng dậy, vẩy tay, xoay vai, cho não chuyển từ 'chế độ phán xét' sang 'chế độ nghỉ'."
+    },
+    "acp": {
+      "title": "Trang trắng, thân căng",
+      "text": "Writer's block không phải vấn đề sáng tạo — thường là vấn đề cơ thể. Khi cơ thể căng thẳng, tâm trí cũng vậy. Đi lại 5 phút. Vươn tay qua đầu. Chữ sẽ quay lại, và hay hơn."
+    },
+    "acq": {
+      "title": "Cơn buồn ngủ 3 giờ chiều",
+      "text": "Uể oải sau bữa trưa là do nhịp sinh học, không chỉ do đồ ăn. Thay vì cà phê, thử đi bộ 5 phút hoặc duỗi người nhẹ. Vận động tăng cortisol tự nhiên và reset sự tỉnh táo mà không crash sau như caffeine."
+    },
+    "acr": {
+      "title": "Hội chứng chân tê",
+      "text": "Ngồi nén mạch máu chân và giảm tuần hoàn. Sau 90 phút ngồi, lưu lượng máu đến chân giảm 50%. Đứng dậy đi lại, hoặc kiễng chân 10 lần. Chân và hệ tim mạch sẽ cảm ơn."
+    },
+    "acs": {
+      "title": "Hip flexor kêu cứu",
+      "text": "Hip flexor co ngắn sau ngồi lâu, kéo xương chậu về trước gây đau lưng dưới. Đứng dậy, bước một chân ra sau thành lunge, đẩy hông về trước. Giữ 30 giây mỗi bên. Đây là bài duỗi bị bỏ quên nhất cho dân văn phòng."
+    },
+    "act": {
+      "title": "Xoay lưng giữa",
+      "text": "Cột sống ngực bị khóa cứng vì cúi trước bàn phím. Ngồi mép ghế, khoanh tay trước ngực, xoay chậm sang trái và phải. Giữ mỗi bên 10 giây. Sẽ nghe vài tiếng lách tách đấy."
+    },
+    "acu": {
+      "title": "Giải cứu cẳng tay",
+      "text": "Cẳng tay có 20 cơ điều khiển ngón và cổ tay. Sau nhiều giờ gõ phím và dùng chuột, chúng kiệt sức. Vươn tay, ngửa lòng bàn tay, kéo nhẹ ngón về phía sau. Giữ 15 giây. Đổi tay. Lặp 2 lần."
+    },
+    "acv": {
+      "title": "Vừa đi vừa nói",
+      "text": "Có cuộc gọi sắp tới? Gọi khi đi bộ. Nghiên cứu Stanford cho thấy đi bộ tăng sáng tạo 60%. Không cần treadmill — cứ đi quanh phòng hoặc ra ngoài. Ý tưởng sắc hơn và cơ thể cảm ơn bạn."
+    },
+    "acw": {
+      "title": "Sức mạnh cầu thang",
+      "text": "Leo cầu thang 3 phút tăng năng lượng hiệu quả hơn 30mg caffeine, theo nghiên cứu U of Georgia. Nếu có cầu thang, leo vài lượt trong giờ nghỉ. Nhanh, miễn phí, và luôn hiệu quả."
+    },
+    "acx": {
+      "title": "Màn hình và giấc ngủ",
+      "text": "Nhìn màn hình sáng buổi tối giảm melatonin đến 50%. Nếu đã qua 5 giờ chiều, hãy giảm sáng hoặc bật chế độ đêm. Giấc ngủ tối nay được quyết định bởi những gì mắt bạn nhìn lúc này."
+    },
+    "acy": {
+      "title": "Sự thật ánh sáng xanh",
+      "text": "Ánh sáng xanh từ màn hình có lẽ không hại võng mạc, nhưng gây mỏi mắt kỹ thuật số và rối giấc ngủ. Giải pháp không phải kính lọc đắt tiền — mà là nhìn xa thường xuyên, chỉnh sáng, và nghỉ như thế này."
+    },
+    "acz": {
+      "title": "Mỏi tai",
+      "text": "Đeo tai nghe hơn 60 phút liên tục gây mỏi tai, tích áp, và thậm chí hại thính giác ở âm lượng cao. Tháo ra trong suốt giờ nghỉ. Cho tai thở. Nếu cần âm thanh, thử loa nhỏ một lúc."
+    },
+    "ada": {
+      "title": "Pin quyết định",
+      "text": "Bạn ra khoảng 35.000 quyết định mỗi ngày, mỗi cái tiêu hao nguồn lực hữu hạn. Buổi chiều chất lượng quyết định giảm rõ — đó là 'decision fatigue'. Giờ nghỉ này, ngừng chọn. Đừng lướt, đừng chọn, đừng lên kế hoạch. Chỉ yên lặng."
+    },
+    "adb": {
+      "title": "Kiểm tra ăn vặt stress",
+      "text": "Ăn vặt do stress không phải vì đói — mà vì cortisol bảo não cần an ủi. Lần tới với tay lấy snack, dừng lại hỏi: đói thật hay stress? Nếu stress, thử thở sâu 5 lần trước. Vẫn đói thì ăn — nhưng chọn đồ có chất."
+    },
+    "adc": {
+      "title": "Bẫy cô lập",
+      "text": "Tập trung sâu quan trọng cho công việc sáng tạo và kỹ thuật, nhưng cô lập lâu tăng cortisol và giảm oxytocin. Giờ nghỉ này hãy chào ai đó — đồng nghiệp, hàng xóm, người nhà. Chỉ cần giao tiếp ngắn cũng reset mức stress."
+    },
+    "add": {
+      "title": "Đổi tư thế bàn đứng",
+      "text": "Bàn đứng không thần kỳ — đứng yên hàng giờ cũng tệ gần bằng ngồi yên. Chìa khóa là luân phiên. Đứng lâu thì ngồi. Ngồi lâu thì đứng. Chuyển trọng lượng, vẫy ngón chân, hoặc đi tại chỗ. Mục tiêu là vận động, không phải tư thế."
+    },
+    "ade": {
+      "title": "Chair yoga: bồ câu ngồi",
+      "text": "Bắt chéo mắt cá phải lên đầu gối trái. Ngồi thẳng rồi nghiêng về trước đến khi cảm thấy duỗi ở hông phải và mông. Giữ 30 giây, đổi bên. Đây là bài mở hông tốt nhất có thể làm mà không cần rời ghế."
+    },
+    "adf": {
+      "title": "Nhiệt độ và tập trung",
+      "text": "Nghiên cứu Cornell cho thấy tăng nhiệt độ văn phòng từ 20°C lên 25°C giảm 44% lỗi gõ phím và tăng 150% sản lượng. Lạnh thì sưởi ấm. Nóng quá thì làm mát. Nhiệt kế là công cụ năng suất."
+    },
+    "adg": {
+      "title": "Vệ sinh âm thanh",
+      "text": "Tiếng ồn liên tục — văn phòng mở, thông báo, nhạc có lời — tăng tải nhận thức đến 66%. Giờ nghỉ này, tắt hết âm thanh. Ngồi yên lặng 2 phút. Có thể lạ lúc đầu. Đó là dấu hiệu bạn cần nó."
+    },
+    "adh": {
+      "title": "Gánh nặng codebase",
+      "text": "Giữ hệ thống phức tạp trong bộ nhớ làm việc là việc tốn não nhất con người làm. Nên mới mệt sau một ngày 'chỉ ngồi'. Giờ nghỉ này, cố tình dump mental state. Ghi lại đang làm đến đâu, rồi buông."
+    },
+    "adi": {
+      "title": "Git commit rồi duỗi người",
+      "text": "Trước khi push commit, đẩy chính mình ra khỏi ghế. Biến thành nghi thức: mỗi commit = một lần duỗi. Một ngày productive sẽ có 10-20 microbreak tự nhiên. Cả lịch sử version và sức khỏe đều cải thiện."
+    },
+    "adj": {
+      "title": "Chữ mất nghĩa",
+      "text": "Có hiện tượng tâm lý gọi là 'semantic satiation' — nhìn chữ lâu đến mức nó trông không thật. Nếu sửa đoạn văn đó 20 phút rồi, đó là tín hiệu. Bước đi. Quay lại sẽ thấy tươi mới và lỗi hiện rõ."
+    },
+    "adk": {
+      "title": "Bản thảo khi đi bộ",
+      "text": "Nhiều nhà văn nổi tiếng — Dickens, Beethoven, Darwin — đi bộ mỗi ngày như một phần quy trình sáng tạo. Không cần 2 tiếng. Chỉ 5 phút đi bộ chuyển não từ focused mode sang diffuse mode, nơi ý tưởng kết nối."
+    },
+    "adl": {
+      "title": "Lo lắng deadline",
+      "text": "Stress trước deadline kích hoạt phản ứng chiến-hay-chạy, thu hẹp tư duy và tăng lỗi. Nghịch lý nhưng điều tốt nhất trước deadline là nghỉ. Vận động chuyển hóa hormone stress và phục hồi tư duy rộng cần thiết để hoàn thành."
+    },
+    "adm": {
+      "title": "Nghi thức sau khi nộp",
+      "text": "Vừa bấm submit? Gửi email rồi? Merge PR xong? Đừng nhảy ngay sang việc tiếp. Cho não khoảnh khắc ghi nhận hoàn thành. Đứng dậy, duỗi người, thậm chí ăn mừng. Ghi nhận milestone — dù nhỏ — ngăn burnout."
+    },
+    "adn": {
+      "title": "Tàu lượn đường huyết",
+      "text": "Cơn sụt năng lượng buổi chiều một phần do đường huyết giảm sau bữa trưa nhiều carb. Để năng lượng ổn, kết hợp carb với protein và chất xơ. Nhưng ngay lúc này, cứ vận động — đi bộ 5 phút ổn định glucose và sáng đầu óc."
+    },
+    "ado": {
+      "title": "Quy trình chân tê",
+      "text": "Tê hoặc châm chích ở chân do dây thần kinh bị nén và giảm lưu thông máu. Đứng dậy lắc mỗi chân 10 giây. Rồi đi tại chỗ 10 bước. Máu lưu thông, cảm giác trở lại, năng suất hồi phục."
+    },
+    "adp": {
+      "title": "Kiểm tra ánh sáng",
+      "text": "Ánh sáng kém gây mỏi mắt, đau đầu và mệt mỏi. Màn hình nên sáng tương đương xung quanh — không phải hình chữ nhật phát sáng trong phòng tối. Chỉnh đèn bàn hoặc đèn phòng ngay. Mắt sẽ thấy khác biệt ngay lập tức."
+    },
+    "adq": {
+      "title": "Quy tắc nghỉ tai nghe",
+      "text": "Chuyên gia thính học khuyên quy tắc 60/60: không quá 60% âm lượng, không quá 60 phút liên tục. Tai không có ngưỡng đau cho tổn thương từ từ — mất thính giác lén lút đến. Tháo tai nghe suốt giờ nghỉ này."
+    },
+    "adr": {
+      "title": "Tập mini",
+      "text": "Không cần gym. Ngay bây giờ, làm 10 squat, 10 push-up (hoặc push-up tường), và 10 kiễng chân. Tổng: dưới 3 phút. Lợi ích: tuần hoàn máu tốt hơn, nhịp tim tăng, endorphin phun, và cảm giác tự hào."
+    },
+    "ads": {
+      "title": "Mẹo in bài",
+      "text": "Nhà văn và biên tập: thử in bản thảo ra giấy. Bạn sẽ bắt lỗi mà mắt nhìn màn hình bỏ sót. Cầm giấy và dùng bút kích hoạt đường não khác so với sửa trên màn hình. Cổ điển? Đúng. Hiệu quả? Chắc chắn."
+    },
+    "adt": {
+      "title": "Giãn cột sống",
+      "text": "Cột sống bị nén cả ngày. Đứng dậy, chân rộng bằng vai, đan ngón tay trên đầu, vươn cao nhất có thể. Giữ 15 giây. Có thể bạn đang cao hơn một hai centimet lúc này."
+    },
+    "adu": {
+      "title": "Thuế chú ý",
+      "text": "Mỗi thông báo, mỗi badge, mỗi tin chưa đọc là khoản thuế nhỏ đánh vào sự chú ý. Cả ngày chúng cộng thành hàng giờ mất tập trung. Giờ nghỉ này, tắt hết thông báo. Quay lại sẽ có ngân sách chú ý đầy đủ cho việc quan trọng."
+    },
+    "adv": {
+      "title": "Trạm chăm sóc cổ tay",
+      "text": "Cổ tay xử lý khoảng 40.000 lần gõ phím mỗi ngày. Vươn tay phải, úp lòng bàn tay, dùng tay trái kéo nhẹ ngón xuống và ra sau. Giữ 15 giây. Đổi tay. Rồi làm động tác nắm-xòe chậm 10 lần. Gân sẽ cảm ơn."
+    },
+    "adw": {
+      "title": "Đi bộ debug",
+      "text": "Nghiên cứu tại Stanford xác nhận đi bộ cải thiện giải quyết vấn đề sáng tạo đến 60%. Nếu bí bug hay quyết định thiết kế, ngừng nhìn màn hình. Đi 5 phút. Lời giải thường xuất hiện khi không tìm kiếm."
+    },
+    "adx": {
+      "title": "Reset trí nhớ cơ bắp",
+      "text": "Cơ thể thích nghi với tư thế giữ lâu nhất. Sau nhiều giờ ngồi, cơ bắp định hình theo tư thế đó. Đứng dậy làm ngược lại: uốn lưng, mở ngực, vươn qua đầu. Nhắc cơ bắp 'thẳng lưng' trông thế nào."
+    },
+    "ady": {
+      "title": "Tập cơ mắt",
+      "text": "Mỗi mắt có 6 cơ, và nhìn màn hình cùng khoảng cách làm chúng cứng. Thử: giữ bút cách tầm tay, tập trung vào nó, rồi chuyển sang vật cách 6 mét. Luân phiên 10 lần. Như vươn vai, nhưng cho mắt."
+    },
+    "adz": {
+      "title": "Khoa học não tập luyện",
+      "text": "Khoa học thần kinh cho thấy não phát lại và củng cố kỹ năng lúc nghỉ, không phải lúc luyện. Nhà nghiên cứu NIH phát hiện nghỉ ngơi giúp học kỹ năng nhanh hơn. Nên giờ nghỉ này không phải trì hoãn — mà là cách não giỏi hơn."
+    },
+    "aea": {
+      "title": "Ăn vặt có mục đích",
+      "text": "Ăn vặt thì ăn cho đáng. Hạt, socola đen, berries, trà xanh đều có hợp chất hỗ trợ tập trung và giảm viêm. Bỏ qua kẹo máy bán tự động. Não chạy tốt nhất bằng thức ăn thật, không phải đường phọt."
+    },
+    "aeb": {
+      "title": "Reset cortisol",
+      "text": "Ngồi tư thế căng thẳng, co lưng thực sự tăng cortisol. Nghiên cứu Amy Cuddy (tranh cãi nhưng thú vị) cho thấy tư thế mở giảm hormone stress. Đứng dậy, chống tay lên hông, đứng thẳng 2 phút. Tư thế Superman. Không cần áo choàng."
+    },
+    "aec": {
+      "title": "Khoa học ngủ trưa mini",
+      "text": "Ngủ trưa 6 phút cải thiện trí nhớ, theo nghiên cứu Đại học Düsseldorf. Không cần ngủ thật — chỉ cần nhắm mắt nghỉ vài phút. Ngay cả giai đoạn chuyển tiếp trước khi ngủ đã kích hoạt mạng xử lý trí nhớ."
+    },
+    "aed": {
+      "title": "Thiền đi bộ",
+      "text": "Đi chậm và có chủ đích 3 phút. Tập trung vào cảm giác mỗi bước — gót đến ngón, chuyển trọng lượng, sàn bên dưới. Đây là thiền đi bộ, kết hợp lợi ích vận động và chánh niệm trong một bài tập đơn giản."
+    },
+    "aee": {
+      "title": "Bấm huyệt tự chữa",
+      "text": "Cảm thấy cục cứng giữa bả vai và cột sống? Đó là trigger point ở cơ rhomboid. Ấn bóng tennis (hoặc nắm đấm) vào và giữ chặt 30 giây. Thả từ từ. Làm cả hai bên. Liệu pháp cơ cấp văn phòng, không cần đặt lịch."
+    },
+    "aef": {
+      "title": "Kiểm tra khoảng cách màn hình",
+      "text": "Màn hình nên cách mắt 50-70 centimet — khoảng một sải tay. Quá gần tăng mỏi mắt; quá xa khiến nghiêng người về trước. Đo ngay. Nếu đã lén tiến dần về phía màn hình cả ngày, đẩy lùi lại."
+    },
+    "aeg": {
+      "title": "Đường vòng sáng tạo",
+      "text": "Khoa học thần kinh gọi là 'ủ ý tưởng' — khi bước ra khỏi vấn đề, mạng chế độ mặc định của não tìm giải pháp bạn không thấy lúc tập trung. Nghỉ 5 phút làm gì hoàn toàn khác. Vẽ bậy, duỗi người, hoặc ngắm mây. Não vẫn đang làm việc."
+    },
+    "aeh": {
+      "title": "Checkpoint tuần hoàn",
+      "text": "Sau 30 phút ngồi, lưu lượng máu qua động mạch chân giảm đáng kể. Cách khắc phục đơn giản: đứng dậy đi 5 phút. Nghiên cứu cho thấy đủ để phục hồi lưu thông máu bình thường và bảo vệ sức khỏe mạch máu."
+    },
+    "aei": {
+      "title": "Giảm đau hàm và TMJ",
+      "text": "Stress, tập trung và làm việc máy tính thường gây nghiến răng vô thức, dẫn đến đau TMJ, đau đầu và hại răng. Há miệng rộng, giữ 5 giây, rồi nhẹ nhàng đưa hàm trái phải. Xoa cơ dưới tai bằng vòng tròn nhỏ."
+    },
+    "aej": {
+      "title": "Nước và sức mạnh não",
+      "text": "Chỉ mất nước nhẹ (1-2% trọng lượng cơ thể) đã giảm tập trung, tăng cảm giác khó và xấu tâm trạng. Não khoảng 75% là nước. Uống 200-250 ml nước ngay. Không phải cà phê. Không phải nước ngọt. Nước lọc. Neuron đang khát."
+    },
+    "aek": {
+      "title": "Phá sản tab",
+      "text": "Nếu mở hơn 20 tab trình duyệt, bạn không multitask — đang tích lũy nợ nhận thức. Mỗi tab mở là quyết định chưa giải quyết. Giờ nghỉ này, tuyên bố phá sản tab. Đóng hết những gì không cần trong giờ tới. Đầu óc nhẹ ngay."
+    },
+    "ael": {
+      "title": "Kiểm tra thần kinh ulnar",
+      "text": "Ngón út và ngón áp út tê hoặc châm chích? Có thể dây thần kinh ulnar bị nén ở khuỷu tay. Tránh tì khuỷu tay lên mặt cứng khi gõ. Duỗi thẳng tay, vươn ra, rồi vẩy tay 10 giây."
+    },
+    "aem": {
+      "title": "Combo duỗi với tường",
+      "text": "Đứng đối diện tường cách một sải tay. Đặt hai tay lên tường ngang vai rồi nghiêng về trước, giữ lưng thẳng. Giữ 15 giây — đó là duỗi ngực. Quay ngang, đặt một tay lên tường rồi xoay người ra. Giữ 15 giây mỗi bên. Ngực và vai: mở rồi."
+    },
+    "aen": {
+      "title": "Cổ tức tập trung",
+      "text": "Nghiên cứu DeskTime về nhân viên hiệu quả nhất cho thấy: 52 phút tập trung rồi 17 phút nghỉ. Giờ nghỉ không phải phí thời gian — mà là thứ làm cho giờ tập trung thực sự tập trung. Bạn đang đầu tư cho giờ hiệu quả tiếp theo."
+    },
+    "aeo": {
+      "title": "Kiểm tra Vitamin D",
+      "text": "Làm việc trong nhà cả ngày, bạn có thể thiếu Vitamin D — đến 42% người lớn thiếu. Vitamin D ảnh hưởng tâm trạng, miễn dịch và xương. Ra ngoài 5 phút nếu có nắng. Da tổng hợp Vitamin D chỉ cần 10 phút nắng."
+    },
+    "aep": {
+      "title": "Linh hoạt mắt cá chân",
+      "text": "Mắt cá chịu toàn bộ trọng lượng nhưng hiếm khi được duỗi. Thử: đứng một chân, chân kia vẽ bảng chữ cái trong không trung. Đổi chân. Khoảng 90 giây mỗi bên và cải thiện sự ổn định mắt cá đáng kể."
+    },
+    "aeq": {
+      "title": "Nghịch lý trì hoãn",
+      "text": "Trì hoãn không phải lười — mà là vấn đề điều tiết cảm xúc. Bạn tránh việc gây cảm giác tiêu cực (lo lắng, chán, nghi ngờ bản thân). Nghỉ 5 phút với vận động có thể điều hòa cảm xúc đủ để bắt đầu lại. Vận động trước, động lực theo sau."
+    },
+    "aer": {
+      "title": "Nghỉ cuối ngày",
+      "text": "Trước khi gập laptop, dành 3 phút ghi lại những gì đã làm, việc còn dang dở, và một điều tự hào. 'Nghi thức tắt máy' này tạo sự khép lại nhận thức, ngăn suy nghĩ công việc xâm nhập buổi tối, và cho bạn khởi đầu nhanh ngày mai."
     }
   },
   "utils": {
