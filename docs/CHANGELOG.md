@@ -17,6 +17,17 @@
 
 ## 未发布
 
+## 0.1.4 - 2026-04-23
+
+### 调整
+
+- 将根 `package.json`、`package-lock.json`、`apps/desktop/package.json`、`apps/desktop/package-lock.json`、`Cargo.toml` 与 `tauri.conf.json` 的版本真源统一提升到 `0.1.4`
+- 将当前未提交的 desktop reminder v2 与相关 docs 工作树收口到 `0.1.4` 本地 macOS 打包边界，并以 arm64 无签名安装包作为本轮版本输入
+
+### 修复
+
+- 修复 `apps/desktop` 智能提醒在 pause/focus/DND/app exclusion 前后容易漂移的问题：这些 passive blocker 现在只冻结投递并在解除后平移 due / waiting timer，不再整轮 reset；同时 smart 模式新增 recovery hold / recovery credit，用户短暂离开时会在返回后自动抵扣 microbreak、顺延 long break，达到自然休息阈值才 full reset
+
 ## 0.1.3 - 2026-04-20
 
 ### 新增

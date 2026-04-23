@@ -115,9 +115,11 @@
 
 - 这些项已经存在于 `PauzaSettings`，或者已经被 `shortcut_bindings()` 读取。
 - 也就是说，如果你决定把它们重新加回设置页，主要是前端信息架构和交互表达的问题，不是后端能力缺失的问题。
-- 当前 `breakBackdrop`、`breakCustomBackdrop*`、`breakIdeasEnabled`、`microbreakStartSound`、`microbreakEndSound`、`longBreakStartSound`、`longBreakEndSound`、`breakSoundVolume` 与 `current_time_in_breaks` 都已经是前台可见设置；`idle_opportunity_seconds` 再次回到 hidden compatibility field，当前 host 实际采用的是内置的递减阈值曲线：
+- 当前 `breakBackdrop`、`breakCustomBackdrop*`、`breakIdeasEnabled`、`microbreakStartSound`、`microbreakEndSound`、`longBreakStartSound`、`longBreakEndSound`、`breakSoundVolume` 与 `current_time_in_breaks` 都已经是前台可见设置；`idle_opportunity_seconds` 再次回到 hidden compatibility field，当前 host 实际采用的是 reminder v2 内置策略：
   - 微休息：`6s -> 3s -> 1s -> 45s deadline`
   - 休息：`8s -> 4s -> 1s -> 90s deadline`
+  - pause/focus/DND/app exclusion 只冻结投递，解除后平移 due / waiting timer，不再整轮 reset
+  - smart 模式下若用户已离开至少 `45s`，会先进入 recovery hold；返回后 microbreak 自动抵扣、long break 按离开时长顺延（上限 `4min`），达到自然休息阈值才 full reset
   - 这些策略值目前都不单独暴露为设置项。
 
 ## 3. 历史设置基线里有过，但当前 Tauri 还没接回来的候选设置

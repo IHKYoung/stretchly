@@ -11,6 +11,8 @@ const BREAK_POSTPONE_WINDOW_MS: u64 = 10_000;
 const DEFAULT_IDLE_OPPORTUNITY_SECONDS: u64 = 6;
 const MICROBREAK_FINAL_WAIT_CAP_MS: u64 = 45_000;
 const LONG_BREAK_FINAL_WAIT_CAP_MS: u64 = 90_000;
+const RECOVERY_CREDIT_START_MS: u64 = 45_000;
+const LONG_BREAK_RECOVERY_CREDIT_CAP_MS: u64 = 240_000;
 
 #[derive(Debug, Clone, Copy)]
 struct SmartWaitStage {
@@ -481,6 +483,7 @@ struct RuntimeState {
     next_break_kind: Option<BreakKind>,
     next_notification_due_ms: Option<u64>,
     next_break_wait_started_ms: Option<u64>,
+    delivery_block_started_ms: Option<u64>,
     pending_break_postpones: u64,
     current_break: Option<CurrentBreak>,
     paused_until_ms: Option<u64>,
@@ -622,6 +625,7 @@ impl PauzaState {
             );
             return false;
         }
+        let was_blocked = runtime.delivery_blocking_reason(now).is_some();
         runtime.paused_indefinitely = minutes == 0;
         runtime.paused_until_ms = if minutes == 0 {
             None
@@ -629,7 +633,7 @@ impl PauzaState {
             Some(now + minutes * 60_000)
         };
         runtime.focus_until_ms = None;
-        runtime.clear_waiting_schedule();
+        runtime.sync_delivery_block_state(now, was_blocked);
 
         let language = runtime.settings.language.clone();
         let translated_source = source_translation(&language, source);
@@ -657,14 +661,15 @@ impl PauzaState {
     pub fn resume(&self, source: &str) -> bool {
         let now = now_ms();
         let mut runtime = self.runtime.lock().expect("state lock poisoned");
+        let was_blocked = runtime.delivery_blocking_reason(now).is_some();
         runtime.paused_until_ms = None;
         runtime.paused_indefinitely = false;
         runtime.focus_until_ms = None;
+        runtime.sync_delivery_block_state(now, was_blocked);
         let language = runtime.settings.language.clone();
         let translated_source = source_translation(&language, source);
         runtime.last_action =
             i18n::text1(&language, "runtime.actions.resumeVia", "source", translated_source);
-        runtime.reset_schedule(now);
         runtime.current_break.take().is_some()
     }
 
@@ -678,10 +683,11 @@ impl PauzaState {
             );
             return false;
         }
+        let was_blocked = runtime.delivery_blocking_reason(now).is_some();
         runtime.focus_until_ms = Some(now + minutes * 60_000);
         runtime.paused_until_ms = None;
         runtime.paused_indefinitely = false;
-        runtime.clear_waiting_schedule();
+        runtime.sync_delivery_block_state(now, was_blocked);
         let language = runtime.settings.language.clone();
         let translated_source = source_translation(&language, source);
         runtime.last_action = i18n::text2(
@@ -705,14 +711,15 @@ impl PauzaState {
             );
             return false;
         }
+        let was_blocked = runtime.delivery_blocking_reason(now).is_some();
         runtime.focus_until_ms = None;
         runtime.paused_until_ms = None;
         runtime.paused_indefinitely = false;
+        runtime.sync_delivery_block_state(now, was_blocked);
         let language = runtime.settings.language.clone();
         let translated_source = source_translation(&language, source);
         runtime.last_action =
             i18n::text1(&language, "runtime.actions.focusClearedVia", "source", translated_source);
-        runtime.reset_schedule(now);
         runtime.current_break.take().is_some()
     }
 
@@ -955,7 +962,7 @@ impl PauzaState {
         app_exclusion_match: Option<String>,
     ) -> EngineActions {
         let mut runtime = self.runtime.lock().expect("state lock poisoned");
-        let previous_blocking = runtime.blocking_reason(now);
+        let previous_delivery_block = runtime.delivery_blocking_reason(now).is_some();
         let previous_natural_break = runtime.natural_break_blocks();
         let previous_dnd = runtime.dnd_active;
         let previous_app_block = runtime.app_exclusion_blocks();
@@ -966,49 +973,29 @@ impl PauzaState {
         runtime.dnd_active = dnd_active;
         runtime.app_exclusion_match = app_exclusion_match;
 
-        let current_blocking = runtime.blocking_reason(now);
+        let current_delivery_block = runtime.delivery_blocking_reason(now).is_some();
         let mut actions = EngineActions::default();
         let language = runtime.settings.language.clone();
 
         if !previous_dnd && runtime.dnd_active {
-            runtime.clear_waiting_schedule();
+            runtime.enter_delivery_block(now);
             runtime.last_action = i18n::text(&language, "runtime.actions.dndStarted");
         } else if previous_dnd && !runtime.dnd_active {
+            runtime.sync_delivery_block_state(now, previous_delivery_block);
             runtime.last_action = i18n::text(&language, "runtime.actions.dndEnded");
         }
 
         if !previous_natural_break && runtime.natural_break_blocks() {
-            runtime.clear_waiting_schedule();
+            runtime.next_break_wait_started_ms = None;
             runtime.last_action = i18n::text(&language, "runtime.actions.naturalBreakDetected");
-        } else if previous_natural_break
-            && !runtime.natural_break_blocks()
-            && previous_idle_ms >= runtime.settings.natural_break_reset_ms()
-        {
-            runtime.last_action = i18n::text(&language, "runtime.actions.naturalBreakFinished");
         }
 
         if !previous_app_block && runtime.app_exclusion_blocks() {
-            runtime.clear_waiting_schedule();
+            runtime.enter_delivery_block(now);
             runtime.last_action = runtime.app_exclusion_started_message();
         } else if previous_app_block && !runtime.app_exclusion_blocks() {
+            runtime.sync_delivery_block_state(now, previous_delivery_block);
             runtime.last_action = i18n::text(&language, "runtime.actions.appExclusionCleared");
-        }
-
-        if current_blocking.is_some() {
-            if runtime.current_break.take().is_some() {
-                actions.close_break_window = true;
-            }
-            runtime.clear_waiting_schedule();
-            return actions;
-        }
-
-        if previous_blocking.is_some() && current_blocking.is_none() && runtime.current_break.is_none()
-        {
-            runtime.reset_schedule(now);
-        }
-
-        if runtime.current_break.is_none() && runtime.next_break_due_ms.is_none() {
-            runtime.reset_schedule(now);
         }
 
         if let Some(current) = runtime.current_break.as_mut() {
@@ -1036,6 +1023,26 @@ impl PauzaState {
             return actions;
         }
 
+        if !current_delivery_block
+            && runtime.settings.natural_breaks
+            && previous_idle_ms >= RECOVERY_CREDIT_START_MS
+            && runtime.idle_ms < RECOVERY_CREDIT_START_MS
+        {
+            runtime.apply_recovery_credit(now, previous_idle_ms);
+        }
+
+        if current_delivery_block {
+            return actions;
+        }
+
+        if runtime.natural_break_blocks() {
+            return actions;
+        }
+
+        if runtime.current_break.is_none() && runtime.next_break_due_ms.is_none() {
+            runtime.reset_schedule(now);
+        }
+
         if runtime
             .next_notification_due_ms
             .is_some_and(|due| due <= now && runtime.next_break_kind.is_some())
@@ -1061,6 +1068,19 @@ impl PauzaState {
             .is_some_and(|due| due <= now && runtime.next_break_kind.is_some())
         {
             if let Some(kind) = runtime.next_break_kind {
+                if runtime.recovery_hold_kind(now).is_some() {
+                    runtime.next_break_wait_started_ms = None;
+                    if previous_idle_ms < RECOVERY_CREDIT_START_MS {
+                        runtime.last_action = i18n::text1(
+                            &language,
+                            "runtime.actions.awaitingRecoveryCredit",
+                            "title",
+                            break_kind_label(&language, kind),
+                        );
+                    }
+                    return actions;
+                }
+
                 if runtime.should_wait_for_opportunity(kind, now) {
                     if runtime.next_break_wait_started_ms.is_none() {
                         runtime.next_break_wait_started_ms = Some(now);
@@ -1097,11 +1117,13 @@ impl RuntimeState {
         if self.paused_until_ms.is_some_and(|until| until <= now) {
             self.paused_until_ms = None;
             self.paused_indefinitely = false;
+            self.sync_delivery_block_state(now, true);
             self.last_action = i18n::text(&self.settings.language, "runtime.actions.pauseEnded");
         }
 
         if self.focus_until_ms.is_some_and(|until| until <= now) {
             self.focus_until_ms = None;
+            self.sync_delivery_block_state(now, true);
             self.last_action = i18n::text(&self.settings.language, "runtime.actions.focusFinished");
         }
     }
@@ -1121,6 +1143,43 @@ impl RuntimeState {
         self.next_break_kind = None;
         self.next_notification_due_ms = None;
         self.next_break_wait_started_ms = None;
+    }
+
+    fn shift_pending_schedule_by(&mut self, delta_ms: u64) {
+        if delta_ms == 0 {
+            return;
+        }
+
+        self.next_break_due_ms = self
+            .next_break_due_ms
+            .map(|due_ms| due_ms.saturating_add(delta_ms));
+        self.next_notification_due_ms = self
+            .next_notification_due_ms
+            .map(|due_ms| due_ms.saturating_add(delta_ms));
+        self.next_break_wait_started_ms = self
+            .next_break_wait_started_ms
+            .map(|started_ms| started_ms.saturating_add(delta_ms));
+    }
+
+    fn enter_delivery_block(&mut self, now: u64) {
+        if self.delivery_block_started_ms.is_none() {
+            self.delivery_block_started_ms = Some(now);
+        }
+    }
+
+    fn release_delivery_block(&mut self, now: u64) {
+        if let Some(started_ms) = self.delivery_block_started_ms.take() {
+            self.shift_pending_schedule_by(now.saturating_sub(started_ms));
+        }
+    }
+
+    fn sync_delivery_block_state(&mut self, now: u64, was_blocked: bool) {
+        let is_blocked = self.delivery_blocking_reason(now).is_some();
+        match (was_blocked, is_blocked) {
+            (false, true) => self.enter_delivery_block(now),
+            (true, false) => self.release_delivery_block(now),
+            _ => {}
+        }
     }
 
     fn schedule_next_slot(&mut self, now: u64) {
@@ -1224,7 +1283,20 @@ impl RuntimeState {
         self.idle_ms < idle_required_ms
     }
 
+    fn recovery_hold_kind(&self, now: u64) -> Option<BreakKind> {
+        let kind = self.pending_due_kind(now)?;
+        if self.settings.reminder_mode != ReminderMode::Smart || !self.settings.natural_breaks {
+            return None;
+        }
+
+        (self.idle_ms >= RECOVERY_CREDIT_START_MS).then_some(kind)
+    }
+
     fn waiting_for_opportunity_kind(&self, now: u64) -> Option<BreakKind> {
+        if self.recovery_hold_kind(now).is_some() {
+            return None;
+        }
+
         let kind = self.pending_due_kind(now)?;
         if self.should_wait_for_opportunity(kind, now) {
             return Some(kind);
@@ -1263,7 +1335,17 @@ impl RuntimeState {
             .map(|stage| stage.idle_required_ms)
     }
 
-    fn blocking_reason(&self, now: u64) -> Option<&'static str> {
+    fn current_smart_wait_remaining_ms(&self, kind: BreakKind, now: u64) -> Option<u64> {
+        let elapsed_ms = self.smart_wait_elapsed_ms(now);
+        let final_wait_cap_ms = smart_wait_final_cap_ms(kind);
+        if elapsed_ms < final_wait_cap_ms {
+            Some(final_wait_cap_ms - elapsed_ms)
+        } else {
+            None
+        }
+    }
+
+    fn delivery_blocking_reason(&self, now: u64) -> Option<&'static str> {
         if self.paused_indefinitely {
             return Some("paused");
         }
@@ -1284,11 +1366,64 @@ impl RuntimeState {
             return Some("dnd");
         }
 
+        None
+    }
+
+    fn blocking_reason(&self, now: u64) -> Option<&'static str> {
+        if let Some(reason) = self.delivery_blocking_reason(now) {
+            return Some(reason);
+        }
+
         if self.natural_break_blocks() {
             return Some("natural-break");
         }
 
         None
+    }
+
+    fn apply_recovery_credit(&mut self, now: u64, idle_gap_ms: u64) -> bool {
+        if !self.settings.natural_breaks || idle_gap_ms < RECOVERY_CREDIT_START_MS {
+            return false;
+        }
+
+        let language = self.settings.language.clone();
+        if idle_gap_ms >= self.settings.natural_break_reset_ms() {
+            self.reset_schedule(now);
+            self.last_action = i18n::text(&language, "runtime.actions.naturalBreakFinished");
+            return true;
+        }
+
+        let Some(kind) = self.next_break_kind else {
+            return false;
+        };
+
+        match kind {
+            BreakKind::Microbreak => {
+                self.schedule_next_slot(now);
+                self.last_action = i18n::text2(
+                    &language,
+                    "runtime.actions.recoveryMicrobreakCredited",
+                    "title",
+                    break_kind_label(&language, BreakKind::Microbreak),
+                    "duration",
+                    i18n::duration(&language, idle_gap_ms),
+                );
+                true
+            }
+            BreakKind::LongBreak => {
+                let credit_ms = long_break_recovery_credit_ms(idle_gap_ms);
+                self.schedule_specific_break(BreakKind::LongBreak, now + credit_ms, now);
+                self.last_action = i18n::text1(
+                    &language,
+                    "runtime.actions.recoveryLongBreakDeferred",
+                    "title",
+                    break_kind_label(&language, BreakKind::LongBreak),
+                )
+                .replace("{{duration}}", &i18n::duration(&language, idle_gap_ms))
+                .replace("{{credit}}", &i18n::duration(&language, credit_ms));
+                true
+            }
+        }
     }
 
     fn natural_break_blocks(&self) -> bool {
@@ -1415,6 +1550,20 @@ impl RuntimeState {
             );
         }
 
+        if let Some(kind) = self.recovery_hold_kind(now) {
+            return (
+                i18n::text(language, "runtime.break.status.recoveryTitle"),
+                i18n::text2(
+                    language,
+                    "runtime.break.status.recoveryDetail",
+                    "kind",
+                    break_kind_label(language, kind),
+                    "duration",
+                    i18n::duration(language, self.idle_ms),
+                ),
+            );
+        }
+
         if let Some(kind) = self.waiting_for_opportunity_kind(now) {
             return (
                 i18n::text(language, "runtime.break.status.waitingOpportunityTitle"),
@@ -1423,6 +1572,13 @@ impl RuntimeState {
                     "runtime.break.status.waitingOpportunityDetail",
                     "kind",
                     break_kind_label(language, kind),
+                )
+                .replace(
+                    "{{duration}}",
+                    &i18n::duration(
+                        language,
+                        self.current_smart_wait_remaining_ms(kind, now).unwrap_or(0),
+                    ),
                 ),
             );
         }
@@ -1731,6 +1887,19 @@ fn smart_wait_stages(kind: BreakKind) -> &'static [SmartWaitStage] {
     }
 }
 
+fn smart_wait_final_cap_ms(kind: BreakKind) -> u64 {
+    match kind {
+        BreakKind::Microbreak => MICROBREAK_FINAL_WAIT_CAP_MS,
+        BreakKind::LongBreak => LONG_BREAK_FINAL_WAIT_CAP_MS,
+    }
+}
+
+fn long_break_recovery_credit_ms(idle_gap_ms: u64) -> u64 {
+    idle_gap_ms
+        .max(RECOVERY_CREDIT_START_MS)
+        .min(LONG_BREAK_RECOVERY_CREDIT_CAP_MS)
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
@@ -1857,6 +2026,26 @@ mod tests {
     }
 
     #[test]
+    fn active_break_is_not_closed_by_passive_blockers() {
+        let state = PauzaState::default();
+        {
+            let mut runtime = state.runtime.lock().expect("state lock poisoned");
+            runtime.settings = settings();
+            runtime.schedule_specific_break(BreakKind::Microbreak, 1_100, 1_000);
+        }
+
+        let started = state.tick(1_100, 6_000, false, None);
+        assert!(started.open_break_window);
+
+        let blocked = state.tick(20_000, 6_000, true, None);
+        assert!(!blocked.close_break_window);
+
+        let runtime = state.runtime.lock().expect("state lock poisoned");
+        assert!(runtime.current_break.is_some());
+        assert!(runtime.delivery_block_started_ms.is_some());
+    }
+
+    #[test]
     fn pending_break_starts_when_idle_opportunity_appears() {
         let state = PauzaState::default();
         {
@@ -1916,6 +2105,51 @@ mod tests {
     }
 
     #[test]
+    fn pause_and_resume_shift_due_instead_of_resetting_schedule() {
+        let mut runtime = RuntimeState {
+            settings: settings(),
+            ..Default::default()
+        };
+        runtime.schedule_specific_break(BreakKind::Microbreak, 61_000, 1_000);
+
+        let was_blocked = runtime.delivery_blocking_reason(1_000).is_some();
+        runtime.paused_until_ms = Some(31_000);
+        runtime.sync_delivery_block_state(1_000, was_blocked);
+        assert_eq!(runtime.delivery_block_started_ms, Some(1_000));
+
+        let was_blocked = runtime.delivery_blocking_reason(11_000).is_some();
+        runtime.paused_until_ms = None;
+        runtime.paused_indefinitely = false;
+        runtime.sync_delivery_block_state(11_000, was_blocked);
+
+        assert_eq!(runtime.next_break_kind, Some(BreakKind::Microbreak));
+        assert_eq!(runtime.next_break_due_ms, Some(71_000));
+        assert!(runtime.delivery_block_started_ms.is_none());
+    }
+
+    #[test]
+    fn dnd_freezes_waiting_timer_without_reset() {
+        let state = PauzaState::default();
+        {
+            let mut runtime = state.runtime.lock().expect("state lock poisoned");
+            runtime.settings = settings();
+            runtime.schedule_specific_break(BreakKind::Microbreak, 1_100, 1_000);
+        }
+
+        let _ = state.tick(1_100, 0, false, None);
+        let blocked = state.tick(5_100, 0, true, None);
+        assert!(!blocked.open_break_window);
+
+        let resumed = state.tick(25_100, 0, false, None);
+        assert!(!resumed.open_break_window);
+
+        let runtime = state.runtime.lock().expect("state lock poisoned");
+        assert_eq!(runtime.next_break_due_ms, Some(21_100));
+        assert_eq!(runtime.next_break_wait_started_ms, Some(21_100));
+        assert_eq!(runtime.cycle_index, 0);
+    }
+
+    #[test]
     fn smart_mode_starts_break_after_final_stage_even_without_idle_gap() {
         let state = PauzaState::default();
         {
@@ -1952,6 +2186,65 @@ mod tests {
         let runtime = state.runtime.lock().expect("state lock poisoned");
         assert!(runtime.current_break.as_ref().is_some_and(|current| current.strict_mode));
         assert!(runtime.next_break_wait_started_ms.is_none());
+    }
+
+    #[test]
+    fn microbreak_is_credited_after_user_returns() {
+        let state = PauzaState::default();
+        {
+            let mut runtime = state.runtime.lock().expect("state lock poisoned");
+            runtime.settings = settings();
+            runtime.schedule_next_slot(1_000);
+        }
+
+        let away = state.tick(650_000, 60_000, false, None);
+        assert!(!away.open_break_window);
+
+        let _ = state.tick(651_000, 1_000, false, None);
+        let runtime = state.runtime.lock().expect("state lock poisoned");
+        assert_eq!(runtime.next_break_kind, Some(BreakKind::Microbreak));
+        assert_eq!(runtime.next_break_due_ms, Some(1_251_000));
+        assert!(runtime
+            .last_action
+            .contains(&i18n::text("zh-CN", "runtime.break.kind.microbreak")));
+    }
+
+    #[test]
+    fn long_break_is_deferred_after_user_returns() {
+        let state = PauzaState::default();
+        {
+            let mut runtime = state.runtime.lock().expect("state lock poisoned");
+            runtime.settings = settings();
+            runtime.cycle_index = 2;
+            runtime.schedule_next_slot(1_000);
+        }
+
+        let away = state.tick(650_000, 120_000, false, None);
+        assert!(!away.open_break_window);
+
+        let _ = state.tick(651_000, 1_000, false, None);
+        let runtime = state.runtime.lock().expect("state lock poisoned");
+        assert_eq!(runtime.next_break_kind, Some(BreakKind::LongBreak));
+        assert_eq!(runtime.next_break_due_ms, Some(771_000));
+    }
+
+    #[test]
+    fn long_idle_full_reset_replans_from_now() {
+        let state = PauzaState::default();
+        {
+            let mut runtime = state.runtime.lock().expect("state lock poisoned");
+            runtime.settings = settings();
+            runtime.schedule_next_slot(1_000);
+        }
+
+        let away = state.tick(950_000, 300_000, false, None);
+        assert!(!away.open_break_window);
+
+        let _ = state.tick(951_000, 1_000, false, None);
+        let runtime = state.runtime.lock().expect("state lock poisoned");
+        assert_eq!(runtime.next_break_kind, Some(BreakKind::Microbreak));
+        assert_eq!(runtime.next_break_due_ms, Some(1_551_000));
+        assert_eq!(runtime.cycle_index, 1);
     }
 
     #[test]
@@ -2004,19 +2297,50 @@ mod tests {
         }
 
         let _ = state.tick(1_100, 0, false, None);
-        let snapshot = state.snapshot("test".into(), "0.0.0".into(), false);
+        let runtime = state.runtime.lock().expect("state lock poisoned");
+        let (status, status_detail) = runtime.status(1_100);
 
         assert_eq!(
-            snapshot.status,
+            status,
             i18n::text("zh-CN", "runtime.break.status.waitingOpportunityTitle")
         );
         assert_eq!(
-            snapshot.status_detail,
+            status_detail,
             i18n::text1(
                 "zh-CN",
                 "runtime.break.status.waitingOpportunityDetail",
                 "kind",
                 i18n::text("zh-CN", "runtime.break.kind.microbreak")
+            )
+            .replace("{{duration}}", &i18n::duration("zh-CN", MICROBREAK_FINAL_WAIT_CAP_MS))
+        );
+    }
+
+    #[test]
+    fn snapshot_status_reflects_recovery_hold() {
+        let state = PauzaState::default();
+        {
+            let mut runtime = state.runtime.lock().expect("state lock poisoned");
+            runtime.settings = settings();
+            runtime.schedule_specific_break(BreakKind::Microbreak, 1_100, 1_000);
+        }
+
+        let _ = state.tick(1_100, 60_000, false, None);
+        let snapshot = state.snapshot("test".into(), "0.0.0".into(), false);
+
+        assert_eq!(
+            snapshot.status,
+            i18n::text("zh-CN", "runtime.break.status.recoveryTitle")
+        );
+        assert_eq!(
+            snapshot.status_detail,
+            i18n::text2(
+                "zh-CN",
+                "runtime.break.status.recoveryDetail",
+                "kind",
+                i18n::text("zh-CN", "runtime.break.kind.microbreak"),
+                "duration",
+                i18n::duration("zh-CN", 60_000)
             )
         );
     }

@@ -70,7 +70,7 @@
 - `docs/CodeMap.md`：当前文件树职责地图。
 - `docs/Architecture.md`：运行时架构摘要。
 - `docs/RootMetadataArchive.md`：原根目录 README / LICENSE / 社区治理文件 / Linux 发布元数据的提炼归档。
-- `docs/ReminderScheduling.md`：下一轮提醒状态机与调度逻辑设计文档，定义智能提醒、强制提醒、严格模式与自然休息的职责边界。
+- `docs/ReminderScheduling.md`：当前 reminder v2 状态机与调度逻辑设计文档，定义智能提醒、强制提醒、recovery hold / credit 与自然休息的职责边界。
 - `docs/PauzaV1SixStepPlan.md`：Pauza 从 Stretchly fork 演进为“低打扰恢复节奏工具”的六步产品方案，覆盖定位、onboarding、主窗口、低打扰能力、反馈闭环与付费边界。
 - `docs/UI.md`：窗口与交互结构摘要。
 - `docs/SettingsInventory.md`：当前设置页、Tauri 真源隐藏设置、旧版候选设置与运行时动作的边界清单。

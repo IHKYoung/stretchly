@@ -31,7 +31,7 @@
 1. 用户进入主设置页，按 `节奏 / 偏好` 两个主分类调整提醒、显示方式、智能暂停、声音、语言与启动项。
 2. 常规运行时主要通过 tray、快捷键和设置页管理 pause / focus / reset。
 3. 若启用了“提前提示”，break 在 due 前的 lead time 内会先通过设置页状态和 tray 文本显示 `即将开始 / Up next`；系统通知只作为辅助，不再是唯一有效表面。
-4. break 到点后，`?window=break` 对应的前台会展示独立 break prompt；`智能提醒` 下会先找更明显的空档，再逐步放宽阈值；`强制提醒` 下到点直接进入 break。
+4. break 到点后，`?window=break` 对应的前台会展示独立 break prompt；`智能提醒` 下会先找更明显的空档，再逐步放宽阈值；如果用户已离开至少 `45s`，则会先显示“等待恢复结算”而不是立刻开 break；`强制提醒` 下到点直接进入 break。
 5. break prompt 在倒计时进行中只提供 `Later / Skip` 这类运行时允许的动作；不会再允许提前完成。只有 manual finish 开启且计时结束后进入 `manualAwaiting` 状态时，主按钮才显示为 `Resume work`。
 
 ## Tauri 设置页结构
@@ -49,7 +49,7 @@
 - 基础控件（button / select / segmented control / number input）统一压平为更小的圆角和更紧的高度，不再强调悬浮卡片感。
 - 设置页现已改为自动保存，顶部只在保存中或刚发生变更时显示轻量状态，不再保留显式保存按钮。
 - `节奏` 分类已进一步压成两张紧凑 preset 卡：微休息与休息顶部直接用芯片选择间隔/频率与时长，下方“提前提醒 / 延后”继续保留 stepper 作为低频细调。
-- 当前设置页不再直接暴露 `idle_opportunity_seconds` 阈值；提醒策略继续采用 host 内部的递减阈值曲线，避免用户为提醒方式承担额外参数心智。
+- 当前设置页不再直接暴露 `idle_opportunity_seconds` 阈值；提醒策略继续采用 host 内部的递减阈值曲线、delivery freeze 与 recovery credit，避免用户为提醒方式承担额外参数心智。
 - “提前提示”现在表达的是 due 前的可见 cue，而不是承诺一定弹出系统通知；即使系统层没有显示通知，设置页状态和 tray 文本也会进入 heads-up 阶段。
 - Tauri 主窗口默认尺寸调整为 `960x640`，最小尺寸为 `800x600`，避免设置页继续被压到不可用尺寸。
 - 设置页 autosave 当前已从“可重入的 debounce 保存”收敛为串行/合并保存：保存进行中继续点击设置项或修改时间时，新的草稿会进入下一轮，而不是并发发起第二个宿主保存。
@@ -70,7 +70,7 @@
 - `currentTimeInBreaks` 打开时，在右上角显示当前时间。
 - `breakIdeasEnabled` 打开时，break prompt 会按语言和 break kind 从 `apps/desktop/src/locales/messages/*.json` 顶层的 `miniBreakIdeas` / `longBreakIdeas` 中选取 `.text` 交互语；关闭后回退到 `ui.breakCopy.defaultPrompt.*`。`ui.breakCopy.prompts` 这类过渡字段已删除，不再允许重新引入。
 - `microbreakStartSound` / `longBreakStartSound` / `microbreakEndSound` / `longBreakEndSound` 与 `breakSoundVolume` 控制休息开始/结束时的一次性提示音；`silence` 或音量为 `0` 时不播放。
-- break prompt 的触发时机已从“到点立即出现”调整为由 reminder mode 决定：`智能提醒` 下若仍在连续输入，则先等待更明显的空档，再逐步放宽到更短空档，并在最终 deadline 到达时直接开始；`强制提醒` 下则到点直接出现，并且 break 期间不可跳过、不可延后、不可通过关窗绕过。
+- break prompt 的触发时机已从“到点立即出现”调整为由 reminder mode 决定：`智能提醒` 下若仍在连续输入，则先等待更明显的空档，再逐步放宽到更短空档，并在最终 deadline 到达时直接开始；若用户已离开至少 `45s`，宿主会先进入 recovery hold，等返回时自动抵扣或顺延；`强制提醒` 下则到点直接出现，并且 break 期间不可跳过、不可延后、不可通过关窗绕过。
 
 ## UI 个性化开发建议
 - 调整设置页与 break prompt 时，优先改 `apps/desktop/src/App.tsx`、`apps/desktop/src/styles.css`、`apps/desktop/src/components/ui/*`。

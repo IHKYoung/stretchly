@@ -7,7 +7,7 @@
 
 ## 一句话原则
 - 到点，不等于立刻打断。
-- 智能提醒只判断“用户最近有没有输入活动”，不做更复杂的专注推理。
+- 智能提醒只判断“用户最近有没有输入活动”，并基于 idle gap 决定等待空档、恢复结算或 full reset，不做更复杂的专注推理。
 - 强制提醒就是严格的定时打断模式。
 - 自然休息是长时间离开后的重置规则，不是第三种提醒方式。
 - `breakPromptStyle` 不应进入调度决策；它如果保留，也只能是 UI 表现层。
@@ -54,8 +54,9 @@
 
 ### 3. 自然休息
 - 自然休息也不是提醒方式。
-- 它表示：如果用户已经长时间没有键盘/鼠标输入，就把这段离开算作一次已完成的休息。
-- 这时不再补发刚才那次提醒，而是在用户回来后重新开始计时。
+- 它现在包含两层语义：
+  - `45s+` 的离开先进入恢复 credit 区间，break 不会在用户离开时直接开始，而是等返回时自动结算。
+  - 达到 `natural_break_threshold` 的长离开才视为 full reset，本轮不再补发，回来后从当前时间重新开始计时。
 
 ## 推荐的调度分层
 
@@ -84,12 +85,16 @@
 ### 状态列表
 - `Timing`
   正常计时，尚未到达本轮 break 的触发时间。
+- `HeadsUp`
+  break 尚未到点，但已经进入 due 前的提醒窗口，设置页与 tray 会显示“即将开始 / Up next”。
 - `WaitingForOpportunity`
   已经过了 `due_at`，但当前是智能提醒且用户仍在操作电脑，所以暂缓打断。
+- `RecoveryHold`
+  break 已经到点，且 smart mode 下检测到用户已离开至少 `45s`；系统不在离开时启动 break，而是等待用户返回后结算。
 - `BreakActive`
   break 已经正式开始，窗口/通知已进入当前 break 生命周期。
-- `Blocked`
-  当前被 pause、focus session、DND、app exclusion 等规则阻塞，不应投递 break。
+- `DeliveryBlocked`
+  当前被 pause、focus session、DND、app exclusion 等规则阻塞，不应投递 break；解除后恢复冻结前的剩余节奏。
 - `NaturalBreak`
   用户已经离开电脑够久，本轮视为已完成自然休息，等待用户回来后重新开始计时。
 
@@ -98,19 +103,32 @@
 stateDiagram-v2
     [*] --> Timing
 
-    Timing --> Blocked: pause / focus / DND / app exclusion
+    Timing --> HeadsUp: lead time reached
+    Timing --> DeliveryBlocked: pause / focus / DND / app exclusion
     Timing --> NaturalBreak: natural breaks enabled\nidle_ms >= natural_break_threshold
     Timing --> BreakActive: due && forced
+    Timing --> RecoveryHold: due && smart && idle_ms >= 45s
     Timing --> BreakActive: due && smart && idle_ms >= current_opportunity_threshold
     Timing --> WaitingForOpportunity: due && smart && idle_ms < current_opportunity_threshold
 
-    WaitingForOpportunity --> Blocked: pause / focus / DND / app exclusion
+    HeadsUp --> Timing: lead time passed but not due
+    HeadsUp --> DeliveryBlocked: pause / focus / DND / app exclusion
+    HeadsUp --> NaturalBreak: idle_ms >= natural_break_threshold
+    HeadsUp --> BreakActive: due && forced
+    HeadsUp --> RecoveryHold: due && smart && idle_ms >= 45s
+    HeadsUp --> WaitingForOpportunity: due && smart && idle_ms < current_opportunity_threshold
+
+    WaitingForOpportunity --> DeliveryBlocked: pause / focus / DND / app exclusion
     WaitingForOpportunity --> NaturalBreak: idle_ms >= natural_break_threshold
+    WaitingForOpportunity --> RecoveryHold: idle_ms >= 45s
     WaitingForOpportunity --> BreakActive: idle_ms >= current_opportunity_threshold
     WaitingForOpportunity --> BreakActive: smart_wait_deadline_reached
 
-    Blocked --> Timing: blocker cleared && schedule still valid
-    Blocked --> NaturalBreak: blocker cleared && idle_ms >= natural_break_threshold
+    RecoveryHold --> Timing: return && microbreak credited / long break deferred
+    RecoveryHold --> NaturalBreak: idle_ms >= natural_break_threshold
+
+    DeliveryBlocked --> Timing: blocker cleared && schedule still valid
+    DeliveryBlocked --> NaturalBreak: blocker cleared && idle_ms >= natural_break_threshold
 
     NaturalBreak --> Timing: new input resumes\nreplan from now
 
@@ -125,25 +143,30 @@ stateDiagram-v2
 flowchart TD
     A[tick(now)] --> B{当前 break 是否已开始?}
     B -- yes --> B1[维护 break 生命周期]
-    B -- no --> C{是否存在 blocker?}
-    C -- yes --> C1[进入 Blocked\n不投递 break]
-    C -- no --> D{是否命中自然休息?}
-    D -- yes --> D1[取消 pending due\n标记 NaturalBreak]
-    D -- no --> E{now >= due_at ?}
-    E -- no --> E1[保持 Timing]
-    E -- yes --> F{提醒方式}
-    F -- 强制提醒 --> G[立即开始 BreakActive]
-    F -- 智能提醒 --> H{idle_ms >= current_opportunity_threshold ?}
-    H -- yes --> G
-    H -- no --> I[进入 WaitingForOpportunity]
+    B -- no --> C{是否存在 delivery blocker?}
+    C -- yes --> C1[进入 DeliveryBlocked\n冻结 due / waiting timer]
+    C -- no --> D{是否从长 idle 恢复?}
+    D -- yes --> D1[按 idle gap 执行 recovery credit / defer / full reset]
+    D -- no --> E{是否命中自然休息?}
+    E -- yes --> E1[标记 NaturalBreak]
+    E -- no --> F{now >= due_at ?}
+    F -- no --> F1[保持 Timing / HeadsUp]
+    F -- yes --> G{提醒方式}
+    G -- 强制提醒 --> H[立即开始 BreakActive]
+    G -- 智能提醒 --> I{idle_ms >= 45s ?}
+    I -- yes --> J[进入 RecoveryHold]
+    I -- no --> K{idle_ms >= 当前等待阶段阈值 ?}
+    K -- yes --> H
+    K -- no --> L[进入 WaitingForOpportunity]
 ```
 
 优先级结论：
 
 1. `BreakActive` 生命周期优先。
-2. blocker 优先于提醒投递。
-3. 自然休息优先于“已经到点但还没开始”的 pending break。
-4. 智能提醒只在“已到点且当前仍 active”时进入 `WaitingForOpportunity`。
+2. passive blocker 只冻结投递，不关闭 active break，也不重置节奏。
+3. 恢复结算发生在“用户从长 idle 返回”这一刻，而不是在离开时直接开 break。
+4. 自然休息优先于“已经到点但还没开始”的 pending break。
+5. 智能提醒只在“已到点且当前仍 active”时进入 `WaitingForOpportunity`；已离开至少 `45s` 则进入 `RecoveryHold`。
 
 ## 建议的调度伪代码
 ```text
@@ -153,20 +176,27 @@ tick(now):
     return
 
   if blocker_active():
-    state = Blocked
+    state = DeliveryBlocked
+    return
+
+  if user_just_returned_from_idle_gap() and idle_gap >= 45s:
+    apply_recovery_credit()
     return
 
   if natural_breaks_enabled and idle_ms >= natural_break_threshold:
-    clear_pending_due()
     state = NaturalBreak
     return
 
   if now < due_at:
-    state = Timing
+    state = Timing / HeadsUp
     return
 
   if reminder_mode == Forced:
     start_break()
+    return
+
+  if idle_ms >= 45s:
+    state = RecoveryHold
     return
 
   if idle_ms >= current_opportunity_threshold:
@@ -185,7 +215,7 @@ if user_input_resumed():
 ```
 
 ## 当前内置阈值曲线
-当前实现不再使用单一 `opportunity_threshold`，而是用“递减阈值 + 最终截止”的曲线：
+当前实现不再使用单一 `opportunity_threshold`，而是用“递减阈值 + 最终截止 + 恢复结算”的组合：
 
 - 微休息：
   - 等待 `0~15s`：要求连续空闲 `6s`
@@ -200,11 +230,18 @@ if user_input_resumed():
 - `natural_break_threshold`
   - 推荐默认值：`5min`
   - 用途：判断这段离开是否应该直接算作一次已完成休息。
+- `recovery_credit_start`
+  - 当前固定值：`45s`
+  - 用途：智能提醒已到点且用户已离开至少这段时间时，进入 `RecoveryHold`，等返回时再结算。
+- `long_break_recovery_credit_cap`
+  - 当前固定值：`4min`
+  - 用途：long break 的恢复 credit 最多只顺延到 4 分钟，避免一次短离开把整轮节奏拖得过远。
 
 这样做的目标是：
 
 - 刚到点时先尽量等一个更自然的空档
 - 如果一直等不到，就逐步放宽条件
+- 如果用户已经明显离开，则不要在离开时直接弹 break，而是等返回时再自动结算
 - 但无论如何都不会无限等待
 
 ## 设置层建议
@@ -228,9 +265,10 @@ if user_input_resumed():
 - `next_due_kind`
 - `next_due_at_ms`
 - `delivery_state`
-  - `timing | waiting_for_opportunity | blocked | natural_break | break_active`
+  - `timing | heads_up | waiting_for_opportunity | recovery_hold | delivery_blocked | natural_break | break_active`
 - `idle_ms`
 - `blocker_reason`
+- `delivery_block_started_ms`
 - `current_break`
 
 关键点：
@@ -282,9 +320,11 @@ if user_input_resumed():
 ### 场景 3：用户离开电脑一段时间
 1. break 即将到点或已经到点。
 2. 用户离开座位，`idle_ms` 持续增长。
-3. 当 `idle_ms >= natural_break_threshold`，系统进入 `NaturalBreak`。
-4. 本轮 break 不再补发。
-5. 用户回来重新输入后，从当前时间重新开始计时。
+3. 如果 break 已到点且 `idle_ms >= 45s`，系统先进入 `RecoveryHold`，不会在离开时直接弹 break。
+4. 用户回来时：
+   - 若当前欠的是 microbreak，则自动抵扣本次 break。
+   - 若当前欠的是 long break，则按离开时长顺延（最多 `4min`）。
+   - 若 `idle_ms >= natural_break_threshold`，则升级为 `NaturalBreak`，整轮从当前时间重新开始计时。
 
 ### 场景 4：强制提醒
 1. 到点直接开始 break。
@@ -310,4 +350,4 @@ if user_input_resumed():
 - `强制提醒`
   超过久坐时间后，我会立即提醒你休息。
 - `自然休息`
-  如果你已经离开电脑一段时间，我会把这段时间算作一次休息，并重新开始计时。
+如果你已经离开电脑一段时间，我会先按离开时长帮你抵扣或顺延；只有离开足够久时，才会把这段时间算作一次完整休息并重新开始计时。

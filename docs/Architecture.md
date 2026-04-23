@@ -25,7 +25,7 @@ Pauza 当前的可运行资产分为两层：`apps/desktop` 负责桌面端产�
 ## Tauri 核心时序
 1. `lib.rs` 在 setup 时初始化 `PauzaState`，从 app config 目录加载或创建 `settings.json`。
 2. `engine.rs` 启动后台 1s tick，周期性调用 `platform.rs` 获取 idle / DND / app exclusion 信号。
-3. `state.rs::tick()` 根据当前阻塞态、休息计划、pre-break notification、due-but-protected、active break 与 manual-awaiting 状态计算下一步动作，并返回 `EngineActions`。
+3. `state.rs::tick()` 根据 active break 生命周期、delivery blocker、recovery hold / credit、休息计划、pre-break notification 与 manual-awaiting 状态计算下一步动作，并返回 `EngineActions`。当前顺序明确保证“已开始的 break 生命周期”优先于 passive blocker，pause/focus/DND/app exclusion 只冻结投递，不再重置节奏。
 4. `shell.rs` 根据动作显示/隐藏 break prompt、维持 tray/shortcut 与主窗口行为；当前 break window 只保留单一默认 window profile，并由 `fullscreen` 决定是否改为全屏呈现。其中 macOS tray context menu 现在显式使用 `Submenu` 作为根菜单以匹配 `muda` 的平台约束；break 窗口在 macOS 上还会额外 patch 原生 `NSWindow` 的 `CanJoinAllSpaces | MoveToActiveSpace | FullScreenAuxiliary` 与最高 native level，并在 non-focusable/windowed 路径显示后显式激活 `NSApplication`，确保在全屏 Space 中也能覆盖当前工作屏幕。对 Pauza 来说，这三个 collection behavior bits 需要一起保留；单独移除 `MoveToActiveSpace` / `FullScreenAuxiliary` 会回退成“break 在别的屏幕或后台 Space 自己开始”的无感状态。app setup 也会在 bundle identifier 可用时请求 macOS 通知权限，避免 bundle 环境下提醒仅走旧通知中心路径而被系统静默降级。
 5. `engine.rs` 的后台 tick 不再每秒无条件重建 tray menu，而是只在 tray 菜单内容有效变化时刷新，避免 macOS 原生菜单刚展开就被替换。
 6. 前台通过 `commands.rs` 读写 `DesktopSnapshot`；设置页和 break prompt 始终消费同一份运行时状态，pause/focus/skip/reset/autostart 都经同一命令面闭环。
@@ -37,7 +37,9 @@ Pauza 当前的可运行资产分为两层：`apps/desktop` 负责桌面端产�
 - `registry.generated.json`：前后端共享 locale registry；上游真源只有桌面端自己的 `messages/*.json` 与 `config/*.json`。
 - `PauzaState.current_break`：Tauri 端当前 break 生命周期真源，决定 `manualAwaiting`、`canPostpone`、`canSkip` 与窗口关闭策略。
 - `RuntimeState.next_break_wait_started_ms`：Tauri 端低打断投递状态机的关键运行时字段，用来标记“已到点但先等空档”；实际等待规则现为内置的 per-kind 递减阈值曲线，而不是单一机会阈值或无限 defer。
+- `RuntimeState.delivery_block_started_ms`：记录 pause/focus/DND/app exclusion 这类 delivery blocker 的进入时间；解除阻塞时会把 due / notification / waiting timer 一并平移，确保 blocker 只冻结投递、不重置节奏。
 - `RuntimeState.heads_up_kind(now)`：根据 `next_break_due_ms` 与当前 break 的 lead time 派生出 due 前的 heads-up 阶段；它是设置页运行态和 tray 文本的主信号，不再把 pre-break 能见性完全绑定到一次性系统通知。
+- `RuntimeState.recovery_hold_kind(now)`：当 smart mode 下 break 已到点且用户已经离开至少 `45s` 时，宿主进入“等待恢复结算”而不是直接开 break；用户回来后根据 idle gap 自动执行 microbreak 抵扣、long break 顺延或 full reset。
 - `DesktopSnapshot`：Tauri 前台唯一可读模型，避免前台自行拼装运行时状态。
 - `breakCustomBackdropDataUrl`：当前自定义壁纸的持久化形态；它不是原始文件路径，而是前端压缩后的 data URL，用来避开当前未配置 `assetProtocol` 时的本地路径复用问题。
 
@@ -46,9 +48,10 @@ Pauza 当前的可运行资产分为两层：`apps/desktop` 负责桌面端产�
 - 系统状态采集由 `platform.rs` 管理，覆盖 idle / DND / app exclusion 等轻量探测。
 - 平台兼容仍覆盖 macOS、Windows、Linux 桌面环境差异，以及自动启动与 Portal 兼容逻辑。
 - Tauri 宿主能力：当前已覆盖设置持久化、调度、tray、global shortcut、notification、autostart、主窗口生命周期、break prompt、skip/reset/pause/focus actions，以及基于 `sysinfo + 系统命令` 的 idle / DND / app exclusion 轻量迁移。
-- 当前默认 break delivery 已不再是“固定时间一定打断”，而是以 `reminder_mode` 决定：`smart` 下当用户仍处于连续输入/操作中时，Pauza 会先把 break 标记为 due，并按 break kind 使用递减阈值曲线找空档。当前内置策略是：
+- 当前默认 break delivery 已不再是“固定时间一定打断”，而是以 `reminder_mode` 决定：`smart` 下当用户仍处于连续输入/操作中时，Pauza 会先把 break 标记为 due，并按 break kind 使用递减阈值曲线找空档；如果 break 已到点且用户已经离开至少 `45s`，则先进入 recovery hold，等用户返回时再结算。当前内置策略是：
   - 微休息：前 15 秒要求连续空闲 6 秒；接着 15 秒要求 3 秒；最后 15 秒要求 1 秒；到 45 秒仍没有空档则直接开始。
   - 休息：前 30 秒要求连续空闲 8 秒；接着 30 秒要求 4 秒；最后 30 秒要求 1 秒；到 90 秒仍没有空档则直接开始。
+  - 恢复结算：离开 `45s+` 会进入 recovery hold；返回后若是 microbreak 则直接抵扣本次 break，若是 long break 则按离开时长顺延（上限 `4min`），若离开达到 `natural_break_reset_minutes` 则整轮从当前时间重排。
   - `forced` 下则到点直接严格开始 break。
 - due 前如果开启了对应 break 的提前提示，Pauza 还会进入一个短暂的 heads-up 阶段：设置页状态、tray 菜单与 tooltip 会先显示“即将开始 / Up next”；系统通知仍可作为辅助，但不再是唯一有效出口。通知投递失败时，`engine.rs` 会输出日志而不是静默吞掉。
 
