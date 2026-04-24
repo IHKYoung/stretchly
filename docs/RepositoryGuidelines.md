@@ -6,7 +6,8 @@
 - `apps/desktop/components.json`、`apps/desktop/src/components/ui/*`、`apps/desktop/src/lib/utils.ts`：Tauri 前台的 Tailwind/shadcn 组件基座。
 - `apps/desktop/src/App.tsx`、`apps/desktop/src/styles.css`：新的 Tauri 设置工作台与 break prompt 视觉层。
 - `apps/desktop/src-tauri/src/*.rs`：新的 Rust host，负责设置持久化、调度、系统信号、tray、shortcut、notification、窗口命令与运行时状态。
-- `apps/desktop/src/locales/messages/*.json`、`apps/desktop/src/locales/config/*.json`：桌面端 locale 真源；所有 break prompt 文案也统一并入 `messages/*.json`，`scripts/sync_desktop_locales.py` 会据此生成共享 `registry.generated.json`。
+- `apps/desktop/src/locales/messages/*.json`、`apps/desktop/src/locales/config/*.json`：桌面端界面 locale 真源，`scripts/sync_desktop_locales.py` 会据此生成共享 `registry.generated.json`。
+- `apps/desktop/src/locales/break-ideas/messages/*.json`、`apps/desktop/src/locales/break-ideas/registry.json`：桌面端 break ideas 真源；`miniBreakIdeas / longBreakIdeas` 现在独立维护在这里，由 `scripts/sync_desktop_break_ideas.py` 生成运行时 registry。
 - `test/*.js`：当前保留的 Vitest 测试只覆盖 desktop locale 真源与 break 文案单真源边界。
 - `build/`、`graphics/`：安装包资源与图标源文件。
 - `docs/`：Codex 工作流文档、变更日志、项目理解资产与根目录历史元数据归档；后续个性化开发建议持续维护这里的索引。
@@ -27,6 +28,7 @@
 - `npm run lint`：执行 Standard 风格检查。
 - `python3 scripts/ensure_workflow_ready.py --target . --hooks required`：补齐并校验 Codex 工作流资产。
 - `python3 scripts/sync_desktop_locales.py`：从 `apps/desktop/src/locales/{messages,config}` 生成并校验桌面端共享 `registry.generated.json`。
+- `python3 scripts/sync_desktop_break_ideas.py`：从 `apps/desktop/src/locales/break-ideas/{messages,registry.json}` 与 locale config 生成并校验 break ideas `registry.generated.json`。
 - `python3 scripts/validate_workflow_docs.py`：检查 docs/specs、plans、logs 的门禁字段。
 - `python3 scripts/validate_agent_configs.py`：检查多 Agent 配置；当前仓库无多 Agent 配置时会跳过。
 
@@ -38,7 +40,7 @@
 - 根 `package.json` 现在只保留一套短入口（`dev/build/typecheck`）和显式命名空间（`desktop:*`、`site:*`、`test:*`）；不要再回填 `start/pack/dist` 这类纯重复别名。
 - 修改 Tauri 前台时，同时考虑浏览器 preview fallback，避免只在原生 runtime 下可看。
 - 新的 Tauri 前台默认以 Tailwind CSS v4 + shadcn 风格组件演进；新增交互应优先复用 `src/components/ui/*`，不要回退到整页手写样式类。
-- 修改桌面端多语言时，只维护 `apps/desktop/src/locales/messages/*.json` 与 `apps/desktop/src/locales/config/*.json`；不要重新引入 `break-message-copy.*`、`overrides/` 或 `app/locales` 回灌。
+- 修改桌面端多语言时，界面文案只维护 `apps/desktop/src/locales/messages/*.json` 与 `apps/desktop/src/locales/config/*.json`；break ideas 只维护 `apps/desktop/src/locales/break-ideas/messages/*.json` 与 `apps/desktop/src/locales/break-ideas/registry.json`。不要重新引入 `break-message-copy.*`、`overrides/` 或 `app/locales` 回灌。
 - `coverage/`、`output/` 这类本地生成目录以及旧根 README 展示素材都不属于主体开发资产；需要时按命令重新生成，不要长期堆在仓库根目录。
 - 根 `README.md` 现在只保留当前有效的运行/打包入口说明；历史根 README、社区治理文件、LICENSE 与 Linux 发布元数据的归档参考统一看 `docs/RootMetadataArchive.md`。
 - 修改 Tauri host 时，优先从 `state.rs -> engine.rs -> platform.rs -> shell.rs -> commands.rs` 这条链路理解调度、系统信号和窗口行为。

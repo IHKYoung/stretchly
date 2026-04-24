@@ -4,16 +4,24 @@ import { expect } from 'vitest'
 
 const repoRoot = join(__dirname, '..')
 const messagesDirectory = join(repoRoot, 'apps/desktop/src/locales/messages')
+const breakIdeasDirectory = join(repoRoot, 'apps/desktop/src/locales/break-ideas/messages')
+const breakIdeasRegistryPath = join(repoRoot, 'apps/desktop/src/locales/break-ideas/registry.generated.json')
 
 function readMessages (file) {
   const filePath = join(messagesDirectory, file)
   return JSON.parse(readFileSync(filePath, 'utf8'))
 }
 
+function readBreakIdeas (file) {
+  const filePath = join(breakIdeasDirectory, file)
+  return JSON.parse(readFileSync(filePath, 'utf8'))
+}
+
 describe('Desktop break copy source of truth', () => {
   it('stores break prompt copy inside messages for desktop-ready languages', () => {
     for (const file of ['en.json', 'zh-CN.json']) {
-      const breakCopy = readMessages(file).ui.breakCopy
+      const messages = readMessages(file)
+      const breakCopy = messages.ui.breakCopy
 
       expect(typeof breakCopy.clearedDetail).toBe('string')
       expect(typeof breakCopy.manualAwaiting).toBe('string')
@@ -25,6 +33,24 @@ describe('Desktop break copy source of truth', () => {
       expect(typeof breakCopy.defaultPrompt.microbreak).toBe('string')
       expect(typeof breakCopy.defaultPrompt.longBreak).toBe('string')
       expect('prompts' in breakCopy).toBe(false)
+      expect('miniBreakIdeas' in messages).toBe(false)
+      expect('longBreakIdeas' in messages).toBe(false)
+    }
+  })
+
+  it('stores break ideas in dedicated locale assets and marks official languages in registry', () => {
+    const registry = JSON.parse(readFileSync(breakIdeasRegistryPath, 'utf8'))
+
+    expect(registry.officialLanguages).toEqual(['en', 'zh-CN', 'zh-TW'])
+    expect(registry.languages.find((language) => language.code === 'zh-CN').tier).toBe('official')
+    expect(registry.languages.find((language) => language.code === 'zh-TW').tier).toBe('official')
+    expect(registry.languages.find((language) => language.code === 'en').tier).toBe('official')
+    expect(registry.languages.find((language) => language.code === 'tr').tier).toBe('legacy')
+
+    for (const file of ['en.json', 'zh-CN.json', 'zh-TW.json']) {
+      const breakIdeas = readBreakIdeas(file)
+      expect(typeof breakIdeas.miniBreakIdeas.aaa.text).toBe('string')
+      expect(typeof breakIdeas.longBreakIdeas.aaa.text).toBe('string')
     }
   })
 

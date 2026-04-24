@@ -1,0 +1,1040 @@
+{
+  "miniBreakIdeas": {
+    "aaa": {
+      "text": "Igyál egy pohár vizet. A tested most könyörög érte."
+    },
+    "aab": {
+      "text": "A vizes palackod ítélkezve néz rád. Kortyolj egyet."
+    },
+    "aac": {
+      "text": "Hidratálás-ellenőrzés: mikor ittál utoljára vizet?"
+    },
+    "aad": {
+      "text": "Lassan nézz teljesen balra, aztán jobbra."
+    },
+    "aae": {
+      "text": "Lassan nézz teljesen felfelé, aztán lefelé."
+    },
+    "aaf": {
+      "text": "Nézz valamire 6 méternyire 20 másodpercig — a 20-20-20 szabály."
+    },
+    "aag": {
+      "text": "Pislogj gyorsan 20-szor. A kiszáradt szemeid hálásak lesznek."
+    },
+    "aah": {
+      "text": "Csukd be a szemed és forgasd lassan a szemgolyóidat körbe."
+    },
+    "aai": {
+      "text": "Csukott szemmel lassan nézz fel a plafon felé, aztán le."
+    },
+    "aaj": {
+      "text": "Csukott szemmel lassan nézz balra, aztán jobbra."
+    },
+    "aak": {
+      "text": "Dörzsöld össze a tenyereid, amíg melegek nem lesznek, aztán borítsd a csukott szemeidre."
+    },
+    "aal": {
+      "text": "Bámulj ki az ablakon 30 másodpercig. Emlékszel a külvilágra?"
+    },
+    "aam": {
+      "text": "Nézz el a képernyőtől és fókuszálj valami zöldre. A szemed imádja a zöldet."
+    },
+    "aan": {
+      "text": "Engedd, hogy természetes fény érje a szemedet."
+    },
+    "aao": {
+      "text": "Csukd be a szemed és végy néhány mély lélegzetet."
+    },
+    "aap": {
+      "text": "Csukd be a szemed és lazíts."
+    },
+    "aaq": {
+      "text": "Csukd be a szemed és számold a lélegzeteidet."
+    },
+    "aar": {
+      "text": "Lélegezz be 4-ig, tartsd 7-ig, fújd ki 8-ig. A 4-7-8 technika."
+    },
+    "aas": {
+      "text": "Végy 3 lassú lélegzetet. Orron be, szájon ki."
+    },
+    "aat": {
+      "text": "Végy egy akkora mély levegőt, hogy a hasad kidülled. Ez a rekeszlégzés."
+    },
+    "aau": {
+      "text": "Csinálj semmit 20 másodpercig. Nehezebb, mint gondolnád."
+    },
+    "aav": {
+      "text": "Tartásellenőrzés — vállak hátra, lábak a földön."
+    },
+    "aaw": {
+      "text": "Változtass ülőpozíciót."
+    },
+    "aax": {
+      "text": "Engedd le a vállaidat. Eddig a füleidnél voltak."
+    },
+    "aay": {
+      "text": "Lazítsd el az állkapcsod. Nem is tudtad, hogy össze volt szorítva, ugye?"
+    },
+    "aaz": {
+      "text": "Egyenesítsd ki a gerinced. Képzeld, hogy egy zsinór húz felfelé a fejed tetejéről."
+    },
+    "aba": {
+      "text": "Az ülés az új dohányzás. Állj fel egy percre."
+    },
+    "abb": {
+      "text": "Lassan fordítsd a fejed az egyik oldalra és tartsd 10 másodpercig. Cserélj."
+    },
+    "abc": {
+      "text": "Lassan döntsd a fejed oldalra és tartsd 5-10 másodpercig."
+    },
+    "abd": {
+      "text": "Óvatosan húzd az egyik füled a vállad felé. Érezd a nyaknyújtást."
+    },
+    "abe": {
+      "text": "Körkörözd a nyakad lassan és óvatosan."
+    },
+    "abf": {
+      "text": "Döntsd a fejed előre, hátra, balra, jobbra. Teljes iránytű-reset."
+    },
+    "abg": {
+      "text": "Körkörözd a vállaidat előrefelé 10 másodpercig, aztán hátrafelé."
+    },
+    "abh": {
+      "text": "Húzd a vállaidat a füleidhez és engedd le. Ismételd 5-ször."
+    },
+    "abi": {
+      "text": "Szorítsd össze a lapockáidat és tartsd 5 másodpercig."
+    },
+    "abj": {
+      "text": "Emeld a jobb karod a fejed fölé, dőlj balra, tartsd 10 mp-ig. Cserélj oldalt."
+    },
+    "abk": {
+      "text": "Egy kart tedd a mellkasod előtt és óvatosan húzd magadhoz a másikkal. Cserélj."
+    },
+    "abl": {
+      "text": "Tartsd az egyik karod egyenesen fent, a másikkal nyomd a könyököt hátra. Tartsd 10 mp."
+    },
+    "abm": {
+      "text": "Fűzd össze az ujjaidat a hátad mögött és feszítsd ki a mellkasod."
+    },
+    "abn": {
+      "text": "Fűzd össze az ujjaidat és nyomd a tenyereidet a plafon felé. Nyújtás!"
+    },
+    "abo": {
+      "text": "Tartsd a karjaidat egyenesen oldalra. Csinálj kis köröket. Gyorsabban éget, mint hinnéd."
+    },
+    "abp": {
+      "text": "Rázd ki a kezeidet, hogy feloldd a feszültséget."
+    },
+    "abq": {
+      "text": "Érintsd az ujjbegyeidet a hüvelykujjadhoz, egy O-formát csinálva."
+    },
+    "abr": {
+      "text": "Szorítsd ökölbe a kezed, aztán nyisd szét és feszítsd ki az ujjaidat."
+    },
+    "abs": {
+      "text": "Szorítsd ökölbe, aztán nyisd szét, mintha azt mondanád: stop."
+    },
+    "abt": {
+      "text": "Nyomd meg a bal kezed minden ujját a jobb kezeddel. Cserélj kezet."
+    },
+    "abu": {
+      "text": "Nyújtsd a csuklóidat — nyújtsd ki a karod, húzd hátra az ujjaidat óvatosan."
+    },
+    "abv": {
+      "text": "Forgasd a csuklóidat 10-szer az óramutató járásával, aztán ellene."
+    },
+    "abw": {
+      "text": "Tedd laposra a kezed az asztalon és óvatosan feszítsd szét az ujjaidat."
+    },
+    "abx": {
+      "text": "Kopogtass az ujjaiddal az asztalon egyenként, kisujjtól hüvelykig. Most fordítva."
+    },
+    "aby": {
+      "text": "Adj magadnak egy kézmasszázst. Megérdemelted."
+    },
+    "abz": {
+      "text": "Állj fel és nyújtózkodj. A gerinced már nagyon várta."
+    },
+    "aca": {
+      "text": "Ülj a szék szélére, csavard a törzsed az egyik oldalra, tartsd 10 mp-ig. Cserélj."
+    },
+    "acb": {
+      "text": "Hajlítsd a hátad macska módra, aztán engedd lefelé. Macska-tehén nyújtás, irodai kiadás."
+    },
+    "acc": {
+      "text": "Tedd mindkét kezed a derekad mögé és óvatosan hajolj hátrafelé."
+    },
+    "acd": {
+      "text": "Állj a fallal szemben, csúsztasd a karjaidat fel-le — fal-angyal mozdulat."
+    },
+    "ace": {
+      "text": "Nyújtsd ki a lábaidat."
+    },
+    "acf": {
+      "text": "Állj fel és csinálj egy kitörést. Tartsd 10 mp-ig minden lábbal."
+    },
+    "acg": {
+      "text": "Állj fel és csinálj néhány guggolást. A széked ott van, ha baj lenne."
+    },
+    "ach": {
+      "text": "Csinálj 10 lábujjhegy-emelést az asztalnál. Lopakodó fitnesz."
+    },
+    "aci": {
+      "text": "Nyújtsd ki az egyik lábad egyenesen ülve. Tartsd 10 mp-ig. Cserélj."
+    },
+    "acj": {
+      "text": "Körkörözd a bokáidat — az óra járásával, aztán ellene."
+    },
+    "ack": {
+      "text": "Hajlítsd és feszítsd a lábfejed 10-szer. A bokáid el lettek hanyagolva."
+    },
+    "acl": {
+      "text": "Állj egy lábon 30 másodpercig. Cserélj. Az egyensúly is egy képesség."
+    },
+    "acm": {
+      "text": "Mozgasd a lábujjaidat a cipődben. Igen, az összeset."
+    },
+    "acn": {
+      "text": "Állj fel és menetelj helyben 30 másodpercig."
+    },
+    "aco": {
+      "text": "Csinálj néhány fal-fekvőtámaszt. Senki sem néz. Valószínűleg."
+    },
+    "acp": {
+      "text": "Csinálj 5 szék-dippet az asztal szélén."
+    },
+    "acq": {
+      "text": "Feszítsd meg és engedd el az összes izmod a lábujjaidtól a homlokodig. Teljes reset."
+    },
+    "acr": {
+      "text": "Ráncold össze az arcod 5 mp-re, aztán engedd el. Arcfeszültség: megszűnt."
+    },
+    "acs": {
+      "text": "Állj egy ajtókeretbe és dőlj előre óvatosan a mellkasod nyújtásához."
+    },
+    "act": {
+      "text": "Csukd be a szemed és nevezd meg a hangokat, amiket hallasz."
+    },
+    "acu": {
+      "text": "Csukd be a szemed és figyeld, mi jut eszedbe, ítélkezés nélkül."
+    },
+    "acv": {
+      "text": "Gondolj valamire, amiért most hálás vagy."
+    },
+    "acw": {
+      "text": "Mosolyogj. Élsz, és ez elég menő."
+    },
+    "acx": {
+      "text": "Készíts egy mentális pillanatfelvételt arról, mit érez a tested. Van feszültség valahol?"
+    },
+    "acy": {
+      "text": "Gondolj egy kedves dolgot, amit egy barátodnak mondanál, aztán mondd magadnak."
+    },
+    "acz": {
+      "text": "Vedd észre 5 dolgot a szobában, amire eddig sosem figyeltel."
+    },
+    "ada": {
+      "text": "Csukd be a szemed és képzeld el a boldog helyed 20 mp-ig."
+    },
+    "adb": {
+      "text": "Tedd le a telefonod képernyővel lefelé 60 mp-re. Nem fog történni semmi. Ígérem."
+    },
+    "adc": {
+      "text": "A billentyűzeted nem fog hiányolni. Állj fel."
+    },
+    "add": {
+      "text": "A hátad épp panaszt nyújtott be. Ideje nyújtózkodni."
+    },
+    "ade": {
+      "text": "Nézz fel a képernyőből. Csavar a történetben: a világ 3D."
+    },
+    "adf": {
+      "text": "Ásíts. Még egy hamis is kiváltja az igazit. Próbáld ki."
+    },
+    "adg": {
+      "text": "Nyisd ki a szád nagyra, aztán csukd be lassan. Állkapocsfeszültség: feloldva."
+    },
+    "adh": {
+      "text": "Öleld meg magad. Kard keresztbe és szorítás. Az öngondoskodás nem fura."
+    },
+    "adi": {
+      "text": "Mini tánc szünet — csak 10 mp. Tudod, hogy akarod."
+    },
+    "adj": {
+      "text": "Tegyél úgy, mintha kötelet húznál a fejed fölött. Oldalsó nyújtás aktiválva."
+    },
+    "adk": {
+      "text": "Nyomd össze a tenyereidet a mellkasod előtt és tartsd. Namaszté, kóder."
+    },
+    "adl": {
+      "text": "Masszírozd a halántékodat kis körökben 10 mp-ig. Azonnali nyugalom."
+    },
+    "adm": {
+      "text": "A monitorod üzent. Azt mondja, túl közelről bámulsz már túl régóta."
+    },
+    "adn": {
+      "text": "A kódod nem fogja magát debugolni, amíg itt ülsz. Ha felállsz, akkor sem fogja. De legalább a gerincod megbocsájt."
+    },
+    "ado": {
+      "text": "Magyarázd el a bugodat egy képzeletbeli gumikacának. Ha nem működik, magyarázd el a falnak. A falak kitűnő hallgatók."
+    },
+    "adp": {
+      "text": "A csuklóid ma ezreket gépeltek. Nyújtsd ki őket — nyújtsd ki a karodat és finoman húzd vissza az ujjaidat."
+    },
+    "adq": {
+      "text": "Egy egész kódbázist tartasz a fejedben. Tedd le 20 másodpercre."
+    },
+    "adr": {
+      "text": "Várod, hogy a build befejeződjön? Tökéletes. Állj fel és nyújtózkodj. Ez is számlázható idő."
+    },
+    "ads": {
+      "text": "47 olvasatlan Slack üzeneted van. Várhassanak még 20 másodpercet. Hunyoríts egyet."
+    },
+    "adt": {
+      "text": "\"Túl elfoglalt vagyok a szünethez\" — így végzed azzal, hogy egy sokkal hosszabb, nem szándékos szünetet veszel ki."
+    },
+    "adu": {
+      "text": "A code review utáni agyállapot valóság. Csukd be a szemed, és hagyd, hogy a neuronjaid abbahagyják a vitát."
+    },
+    "adv": {
+      "text": "Írói blokk? Állj fel. Sétálj 10 lépést. Ülj vissza. A bekezdés rettegni fog a visszatértedtől."
+    },
+    "adw": {
+      "text": "A döntési fáradtság valódi dolog. Hagyj fel a választással. Csak lélegezz 20 másodpercig."
+    },
+    "adx": {
+      "text": "Ez a du. 3-as mélypontod. Leesett a vércukrod. Állj fel, nyújtózkodj, és csípj el egy falatot."
+    },
+    "ady": {
+      "text": "A lábaid léteznek az asztalod alatt. Emlékeztesd őket azzal, hogy felállsz."
+    },
+    "adz": {
+      "text": "A csípőhajlítóid már órákon át magzati helyzetben voltak. Állj fel és csinálj kitörést."
+    },
+    "aea": {
+      "text": "A hátközepéd beragadt. Kulcsold össze a kezeidet a fejed mögött és finoman hajolj hátra."
+    },
+    "aeb": {
+      "text": "Alkarnyújtás: nyújtsd ki a karodat tenyérrel felfelé, és finoman húzd le az ujjaidat. RSI-megelőzés 10 másodperc alatt."
+    },
+    "aec": {
+      "text": "A következő hívásnál próbálj járni, miközben beszélsz. Az agyad mozgás közben jobban működik."
+    },
+    "aed": {
+      "text": "A lépcsők léteznek. Menj fel rajtuk. A szív-érrendszered köszönőlevelet küld majd."
+    },
+    "aee": {
+      "text": "A képernyő fényereje: illeszkedik a szobához, vagy az arcod egy zseblámpa? Állítsd be."
+    },
+    "aef": {
+      "text": "A kék fény nem teszi tönkre az életedet, de a képernyőd valószínűleg túl fényes. Tekerd le egy fokkal."
+    },
+    "aeg": {
+      "text": "A fejhallgatód már órákon át rajtad van. Adj pihenőt a füleidnek. Nem maratonra tervezték őket."
+    },
+    "aeh": {
+      "text": "A mai éjszakai alvásminőség most kezdődik. Nézz el a képernyőtől és pihentesd a szemeidet."
+    },
+    "aei": {
+      "text": "Chipset nyúlsz? Próbálj egy marék diót helyette. Az agyad jobb üzemanyagon fut, mint gondolnád."
+    },
+    "aej": {
+      "text": "A mély munka nagyszerű. A mély elszigeteltség nem az. Mikor beszéltél utoljára egy emberrel?"
+    },
+    "aek": {
+      "text": "Ha van állóasztalod, most jó alkalom váltani. Ha nincs, akkor is állj fel."
+    },
+    "ael": {
+      "text": "Ülő csavarodás: tedd a jobb kezedet a bal térded re, forgódj, tartsd 10 másodpercig. Csere. Szék-jóga, szőnyeg nélkül."
+    },
+    "aem": {
+      "text": "Túl meleg a szobád? A hűvösebb hőmérséklet javítja a koncentrációt. Nyisd ki egy kicsit az ablakot, vagy állítsd be a termosztátot."
+    },
+    "aen": {
+      "text": "Vedd le a fejhallgatódat. Figyelj a körülötted lévő valódi hangokra 20 másodpercig."
+    },
+    "aeo": {
+      "text": "Az egész rendszer mentális modelljét tartod a fejedben. Ez kimerítő. Engedd el egy pillanatra."
+    },
+    "aep": {
+      "text": "git commit -m \"szünetet tartottam\". A legjobb commit üzenet, amit ma írsz."
+    },
+    "aeq": {
+      "text": "A Stack Overflow nem segíthet nyújtózkodni. Állj fel. Ez az egyetlen dolog, amit magadnak kell megtenned."
+    },
+    "aer": {
+      "text": "A határidő nem mozdul el, ha 20 másodpercet nyújtózkodol. De a csigolyáid igen. Pozitív értelemben."
+    },
+    "aes": {
+      "text": "10 perce bámulod ugyanazt a bekezdést? Nyomtasd ki és jelöld meg tollal. Változtass médiumot, változtass perspektívát."
+    },
+    "aet": {
+      "text": "Kiszállítottál valamit? Beadtál egy tervezetet? Állj fel és csinálj egy győzelmi nyújtást. Megérdemled."
+    },
+    "aeu": {
+      "text": "Határidő előtti idegesség? Mozgasd a testet. A szorongás a mozdulatlanságban lakik."
+    },
+    "aev": {
+      "text": "Ellenőrizd a képernyő fényerejét. Ha látod a tükörképedet, túl fényes a szobához."
+    },
+    "aew": {
+      "text": "Edd meg a nassolnivalódat a billentyűzettől távol. A morzsáid nem valók a billentyűk közé."
+    },
+    "aex": {
+      "text": "5 percnyi séta több ötletet hoz, mint 30 percnyi üres lapbámulás. A tudomány mondja."
+    },
+    "aey": {
+      "text": "38 böngészőfüled van nyitva. Csukd be azokat, amiket sosem fogsz elolvasni. Ez nem felhalmozás, ez... oké, felhalmozás."
+    },
+    "aez": {
+      "text": "Ha ötször olvastad el ugyanazt a mondatot és még mindig nem érted, az az agyad üzenete: menj el innen."
+    },
+    "afa": {
+      "text": "A gerincednek nincs Ctrl+Z-je. Állj fel és gondoskodj róla most."
+    },
+    "afb": {
+      "text": "A második monitorod nem látja, hogy nyújtózkodol. Hajrá, nem ítél meg."
+    },
+    "afc": {
+      "text": "A kávé nem helyettesíti a pihenést. De ezt tudtad. Igyál mellé egy kis vizet is."
+    },
+    "afd": {
+      "text": "A bug ott lesz, amikor visszajössz. De friss szemmel fogod látni."
+    },
+    "afe": {
+      "text": "10 percet töltöttél egy változó elnevezésével. Az agyad megérdemel egy szünetet."
+    },
+    "aff": {
+      "text": "Véget értek a meetingek. Engedd el. Forgasd a nyakad lassan balra, aztán jobbra."
+    },
+    "afg": {
+      "text": "A beérkeződ 60 másodpercig nélküled is megél. Nézz ki az ablakon."
+    },
+    "afh": {
+      "text": "Ha az egeres kezed görcsöl, válts kezet egy percre. Furcsán fog hatni. Ez a lényeg."
+    },
+    "afi": {
+      "text": "Bizsergő ujjak? Az idegeid nyújtózkodást kérnek. Csuklókörzés, 10-szer mindkét irányban."
+    },
+    "afj": {
+      "text": "Túl sokáig álltál? Ülj le egy kicsit. A lényeg a váltakozás, nem a szenvedés."
+    },
+    "afk": {
+      "text": "Ideje AFK-ba menni. Szó szerint. Lépj el a billentyűzettől."
+    },
+    "afl": {
+      "text": "Ha van asztali növényed, nézd meg. Ha haldoklik, az egy metafora. Öntözd meg mindkettőtöket."
+    },
+    "afm": {
+      "text": "Nyisd ki az ablakot. A friss levegő ugyanúgy hat az agyra, mint egy hideg újraindítás a számítógépre."
+    },
+    "afn": {
+      "text": "Nyomd az állad a mellkasodhoz és tartsd 10 másodpercig. A nyakad hátulja egész nap feszült volt."
+    },
+    "afo": {
+      "text": "Szorítsd össze a fenéked ülve. Tartsd 5 másodpercig. Engedd el. Senki sem tudja. Titkos fitnesz."
+    },
+    "afp": {
+      "text": "Ülő hamstring nyújtás: nyújtsd ki az egyik lábad, nyúlj a lábujjaid felé, tartsd 10 másodpercig. Csere."
+    },
+    "afq": {
+      "text": "A szemed kevesebb könnyet termel, amikor képernyőre fókuszálsz. Hunyoríts lassan és tudatosan 10-szer."
+    },
+    "afr": {
+      "text": "A mély légzés valós időben csökkenti a vérnyomást. Lélegezz be 4-re, ki 6-ra. Ismételd háromszor."
+    },
+    "afs": {
+      "text": "Állj fel és hagyd, hogy a gravitáció kinyújtsa a gerincet. Lóbáld a karjaid és lélegezz 15 másodpercig."
+    },
+    "aft": {
+      "text": "200 billentyűparancsot ismersz. Ideje megtanulni egy test-parancsot: állj, nyújtózkodj, ülj. Ismételd."
+    },
+    "afu": {
+      "text": "Kapcsold az IDE-det light módba 5 percre. Vagy dark módba. Változtass valamit. Állítsd vissza a vizuális kérget."
+    },
+    "afv": {
+      "text": "Villogó kurzort bámultál. Most csukd be a szemed és ne láss semmit 20 másodpercig. Luxus."
+    },
+    "afw": {
+      "text": "Nézz ki az ablakon és keresd meg a legtávolabb látható dolgot. Fókuszálj rá. A szemizomaid szükségük volt erre."
+    },
+    "afx": {
+      "text": "Menj be a konyhába. Nem azért, hogy valamit csinálj. Csak menj. A mozgás az orvosság."
+    },
+    "afy": {
+      "text": "Keress egy lépcsőt és nyújtsd a vádlidat a lépcsőfok szélén. Tartsd 15 másodpercig mindkét oldalon."
+    },
+    "afz": {
+      "text": "A füleid órákon át fejhallgató alatt voltak. Vedd le és élvezd a csendet."
+    },
+    "aga": {
+      "text": "Agyfog? A prefrontális kérged lemerült. Állj fel, mozogj, és hagyd újraindulni."
+    },
+    "agb": {
+      "text": "A multitasking mítosz. Az agyad csak context-switchel overhead-del. Vegyél ki egy single-threaded szünetet."
+    },
+    "agc": {
+      "text": "Minden context-switch 23 percbe kerül az újrafókuszáláshoz. Ez a szünet 20 másodpercbe kerül. Számold ki."
+    },
+    "agd": {
+      "text": "A perfekcionizmus halogatás laborköpenyben. Lépj el. A kész jobb, mint a tökéletes."
+    },
+    "age": {
+      "text": "Csalónak érzed magad? Mindenki így érez néha. Állj fel és nyújtózkodj — az imosztorok nem törődnek magukkal."
+    },
+    "agf": {
+      "text": "Az e-mail frissítése 30 másodpercenként nem produktivitás. Állj fel. Az a produktivitás."
+    },
+    "agg": {
+      "text": "Kreatív blokk? Változtass testtartáson. Új pozíció, új perspektíva."
+    },
+    "agh": {
+      "text": "A derekad reklamál. Csússz a szék széléhez és ülj egyenesen 30 másodpercig."
+    },
+    "agi": {
+      "text": "A vállfájdalom a tested code review kommentje: 'Változtatásra szorul.' Forgasd a vállaid hátrafelé 10-szer."
+    },
+    "agj": {
+      "text": "Csuklófájdalom kódolás után? Csinálj enyhe ökölszorítást és forgasd lassan. 10 kör mindkét irányban."
+    },
+    "agk": {
+      "text": "Tedd az egyik bokád az ellentétes térded re és hajolj előre. Csípőnyitó. Tartsd 15 másodpercig. Csere."
+    },
+    "agl": {
+      "text": "Nézz a munkatársad szemébe és mondj valami kedveset. Az emberi kapcsolat bármely értesítésnél jobb."
+    },
+    "agm": {
+      "text": "Hallgass természeti hangot 30 másodpercig — eső, madarak, óceán. Az idegrendszered lekapcsol."
+    },
+    "agn": {
+      "text": "A mély fókusz sprint, nem maraton. Épp sprinteltél. Sétáld ki."
+    },
+    "ago": {
+      "text": "Testtartás-ellenőrzés: a képernyőd felé döntesz, mintha pénzzel tartozna? Ülj vissza."
+    },
+    "agp": {
+      "text": "Egyél valamit. De ezúttal ízleld meg. Rágj lassan. Az ebédszünet nem speedrun."
+    },
+    "agq": {
+      "text": "Mikor ittál utoljára vizet? Nem kávét. Vizet. Rajta."
+    },
+    "agr": {
+      "text": "Ha van nappali fény, juttass belőle a bőrödre. A cirkadián ritmusod könyörög."
+    },
+    "ags": {
+      "text": "Túl hideg vagy túl meleg a szobád? Állítsd be. A hőkomfort közvetlenül hat a koncentrációra."
+    },
+    "agt": {
+      "text": "Doboz légzés: be 4-re, tartsd 4-re, ki 4-re, tartsd 4-re. Az idegrendszered kedvenc loopja."
+    },
+    "agu": {
+      "text": "Emeld fel a szemöldököd amennyire csak bírod. Tartsd 5 másodpercig. Engedd el. A homlokod feszültebb volt, mint gondoltad."
+    },
+    "agv": {
+      "text": "Tárd szét az ujjaidat amennyire csak tudod. Tartsd 5 másodpercig. Most csinálj szoros ökölszorítást. Ismételd háromszor."
+    },
+    "agw": {
+      "text": "Feszítsd meg a törzsed ülve. Húzd a köldököd a gerincod felé és tartsd 10 másodpercig."
+    },
+    "agx": {
+      "text": "Állj lábujjhegyre 10 másodpercig. Most ringálj vissza a sarkadra. Ismételd. Mikro-egyensúly edzés."
+    },
+    "agy": {
+      "text": "Figyelj a lélegzetedre. Ne változtass rajta. Csak figyelj. Ez a mindfulness, és most épp megtetted."
+    },
+    "agz": {
+      "text": "Ezt a szünet-emlékeztetőt egy ember írta, aki szintén figyelmen kívül hagyja a szünet-emlékeztetőket. Ne légy olyan, mint mi. Nyújtózkodj."
+    }
+  },
+  "longBreakIdeas": {
+    "aaa": {
+      "title": "Jobb együtt",
+      "text": "Nehéz egyedül szünetet tartani? Próbálj meg egy kollégával együtt szünetelni — szociális és egészséges egyszerre."
+    },
+    "aab": {
+      "title": "Lépj el",
+      "text": "Észrevetted, hogy a legjobb ötleteid a zuhany alatt jönnek? Mert az agyad háttérben dolgozik, amikor nem fókuszálsz. Sétálj egyet."
+    },
+    "aac": {
+      "title": "Mikro-szünetek",
+      "text": "A rövid, gyakori szünetek csökkentik az ismétlődő megterhelést és ébren tartanak. Nem luxus — tudomány."
+    },
+    "aad": {
+      "title": "Meditáció",
+      "text": "A tudatos jelenlét meditáció csökkenti a szorongást, a stresszt, sőt a fizikai fájdalmat is. Már napi 5 perc is számít."
+    },
+    "aae": {
+      "title": "Pislogj többet",
+      "text": "Képernyő előtt akár 66%-kal kevesebbet pislogsz, ami kiszárítja a szemed. Pislogj tudatosan, vagy használj műkönnycseppet."
+    },
+    "aaf": {
+      "title": "Asztal-ergonómia",
+      "text": "Monitor szemmagasságban, billentyűzet könyökmagasságban, lábak a földön. Javíts egy apróságon most."
+    },
+    "aag": {
+      "title": "Irodai edzés",
+      "text": "Nem kell edzőterem a mozgáshoz. Menetelj helyben, csinálj fal-fekvőtámaszt vagy széktolódást. A tested hálás lesz."
+    },
+    "aah": {
+      "title": "Váltsd fel",
+      "text": "Ha van álló asztalod vagy ülőlabdád, most lenne a legjobb pillanat átváltani."
+    },
+    "aai": {
+      "title": "Olvasd a jeleket",
+      "text": "Álmodozol? Nehéz koncentrálni? Újraolvasod ugyanazt a sort? Az agyad szünetet kér — hallgass rá."
+    },
+    "aaj": {
+      "title": "Tech-mentes séta",
+      "text": "Hagyd otthon a telefonod és sétálj egy rövid kört. Nincs podcast, nincs zene — csak te és a gondolataid."
+    },
+    "aak": {
+      "title": "Az ülés problémája",
+      "text": "A tartós ülés növeli a szívbetegség, a cukorbetegség és a korai halálozás kockázatát. Rendszeres mozgásszünetekkel mérsékelheted."
+    },
+    "aal": {
+      "title": "Sétáló megbeszélések",
+      "text": "Legközelebb ha négyszemközti meetinged van, javasolj sétát a tárgyaló helyett. Sétálva kreatívabbak vagyunk."
+    },
+    "aam": {
+      "title": "Tudatos nassolás",
+      "text": "Fogj egy gyümölcsöt és edd lassan. Figyeld az ízét, az állagát, az illatát — tudatos evés mini formában."
+    },
+    "aan": {
+      "title": "Kávés séta",
+      "text": "Mész kávéért? Csinálj belőle egy 5 perces sétát is. Két legyet egy csapásra."
+    },
+    "aao": {
+      "title": "Az agyad a szünetekről",
+      "text": "Egy NIH-kutatás szerint az agy a szünetek alatt próbálja meg összefűzni a frissen tanultakat — szóval a szünet a produktivitás része."
+    },
+    "aap": {
+      "title": "Mozdulj egy kicsit, nyerj sokat",
+      "text": "Már a minimális rendszeres mozgás is drámaian csökkenti a korai halálozás kockázatát. Minden perc számít."
+    },
+    "aaq": {
+      "title": "Nyújtórutin",
+      "text": "Találtál egy jó nyújtássort? Ismételd naponta többször. Az ismétlés tartós rugalmasságot épít."
+    },
+    "aar": {
+      "title": "Csuklókörzés",
+      "text": "Nyújtsd ki a karjaidat tenyérrel magad felé, aztán lassan forgasd a csuklóidat mindkét irányba. A kárpáltlagúnásnak ez az ellenszere."
+    },
+    "aas": {
+      "title": "Nyújtás felfelé",
+      "text": "Kulcsold a kezeidet a fejed mögött, aztán emeld fel a kezeidet a fejed fölé. Tartsd a kart egyenesen és érezd a nyújtást az oldalaidban."
+    },
+    "aat": {
+      "title": "A 30/1 szabály",
+      "text": "Minden 30 perc ülés után mozogj legalább 1 percet. Tarts be ezt az arányt és az izületek hálásak lesznek."
+    },
+    "aau": {
+      "title": "7 perces edzés",
+      "text": "Teljes test edzés mindössze 7 perc alatt. Tudományosan alátámasztott és bárhol elvégezhető."
+    },
+    "aav": {
+      "title": "Emeld a pulzusod",
+      "text": "Naponta 20 perc emelt pulzus (120 bpm körül) csökkenti a szorongást, javítja az alvást és élesíti a gondolkodást."
+    },
+    "aaw": {
+      "title": "Használd a lépcsőt",
+      "text": "A lépcsőzés erőteljes edzésnek számít: percenként több kalóriát éget, mint a futás. Mellőzd a liftet."
+    },
+    "aax": {
+      "title": "Alkoss valamit",
+      "text": "A művészetterápia bizonyítottan csökkenti a stresszt. Írj egy haikut, firkálj, vagy hajtogass origamit. Alkotni = lazítani."
+    },
+    "aay": {
+      "title": "Rakj rendet",
+      "text": "A rendetlen asztal magasabb stresszel jár. Szánj 5 percet a munkaterületed rendezésére — a fejed is kitisztul."
+    },
+    "aaz": {
+      "title": "Egyél a szabadban",
+      "text": "A természetben tartózkodás csökkenti a kortizolt, a stresszhormont. Ha teheted, egyél kint és engedd, hogy a napfény is elérjen."
+    },
+    "aba": {
+      "title": "Az ásítás ereje",
+      "text": "Az ásítás nem csak unalomból van — hűti az agyat és könnyeket termel, ami nedvesen tartja a szemed. Ásíts egyet nyugodtan."
+    },
+    "abb": {
+      "title": "Fókuszváltás",
+      "text": "Tartsd az ujjad közel az arcodhoz és fókuszálj rá. Lassan vidd távolabb, közben fókuszváltás. Ez edzi a szem izomzatát."
+    },
+    "abc": {
+      "title": "Szem-pihentetés",
+      "text": "Borítsd meleg tenyereidet a csukott szemeidre és támaszd a könyököd az asztalon. Ez a sötétség segít feltöltődni."
+    },
+    "abd": {
+      "title": "Nyomkodj valamit",
+      "text": "Fogj egy stresszlabdát, egy zoknipárt, vagy bármit, amit nyomkodhatsz. Az izometrikus feszítés oldja a stresszt."
+    },
+    "abe": {
+      "title": "Lassú légzés",
+      "text": "A kontrollált lassú légzés (percenként 6 lélegzet) aktiválja a nyugtató idegrendszert. Próbáld meg 2 percig."
+    },
+    "abf": {
+      "title": "Vizualizáció",
+      "text": "Csukd be a szemed és képzeld el magad egy nyugodt helyen — strand, erdő, hegycsúcs. Az agyadnak ez szinte olyan, mint ott lenni."
+    },
+    "abg": {
+      "title": "5-4-3-2-1 földelés",
+      "text": "Túlterhelve érzed magad? Nevezz meg 5 dolgot, amit látsz, 4-et, amit megérinthetsz, 3-at, amit hallasz, 2-t, amit érzel, 1-et, amit ízlelsz."
+    },
+    "abh": {
+      "title": "Szunyókálás tudománya",
+      "text": "Egy 10-20 perces szundi fokozza az éberséget és a teljesítményt anélkül, hogy bóvli lenne utána. Állíts be időzítőt."
+    },
+    "abi": {
+      "title": "A Pomodoro módszer",
+      "text": "Dolgozz 25 percet, szünetelj 5-öt. Négy kör után tarts 15-30 perces szünetet. Strukturált munka, beépített pihenéssel."
+    },
+    "abj": {
+      "title": "Firkálj-szünet",
+      "text": "A szünet alatti firkálás javítja a koncentrációt és a memóriát. Fogj egy tollat és rajzolj bármit — nem kell szép legyen."
+    },
+    "abk": {
+      "title": "Egy dal szünet",
+      "text": "Tedd fel a kedvenc dalodat és tényleg hallgasd meg — ne háttérzajként. Egy dal pont elég a mentális újrainduláshoz."
+    },
+    "abl": {
+      "title": "Hála-pillanat",
+      "text": "Írj le 3 dolgot, amiért most hálás vagy. Kutatások szerint ez javítja a hangulatot és csökkenti a szorongást."
+    },
+    "abm": {
+      "title": "Hideg víz reset",
+      "text": "Fröcsköld meg az arcodat hideg vízzel, vagy tarts egy hideg poharat a csuklódhoz. Aktiválja a merülési reflexet és megnyugtat."
+    },
+    "abn": {
+      "title": "Beszélgess egy növénnyel",
+      "text": "Ha van asztali növényed, nézd meg, kell-e víz vagy fény. Ha nincs — fontold meg egyet beszerezni. A növények javítják a levegőt és a hangulatot."
+    },
+    "abo": {
+      "title": "Agy-kiürítés",
+      "text": "Fogj egy papírt és írd le mindent, ami a fejedben van — randoman, szűretlenül. Ez felszabadítja a munkaemlékezeted."
+    },
+    "abp": {
+      "title": "Simogass egy háziállatot",
+      "text": "Ha otthonról dolgozol és van háziállatod, szánj egy percet a simogatására. Az állatsimogatás csökkenti a vérnyomást és a stresszt."
+    },
+    "abq": {
+      "title": "Nevetésterápia",
+      "text": "Nézz meg egy 2 perces vicces videót vagy olvass el pár viccet. A nevetés endorfint szabadít fel és lazítja az izmokat."
+    },
+    "abr": {
+      "title": "Friss levegő adag",
+      "text": "Nyiss ablakot vagy lépj ki 60 mp-re. A friss levegő növeli az oxigénszintet és kitisztítja a fejedet."
+    },
+    "abs": {
+      "title": "Test-szkennelés",
+      "text": "A lábujjaidtól indulva lassan irányítsd a figyelmed felfelé a tested minden részére. Ahol feszültséget találsz, tudatosan engedd el."
+    },
+    "abt": {
+      "title": "Asztal-jóga",
+      "text": "Ülő macska-tehén, gerinc-csavar, előrehajlás — jógázhatsz a székedből is. Nem kell hozzá matrac."
+    },
+    "abu": {
+      "title": "Olvass egy oldalt",
+      "text": "Tarts egy könyvet a közeledben és olvass el egyetlen oldalt a szünetben. A szövegfeldolgozó agyrészt teljesen máshogy aktiválja."
+    },
+    "abv": {
+      "title": "A 90 perces ciklus",
+      "text": "Az agyad 90 perces ultradián ciklusokban dolgozik. A ciklus végén természetesen esik a fókusz — ilyenkor a szünet nem lusta, hanem okos."
+    },
+    "abw": {
+      "title": "Kíváncsiság-szünet",
+      "text": "Keress ki egy random tényt valamiről, ami érdekel. A mikrotanulás frissen tartja az agyat és meglepően jó hangulatjavító."
+    },
+    "abx": {
+      "title": "Doboz-légzés",
+      "text": "Lélegezz be 4-ig, tartsd 4-ig, fújd ki 4-ig, tartsd 4-ig. A katonák és űrhajósok is ezt használják a nyugalomhoz."
+    },
+    "aby": {
+      "title": "Táncolj ki",
+      "text": "Tedd fel a kedvenc dalodat és táncolj végig. Csukd be az ajtót, ha kell. A tested mozogni akar, ne tagadd meg tőle."
+    },
+    "abz": {
+      "title": "Hívj fel valakit",
+      "text": "Használd a szünetedet arra, hogy felhívsz valakit, aki fontos — csak azért, hogy szólj. Ez fontosabb, mint gondolnád."
+    },
+    "aca": {
+      "title": "Napfény-adag",
+      "text": "Tölts 10-15 percet napfényben, ha teheted. Szabályozza a cirkadián ritmusodat, javítja a hangulatot és a D-vitamin szintet."
+    },
+    "acb": {
+      "title": "Progresszív lazítás",
+      "text": "Feszítsd meg az izomcsoportokat 5 mp-re, aztán engedd el. Kezdd a lábujjaknál és haladj felfelé. Meglepően hatékony."
+    },
+    "acc": {
+      "title": "Mezítlábas pillanat",
+      "text": "Vedd le a cipőd és érezd a padlót a lábad alatt. Ha tudsz fűre vagy földre lépni, annál jobb — ez a földelés."
+    },
+    "acd": {
+      "title": "Írj a jövő éned-nek",
+      "text": "Írj egy gyors üzenetet a jövőbeli magadnak — egy célt, egy kívánságot, egy emlékeztetőt. A jövő éned hálás lesz."
+    },
+    "ace": {
+      "title": "Digitális nagytakarítás",
+      "text": "Zárd be az összes fület, amit nem használsz. Az olvasatlan értesítések stresszelnek. Takaríts a digitális tereden is."
+    },
+    "acf": {
+      "title": "A 2 perces szabály",
+      "text": "Ha valami, ami jár a fejedben, 2 percnél kevesebb — csináld meg most. A kis győzelmek felszabadítják a fejedet nagyobb dolgokra."
+    },
+    "acg": {
+      "title": "Tartás-audit",
+      "text": "Állj a falnak háttal, sarkak, fenék, vállak és fej a falon. Ez a semleges tartásod. Jegyezd meg és vidd magaddal a székhez."
+    },
+    "ach": {
+      "title": "Illatszünet",
+      "text": "Szagolj meg valami kellemeset — kávészem, gyertya, illóolaj, vagy friss levegő. A szaglás közvetlenül az érzelmekhez kapcsolódik."
+    },
+    "aci": {
+      "title": "Felhőfigyelés",
+      "text": "Ha látod az eget, tölts egy percet a felhők figyelésével. Költségmentes meditáció, beépített vizuális effektekkel."
+    },
+    "acj": {
+      "title": "Gumikacsa-bölcsesség",
+      "text": "A programozók gumikacsa-módszerrel magyarázzák a kódot és keresik a bugokat. De az igazi varázslat? Ha teljesen elhagyod a problémát. A tudatalattid tovább dolgozik, miközben nyújtózkodol. Gyere vissza, és a megoldás csak... ott van."
+    },
+    "ack": {
+      "title": "Az RSI nem kitüntető jel",
+      "text": "Az ismétlésből eredő sérülés (RSI) a számítógép-használók 64%-át érinti. A korai tünetek — bizsergés, merevség, fájó csuklók — könnyen figyelmen kívül hagyhatók, de drágán megfizethetők később. Nyújtsd ki az alkarod: nyújtsd ki a karodat, tenyérrel lefelé, és finoman húzd az ujjaidat magad felé. Tartsd 15 másodpercig mindkét oldalon."
+    },
+    "acl": {
+      "title": "A fordítási idő nyújtás",
+      "text": "Várod, hogy a build, deploy vagy tesztek végezzenek? Ez nem holt idő — ez ingyenes nyújtási idő. Állj fel, próbálj megérinteni a lábujjaidat (vagy legalább próbálkozz), és gördülj vissza lassan. A kódod és a gerincod is készen lesz, mire befejezi."
+    },
+    "acm": {
+      "title": "Szétforgácsolt figyelem",
+      "text": "Az átlagos tudásmunkás 6 percenként ellenőrzi az e-mailt vagy üzeneteket. Minden egyes ellenőrzés egy context-switchet okoz, amelyből 23 percbe telik felépülni. Ebben a szünetben tedd a telefonod arccal lefelé és zárd be a chat alkalmazásokat. Visszanyerd a figyelemkapacitásodat, egy szünettel egyszerre."
+    },
+    "acn": {
+      "title": "A forgalom paradoxona",
+      "text": "A Stanfordi kutatások szerint a szünetek nélküli munkavégzés nem tesz gyorsabbá — hanem lassabbá, kevésbé pontossá, és hajlamosabbá hibákra, amelyek javítása még több időt vesz igénybe. A szünet nem lustálkodás. Ez mérnöki hatékonyság."
+    },
+    "aco": {
+      "title": "Review utáni felépülés",
+      "text": "Túlélted a code review-t? Vagy te tartottad? Mindkét esetben az agyad hyperkritikus módban volt. Váltogass sebességet. Állj fel, rázd ki a kezeidet, forgasd a vállaidat, és hagyd, hogy az agyad ítélkező módból pihenő módba váltson."
+    },
+    "acp": {
+      "title": "Üres oldal, teljes test",
+      "text": "Az írói blokk nem kreativitási probléma — gyakran testi probléma. Ha fizikailag feszült vagy, az elméd is megfeszül. Sétálj körbe 5 percig. Nyújtsd a karjaidat a fejed fölé. A szavak visszajönnek, és jobbak lesznek."
+    },
+    "acq": {
+      "title": "A du. 3-as összeomlás",
+      "text": "A délutáni energiacsökkenést a cirkadián ritmusod okozza, nem csak az, amit ettél. Kávé helyett próbálj 5 perces sétát vagy könnyű nyújtást. A mozgás természetesen növeli a kortizolt és visszaállítja az éberségedet a koffein-összeomlás nélkül."
+    },
+    "acr": {
+      "title": "Zsibbadt láb szindróma",
+      "text": "Az ülés összenyomja a lábakban lévő ereket és csökkenti a keringést. 90 perc ülés után a vérkeringés a lábakban 50%-kal csökkenhet. Állj fel, sétálj körbe, vagy csinálj 10 vádli-emelést. A lábaid — és a szív-érrendszered — hálásak lesznek."
+    },
+    "acs": {
+      "title": "Csípőhajlító SOS",
+      "text": "A csípőhajlítóid megrövidülnek és megfeszülnek hosszan tartó ülés után, előrehúzva a medencédet és derékfájást okozva. Próbáld ezt: állj fel, lépj egy lábbal hátra kitörésbe, és nyomd a csípődet előre. Tartsd 30 másodpercig mindkét oldalon. Ez az irodai dolgozók legelfeledettebb nyújtása."
+    },
+    "act": {
+      "title": "Hátközép-csavarodás",
+      "text": "A hátközépi gerinced beragad a billentyűzet fölé hajolástól. Ülj a szék szélére, keresztezd a karjaidat a mellkasod felett, és lassan forgódj balra és jobbra. Tartsd mindkét oldalt 10 másodpercig. Érezni fogod, hogy minden visszapattan a helyére."
+    },
+    "acu": {
+      "title": "Alkar-mentés",
+      "text": "Az alkarjaid 20 izmot tartalmaznak, amelyek az ujjaidat és csuklóidat irányítják. Gépelési és egérezési órákon át kimerülnek. Nyújtsd ki az egyik karodat, tenyérrel magadtól el, és finoman húzd vissza az ujjaidat a másik kézzel. Tartsd 15 másodpercig. Csere. Ismételd kétszer."
+    },
+    "acv": {
+      "title": "Sétálva telefonálj",
+      "text": "Hívásod lesz? Vedd fel sétálás közben. A Stanfordi kutatások szerint a séta 60%-kal növeli a kreatív outputot. Nem kell futópad — csak sétálj a szobában vagy menj ki. Az ötleteid élesebbek lesznek, a tested hálás lesz."
+    },
+    "acw": {
+      "title": "Lépcsőerő",
+      "text": "A Georgiai Egyetem tanulmánya szerint a lépcsőn való kaptatás mindössze 3 percig hatékonyabban növeli az energiát, mint 30 mg koffein. Ha van hozzáférésed lépcsőkhöz, csinálj néhány kört ebben a szünetben. Gyors, ingyenes, és mindig működik."
+    },
+    "acx": {
+      "title": "Képernyő és alvás",
+      "text": "Az esti fényes képernyő-expozíció akár 50%-kal csökkenti a melatonin-termelést. Ha du. 5 után van, fontold meg a képernyő elsötétítését vagy az éjszakai mód bekapcsolását. A mai éjszakai alvásod most dől el — azon múlik, mit lát most a szemed."
+    },
+    "acy": {
+      "title": "Kékfény valóság",
+      "text": "A képernyőkről érkező kék fény valószínűleg nem károsítja a retinádat, de hozzájárul a digitális szemfáradtsághoz és megzavarhatja az alvási ciklusodat. A megoldás nem drága szemüveg — hanem rendszeres ellenézés, fényerő-beállítás és ilyen szünetek, mint ez."
+    },
+    "acz": {
+      "title": "Fülkimerültség",
+      "text": "A fejhallgató 60 percnél hosszabb folyamatos viselése fülkimerültséget, nyomásfelépülést és nagy hangerő esetén halláskárosodást is okozhat. Vedd le erre a szünetre. Hagyd, hogy a füleid szellőzzenek. Ha mindenképpen kell hang, egy ideig próbálj hangszórót mérsékelt hangerőn."
+    },
+    "ada": {
+      "title": "Döntési akkumulátor",
+      "text": "Naponta kb. 35 000 döntést hozol, és mindegyik egy véges erőforrást merít. Délutánra a döntési minőséged jelentősen csökken — ez a 'döntési fáradtság'. Ebben a szünetben ne válassz. Ne görgess, ne válogass, ne tervezz. Csak légy csendben."
+    },
+    "adb": {
+      "title": "Stressz-nassolás audit",
+      "text": "A stressz-evés nem az éhségről szól — a kortizolról, amely azt mondja az agynak, hogy vigaszra van szüksége. Ha nassolnivalóért nyúlsz, állj meg és kérdezd meg: éhes vagyok, vagy stresszes? Ha stresszes, először próbálj 5 mély lélegzetet. Ha utána is éhes vagy, egyél — de olyat, ami igazán fűt."
+    },
+    "adc": {
+      "title": "Az elszigeteltség csapdája",
+      "text": "A mély fókusz elengedhetetlen a kreatív és műszaki munkához, de a hosszan tartó elszigeteltség növeli a kortizolt és csökkenti az oxitocint. Használd ezt a szünetet, hogy szólj valakinek — munkatárs, szomszéd, családtag. Még egy rövid szociális interakció is visszaállítja a stressz-alapszintedet."
+    },
+    "add": {
+      "title": "Állóasztal-csere",
+      "text": "Az állóasztal nem varázslat — órákon át mozdulatlanul állni szinte ugyanolyan rossz, mint mozdulatlanul ülni. A lényeg a váltakozás. Ha álltál, ülj le egy kicsit. Ha ültél, állj fel. Súlyodat váltogasd, lábujjaidat mozgasd, vagy masírozz helyben. A mozgás a cél, nem a pozíció."
+    },
+    "ade": {
+      "title": "Szék-jóga: ülő galamb",
+      "text": "Tedd a jobb bokád a bal térded fölé. Ülj egyenesen és finoman dőlj előre, amíg érzed a nyújtást a jobb csípőben és fenékben. Tartsd 30 másodpercig, majd válts oldalt. Ez az egyik legjobb csípőnyitó nyújtás, amit anélkül végezhetsz el, hogy elhagynád a széked."
+    },
+    "adf": {
+      "title": "Hőmérséklet és fókusz",
+      "text": "A Cornelli kutatás szerint az irodai hőmérséklet 20°C-ról 25°C-ra emelésekor 44%-kal csökkent a gépelési hibák száma és 150%-kal nőtt a teljesítmény. Ha fázol, melegedj fel. Ha túl meleg van, hűlj le. A termosztát egy termelékenységi eszköz."
+    },
+    "adg": {
+      "title": "Hanghigiénia",
+      "text": "Az állandó háttérzaj — nyitott irodák, értesítések, szöveges zene — akár 66%-kal növeli a kognitív terhelést. Ebben a szünetben távolíts el minden hangot. Ülj csendben 2 percig. Eleinte furcsának tűnhet. Ez azt jelenti, hogy szükséged volt rá."
+    },
+    "adh": {
+      "title": "Kódbázis-súly",
+      "text": "Egy összetett rendszer munkamemóriában tartása az egyik legdrágább kognitív feladat, amit emberek végeznek. Ezért érzed magad kimerültnek egy nap 'csak ülés' után. Szándékosan ürítsd ki a mentális állapotodat. Írd le, hol tartasz, aztán engedd el."
+    },
+    "adi": {
+      "title": "Git commit és nyújtás",
+      "text": "Mielőtt push-olod a commitot, push-old ki magad a székből is. Tedd rituálévá: minden commit = egy nyújtás. Egy produktív napon ez 10-20 mikro-szünetet épít be a munkafolyamatodba. A verzióhistóriád és az egészségtörténeted is javul."
+    },
+    "adj": {
+      "title": "Elveszett szójelentések",
+      "text": "Létezik egy pszichológiai jelenség, amelyet 'szemantikai telítettségnek' hívnak — amikor annyit nézel egy szót, hogy valószerűtlennek tűnik. Ha 20 perce ugyanazt a bekezdést szerkeszted, ez a jeled. Lépj el. Amikor visszajössz, a szöveg frissnek tűnik, és a hibák nyilvánvalóak lesznek."
+    },
+    "adk": {
+      "title": "A séta-piszkozat",
+      "text": "Sok híres alkotó — Dickens, Beethoven, Darwin — hosszú napi sétákat tett a kreatív folyamatuk részeként. Nem kell 2 óra. Már 5 perc séta is átvált az agyad fókuszált módból diffúz módba, ahol a kreatív kapcsolódások létrejönnek."
+    },
+    "adl": {
+      "title": "Határidő-szorongás",
+      "text": "A határidő előtti stressz beindítja a harc-vagy-menekülés választ, ami szűkíti a gondolkodásod és növeli a hibákat. Paradox módon a legjobb dolog, amit határidő előtt tehetsz, az egy szünet. A mozgás lebontja a stresszhormonokat és helyreállítja a széleskörű gondolkodást, amire szükséged van a befejezéshez."
+    },
+    "adm": {
+      "title": "A beküldési rituálé",
+      "text": "Rányomtál a küldés gombra? Elküldted az e-mailt? Merge-öltél egy PR-t? Ne kezdd azonnal a következő feladatot. Adj az agynak egy pillanatot, hogy regisztrálja a befejezést. Állj fel, nyújtózkodj, esetleg ünnepelj is. A mérföldkövek elismerése — még a kicsik is — megelőzi a kiégést."
+    },
+    "adn": {
+      "title": "Vércukor-hullámvasút",
+      "text": "Az a délutáni energiaösszeomlás, amit érezni szoktál? Részben egy magas szénhidráttartalmú ebéd által kiváltott vércukor-csökkenés. A tartós energiáért párosíts szénhidrátot fehérjével és rosttal. De most egyszerűen mozogj — 5 perces séta stabilizálja a glükózszintet és eloszlatja a ködöt."
+    },
+    "ado": {
+      "title": "Zsibbadt láb protokoll",
+      "text": "Bizsergés vagy zsibbadás a lábakban ülés után összenyomott idegektől és csökkent vérkeringéstől ered. Állj fel és rázd meg minden lábadat 10 másodpercig. Aztán csinálj 10 helybeni masírozást. Vérkeringés helyreállítva, érzés visszatérve, produktivitás folytatva."
+    },
+    "adp": {
+      "title": "Megvilágítás-audit",
+      "text": "A rossz megvilágítás szemfáradtságot, fejfájást és kimerültséget okoz. A képernyőd körülbelül ugyanolyan fényes legyen, mint a környezeted — nem egy izzó téglalap egy sötét szobában. Állítsd be az asztali lámpádat vagy a szobai fényt most. A szemed azonnal érezni fogja a különbséget."
+    },
+    "adq": {
+      "title": "Fejhallgató-szünet protokoll",
+      "text": "Az audiológusok a 60/60 szabályt ajánlják: legfeljebb 60%-os hangerő, legfeljebb 60 percig egyszerre. A füleid nem érzik a fokozatos károsodás fájdalmát — a hallásveszteség lassan lopakodik. Vedd le a fejhallgatódat erre az egész szünetre."
+    },
+    "adr": {
+      "title": "Mikro-edzés",
+      "text": "Nem kell edzőterem. Most csinálj 10 guggolást, 10 fekvőtámaszt (vagy faltámaszt), és 10 vádli-emelést. Összes idő: 3 percen belül. Összes haszon: jobb vérkeringés, emelkedett pulzus, fokozott endorfin-termelés és egy öntelt teljesítmény-érzés."
+    },
+    "ads": {
+      "title": "A nyomtatási trükk",
+      "text": "Írók és szerkesztők: próbáld kinyomtatni a tervezetedet és papíron olvasni. Olyan hibákat fogsz észrevenni, amelyeket a képernyőn edzett szemed kihagyna. A papír fogása és toll használata más kognitív utakat aktivál, mint a képernyős szerkesztés. Régi módszer? Igen. Hatásos? Abszolút."
+    },
+    "adt": {
+      "title": "Gerinc-dekompresszió",
+      "text": "A gerincedre egész nap nehezedik a gravitáció. Próbáld ezt: állj talpszélességnyire, kulcsold össze az ujjaidat a fejed felett, és nyújtózz amennyire csak tudsz. Tartsd 15 másodpercig. Lehet, hogy most tényleg pár centivel magasabb vagy."
+    },
+    "adu": {
+      "title": "A figyelmi adó",
+      "text": "Minden értesítés, minden jelvény, minden olvasatlan üzenet apró adó a figyelmedre. Egy nap alatt ez összesen órákat vesz ki a fókuszból. Ebben a szünetben kapcsolj ki minden értesítést. Amikor visszatérsz, teljes figyelmi kereted lesz arra, ami számít."
+    },
+    "adv": {
+      "title": "Csukló-gondozó állomás",
+      "text": "A csuklóid naponta kb. 40 000 leütést kezelnek. Nyújtsd ki a jobb karodat, tenyérrel lefelé, és a bal kézzel finoman húzd le és hátra az ujjaidat. Tartsd 15 másodpercig. Csere. Aztán csinálj lassú ököl-legyező mozdulatokat 10-szer. Az inaid hálásak lesznek."
+    },
+    "adw": {
+      "title": "A debug séta",
+      "text": "Stanfordi és más egyetemi tanulmányok megerősítik, hogy a séta akár 60%-kal javítja a kreatív problémamegoldást. Ha elakadtál egy bugnál vagy tervezési döntésnél, ne bámulj tovább a képernyőre. Sétálj 5 percig. A megoldás nagyobb valószínűséggel jelenik meg, ha nem keresed aktívan."
+    },
+    "adx": {
+      "title": "Izommemória-reset",
+      "text": "A tested alkalmazkodik ahhoz a pozícióhoz, amelyet a leghosszabb ideig tartasz. Órás ülés után az izmaid szó szerint átformálódnak köré. Állj fel és csináld az ellenkezőjét: íveld a hátad, nyisd ki a mellkasodat, nyúlj a fejed fölé. Emlékeztesd az izmaidat, milyen az 'egyenes'."
+    },
+    "ady": {
+      "title": "Szemizom-edzés",
+      "text": "Mindkét szemednek 6 izma van, és a rögzített képernyőtávolságra bámulás megmerevedést okoz. Próbáld ezt: tartsd a ceruzádat kinyújtott kézzel, fókuszálj rá, majd váltsd a fókuszt egy kb. 6 méterre lévő tárgyra. Váltogasd 10-szer. Ez olyan, mint nyújtás, csak a szemednek."
+    },
+    "adz": {
+      "title": "Agy-próba tudomány",
+      "text": "Az idegtudományok szerint az agyad pihenés közben ismétli meg és konszolidálja a készségeket, nem edzés közben. Az NIH kutatói azt találták, hogy a szünetek gyorsabb készségszerzéshez vezettek. Tehát ez a szünet nem halogatás — pontosan így lesz jobb az agyad abban, amit épp gyakoroltál."
+    },
+    "aea": {
+      "title": "Célzott nassolás",
+      "text": "Ha nassoljál, tegyük értelmessé. A diók, étcsokoládé, bogyók és zöld tea mind tartalmaznak koncentrációt támogató és gyulladást csökkentő vegyületeket. Hagyd ki az automatából a cukorkát. Az agyad legjobban valódi ételen fut, nem cukorcsúcsokon."
+    },
+    "aeb": {
+      "title": "A kortizol-reset",
+      "text": "A stresszes, görnyedt testtartásban ülés valóban növeli a kortizol-szintet. Amy Cuddy kutatása (vitatott, de elgondolkodtató) azt sugallja, hogy a terjeszkedő testtartások csökkentik a stresszhormonokat. Állj fel, tedd a kezeidet a csípődre, és állj egyenesen 2 percig. Szuperhős-póz. Köpeny nélkül."
+    },
+    "aec": {
+      "title": "Mikro-alvás tudomány",
+      "text": "A Düsseldorfi Egyetem kutatása szerint a 6 perces szundítás javítja a memória-konszolidációt. Nem kell elaludnod — csak csukd be a szemed és pihenj néhány percig. Az alvásba való átmenet is aktiválja a memória-feldolgozó hálózatokat."
+    },
+    "aed": {
+      "title": "Séta-meditáció",
+      "text": "Sétálj lassan és tudatosan 3 percig. Figyelj minden lépés érzésére — saroktól lábujjig, a súlyváltásra, az alattad lévő padlóra. Ez séta-meditáció, és kombinálja a mozgás és a tudatosság előnyeit egy egyszerű gyakorlatban."
+    },
+    "aee": {
+      "title": "Triggerpontos terápia",
+      "text": "Érzed azt a csomót a lapátcsontod és gerinced között? Ez egy triggerpont a rombuszizmaidban. Nyomj egy teniszlabdát (vagy az öklöd) ellene és alkalmazz erős nyomást 30 másodpercig. Engedd el lassan. Csináld mindkét oldalon. Irodai szintű izomterápia, időpontfoglalás nélkül."
+    },
+    "aef": {
+      "title": "Képernyőtávolság-ellenőrzés",
+      "text": "A monitorod kb. 50-70 cm-re legyen a szemeidtől — nagyjából egy karnyi távolságra. Ha túl közel van, növeli a szemfáradtságot; ha túl messze, előrehajolsz. Mérd meg most. Ha egész nap lassan közeledtél a képernyőhöz, toljuk vissza."
+    },
+    "aeg": {
+      "title": "A kreatív kitérő",
+      "text": "Az idegtudományok 'inkubációnak' hívják — azt a jelenséget, amikor a problémától való eltávolodás lehetővé teszi az agy alapértelmezett módú hálózatának, hogy megtalálja azokat a megoldásokat, amelyeket fókuszálás közben nem láttál. Vegyél egy 5 perces szünetet valami teljesen más dologgal. Firkálj, nyújtózkodj, vagy bámulj a felhőkbe. Az agyad még mindig dolgozik."
+    },
+    "aeh": {
+      "title": "Keringési ellenőrzőpont",
+      "text": "30 perc ülés után a vérkeringés sebessége a lábartériákon át jelentősen csökken. A megoldás egyszerű: állj fel és sétálj mindössze 5 percig. Tanulmányok azt mutatják, hogy ez elegendő a normális vérkeringés helyreállításához és az érrendszeri egészség védelméhez."
+    },
+    "aei": {
+      "title": "Állkapocs és TMJ könnyítés",
+      "text": "A stressz, koncentráció és képernyő-munka gyakran okoz tudattalan állkapocs-összeszorítást, ami TMJ-fájdalomhoz, fejfájáshoz és fogkárosodáshoz vezethet. Nyisd ki tágra a szád, tartsd 5 másodpercig, majd mozgasd az állkapcsodat óvatosan balra-jobbra. Masszírozd a füleid alatti izmokat kis körökben."
+    },
+    "aej": {
+      "title": "Hidratálás és agyi teljesítmény",
+      "text": "Még enyhe kiszáradás (testtömeg 1-2%-a) is rontja a koncentrációt, növeli az érzékelt feladatnehézséget és rontja a hangulatot. Az agyad kb. 75% víz. Igyál most 200-250 ml vizet. Nem kávét. Nem üdítőt. Vizet. A neuronjaid szomjasak."
+    },
+    "aek": {
+      "title": "Fül-csőd",
+      "text": "Ha több mint 20 böngészőfüled van nyitva, nem multitaskingolsz — kognitív adósságot halmozol fel. Minden nyitott fül egy megoldatlan döntés. Ebben a szünetben hirdesd ki a fül-csődöt. Zárd be mindent, amire a következő órában nem lesz szükséged. A mentális megkönnyebbülés azonnali."
+    },
+    "ael": {
+      "title": "Ulnáris ideg-ellenőrzés",
+      "text": "Bizserg vagy zsibbad a kisujjad és a gyűrűsujjad? Valószínűleg az ulnáris ideg szorul össze a könyökednél. Kerüld, hogy kemény felületekre támaszkodj gépelés közben a könyökoddal. Nyújtsd ki teljesen a karodat, majd rázd ki a kezeidet 10 másodpercig."
+    },
+    "aem": {
+      "title": "Fal-nyújtás kombó",
+      "text": "Állj egy fallal szembe, karnyi távolságra. Tedd mindkét kezed a falra vállmagasságban és dőlj előre, egyenesen tartva a hátad. Tartsd 15 másodpercig — ez a mellkas. Most fordulj oldalra, tedd az egyik kezed a falra és forgódj el tőle. Tartsd 15 másodpercig mindkét oldalon. Mellkas és vállak: megnyitva."
+    },
+    "aen": {
+      "title": "A fókusz-osztalék",
+      "text": "A DeskTime csúcsteljesítő munkásokkal végzett tanulmánya megtalálta a legproduktívabb mintát: 52 perc fókuszált munka, majd 17 perces szünet. A szünet nem elvesztegetett idő — ettől lesz a fókuszált idő ténylegesen fókuszált. Most a következő produktív órádat finanszírozod."
+    },
+    "aeo": {
+      "title": "D-vitamin irodai ellenőrzés",
+      "text": "Ha egész nap beltérben dolgozol, valószínűleg D-vitamin-hiányod van — a felnőttek 42%-ánál ez a helyzet. A D-vitamin a hangulatot, az immunrendszert és a csontok egészségét is befolyásolja. Menj ki 5 percre, ha van napsütés. A bőröd már 10 perc napfény alatt szintetizálja a D-vitamint."
+    },
+    "aep": {
+      "title": "Boka-mozgékonyság",
+      "text": "A bokáid az egész testsúlyodat hordozzák, de ritkán nyújtják őket. Próbáld ezt: állj egy lábra és lassan rajzold az ábécét a másik lábaddal. Igen, mind a 26 betűt. Lábcsere. Lábonként kb. 90 másodpercet vesz igénybe, és drámaian javítja a boka stabilitását."
+    },
+    "aeq": {
+      "title": "A halogatás paradoxona",
+      "text": "A halogatás nem lustaság — érzelmi szabályozási probléma. Azokat a feladatokat kerülöd, amelyek negatív érzéseket váltanak ki (szorongás, unalom, önkétely). Egy 5 perces fizikai mozgással töltött szünet elég lehet, hogy ezeket az érzelmeket szabályozza, és az indítás lehetségesnek tűnjön. Először mozogj, aztán motiválódj."
+    },
+    "aer": {
+      "title": "Nap végi lecsengés",
+      "text": "Mielőtt lecsukod a laptopot, szánj 3 percet arra, hogy leírd, mit értél el, mi van folyamatban, és egy dolog, amire büszke vagy. Ez a 'leállítási rituálé' kognitív zárást teremt, megakadályozza, hogy a munkaügyek behatoljenak az estébe, és holnapra jó alapot ad."
+    }
+  }
+}

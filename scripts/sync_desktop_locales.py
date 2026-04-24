@@ -7,6 +7,7 @@ from pathlib import Path
 from typing import Any
 
 DEFAULT_LANGUAGE = "zh-CN"
+BREAK_IDEA_KEYS = {"miniBreakIdeas", "longBreakIdeas"}
 
 
 def repo_root() -> Path:
@@ -15,6 +16,17 @@ def repo_root() -> Path:
 
 def read_json(path: Path) -> Any:
     return json.loads(path.read_text(encoding="utf-8"))
+
+
+def ensure_messages_exclude_break_ideas(path: Path, data: Any) -> None:
+    if not isinstance(data, dict):
+        return
+
+    duplicated_keys = sorted(BREAK_IDEA_KEYS.intersection(data.keys()))
+    if duplicated_keys:
+        raise SystemExit(
+            f"Desktop locale message file must not contain break idea keys `{', '.join(duplicated_keys)}` anymore: {path}"
+        )
 
 
 def write_json(path: Path, data: Any) -> None:
@@ -104,7 +116,12 @@ def main() -> None:
         languages.append(config)
 
         message_path = messages_dir / f"{code}.json"
-        bundles[code] = read_json(message_path) if message_path.exists() else {}
+        if message_path.exists():
+            message_data = read_json(message_path)
+            ensure_messages_exclude_break_ideas(message_path, message_data)
+            bundles[code] = message_data
+        else:
+            bundles[code] = {}
 
     languages.sort(key=lambda item: (order.get(item["code"], 10_000), item["code"]))
 

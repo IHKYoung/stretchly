@@ -4,7 +4,8 @@
 - `apps/desktop/src/App.tsx`：当前唯一有效的桌面端前台入口；默认渲染主设置页，`?window=break` 下渲染独立 break prompt。
 - `apps/desktop/src/components/ui/*`：主设置页和 break prompt 共用的基础控件。
 - `apps/desktop/src/styles.css`：主界面的设计 token、布局和动效。
-- `apps/desktop/src/locales/messages/*.json`：当前唯一有效的 UI 文案真源；break 消息页提示语统一维护在 `ui.breakCopy.*`。
+- `apps/desktop/src/locales/messages/*.json`：当前唯一有效的界面文案真源；break 消息页默认提示语统一维护在 `ui.breakCopy.*`。
+- `apps/desktop/src/locales/break-ideas/messages/*.json`：当前唯一有效的 break idea 内容真源；每语言只维护 `miniBreakIdeas / longBreakIdeas`。
 - `apps/site/index.html`：当前官网单页入口；负责用一块极简打字机舞台展示 Pauza 的提醒文案，并保留单一下载按钮。
 - `apps/site/download/*/index.html`：平台/用途拆分的稳定下载路由页；当前真实下载地址统一由 `apps/site/download/targets.js` 提供。
 
@@ -31,7 +32,7 @@
 1. 用户进入主设置页，按 `节奏 / 偏好` 两个主分类调整提醒、显示方式、智能暂停、声音、语言与启动项。
 2. 常规运行时主要通过 tray、快捷键和设置页管理 pause / focus / reset。
 3. 若启用了“提前提示”，break 在 due 前的 lead time 内会先通过设置页状态和 tray 文本显示 `即将开始 / Up next`；系统通知只作为辅助，不再是唯一有效表面。
-4. break 到点后，`?window=break` 对应的前台会展示独立 break prompt；`智能提醒` 下会先找更明显的空档，再逐步放宽阈值；如果用户已离开至少 `45s`，则会先显示“等待恢复结算”而不是立刻开 break；`强制提醒` 下到点直接进入 break。
+4. break 到点后，`?window=break` 对应的前台会展示独立 break prompt；`智能提醒` 下会先等一个明确空档，超过最长等待后也会开始；`强制提醒` 下到点直接进入 break。
 5. break prompt 在倒计时进行中只提供 `Later / Skip` 这类运行时允许的动作；不会再允许提前完成。只有 manual finish 开启且计时结束后进入 `manualAwaiting` 状态时，主按钮才显示为 `Resume work`。
 
 ## Tauri 设置页结构
@@ -49,7 +50,7 @@
 - 基础控件（button / select / segmented control / number input）统一压平为更小的圆角和更紧的高度，不再强调悬浮卡片感。
 - 设置页现已改为自动保存，顶部只在保存中或刚发生变更时显示轻量状态，不再保留显式保存按钮。
 - `节奏` 分类已进一步压成两张紧凑 preset 卡：微休息与休息顶部直接用芯片选择间隔/频率与时长，下方“提前提醒 / 延后”继续保留 stepper 作为低频细调。
-- 当前设置页不再直接暴露 `idle_opportunity_seconds` 阈值；提醒策略继续采用 host 内部的递减阈值曲线、delivery freeze 与 recovery credit，避免用户为提醒方式承担额外参数心智。
+- 当前设置页不再直接暴露 `idle_opportunity_seconds` 阈值；提醒策略由 host 内部固定阈值与最大等待控制，避免用户为提醒方式承担额外参数心智。
 - “提前提示”现在表达的是 due 前的可见 cue，而不是承诺一定弹出系统通知；即使系统层没有显示通知，设置页状态和 tray 文本也会进入 heads-up 阶段。
 - Tauri 主窗口默认尺寸调整为 `960x640`，最小尺寸为 `800x600`，避免设置页继续被压到不可用尺寸。
 - 设置页 autosave 当前已从“可重入的 debounce 保存”收敛为串行/合并保存：保存进行中继续点击设置项或修改时间时，新的草稿会进入下一轮，而不是并发发起第二个宿主保存。
@@ -68,12 +69,12 @@
 - 主 CTA 只在 `manualAwaiting` 态显示 `Resume work`；普通倒计时阶段不再允许提前完成。
 - 次操作按钮按能力显示：允许 postpone 才显示 `Later`，允许 skip 才显示 `Skip`；当前 postpone 窗口固定收紧为倒计时开始后的前 10 秒。
 - `currentTimeInBreaks` 打开时，在右上角显示当前时间。
-- `breakIdeasEnabled` 打开时，break prompt 会按语言和 break kind 从 `apps/desktop/src/locales/messages/*.json` 顶层的 `miniBreakIdeas` / `longBreakIdeas` 中选取 `.text` 交互语；关闭后回退到 `ui.breakCopy.defaultPrompt.*`。`ui.breakCopy.prompts` 这类过渡字段已删除，不再允许重新引入。
+- `breakIdeasEnabled` 打开时，break prompt 会按语言和 break kind 从 `apps/desktop/src/locales/break-ideas/messages/*.json` 中选取 `.text` 交互语；运行时优先读取当前语言 bundle，若该语言未来没有 break ideas 文件，则沿 locale fallback 链继续查找；关闭后回退到 `ui.breakCopy.defaultPrompt.*`。
 - `microbreakStartSound` / `longBreakStartSound` / `microbreakEndSound` / `longBreakEndSound` 与 `breakSoundVolume` 控制休息开始/结束时的一次性提示音；`silence` 或音量为 `0` 时不播放。
-- break prompt 的触发时机已从“到点立即出现”调整为由 reminder mode 决定：`智能提醒` 下若仍在连续输入，则先等待更明显的空档，再逐步放宽到更短空档，并在最终 deadline 到达时直接开始；若用户已离开至少 `45s`，宿主会先进入 recovery hold，等返回时自动抵扣或顺延；`强制提醒` 下则到点直接出现，并且 break 期间不可跳过、不可延后、不可通过关窗绕过。
+- break prompt 的触发时机已从“到点立即出现”调整为由 reminder mode 决定：`智能提醒` 下若仍在连续输入，则先等待固定空档阈值，超过最大等待后直接开始；`强制提醒` 下则到点直接出现，并且 break 期间不可跳过、不可延后、不可通过关窗绕过。
 
 ## UI 个性化开发建议
 - 调整设置页与 break prompt 时，优先改 `apps/desktop/src/App.tsx`、`apps/desktop/src/styles.css`、`apps/desktop/src/components/ui/*`。
-- 修改 break 文案时，统一改 `apps/desktop/src/locales/messages/*.json`；不要再新增 `break-message-copy.*` 这种并行入口。
+- 修改界面文案时，改 `apps/desktop/src/locales/messages/*.json`；修改 break ideas 时，改 `apps/desktop/src/locales/break-ideas/messages/*.json` 与 `apps/desktop/src/locales/break-ideas/registry.json`。不要再新增 `break-message-copy.*` 这种并行入口。
 - 修改托盘、快捷键、调度和窗口行为时，优先改 `apps/desktop/src-tauri/src/{state,engine,platform,shell,commands}.rs`。
 - 如果需要追溯历史行为，请直接查看 git 历史、`docs/历史版本整理.md` 与既有 task specs，不要重新把当前实现接回旧 Electron 链路。

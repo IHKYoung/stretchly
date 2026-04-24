@@ -2,10 +2,6 @@ import localeRegistryJson from './locales/registry.generated.json'
 
 export type AppLanguage = string
 export type TranslationTree = string | TranslationTree[] | { [key: string]: TranslationTree }
-export type BreakIdeaEntry = {
-  title: string | null
-  text: string
-}
 
 export type AppLanguageConfig = {
   code: string
@@ -138,51 +134,6 @@ export function tList(language: AppLanguage, key: string): string[] {
     const value = lookup(bundle, key)
     if (Array.isArray(value) && value.every((entry) => typeof entry === 'string')) {
       return [...value]
-    }
-  }
-
-  return []
-}
-
-export function tBreakIdeaList(
-  language: AppLanguage,
-  kind: 'microbreak' | 'longBreak',
-): string[] {
-  return tBreakIdeaEntries(language, kind).map((entry) => entry.text)
-}
-
-export function tBreakIdeaEntries(
-  language: AppLanguage,
-  kind: 'microbreak' | 'longBreak',
-): BreakIdeaEntry[] {
-  const key = kind === 'microbreak' ? 'miniBreakIdeas' : 'longBreakIdeas'
-
-  for (const bundle of bundleChain(language)) {
-    const value = lookup(bundle, key)
-    if (!value || typeof value === 'string' || Array.isArray(value)) {
-      continue
-    }
-
-    const prompts = Object.values(value)
-      .map((entry) => {
-        if (!entry || typeof entry === 'string' || Array.isArray(entry)) {
-          return null
-        }
-
-        const text = entry.text
-        if (typeof text !== 'string') {
-          return null
-        }
-
-        return {
-          title: typeof entry.title === 'string' ? entry.title : null,
-          text,
-        }
-      })
-      .filter((entry): entry is BreakIdeaEntry => Boolean(entry))
-
-    if (prompts.length > 0) {
-      return prompts
     }
   }
 

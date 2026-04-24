@@ -66,7 +66,6 @@ type PauzaSettings = {
   microbreakPostponeMinutes: number
   microbreakPostponesLimit: number
   reminderMode: ReminderMode
-  idleOpportunitySeconds: number
   microbreakManualFinish: boolean
   longBreakEnabled: boolean
   longBreakEvery: number
@@ -167,7 +166,6 @@ function defaultSettings(): PauzaSettings {
     microbreakPostponeMinutes: 2,
     microbreakPostponesLimit: 1,
     reminderMode: 'smart',
-    idleOpportunitySeconds: 6,
     microbreakManualFinish: false,
     longBreakEnabled: true,
     longBreakEvery: 3,

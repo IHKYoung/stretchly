@@ -16,8 +16,8 @@
 这一版的核心变化：
 
 - 桌面端默认运行链路已经统一到 `Tauri 2 + React + TypeScript + Rust host`
-- 智能提醒 v2 已落地：active break 生命周期优先，pause/focus/DND/app exclusion 只冻结投递；smart 模式新增 recovery hold / credit，短暂离开会在返回时自动抵扣或顺延
-- 设置页和 tray 的运行时状态说明更可解释：waiting 状态会显示剩余等待预算，恢复结算也有单独状态文案
+- 智能提醒已收口到最小状态机：active break 生命周期优先，pause/focus/DND/app exclusion 只冻结投递；`smart` 模式只做“固定空档阈值 + 最长等待”，`forced` 则到点直接开始
+- break prompt 的内容资产已经和界面文案分层：`ui.breakCopy.*` 继续留在 `messages/*.json`，`miniBreakIdeas / longBreakIdeas` 迁移到独立的 `locales/break-ideas/` registry
 - 本轮未提交的 desktop / docs 变更已统一整理到 `0.1.4`，并以本地 macOS arm64 打包产物为版本输入
 
 ## 产品主张
@@ -108,6 +108,7 @@ npm test
 npm run typecheck
 npm run test:coverage
 python3 scripts/sync_desktop_locales.py
+python3 scripts/sync_desktop_break_ideas.py
 python3 graphics/generate_icon_assets.py
 ```
 
@@ -117,6 +118,7 @@ python3 graphics/generate_icon_assets.py
 - `npm run typecheck`：检查 `apps/desktop` 前端 TypeScript
 - `npm run test:coverage`：运行测试并生成覆盖率
 - `sync_desktop_locales.py`：根据 `apps/desktop/src/locales/{messages,config}` 生成共享 locale registry
+- `sync_desktop_break_ideas.py`：根据 `apps/desktop/src/locales/break-ideas/{messages,registry.json}` 生成 break ideas runtime registry
 - `generate_icon_assets.py`：重生成 Tauri / macOS 打包图标；改过 `graphics/*.svg` 后先跑这条
 
 ## 打包桌面端

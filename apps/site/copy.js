@@ -1,5 +1,5 @@
-// Curated from `apps/desktop/src/locales/messages/zh-CN.json`
-// Source buckets: `miniBreakIdeas` + site-specific short nudges
+// Curated from `apps/desktop/src/locales/break-ideas/messages/zh-CN.json`
+// Source buckets: `miniBreakIdeas` / `longBreakIdeas` + site-specific short nudges
 window.PAUZA_SITE_LINES = Object.freeze([
   '去接杯水吧，你的肾在向你发出SOS。',
   '水杯空了？你的身体可不是仙人掌。',

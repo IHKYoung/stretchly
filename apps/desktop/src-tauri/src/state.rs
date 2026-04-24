@@ -1,415 +1,30 @@
+mod persistence;
+mod settings;
+#[cfg(test)]
+mod tests;
+
 use crate::i18n;
-use serde::{Deserialize, Serialize};
+use persistence::{load_settings, save_settings};
+use serde::Serialize;
 use std::fs;
 use std::path::PathBuf;
 use std::sync::{Arc, Mutex};
 use std::time::{Duration, SystemTime, UNIX_EPOCH};
 
+#[allow(unused_imports)]
+pub use settings::{
+    AppExclusionRule, BreakBackdrop, BreakKind, BreakSound, PauzaSettings, ReminderMode,
+    ShortcutAction, ShortcutBinding,
+};
+
 const SETTINGS_FILE: &str = "settings.json";
 const BREAK_ACTION_DELAY_MS: u64 = 100;
 const BREAK_POSTPONE_WINDOW_MS: u64 = 10_000;
-const DEFAULT_IDLE_OPPORTUNITY_SECONDS: u64 = 6;
-const MICROBREAK_FINAL_WAIT_CAP_MS: u64 = 45_000;
-const LONG_BREAK_FINAL_WAIT_CAP_MS: u64 = 90_000;
-const RECOVERY_CREDIT_START_MS: u64 = 45_000;
-const LONG_BREAK_RECOVERY_CREDIT_CAP_MS: u64 = 240_000;
-
-#[derive(Debug, Clone, Copy)]
-struct SmartWaitStage {
-    wait_until_ms: u64,
-    idle_required_ms: u64,
-}
-
-const MICROBREAK_SMART_WAIT_STAGES: [SmartWaitStage; 3] = [
-    SmartWaitStage {
-        wait_until_ms: 15_000,
-        idle_required_ms: 6_000,
-    },
-    SmartWaitStage {
-        wait_until_ms: 30_000,
-        idle_required_ms: 3_000,
-    },
-    SmartWaitStage {
-        wait_until_ms: MICROBREAK_FINAL_WAIT_CAP_MS,
-        idle_required_ms: 1_000,
-    },
-];
-
-const LONG_BREAK_SMART_WAIT_STAGES: [SmartWaitStage; 3] = [
-    SmartWaitStage {
-        wait_until_ms: 30_000,
-        idle_required_ms: 8_000,
-    },
-    SmartWaitStage {
-        wait_until_ms: 60_000,
-        idle_required_ms: 4_000,
-    },
-    SmartWaitStage {
-        wait_until_ms: LONG_BREAK_FINAL_WAIT_CAP_MS,
-        idle_required_ms: 1_000,
-    },
-];
-
-#[derive(Debug, Clone, Copy, Serialize, Deserialize, PartialEq, Eq, Default)]
-#[serde(rename_all = "camelCase")]
-pub enum BreakKind {
-    #[default]
-    Microbreak,
-    LongBreak,
-}
-
-#[derive(Debug, Clone, Copy, Serialize, Deserialize, PartialEq, Eq, Default)]
-#[serde(rename_all = "camelCase")]
-pub enum AppExclusionRule {
-    #[default]
-    Pause,
-    Resume,
-}
-
-#[derive(Debug, Clone, Copy, Serialize, Deserialize, PartialEq, Eq, Default)]
-#[serde(rename_all = "camelCase")]
-pub enum ReminderMode {
-    #[default]
-    Smart,
-    Forced,
-}
-
-#[derive(Debug, Clone, Copy, Serialize, Deserialize, PartialEq, Eq, Default)]
-#[serde(rename_all = "camelCase")]
-pub enum BreakBackdrop {
-    #[default]
-    Paper,
-    Dawn,
-    Forest,
-    Night,
-    Custom,
-}
-
-#[derive(Debug, Clone, Copy, Serialize, Deserialize, PartialEq, Eq, Default)]
-#[serde(rename_all = "kebab-case")]
-pub enum BreakSound {
-    #[default]
-    Silence,
-    CrystalGlass,
-    WindChime,
-    TicToc,
-    Reverie,
-}
-
-#[derive(Debug, Clone, Serialize, Deserialize)]
-#[serde(default, rename_all = "camelCase")]
-pub struct PauzaSettings {
-    pub language: String,
-    pub microbreak_enabled: bool,
-    pub microbreak_interval_minutes: u64,
-    pub microbreak_duration_seconds: u64,
-    pub microbreak_notification_enabled: bool,
-    pub microbreak_notification_seconds: u64,
-    pub microbreak_allow_postpone: bool,
-    pub microbreak_postpone_minutes: u64,
-    pub microbreak_postpones_limit: u64,
-    pub reminder_mode: ReminderMode,
-    pub idle_opportunity_seconds: u64,
-    pub microbreak_manual_finish: bool,
-    pub long_break_enabled: bool,
-    pub long_break_every: u64,
-    pub long_break_duration_minutes: u64,
-    pub long_break_notification_enabled: bool,
-    pub long_break_notification_seconds: u64,
-    pub long_break_allow_postpone: bool,
-    pub long_break_postpone_minutes: u64,
-    pub long_break_postpones_limit: u64,
-    pub long_break_manual_finish: bool,
-    pub natural_breaks: bool,
-    pub natural_break_reset_minutes: u64,
-    pub monitor_dnd: bool,
-    pub app_exclusions_enabled: bool,
-    pub app_exclusion_rule: AppExclusionRule,
-    pub app_exclusion_commands: String,
-    pub fullscreen: bool,
-    pub break_backdrop: BreakBackdrop,
-    pub break_custom_backdrop_label: Option<String>,
-    pub break_custom_backdrop_data_url: Option<String>,
-    pub break_ideas_enabled: bool,
-    pub show_breaks_on_all_screens: bool,
-    pub target_screen: String,
-    pub current_time_in_breaks: bool,
-    pub show_time_to_break_in_tray: bool,
-    pub microbreak_start_sound: BreakSound,
-    pub microbreak_end_sound: BreakSound,
-    pub long_break_start_sound: BreakSound,
-    pub long_break_end_sound: BreakSound,
-    pub break_sound_volume: u64,
-    pub show_tray_menu_in_strict_mode: bool,
-    pub reveal_settings_shortcut: String,
-    pub focus_45_shortcut: String,
-    pub pause_toggle_shortcut: String,
-    pub pause_30_shortcut: String,
-    pub pause_60_shortcut: String,
-    pub pause_120_shortcut: String,
-    pub pause_300_shortcut: String,
-    pub skip_next_scheduled_shortcut: String,
-    pub skip_next_microbreak_shortcut: String,
-    pub skip_next_long_break_shortcut: String,
-    pub reset_breaks_shortcut: String,
-}
-
-impl Default for PauzaSettings {
-    fn default() -> Self {
-        Self {
-            language: "zh-CN".into(),
-            microbreak_enabled: true,
-            microbreak_interval_minutes: 10,
-            microbreak_duration_seconds: 20,
-            microbreak_notification_enabled: true,
-            microbreak_notification_seconds: 10,
-            microbreak_allow_postpone: true,
-            microbreak_postpone_minutes: 2,
-            microbreak_postpones_limit: 1,
-            reminder_mode: ReminderMode::Smart,
-            idle_opportunity_seconds: DEFAULT_IDLE_OPPORTUNITY_SECONDS,
-            microbreak_manual_finish: false,
-            long_break_enabled: true,
-            long_break_every: 3,
-            long_break_duration_minutes: 5,
-            long_break_notification_enabled: true,
-            long_break_notification_seconds: 30,
-            long_break_allow_postpone: true,
-            long_break_postpone_minutes: 5,
-            long_break_postpones_limit: 1,
-            long_break_manual_finish: false,
-            natural_breaks: true,
-            natural_break_reset_minutes: 5,
-            monitor_dnd: true,
-            app_exclusions_enabled: false,
-            app_exclusion_rule: AppExclusionRule::Pause,
-            app_exclusion_commands: String::new(),
-            fullscreen: false,
-            break_backdrop: BreakBackdrop::Paper,
-            break_custom_backdrop_label: None,
-            break_custom_backdrop_data_url: None,
-            break_ideas_enabled: true,
-            show_breaks_on_all_screens: true,
-            target_screen: "primary".into(),
-            current_time_in_breaks: false,
-            show_time_to_break_in_tray: true,
-            microbreak_start_sound: BreakSound::Silence,
-            microbreak_end_sound: BreakSound::CrystalGlass,
-            long_break_start_sound: BreakSound::Silence,
-            long_break_end_sound: BreakSound::CrystalGlass,
-            break_sound_volume: 100,
-            show_tray_menu_in_strict_mode: false,
-            reveal_settings_shortcut: "CmdOrCtrl+Shift+P".into(),
-            focus_45_shortcut: "CmdOrCtrl+Shift+F".into(),
-            pause_toggle_shortcut: String::new(),
-            pause_30_shortcut: String::new(),
-            pause_60_shortcut: String::new(),
-            pause_120_shortcut: String::new(),
-            pause_300_shortcut: String::new(),
-            skip_next_scheduled_shortcut: String::new(),
-            skip_next_microbreak_shortcut: String::new(),
-            skip_next_long_break_shortcut: String::new(),
-            reset_breaks_shortcut: String::new(),
-        }
-    }
-}
-
-impl PauzaSettings {
-    pub fn sanitized(mut self) -> Self {
-        self.language = i18n::normalize_language(&self.language).into();
-        self.microbreak_interval_minutes = self.microbreak_interval_minutes.clamp(1, 180);
-        self.microbreak_duration_seconds = self.microbreak_duration_seconds.clamp(10, 300);
-        self.microbreak_notification_seconds = self.microbreak_notification_seconds.clamp(5, 300);
-        self.microbreak_postpone_minutes = self.microbreak_postpone_minutes.clamp(1, 30);
-        self.microbreak_postpones_limit = self.microbreak_postpones_limit.clamp(0, 5);
-        self.idle_opportunity_seconds = self.idle_opportunity_seconds.clamp(3, 120);
-        self.long_break_every = self.long_break_every.clamp(1, 12);
-        self.long_break_duration_minutes = self.long_break_duration_minutes.clamp(1, 60);
-        self.long_break_notification_seconds = self.long_break_notification_seconds.clamp(5, 600);
-        self.long_break_postpone_minutes = self.long_break_postpone_minutes.clamp(1, 60);
-        self.long_break_postpones_limit = self.long_break_postpones_limit.clamp(0, 5);
-        self.natural_break_reset_minutes = self.natural_break_reset_minutes.clamp(1, 60);
-        self.break_sound_volume = self.break_sound_volume.clamp(0, 100);
-        self.break_custom_backdrop_label =
-            sanitize_optional_string(self.break_custom_backdrop_label.take());
-        self.break_custom_backdrop_data_url =
-            sanitize_optional_string(self.break_custom_backdrop_data_url.take());
-        if self.break_backdrop == BreakBackdrop::Custom
-            && self.break_custom_backdrop_data_url.is_none()
-        {
-            self.break_backdrop = BreakBackdrop::Paper;
-        }
-        self.target_screen = normalize_target_screen(&self.target_screen);
-        self.reveal_settings_shortcut = normalize_shortcut(
-            &self.reveal_settings_shortcut,
-            "CmdOrCtrl+Shift+P",
-        );
-        self.focus_45_shortcut =
-            normalize_shortcut(&self.focus_45_shortcut, "CmdOrCtrl+Shift+F");
-        self.pause_toggle_shortcut = normalize_shortcut(&self.pause_toggle_shortcut, "");
-        self.pause_30_shortcut = normalize_shortcut(&self.pause_30_shortcut, "");
-        self.pause_60_shortcut = normalize_shortcut(&self.pause_60_shortcut, "");
-        self.pause_120_shortcut = normalize_shortcut(&self.pause_120_shortcut, "");
-        self.pause_300_shortcut = normalize_shortcut(&self.pause_300_shortcut, "");
-        self.skip_next_scheduled_shortcut =
-            normalize_shortcut(&self.skip_next_scheduled_shortcut, "");
-        self.skip_next_microbreak_shortcut =
-            normalize_shortcut(&self.skip_next_microbreak_shortcut, "");
-        self.skip_next_long_break_shortcut =
-            normalize_shortcut(&self.skip_next_long_break_shortcut, "");
-        self.reset_breaks_shortcut = normalize_shortcut(&self.reset_breaks_shortcut, "");
-        self
-    }
-
-    pub fn microbreak_interval_ms(&self) -> u64 {
-        self.microbreak_interval_minutes * 60_000
-    }
-
-    pub fn duration_ms(&self, kind: BreakKind) -> u64 {
-        match kind {
-            BreakKind::Microbreak => self.microbreak_duration_seconds * 1_000,
-            BreakKind::LongBreak => self.long_break_duration_minutes * 60_000,
-        }
-    }
-
-    pub fn notification_enabled(&self, kind: BreakKind) -> bool {
-        match kind {
-            BreakKind::Microbreak => self.microbreak_notification_enabled,
-            BreakKind::LongBreak => self.long_break_notification_enabled,
-        }
-    }
-
-    pub fn notification_ms(&self, kind: BreakKind) -> u64 {
-        match kind {
-            BreakKind::Microbreak => self.microbreak_notification_seconds * 1_000,
-            BreakKind::LongBreak => self.long_break_notification_seconds * 1_000,
-        }
-    }
-
-    pub fn allow_postpone(&self, kind: BreakKind) -> bool {
-        match kind {
-            BreakKind::Microbreak => self.microbreak_allow_postpone,
-            BreakKind::LongBreak => self.long_break_allow_postpone,
-        }
-    }
-
-    pub fn postpone_ms(&self, kind: BreakKind) -> u64 {
-        match kind {
-            BreakKind::Microbreak => self.microbreak_postpone_minutes * 60_000,
-            BreakKind::LongBreak => self.long_break_postpone_minutes * 60_000,
-        }
-    }
-
-    pub fn postpone_limit(&self, kind: BreakKind) -> u64 {
-        match kind {
-            BreakKind::Microbreak => self.microbreak_postpones_limit,
-            BreakKind::LongBreak => self.long_break_postpones_limit,
-        }
-    }
-
-    pub fn strict_mode(&self, _kind: BreakKind) -> bool {
-        self.reminder_mode == ReminderMode::Forced
-    }
-
-    pub fn manual_finish(&self, kind: BreakKind) -> bool {
-        match kind {
-            BreakKind::Microbreak => self.microbreak_manual_finish,
-            BreakKind::LongBreak => self.long_break_manual_finish,
-        }
-    }
-
-    pub fn natural_break_reset_ms(&self) -> u64 {
-        self.natural_break_reset_minutes * 60_000
-    }
-
-    pub fn exclusion_commands(&self) -> Vec<String> {
-        self.app_exclusion_commands
-            .split(|ch| [',', '\n', ';'].contains(&ch))
-            .map(str::trim)
-            .filter(|part| !part.is_empty())
-            .map(ToOwned::to_owned)
-            .collect()
-    }
-
-    pub fn shortcut_bindings(&self) -> Vec<ShortcutBinding> {
-        let bindings = [
-            ShortcutBinding::new(
-                "reveal-settings",
-                &self.reveal_settings_shortcut,
-                ShortcutAction::RevealSettings,
-            ),
-            ShortcutBinding::new(
-                "focus-45",
-                &self.focus_45_shortcut,
-                ShortcutAction::Focus45,
-            ),
-            ShortcutBinding::new(
-                "pause-toggle",
-                &self.pause_toggle_shortcut,
-                ShortcutAction::PauseToggle,
-            ),
-            ShortcutBinding::new("pause-30", &self.pause_30_shortcut, ShortcutAction::Pause30),
-            ShortcutBinding::new("pause-60", &self.pause_60_shortcut, ShortcutAction::Pause60),
-            ShortcutBinding::new("pause-120", &self.pause_120_shortcut, ShortcutAction::Pause120),
-            ShortcutBinding::new("pause-300", &self.pause_300_shortcut, ShortcutAction::Pause300),
-            ShortcutBinding::new(
-                "skip-next",
-                &self.skip_next_scheduled_shortcut,
-                ShortcutAction::SkipNextScheduled,
-            ),
-            ShortcutBinding::new(
-                "skip-microbreak",
-                &self.skip_next_microbreak_shortcut,
-                ShortcutAction::SkipNextMicrobreak,
-            ),
-            ShortcutBinding::new(
-                "skip-long-break",
-                &self.skip_next_long_break_shortcut,
-                ShortcutAction::SkipNextLongBreak,
-            ),
-            ShortcutBinding::new(
-                "reset-breaks",
-                &self.reset_breaks_shortcut,
-                ShortcutAction::ResetBreaks,
-            ),
-        ];
-
-        bindings
-            .into_iter()
-            .filter(|binding| !binding.shortcut.is_empty())
-            .collect()
-    }
-}
-
-#[derive(Debug, Clone, Copy, PartialEq, Eq)]
-pub enum ShortcutAction {
-    RevealSettings,
-    Focus45,
-    PauseToggle,
-    Pause30,
-    Pause60,
-    Pause120,
-    Pause300,
-    SkipNextScheduled,
-    SkipNextMicrobreak,
-    SkipNextLongBreak,
-    ResetBreaks,
-}
-
-#[derive(Debug, Clone)]
-pub struct ShortcutBinding {
-    pub shortcut: String,
-    pub action: ShortcutAction,
-}
-
-impl ShortcutBinding {
-    fn new(_id: &'static str, shortcut: &str, action: ShortcutAction) -> Self {
-        Self {
-            shortcut: shortcut.to_string(),
-            action,
-        }
-    }
-}
+const LEGACY_IDLE_OPPORTUNITY_SECONDS: u64 = 6;
+const MICROBREAK_SMART_IDLE_THRESHOLD_MS: u64 = 8_000;
+const LONG_BREAK_SMART_IDLE_THRESHOLD_MS: u64 = 12_000;
+const MICROBREAK_SMART_MAX_WAIT_MS: u64 = 90_000;
+const LONG_BREAK_SMART_MAX_WAIT_MS: u64 = 180_000;
 
 #[derive(Debug, Clone)]
 struct CurrentBreak {
@@ -966,8 +581,6 @@ impl PauzaState {
         let previous_natural_break = runtime.natural_break_blocks();
         let previous_dnd = runtime.dnd_active;
         let previous_app_block = runtime.app_exclusion_blocks();
-        let previous_idle_ms = runtime.idle_ms;
-
         runtime.clear_expired_manual_states(now);
         runtime.idle_ms = idle_ms;
         runtime.dnd_active = dnd_active;
@@ -1023,12 +636,9 @@ impl PauzaState {
             return actions;
         }
 
-        if !current_delivery_block
-            && runtime.settings.natural_breaks
-            && previous_idle_ms >= RECOVERY_CREDIT_START_MS
-            && runtime.idle_ms < RECOVERY_CREDIT_START_MS
-        {
-            runtime.apply_recovery_credit(now, previous_idle_ms);
+        if !current_delivery_block && previous_natural_break && !runtime.natural_break_blocks() {
+            runtime.reset_schedule(now);
+            runtime.last_action = i18n::text(&language, "runtime.actions.naturalBreakFinished");
         }
 
         if current_delivery_block {
@@ -1043,69 +653,12 @@ impl PauzaState {
             runtime.reset_schedule(now);
         }
 
-        if runtime
-            .next_notification_due_ms
-            .is_some_and(|due| due <= now && runtime.next_break_kind.is_some())
-        {
-            if let Some(kind) = runtime.next_break_kind {
-                let title = i18n::text(&language, "runtime.notifications.title");
-                let body = pre_break_notification_body(&runtime.settings, &language, kind);
-                actions.notify_title = Some(title);
-                actions.notify_body = Some(body);
-                runtime.next_notification_due_ms = None;
-                runtime.last_action = i18n::text1(
-                    &language,
-                    "runtime.actions.notificationSent",
-                    "title",
-                    break_kind_label(&language, kind),
-                );
-            }
+        if runtime.maybe_dispatch_due_notification(now, &language, &mut actions) {
             return actions;
         }
 
-        if runtime
-            .next_break_due_ms
-            .is_some_and(|due| due <= now && runtime.next_break_kind.is_some())
-        {
-            if let Some(kind) = runtime.next_break_kind {
-                if runtime.recovery_hold_kind(now).is_some() {
-                    runtime.next_break_wait_started_ms = None;
-                    if previous_idle_ms < RECOVERY_CREDIT_START_MS {
-                        runtime.last_action = i18n::text1(
-                            &language,
-                            "runtime.actions.awaitingRecoveryCredit",
-                            "title",
-                            break_kind_label(&language, kind),
-                        );
-                    }
-                    return actions;
-                }
-
-                if runtime.should_wait_for_opportunity(kind, now) {
-                    if runtime.next_break_wait_started_ms.is_none() {
-                        runtime.next_break_wait_started_ms = Some(now);
-                        runtime.last_action = i18n::text1(
-                            &language,
-                            "runtime.actions.waitingForOpportunity",
-                            "title",
-                            break_kind_label(&language, kind),
-                        );
-                    }
-                    return actions;
-                }
-            }
-
-            if let Some(current_break) = runtime.start_current_break(now) {
-                actions.notify_title = Some(current_break.title.clone());
-                actions.notify_body = Some(current_break.detail.clone());
-                actions.open_break_window = true;
-                runtime.last_action = i18n::text1(
-                    &language,
-                    "runtime.actions.breakStarted",
-                    "title",
-                    current_break.title,
-                );
-            }
+        if runtime.maybe_start_due_break(now, &language, &mut actions) {
+            return actions;
         }
 
         actions
@@ -1261,6 +814,74 @@ impl RuntimeState {
         Some(current.snapshot(&self.settings, now))
     }
 
+    fn pending_notification_kind(&self, now: u64) -> Option<BreakKind> {
+        let kind = self.next_break_kind?;
+        let due = self.next_notification_due_ms?;
+        (due <= now).then_some(kind)
+    }
+
+    fn maybe_dispatch_due_notification(
+        &mut self,
+        now: u64,
+        language: &str,
+        actions: &mut EngineActions,
+    ) -> bool {
+        let Some(kind) = self.pending_notification_kind(now) else {
+            return false;
+        };
+
+        let title = i18n::text(language, "runtime.notifications.title");
+        let body = pre_break_notification_body(&self.settings, language, kind);
+        actions.notify_title = Some(title);
+        actions.notify_body = Some(body);
+        self.next_notification_due_ms = None;
+        self.last_action = i18n::text1(
+            language,
+            "runtime.actions.notificationSent",
+            "title",
+            break_kind_label(language, kind),
+        );
+        true
+    }
+
+    fn maybe_start_due_break(
+        &mut self,
+        now: u64,
+        language: &str,
+        actions: &mut EngineActions,
+    ) -> bool {
+        let Some(kind) = self.pending_due_kind(now) else {
+            return false;
+        };
+
+        if self.should_wait_for_opportunity(kind, now) {
+            if self.next_break_wait_started_ms.is_none() {
+                self.next_break_wait_started_ms = Some(now);
+                self.last_action = i18n::text1(
+                    language,
+                    "runtime.actions.waitingForOpportunity",
+                    "title",
+                    break_kind_label(language, kind),
+                );
+            }
+            return true;
+        }
+
+        if let Some(current_break) = self.start_current_break(now) {
+            actions.notify_title = Some(current_break.title.clone());
+            actions.notify_body = Some(current_break.detail.clone());
+            actions.open_break_window = true;
+            self.last_action = i18n::text1(
+                language,
+                "runtime.actions.breakStarted",
+                "title",
+                current_break.title,
+            );
+        }
+
+        true
+    }
+
     fn pending_due_kind(&self, now: u64) -> Option<BreakKind> {
         let kind = self.next_break_kind?;
         let due = self.next_break_due_ms?;
@@ -1276,35 +897,16 @@ impl RuntimeState {
             return false;
         }
 
-        let Some(idle_required_ms) = self.current_smart_wait_idle_requirement_ms(kind, now) else {
+        if self.smart_wait_elapsed_ms(now) >= smart_wait_max_wait_ms(kind) {
             return false;
-        };
-
-        self.idle_ms < idle_required_ms
-    }
-
-    fn recovery_hold_kind(&self, now: u64) -> Option<BreakKind> {
-        let kind = self.pending_due_kind(now)?;
-        if self.settings.reminder_mode != ReminderMode::Smart || !self.settings.natural_breaks {
-            return None;
         }
 
-        (self.idle_ms >= RECOVERY_CREDIT_START_MS).then_some(kind)
+        self.idle_ms < smart_wait_idle_threshold_ms(kind)
     }
 
     fn waiting_for_opportunity_kind(&self, now: u64) -> Option<BreakKind> {
-        if self.recovery_hold_kind(now).is_some() {
-            return None;
-        }
-
         let kind = self.pending_due_kind(now)?;
-        if self.should_wait_for_opportunity(kind, now) {
-            return Some(kind);
-        }
-        if self.next_break_wait_started_ms.is_some() {
-            return Some(kind);
-        }
-        None
+        self.should_wait_for_opportunity(kind, now).then_some(kind)
     }
 
     fn heads_up_kind(&self, now: u64) -> Option<BreakKind> {
@@ -1327,19 +929,11 @@ impl RuntimeState {
         now.saturating_sub(started_at)
     }
 
-    fn current_smart_wait_idle_requirement_ms(&self, kind: BreakKind, now: u64) -> Option<u64> {
-        let elapsed_ms = self.smart_wait_elapsed_ms(now);
-        smart_wait_stages(kind)
-            .iter()
-            .find(|stage| elapsed_ms < stage.wait_until_ms)
-            .map(|stage| stage.idle_required_ms)
-    }
-
     fn current_smart_wait_remaining_ms(&self, kind: BreakKind, now: u64) -> Option<u64> {
         let elapsed_ms = self.smart_wait_elapsed_ms(now);
-        let final_wait_cap_ms = smart_wait_final_cap_ms(kind);
-        if elapsed_ms < final_wait_cap_ms {
-            Some(final_wait_cap_ms - elapsed_ms)
+        let max_wait_ms = smart_wait_max_wait_ms(kind);
+        if elapsed_ms < max_wait_ms {
+            Some(max_wait_ms - elapsed_ms)
         } else {
             None
         }
@@ -1379,51 +973,6 @@ impl RuntimeState {
         }
 
         None
-    }
-
-    fn apply_recovery_credit(&mut self, now: u64, idle_gap_ms: u64) -> bool {
-        if !self.settings.natural_breaks || idle_gap_ms < RECOVERY_CREDIT_START_MS {
-            return false;
-        }
-
-        let language = self.settings.language.clone();
-        if idle_gap_ms >= self.settings.natural_break_reset_ms() {
-            self.reset_schedule(now);
-            self.last_action = i18n::text(&language, "runtime.actions.naturalBreakFinished");
-            return true;
-        }
-
-        let Some(kind) = self.next_break_kind else {
-            return false;
-        };
-
-        match kind {
-            BreakKind::Microbreak => {
-                self.schedule_next_slot(now);
-                self.last_action = i18n::text2(
-                    &language,
-                    "runtime.actions.recoveryMicrobreakCredited",
-                    "title",
-                    break_kind_label(&language, BreakKind::Microbreak),
-                    "duration",
-                    i18n::duration(&language, idle_gap_ms),
-                );
-                true
-            }
-            BreakKind::LongBreak => {
-                let credit_ms = long_break_recovery_credit_ms(idle_gap_ms);
-                self.schedule_specific_break(BreakKind::LongBreak, now + credit_ms, now);
-                self.last_action = i18n::text1(
-                    &language,
-                    "runtime.actions.recoveryLongBreakDeferred",
-                    "title",
-                    break_kind_label(&language, BreakKind::LongBreak),
-                )
-                .replace("{{duration}}", &i18n::duration(&language, idle_gap_ms))
-                .replace("{{credit}}", &i18n::duration(&language, credit_ms));
-                true
-            }
-        }
     }
 
     fn natural_break_blocks(&self) -> bool {
@@ -1550,20 +1099,6 @@ impl RuntimeState {
             );
         }
 
-        if let Some(kind) = self.recovery_hold_kind(now) {
-            return (
-                i18n::text(language, "runtime.break.status.recoveryTitle"),
-                i18n::text2(
-                    language,
-                    "runtime.break.status.recoveryDetail",
-                    "kind",
-                    break_kind_label(language, kind),
-                    "duration",
-                    i18n::duration(language, self.idle_ms),
-                ),
-            );
-        }
-
         if let Some(kind) = self.waiting_for_opportunity_kind(now) {
             return (
                 i18n::text(language, "runtime.break.status.waitingOpportunityTitle"),
@@ -1642,113 +1177,6 @@ impl CurrentBreak {
 
         !self.can_postpone(settings, now)
     }
-}
-
-fn load_settings(path: &PathBuf) -> Result<PauzaSettings, String> {
-    if !path.exists() {
-        let settings = PauzaSettings::default();
-        let contents = serde_json::to_string_pretty(&settings).map_err(|error| error.to_string())?;
-        fs::write(path, contents).map_err(|error| error.to_string())?;
-        return Ok(settings);
-    }
-
-    let contents = fs::read_to_string(path).map_err(|error| error.to_string())?;
-    let mut raw: serde_json::Value =
-        serde_json::from_str(&contents).map_err(|error| error.to_string())?;
-    migrate_legacy_settings(&mut raw);
-    let parsed: PauzaSettings =
-        serde_json::from_value(raw).map_err(|error| error.to_string())?;
-    Ok(parsed.sanitized())
-}
-
-fn migrate_legacy_settings(value: &mut serde_json::Value) {
-    let Some(object) = value.as_object_mut() else {
-        return;
-    };
-
-    if !object.contains_key("reminderMode") {
-        let legacy_strict = object
-            .get("microbreakStrictMode")
-            .and_then(serde_json::Value::as_bool)
-            .unwrap_or(false)
-            || object
-                .get("longBreakStrictMode")
-                .and_then(serde_json::Value::as_bool)
-                .unwrap_or(false);
-
-        object.insert(
-            "reminderMode".into(),
-            serde_json::Value::String(if legacy_strict { "forced" } else { "smart" }.into()),
-        );
-    }
-
-    if !object.contains_key("idleOpportunitySeconds") {
-        let opportunity = object
-            .get("microbreakIdleOpportunitySeconds")
-            .and_then(serde_json::Value::as_u64)
-            .or_else(|| {
-                object
-                    .get("longBreakIdleOpportunitySeconds")
-                    .and_then(serde_json::Value::as_u64)
-            });
-
-        if let Some(seconds) = opportunity {
-            object.insert("idleOpportunitySeconds".into(), serde_json::Value::from(seconds));
-        }
-    }
-
-    if !object.contains_key("breakIdeasEnabled") {
-        let enabled = object
-            .get("ideas")
-            .and_then(serde_json::Value::as_bool)
-            .unwrap_or(true);
-        object.insert("breakIdeasEnabled".into(), serde_json::Value::from(enabled));
-    }
-
-    if !object.contains_key("microbreakStartSound") {
-        if let Some(sound) = object.get("miniBreakStartSound").cloned() {
-            object.insert("microbreakStartSound".into(), sound);
-        }
-    }
-
-    if !object.contains_key("longBreakStartSound") {
-        if let Some(sound) = object.get("longBreakStartSound").cloned() {
-            object.insert("longBreakStartSound".into(), sound);
-        }
-    }
-
-    if !object.contains_key("microbreakEndSound") {
-        if let Some(sound) = object.get("miniBreakAudio").cloned() {
-            object.insert("microbreakEndSound".into(), sound);
-        }
-    }
-
-    if !object.contains_key("longBreakEndSound") {
-        if let Some(sound) = object.get("longBreakAudio").cloned() {
-            object.insert("longBreakEndSound".into(), sound);
-        }
-    }
-
-    if !object.contains_key("breakSoundVolume") {
-        let volume = object
-            .get("volume")
-            .and_then(serde_json::Value::as_f64)
-            .map(|value| (value * 100.0).round().clamp(0.0, 100.0) as u64);
-
-        if let Some(volume) = volume {
-            object.insert("breakSoundVolume".into(), serde_json::Value::from(volume));
-        }
-    }
-}
-
-fn save_settings(runtime: &RuntimeState) -> Result<(), String> {
-    let path = runtime
-        .config_path
-        .as_ref()
-        .ok_or_else(|| "settings path is not initialized".to_string())?;
-    let contents =
-        serde_json::to_string_pretty(&runtime.settings).map_err(|error| error.to_string())?;
-    fs::write(path, contents).map_err(|error| error.to_string())
 }
 
 fn source_translation(language: &str, source: &str) -> String {
@@ -1846,33 +1274,6 @@ fn notification_due_at(
     due_ms.checked_sub(lead_ms)
 }
 
-fn normalize_target_screen(value: &str) -> String {
-    let lowered = value.trim().to_ascii_lowercase();
-    match lowered.as_str() {
-        "cursor" => "cursor".into(),
-        _ => "primary".into(),
-    }
-}
-
-fn normalize_shortcut(value: &str, fallback: &str) -> String {
-    let trimmed = value.trim();
-    if trimmed.is_empty() {
-        return fallback.to_string();
-    }
-    trimmed.to_string()
-}
-
-fn sanitize_optional_string(value: Option<String>) -> Option<String> {
-    value.and_then(|raw| {
-        let trimmed = raw.trim();
-        if trimmed.is_empty() {
-            None
-        } else {
-            Some(trimmed.to_string())
-        }
-    })
-}
-
 pub fn now_ms() -> u64 {
     SystemTime::now()
         .duration_since(UNIX_EPOCH)
@@ -1880,553 +1281,16 @@ pub fn now_ms() -> u64 {
         .as_millis() as u64
 }
 
-fn smart_wait_stages(kind: BreakKind) -> &'static [SmartWaitStage] {
+fn smart_wait_idle_threshold_ms(kind: BreakKind) -> u64 {
     match kind {
-        BreakKind::Microbreak => &MICROBREAK_SMART_WAIT_STAGES,
-        BreakKind::LongBreak => &LONG_BREAK_SMART_WAIT_STAGES,
+        BreakKind::Microbreak => MICROBREAK_SMART_IDLE_THRESHOLD_MS,
+        BreakKind::LongBreak => LONG_BREAK_SMART_IDLE_THRESHOLD_MS,
     }
 }
 
-fn smart_wait_final_cap_ms(kind: BreakKind) -> u64 {
+fn smart_wait_max_wait_ms(kind: BreakKind) -> u64 {
     match kind {
-        BreakKind::Microbreak => MICROBREAK_FINAL_WAIT_CAP_MS,
-        BreakKind::LongBreak => LONG_BREAK_FINAL_WAIT_CAP_MS,
-    }
-}
-
-fn long_break_recovery_credit_ms(idle_gap_ms: u64) -> u64 {
-    idle_gap_ms
-        .max(RECOVERY_CREDIT_START_MS)
-        .min(LONG_BREAK_RECOVERY_CREDIT_CAP_MS)
-}
-
-#[cfg(test)]
-mod tests {
-    use super::*;
-
-    fn settings() -> PauzaSettings {
-        PauzaSettings::default()
-    }
-
-    #[test]
-    fn schedules_pre_break_notification() {
-        let mut runtime = RuntimeState {
-            settings: settings(),
-            ..Default::default()
-        };
-
-        runtime.schedule_next_slot(1_000);
-
-        assert_eq!(runtime.next_break_kind, Some(BreakKind::Microbreak));
-        assert_eq!(runtime.next_break_due_ms, Some(601_000));
-        assert_eq!(runtime.next_notification_due_ms, Some(591_000));
-    }
-
-    #[test]
-    fn enters_manual_finish_instead_of_closing() {
-        let state = PauzaState::default();
-        {
-            let mut runtime = state.runtime.lock().expect("state lock poisoned");
-            let mut settings = settings();
-            settings.long_break_manual_finish = true;
-            runtime.settings = settings;
-            runtime.schedule_specific_break(BreakKind::LongBreak, 1_100, 1_000);
-        }
-
-        let actions = state.tick(1_100, 20_000, false, None);
-        assert!(actions.open_break_window);
-
-        let actions = state.tick(301_101, 0, false, None);
-        assert!(!actions.close_break_window);
-        let runtime = state.runtime.lock().expect("state lock poisoned");
-        assert!(runtime.current_break.as_ref().is_some_and(|current| current.manual_awaiting));
-    }
-
-    #[test]
-    fn postpone_limit_blocks_second_postpone() {
-        let settings = settings();
-        let current = CurrentBreak {
-            kind: BreakKind::Microbreak,
-            title: "Microbreak".into(),
-            detail: "detail".into(),
-            started_at_ms: 1_000,
-            ends_at_ms: 21_000,
-            duration_ms: 20_000,
-            strict_mode: false,
-            manual_finish: false,
-            manual_awaiting: false,
-            postpones_used: 1,
-        };
-
-        assert!(!current.can_postpone(&settings, 5_000));
-    }
-
-    #[test]
-    fn postpone_is_only_available_in_first_ten_seconds() {
-        let settings = settings();
-        let current = CurrentBreak {
-            kind: BreakKind::Microbreak,
-            title: "Microbreak".into(),
-            detail: "detail".into(),
-            started_at_ms: 1_000,
-            ends_at_ms: 21_000,
-            duration_ms: 20_000,
-            strict_mode: false,
-            manual_finish: false,
-            manual_awaiting: false,
-            postpones_used: 0,
-        };
-
-        assert!(current.can_postpone(&settings, 11_000));
-        assert!(!current.can_postpone(&settings, 11_001));
-    }
-
-    #[test]
-    fn finish_current_break_requires_manual_awaiting() {
-        let state = PauzaState::default();
-        {
-            let mut runtime = state.runtime.lock().expect("state lock poisoned");
-            runtime.current_break = Some(CurrentBreak {
-                kind: BreakKind::Microbreak,
-                title: "Microbreak".into(),
-                detail: "detail".into(),
-                started_at_ms: 1_000,
-                ends_at_ms: 21_000,
-                duration_ms: 20_000,
-                strict_mode: false,
-                manual_finish: false,
-                manual_awaiting: false,
-                postpones_used: 0,
-            });
-        }
-
-        assert!(!state.finish_current_break("break-window"));
-        let runtime = state.runtime.lock().expect("state lock poisoned");
-        assert!(runtime.current_break.is_some());
-    }
-
-    #[test]
-    fn due_break_waits_for_idle_opportunity() {
-        let state = PauzaState::default();
-        {
-            let mut runtime = state.runtime.lock().expect("state lock poisoned");
-            runtime.settings = settings();
-            runtime.schedule_specific_break(BreakKind::Microbreak, 1_100, 1_000);
-        }
-
-        let actions = state.tick(1_100, 0, false, None);
-
-        assert!(!actions.open_break_window);
-        assert!(actions.notify_title.is_none());
-
-        let runtime = state.runtime.lock().expect("state lock poisoned");
-        assert!(runtime.current_break.is_none());
-        assert_eq!(runtime.next_break_kind, Some(BreakKind::Microbreak));
-        assert_eq!(runtime.next_break_wait_started_ms, Some(1_100));
-    }
-
-    #[test]
-    fn active_break_is_not_closed_by_passive_blockers() {
-        let state = PauzaState::default();
-        {
-            let mut runtime = state.runtime.lock().expect("state lock poisoned");
-            runtime.settings = settings();
-            runtime.schedule_specific_break(BreakKind::Microbreak, 1_100, 1_000);
-        }
-
-        let started = state.tick(1_100, 6_000, false, None);
-        assert!(started.open_break_window);
-
-        let blocked = state.tick(20_000, 6_000, true, None);
-        assert!(!blocked.close_break_window);
-
-        let runtime = state.runtime.lock().expect("state lock poisoned");
-        assert!(runtime.current_break.is_some());
-        assert!(runtime.delivery_block_started_ms.is_some());
-    }
-
-    #[test]
-    fn pending_break_starts_when_idle_opportunity_appears() {
-        let state = PauzaState::default();
-        {
-            let mut runtime = state.runtime.lock().expect("state lock poisoned");
-            runtime.settings = settings();
-            runtime.schedule_specific_break(BreakKind::Microbreak, 1_100, 1_000);
-        }
-
-        let _ = state.tick(1_100, 0, false, None);
-        let actions = state.tick(7_100, 6_000, false, None);
-
-        assert!(actions.open_break_window);
-
-        let runtime = state.runtime.lock().expect("state lock poisoned");
-        assert!(runtime.current_break.is_some());
-        assert!(runtime.next_break_wait_started_ms.is_none());
-    }
-
-    #[test]
-    fn microbreak_wait_threshold_relaxes_after_first_stage() {
-        let state = PauzaState::default();
-        {
-            let mut runtime = state.runtime.lock().expect("state lock poisoned");
-            runtime.settings = settings();
-            runtime.schedule_specific_break(BreakKind::Microbreak, 1_100, 1_000);
-        }
-
-        let _ = state.tick(1_100, 0, false, None);
-        let actions = state.tick(16_100, 3_000, false, None);
-
-        assert!(actions.open_break_window);
-
-        let runtime = state.runtime.lock().expect("state lock poisoned");
-        assert!(runtime.current_break.is_some());
-        assert!(runtime.next_break_wait_started_ms.is_none());
-    }
-
-    #[test]
-    fn long_break_uses_wider_idle_window_before_relaxing() {
-        let state = PauzaState::default();
-        {
-            let mut runtime = state.runtime.lock().expect("state lock poisoned");
-            runtime.settings = settings();
-            runtime.schedule_specific_break(BreakKind::LongBreak, 1_100, 1_000);
-        }
-
-        let _ = state.tick(1_100, 0, false, None);
-        let still_waiting = state.tick(20_100, 6_000, false, None);
-        assert!(!still_waiting.open_break_window);
-
-        let actions = state.tick(35_100, 4_000, false, None);
-        assert!(actions.open_break_window);
-
-        let runtime = state.runtime.lock().expect("state lock poisoned");
-        assert!(runtime.current_break.as_ref().is_some_and(|current| current.kind == BreakKind::LongBreak));
-        assert!(runtime.next_break_wait_started_ms.is_none());
-    }
-
-    #[test]
-    fn pause_and_resume_shift_due_instead_of_resetting_schedule() {
-        let mut runtime = RuntimeState {
-            settings: settings(),
-            ..Default::default()
-        };
-        runtime.schedule_specific_break(BreakKind::Microbreak, 61_000, 1_000);
-
-        let was_blocked = runtime.delivery_blocking_reason(1_000).is_some();
-        runtime.paused_until_ms = Some(31_000);
-        runtime.sync_delivery_block_state(1_000, was_blocked);
-        assert_eq!(runtime.delivery_block_started_ms, Some(1_000));
-
-        let was_blocked = runtime.delivery_blocking_reason(11_000).is_some();
-        runtime.paused_until_ms = None;
-        runtime.paused_indefinitely = false;
-        runtime.sync_delivery_block_state(11_000, was_blocked);
-
-        assert_eq!(runtime.next_break_kind, Some(BreakKind::Microbreak));
-        assert_eq!(runtime.next_break_due_ms, Some(71_000));
-        assert!(runtime.delivery_block_started_ms.is_none());
-    }
-
-    #[test]
-    fn dnd_freezes_waiting_timer_without_reset() {
-        let state = PauzaState::default();
-        {
-            let mut runtime = state.runtime.lock().expect("state lock poisoned");
-            runtime.settings = settings();
-            runtime.schedule_specific_break(BreakKind::Microbreak, 1_100, 1_000);
-        }
-
-        let _ = state.tick(1_100, 0, false, None);
-        let blocked = state.tick(5_100, 0, true, None);
-        assert!(!blocked.open_break_window);
-
-        let resumed = state.tick(25_100, 0, false, None);
-        assert!(!resumed.open_break_window);
-
-        let runtime = state.runtime.lock().expect("state lock poisoned");
-        assert_eq!(runtime.next_break_due_ms, Some(21_100));
-        assert_eq!(runtime.next_break_wait_started_ms, Some(21_100));
-        assert_eq!(runtime.cycle_index, 0);
-    }
-
-    #[test]
-    fn smart_mode_starts_break_after_final_stage_even_without_idle_gap() {
-        let state = PauzaState::default();
-        {
-            let mut runtime = state.runtime.lock().expect("state lock poisoned");
-            runtime.settings = settings();
-            runtime.schedule_specific_break(BreakKind::Microbreak, 1_100, 1_000);
-        }
-
-        let _ = state.tick(1_100, 0, false, None);
-        let actions = state.tick(46_100, 0, false, None);
-
-        assert!(actions.open_break_window);
-
-        let runtime = state.runtime.lock().expect("state lock poisoned");
-        assert!(runtime.current_break.is_some());
-        assert!(runtime.next_break_wait_started_ms.is_none());
-    }
-
-    #[test]
-    fn forced_mode_starts_break_immediately() {
-        let state = PauzaState::default();
-        {
-            let mut runtime = state.runtime.lock().expect("state lock poisoned");
-            let mut next_settings = settings();
-            next_settings.reminder_mode = ReminderMode::Forced;
-            runtime.settings = next_settings;
-            runtime.schedule_specific_break(BreakKind::Microbreak, 1_100, 1_000);
-        }
-
-        let actions = state.tick(1_100, 0, false, None);
-
-        assert!(actions.open_break_window);
-
-        let runtime = state.runtime.lock().expect("state lock poisoned");
-        assert!(runtime.current_break.as_ref().is_some_and(|current| current.strict_mode));
-        assert!(runtime.next_break_wait_started_ms.is_none());
-    }
-
-    #[test]
-    fn microbreak_is_credited_after_user_returns() {
-        let state = PauzaState::default();
-        {
-            let mut runtime = state.runtime.lock().expect("state lock poisoned");
-            runtime.settings = settings();
-            runtime.schedule_next_slot(1_000);
-        }
-
-        let away = state.tick(650_000, 60_000, false, None);
-        assert!(!away.open_break_window);
-
-        let _ = state.tick(651_000, 1_000, false, None);
-        let runtime = state.runtime.lock().expect("state lock poisoned");
-        assert_eq!(runtime.next_break_kind, Some(BreakKind::Microbreak));
-        assert_eq!(runtime.next_break_due_ms, Some(1_251_000));
-        assert!(runtime
-            .last_action
-            .contains(&i18n::text("zh-CN", "runtime.break.kind.microbreak")));
-    }
-
-    #[test]
-    fn long_break_is_deferred_after_user_returns() {
-        let state = PauzaState::default();
-        {
-            let mut runtime = state.runtime.lock().expect("state lock poisoned");
-            runtime.settings = settings();
-            runtime.cycle_index = 2;
-            runtime.schedule_next_slot(1_000);
-        }
-
-        let away = state.tick(650_000, 120_000, false, None);
-        assert!(!away.open_break_window);
-
-        let _ = state.tick(651_000, 1_000, false, None);
-        let runtime = state.runtime.lock().expect("state lock poisoned");
-        assert_eq!(runtime.next_break_kind, Some(BreakKind::LongBreak));
-        assert_eq!(runtime.next_break_due_ms, Some(771_000));
-    }
-
-    #[test]
-    fn long_idle_full_reset_replans_from_now() {
-        let state = PauzaState::default();
-        {
-            let mut runtime = state.runtime.lock().expect("state lock poisoned");
-            runtime.settings = settings();
-            runtime.schedule_next_slot(1_000);
-        }
-
-        let away = state.tick(950_000, 300_000, false, None);
-        assert!(!away.open_break_window);
-
-        let _ = state.tick(951_000, 1_000, false, None);
-        let runtime = state.runtime.lock().expect("state lock poisoned");
-        assert_eq!(runtime.next_break_kind, Some(BreakKind::Microbreak));
-        assert_eq!(runtime.next_break_due_ms, Some(1_551_000));
-        assert_eq!(runtime.cycle_index, 1);
-    }
-
-    #[test]
-    fn forced_mode_disables_postpone_and_skip() {
-        let mut next_settings = settings();
-        next_settings.reminder_mode = ReminderMode::Forced;
-
-        let current = CurrentBreak {
-            kind: BreakKind::Microbreak,
-            title: "Microbreak".into(),
-            detail: "detail".into(),
-            started_at_ms: 1_000,
-            ends_at_ms: 21_000,
-            duration_ms: 20_000,
-            strict_mode: true,
-            manual_finish: false,
-            manual_awaiting: false,
-            postpones_used: 0,
-        };
-
-        assert!(!current.can_postpone(&next_settings, 5_000));
-        assert!(!current.can_skip(&next_settings, 5_000));
-    }
-
-    #[test]
-    fn legacy_strict_settings_migrate_to_forced_mode() {
-        let unique = now_ms();
-        let temp_path = std::env::temp_dir().join(format!("pauza-settings-{unique}.json"));
-        let legacy = r#"{
-  "language": "zh-CN",
-  "microbreakStrictMode": true,
-  "naturalBreaks": true
-}"#;
-
-        std::fs::write(&temp_path, legacy).expect("write legacy settings");
-        let loaded = load_settings(&temp_path).expect("load migrated settings");
-
-        assert_eq!(loaded.reminder_mode, ReminderMode::Forced);
-
-        let _ = std::fs::remove_file(temp_path);
-    }
-
-    #[test]
-    fn snapshot_status_reflects_waiting_for_opportunity() {
-        let state = PauzaState::default();
-        {
-            let mut runtime = state.runtime.lock().expect("state lock poisoned");
-            runtime.settings = settings();
-            runtime.schedule_specific_break(BreakKind::Microbreak, 1_100, 1_000);
-        }
-
-        let _ = state.tick(1_100, 0, false, None);
-        let runtime = state.runtime.lock().expect("state lock poisoned");
-        let (status, status_detail) = runtime.status(1_100);
-
-        assert_eq!(
-            status,
-            i18n::text("zh-CN", "runtime.break.status.waitingOpportunityTitle")
-        );
-        assert_eq!(
-            status_detail,
-            i18n::text1(
-                "zh-CN",
-                "runtime.break.status.waitingOpportunityDetail",
-                "kind",
-                i18n::text("zh-CN", "runtime.break.kind.microbreak")
-            )
-            .replace("{{duration}}", &i18n::duration("zh-CN", MICROBREAK_FINAL_WAIT_CAP_MS))
-        );
-    }
-
-    #[test]
-    fn snapshot_status_reflects_recovery_hold() {
-        let state = PauzaState::default();
-        {
-            let mut runtime = state.runtime.lock().expect("state lock poisoned");
-            runtime.settings = settings();
-            runtime.schedule_specific_break(BreakKind::Microbreak, 1_100, 1_000);
-        }
-
-        let _ = state.tick(1_100, 60_000, false, None);
-        let snapshot = state.snapshot("test".into(), "0.0.0".into(), false);
-
-        assert_eq!(
-            snapshot.status,
-            i18n::text("zh-CN", "runtime.break.status.recoveryTitle")
-        );
-        assert_eq!(
-            snapshot.status_detail,
-            i18n::text2(
-                "zh-CN",
-                "runtime.break.status.recoveryDetail",
-                "kind",
-                i18n::text("zh-CN", "runtime.break.kind.microbreak"),
-                "duration",
-                i18n::duration("zh-CN", 60_000)
-            )
-        );
-    }
-
-    #[test]
-    fn snapshot_status_reflects_pre_break_heads_up() {
-        let state = PauzaState::default();
-        let scheduled_from = now_ms();
-        let due_ms = scheduled_from + 9_000;
-        {
-            let mut runtime = state.runtime.lock().expect("state lock poisoned");
-            runtime.settings = settings();
-            runtime.schedule_specific_break(BreakKind::Microbreak, due_ms, scheduled_from);
-        }
-
-        let snapshot = state.snapshot("test".into(), "0.0.0".into(), false);
-        let remaining = snapshot.next_break_in_ms.expect("remaining time available");
-
-        assert_eq!(
-            snapshot.status,
-            i18n::text("zh-CN", "runtime.break.status.headsUpTitle")
-        );
-        assert_eq!(
-            snapshot.status_detail,
-            i18n::text2(
-                "zh-CN",
-                "runtime.break.status.headsUpAdaptiveDetail",
-                "kind",
-                i18n::text("zh-CN", "runtime.break.kind.microbreak"),
-                "duration",
-                i18n::duration("zh-CN", remaining)
-            )
-        );
-    }
-
-    #[test]
-    fn update_settings_keeps_current_break_running() {
-        let state = PauzaState::default();
-        let temp_path = std::env::temp_dir().join(format!("pauza-settings-current-{}.json", now_ms()));
-
-        {
-            let mut runtime = state.runtime.lock().expect("state lock poisoned");
-            runtime.config_path = Some(temp_path.clone());
-            runtime.settings = settings();
-            runtime.schedule_specific_break(BreakKind::Microbreak, 1_100, 1_000);
-        }
-
-        let _ = state.tick(1_100, 12_000, false, None);
-
-        let mut updated = settings();
-        updated.microbreak_duration_seconds = 90;
-        state.update_settings(updated).expect("update settings");
-
-        let runtime = state.runtime.lock().expect("state lock poisoned");
-        let current = runtime.current_break.as_ref().expect("current break preserved");
-        assert_eq!(current.kind, BreakKind::Microbreak);
-        assert_eq!(current.duration_ms, 20_000);
-        assert_eq!(current.ends_at_ms, 21_100);
-        assert!(runtime.next_break_due_ms.is_none());
-
-        let _ = std::fs::remove_file(temp_path);
-    }
-
-    #[test]
-    fn update_settings_keeps_already_scheduled_next_break() {
-        let state = PauzaState::default();
-        let temp_path = std::env::temp_dir().join(format!("pauza-settings-next-{}.json", now_ms()));
-
-        {
-            let mut runtime = state.runtime.lock().expect("state lock poisoned");
-            runtime.config_path = Some(temp_path.clone());
-            runtime.settings = settings();
-            runtime.cycle_index = 1;
-            runtime.schedule_specific_break(BreakKind::LongBreak, 61_000, 1_000);
-        }
-
-        let mut updated = settings();
-        updated.long_break_duration_minutes = 15;
-        updated.microbreak_interval_minutes = 30;
-        state.update_settings(updated).expect("update settings");
-
-        let runtime = state.runtime.lock().expect("state lock poisoned");
-        assert_eq!(runtime.next_break_kind, Some(BreakKind::LongBreak));
-        assert_eq!(runtime.next_break_due_ms, Some(61_000));
-        assert_eq!(runtime.cycle_index, 1);
-
-        let _ = std::fs::remove_file(temp_path);
+        BreakKind::Microbreak => MICROBREAK_SMART_MAX_WAIT_MS,
+        BreakKind::LongBreak => LONG_BREAK_SMART_MAX_WAIT_MS,
     }
 }
