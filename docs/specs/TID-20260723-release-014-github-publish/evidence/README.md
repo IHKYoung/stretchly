@@ -1,0 +1,34 @@
+# TID-20260723-release-014-github-publish Evidence
+
+- Scope: 0.1.4 本地冻结、macOS arm64 构建、git/GitHub 发布与官网下载契约。
+- Current state: REVIEW。
+- Known gate: 本地 commit、远端 push/tag、GitHub Release 与下载 hash 尚待执行；GitHub CLI 认证已恢复。
+- Local source evidence:
+  - 根/desktop/Tauri/Cargo 四组版本真源均为 `0.1.4`。
+  - site pinned URL 已更新为 `v0.1.4/Pauza_0.1.4_aarch64.dmg`。
+  - locale 与 break-ideas generators 均成功；连续生成前后 registry SHA-256 完全一致。
+- Validation evidence:
+  - `npm test`: PASS，5 files / 113 tests。
+  - `npm run typecheck`: PASS。
+  - `cargo test --manifest-path apps/desktop/src-tauri/Cargo.toml`: PASS，28 tests。
+  - `npm --prefix apps/desktop run build`: PASS；仅保留既有 Vite large-chunk warning。
+  - `python3 scripts/validate_agent_configs.py`: PASS（无 multi-agent config，按设计 skip）。
+  - `python3 scripts/validate_workflow_docs.py --mode manual`: PASS。
+  - `git diff --check`: PASS。
+- Build evidence:
+  - 当前源码完成 release 编译；第一次 DMG 封装在临时卷卸载阶段失败，卸载该临时卷后使用 `tauri -vv bundle --bundles dmg` 重试成功，未修改源码。
+  - `.app` notarization id: `934996e6-412f-427a-ac6b-19291849ea8c`，status `Accepted`，ticket stapled。
+  - `.dmg` notarization id: `4b84b551-6d49-485a-bac8-56f7656138e0`，status `Accepted`，ticket stapled。
+  - DMG path: `apps/desktop/src-tauri/target/release/bundle/dmg/Pauza_0.1.4_aarch64.dmg`。
+  - DMG size: `19,919,577` bytes。
+  - DMG SHA-256: `20c4be6cbe3d8f4897e4b99ef07c5a4be701a7ba6b6f5d9d3d1c4658d5acea10`。
+  - DMG `codesign --verify`: PASS；`spctl`: `accepted / Notarized Developer ID`；`stapler validate`: PASS；`hdiutil verify`: VALID。
+  - DMG 内 `Pauza.app`: Developer ID=`AHAKNOW LLC (HC559NT2NP)`，`CFBundleShortVersionString=0.1.4`，Mach-O `arm64`，`spctl` accepted，stapler PASS。
+- Remote preflight:
+  - `origin/baseline=e8dffc8` 且为当前分支祖先，可安全 fast-forward。
+  - `pauza/baseline=bad94ee` 与当前历史不相交；本轮不写入该 branch，只推送显式 `v0.1.4` tag。
+  - 两个远端均无 `v0.1.4` tag。
+  - GitHub latest release 仍为 `v0.1.3`，资产为 `Pauza_0.1.3_aarch64.dmg`。
+  - `gh auth status`: PASS，账号 `IHKYoung`，scope 包含 `repo`。
+- Release evidence: 待认证、commit/push/tag/release 与远端下载 hash 核验完成后填写。
+- Result Summary: 本地产物与门禁 PASS；尚未达到 GitHub 发布完成条件。

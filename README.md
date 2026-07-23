@@ -11,14 +11,15 @@
 
 ## 0.1.4 概览
 
-`0.1.4` 是当前这一轮“智能提醒 v2 收口 + 本地 macOS 打包 + 版本提交”后的正式版本。重点从上一个发布快照继续向前推进：把桌面端提醒语义从阈值 patch 收敛成更稳定的 reminder v2，同时把这批改动统一收口到新的本地安装包和代码提交里。
+`0.1.4` 是当前公开发布版本。它把智能提醒、break ideas 独立资源层、Rust host 结构整理与本轮多语言文案扩充统一收口到同一个源码 tag 和 macOS arm64 安装包。
 
 这一版的核心变化：
 
 - 桌面端默认运行链路已经统一到 `Tauri 2 + React + TypeScript + Rust host`
 - 智能提醒已收口到最小状态机：active break 生命周期优先，pause/focus/DND/app exclusion 只冻结投递；`smart` 模式只做“固定空档阈值 + 最长等待”，`forced` 则到点直接开始
-- break prompt 的内容资产已经和界面文案分层：`ui.breakCopy.*` 继续留在 `messages/*.json`，`miniBreakIdeas / longBreakIdeas` 迁移到独立的 `locales/break-ideas/` registry
-- 本轮未提交的 desktop / docs 变更已统一整理到 `0.1.4`，并以本地 macOS arm64 打包产物为版本输入
+- break prompt 的内容资产已经和界面文案分层：`ui.breakCopy.*` 继续留在 `messages/*.json`，`miniBreakIdeas / longBreakIdeas` 迁移到独立的 `locales/break-ideas/` registry，并扩充中英文休息提示
+- Rust host 的 settings schema、持久化与测试已从主状态文件拆分，运行时调度继续保留在清晰的单一入口
+- 官网固定下载入口与 GitHub Release 均指向 `v0.1.4` 的 `Pauza_0.1.4_aarch64.dmg`
 
 ## 产品主张
 
@@ -29,13 +30,13 @@ Pauza 不是一个“粗暴打断工作”的提醒器。它更接近一个安�
 - 把运行时动作、设置项、系统状态和语言文案都收口到单一真源，减少漂移和意外
 - 界面应该像一个克制的桌面工具，而不是一个噪音很重的控制台
 
-## 下一阶段：体验验证与后续分发
+## 下一阶段：体验验证与后续迭代
 
-`0.1.4` 先聚焦于本地版本收口和 macOS 出包，不额外扩大发布动作。下一阶段会继续验证桌面端体验，并视需要决定是否把这一版同步到外部 release 分发链路。接下来会重点推进：
+`0.1.4` 已完成本地版本收口、macOS 出包与 GitHub Release 分发。下一阶段会继续验证桌面端体验，并为后续版本整理更稳定的跨架构分发链路。接下来会重点推进：
 
 1. 继续验证 macOS 全屏工作区、通知权限和 break 可见性的真实机行为
 2. 在官网补充更稳定的版本说明、截图和 release note 摘要
-3. 视需要决定代码仓库与 release 仓库的长期关系，减少当前双仓分流造成的发布歧义
+3. 收敛代码仓库与 release 仓库的长期关系，减少当前双仓分流造成的发布歧义
 
 网站内容建议优先强调：
 

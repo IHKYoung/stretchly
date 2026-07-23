@@ -17,27 +17,25 @@
 
 ## 未发布
 
-### 调整
+当前没有待发布条目。
 
-- 将 `apps/desktop` 智能提醒重新收敛为固定阈值 + 最长等待模型：移除 recovery hold / recovery credit 与递减阈值曲线，改为微休息 `8s / 90s`、长休息 `12s / 180s`；`smart` 仅在到点后等待明确空档，超过最长等待仍会开始，`forced` 继续保持到点直接打断
-- 将 `apps/desktop` 的 break ideas 从 `locales/messages/*.json` 迁移到独立的 `locales/break-ideas/messages/*.json`；新增 `break-ideas/registry.json` 与 `registry.generated.json`，用数据标签标记 `official / legacy` 语言，并让运行时按当前语言优先、fallback 补位读取 ideas
-- 整理 `apps/desktop` 的 reminder / break ideas 结构残留：前台设置模型不再继续携带 `idleOpportunitySeconds`，host 仅在读取旧配置时兼容该字段；`tick()` 中到点通知与到点开休息分支也收口到独立 helper，降低 `state.rs` 的主流程噪音
-- 继续整理 `apps/desktop` Rust host 的结构边界：`state.rs` 中的 settings schema / sanitize、`settings.json` 的 load-save-migration 与 Rust 单测已分别拆到 `state/settings.rs`、`state/persistence.rs`、`state/tests.rs`，runtime 调度继续留在主文件，先把模块职责拉直而不改行为
-
-### 修复
-
-- 修复 `apps/desktop` smart reminder v2 中 recovery credit 的 due gate 漂移：用户从 `45s+` idle 返回时，只有当前 pending break 已到点才会执行 microbreak 自动抵扣或 long break defer；未到点的微休息不再被提前吃掉，因此不会再出现“几乎只看到长休息”的异常节奏
-
-## 0.1.4 - 2026-04-23
+## 0.1.4 - 2026-07-23
 
 ### 调整
 
 - 将根 `package.json`、`package-lock.json`、`apps/desktop/package.json`、`apps/desktop/package-lock.json`、`Cargo.toml` 与 `tauri.conf.json` 的版本真源统一提升到 `0.1.4`
-- 将当前未提交的 desktop reminder v2 与相关 docs 工作树收口到 `0.1.4` 本地 macOS 打包边界，并以 arm64 无签名安装包作为本轮版本输入
+- 将当前 desktop reminder v2 与相关 docs 工作树收口到 `0.1.4`，并以 macOS arm64 安装包作为公开发布资产
+- 将 `apps/desktop` 智能提醒重新收敛为固定阈值 + 最长等待模型：移除 recovery hold / recovery credit 与递减阈值曲线，改为微休息 `8s / 90s`、长休息 `12s / 180s`；`smart` 仅在到点后等待明确空档，超过最长等待仍会开始，`forced` 继续保持到点直接打断
+- 将 `apps/desktop` 的 break ideas 从 `locales/messages/*.json` 迁移到独立的 `locales/break-ideas/messages/*.json`；新增 `break-ideas/registry.json` 与 `registry.generated.json`，用数据标签标记 `official / legacy` 语言，并让运行时按当前语言优先、fallback 补位读取 ideas
+- 扩充英文、简体中文与繁体中文 break ideas，并重新生成运行时 registry
+- 整理 `apps/desktop` 的 reminder / break ideas 结构残留：前台设置模型不再继续携带 `idleOpportunitySeconds`，host 仅在读取旧配置时兼容该字段；`tick()` 中到点通知与到点开休息分支也收口到独立 helper，降低 `state.rs` 的主流程噪音
+- 继续整理 `apps/desktop` Rust host 的结构边界：`state.rs` 中的 settings schema / sanitize、`settings.json` 的 load-save-migration 与 Rust 单测已分别拆到 `state/settings.rs`、`state/persistence.rs`、`state/tests.rs`，runtime 调度继续留在主文件，先把模块职责拉直而不改行为
+- 将官网固定下载地址与本地版本说明同步到 GitHub `v0.1.4` release
 
 ### 修复
 
 - 修复 `apps/desktop` 智能提醒在 pause/focus/DND/app exclusion 前后容易漂移的问题：这些 passive blocker 现在只冻结投递并在解除后平移 due / waiting timer，不再整轮 reset；同时 smart 模式新增 recovery hold / recovery credit，用户短暂离开时会在返回后自动抵扣 microbreak、顺延 long break，达到自然休息阈值才 full reset
+- 修复 `apps/desktop` smart reminder v2 中 recovery credit 的 due gate 漂移：用户从 `45s+` idle 返回时，只有当前 pending break 已到点才会执行 microbreak 自动抵扣或 long break defer；未到点的微休息不再被提前吃掉，因此不会再出现“几乎只看到长休息”的异常节奏
 
 ## 0.1.3 - 2026-04-20
 

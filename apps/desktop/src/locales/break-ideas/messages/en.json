@@ -545,6 +545,552 @@
     },
     "agz": {
       "text": "This break reminder was written by a human who also ignores break reminders. Don’t be like us. Stretch."
+    },
+    "aha": {
+      "text": "That last line of code? Your neck remembers it better than git does."
+    },
+    "ahb": {
+      "text": "Stand up. Variables get garbage-collected — you should at least get stretched."
+    },
+    "ahc": {
+      "text": "Put the mouse down. It's clicked 8,000 times today, more reliably than your heartbeat."
+    },
+    "ahd": {
+      "text": "Compile log: your lumbar spine is throwing warnings. Please address."
+    },
+    "ahe": {
+      "text": "Your code might have bugs. Your shoulders definitely do."
+    },
+    "ahf": {
+      "text": "Stack Overflow has no accepted answer for sore neck. Only: stand up."
+    },
+    "ahg": {
+      "text": "Save the file. Don't save the posture."
+    },
+    "ahh": {
+      "text": "Stuck on an if-else? Stand up. Your brain merges better when blood flows."
+    },
+    "ahi": {
+      "text": "You've stared at it for 47 minutes. If it could fix itself, it already would."
+    },
+    "ahj": {
+      "text": "Ctrl+S saves your code. Standing up saves you."
+    },
+    "ahk": {
+      "text": "Your back is not an infinite loop. Give it a break statement."
+    },
+    "ahl": {
+      "text": "How many git commits today? Your body would like to commit one too: a stretch."
+    },
+    "ahm": {
+      "text": "996 is a culture, not medical advice."
+    },
+    "ahn": {
+      "text": "Loving your code is fine. Don't forget firmware updates for yourself."
+    },
+    "aho": {
+      "text": "Your desk is busier than production right now."
+    },
+    "ahp": {
+      "text": "Treat the screen like a mirror. Are you slouching?"
+    },
+    "ahq": {
+      "text": "Bugs don't fix themselves the longer you sit. But your shoulders break themselves the longer you sit."
+    },
+    "ahr": {
+      "text": "Your PM won't remind you to drink water. Your body will — in ways you'll regret."
+    },
+    "ahs": {
+      "text": "Before you review code, review your posture."
+    },
+    "aht": {
+      "text": "Before you ship it, ship yourself to the water cooler."
+    },
+    "ahu": {
+      "text": "Carpal tunnel? Yeah, it's still a thing. Get ahead of it."
+    },
+    "ahv": {
+      "text": "No one reads your code comments. Your back, however, comments every minute."
+    },
+    "ahw": {
+      "text": "Build failed? Stand up and reboot yourself."
+    },
+    "ahx": {
+      "text": "Screen brightness is adjustable. Your eyes are not."
+    },
+    "ahy": {
+      "text": "Requirements changed three times today. Your shoulders stiffened three layers. Time to shake."
+    },
+    "ahz": {
+      "text": "You think you're working overtime. Actually, you're mortgaging your spine."
+    },
+    "aia": {
+      "text": "Your butt has taken the shape of the chair. Time to break the symmetry."
+    },
+    "aib": {
+      "text": "Your back is a load-bearing wall. If it fails, the house comes down."
+    },
+    "aic": {
+      "text": "No matter how expensive the chair, it can't replace standing up."
+    },
+    "aid": {
+      "text": "How long have you been sitting? Even gravity is starting to worry."
+    },
+    "aie": {
+      "text": "Your spine isn't Lego. Don't stack it like one."
+    },
+    "aif": {
+      "text": "30 seconds. Stand up. Walk to the window. Cheapest business trip your body will take."
+    },
+    "aig": {
+      "text": "Your core is asleep. Wake it up: stand, inhale, lift."
+    },
+    "aih": {
+      "text": "Knees are joints, not gaskets. Move them."
+    },
+    "aii": {
+      "text": "Your neck isn't an antenna. Stop holding it rigid."
+    },
+    "aij": {
+      "text": "Bend down and reach for your toes (touching them isn't required). Your hamstrings will thank you."
+    },
+    "aik": {
+      "text": "Stand against a wall for one minute. Let your spine recalibrate."
+    },
+    "ail": {
+      "text": "Roll your ankles. Half your lower-body circulation depends on them."
+    },
+    "aim": {
+      "text": "Hands behind your lower back, lean back gently. Call it 'reverse work'."
+    },
+    "ain": {
+      "text": "Do a half-squat (or just pretend). Your glutes have been on extended leave."
+    },
+    "aio": {
+      "text": "Pinch your shoulder blades back for 3 seconds. Free posture sculpting."
+    },
+    "aip": {
+      "text": "Try doing a few things with your non-dominant hand. Your brain will think it's the weekend."
+    },
+    "aiq": {
+      "text": "Tuck your chin, press the back of your head against an imaginary wall. Tech neck retreats."
+    },
+    "air": {
+      "text": "Roll your head slowly. There are 32 small muscles in your neck. They're on strike."
+    },
+    "ais": {
+      "text": "Stand → 3 steps → look far → 3 steps → sit. A minimal dance."
+    },
+    "ait": {
+      "text": "You've been watching yourself for 9 hours straight. Change the channel."
+    },
+    "aiu": {
+      "text": "Hips are your body's intersection. Sitting causes traffic jams."
+    },
+    "aiv": {
+      "text": "Three deep breaths. Your diaphragm wants in."
+    },
+    "aiw": {
+      "text": "Shrug shoulders to ears, drop. Release the kilo of tension you accumulated today."
+    },
+    "aix": {
+      "text": "Heel raises × 10. Your calves are the body's second heart."
+    },
+    "aiy": {
+      "text": "Standing up now is cheaper than the doctor's office tomorrow."
+    },
+    "aiz": {
+      "text": "You charge your phone more often than yourself."
+    },
+    "aja": {
+      "text": "Drink some water. You're not a camel."
+    },
+    "ajb": {
+      "text": "Empty cup? That's the politest reminder your body will give you."
+    },
+    "ajc": {
+      "text": "Coffee isn't water. Tea isn't either. Plain water, please."
+    },
+    "ajd": {
+      "text": "The color of today's pee is health's veto power."
+    },
+    "aje": {
+      "text": "On your way to refill, say hi to the sky outside the window."
+    },
+    "ajf": {
+      "text": "Eyes drying out? Blink — it's a skill that needs practice now."
+    },
+    "ajg": {
+      "text": "Look at something 20 feet away for 20 seconds. That's not waste — that's payroll for your ciliary muscles."
+    },
+    "ajh": {
+      "text": "There's no ocean inside the screen. There might be one out the window."
+    },
+    "aji": {
+      "text": "Take your glasses off, clean them, give your eyes 30 raw seconds."
+    },
+    "ajj": {
+      "text": "Rub your palms warm, cup your closed eyes. Discount eye spa."
+    },
+    "ajk": {
+      "text": "Myopia doesn't reverse on its own. But you can stop it from getting worse."
+    },
+    "ajl": {
+      "text": "How narrow is your visual field today? Open it back to panorama mode."
+    },
+    "ajm": {
+      "text": "Take a deep breath. Air is free, and you forgot to use it today."
+    },
+    "ajn": {
+      "text": "Stand on the balcony for 30 seconds. Vitamin D doesn't come through monitors."
+    },
+    "ajo": {
+      "text": "Walk to a window. Smell today's air."
+    },
+    "ajp": {
+      "text": "Flip your phone face-down. Give your eyes a 5-minute screen-free vacation."
+    },
+    "ajq": {
+      "text": "Smile, even at yourself. Your facial muscles need a workout too."
+    },
+    "ajr": {
+      "text": "Stand and stretch. Don't worry what colleagues think. This is legal luxury."
+    },
+    "ajs": {
+      "text": "Tell yourself: nice work today. That's not corny — it's necessary maintenance."
+    },
+    "ajt": {
+      "text": "Inhale as you stand. Exhale as you sit. Both are free."
+    },
+    "aju": {
+      "text": "On your way to refill water, slow down. It's the one part of today not in a rush."
+    },
+    "ajv": {
+      "text": "Crack a window for a few seconds. Replace the dead air at your desk."
+    },
+    "ajw": {
+      "text": "Listen to the chorus of one song without looking at a screen. Let your ears take over briefly."
+    },
+    "ajx": {
+      "text": "Talk to the plant on your desk. It pulled overtime too."
+    },
+    "ajy": {
+      "text": "Wash your hands. Cold water wakes up the part of you you forgot to bring."
+    },
+    "ajz": {
+      "text": "Chew a mint. Surprise your tired taste buds."
+    },
+    "aka": {
+      "text": "Your salary won't grow, but your neck pain will. Worth thinking about."
+    },
+    "akb": {
+      "text": "Your boss won't take care of your body. But you can — for one minute, right now."
+    },
+    "akc": {
+      "text": "KPIs live in spreadsheets. Health lives in the body. Harder to fake."
+    },
+    "akd": {
+      "text": "OKRs don't include 'preserve lumbar spine.' But yours should."
+    },
+    "ake": {
+      "text": "996 sounds like a schedule. It's actually a price tag — on you."
+    },
+    "akf": {
+      "text": "PM changed requirements three times. Your shoulders leveled up three notches."
+    },
+    "akg": {
+      "text": "The client's plan changed. Your cervical spine has only one plan."
+    },
+    "akh": {
+      "text": "Weekly reports can wait. Your back can't."
+    },
+    "aki": {
+      "text": "Quitting time isn't always 6 PM. But rest can be right now."
+    },
+    "akj": {
+      "text": "Paychecks come fast. Bills come faster. Between them, you need to walk."
+    },
+    "akk": {
+      "text": "You're not a machine. Even machines have maintenance windows."
+    },
+    "akl": {
+      "text": "The company won't go under because you sat 10 minutes less."
+    },
+    "akm": {
+      "text": "Projects can slip. Your health can't."
+    },
+    "akn": {
+      "text": "Deadlines belong to others. Your body belongs to you."
+    },
+    "ako": {
+      "text": "Don't wait for the medical report to remind you."
+    },
+    "akp": {
+      "text": "You think overtime makes money. Actually it's installment payments to the hospital."
+    },
+    "akq": {
+      "text": "The break-room gossip is more interesting than the codebase. Go listen in."
+    },
+    "akr": {
+      "text": "Stand up. The one decision today that is entirely yours."
+    },
+    "aks": {
+      "text": "You've been on duty for the company for 9 hours. Be on duty for yourself for 60 seconds."
+    },
+    "akt": {
+      "text": "The company has annual leave. Your body doesn't. It works every single day."
+    },
+    "aku": {
+      "text": "Today's wages buy a milk tea. They can't buy back one night of neck pain."
+    },
+    "akv": {
+      "text": "Loving your work is fine. Being consumed by it is not."
+    },
+    "akw": {
+      "text": "You can turn off the desk lamp. The lamp in your eyes has been on all day. Dim it."
+    },
+    "akx": {
+      "text": "If your project were a person, it would also need to walk it off today."
+    },
+    "aky": {
+      "text": "Turn your back to the screen for a moment. It's been staring at you all morning."
+    },
+    "akz": {
+      "text": "You're sitting so badly the chair feels bad for you."
+    },
+    "ala": {
+      "text": "Life is finite, said the philosophers. Today's finitude ends here — go move."
+    },
+    "alb": {
+      "text": "Running water doesn't rot. A door hinge in motion doesn't rust. Your joints are no different."
+    },
+    "alc": {
+      "text": "Stoics exercised in exile. You aren't in exile — you're just stuck to the chair."
+    },
+    "ald": {
+      "text": "Poets walked through mountains. You can at least walk to the water cooler."
+    },
+    "ale": {
+      "text": "You weren't born for this seat. The world's bigger than your monitor."
+    },
+    "alf": {
+      "text": "You're not a tool. Even tools need maintenance — let alone a person."
+    },
+    "alg": {
+      "text": "Today's progress may not catch up. But your body still can."
+    },
+    "alh": {
+      "text": "You weren't born to work. Work is just one process running in your life."
+    },
+    "ali": {
+      "text": "Treat yourself like a friend. You wouldn't let a friend sit 9 hours without water."
+    },
+    "alj": {
+      "text": "The opposite of grinding isn't quitting. It's actually taking care of yourself."
+    },
+    "alk": {
+      "text": "Endless work versus your body — only one of them will wait for you. Guess which."
+    },
+    "all": {
+      "text": "Doing a little less today is fine. Tomorrow's you will thank now's you."
+    },
+    "alm": {
+      "text": "You've already done plenty. Now do something kind for yourself."
+    },
+    "aln": {
+      "text": "Efficiency isn't squeezing yourself dry. It's knowing when to refill."
+    },
+    "alo": {
+      "text": "By 30, what stands tall isn't only your career — it's your spine."
+    },
+    "alp": {
+      "text": "A middle-aged person's health is paid for with the front half of their life. Save where you can."
+    },
+    "alq": {
+      "text": "Remember why you got into this field? It wasn't for the neck pain."
+    },
+    "alr": {
+      "text": "You're not irreplaceable. But your body — no one else can carry it for you."
+    },
+    "als": {
+      "text": "Treat the rest of today as a budget. Allocate some to your body."
+    },
+    "alt": {
+      "text": "You forget many things. Your body remembers everything."
+    },
+    "alu": {
+      "text": "Eat well, sleep well, drink well. Three simple things. How many today?"
+    },
+    "alv": {
+      "text": "Anxiety solves nothing. But standing up solves half of your shoulder problem."
+    },
+    "alw": {
+      "text": "You're not lagging. You just need a restart."
+    },
+    "alx": {
+      "text": "Time isn't wasted by you — it's overlooked, especially the part that belongs to your body."
+    },
+    "aly": {
+      "text": "Work is a marathon. The last hour was a sprint. Time to rest."
+    },
+    "alz": {
+      "text": "Everything you do matters. You yourself matter more than any of it."
+    },
+    "ama": {
+      "text": "Do a cat stretch (standing works). Your back's curve will be prettier than your code's."
+    },
+    "amb": {
+      "text": "Stand against a wall — head, shoulders, glutes, heels touching for 30 seconds. Your only 'four-point alignment' today."
+    },
+    "amc": {
+      "text": "Interlace fingers, push palms toward the ceiling. Hold 5 seconds."
+    },
+    "amd": {
+      "text": "Lean left. Lean right. A tree blown by the wind, twice."
+    },
+    "ame": {
+      "text": "Half-squat, stand back up. Five times. The people's gym."
+    },
+    "amf": {
+      "text": "Trace half-circles with your neck, slowly — one way, then back. Trace, don't snap."
+    },
+    "amg": {
+      "text": "Hug arms across chest, deep breath, then open wide. Unlock your ribcage."
+    },
+    "amh": {
+      "text": "Press temples gently, draw 10 small circles. Free head massage."
+    },
+    "ami": {
+      "text": "Grip the floor with your toes 10 times. Feet are the body's forgotten corner."
+    },
+    "amj": {
+      "text": "Try picking up a pen with your toes. You'll meet your feet again."
+    },
+    "amk": {
+      "text": "Place your tongue on the roof of your mouth, breathe through your nose for 30 seconds. Free yoga."
+    },
+    "aml": {
+      "text": "Ten slow deep breaths. Most of yours today were shallow."
+    },
+    "amm": {
+      "text": "Make a fist, then spread your fingers wide. Your knuckles will whisper thanks."
+    },
+    "amn": {
+      "text": "Shrug shoulders up, hold 3 seconds, drop hard. Five times. Release."
+    },
+    "amo": {
+      "text": "Look at the ceiling for 10 seconds. See what's above you — you haven't in a while."
+    },
+    "amp": {
+      "text": "Push the chair back half a meter. Stand for a moment. The chair wants to breathe too."
+    },
+    "amq": {
+      "text": "Wrist circles — 10 clockwise, 10 counter. Prevention beats treatment, 100x cheaper."
+    },
+    "amr": {
+      "text": "Spinal twist: arms across chest, slowly turn to look behind you. Three seconds each side."
+    },
+    "ams": {
+      "text": "Heel-raises × 20. Calves pump blood up."
+    },
+    "amt": {
+      "text": "Side stretch: right arm overhead, lean left. Hold 5. Switch."
+    },
+    "amu": {
+      "text": "Shoulder circles: 5 backward, 5 forward. Open your 'wings'."
+    },
+    "amv": {
+      "text": "Sit straight with shoulder blades pulled back into the chair. Free reverse-posture training."
+    },
+    "amw": {
+      "text": "Cross right ankle over left knee, lean forward. The lifesaver stretch for sitters."
+    },
+    "amx": {
+      "text": "Hands behind head, lift chin, hold 5 seconds. Release the front-neck muscles."
+    },
+    "amy": {
+      "text": "Pull a goofy face. Facial muscles are muscles too. Yours stiffened today."
+    },
+    "amz": {
+      "text": "Reach toward the ceiling. Pretend you can touch it. Lower. Three times."
+    },
+    "ana": {
+      "text": "You've done well. Now do one thing that's good for your body."
+    },
+    "anb": {
+      "text": "You don't need to work harder. You need to work longer-livedly."
+    },
+    "anc": {
+      "text": "Stand. Take 30 steps. Not for productivity — for you."
+    },
+    "and": {
+      "text": "Shake today's tension out through your fingertips."
+    },
+    "ane": {
+      "text": "Breathe: inhale 4, hold 4, exhale 8. The body's keyboard shortcut."
+    },
+    "anf": {
+      "text": "You solved more problems today than you realize. Permission to pause."
+    },
+    "ang": {
+      "text": "Work can slow down. You can't break down. The priority is clear."
+    },
+    "anh": {
+      "text": "Stand, stretch, drink, return. That's a cycle, not a waste."
+    },
+    "ani": {
+      "text": "You don't need to win every day. You need to live well every day."
+    },
+    "anj": {
+      "text": "Today doesn't need to be perfect. It just needs to be survived. That bar is high enough."
+    },
+    "ank": {
+      "text": "Tomorrow continues. Save a little of now-you for tomorrow-you."
+    },
+    "anl": {
+      "text": "You're more than just an employee. Remember that, then go back to work."
+    },
+    "anm": {
+      "text": "Treat the chair as a way station, not a destination."
+    },
+    "ann": {
+      "text": "When the body doesn't complain, it's saving up. The day it complains, the debt is enormous."
+    },
+    "ano": {
+      "text": "You've held on long enough. Pausing isn't quitting. It's resupplying."
+    },
+    "anp": {
+      "text": "Drink well. Walk well. Get home well."
+    },
+    "anq": {
+      "text": "Be a little gentle with yourself. The world is busy enough. You don't need to add to it."
+    },
+    "anr": {
+      "text": "Standing up is today's smallest revolution."
+    },
+    "ans": {
+      "text": "However urgent the work — you only get one life."
+    },
+    "ant": {
+      "text": "You've done plenty for others today. Now do one for yourself."
+    },
+    "anu": {
+      "text": "Today's tiredness isn't your fault. Letting it stay overnight, however, is."
+    },
+    "anv": {
+      "text": "Remember why you started. Remember who you're walking it through for."
+    },
+    "anw": {
+      "text": "You're not a machine. Even machines auto-sleep."
+    },
+    "anx": {
+      "text": "Hand on your chest. Feel your heartbeat. It's been on overtime since the day you were born — it deserves a small reward."
+    },
+    "any": {
+      "text": "Stand up. This time, for no reason but yourself."
+    },
+    "anz": {
+      "text": "You completed today's reminder. You also deserve to complete today's rest."
     }
   },
   "longBreakIdeas": {
@@ -1035,6 +1581,494 @@
     "aer": {
       "title": "End-of-day wind-down",
       "text": "Before you close your laptop, take 3 minutes to write down what you accomplished, what’s pending, and one thing you’re proud of. This ‘shutdown ritual’ creates cognitive closure, prevents work thoughts from invading your evening, and gives you a running start tomorrow."
+    },
+    "aes": {
+      "title": "Your spine isn't a battery",
+      "text": "MRI studies show that disc pressure during prolonged sitting is roughly 40% higher than standing. Standing every 30 minutes lets discs decompress and rehydrate briefly. It sounds like saving a device — actually you're saving yourself, the only one of these you'll ever own, with no replacement model in 30 years."
+    },
+    "aet": {
+      "title": "How much have you really seen today?",
+      "text": "Adults blink about 14,000 times a day — but at a screen, only 4,000–6,000. Fewer blinks = no tear-film refresh = dry-eye in the queue. Right now, the simplest thing: blink hard 10 times, then look 20 feet away for 20 seconds. The cheapest, most important maintenance your body ever gets."
+    },
+    "aeu": {
+      "title": "Your legs aren't decoration",
+      "text": "The lower body holds over 60% of your muscle mass and is the body's largest 'circulation pump'. When you sit, they idle, blood pools, and the risks of edema, varicose veins, and DVT all climb. Five minutes of walking each hour cuts those risks dramatically. Don't wait for your calves to ache to remember they exist."
+    },
+    "aev": {
+      "title": "You're not slacking off",
+      "text": "Treating rest as 'wasted time' is an industrial-era prejudice. Neuroscience shows the brain does its most important work — memory consolidation, problem incubation, emotion regulation — when it appears to do nothing. The best engineers know: the breakthrough usually arrives after you've stepped away from the screen."
+    },
+    "aew": {
+      "title": "Your neck is fragile core infrastructure",
+      "text": "Every 2.5 cm forward your head tilts, your cervical spine bears another ~4.5 kg. 'Tech neck' is one of this century's quietest occupational injuries — and it doesn't form overnight, nor does it heal overnight. From today: tuck your chin slightly, line ears up over shoulders. A month from now you'll thank yourself."
+    },
+    "aex": {
+      "title": "Treat rest as a deposit",
+      "text": "High-quality focus is roughly 4–5 hours per day. Pushing past it isn't producing — it's borrowing, at high interest, often paid back as insomnia, neck pain, or attention collapse. This break is a deposit, not a withdrawal. When the real problem comes, you'll have principal to spend."
+    },
+    "aey": {
+      "title": "The compounding interest of deep breathing",
+      "text": "Adults average 12–20 breaths per minute, mostly shallow chest breaths. Try 4-7-8: inhale 4, hold 7, exhale 8. Three rounds. It activates the vagus nerve, lowers cortisol, slows heart rate. Not meditation magic — well-replicated physiology."
+    },
+    "aez": {
+      "title": "Today's posture",
+      "text": "You've held the same position for over 60 minutes. Your fascia begins to 'remember' it — that's why some people leave the office still feeling like they're carrying a sandbag on the shoulders. The fix is simple: stand, do the opposite of your work posture — chest open, arms back, eyes lifted. Three minutes is enough to reset."
+    },
+    "afa": {
+      "title": "A survival guide for mid-career engineers",
+      "text": "After 30, metabolic rate drops about 5–10% per decade. The all-nighter that cost you a day in your 20s costs you a week now. That's not weakness — it's reality. The people who last in this industry aren't the most technically brilliant. They're the ones most willing to take care of themselves."
+    },
+    "afb": {
+      "title": "The bug won't fix itself, but you can",
+      "text": "Stare at the same bug for over 25 minutes with no progress and your brain has settled into a local minimum. The most effective debugger is: stand up, leave the screen, get water. That's not procrastination — it's letting the default mode network take over. Plenty of bugs get solved on the way to the bathroom. That's not a joke; it's literature."
+    },
+    "afc": {
+      "title": "Carpal tunnel isn't a myth",
+      "text": "Carpal tunnel syndrome is 3–4× more common in programmers than in the general population. Early signs: hands going numb at night, weaker grip, soreness at the base of the thumb. Prevention is 100× cheaper than treatment. Every 30 minutes: wrist circles, finger stretches, 30 seconds. Start tonight."
+    },
+    "afd": {
+      "title": "Your salary can't pay for your spine",
+      "text": "A serious cervical-spine treatment can cost months of your salary — and many injuries don't reverse. But five 1-minute stretches a day are free. Choose the one you can keep. Hint: you only get one body. The salary can grow back."
+    },
+    "afe": {
+      "title": "You're not living for the company",
+      "text": "No one at the company is genuinely moved that you sat 4 extra hours. Your partner, parents, friends are genuinely glad when you're healthy. Put 'responsible to work' and 'responsible to yourself' at the same priority. They're not opposed — but if you must pick one, pick yourself."
+    },
+    "aff": {
+      "title": "Why are you still tired after work?",
+      "text": "Cognitive fatigue isn't like physical fatigue. It shows up as: decision fatigue, irritability, not wanting to see anyone, doomscrolling at bedtime. That's the prefrontal cortex calling for help — and what it needs isn't more sleep. It needs regular daytime breaks. Today's small rest is a deposit toward tonight's good sleep."
+    },
+    "afg": {
+      "title": "Treat the chair as a temporary workstation",
+      "text": "Chairs are transitions, not destinations. The healthiest mix is roughly 50% sitting, 25% standing, 25% walking. You may not have a sit/stand desk — but you have legs. Leaving the chair every hour is more useful than a thousand-dollar ergonomic chair."
+    },
+    "afh": {
+      "title": "Micro-movements add up",
+      "text": "You don't need a gym to count as exercise. NEAT (non-exercise activity thermogenesis) research shows daily micro-movements can account for 15–30% of your total energy expenditure: standing on calls, taking stairs, marching in place, walking to refill water. You don't need abs of steel. Just don't be motionless for 8 straight hours."
+    },
+    "afi": {
+      "title": "996 isn't a culture, it's debt",
+      "text": "The cost of long-term overwork doesn't show up immediately — but it gets paid back as insomnia, chronic inflammation, attention decline, and cardiovascular risk. The WHO has classified weeks over 55 hours as a 'definite health risk'. You're not grinding. You're writing post-dated checks against your body."
+    },
+    "afj": {
+      "title": "The lonely workstation",
+      "text": "In the remote-work era, the workstation is an island. Studies show that even light social interaction at work — a hallway hello, a 2-minute chat — measurably reduces chronic stress. This break: send someone a hello, say one sentence to someone in person. Your nervous system will thank you."
+    },
+    "afk": {
+      "title": "There's a world beyond the screen",
+      "text": "Allow yourself 5 minutes without checking any messages, opening any tabs, or 'just glancing at' work. Let your eyes look at real things 6 meters away. Let your ears hear sounds that aren't through earphones. This isn't escape — this is restoring 'presence', which is the source of attention quality."
+    },
+    "afl": {
+      "title": "The secret of HRV",
+      "text": "Heart rate variability is a mirror of your autonomic nervous system's resilience. Sitting, stress, and sleep loss push it down; mild exercise, deep breathing, regular rest push it up. Higher HRV correlates with stress resilience, longevity, and overall health. Today's 5-minute walk and deep breaths are an HRV investment."
+    },
+    "afm": {
+      "title": "Your eyes are simulators, not microscopes",
+      "text": "Human eyes evolved to track distant prey, not to stare at glowing rectangles 50 cm away all day. Over-tightened ciliary muscles cause myopia progression and eye fatigue. The 20-20-20 rule isn't a suggestion — it's repair time. Every 20 minutes, look at something 20 feet away for 20 seconds."
+    },
+    "afn": {
+      "title": "Why does sitting tire you out?",
+      "text": "When you sit, deep stabilizer muscles (multifidus, transverse abdominis) 'switch off' and superficial neck/shoulder muscles compensate. That's why prolonged sitting feels more exhausting than exercise. Fix: stand, lift chest, tuck chin, engage core, breathe deep × 3. This sequence reactivates the deep stabilizers — the body's cheapest restart."
+    },
+    "afo": {
+      "title": "Separate work from life",
+      "text": "If your bedroom is your office and your desk is your dinner table, the brain loses cues to switch modes. Build a 'transition ritual': leave the desk on breaks, wash hands, look out a window. Even 3 minutes tells the brain 'this is rest now'. Boundaries are the first line of health defense."
+    },
+    "afp": {
+      "title": "Your shoulders are fixable, if you start now",
+      "text": "The rotator cuff, upper traps, and rhomboids — chronically tight — can develop into impingement syndrome, an academically named, painfully felt condition. Early-stage: stretching, chest opening, scapular retraction can correct it. Late-stage: physical therapy, sometimes surgery. Three minutes of shoulder work daily is the simplest prevention there is."
+    },
+    "afq": {
+      "title": "The end of work isn't retirement — it's health",
+      "text": "Surveys find that at age 60, the strongest predictor of happiness isn't savings — it's whether the body still moves freely. Those who can walk, climb stairs, travel are far happier than those well-off but trapped by their bodies. Every concession you make to your body today is a deposit for the 60-year-old you."
+    },
+    "afr": {
+      "title": "Data-drive your rest",
+      "text": "The 'stand reminders' on Apple Watch and Fitbit aren't a gimmick. Studies show that even 1–2 minutes of movement per hour significantly improves glucose metabolism and lowers all-cause mortality. You data-drive your products. Try data-driving yourself. Next time the reminder rings, actually stand."
+    },
+    "afs": {
+      "title": "Emotions live in the body",
+      "text": "Anxiety doesn't appear from nowhere — it accumulates first as tension in shoulders, chest, jaw. Unreleased, it becomes feelings. Scan now: is your jaw clenched? Are your shoulders up? Are your fists tight? Drop them, and 30% of the anxiety drops with them."
+    },
+    "aft": {
+      "title": "You're not 'human resource'",
+      "text": "The phrase 'tool' is coldly accurate: when you only care about output, you've downgraded yourself to one. But tools don't cry, get sick, or grow old. You do. Allow yourself emotions, fatigue, the need to be cared for. This break: treat yourself the way you'd treat a friend."
+    },
+    "afu": {
+      "title": "Did you eat well today?",
+      "text": "Takeout, coffee, and snacks for a whole day is a programmer's standard. But your body needs stable blood sugar, enough protein, and adequate micronutrients. The gut is directly wired to mood — eat poorly and you're more anxious, more irritable, more scattered. Eat your next meal with intention. Low cost, high return."
+    },
+    "afv": {
+      "title": "Sleep isn't a luxury",
+      "text": "Deep sleep activates the brain's glymphatic 'cleaning system' that clears metabolic waste — including beta-amyloid, linked to Alzheimer's. Chronic sleep loss = booting up a brain that wasn't cleaned. Your daytime 'lag' is rarely a CPU problem; it's last night's missing sleep. Go to bed earlier tonight."
+    },
+    "afw": {
+      "title": "That neck-massager won't save you",
+      "text": "Off-the-shelf neck massagers ease symptoms — they don't fix the cause. The real solution: less head-down time, better posture, regular stretching, stronger posterior neck muscles. No machine replaces lifting your head. Give yourself 1 minute of active neck movement — 10× more useful than the gadget."
+    },
+    "afx": {
+      "title": "You're not slow — you're overloaded",
+      "text": "When productivity dips suddenly, the first thought is usually 'am I losing it?' But the truth is usually: you're overloaded. The brain is like RAM — when full, it starts swapping. Looks like running, isn't really. The fix isn't another hour of grinding — it's 5 minutes of complete switching."
+    },
+    "afy": {
+      "title": "Replace 'I have no time' with 'this isn't important'",
+      "text": "Next time you say 'I don't have time to exercise/drink water/rest', honestly translate it into 'this isn't important to me'. Then ask: is that true? If not — where did the time go? Most people aren't out of time. They just haven't put themselves near the top of the list. Move yourself one slot up today."
+    },
+    "afz": {
+      "title": "The spine is the body's central network cable",
+      "text": "31 pairs of spinal nerves run through the spine, connecting every organ. Bad posture = disrupted nerve signaling = a parade of vague complaints: bad digestion, palpitations, dizziness, insomnia. Sitting straight isn't about looking good — it's giving the body's communication line a clean environment."
+    },
+    "aga": {
+      "title": "Why do you stay up late again?",
+      "text": "People who don't truly rest during the day are more likely to revenge-stay-up at night — 'sleep procrastination'. The brain is trying to reclaim time. The fix isn't 'go to bed earlier'; it's 'rest during the day'. Today's small rest is a bet placed for tonight's sleep."
+    },
+    "agb": {
+      "title": "The squat as a body checkup",
+      "text": "Whether you can do a full deep squat is an old-fashioned mobility test for hips, knees, ankles, and trunk. Among sitters, fewer than 30% can do it easily. Try: feet shoulder-width, slowly lower as far as you can, hold 5 seconds, stand. If it's hard, your body is telling you: it's time to start moving."
+    },
+    "agc": {
+      "title": "Attention is a scarce resource",
+      "text": "Attention is the 21st century's most expensive resource — more expensive than money, more than code. Every context switch, interruption, and shallow thought drains it. This break isn't 'distraction'; it's refueling. Your next focus block will be deeper, longer, more valuable."
+    },
+    "agd": {
+      "title": "A conversation with your body",
+      "text": "Scan your body without judgment: toes, calves, knees, thighs, lower back, upper back, shoulders, neck, jaw, eyes. Where is it tense? Where does it ache? Where is it asking for help? The body has been talking — it's just been drowned out by the work. Give it 1 minute to speak."
+    },
+    "age": {
+      "title": "Requirements changed = good time to stretch",
+      "text": "Requirements always change. Your response doesn't have to. Each major change becomes a body-reset signal: stand, breathe, stretch. Turn 'being interrupted' into 'taking a break'; turn frustration into a habit. Eventually, the PM is unwittingly helping you build a healthier rhythm."
+    },
+    "agf": {
+      "title": "Your neck and shoulders are the foundation",
+      "text": "Neck and shoulder muscles are the body's infrastructure. Bad foundation, no amount of code on top stays straight. Roughly: every 100 lines of code deserves at least 1 minute of neck-shoulder maintenance. The ratio isn't dramatic — many senior devs forced to slow down later in their careers lost on basic upkeep."
+    },
+    "agg": {
+      "title": "You don't have to win every day",
+      "text": "High productivity isn't 16 hours of grinding daily. It's knowing which 4 hours matter and which 12 should be recovery. The longest, most-productive careers belong to people who sacrifice locally to win globally. Sacrificing this hour is how you reclaim tomorrow."
+    },
+    "agh": {
+      "title": "The engineer's occupational disease catalog",
+      "text": "Cervical spondylosis, lumbar strain, carpal tunnel, dry-eye, hemorrhoids, GERD, chronic insomnia — these aren't punchlines, they're literally the most common entries on engineers' physical reports. Each comes from accumulated 'just one more hour'. From today, swap 'one more hour sitting' with 'one more minute standing'."
+    },
+    "agi": {
+      "title": "You're not a machine — and machines need cooling",
+      "text": "Servers have thermal throttling — overheat, drop frequency. Humans don't have such smart hardware protection; long-term overheating just breaks. This break is your manual throttling. Compared to a 'sudden bluescreen' — i.e., real illness — voluntarily lowering frequency a bit is much, much cheaper."
+    },
+    "agj": {
+      "title": "The 30 minutes after you log off",
+      "text": "The 30 minutes after work decide tonight's recovery quality. If you keep checking work chats, replying to email, thinking about bugs — your parasympathetic nervous system never gets in. If you give yourself a 'transition' — walk, music, sky — your body finally switches from fight-mode to rest. This midday rest is a rehearsal."
+    },
+    "agk": {
+      "title": "You don't have to prove anything to anyone",
+      "text": "Many people work overtime not because the work demands it, but because they want to be seen, to prove themselves. But your health doesn't show up on anyone's review. Stop once. Then go back and do what you're truly good at. What people remember isn't how long you sat — it's what you actually shipped."
+    },
+    "agl": {
+      "title": "The clinical effect of standing up",
+      "text": "A Mayo Clinic study found that office workers accumulating ≥2 hours of standing/walking daily had at least 25% lower cardiovascular disease incidence than continuous sitters. You don't need a treadmill — just 5 minutes per hour. One of the highest ROIs on time you'll ever spend on health."
+    },
+    "agm": {
+      "title": "Your code will become obsolete. Your body won't.",
+      "text": "Five years from now, the code you wrote today may have been refactored, replaced, or deleted — that's normal. But this body sticks with you for 5, 25, 50 years. Tilt the investment ratio slightly: a little less attachment to code, a little more investment in body."
+    },
+    "agn": {
+      "title": "Deep focus + active rest = real efficiency",
+      "text": "Pomodoro, 52/17 rule, deep work — every credible productivity method shares one ingredient: periodic complete rest. Not the 'fake rest' of switching to your phone, but real rest: leave the screen, move, let the brain unload. This time, please rest for real."
+    },
+    "ago": {
+      "title": "Re-understanding 'lazy'",
+      "text": "Feeling lazy, not wanting to move, not wanting to do anything — usually that's not a personality flaw. It's the body shouting: I'm overdrawn. Treat it as a signal, not a defect. Sleep when you should, rest when you should, stop when you should. Once charged, 'wanting to do things' returns naturally — that's actual self-discipline."
+    },
+    "agp": {
+      "title": "You're not at war with your body",
+      "text": "Many overworked people see the body as an enemy: 'why a headache now?' 'why a sore back again?' Reality: the body has been cooperating all along, just speaking in discomfort. Today, treat it as a partner: when it's sore, stretch; when it's tired, rest. It will reward you with longer stability."
+    },
+    "agq": {
+      "title": "Hair loss and stress",
+      "text": "Stress-related hair loss is a real issue for many young engineers. Chronically elevated cortisol pushes hair follicles into telogen phase early. The fix isn't a more expensive shampoo — it's stress reduction: regular sleep, exercise, active rest. Your hairline is silently witnessing how you work."
+    },
+    "agr": {
+      "title": "You're not alone in this fight",
+      "text": "At this very moment, millions of programmers around the world sit just like you. Some in Silicon Valley, some in Bangalore, some at the desk next to you. Same screens, same requirements, same hours, same bodies. You're not alone. This break is also a small shared victory."
+    },
+    "ags": {
+      "title": "Replace 'later' with 'now'",
+      "text": "Procrastinating health is the most expensive procrastination on Earth. The most expensive checkup, the best hospital — none beat the daily 5-minute habits: drink, stand, breathe. Start today. 'Later' usually means 'never'."
+    },
+    "agt": {
+      "title": "Quality vs quantity of work",
+      "text": "Eight high-quality hours > 14 low-quality hours. Every study confirms it. Few companies admit it openly. What you can do: protect your quality through active rest, raise output per unit time. That's the best anti-grind strategy — you're not doing less, you're doing higher-priced work."
+    },
+    "agu": {
+      "title": "You owe yourself a walk",
+      "text": "Walking is severely underrated. 7,000–8,000 steps a day covers most of what we know to do for chronic disease prevention — cardiovascular, metabolic, mood, cognition. You don't need to obsess over 10,000 — just don't do 1,500 days. This break, take the long way. Compounding interest for the body."
+    },
+    "agv": {
+      "title": "You're more tired than you know",
+      "text": "Psychology has 'fatigue insensitivity': the more tired you are, the less you notice, because cortisol masks the signal. By the time you 'feel tired', you've already been overloaded for a long time. That's why scheduled breaks beat 'rest by feeling' — that's why this app exists."
+    },
+    "agw": {
+      "title": "Productivity isn't a daily new record",
+      "text": "Output curves naturally have peaks and valleys. You're not a machine set to constant output — you're a person with rhythms. Today producing 20% less than yesterday isn't necessarily failure — it might just be recovery. Allow the dips, and the long-term curve actually rises."
+    },
+    "agx": {
+      "title": "Emotional labor is labor too",
+      "text": "Tech work isn't just code. It's communicating with PMs, negotiating with bosses, coordinating with teams, replying to endless messages — all emotional labor, draining attention and psychic energy. 'Not wanting to do anything' after work isn't fragility; the brain genuinely has no battery. Treat it as real depletion."
+    },
+    "agy": {
+      "title": "The opposite of work isn't rest — it's passivity",
+      "text": "Real rest is active: you decide to stop, you decide what moves, you decide what to look at. Passively scrolling shorts, scrolling feeds — that's not rest. The brain is still being driven by the stream. These 5 minutes, please do something actively: stand, look far, do a few moves."
+    },
+    "agz": {
+      "title": "Screen brightness isn't a health metric",
+      "text": "Even a perfectly tuned screen can't replace the eye's need for real depth. Eyes evolved to alternate near and far focus; long-term single distance stiffens ciliary muscles. This break: leave the screen, look at something 'real' — outside the window, far away, three-dimensional, natural."
+    },
+    "aha": {
+      "title": "Your neck isn't a cantilever beam",
+      "text": "In engineering, the longer the cantilever, the easier it breaks. When you bend your head, your neck is a cantilever holding a 5-kilogram skull — and it's been holding it for 8 hours. Solution: raise the screen so eye level meets the screen midpoint; tuck chin lightly; ears over shoulders. A simple geometric correction saves you a decade of neck rehab."
+    },
+    "ahb": {
+      "title": "How many times did you laugh today?",
+      "text": "Adults laugh on average 17 times a day — less than half what 6-year-olds do. Laughter activates the parasympathetic system, releases endorphins, lowers cortisol — free mental maintenance. This break, watch something that makes you laugh. Even silly photos of yourself."
+    },
+    "ahc": {
+      "title": "You're not sitting for your salary",
+      "text": "You think the extra 2 hours bring extra wages. But discount future neck pain, lumbar strain, vision loss back to today — those 2 hours are a net loss. You're not earning; you're borrowing health to plug a future hole. Worth it? Think honestly."
+    },
+    "ahd": {
+      "title": "Your body remembers every act of consistency",
+      "text": "Stand 1 minute today, stretch 30 seconds tomorrow, drink an extra cup the day after — each looks negligible. But the body is a long-term memory system. In 30 days it returns the favor: steadier energy, less ache, better sleep. Compounding, not pointless."
+    },
+    "ahe": {
+      "title": "Why does rest leave you more tired?",
+      "text": "If your 'rest' is doomscrolling for 2 hours, that's not rest — it's low-quality fatigue stacking. Restorative rest needs at least one of: physical relaxation, mental clearing, emotional flow. Eight hours of anxious dreams, you wake up tired. This break: pick one of those three and do it for real."
+    },
+    "ahf": {
+      "title": "You're not introverted — you're depleted",
+      "text": "Many people just want to be alone after work and wonder if they're 'antisocial' or 'cold'. More likely: your daytime attention and emotion got drained. Allow yourself quiet. Not every day needs socializing. When energy returns, 'wanting to see people' returns naturally — not a flaw, a rhythm."
+    },
+    "ahg": {
+      "title": "Write the anxiety down",
+      "text": "Anxiety in the head loops endlessly. Writing it down adds a break statement. Studies show that 3 minutes of writing down current worries significantly reduces cognitive interference at work. If your mind is loud today, this break, get a sheet of paper. Dump them out. Lighten the load."
+    },
+    "ahh": {
+      "title": "Standing up = restart",
+      "text": "When the computer hangs, restart often fixes it. Same for humans. Stuck on the same problem for 3 hours? Five minutes of standing is usually more effective than another 30 of staring. Not superstition — cognitive science. Body state changes force the brain to switch modes."
+    },
+    "ahi": {
+      "title": "Be a real person for a minute",
+      "text": "In offices, it's easy to become 'roles': employee, subordinate, lead. But you're not a role — you're a real person with a body, family, dreams. This break, briefly step out of the role: feel your pockets, think of someone you love, look at the sky. Then go back and play the role again."
+    },
+    "ahj": {
+      "title": "You don't always need to be producing",
+      "text": "The industrial-era wage system trained us to think 'time = output = value'. Creative work doesn't run that way. The best ideas appear during walks, showers, cooking — not while staring at the screen. Pausing now might be precisely the preparation for the next breakthrough."
+    },
+    "ahk": {
+      "title": "Your lower back is a load-bearing wall",
+      "text": "The lumbar spine carries most of your upper body's weight — the body's load-bearing wall. If it fails, the house comes down. Lowest-cost reinforcements: stand straight, avoid crossed legs, get up regularly. They look trivial — five years from now you'll be grateful."
+    },
+    "ahl": {
+      "title": "Your colleagues probably need this break too",
+      "text": "Look around. They're stuck in the same posture you are. When you stand up this time, you can ask: 'Anyone want to grab water with me?' That's not socializing-as-waste — it's collective maintenance. Studies show group breaks lower stress and improve team collaboration."
+    },
+    "ahm": {
+      "title": "You're not 'in demand', you're being consumed",
+      "text": "If a job has you on call 24/7, that's not 'being valued' — it's missing boundaries. Reserving distraction-free time is a basic professional survival skill. This 5 minutes, mute your notifications. Let the world wait. It won't collapse."
+    },
+    "ahn": {
+      "title": "Tech debt and body debt",
+      "text": "Tech debt accumulates and eventually drags down the whole project. Body debt does the same. Skipping a stretch, one more late night, skipping a glass of water — each invisible alone, but five years of accumulated interest is brutal. Only one repayment plan: start now, pay regularly."
+    },
+    "aho": {
+      "title": "What is 'just-right' work?",
+      "text": "Psychology calls it 'flow' — neither bored nor anxious, perfectly challenged. Highest happiness, highest output. But flow needs recovery: a real break roughly every 90 minutes lets the next round happen. This recovery is preparation for the next flow."
+    },
+    "ahp": {
+      "title": "Push the screen 30 cm further away",
+      "text": "The healthy eye-to-screen distance is 60–70 cm. Most people lean in unconsciously, dropping it to 30–40 cm — and eyes, neck, and shoulders all suffer. Coming back from this break, push the chair back, push the screen back. Not overcorrection. Just return."
+    },
+    "ahq": {
+      "title": "You don't have to reply instantly",
+      "text": "Messaging tools fooled us into 'instant reply = professional'. The actual pros leave themselves a buffer: don't reply in seconds, don't drop the ball either. This break, allow yourself not to check messages. The world won't stall because you're 5 minutes late — but you will if you're always online."
+    },
+    "ahr": {
+      "title": "Good moods are maintained",
+      "text": "Good moods rarely appear from nowhere. They're maintained by small acts: getting sunlight, hydration, real food, movement, seeing someone you care about. Bad moods often come from skipping these. This break, pick one and patch it in."
+    },
+    "ahs": {
+      "title": "Don't wait until 'after this is done'",
+      "text": "'After this is done I'll exercise.' 'After this is done I'll sleep more.' 'After this is done I'll get a checkup.' That 'done' never comes. The only window you can crack is in the now. This 5 minutes is that window."
+    },
+    "aht": {
+      "title": "Work isn't your identity",
+      "text": "Taking 'I'm an engineer at company X' too seriously makes you forget 'I'm a person who hurts and tires'. Lose the company, you're still you. Lose the body, you're not. This break, briefly step out of the professional identity."
+    },
+    "ahu": {
+      "title": "Did you thank your body today?",
+      "text": "Your heart has been beating since the day you were born. Lungs breathing, stomach digesting, kidneys filtering, eyes seeing, legs walking — no KPI, no bonus, never on strike. This break: hand on your chest, say thanks. Sounds corny — actually it works."
+    },
+    "ahv": {
+      "title": "Stress isn't the problem. Chronic stress is.",
+      "text": "Short-term stress sharpens you, raises output. The problem is when 'short' becomes 'chronic' — immunity drops, inflammation climbs, memory thins. The remedy is to insert 'recovery periods'. This break is one. Use it well."
+    },
+    "ahw": {
+      "title": "After deep work, deep rest",
+      "text": "You just finished a real focus session — give yourself a real recovery to match. Bad rest makes the next round harder; good rest makes it deeper. A simple symmetry: what you give the body, the body returns."
+    },
+    "ahx": {
+      "title": "Dim the screen, brighten the world",
+      "text": "Bright screens at night suppress melatonin and delay sleep. Tonight: lower brightness one notch, switch to warm tones (Night Shift). Sleep quality improves visibly — your brain's 'cleaners' get to do their job properly."
+    },
+    "ahy": {
+      "title": "Anxiety hates motion",
+      "text": "Anxiety's least favorite thing is movement. When you stand, breathe, walk, look far — anxiety scatters, because it needs you stuck to grow. A simple anti-hack: use the body's motion to break the mind's freeze."
+    },
+    "ahz": {
+      "title": "You're already doing something remarkable",
+      "text": "Just by reading this reminder during a busy workload — and considering whether to actually stand up — you've already beaten most people. Most just keep sitting on autopilot. Pausing on purpose is the elite version of self-discipline. This stand is a reward, not a chore."
+    },
+    "aia": {
+      "title": "The 30 minutes before logoff",
+      "text": "In the last half-hour of work, please don't start new tasks. Use it for three things: close out today, set up tomorrow, buffer for the body. Specifically: list tomorrow's 3 most important things, close all non-essential tabs, breathe deeply for 3 minutes. A quiet habit of high performers."
+    },
+    "aib": {
+      "title": "The truth about time management",
+      "text": "Time management isn't packing the calendar full — it's knowing what NOT to do. Reserving 'do nothing' gaps is an advanced skill. These 5 minutes are today's most valuable time-management experiment."
+    },
+    "aic": {
+      "title": "Split today into three",
+      "text": "High performers tend to split a day into 3 phases: morning focus (hardest things), afternoon execution (energy-spending things), late-day wrap-up (communication and sorting). One real rest between each. Closer to how the brain actually runs than 'grind 10 hours straight'. Try it."
+    },
+    "aid": {
+      "title": "The two faces of muscle memory",
+      "text": "Muscle memory is an engineer's favorite phrase — good muscle memory makes you type fast. But bad muscle memory forms too: hunched shoulders, tilted head, one shoulder up. One minute of reverse correction daily slowly overwrites the bad memory. Body remembers correct form."
+    },
+    "aie": {
+      "title": "Lonely work needs deliberate connection",
+      "text": "If you went 8 hours today without really 'speaking with someone' — only typing, screens, messages — the brain feels covert loneliness. Even sending a text to family, offering a colleague a snack, are meaningful connection. We're social animals, not terminals."
+    },
+    "aif": {
+      "title": "Standing up = oxygen for the brain",
+      "text": "Standing pumps blood harder; brain oxygen rises 10–15%. That's why some people prefer 'standing meetings' — heads really are clearer. If you got stuck, standing might be the fastest unsticker."
+    },
+    "aig": {
+      "title": "You don't need to improve every day",
+      "text": "The advice says 'improve 1% daily'. In real life, some days you can only hold the line — or even fall back a little. That's normal, not failure. Treat 'maintenance' as progress: keeping body, mood, relationships steady already beats most people."
+    },
+    "aih": {
+      "title": "Boundaries between work and life",
+      "text": "Still thinking about work after you log off? That's a missing boundary. Easiest way to build one: a fixed 'switch ritual' — close laptop, wash hands, change clothes, walk 5 minutes. The brain knows 'work is over'. This midday break is the same drill."
+    },
+    "aii": {
+      "title": "Your accomplishment list",
+      "text": "Spend 30 seconds reviewing what you finished today — even if it's a few emails, a small bug, one PR. The brain naturally focuses on what's left undone and ignores what's done. Counting completed items deliberately makes returning to work feel calmer."
+    },
+    "aij": {
+      "title": "The science of deep breathing",
+      "text": "Slow breathing (under 6 per minute) activates the vagus nerve — heart rate down, blood pressure stable, cortisol down. Not meditation magic, well-replicated physiology. Try now: 4 in, 6 out, 6 cycles. Within a minute you'll feel it."
+    },
+    "aik": {
+      "title": "You don't have to be the hero",
+      "text": "You don't have to 'carry' the team, 'fight' for the company, 'hold up' the family. Set the hero pressure down for a moment. Be an ordinary person who needs water and a stretch. Ordinary is fine. Ordinary is sustainable."
+    },
+    "ail": {
+      "title": "Hallways are more useful than you think",
+      "text": "The office hallway isn't just a corridor — it's a natural 'movement space'. Two laps = 100–200 steps, much better than zoning out at the desk. Stairs are even better. One floor up and down beats coffee."
+    },
+    "aim": {
+      "title": "Microexpressions decide today's energy",
+      "text": "Furrowed brow, clenched teeth, pursed lips — these microexpressions feed back into mood. Force your mouth corners up for 30 seconds and the nervous system actually reads 'mood improving'. Sounds absurd. Replicated by multiple studies. Try it this break."
+    },
+    "ain": {
+      "title": "The real cost of getting sick",
+      "text": "One bad cold: 3–7 days of zero output, hundreds to thousands in medical fees, months of weakened immunity. A serious neck flare: physical therapy, anxiety, weeks of disrupted work. Those are 'if not' costs of prevention. Every voluntary break flattens those invisible bills."
+    },
+    "aio": {
+      "title": "You're not 'squeezing it out'",
+      "text": "Treating work as something you 'squeeze out' makes you drier and drier. Try a different metaphor: work as something that 'flows' — you just clear the channel and let it pass. Active rest then isn't a burden — it's clearing the channel."
+    },
+    "aip": {
+      "title": "Survival philosophy in office buildings",
+      "text": "Surviving office life in big cities isn't easy: 1–2 hour commutes, takeout, 8 hours sitting, late-night work. What you can do isn't change all that — it's carve small spaces in every gap: a glass of water, a stretch, a deep breath. Stacked, those gaps become your survival strategy."
+    },
+    "aiq": {
+      "title": "Before changing a line of code, change posture once",
+      "text": "Next time you tackle a tricky piece of code, do one thing first: stand, stretch, deep breath. Let the body enter 'ready state'. Studies show that work starting from 'action readiness' enters flow over 30% faster than cold starts."
+    },
+    "air": {
+      "title": "Saying no is part of health",
+      "text": "Learning to say 'no' — to overtime, to last-minute requests, to time-eating meetings — is a core health skill. When the body isn't being demanded of infinitely, it can supply the energy you actually need. This break is a gentle 'no' to work."
+    },
+    "ais": {
+      "title": "Feet are the body's most-forgotten part",
+      "text": "All-day shoes, all-day pedals — feet are forgotten longest. Take shoes off. Curl toes, spread toes — 10 each. The feet are dense with neural reflex zones; activating them improves whole-body circulation. A quiet luxury."
+    },
+    "ait": {
+      "title": "Your job won't protect you",
+      "text": "However nice the company's checkup package, year-end bonus, or benefits — none of them carry your body's pain or illness for you. The only protection is the small things you do daily for yourself. This break isn't from the company — it's from you to you."
+    },
+    "aiu": {
+      "title": "You don't have to prove you're busy",
+      "text": "Modern workplaces have a strange culture: busy = important = valuable. So many subconsciously perform 'busy'. The actually-productive people understand the wisdom of 'looking unbusy': they focus, then truly rest, no theatre. This break, drop the 'must look busy' act."
+    },
+    "aiv": {
+      "title": "Exercise is a free antidepressant",
+      "text": "Thirty minutes of moderate exercise is roughly equivalent to first-line antidepressants for mild-to-moderate depression. Mechanism: BDNF promotion, serotonin and dopamine modulation. You don't need a gym — brisk walk, stairs, stretches. Today's movement is mood insurance."
+    },
+    "aiw": {
+      "title": "You've already done well enough",
+      "text": "Whatever today's progress, you've already done well enough. Not consolation — fact. You got up, went out, typed, solved, survived the commute. That beats every 'didn't even try' alternative. One minute of self-acknowledgment, then continue."
+    },
+    "aix": {
+      "title": "Your rest serves the team too",
+      "text": "If you think 'resting will hold the team back', you're wrong. Studies repeatedly show: regular breaks → steadier output, fewer errors, better collaboration. Code written by an exhausted person often costs others 3× the time to fix. You rest 5 minutes, the team nets 15."
+    },
+    "aiy": {
+      "title": "Neck and emotion are wired together",
+      "text": "Neck tension and anxiety often co-fire — they share neural pathways. So relaxing the neck releases anxiety too. Try now: drop shoulders fully, tuck chin lightly, breathe deep × 3. Mood improves faster than you'd expect."
+    },
+    "aiz": {
+      "title": "Do something useless",
+      "text": "Give yourself 1 minute today for something completely useless: watch a cloud, smell your coffee, say something to the dust on the windowsill. 'Useless' is the heart of recovery. A person who only does 'useful' will be drained by 'useful'."
+    },
+    "aja": {
+      "title": "The 30-second restart protocol",
+      "text": "Next time you're stuck for 5+ minutes, try the simplest protocol: stand, breathe deep × 3, look far for 20 seconds, sit. 30 seconds. Yes, that's it. Forces the brain to switch networks and re-sort clues. Far more effective than another 30 minutes of staring."
+    },
+    "ajb": {
+      "title": "How many times did you save yourself today?",
+      "text": "No one will really remember how many lines of code you wrote today — but your body remembers how many times you saved it. Every stand-up, every glass of water, every deep breath is insurance for future-you. This is one more."
+    },
+    "ajc": {
+      "title": "The adult's gift",
+      "text": "The biggest gift of being an adult is you finally get to decide how to treat yourself. No more parents, teachers, bosses telling you to 'just hold on a bit longer'. You're grown — you can decide 'now is the time to rest'. This break is a small kindness from you to grown-up-you."
+    },
+    "ajd": {
+      "title": "Everything great needs recovery",
+      "text": "Top athletes spend 30–50% of training plans on recovery, not training. Top chess players play less than 4–5 hours of competition daily. Top scientists force themselves to walk, nap, journal. Everyone who treats 'recovery' as part of the work eventually wins. So can you."
+    },
+    "aje": {
+      "title": "You don't need to feel guilty",
+      "text": "If 'I should be doing something more' creeps in during rest — that's workism guilt, not fact. You don't feel guilty about drinking water or blinking, so you shouldn't feel guilty about 5 minutes of rest. It's a baseline body right."
+    },
+    "ajf": {
+      "title": "The reality outside the screen",
+      "text": "The world inside the screen tricks us into thinking it's the whole world — but it's just one window curated by an algorithm. This break, leave the window for 5 minutes. Look at the real, three-dimensional, un-pushed reality. The tree outside, the cat downstairs, the hallway light — that's what your eyes actually want to see."
+    },
+    "ajg": {
+      "title": "Give today back to yourself",
+      "text": "Work occupied most of today, but a piece is yours. These 5 minutes, those 10, an hour tonight — those are the part you can hold. Take those 'small times' seriously. Stacked up, they're the proof you weren't fully swallowed by work."
+    },
+    "ajh": {
+      "title": "You're not a 24/7 service",
+      "text": "Servers need to be 24/7. You need 8 quality hours of work + 16 of recovery. If your job is pushing you toward 24/7, the problem isn't you — it's the configuration. People who can carve rest out of the system are the ones who last."
+    },
+    "aji": {
+      "title": "Re-understand 'enough'",
+      "text": "What you did today is already 'enough' — no more, no perfection, no surpassing required. 'Enough' isn't lowering the bar; it's accepting that humans have limits. This break is a sign of respect for 'enough'."
+    },
+    "ajj": {
+      "title": "One last reminder",
+      "text": "You've seen hundreds of these reminders. They all say roughly the same thing: stand, drink, stretch, look far, breathe deep. Repetition isn't pointless — your body needs these every day. This time again: stand, drink, stretch, look far, breathe deep. Then go back, seriously and proudly, to the work you're doing. You deserve all of this."
     }
   }
 }
