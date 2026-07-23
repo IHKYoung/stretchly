@@ -1,8 +1,8 @@
 # TID-20260723-release-014-github-publish Evidence
 
 - Scope: 0.1.4 本地冻结、macOS arm64 构建、git/GitHub 发布与官网下载契约。
-- Current state: REVIEW。
-- Known gate: 本地 commit、远端 push/tag、GitHub Release 与下载 hash 尚待执行；GitHub CLI 认证已恢复。
+- Current state: DONE。
+- Known gate: none。
 - Local source evidence:
   - 根/desktop/Tauri/Cargo 四组版本真源均为 `0.1.4`。
   - site pinned URL 已更新为 `v0.1.4/Pauza_0.1.4_aarch64.dmg`。
@@ -30,5 +30,14 @@
   - 两个远端均无 `v0.1.4` tag。
   - GitHub latest release 仍为 `v0.1.3`，资产为 `Pauza_0.1.3_aarch64.dmg`。
   - `gh auth status`: PASS，账号 `IHKYoung`，scope 包含 `repo`。
-- Release evidence: 待认证、commit/push/tag/release 与远端下载 hash 核验完成后填写。
-- Result Summary: 本地产物与门禁 PASS；尚未达到 GitHub 发布完成条件。
+- Release evidence:
+  - Main commit: `9cef185ad147d3162803a671de63fdbe31954fca`。
+  - Audit-only commit: `fe1da9acda794b58472ad200004390bf7f8c5e69`。
+  - `origin/baseline` 已 fast-forward 到 `fe1da9a`；`pauza/baseline` 未修改。
+  - 两个远端的 annotated `v0.1.4` tag 均 peel 到 `fe1da9a`。
+  - Release URL: `https://github.com/IHKYoung/Pauza/releases/tag/v0.1.4`。
+  - Release state: latest、非 draft、非 prerelease，published at `2026-07-23T14:50:20Z`。
+  - Asset state: `uploaded`，size=`19,919,577`，GitHub digest=`sha256:20c4be6cbe3d8f4897e4b99ef07c5a4be701a7ba6b6f5d9d3d1c4658d5acea10`，与本地值一致。
+  - 第一次 `curl` 下载流复核因接收超时失败并产生空流 hash，未计为成功。
+  - 第二次 `gh release download` 完成真实文件下载：size=`19,919,577`，SHA-256=`20c4be6cbe3d8f4897e4b99ef07c5a4be701a7ba6b6f5d9d3d1c4658d5acea10`，与本地完全一致；下载文件 `hdiutil verify` VALID，`stapler validate` PASS。
+- Result Summary: PASS。源码/tag/版本说明、签名公证 DMG、GitHub latest release、资产元数据与实际下载内容全部对齐 0.1.4。

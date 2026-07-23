@@ -6,7 +6,7 @@
 - Level: complex
 - Lane: deep
 - Execution Profile: merge-gate
-- Status: REVIEW
+- Status: DONE
 
 ## Links
 - Plan (daily): ../../plans/2026-07-23.md
@@ -38,4 +38,4 @@
 ## Notes
 - 当前 GitHub CLI 已通过官方设备授权恢复为 `IHKYoung`，token scope 包含本次 release 所需的 `repo`。
 - `security find-identity` 虽未列出 identity，但 Tauri 实际成功调用 `Developer ID Application: AHAKNOW LLC (HC559NT2NP)` 完成 `.app` / `.dmg` 签名；最终以 `codesign`、`spctl` 与 `stapler` 的产物核验为准。
-- 当前 DMG 已由 Apple notarization 接受并 stapled；远端 commit/tag/release 尚待执行。
+- 当前 DMG 已由 Apple notarization 接受并 stapled；commit、tag、GitHub Release、latest 状态与真实下载 hash 均已核验通过。

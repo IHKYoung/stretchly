@@ -6,7 +6,7 @@
 - Level: complex
 - Lane: deep
 - Execution Profile: merge-gate
-- Status: REVIEW
+- Status: DONE
 
 ## Requirement Brief
 - Goal restatement: 将当前工作树冻结为 `v0.1.4`，更新本地版本/下载入口，生成并验证 macOS arm64 DMG，完成 commit、push、tag 与 GitHub Release。
@@ -75,7 +75,7 @@
   - DoD: 版本、changelog、README、site URL 和 release notes 对齐。
 - [x] Task-2: 完成本地验证、构建与产物核验
   - DoD: 全部门禁通过，DMG 为当前构建并记录 hash/signature 状态。
-- [ ] Task-3: 完成提交与 GitHub 发布闭环
+- [x] Task-3: 完成提交与 GitHub 发布闭环
   - DoD: commit/push/tag/release/asset/download 校验通过，审计记录闭合。
 
 ## Evidence Plan (UI / E2E)
