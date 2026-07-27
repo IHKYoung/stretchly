@@ -6,6 +6,10 @@ export type BreakIdeaEntry = {
   title: string | null
   text: string
 }
+
+export const LONG_BREAK_PROMPT_HOLD_MS = 60_000
+export const LONG_BREAK_PROMPT_SWITCH_GAP_MS = 520
+
 type BreakIdeaRawEntry = {
   title?: string
   text: string

@@ -1,8 +1,13 @@
 import { invoke } from '@tauri-apps/api/core'
+import { ArrowLeft, ChevronRight } from 'lucide-react'
 import { useEffect, useEffectEvent, useRef, useState, type ChangeEvent, type ReactNode } from 'react'
 
 import { Button } from '@/components/ui/button'
-import { rotateBreakPromptEntries } from '@/lib/break-ideas'
+import {
+  LONG_BREAK_PROMPT_HOLD_MS,
+  LONG_BREAK_PROMPT_SWITCH_GAP_MS,
+  rotateBreakPromptEntries,
+} from '@/lib/break-ideas'
 import { splitBreakPromptLines } from '@/lib/break-copy-layout'
 import {
   Select,
@@ -31,8 +36,11 @@ import {
   isNumericDraft,
   LONGBREAK_DURATION_PRESETS,
   LONGBREAK_EVERY_PRESETS,
+  matchRhythmProfile,
   MICROBREAK_DURATION_PRESETS,
   MICROBREAK_INTERVAL_PRESETS,
+  rhythmProfilePatch,
+  type RhythmProfileId,
 } from '@/lib/settings-controls'
 import { cn } from '@/lib/utils'
 import {
@@ -49,7 +57,13 @@ import {
 type AppExclusionRule = 'pause' | 'resume'
 type ReminderMode = 'smart' | 'forced'
 type TargetScreen = 'primary' | 'cursor'
-type SettingsCategory = 'schedule' | 'preferences'
+type SettingsRoute =
+  | 'overview'
+  | 'rhythm'
+  | 'reminders'
+  | 'appearance'
+  | 'automation'
+  | 'system'
 type PreviewRuntimeMode = 'default' | 'paused' | 'focus'
 
 const PREVIEW_BREAK_OFFSET_MS = 6_000
@@ -158,7 +172,7 @@ function defaultSettings(): PauzaSettings {
   return {
     language: 'zh-CN',
     microbreakEnabled: true,
-    microbreakIntervalMinutes: 10,
+    microbreakIntervalMinutes: 20,
     microbreakDurationSeconds: 20,
     microbreakNotificationEnabled: true,
     microbreakNotificationSeconds: 10,
@@ -644,6 +658,79 @@ function SettingsRow({
   )
 }
 
+function SettingsLinkRow({
+  label,
+  detail,
+  onClick,
+}: {
+  label: string
+  detail: string
+  onClick: () => void
+}) {
+  return (
+    <button
+      type="button"
+      className="flex min-h-[52px] w-full items-center gap-4 px-4 py-2.5 text-left transition-colors hover:bg-black/[0.025] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-ring"
+      onClick={onClick}
+    >
+      <div className="min-w-0 flex-1">
+        <p className="text-[13px] text-foreground">{label}</p>
+        <p className="mt-0.5 truncate text-[11px] leading-4 text-muted-foreground">{detail}</p>
+      </div>
+      <ChevronRight className="h-4 w-4 shrink-0 text-muted-foreground/70" aria-hidden="true" />
+    </button>
+  )
+}
+
+function RhythmProfilePicker({
+  value,
+  options,
+  ariaLabel,
+  customLabel,
+  onChange,
+}: {
+  value: RhythmProfileId | 'custom'
+  options: Array<{ value: RhythmProfileId; label: string }>
+  ariaLabel: string
+  customLabel: string
+  onChange: (next: RhythmProfileId) => void
+}) {
+  return (
+    <div>
+      <div
+        role="radiogroup"
+        aria-label={ariaLabel}
+        className="grid grid-cols-3 gap-1 rounded-lg bg-black/[0.05] p-1"
+      >
+        {options.map((option) => {
+          const active = option.value === value
+
+          return (
+            <button
+              key={option.value}
+              type="button"
+              role="radio"
+              aria-checked={active}
+              className={cn(
+                'min-h-8 rounded-md px-2 py-1.5 text-[12px] font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring',
+                active
+                  ? 'bg-white text-foreground shadow-[0_1px_2px_rgba(0,0,0,0.06),0_0_0_0.5px_rgba(0,0,0,0.04)]'
+                  : 'text-muted-foreground hover:text-foreground',
+              )}
+              onClick={() => onChange(option.value)}
+            >
+              {option.label}
+            </button>
+          )
+        })}
+      </div>
+      {value === 'custom' ? (
+        <p className="mt-2 text-[11px] font-medium text-foreground">{customLabel}</p>
+      ) : null}
+    </div>
+  )
+}
+
 type BreakPromptCopy = {
   eyebrow: string
   title: string
@@ -651,9 +738,6 @@ type BreakPromptCopy = {
 }
 
 type BreakPromptTypingPhase = 'idle' | 'title' | 'body'
-
-const BREAK_PROMPT_HOLD_MS = 30_000
-const BREAK_PROMPT_SWITCH_GAP_MS = 520
 
 function getBreakTypewriterDelay(char: string, phase: Exclude<BreakPromptTypingPhase, 'idle'>) {
   if (char === '\n') {
@@ -1032,12 +1116,16 @@ function BreakWindow({
           return
         }
 
-        await pause(BREAK_PROMPT_HOLD_MS)
+        await pause(LONG_BREAK_PROMPT_HOLD_MS)
         if (cancelled) {
           return
         }
 
-        await pause(BREAK_PROMPT_SWITCH_GAP_MS)
+        setAnimatedPrompt({ eyebrow: '', title: '', body: '' })
+        await pause(LONG_BREAK_PROMPT_SWITCH_GAP_MS)
+        if (cancelled) {
+          return
+        }
       }
     })()
 
@@ -1261,7 +1349,7 @@ function App() {
   const [formRevision, setFormRevision] = useState(0)
   const [saveRetryToken, setSaveRetryToken] = useState(0)
   const [error, setError] = useState<string | null>(null)
-  const [activeCategory, setActiveCategory] = useState<SettingsCategory>('schedule')
+  const [settingsRoute, setSettingsRoute] = useState<SettingsRoute>('overview')
   const customBackdropInputRef = useRef<HTMLInputElement | null>(null)
   const preBreakSoundTimerRef = useRef<number | null>(null)
   const [runningApps, setRunningApps] = useState<string[] | null>(null)
@@ -1539,13 +1627,6 @@ function App() {
     snapshot.pausedIndefinitely ||
     (snapshot.pauseUntilMs !== null && snapshot.pauseUntilMs > now)
   const focusActive = !pauseActive && snapshot.focusUntilMs !== null && snapshot.focusUntilMs > now
-  const resetActionDisabled = busyAction !== null || snapshot.currentBreak?.strictMode === true
-  const resetPreviewSchedule = (current: DesktopSnapshot): DesktopSnapshot => ({
-    ...current,
-    ...previewNextBreak(current.settings),
-    currentBreak: null,
-    lastAction: t(language, 'ui.previewAction.reset'),
-  })
   const restorePreviewRuntime = (
     current: DesktopSnapshot,
     lastAction: string,
@@ -1561,17 +1642,197 @@ function App() {
     lastAction,
   })
 
-  const categoryItems: Array<{ id: SettingsCategory; title: string }> = [
-    { id: 'schedule', title: t(language, 'ui.schedule') },
-    { id: 'preferences', title: t(language, 'ui.preferences') },
-  ]
+  const rhythmProfile = matchRhythmProfile(form)
+  const longBreakIntervalMinutes = form.microbreakIntervalMinutes * form.longBreakEvery
+  const rhythmSummary = form.microbreakEnabled && form.longBreakEnabled
+    ? t(language, 'ui.rhythmSummary', {
+        microInterval: form.microbreakIntervalMinutes,
+        microDuration: form.microbreakDurationSeconds,
+        longInterval: longBreakIntervalMinutes,
+        longDuration: form.longBreakDurationMinutes,
+      })
+    : form.microbreakEnabled
+      ? t(language, 'ui.rhythmMicroOnlySummary', {
+          microInterval: form.microbreakIntervalMinutes,
+          microDuration: form.microbreakDurationSeconds,
+        })
+      : form.longBreakEnabled
+        ? t(language, 'ui.rhythmLongOnlySummary', {
+            longInterval: longBreakIntervalMinutes,
+            longDuration: form.longBreakDurationMinutes,
+          })
+        : t(language, 'ui.rhythmOffSummary')
+  const reminderSummary = form.reminderMode === 'smart'
+    ? t(language, 'ui.reminderSummarySmart')
+    : t(language, 'ui.reminderSummaryForced')
+  const backdropLabel = t(
+    language,
+    BREAK_BACKDROP_OPTIONS.find(({ value }) => value === form.breakBackdrop)?.labelKey ??
+      'ui.breakBackdropPaper',
+  )
+  const sharedEndSound = form.microbreakEndSound === form.longBreakEndSound
+    ? BREAK_SOUND_OPTIONS.find(({ value }) => value === form.microbreakEndSound)
+    : null
+  const soundLabel = form.breakSoundVolume === 0
+    ? t(language, 'ui.breakSoundSilence')
+    : sharedEndSound
+      ? t(language, sharedEndSound.labelKey)
+      : t(language, 'ui.soundCustom')
+  const soundSummary = t(language, 'ui.soundSummary', {
+    sound: soundLabel,
+    volume: form.breakSoundVolume,
+  })
+  const automationSummary = form.naturalBreaks && form.monitorDnd
+    ? t(language, 'ui.automationBoth')
+    : form.naturalBreaks
+      ? t(language, 'ui.automationNatural')
+      : form.monitorDnd
+        ? t(language, 'ui.automationDnd')
+        : t(language, 'ui.automationOff')
+  const routeTitles: Record<SettingsRoute, string> = {
+    overview: t(language, 'ui.settings'),
+    rhythm: t(language, 'ui.detailRhythm'),
+    reminders: t(language, 'ui.detailReminders'),
+    appearance: t(language, 'ui.detailAppearance'),
+    automation: t(language, 'ui.detailAutomation'),
+    system: t(language, 'ui.detailSystem'),
+  }
 
-  const renderActiveCategory = () => {
-    switch (activeCategory) {
-      case 'preferences':
+  const goBackInSettings = () => {
+    setSettingsRoute('overview')
+  }
+
+  const renderSettingsRoute = () => {
+    switch (settingsRoute) {
+      case 'overview':
         return (
           <>
-            <input
+            <div>
+              <SectionLabel>{t(language, 'ui.rhythmProfile')}</SectionLabel>
+              <SettingsCard>
+                <div className="px-4 py-3.5">
+                  <RhythmProfilePicker
+                    value={rhythmProfile}
+                    ariaLabel={t(language, 'ui.rhythmProfile')}
+                    options={[
+                      { value: 'gentle', label: t(language, 'ui.rhythmProfileGentle') },
+                      {
+                        value: 'balanced',
+                        label: `${t(language, 'ui.rhythmProfileBalanced')} · ${t(language, 'ui.recommended')}`,
+                      },
+                      { value: 'active', label: t(language, 'ui.rhythmProfileActive') },
+                    ]}
+                    customLabel={t(language, 'ui.rhythmProfileCustom')}
+                    onChange={(next) => updateFormPatch(rhythmProfilePatch(next))}
+                  />
+                  <p className="mt-3 text-[12px] leading-5 text-muted-foreground">{rhythmSummary}</p>
+                  {rhythmProfile === 'custom' ? (
+                    <p className="mt-1.5 text-[11px] leading-4 text-muted-foreground">
+                      {t(language, 'ui.customRhythmNotice')}
+                    </p>
+                  ) : null}
+                </div>
+                <SettingsLinkRow
+                  label={t(language, 'ui.detailRhythm')}
+                  detail={t(language, 'ui.detailRhythmHint')}
+                  onClick={() => setSettingsRoute('rhythm')}
+                />
+                <SettingsLinkRow
+                  label={t(language, 'ui.detailReminders')}
+                  detail={reminderSummary}
+                  onClick={() => setSettingsRoute('reminders')}
+                />
+              </SettingsCard>
+            </div>
+
+            <div>
+              <SectionLabel>{t(language, 'ui.commonSettings')}</SectionLabel>
+              <SettingsCard>
+                <SettingsRow label={t(language, 'ui.breakDisplayMode')}>
+                  <SegmentedControl
+                    ariaLabel={t(language, 'ui.breakDisplayMode')}
+                    value={form.fullscreen ? 'fullscreen' : 'window'}
+                    options={[
+                      { value: 'window', label: t(language, 'ui.window') },
+                      { value: 'fullscreen', label: t(language, 'ui.fullscreen') },
+                    ]}
+                    onChange={(next) => updateForm('fullscreen', next === 'fullscreen')}
+                  />
+                </SettingsRow>
+                <SettingsLinkRow
+                  label={t(language, 'ui.detailAppearance')}
+                  detail={`${form.fullscreen ? t(language, 'ui.fullscreen') : t(language, 'ui.window')} · ${backdropLabel} · ${soundSummary}`}
+                  onClick={() => setSettingsRoute('appearance')}
+                />
+                <SettingsRow label={t(language, 'ui.launchOnLogin')}>
+                  <Switch
+                    checked={snapshot.autostartEnabled}
+                    onCheckedChange={() =>
+                      void runCommand(
+                        'toggle autostart',
+                        'toggle_autostart',
+                        undefined,
+                        (current) => ({
+                          ...current,
+                          autostartEnabled: !current.autostartEnabled,
+                          lastAction: current.autostartEnabled
+                            ? t(language, 'ui.previewAction.autostartOff')
+                            : t(language, 'ui.previewAction.autostartOn'),
+                        }),
+                      )
+                    }
+                    aria-label={t(language, 'ui.launchOnLogin')}
+                  />
+                </SettingsRow>
+                <SettingsRow label={t(language, 'ui.language')}>
+                  <Select
+                    value={form.language}
+                    onValueChange={(next) => updateForm('language', next as AppLanguage)}
+                  >
+                    <SelectTrigger className="h-7 min-w-[210px] text-[12px]">
+                      <SelectValue />
+                    </SelectTrigger>
+                    <SelectContent className="max-h-[320px]">
+                      {DESKTOP_LANGUAGE_CONFIGS.map((config) => (
+                        <SelectItem key={config.code} value={config.code}>
+                          {config.nativeLabel === config.label
+                            ? config.nativeLabel
+                            : `${config.nativeLabel} · ${config.label}`}
+                        </SelectItem>
+                      ))}
+                    </SelectContent>
+                  </Select>
+                </SettingsRow>
+              </SettingsCard>
+            </div>
+
+            <div>
+              <SectionLabel>{t(language, 'ui.moreSettings')}</SectionLabel>
+              <SettingsCard>
+                <SettingsLinkRow
+                  label={t(language, 'ui.detailAutomation')}
+                  detail={automationSummary}
+                  onClick={() => setSettingsRoute('automation')}
+                />
+                <SettingsLinkRow
+                  label={t(language, 'ui.detailSystem')}
+                  detail={`${snapshot.autostartEnabled ? t(language, 'ui.enabled') : t(language, 'ui.disabled')} · ${languageConfig.nativeLabel}`}
+                  onClick={() => setSettingsRoute('system')}
+                />
+              </SettingsCard>
+            </div>
+          </>
+        )
+
+      case 'appearance':
+      case 'reminders':
+      case 'automation':
+      case 'system':
+        return (
+          <>
+            {settingsRoute === 'appearance' ? (
+              <>
+                <input
               ref={customBackdropInputRef}
               type="file"
               accept="image/png,image/jpeg,image/webp,image/avif,image/gif"
@@ -1832,10 +2093,14 @@ function App() {
                   />
                 </SettingsRow>
               </SettingsCard>
-            </div>
+                </div>
 
+              </>
+            ) : null}
 
-            <div>
+            {settingsRoute === 'reminders' ? (
+              <>
+                <div>
               <SectionLabel>{t(language, 'ui.reminderMode')}</SectionLabel>
               <SettingsCard>
                 <SettingsRow
@@ -1853,9 +2118,81 @@ function App() {
                   />
                 </SettingsRow>
               </SettingsCard>
-            </div>
+                </div>
 
-            <div>
+                <div>
+                  <SectionLabel>{t(language, 'ui.postpone')}</SectionLabel>
+                  <SettingsCard>
+                    <SettingsRow label={t(language, 'ui.microbreaks')}>
+                      <CompactNumber
+                        value={form.microbreakPostponeMinutes}
+                        min={1}
+                        max={30}
+                        suffix={t(language, 'ui.suffix.minutes')}
+                        onChange={(value) => updateForm('microbreakPostponeMinutes', value)}
+                      />
+                      <Switch
+                        checked={form.microbreakAllowPostpone}
+                        onCheckedChange={(next) => updateForm('microbreakAllowPostpone', next)}
+                        aria-label={t(language, 'ui.microbreaks')}
+                      />
+                    </SettingsRow>
+                    <SettingsRow label={t(language, 'ui.longBreaks')}>
+                      <CompactNumber
+                        value={form.longBreakPostponeMinutes}
+                        min={1}
+                        max={60}
+                        suffix={t(language, 'ui.suffix.minutes')}
+                        onChange={(value) => updateForm('longBreakPostponeMinutes', value)}
+                      />
+                      <Switch
+                        checked={form.longBreakAllowPostpone}
+                        onCheckedChange={(next) => updateForm('longBreakAllowPostpone', next)}
+                        aria-label={t(language, 'ui.longBreaks')}
+                      />
+                    </SettingsRow>
+                  </SettingsCard>
+                </div>
+
+                <div>
+                  <SectionLabel>{t(language, 'ui.preBreakNotifications')}</SectionLabel>
+                  <SettingsCard>
+                    <SettingsRow label={t(language, 'ui.microbreaks')}>
+                      <CompactNumber
+                        value={form.microbreakNotificationSeconds}
+                        min={5}
+                        max={300}
+                        suffix={t(language, 'ui.suffix.secondsBefore')}
+                        onChange={(value) => updateForm('microbreakNotificationSeconds', value)}
+                      />
+                      <Switch
+                        checked={form.microbreakNotificationEnabled}
+                        onCheckedChange={(next) => updateForm('microbreakNotificationEnabled', next)}
+                        aria-label={t(language, 'ui.microbreaks')}
+                      />
+                    </SettingsRow>
+                    <SettingsRow label={t(language, 'ui.longBreaks')}>
+                      <CompactNumber
+                        value={form.longBreakNotificationSeconds}
+                        min={5}
+                        max={600}
+                        suffix={t(language, 'ui.suffix.secondsBefore')}
+                        onChange={(value) => updateForm('longBreakNotificationSeconds', value)}
+                      />
+                      <Switch
+                        checked={form.longBreakNotificationEnabled}
+                        onCheckedChange={(next) => updateForm('longBreakNotificationEnabled', next)}
+                        aria-label={t(language, 'ui.longBreaks')}
+                      />
+                    </SettingsRow>
+                  </SettingsCard>
+                </div>
+              </>
+            ) : null}
+
+            {settingsRoute === 'automation' ? (
+              <>
+                <div>
               <SectionLabel>{t(language, 'ui.smartPause')}</SectionLabel>
               <SettingsCard>
                 <SettingsRow
@@ -1886,9 +2223,9 @@ function App() {
                   />
                 </SettingsRow>
               </SettingsCard>
-            </div>
+                </div>
 
-            <div>
+                <div>
               <SectionLabel>{t(language, 'ui.appExclusions')}</SectionLabel>
               <SettingsCard>
                 <SettingsRow
@@ -1993,9 +2330,12 @@ function App() {
                   />
                 </div>
               </SettingsCard>
-            </div>
+                </div>
+              </>
+            ) : null}
 
-            <div>
+            {settingsRoute === 'system' ? (
+              <div>
               <SectionLabel>{t(language, 'ui.general')}</SectionLabel>
               <SettingsCard>
                 <SettingsRow label={t(language, 'ui.launchOnLogin')}>
@@ -2045,41 +2385,14 @@ function App() {
                   </Select>
                 </SettingsRow>
               </SettingsCard>
-            </div>
+              </div>
+            ) : null}
           </>
         )
 
-      case 'schedule':
-      default:
+      case 'rhythm':
         return (
           <>
-            <div>
-              <SectionLabel>{t(language, 'ui.scheduleControl')}</SectionLabel>
-              <SettingsCard>
-                <SettingsRow
-                  label={t(language, 'runtime.tray.reset')}
-                  detail={t(language, 'ui.resetScheduleHint')}
-                >
-                  <Button
-                    type="button"
-                    variant="secondary"
-                    className="h-7 px-3 text-[12px]"
-                    disabled={resetActionDisabled}
-                    onClick={() =>
-                      void runCommand(
-                        'reset schedule',
-                        'reset_breaks',
-                        undefined,
-                        resetPreviewSchedule,
-                      )
-                    }
-                  >
-                    {t(language, 'runtime.tray.reset')}
-                  </Button>
-                </SettingsRow>
-              </SettingsCard>
-            </div>
-
             <SchedulePresetCard
               label={t(language, 'ui.microbreaks')}
               switchLabel={t(language, 'ui.microbreaks')}
@@ -2135,102 +2448,38 @@ function App() {
                 onChange={(value) => updateForm('longBreakDurationMinutes', value)}
               />
             </SchedulePresetCard>
-
-            <div>
-              <SectionLabel>{t(language, 'ui.postpone')}</SectionLabel>
-              <SettingsCard>
-                <SettingsRow label={t(language, 'ui.microbreaks')}>
-                  <CompactNumber
-                    value={form.microbreakPostponeMinutes}
-                    min={1}
-                    max={30}
-                    suffix={t(language, 'ui.suffix.minutes')}
-                    onChange={(value) => updateForm('microbreakPostponeMinutes', value)}
-                  />
-                  <Switch
-                    checked={form.microbreakAllowPostpone}
-                    onCheckedChange={(next) => updateForm('microbreakAllowPostpone', next)}
-                    aria-label={t(language, 'ui.microbreaks')}
-                  />
-                </SettingsRow>
-                <SettingsRow label={t(language, 'ui.longBreaks')}>
-                  <CompactNumber
-                    value={form.longBreakPostponeMinutes}
-                    min={1}
-                    max={60}
-                    suffix={t(language, 'ui.suffix.minutes')}
-                    onChange={(value) => updateForm('longBreakPostponeMinutes', value)}
-                  />
-                  <Switch
-                    checked={form.longBreakAllowPostpone}
-                    onCheckedChange={(next) => updateForm('longBreakAllowPostpone', next)}
-                    aria-label={t(language, 'ui.longBreaks')}
-                  />
-                </SettingsRow>
-              </SettingsCard>
-            </div>
-
-            <div>
-              <SectionLabel>{t(language, 'ui.preBreakNotifications')}</SectionLabel>
-              <p className="mb-2 px-1 text-[11.5px] leading-relaxed text-muted-foreground">
-                {t(language, 'ui.preBreakSoundHint')}
-              </p>
-              <SettingsCard>
-                <SettingsRow label={t(language, 'ui.microbreaks')}>
-                  <CompactNumber
-                    value={form.microbreakNotificationSeconds}
-                    min={5}
-                    max={300}
-                    suffix={t(language, 'ui.suffix.secondsBefore')}
-                    onChange={(value) => updateForm('microbreakNotificationSeconds', value)}
-                  />
-                  <Switch
-                    checked={form.microbreakNotificationEnabled}
-                    onCheckedChange={(next) => updateForm('microbreakNotificationEnabled', next)}
-                    aria-label={t(language, 'ui.microbreaks')}
-                  />
-                </SettingsRow>
-                <SettingsRow label={t(language, 'ui.longBreaks')}>
-                  <CompactNumber
-                    value={form.longBreakNotificationSeconds}
-                    min={5}
-                    max={600}
-                    suffix={t(language, 'ui.suffix.secondsBefore')}
-                    onChange={(value) => updateForm('longBreakNotificationSeconds', value)}
-                  />
-                  <Switch
-                    checked={form.longBreakNotificationEnabled}
-                    onCheckedChange={(next) => updateForm('longBreakNotificationEnabled', next)}
-                    aria-label={t(language, 'ui.longBreaks')}
-                  />
-                </SettingsRow>
-              </SettingsCard>
-            </div>
           </>
         )
+
+      default:
+        return null
     }
   }
 
   return (
     <main className="flex h-screen flex-col select-none bg-background">
-      <header className="shrink-0 px-5 pb-3 pt-4">
-        <nav className="flex items-center justify-center gap-1">
-          {categoryItems.map((item) => (
+      <header className="grid h-14 shrink-0 grid-cols-[32px_1fr_32px] items-center px-5">
+        <div>
+          {settingsRoute !== 'overview' ? (
             <button
-              key={item.id}
               type="button"
-              onClick={() => setActiveCategory(item.id)}
-              className={cn(
-                'rounded-full px-3.5 py-1.5 text-[13px] font-medium transition-all',
-                item.id === activeCategory
-                  ? 'bg-white text-foreground shadow-[0_1px_3px_rgba(0,0,0,0.08),0_0_0_0.5px_rgba(0,0,0,0.04)]'
-                  : 'text-muted-foreground hover:text-foreground',
-              )}
+              title={t(language, 'ui.back')}
+              aria-label={t(language, 'ui.back')}
+              className="flex h-8 w-8 items-center justify-center rounded-md text-muted-foreground transition-colors hover:bg-black/[0.05] hover:text-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring"
+              onClick={goBackInSettings}
             >
-              {item.title}
+              <ArrowLeft className="h-4 w-4" aria-hidden="true" />
             </button>
-          ))}
-        </nav>
+          ) : null}
+        </div>
+        <h1 className="text-center text-[14px] font-semibold text-foreground">
+          {routeTitles[settingsRoute]}
+        </h1>
+        <div className="flex h-8 items-center justify-end" aria-live="polite">
+          {busyAction === 'save settings' ? (
+            <span className="h-1.5 w-1.5 rounded-full bg-foreground/45" title={t(language, 'ui.saving')} />
+          ) : null}
+        </div>
       </header>
 
       {error ? (
@@ -2289,7 +2538,7 @@ function App() {
             </div>
           ) : null}
 
-          {renderActiveCategory()}
+          {renderSettingsRoute()}
         </div>
       </div>
     </main>

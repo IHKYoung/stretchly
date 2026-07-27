@@ -34,4 +34,19 @@ describe('Translations files', () => {
       }).not.toThrow()
     })
   })
+
+  it('uses paired microbreak and full-break terminology in primary UI locales', () => {
+    const zhCN = JSON.parse(readFileSync(join(localeJsonDirectory, 'zh-CN.json'), 'utf8'))
+    const zhTW = JSON.parse(readFileSync(join(localeJsonDirectory, 'zh-TW.json'), 'utf8'))
+    const en = JSON.parse(readFileSync(join(localeJsonDirectory, 'en.json'), 'utf8'))
+
+    expect(zhCN.ui.longBreaks).toBe('完整休息')
+    expect(zhCN.ui.status.longBreak).toBe('完整休息')
+    expect(zhCN.runtime.break.long.title).toBe('完整休息')
+    expect(zhCN.runtime.tray.skipLongBreak).toBe('完整休息')
+    expect(zhTW.ui.longBreaks).toBe('完整休息')
+    expect(zhTW.ui.status.longBreak).toBe('完整休息')
+    expect(en.ui.longBreaks).toBe('Full breaks')
+    expect(en.runtime.break.long.title).toBe('Full break')
+  })
 })

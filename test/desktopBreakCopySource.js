@@ -6,6 +6,7 @@ const repoRoot = join(__dirname, '..')
 const messagesDirectory = join(repoRoot, 'apps/desktop/src/locales/messages')
 const breakIdeasDirectory = join(repoRoot, 'apps/desktop/src/locales/break-ideas/messages')
 const breakIdeasRegistryPath = join(repoRoot, 'apps/desktop/src/locales/break-ideas/registry.generated.json')
+const appSource = readFileSync(join(repoRoot, 'apps/desktop/src/App.tsx'), 'utf8')
 
 function readMessages (file) {
   const filePath = join(messagesDirectory, file)
@@ -18,6 +19,22 @@ function readBreakIdeas (file) {
 }
 
 describe('Desktop break copy source of truth', () => {
+  it('starts the long-break hold only after the complete prompt is typed', () => {
+    const bodyTypedIndex = appSource.indexOf("await typeField('body', nextPrompt.body)")
+    const holdIndex = appSource.indexOf(
+      'await pause(LONG_BREAK_PROMPT_HOLD_MS)',
+      bodyTypedIndex,
+    )
+    const switchIndex = appSource.indexOf(
+      'await pause(LONG_BREAK_PROMPT_SWITCH_GAP_MS)',
+      holdIndex,
+    )
+
+    expect(bodyTypedIndex).toBeGreaterThan(-1)
+    expect(holdIndex).toBeGreaterThan(bodyTypedIndex)
+    expect(switchIndex).toBeGreaterThan(holdIndex)
+  })
+
   it('stores break prompt copy inside messages for desktop-ready languages', () => {
     for (const file of ['en.json', 'zh-CN.json']) {
       const messages = readMessages(file)

@@ -116,7 +116,7 @@ impl Default for PauzaSettings {
         Self {
             language: "zh-CN".into(),
             microbreak_enabled: true,
-            microbreak_interval_minutes: 10,
+            microbreak_interval_minutes: 20,
             microbreak_duration_seconds: 20,
             microbreak_notification_enabled: true,
             microbreak_notification_seconds: 10,

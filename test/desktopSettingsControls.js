@@ -4,8 +4,11 @@ import {
   commitDraftNumber,
   LONGBREAK_DURATION_PRESETS,
   LONGBREAK_EVERY_PRESETS,
+  matchRhythmProfile,
   MICROBREAK_DURATION_PRESETS,
   MICROBREAK_INTERVAL_PRESETS,
+  RHYTHM_PROFILES,
+  rhythmProfilePatch,
 } from '../apps/desktop/src/lib/settings-controls'
 import { DESKTOP_LANGUAGE_CONFIGS, normalizeLanguage, resolveUiLanguage } from '../apps/desktop/src/i18n'
 
@@ -37,5 +40,82 @@ describe('Desktop settings controls', () => {
     expect(commitDraftNumber('0', 20, 5, 300)).toBe(5)
     expect(commitDraftNumber('137', 20, 5, 300)).toBe(137)
     expect(commitDraftNumber('999', 20, 5, 300)).toBe(300)
+  })
+
+  it('matches the current defaults to the recommended balanced rhythm', () => {
+    expect(matchRhythmProfile({
+      microbreakEnabled: true,
+      microbreakIntervalMinutes: 20,
+      microbreakDurationSeconds: 20,
+      longBreakEnabled: true,
+      longBreakEvery: 3,
+      longBreakDurationMinutes: 5,
+    })).toBe('balanced')
+  })
+
+  it('preserves non-matching and disabled rhythms as custom', () => {
+    expect(matchRhythmProfile({
+      microbreakEnabled: false,
+      microbreakIntervalMinutes: 20,
+      microbreakDurationSeconds: 20,
+      longBreakEnabled: true,
+      longBreakEvery: 3,
+      longBreakDurationMinutes: 5,
+    })).toBe('custom')
+
+    expect(matchRhythmProfile({
+      microbreakEnabled: true,
+      microbreakIntervalMinutes: 25,
+      microbreakDurationSeconds: 20,
+      longBreakEnabled: true,
+      longBreakEvery: 3,
+      longBreakDurationMinutes: 5,
+    })).toBe('custom')
+  })
+
+  it('keeps an hourly full break while varying microbreak frequency by profile', () => {
+    expect(RHYTHM_PROFILES.map(({ id, settings }) => ({
+      id,
+      microbreakIntervalMinutes: settings.microbreakIntervalMinutes,
+      microbreakDurationSeconds: settings.microbreakDurationSeconds,
+      fullBreakIntervalMinutes: settings.microbreakIntervalMinutes * settings.longBreakEvery,
+      longBreakDurationMinutes: settings.longBreakDurationMinutes,
+    }))).toEqual([
+      {
+        id: 'gentle',
+        microbreakIntervalMinutes: 30,
+        microbreakDurationSeconds: 20,
+        fullBreakIntervalMinutes: 60,
+        longBreakDurationMinutes: 5,
+      },
+      {
+        id: 'balanced',
+        microbreakIntervalMinutes: 20,
+        microbreakDurationSeconds: 20,
+        fullBreakIntervalMinutes: 60,
+        longBreakDurationMinutes: 5,
+      },
+      {
+        id: 'active',
+        microbreakIntervalMinutes: 10,
+        microbreakDurationSeconds: 30,
+        fullBreakIntervalMinutes: 60,
+        longBreakDurationMinutes: 5,
+      },
+    ])
+  })
+
+  it('returns an isolated patch for a selected rhythm profile', () => {
+    const first = rhythmProfilePatch('gentle')
+    first.microbreakIntervalMinutes = 45
+
+    expect(rhythmProfilePatch('gentle')).toEqual({
+      microbreakEnabled: true,
+      microbreakIntervalMinutes: 30,
+      microbreakDurationSeconds: 20,
+      longBreakEnabled: true,
+      longBreakEvery: 2,
+      longBreakDurationMinutes: 5,
+    })
   })
 })

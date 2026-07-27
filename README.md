@@ -1,6 +1,8 @@
 # Pauza
 
-当前版本：`0.1.4`
+当前开发版本：`0.1.5`
+
+当前公开版本：`0.1.4`
 
 当前仓库当前维护两块内容：
 
@@ -9,17 +11,17 @@
 
 根目录脚本默认仍以桌面端为主，网站预览使用单独的 `site:dev` 入口。旧 Electron `app/` 壳已从当前工作树移除，如需追溯历史实现请查看 git 历史与 `docs/` 归档文档。
 
-## 0.1.4 概览
+## 0.1.5 开发版概览
 
-`0.1.4` 是当前公开发布版本。它把智能提醒、break ideas 独立资源层、Rust host 结构整理与本轮多语言文案扩充统一收口到同一个源码 tag 和 macOS arm64 安装包。
+`0.1.5` 目前是本地开发版本，集中改善设置页的信息架构和默认休息节奏；尚未打 tag 或发布安装包。`0.1.4` 仍是当前公开发布版本。
 
 这一版的核心变化：
 
-- 桌面端默认运行链路已经统一到 `Tauri 2 + React + TypeScript + Rust host`
-- 智能提醒已收口到最小状态机：active break 生命周期优先，pause/focus/DND/app exclusion 只冻结投递；`smart` 模式只做“固定空档阈值 + 最长等待”，`forced` 则到点直接开始
-- break prompt 的内容资产已经和界面文案分层：`ui.breakCopy.*` 继续留在 `messages/*.json`，`miniBreakIdeas / longBreakIdeas` 迁移到独立的 `locales/break-ideas/` registry，并扩充中英文休息提示
-- Rust host 的 settings schema、持久化与测试已从主状态文件拆分，运行时调度继续保留在清晰的单一入口
-- 官网固定下载入口与 GitHub Release 均指向 `v0.1.4` 的 `Pauza_0.1.4_aarch64.dmg`
+- 设置首页改为节奏方案与常用设置，五个主题页从首页直接进入并直接返回，不再经过“详细设置”中转页
+- 新增少打扰、均衡、多活动三档节奏和明确的自定义节奏入口；推荐档及新安装默认采用 `20m/20s` 微休息与约每小时 `5m` 完整休息
+- long break 的中文术语统一为“完整休息”，完整休息提示语在完整呈现后停留 `60s` 再切换
+- 既有持久化设置不会自动迁移；不匹配三档方案时保留原值并显示为“自定义”
+- 官网固定下载入口与 GitHub Release 继续指向公开版本 `v0.1.4`
 
 ## 产品主张
 
@@ -32,7 +34,7 @@ Pauza 不是一个“粗暴打断工作”的提醒器。它更接近一个安�
 
 ## 下一阶段：体验验证与后续迭代
 
-`0.1.4` 已完成本地版本收口、macOS 出包与 GitHub Release 分发。下一阶段会继续验证桌面端体验，并为后续版本整理更稳定的跨架构分发链路。接下来会重点推进：
+`0.1.5` 已完成本地版本与源码提交边界整理，但尚未打包或公开发布。下一阶段会继续验证桌面端体验，并为后续版本整理更稳定的跨架构分发链路。接下来会重点推进：
 
 1. 继续验证 macOS 全屏工作区、通知权限和 break 可见性的真实机行为
 2. 在官网补充更稳定的版本说明、截图和 release note 摘要
@@ -177,7 +179,7 @@ apps/desktop/src-tauri/target/release/bundle/
 常见文件：
 
 - `apps/desktop/src-tauri/target/release/bundle/macos/Pauza.app`
-- `apps/desktop/src-tauri/target/release/bundle/dmg/Pauza_0.1.4_*.dmg`
+- `apps/desktop/src-tauri/target/release/bundle/dmg/Pauza_0.1.5_*.dmg`
 
 ## 说明
 

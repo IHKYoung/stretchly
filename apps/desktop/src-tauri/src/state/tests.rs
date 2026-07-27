@@ -5,6 +5,17 @@ fn settings() -> PauzaSettings {
 }
 
 #[test]
+fn default_settings_use_the_balanced_hourly_rhythm() {
+    let settings = settings();
+
+    assert_eq!(settings.microbreak_interval_minutes, 20);
+    assert_eq!(settings.microbreak_duration_seconds, 20);
+    assert_eq!(settings.long_break_every, 3);
+    assert_eq!(settings.long_break_duration_minutes, 5);
+    assert_eq!(settings.microbreak_interval_minutes * settings.long_break_every, 60);
+}
+
+#[test]
 fn schedules_pre_break_notification() {
     let mut runtime = RuntimeState {
         settings: settings(),
@@ -14,8 +25,8 @@ fn schedules_pre_break_notification() {
     runtime.schedule_next_slot(1_000);
 
     assert_eq!(runtime.next_break_kind, Some(BreakKind::Microbreak));
-    assert_eq!(runtime.next_break_due_ms, Some(601_000));
-    assert_eq!(runtime.next_notification_due_ms, Some(591_000));
+    assert_eq!(runtime.next_break_due_ms, Some(1_201_000));
+    assert_eq!(runtime.next_notification_due_ms, Some(1_191_000));
 }
 
 #[test]
@@ -304,7 +315,10 @@ fn long_idle_full_reset_replans_from_now() {
     let _ = state.tick(951_000, 1_000, false, None);
     let runtime = state.runtime.lock().expect("state lock poisoned");
     assert_eq!(runtime.next_break_kind, Some(BreakKind::Microbreak));
-    assert_eq!(runtime.next_break_due_ms, Some(1_551_000));
+    assert_eq!(
+        runtime.next_break_due_ms,
+        Some(951_000 + runtime.settings.microbreak_interval_ms())
+    );
     assert_eq!(runtime.cycle_index, 1);
 }
 

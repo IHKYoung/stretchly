@@ -1,8 +1,19 @@
 import { expect } from 'vitest'
 
-import { breakIdeaEntries, pickBreakPromptEntry, rotateBreakPromptEntries } from '../apps/desktop/src/lib/break-ideas'
+import {
+  breakIdeaEntries,
+  LONG_BREAK_PROMPT_HOLD_MS,
+  LONG_BREAK_PROMPT_SWITCH_GAP_MS,
+  pickBreakPromptEntry,
+  rotateBreakPromptEntries,
+} from '../apps/desktop/src/lib/break-ideas'
 
 describe('Desktop break prompt rotation', () => {
+  it('holds a complete long-break prompt for 60 seconds before switching', () => {
+    expect(LONG_BREAK_PROMPT_HOLD_MS).toBe(60_000)
+    expect(LONG_BREAK_PROMPT_SWITCH_GAP_MS).toBe(520)
+  })
+
   it('keeps microbreak prompts to a single stable entry per break', () => {
     const startedAtMs = 1712505600000
 
