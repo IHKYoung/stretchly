@@ -46,7 +46,7 @@ apps/site/download/targets.js
 
 ```bash
 python3 scripts/publish_site_release.py \
-  --asset /Users/changkunyang/CKProjects/Pauza/apps/desktop/src-tauri/target/release/bundle/dmg/Pauza_0.1.4_aarch64.dmg
+  --asset /Users/changkunyang/CKProjects/Pauza/apps/desktop/src-tauri/target/release/bundle/dmg/Pauza_0.1.5_aarch64.dmg
 ```
 
 它会自动：

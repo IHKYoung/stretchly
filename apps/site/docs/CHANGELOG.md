@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-08-03
+- `site`: 首页 pinned 下载入口更新到 `Pauza_0.1.5_aarch64.dmg`；GitHub latest release 继续作为主下载事实源。
+- `docs`: 新增 `0.1.5` 下载目标任务与生产回验记录，并明确排除既有无关工作树修改。
+
 ## 2026-07-24
 - `site`: 首页 pinned 下载入口更新到 `Pauza_0.1.4_aarch64.dmg`。
 - `site`: GitHub latest API 作为最新资产名事实源，并拼接 `releases/latest/download/<asset-name>`；API 或资产异常时回退 pinned。

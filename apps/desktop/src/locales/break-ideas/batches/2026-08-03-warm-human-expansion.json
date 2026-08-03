@@ -1,0 +1,2582 @@
+{
+  "schemaVersion": 1,
+  "batchId": "2026-08-03-warm-human-expansion",
+  "sourceLanguage": "zh-CN",
+  "officialLanguages": [
+    "zh-CN",
+    "zh-TW",
+    "en"
+  ],
+  "categories": [
+    "workday-banter",
+    "body-banter",
+    "health-note",
+    "emotional-care",
+    "daily-life",
+    "mini-mission"
+  ],
+  "targets": {
+    "miniBreakIdeas": {
+      "before": 364,
+      "added": 364,
+      "after": 728,
+      "firstId": "aoa",
+      "lastId": "bbz",
+      "maxConsecutiveCategory": 1,
+      "maxCategoryImbalance": 1
+    },
+    "longBreakIdeas": {
+      "before": 244,
+      "added": 244,
+      "after": 488,
+      "firstId": "ajk",
+      "lastId": "ast",
+      "maxConsecutiveCategory": 1,
+      "maxCategoryImbalance": 1
+    }
+  },
+  "limits": {
+    "zh-CN": {
+      "miniBreakIdeas": {
+        "text": [
+          6,
+          40
+        ]
+      },
+      "longBreakIdeas": {
+        "title": [
+          3,
+          20
+        ],
+        "text": [
+          45,
+          100
+        ]
+      }
+    },
+    "zh-TW": {
+      "miniBreakIdeas": {
+        "text": [
+          6,
+          44
+        ]
+      },
+      "longBreakIdeas": {
+        "title": [
+          3,
+          24
+        ],
+        "text": [
+          45,
+          110
+        ]
+      }
+    },
+    "en": {
+      "miniBreakIdeas": {
+        "text": [
+          24,
+          110
+        ]
+      },
+      "longBreakIdeas": {
+        "title": [
+          8,
+          60
+        ],
+        "text": [
+          130,
+          300
+        ]
+      }
+    }
+  },
+  "copyRules": {
+    "zh-CN": {
+      "forbiddenPhrases": [
+        "允许自己",
+        "你值得",
+        "温柔地",
+        "重新连接",
+        "小小的",
+        "未来的自己",
+        "研究显示",
+        "研究表明",
+        "此刻",
+        "%",
+        "BDNF",
+        "抗抑郁药"
+      ]
+    },
+    "zh-TW": {
+      "forbiddenPhrases": [
+        "允許自己",
+        "你值得",
+        "溫柔地",
+        "重新連結",
+        "小小的",
+        "未來的自己",
+        "研究顯示",
+        "研究表明",
+        "此刻",
+        "療癒",
+        "%",
+        "BDNF",
+        "抗憂鬱藥"
+      ]
+    },
+    "en": {
+      "forbiddenPhrases": [
+        "give yourself permission",
+        "you deserve",
+        "gentle reminder",
+        "small reset",
+        "future you",
+        "studies show",
+        "research shows",
+        "at this moment",
+        "%",
+        "BDNF",
+        "antidepressant"
+      ]
+    }
+  },
+  "entries": {
+    "miniBreakIdeas": [
+      {
+        "id": "aoa",
+        "category": "workday-banter"
+      },
+      {
+        "id": "aob",
+        "category": "body-banter"
+      },
+      {
+        "id": "aoc",
+        "category": "health-note"
+      },
+      {
+        "id": "aod",
+        "category": "emotional-care"
+      },
+      {
+        "id": "aoe",
+        "category": "daily-life"
+      },
+      {
+        "id": "aof",
+        "category": "mini-mission"
+      },
+      {
+        "id": "aog",
+        "category": "workday-banter"
+      },
+      {
+        "id": "aoh",
+        "category": "body-banter"
+      },
+      {
+        "id": "aoi",
+        "category": "health-note"
+      },
+      {
+        "id": "aoj",
+        "category": "emotional-care"
+      },
+      {
+        "id": "aok",
+        "category": "daily-life"
+      },
+      {
+        "id": "aol",
+        "category": "mini-mission"
+      },
+      {
+        "id": "aom",
+        "category": "workday-banter"
+      },
+      {
+        "id": "aon",
+        "category": "body-banter"
+      },
+      {
+        "id": "aoo",
+        "category": "health-note"
+      },
+      {
+        "id": "aop",
+        "category": "emotional-care"
+      },
+      {
+        "id": "aoq",
+        "category": "daily-life"
+      },
+      {
+        "id": "aor",
+        "category": "mini-mission"
+      },
+      {
+        "id": "aos",
+        "category": "workday-banter"
+      },
+      {
+        "id": "aot",
+        "category": "body-banter"
+      },
+      {
+        "id": "aou",
+        "category": "health-note"
+      },
+      {
+        "id": "aov",
+        "category": "emotional-care"
+      },
+      {
+        "id": "aow",
+        "category": "daily-life"
+      },
+      {
+        "id": "aox",
+        "category": "mini-mission"
+      },
+      {
+        "id": "aoy",
+        "category": "workday-banter"
+      },
+      {
+        "id": "aoz",
+        "category": "body-banter"
+      },
+      {
+        "id": "apa",
+        "category": "health-note"
+      },
+      {
+        "id": "apb",
+        "category": "emotional-care"
+      },
+      {
+        "id": "apc",
+        "category": "daily-life"
+      },
+      {
+        "id": "apd",
+        "category": "mini-mission"
+      },
+      {
+        "id": "ape",
+        "category": "workday-banter"
+      },
+      {
+        "id": "apf",
+        "category": "body-banter"
+      },
+      {
+        "id": "apg",
+        "category": "health-note"
+      },
+      {
+        "id": "aph",
+        "category": "emotional-care"
+      },
+      {
+        "id": "api",
+        "category": "daily-life"
+      },
+      {
+        "id": "apj",
+        "category": "mini-mission"
+      },
+      {
+        "id": "apk",
+        "category": "workday-banter"
+      },
+      {
+        "id": "apl",
+        "category": "body-banter"
+      },
+      {
+        "id": "apm",
+        "category": "health-note"
+      },
+      {
+        "id": "apn",
+        "category": "emotional-care"
+      },
+      {
+        "id": "apo",
+        "category": "daily-life"
+      },
+      {
+        "id": "app",
+        "category": "mini-mission"
+      },
+      {
+        "id": "apq",
+        "category": "workday-banter"
+      },
+      {
+        "id": "apr",
+        "category": "body-banter"
+      },
+      {
+        "id": "aps",
+        "category": "health-note"
+      },
+      {
+        "id": "apt",
+        "category": "emotional-care"
+      },
+      {
+        "id": "apu",
+        "category": "daily-life"
+      },
+      {
+        "id": "apv",
+        "category": "mini-mission"
+      },
+      {
+        "id": "apw",
+        "category": "workday-banter"
+      },
+      {
+        "id": "apx",
+        "category": "body-banter"
+      },
+      {
+        "id": "apy",
+        "category": "health-note"
+      },
+      {
+        "id": "apz",
+        "category": "emotional-care"
+      },
+      {
+        "id": "aqa",
+        "category": "daily-life"
+      },
+      {
+        "id": "aqb",
+        "category": "mini-mission"
+      },
+      {
+        "id": "aqc",
+        "category": "workday-banter"
+      },
+      {
+        "id": "aqd",
+        "category": "body-banter"
+      },
+      {
+        "id": "aqe",
+        "category": "health-note"
+      },
+      {
+        "id": "aqf",
+        "category": "emotional-care"
+      },
+      {
+        "id": "aqg",
+        "category": "daily-life"
+      },
+      {
+        "id": "aqh",
+        "category": "mini-mission"
+      },
+      {
+        "id": "aqi",
+        "category": "workday-banter"
+      },
+      {
+        "id": "aqj",
+        "category": "body-banter"
+      },
+      {
+        "id": "aqk",
+        "category": "health-note"
+      },
+      {
+        "id": "aql",
+        "category": "emotional-care"
+      },
+      {
+        "id": "aqm",
+        "category": "daily-life"
+      },
+      {
+        "id": "aqn",
+        "category": "mini-mission"
+      },
+      {
+        "id": "aqo",
+        "category": "workday-banter"
+      },
+      {
+        "id": "aqp",
+        "category": "body-banter"
+      },
+      {
+        "id": "aqq",
+        "category": "health-note"
+      },
+      {
+        "id": "aqr",
+        "category": "emotional-care"
+      },
+      {
+        "id": "aqs",
+        "category": "daily-life"
+      },
+      {
+        "id": "aqt",
+        "category": "mini-mission"
+      },
+      {
+        "id": "aqu",
+        "category": "workday-banter"
+      },
+      {
+        "id": "aqv",
+        "category": "body-banter"
+      },
+      {
+        "id": "aqw",
+        "category": "health-note"
+      },
+      {
+        "id": "aqx",
+        "category": "emotional-care"
+      },
+      {
+        "id": "aqy",
+        "category": "daily-life"
+      },
+      {
+        "id": "aqz",
+        "category": "mini-mission"
+      },
+      {
+        "id": "ara",
+        "category": "workday-banter"
+      },
+      {
+        "id": "arb",
+        "category": "body-banter"
+      },
+      {
+        "id": "arc",
+        "category": "health-note"
+      },
+      {
+        "id": "ard",
+        "category": "emotional-care"
+      },
+      {
+        "id": "are",
+        "category": "daily-life"
+      },
+      {
+        "id": "arf",
+        "category": "mini-mission"
+      },
+      {
+        "id": "arg",
+        "category": "workday-banter"
+      },
+      {
+        "id": "arh",
+        "category": "body-banter"
+      },
+      {
+        "id": "ari",
+        "category": "health-note"
+      },
+      {
+        "id": "arj",
+        "category": "emotional-care"
+      },
+      {
+        "id": "ark",
+        "category": "daily-life"
+      },
+      {
+        "id": "arl",
+        "category": "mini-mission"
+      },
+      {
+        "id": "arm",
+        "category": "workday-banter"
+      },
+      {
+        "id": "arn",
+        "category": "body-banter"
+      },
+      {
+        "id": "aro",
+        "category": "health-note"
+      },
+      {
+        "id": "arp",
+        "category": "emotional-care"
+      },
+      {
+        "id": "arq",
+        "category": "daily-life"
+      },
+      {
+        "id": "arr",
+        "category": "mini-mission"
+      },
+      {
+        "id": "ars",
+        "category": "workday-banter"
+      },
+      {
+        "id": "art",
+        "category": "body-banter"
+      },
+      {
+        "id": "aru",
+        "category": "health-note"
+      },
+      {
+        "id": "arv",
+        "category": "emotional-care"
+      },
+      {
+        "id": "arw",
+        "category": "daily-life"
+      },
+      {
+        "id": "arx",
+        "category": "mini-mission"
+      },
+      {
+        "id": "ary",
+        "category": "workday-banter"
+      },
+      {
+        "id": "arz",
+        "category": "body-banter"
+      },
+      {
+        "id": "asa",
+        "category": "health-note"
+      },
+      {
+        "id": "asb",
+        "category": "emotional-care"
+      },
+      {
+        "id": "asc",
+        "category": "daily-life"
+      },
+      {
+        "id": "asd",
+        "category": "mini-mission"
+      },
+      {
+        "id": "ase",
+        "category": "workday-banter"
+      },
+      {
+        "id": "asf",
+        "category": "body-banter"
+      },
+      {
+        "id": "asg",
+        "category": "health-note"
+      },
+      {
+        "id": "ash",
+        "category": "emotional-care"
+      },
+      {
+        "id": "asi",
+        "category": "daily-life"
+      },
+      {
+        "id": "asj",
+        "category": "mini-mission"
+      },
+      {
+        "id": "ask",
+        "category": "workday-banter"
+      },
+      {
+        "id": "asl",
+        "category": "body-banter"
+      },
+      {
+        "id": "asm",
+        "category": "health-note"
+      },
+      {
+        "id": "asn",
+        "category": "emotional-care"
+      },
+      {
+        "id": "aso",
+        "category": "daily-life"
+      },
+      {
+        "id": "asp",
+        "category": "mini-mission"
+      },
+      {
+        "id": "asq",
+        "category": "workday-banter"
+      },
+      {
+        "id": "asr",
+        "category": "body-banter"
+      },
+      {
+        "id": "ass",
+        "category": "health-note"
+      },
+      {
+        "id": "ast",
+        "category": "emotional-care"
+      },
+      {
+        "id": "asu",
+        "category": "daily-life"
+      },
+      {
+        "id": "asv",
+        "category": "mini-mission"
+      },
+      {
+        "id": "asw",
+        "category": "workday-banter"
+      },
+      {
+        "id": "asx",
+        "category": "body-banter"
+      },
+      {
+        "id": "asy",
+        "category": "health-note"
+      },
+      {
+        "id": "asz",
+        "category": "emotional-care"
+      },
+      {
+        "id": "ata",
+        "category": "daily-life"
+      },
+      {
+        "id": "atb",
+        "category": "mini-mission"
+      },
+      {
+        "id": "atc",
+        "category": "workday-banter"
+      },
+      {
+        "id": "atd",
+        "category": "body-banter"
+      },
+      {
+        "id": "ate",
+        "category": "health-note"
+      },
+      {
+        "id": "atf",
+        "category": "emotional-care"
+      },
+      {
+        "id": "atg",
+        "category": "daily-life"
+      },
+      {
+        "id": "ath",
+        "category": "mini-mission"
+      },
+      {
+        "id": "ati",
+        "category": "workday-banter"
+      },
+      {
+        "id": "atj",
+        "category": "body-banter"
+      },
+      {
+        "id": "atk",
+        "category": "health-note"
+      },
+      {
+        "id": "atl",
+        "category": "emotional-care"
+      },
+      {
+        "id": "atm",
+        "category": "daily-life"
+      },
+      {
+        "id": "atn",
+        "category": "mini-mission"
+      },
+      {
+        "id": "ato",
+        "category": "workday-banter"
+      },
+      {
+        "id": "atp",
+        "category": "body-banter"
+      },
+      {
+        "id": "atq",
+        "category": "health-note"
+      },
+      {
+        "id": "atr",
+        "category": "emotional-care"
+      },
+      {
+        "id": "ats",
+        "category": "daily-life"
+      },
+      {
+        "id": "att",
+        "category": "mini-mission"
+      },
+      {
+        "id": "atu",
+        "category": "workday-banter"
+      },
+      {
+        "id": "atv",
+        "category": "body-banter"
+      },
+      {
+        "id": "atw",
+        "category": "health-note"
+      },
+      {
+        "id": "atx",
+        "category": "emotional-care"
+      },
+      {
+        "id": "aty",
+        "category": "daily-life"
+      },
+      {
+        "id": "atz",
+        "category": "mini-mission"
+      },
+      {
+        "id": "aua",
+        "category": "workday-banter"
+      },
+      {
+        "id": "aub",
+        "category": "body-banter"
+      },
+      {
+        "id": "auc",
+        "category": "health-note"
+      },
+      {
+        "id": "aud",
+        "category": "emotional-care"
+      },
+      {
+        "id": "aue",
+        "category": "daily-life"
+      },
+      {
+        "id": "auf",
+        "category": "mini-mission"
+      },
+      {
+        "id": "aug",
+        "category": "workday-banter"
+      },
+      {
+        "id": "auh",
+        "category": "body-banter"
+      },
+      {
+        "id": "aui",
+        "category": "health-note"
+      },
+      {
+        "id": "auj",
+        "category": "emotional-care"
+      },
+      {
+        "id": "auk",
+        "category": "daily-life"
+      },
+      {
+        "id": "aul",
+        "category": "mini-mission"
+      },
+      {
+        "id": "aum",
+        "category": "workday-banter"
+      },
+      {
+        "id": "aun",
+        "category": "body-banter"
+      },
+      {
+        "id": "auo",
+        "category": "health-note"
+      },
+      {
+        "id": "aup",
+        "category": "emotional-care"
+      },
+      {
+        "id": "auq",
+        "category": "daily-life"
+      },
+      {
+        "id": "aur",
+        "category": "mini-mission"
+      },
+      {
+        "id": "aus",
+        "category": "workday-banter"
+      },
+      {
+        "id": "aut",
+        "category": "body-banter"
+      },
+      {
+        "id": "auu",
+        "category": "health-note"
+      },
+      {
+        "id": "auv",
+        "category": "emotional-care"
+      },
+      {
+        "id": "auw",
+        "category": "daily-life"
+      },
+      {
+        "id": "aux",
+        "category": "mini-mission"
+      },
+      {
+        "id": "auy",
+        "category": "workday-banter"
+      },
+      {
+        "id": "auz",
+        "category": "body-banter"
+      },
+      {
+        "id": "ava",
+        "category": "health-note"
+      },
+      {
+        "id": "avb",
+        "category": "emotional-care"
+      },
+      {
+        "id": "avc",
+        "category": "daily-life"
+      },
+      {
+        "id": "avd",
+        "category": "mini-mission"
+      },
+      {
+        "id": "ave",
+        "category": "workday-banter"
+      },
+      {
+        "id": "avf",
+        "category": "body-banter"
+      },
+      {
+        "id": "avg",
+        "category": "health-note"
+      },
+      {
+        "id": "avh",
+        "category": "emotional-care"
+      },
+      {
+        "id": "avi",
+        "category": "daily-life"
+      },
+      {
+        "id": "avj",
+        "category": "mini-mission"
+      },
+      {
+        "id": "avk",
+        "category": "workday-banter"
+      },
+      {
+        "id": "avl",
+        "category": "body-banter"
+      },
+      {
+        "id": "avm",
+        "category": "health-note"
+      },
+      {
+        "id": "avn",
+        "category": "emotional-care"
+      },
+      {
+        "id": "avo",
+        "category": "daily-life"
+      },
+      {
+        "id": "avp",
+        "category": "mini-mission"
+      },
+      {
+        "id": "avq",
+        "category": "workday-banter"
+      },
+      {
+        "id": "avr",
+        "category": "body-banter"
+      },
+      {
+        "id": "avs",
+        "category": "health-note"
+      },
+      {
+        "id": "avt",
+        "category": "emotional-care"
+      },
+      {
+        "id": "avu",
+        "category": "daily-life"
+      },
+      {
+        "id": "avv",
+        "category": "mini-mission"
+      },
+      {
+        "id": "avw",
+        "category": "workday-banter"
+      },
+      {
+        "id": "avx",
+        "category": "body-banter"
+      },
+      {
+        "id": "avy",
+        "category": "health-note"
+      },
+      {
+        "id": "avz",
+        "category": "emotional-care"
+      },
+      {
+        "id": "awa",
+        "category": "daily-life"
+      },
+      {
+        "id": "awb",
+        "category": "mini-mission"
+      },
+      {
+        "id": "awc",
+        "category": "workday-banter"
+      },
+      {
+        "id": "awd",
+        "category": "body-banter"
+      },
+      {
+        "id": "awe",
+        "category": "health-note"
+      },
+      {
+        "id": "awf",
+        "category": "emotional-care"
+      },
+      {
+        "id": "awg",
+        "category": "daily-life"
+      },
+      {
+        "id": "awh",
+        "category": "mini-mission"
+      },
+      {
+        "id": "awi",
+        "category": "workday-banter"
+      },
+      {
+        "id": "awj",
+        "category": "body-banter"
+      },
+      {
+        "id": "awk",
+        "category": "health-note"
+      },
+      {
+        "id": "awl",
+        "category": "emotional-care"
+      },
+      {
+        "id": "awm",
+        "category": "daily-life"
+      },
+      {
+        "id": "awn",
+        "category": "mini-mission"
+      },
+      {
+        "id": "awo",
+        "category": "workday-banter"
+      },
+      {
+        "id": "awp",
+        "category": "body-banter"
+      },
+      {
+        "id": "awq",
+        "category": "health-note"
+      },
+      {
+        "id": "awr",
+        "category": "emotional-care"
+      },
+      {
+        "id": "aws",
+        "category": "daily-life"
+      },
+      {
+        "id": "awt",
+        "category": "mini-mission"
+      },
+      {
+        "id": "awu",
+        "category": "workday-banter"
+      },
+      {
+        "id": "awv",
+        "category": "body-banter"
+      },
+      {
+        "id": "aww",
+        "category": "health-note"
+      },
+      {
+        "id": "awx",
+        "category": "emotional-care"
+      },
+      {
+        "id": "awy",
+        "category": "daily-life"
+      },
+      {
+        "id": "awz",
+        "category": "mini-mission"
+      },
+      {
+        "id": "axa",
+        "category": "workday-banter"
+      },
+      {
+        "id": "axb",
+        "category": "body-banter"
+      },
+      {
+        "id": "axc",
+        "category": "health-note"
+      },
+      {
+        "id": "axd",
+        "category": "emotional-care"
+      },
+      {
+        "id": "axe",
+        "category": "daily-life"
+      },
+      {
+        "id": "axf",
+        "category": "mini-mission"
+      },
+      {
+        "id": "axg",
+        "category": "workday-banter"
+      },
+      {
+        "id": "axh",
+        "category": "body-banter"
+      },
+      {
+        "id": "axi",
+        "category": "health-note"
+      },
+      {
+        "id": "axj",
+        "category": "emotional-care"
+      },
+      {
+        "id": "axk",
+        "category": "daily-life"
+      },
+      {
+        "id": "axl",
+        "category": "mini-mission"
+      },
+      {
+        "id": "axm",
+        "category": "workday-banter"
+      },
+      {
+        "id": "axn",
+        "category": "body-banter"
+      },
+      {
+        "id": "axo",
+        "category": "health-note"
+      },
+      {
+        "id": "axp",
+        "category": "emotional-care"
+      },
+      {
+        "id": "axq",
+        "category": "daily-life"
+      },
+      {
+        "id": "axr",
+        "category": "mini-mission"
+      },
+      {
+        "id": "axs",
+        "category": "workday-banter"
+      },
+      {
+        "id": "axt",
+        "category": "body-banter"
+      },
+      {
+        "id": "axu",
+        "category": "health-note"
+      },
+      {
+        "id": "axv",
+        "category": "emotional-care"
+      },
+      {
+        "id": "axw",
+        "category": "daily-life"
+      },
+      {
+        "id": "axx",
+        "category": "mini-mission"
+      },
+      {
+        "id": "axy",
+        "category": "workday-banter"
+      },
+      {
+        "id": "axz",
+        "category": "body-banter"
+      },
+      {
+        "id": "aya",
+        "category": "health-note"
+      },
+      {
+        "id": "ayb",
+        "category": "emotional-care"
+      },
+      {
+        "id": "ayc",
+        "category": "daily-life"
+      },
+      {
+        "id": "ayd",
+        "category": "mini-mission"
+      },
+      {
+        "id": "aye",
+        "category": "workday-banter"
+      },
+      {
+        "id": "ayf",
+        "category": "body-banter"
+      },
+      {
+        "id": "ayg",
+        "category": "health-note"
+      },
+      {
+        "id": "ayh",
+        "category": "emotional-care"
+      },
+      {
+        "id": "ayi",
+        "category": "daily-life"
+      },
+      {
+        "id": "ayj",
+        "category": "mini-mission"
+      },
+      {
+        "id": "ayk",
+        "category": "workday-banter"
+      },
+      {
+        "id": "ayl",
+        "category": "body-banter"
+      },
+      {
+        "id": "aym",
+        "category": "health-note"
+      },
+      {
+        "id": "ayn",
+        "category": "emotional-care"
+      },
+      {
+        "id": "ayo",
+        "category": "daily-life"
+      },
+      {
+        "id": "ayp",
+        "category": "mini-mission"
+      },
+      {
+        "id": "ayq",
+        "category": "workday-banter"
+      },
+      {
+        "id": "ayr",
+        "category": "body-banter"
+      },
+      {
+        "id": "ays",
+        "category": "health-note"
+      },
+      {
+        "id": "ayt",
+        "category": "emotional-care"
+      },
+      {
+        "id": "ayu",
+        "category": "daily-life"
+      },
+      {
+        "id": "ayv",
+        "category": "mini-mission"
+      },
+      {
+        "id": "ayw",
+        "category": "workday-banter"
+      },
+      {
+        "id": "ayx",
+        "category": "body-banter"
+      },
+      {
+        "id": "ayy",
+        "category": "health-note"
+      },
+      {
+        "id": "ayz",
+        "category": "emotional-care"
+      },
+      {
+        "id": "aza",
+        "category": "daily-life"
+      },
+      {
+        "id": "azb",
+        "category": "mini-mission"
+      },
+      {
+        "id": "azc",
+        "category": "workday-banter"
+      },
+      {
+        "id": "azd",
+        "category": "body-banter"
+      },
+      {
+        "id": "aze",
+        "category": "health-note"
+      },
+      {
+        "id": "azf",
+        "category": "emotional-care"
+      },
+      {
+        "id": "azg",
+        "category": "daily-life"
+      },
+      {
+        "id": "azh",
+        "category": "mini-mission"
+      },
+      {
+        "id": "azi",
+        "category": "workday-banter"
+      },
+      {
+        "id": "azj",
+        "category": "body-banter"
+      },
+      {
+        "id": "azk",
+        "category": "health-note"
+      },
+      {
+        "id": "azl",
+        "category": "emotional-care"
+      },
+      {
+        "id": "azm",
+        "category": "daily-life"
+      },
+      {
+        "id": "azn",
+        "category": "mini-mission"
+      },
+      {
+        "id": "azo",
+        "category": "workday-banter"
+      },
+      {
+        "id": "azp",
+        "category": "body-banter"
+      },
+      {
+        "id": "azq",
+        "category": "health-note"
+      },
+      {
+        "id": "azr",
+        "category": "emotional-care"
+      },
+      {
+        "id": "azs",
+        "category": "daily-life"
+      },
+      {
+        "id": "azt",
+        "category": "mini-mission"
+      },
+      {
+        "id": "azu",
+        "category": "workday-banter"
+      },
+      {
+        "id": "azv",
+        "category": "body-banter"
+      },
+      {
+        "id": "azw",
+        "category": "health-note"
+      },
+      {
+        "id": "azx",
+        "category": "emotional-care"
+      },
+      {
+        "id": "azy",
+        "category": "daily-life"
+      },
+      {
+        "id": "azz",
+        "category": "mini-mission"
+      },
+      {
+        "id": "baa",
+        "category": "workday-banter"
+      },
+      {
+        "id": "bab",
+        "category": "body-banter"
+      },
+      {
+        "id": "bac",
+        "category": "health-note"
+      },
+      {
+        "id": "bad",
+        "category": "emotional-care"
+      },
+      {
+        "id": "bae",
+        "category": "daily-life"
+      },
+      {
+        "id": "baf",
+        "category": "mini-mission"
+      },
+      {
+        "id": "bag",
+        "category": "workday-banter"
+      },
+      {
+        "id": "bah",
+        "category": "body-banter"
+      },
+      {
+        "id": "bai",
+        "category": "health-note"
+      },
+      {
+        "id": "baj",
+        "category": "emotional-care"
+      },
+      {
+        "id": "bak",
+        "category": "daily-life"
+      },
+      {
+        "id": "bal",
+        "category": "mini-mission"
+      },
+      {
+        "id": "bam",
+        "category": "workday-banter"
+      },
+      {
+        "id": "ban",
+        "category": "body-banter"
+      },
+      {
+        "id": "bao",
+        "category": "health-note"
+      },
+      {
+        "id": "bap",
+        "category": "emotional-care"
+      },
+      {
+        "id": "baq",
+        "category": "daily-life"
+      },
+      {
+        "id": "bar",
+        "category": "mini-mission"
+      },
+      {
+        "id": "bas",
+        "category": "workday-banter"
+      },
+      {
+        "id": "bat",
+        "category": "body-banter"
+      },
+      {
+        "id": "bau",
+        "category": "health-note"
+      },
+      {
+        "id": "bav",
+        "category": "emotional-care"
+      },
+      {
+        "id": "baw",
+        "category": "daily-life"
+      },
+      {
+        "id": "bax",
+        "category": "mini-mission"
+      },
+      {
+        "id": "bay",
+        "category": "workday-banter"
+      },
+      {
+        "id": "baz",
+        "category": "body-banter"
+      },
+      {
+        "id": "bba",
+        "category": "health-note"
+      },
+      {
+        "id": "bbb",
+        "category": "emotional-care"
+      },
+      {
+        "id": "bbc",
+        "category": "daily-life"
+      },
+      {
+        "id": "bbd",
+        "category": "mini-mission"
+      },
+      {
+        "id": "bbe",
+        "category": "workday-banter"
+      },
+      {
+        "id": "bbf",
+        "category": "body-banter"
+      },
+      {
+        "id": "bbg",
+        "category": "health-note"
+      },
+      {
+        "id": "bbh",
+        "category": "emotional-care"
+      },
+      {
+        "id": "bbi",
+        "category": "daily-life"
+      },
+      {
+        "id": "bbj",
+        "category": "mini-mission"
+      },
+      {
+        "id": "bbk",
+        "category": "workday-banter"
+      },
+      {
+        "id": "bbl",
+        "category": "body-banter"
+      },
+      {
+        "id": "bbm",
+        "category": "health-note"
+      },
+      {
+        "id": "bbn",
+        "category": "emotional-care"
+      },
+      {
+        "id": "bbo",
+        "category": "daily-life"
+      },
+      {
+        "id": "bbp",
+        "category": "mini-mission"
+      },
+      {
+        "id": "bbq",
+        "category": "workday-banter"
+      },
+      {
+        "id": "bbr",
+        "category": "body-banter"
+      },
+      {
+        "id": "bbs",
+        "category": "health-note"
+      },
+      {
+        "id": "bbt",
+        "category": "emotional-care"
+      },
+      {
+        "id": "bbu",
+        "category": "daily-life"
+      },
+      {
+        "id": "bbv",
+        "category": "mini-mission"
+      },
+      {
+        "id": "bbw",
+        "category": "workday-banter"
+      },
+      {
+        "id": "bbx",
+        "category": "body-banter"
+      },
+      {
+        "id": "bby",
+        "category": "health-note"
+      },
+      {
+        "id": "bbz",
+        "category": "emotional-care"
+      }
+    ],
+    "longBreakIdeas": [
+      {
+        "id": "ajk",
+        "category": "workday-banter"
+      },
+      {
+        "id": "ajl",
+        "category": "body-banter"
+      },
+      {
+        "id": "ajm",
+        "category": "health-note"
+      },
+      {
+        "id": "ajn",
+        "category": "emotional-care"
+      },
+      {
+        "id": "ajo",
+        "category": "daily-life"
+      },
+      {
+        "id": "ajp",
+        "category": "mini-mission"
+      },
+      {
+        "id": "ajq",
+        "category": "workday-banter"
+      },
+      {
+        "id": "ajr",
+        "category": "body-banter"
+      },
+      {
+        "id": "ajs",
+        "category": "health-note"
+      },
+      {
+        "id": "ajt",
+        "category": "emotional-care"
+      },
+      {
+        "id": "aju",
+        "category": "daily-life"
+      },
+      {
+        "id": "ajv",
+        "category": "mini-mission"
+      },
+      {
+        "id": "ajw",
+        "category": "workday-banter"
+      },
+      {
+        "id": "ajx",
+        "category": "body-banter"
+      },
+      {
+        "id": "ajy",
+        "category": "health-note"
+      },
+      {
+        "id": "ajz",
+        "category": "emotional-care"
+      },
+      {
+        "id": "aka",
+        "category": "daily-life"
+      },
+      {
+        "id": "akb",
+        "category": "mini-mission"
+      },
+      {
+        "id": "akc",
+        "category": "workday-banter"
+      },
+      {
+        "id": "akd",
+        "category": "body-banter"
+      },
+      {
+        "id": "ake",
+        "category": "health-note"
+      },
+      {
+        "id": "akf",
+        "category": "emotional-care"
+      },
+      {
+        "id": "akg",
+        "category": "daily-life"
+      },
+      {
+        "id": "akh",
+        "category": "mini-mission"
+      },
+      {
+        "id": "aki",
+        "category": "workday-banter"
+      },
+      {
+        "id": "akj",
+        "category": "body-banter"
+      },
+      {
+        "id": "akk",
+        "category": "health-note"
+      },
+      {
+        "id": "akl",
+        "category": "emotional-care"
+      },
+      {
+        "id": "akm",
+        "category": "daily-life"
+      },
+      {
+        "id": "akn",
+        "category": "mini-mission"
+      },
+      {
+        "id": "ako",
+        "category": "workday-banter"
+      },
+      {
+        "id": "akp",
+        "category": "body-banter"
+      },
+      {
+        "id": "akq",
+        "category": "health-note"
+      },
+      {
+        "id": "akr",
+        "category": "emotional-care"
+      },
+      {
+        "id": "aks",
+        "category": "daily-life"
+      },
+      {
+        "id": "akt",
+        "category": "mini-mission"
+      },
+      {
+        "id": "aku",
+        "category": "workday-banter"
+      },
+      {
+        "id": "akv",
+        "category": "body-banter"
+      },
+      {
+        "id": "akw",
+        "category": "health-note"
+      },
+      {
+        "id": "akx",
+        "category": "emotional-care"
+      },
+      {
+        "id": "aky",
+        "category": "daily-life"
+      },
+      {
+        "id": "akz",
+        "category": "mini-mission"
+      },
+      {
+        "id": "ala",
+        "category": "workday-banter"
+      },
+      {
+        "id": "alb",
+        "category": "body-banter"
+      },
+      {
+        "id": "alc",
+        "category": "health-note"
+      },
+      {
+        "id": "ald",
+        "category": "emotional-care"
+      },
+      {
+        "id": "ale",
+        "category": "daily-life"
+      },
+      {
+        "id": "alf",
+        "category": "mini-mission"
+      },
+      {
+        "id": "alg",
+        "category": "workday-banter"
+      },
+      {
+        "id": "alh",
+        "category": "body-banter"
+      },
+      {
+        "id": "ali",
+        "category": "health-note"
+      },
+      {
+        "id": "alj",
+        "category": "emotional-care"
+      },
+      {
+        "id": "alk",
+        "category": "daily-life"
+      },
+      {
+        "id": "all",
+        "category": "mini-mission"
+      },
+      {
+        "id": "alm",
+        "category": "workday-banter"
+      },
+      {
+        "id": "aln",
+        "category": "body-banter"
+      },
+      {
+        "id": "alo",
+        "category": "health-note"
+      },
+      {
+        "id": "alp",
+        "category": "emotional-care"
+      },
+      {
+        "id": "alq",
+        "category": "daily-life"
+      },
+      {
+        "id": "alr",
+        "category": "mini-mission"
+      },
+      {
+        "id": "als",
+        "category": "workday-banter"
+      },
+      {
+        "id": "alt",
+        "category": "body-banter"
+      },
+      {
+        "id": "alu",
+        "category": "health-note"
+      },
+      {
+        "id": "alv",
+        "category": "emotional-care"
+      },
+      {
+        "id": "alw",
+        "category": "daily-life"
+      },
+      {
+        "id": "alx",
+        "category": "mini-mission"
+      },
+      {
+        "id": "aly",
+        "category": "workday-banter"
+      },
+      {
+        "id": "alz",
+        "category": "body-banter"
+      },
+      {
+        "id": "ama",
+        "category": "health-note"
+      },
+      {
+        "id": "amb",
+        "category": "emotional-care"
+      },
+      {
+        "id": "amc",
+        "category": "daily-life"
+      },
+      {
+        "id": "amd",
+        "category": "mini-mission"
+      },
+      {
+        "id": "ame",
+        "category": "workday-banter"
+      },
+      {
+        "id": "amf",
+        "category": "body-banter"
+      },
+      {
+        "id": "amg",
+        "category": "health-note"
+      },
+      {
+        "id": "amh",
+        "category": "emotional-care"
+      },
+      {
+        "id": "ami",
+        "category": "daily-life"
+      },
+      {
+        "id": "amj",
+        "category": "mini-mission"
+      },
+      {
+        "id": "amk",
+        "category": "workday-banter"
+      },
+      {
+        "id": "aml",
+        "category": "body-banter"
+      },
+      {
+        "id": "amm",
+        "category": "health-note"
+      },
+      {
+        "id": "amn",
+        "category": "emotional-care"
+      },
+      {
+        "id": "amo",
+        "category": "daily-life"
+      },
+      {
+        "id": "amp",
+        "category": "mini-mission"
+      },
+      {
+        "id": "amq",
+        "category": "workday-banter"
+      },
+      {
+        "id": "amr",
+        "category": "body-banter"
+      },
+      {
+        "id": "ams",
+        "category": "health-note"
+      },
+      {
+        "id": "amt",
+        "category": "emotional-care"
+      },
+      {
+        "id": "amu",
+        "category": "daily-life"
+      },
+      {
+        "id": "amv",
+        "category": "mini-mission"
+      },
+      {
+        "id": "amw",
+        "category": "workday-banter"
+      },
+      {
+        "id": "amx",
+        "category": "body-banter"
+      },
+      {
+        "id": "amy",
+        "category": "health-note"
+      },
+      {
+        "id": "amz",
+        "category": "emotional-care"
+      },
+      {
+        "id": "ana",
+        "category": "daily-life"
+      },
+      {
+        "id": "anb",
+        "category": "mini-mission"
+      },
+      {
+        "id": "anc",
+        "category": "workday-banter"
+      },
+      {
+        "id": "and",
+        "category": "body-banter"
+      },
+      {
+        "id": "ane",
+        "category": "health-note"
+      },
+      {
+        "id": "anf",
+        "category": "emotional-care"
+      },
+      {
+        "id": "ang",
+        "category": "daily-life"
+      },
+      {
+        "id": "anh",
+        "category": "mini-mission"
+      },
+      {
+        "id": "ani",
+        "category": "workday-banter"
+      },
+      {
+        "id": "anj",
+        "category": "body-banter"
+      },
+      {
+        "id": "ank",
+        "category": "health-note"
+      },
+      {
+        "id": "anl",
+        "category": "emotional-care"
+      },
+      {
+        "id": "anm",
+        "category": "daily-life"
+      },
+      {
+        "id": "ann",
+        "category": "mini-mission"
+      },
+      {
+        "id": "ano",
+        "category": "workday-banter"
+      },
+      {
+        "id": "anp",
+        "category": "body-banter"
+      },
+      {
+        "id": "anq",
+        "category": "health-note"
+      },
+      {
+        "id": "anr",
+        "category": "emotional-care"
+      },
+      {
+        "id": "ans",
+        "category": "daily-life"
+      },
+      {
+        "id": "ant",
+        "category": "mini-mission"
+      },
+      {
+        "id": "anu",
+        "category": "workday-banter"
+      },
+      {
+        "id": "anv",
+        "category": "body-banter"
+      },
+      {
+        "id": "anw",
+        "category": "health-note"
+      },
+      {
+        "id": "anx",
+        "category": "emotional-care"
+      },
+      {
+        "id": "any",
+        "category": "daily-life"
+      },
+      {
+        "id": "anz",
+        "category": "mini-mission"
+      },
+      {
+        "id": "aoa",
+        "category": "workday-banter"
+      },
+      {
+        "id": "aob",
+        "category": "body-banter"
+      },
+      {
+        "id": "aoc",
+        "category": "health-note"
+      },
+      {
+        "id": "aod",
+        "category": "emotional-care"
+      },
+      {
+        "id": "aoe",
+        "category": "daily-life"
+      },
+      {
+        "id": "aof",
+        "category": "mini-mission"
+      },
+      {
+        "id": "aog",
+        "category": "workday-banter"
+      },
+      {
+        "id": "aoh",
+        "category": "body-banter"
+      },
+      {
+        "id": "aoi",
+        "category": "health-note"
+      },
+      {
+        "id": "aoj",
+        "category": "emotional-care"
+      },
+      {
+        "id": "aok",
+        "category": "daily-life"
+      },
+      {
+        "id": "aol",
+        "category": "mini-mission"
+      },
+      {
+        "id": "aom",
+        "category": "workday-banter"
+      },
+      {
+        "id": "aon",
+        "category": "body-banter"
+      },
+      {
+        "id": "aoo",
+        "category": "health-note"
+      },
+      {
+        "id": "aop",
+        "category": "emotional-care"
+      },
+      {
+        "id": "aoq",
+        "category": "daily-life"
+      },
+      {
+        "id": "aor",
+        "category": "mini-mission"
+      },
+      {
+        "id": "aos",
+        "category": "workday-banter"
+      },
+      {
+        "id": "aot",
+        "category": "body-banter"
+      },
+      {
+        "id": "aou",
+        "category": "health-note"
+      },
+      {
+        "id": "aov",
+        "category": "emotional-care"
+      },
+      {
+        "id": "aow",
+        "category": "daily-life"
+      },
+      {
+        "id": "aox",
+        "category": "mini-mission"
+      },
+      {
+        "id": "aoy",
+        "category": "workday-banter"
+      },
+      {
+        "id": "aoz",
+        "category": "body-banter"
+      },
+      {
+        "id": "apa",
+        "category": "health-note"
+      },
+      {
+        "id": "apb",
+        "category": "emotional-care"
+      },
+      {
+        "id": "apc",
+        "category": "daily-life"
+      },
+      {
+        "id": "apd",
+        "category": "mini-mission"
+      },
+      {
+        "id": "ape",
+        "category": "workday-banter"
+      },
+      {
+        "id": "apf",
+        "category": "body-banter"
+      },
+      {
+        "id": "apg",
+        "category": "health-note"
+      },
+      {
+        "id": "aph",
+        "category": "emotional-care"
+      },
+      {
+        "id": "api",
+        "category": "daily-life"
+      },
+      {
+        "id": "apj",
+        "category": "mini-mission"
+      },
+      {
+        "id": "apk",
+        "category": "workday-banter"
+      },
+      {
+        "id": "apl",
+        "category": "body-banter"
+      },
+      {
+        "id": "apm",
+        "category": "health-note"
+      },
+      {
+        "id": "apn",
+        "category": "emotional-care"
+      },
+      {
+        "id": "apo",
+        "category": "daily-life"
+      },
+      {
+        "id": "app",
+        "category": "mini-mission"
+      },
+      {
+        "id": "apq",
+        "category": "workday-banter"
+      },
+      {
+        "id": "apr",
+        "category": "body-banter"
+      },
+      {
+        "id": "aps",
+        "category": "health-note"
+      },
+      {
+        "id": "apt",
+        "category": "emotional-care"
+      },
+      {
+        "id": "apu",
+        "category": "daily-life"
+      },
+      {
+        "id": "apv",
+        "category": "mini-mission"
+      },
+      {
+        "id": "apw",
+        "category": "workday-banter"
+      },
+      {
+        "id": "apx",
+        "category": "body-banter"
+      },
+      {
+        "id": "apy",
+        "category": "health-note"
+      },
+      {
+        "id": "apz",
+        "category": "emotional-care"
+      },
+      {
+        "id": "aqa",
+        "category": "daily-life"
+      },
+      {
+        "id": "aqb",
+        "category": "mini-mission"
+      },
+      {
+        "id": "aqc",
+        "category": "workday-banter"
+      },
+      {
+        "id": "aqd",
+        "category": "body-banter"
+      },
+      {
+        "id": "aqe",
+        "category": "health-note"
+      },
+      {
+        "id": "aqf",
+        "category": "emotional-care"
+      },
+      {
+        "id": "aqg",
+        "category": "daily-life"
+      },
+      {
+        "id": "aqh",
+        "category": "mini-mission"
+      },
+      {
+        "id": "aqi",
+        "category": "workday-banter"
+      },
+      {
+        "id": "aqj",
+        "category": "body-banter"
+      },
+      {
+        "id": "aqk",
+        "category": "health-note"
+      },
+      {
+        "id": "aql",
+        "category": "emotional-care"
+      },
+      {
+        "id": "aqm",
+        "category": "daily-life"
+      },
+      {
+        "id": "aqn",
+        "category": "mini-mission"
+      },
+      {
+        "id": "aqo",
+        "category": "workday-banter"
+      },
+      {
+        "id": "aqp",
+        "category": "body-banter"
+      },
+      {
+        "id": "aqq",
+        "category": "health-note"
+      },
+      {
+        "id": "aqr",
+        "category": "emotional-care"
+      },
+      {
+        "id": "aqs",
+        "category": "daily-life"
+      },
+      {
+        "id": "aqt",
+        "category": "mini-mission"
+      },
+      {
+        "id": "aqu",
+        "category": "workday-banter"
+      },
+      {
+        "id": "aqv",
+        "category": "body-banter"
+      },
+      {
+        "id": "aqw",
+        "category": "health-note"
+      },
+      {
+        "id": "aqx",
+        "category": "emotional-care"
+      },
+      {
+        "id": "aqy",
+        "category": "daily-life"
+      },
+      {
+        "id": "aqz",
+        "category": "mini-mission"
+      },
+      {
+        "id": "ara",
+        "category": "workday-banter"
+      },
+      {
+        "id": "arb",
+        "category": "body-banter"
+      },
+      {
+        "id": "arc",
+        "category": "health-note"
+      },
+      {
+        "id": "ard",
+        "category": "emotional-care"
+      },
+      {
+        "id": "are",
+        "category": "daily-life"
+      },
+      {
+        "id": "arf",
+        "category": "mini-mission"
+      },
+      {
+        "id": "arg",
+        "category": "workday-banter"
+      },
+      {
+        "id": "arh",
+        "category": "body-banter"
+      },
+      {
+        "id": "ari",
+        "category": "health-note"
+      },
+      {
+        "id": "arj",
+        "category": "emotional-care"
+      },
+      {
+        "id": "ark",
+        "category": "daily-life"
+      },
+      {
+        "id": "arl",
+        "category": "mini-mission"
+      },
+      {
+        "id": "arm",
+        "category": "workday-banter"
+      },
+      {
+        "id": "arn",
+        "category": "body-banter"
+      },
+      {
+        "id": "aro",
+        "category": "health-note"
+      },
+      {
+        "id": "arp",
+        "category": "emotional-care"
+      },
+      {
+        "id": "arq",
+        "category": "daily-life"
+      },
+      {
+        "id": "arr",
+        "category": "mini-mission"
+      },
+      {
+        "id": "ars",
+        "category": "workday-banter"
+      },
+      {
+        "id": "art",
+        "category": "body-banter"
+      },
+      {
+        "id": "aru",
+        "category": "health-note"
+      },
+      {
+        "id": "arv",
+        "category": "emotional-care"
+      },
+      {
+        "id": "arw",
+        "category": "daily-life"
+      },
+      {
+        "id": "arx",
+        "category": "mini-mission"
+      },
+      {
+        "id": "ary",
+        "category": "workday-banter"
+      },
+      {
+        "id": "arz",
+        "category": "body-banter"
+      },
+      {
+        "id": "asa",
+        "category": "health-note"
+      },
+      {
+        "id": "asb",
+        "category": "emotional-care"
+      },
+      {
+        "id": "asc",
+        "category": "daily-life"
+      },
+      {
+        "id": "asd",
+        "category": "mini-mission"
+      },
+      {
+        "id": "ase",
+        "category": "workday-banter"
+      },
+      {
+        "id": "asf",
+        "category": "body-banter"
+      },
+      {
+        "id": "asg",
+        "category": "health-note"
+      },
+      {
+        "id": "ash",
+        "category": "emotional-care"
+      },
+      {
+        "id": "asi",
+        "category": "daily-life"
+      },
+      {
+        "id": "asj",
+        "category": "mini-mission"
+      },
+      {
+        "id": "ask",
+        "category": "workday-banter"
+      },
+      {
+        "id": "asl",
+        "category": "body-banter"
+      },
+      {
+        "id": "asm",
+        "category": "health-note"
+      },
+      {
+        "id": "asn",
+        "category": "emotional-care"
+      },
+      {
+        "id": "aso",
+        "category": "daily-life"
+      },
+      {
+        "id": "asp",
+        "category": "mini-mission"
+      },
+      {
+        "id": "asq",
+        "category": "workday-banter"
+      },
+      {
+        "id": "asr",
+        "category": "body-banter"
+      },
+      {
+        "id": "ass",
+        "category": "health-note"
+      },
+      {
+        "id": "ast",
+        "category": "emotional-care"
+      }
+    ]
+  }
+}

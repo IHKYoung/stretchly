@@ -31,6 +31,8 @@
 - `apps/desktop/src/locales/messages/`：桌面端自维护的每语言基础消息文件；break prompt 默认提示语统一收口在这里的 `ui.breakCopy.*`。
 - `apps/desktop/src/locales/break-ideas/messages/`：桌面端 break ideas 真源，每语言只保留 `miniBreakIdeas` / `longBreakIdeas` 两组内容资产。
 - `apps/desktop/src/locales/break-ideas/registry.json`：break ideas 的源 metadata，当前用于声明默认语言与 `official / legacy` 语言边界。
+- `apps/desktop/src/locales/break-ideas/batches/`：append-only 内容批次治理元数据，只记录新增 ID、类别、目标与质量预算；不保存标题/正文，不参与 runtime 选择。
+- `apps/desktop/src/locales/break-ideas/README.md`：break ideas 的唯一真源边界、口吻准则、类别说明与新增批次操作流程。
 - `apps/desktop/src/locales/break-ideas/registry.generated.json`：由 `scripts/sync_desktop_break_ideas.py` 生成的运行时 break ideas registry，包含 fallback/tier/available 元数据与 ideas bundles。
 - `apps/desktop/src/locales/config/`：桌面端自维护的每语言配置文件（code / label / fallback / desktopReady）。
 - `apps/desktop/src/locales/registry.generated.json`：由 `scripts/sync_desktop_locales.py` 基于桌面端 locale 目录生成的前后端共享 locale registry。
@@ -70,6 +72,7 @@
 - `test/translations.js`：桌面端 `apps/desktop/src/locales/messages/*.json` 与 `apps/desktop/src/locales/break-ideas/messages/*.json` 的多语言资源一致性测试。
 - `test/desktopBreakCopySource.js`：校验界面文案与 break ideas 已分层，`messages/*.json` 不再保留 `miniBreakIdeas / longBreakIdeas`，官方语言 tier 也与 break ideas registry 对齐。
 - `test/desktopBreakIdeas.js`：校验 break ideas helper 只消费独立 registry，并按语言 fallback 解析 bundle 与稳定轮换文案。
+- `test/desktopBreakIdeasContent.js`：校验 official locale 的有序 ID/shape parity、批次覆盖与类别交错、长度/禁用短语预算和归一化正文去重。
 - `test/desktopBreakCopyLayout.js`：校验 break prompt 的中英文分行规则，避免文案再次被从中间截断。
 - `test/desktopSettingsControls.js`：校验设置页 preset 与数字草稿提交 helper 的交互边界。
 

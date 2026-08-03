@@ -8,7 +8,7 @@ Pauza 当前的可运行资产分为两层：`apps/desktop` 负责桌面端产�
 - 设置页前台对语言采用“双层边界”：`form.language` 只表示用户草稿选择，真正驱动整页 labels 与 `document lang/dir` 的则是 `DesktopSnapshot.settings.language`；只有保存回包成功后才切换可见语言。
 - 设置页 `CompactNumber` 也采用“双层边界”：输入框内部 `draft` 允许临时空值和多位数，只有 `blur / Enter / step button` 才提交到 `form` 与 autosave，避免每击键直写 `update_settings`。
 - 设置页 autosave 现已改为串行/合并保存：同一时刻最多只有一轮 `update_settings` 在飞；保存进行中若继续修改，只会把新的 `formRevision` 合并进下一轮，而不是并发叠加多个宿主设置更新。
-- 文案层：`apps/desktop/src/locales/messages/*.json` 与 `config/*.json` 是桌面端界面文案真源；break prompt 默认提示语通过 `messages/*.json` 中的 `ui.breakCopy.*` 维护。`apps/desktop/src/locales/break-ideas/messages/*.json` 与 `break-ideas/registry.json` 是 break ideas 真源，并单独生成 `break-ideas/registry.generated.json` 供前台读取。
+- 文案层：`apps/desktop/src/locales/messages/*.json` 与 `config/*.json` 是桌面端界面文案真源；break prompt 默认提示语通过 `messages/*.json` 中的 `ui.breakCopy.*` 维护。`apps/desktop/src/locales/break-ideas/messages/*.json` 与 `break-ideas/registry.json` 是 break ideas 正文/locale 真源，并单独生成 `break-ideas/registry.generated.json` 供前台读取；`break-ideas/batches/*.json` 只保存追加批次的 ID、编审类别、数量与质量预算，不复制正文，也不进入 runtime。
 - 前台 helper：`apps/desktop/src/lib/break-prompt.ts` 负责 break 主题、提示音映射、自定义壁纸压缩与 break prompt 辅助逻辑；`lib/break-ideas.ts` 负责读取独立 break ideas registry、按 fallback 解析 bundle 并做稳定轮换。
 - Rust host：`apps/desktop/src-tauri/src/lib.rs`、`commands.rs`、`shell.rs`、`state.rs`、`engine.rs`、`platform.rs` 组成宿主层，负责设置持久化、调度、tray、shortcut、notification、窗口生命周期与系统状态采集；其中 `state` 现已拆成 `state.rs`（runtime）、`state/settings.rs`（settings schema）和 `state/persistence.rs`（load/save/migration）三层边界。
 - `shell.rs` 的 tray 文本热更新现在有一条明确并发不变量：不得在持有 `LAST_TRAY_MENU_TEXT_UPDATER` 锁时调用 `MenuItem::set_text()`。后台 tick 只能在锁内 clone 当前 updater，再在锁外执行主线程派发；否则会形成“后台线程持锁等待主线程 `set_text()` 完成，主线程在 `create_tray_menu() -> register_tray_menu_text_updater()` 中等待同一把锁”的 lock inversion deadlock，表现为设置保存时的 macOS 彩球。
@@ -36,7 +36,7 @@ Pauza 当前的可运行资产分为两层：`apps/desktop` 负责桌面端产�
 ## 关键状态
 - `PauzaState.settings`：Tauri 端的本地配置真源，已覆盖 notification、postpone、manual finish、`reminder_mode`、surface、fullscreen、break backdrop / custom wallpaper、cue 开关、start/end sound、shortcut；旧的 `idle_opportunity_seconds` 仅在读取历史配置时兼容保留，不再继续序列化到新的 settings/snapshot。
 - `registry.generated.json`：前后端共享 locale registry；上游真源只有桌面端自己的 `messages/*.json` 与 `config/*.json`。
-- `break-ideas/registry.generated.json`：前台 break prompt 使用的独立 ideas registry；上游真源是 `break-ideas/messages/*.json` 与 `break-ideas/registry.json`，其中 `official / legacy` 只是数据标签，不参与代码硬编码。
+- `break-ideas/registry.generated.json`：前台 break prompt 使用的独立 ideas registry；上游正文真源是 `break-ideas/messages/*.json`，locale metadata 来自 `break-ideas/registry.json`，批次门禁来自 `break-ideas/batches/*.json`；其中 `official / legacy` 只是数据标签，不参与代码硬编码。生成器会先验证 official key/shape parity、连续 ID、正文重复、批次覆盖、长度预算、类别交错与禁用短语，再写入产物。
 - `PauzaState.current_break`：Tauri 端当前 break 生命周期真源，决定 `manualAwaiting`、`canPostpone`、`canSkip` 与窗口关闭策略。
 - `RuntimeState.next_break_wait_started_ms`：Tauri 端低打断投递状态机的关键运行时字段，用来标记“已到点但先等空档”；实际等待规则现为内置的 per-kind 固定阈值 + 最大等待。
 - `DesktopSnapshot.next_break_wait_remaining_ms`：由 Tauri 运行时根据上述起点和 per-kind 最大等待派生；只在提醒已到点、正在智能等待且没有其他 blocker 时存在。tray / 前台不得从 `next_break_in_ms` 自行推算该等待进度。
