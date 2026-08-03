@@ -36,7 +36,7 @@ http://127.0.0.1:43210
 apps/site/download/targets.js
 ```
 
-当前按钮会优先请求 GitHub Releases API，自动解析最新 release 中名称以 `_aarch64.dmg` 结尾的资产；如果 API 不可用，或 API 仍返回旧版本资产名，则保留 `targets.js` 里配置的固定稳定链接。
+当前按钮会优先请求 GitHub Releases API，解析 latest release 中名称以 `_aarch64.dmg` 结尾的资产，再拼接 `releases/latest/download/<asset-name>` 下载路径；只有 API 不可用或响应中没有匹配资产时，才保留 `targets.js` 里配置的固定稳定链接。
 
 后续如果从 GitHub Releases 换到 R2 / S3，只需要修改这个文件。
 
@@ -46,7 +46,7 @@ apps/site/download/targets.js
 
 ```bash
 python3 scripts/publish_site_release.py \
-  --asset /Users/changkunyang/CKProjects/Pauza/apps/desktop/src-tauri/target/release/bundle/dmg/Pauza_0.1.3_aarch64.dmg
+  --asset /Users/changkunyang/CKProjects/Pauza/apps/desktop/src-tauri/target/release/bundle/dmg/Pauza_0.1.4_aarch64.dmg
 ```
 
 它会自动：

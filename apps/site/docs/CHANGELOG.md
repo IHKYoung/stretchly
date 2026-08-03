@@ -1,5 +1,9 @@
 # Changelog
 
+## 2026-07-24
+- `site`: 首页 pinned 下载入口更新到 `Pauza_0.1.4_aarch64.dmg`。
+- `site`: GitHub latest API 作为最新资产名事实源，并拼接 `releases/latest/download/<asset-name>`；API 或资产异常时回退 pinned。
+
 ## 2026-04-20
 - `site`: Release Playbook 示例资产与标准命令更新到 `Pauza_0.1.3_aarch64.dmg`。
 - `site`: 首页 pinned 下载链接与 `download/targets.js` 将随本轮 `0.1.3` release 一起更新。

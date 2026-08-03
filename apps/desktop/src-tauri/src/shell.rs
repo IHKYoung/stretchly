@@ -89,6 +89,10 @@ enum TrayDetailMode {
         indefinite: bool,
         minute_bucket: Option<u64>,
     },
+    Waiting {
+        kind: Option<BreakKind>,
+        minute_bucket: u64,
+    },
     Running {
         kind: Option<BreakKind>,
         minute_bucket: u64,
@@ -771,6 +775,13 @@ fn tray_detail_mode(snapshot: &DesktopSnapshot) -> TrayDetailMode {
         };
     }
 
+    if let Some(remaining) = snapshot.next_break_wait_remaining_ms {
+        return TrayDetailMode::Waiting {
+            kind: snapshot.next_break_kind,
+            minute_bucket: duration_minute_bucket(remaining),
+        };
+    }
+
     if snapshot.app_exclusion_active
         || snapshot.dnd_active
         || natural_break_active(snapshot)
@@ -795,6 +806,10 @@ fn duration_minute_bucket(ms: u64) -> u64 {
 }
 
 fn tray_title(snapshot: &DesktopSnapshot, now: u64) -> Option<String> {
+    if let Some(remaining) = snapshot.next_break_wait_remaining_ms {
+        return Some(format_tray_countdown(remaining));
+    }
+
     if !snapshot.settings.show_time_to_break_in_tray {
         return None;
     }
@@ -824,6 +839,10 @@ fn tray_countdown_ms(snapshot: &DesktopSnapshot, now: u64) -> Option<u64> {
         .map(|until| until.saturating_sub(now))
         .filter(|remaining| *remaining > 0)
     {
+        return Some(remaining);
+    }
+
+    if let Some(remaining) = snapshot.next_break_wait_remaining_ms {
         return Some(remaining);
     }
 
@@ -1548,7 +1567,8 @@ fn break_windows<R: Runtime>(app: &AppHandle<R>) -> Vec<(String, WebviewWindow<R
 #[cfg(test)]
 mod tests {
     use super::{
-        format_tray_countdown, tray_countdown_ms, tray_title, BreakWindowProfile,
+        format_tray_countdown, tray_countdown_ms, tray_detail_mode, tray_title,
+        BreakWindowProfile, TrayDetailMode,
     };
     use crate::state::{BreakKind, CurrentBreakSnapshot, DesktopSnapshot, PauzaSettings};
 
@@ -1565,6 +1585,7 @@ mod tests {
             next_break_kind: Some(BreakKind::Microbreak),
             next_break_due_ms: Some(1_000),
             next_break_in_ms: Some(1_000),
+            next_break_wait_remaining_ms: None,
             current_break: None,
             pause_until_ms: None,
             paused_indefinitely: false,
@@ -1612,6 +1633,25 @@ mod tests {
 
         assert_eq!(tray_countdown_ms(&snapshot, 0), None);
         assert_eq!(tray_title(&snapshot, 0), None);
+    }
+
+    #[test]
+    fn waiting_countdown_is_visible_as_transient_feedback() {
+        let mut snapshot = base_snapshot();
+        snapshot.settings.show_time_to_break_in_tray = false;
+        snapshot.next_break_due_ms = Some(0);
+        snapshot.next_break_in_ms = None;
+        snapshot.next_break_wait_remaining_ms = Some(89_001);
+
+        assert_eq!(
+            tray_detail_mode(&snapshot),
+            TrayDetailMode::Waiting {
+                kind: Some(BreakKind::Microbreak),
+                minute_bucket: 2,
+            }
+        );
+        assert_eq!(tray_countdown_ms(&snapshot, 0), Some(89_001));
+        assert_eq!(tray_title(&snapshot, 0).as_deref(), Some("1:30"));
     }
 
     #[test]

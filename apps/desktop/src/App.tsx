@@ -150,6 +150,7 @@ type DesktopSnapshot = {
   nextBreakKind: BreakKind | null
   nextBreakDueMs: number | null
   nextBreakInMs: number | null
+  nextBreakWaitRemainingMs: number | null
   currentBreak: CurrentBreakSnapshot | null
   pauseUntilMs: number | null
   pausedIndefinitely: boolean
@@ -273,6 +274,7 @@ function previewSnapshot(): DesktopSnapshot {
     nextBreakKind: previewNext.nextBreakKind,
     nextBreakDueMs: previewNext.nextBreakDueMs,
     nextBreakInMs: previewNext.nextBreakInMs,
+    nextBreakWaitRemainingMs: null,
     currentBreak: breakMode
       ? {
           kind: 'microbreak',
@@ -460,13 +462,14 @@ function CompactNumber({
           +
         </button>
       </div>
-      <span className="whitespace-nowrap text-[11px] text-muted-foreground">{suffix}</span>
+      <span className="settings-caption whitespace-nowrap text-muted-foreground">{suffix}</span>
     </div>
   )
 }
 
 function PresetChipGroup({
   ariaLabel,
+  customLabel,
   value,
   options,
   min,
@@ -474,6 +477,7 @@ function PresetChipGroup({
   onChange,
 }: {
   ariaLabel: string
+  customLabel: string
   value: number
   options: readonly number[]
   min: number
@@ -482,6 +486,7 @@ function PresetChipGroup({
 }) {
   const isPreset = options.includes(value)
   const [draft, setDraft] = useState(String(value))
+  const [customEditing, setCustomEditing] = useState(false)
 
   useEffect(() => {
     setDraft(String(value))
@@ -521,14 +526,24 @@ function PresetChipGroup({
         type="text"
         inputMode="numeric"
         pattern="[0-9]*"
-        value={draft}
+        value={isPreset && !customEditing ? '' : draft}
+        placeholder={customLabel}
+        onFocus={() => {
+          setCustomEditing(true)
+          if (isPreset) {
+            setDraft('')
+          }
+        }}
         onChange={(event) => {
           const nextDraft = event.target.value
           if (isNumericDraft(nextDraft)) {
             setDraft(nextDraft)
           }
         }}
-        onBlur={commitDraft}
+        onBlur={() => {
+          commitDraft()
+          setCustomEditing(false)
+        }}
         onKeyDown={(event) => {
           if (event.key === 'Enter') {
             event.preventDefault()
@@ -541,11 +556,11 @@ function PresetChipGroup({
             event.currentTarget.blur()
           }
         }}
-        aria-label={`${ariaLabel} custom`}
+        aria-label={`${ariaLabel}: ${customLabel}`}
         className={cn(
-          'w-14 rounded-lg border py-1 text-center text-[13px] font-medium tabular-nums outline-none transition-all',
-          isPreset
-            ? 'border-transparent bg-transparent text-muted-foreground/40 hover:border-black/[0.06] hover:text-muted-foreground'
+          'w-14 rounded-lg border py-1 text-center text-[13px] font-medium tabular-nums outline-none transition-all placeholder:text-muted-foreground/55',
+          isPreset && !customEditing
+            ? 'border-transparent bg-transparent text-muted-foreground hover:border-black/[0.06]'
             : 'border-black/[0.08] bg-white text-foreground shadow-sm',
           'focus:border-ring focus:bg-white focus:text-foreground focus:shadow-sm',
         )}
@@ -558,6 +573,7 @@ function PresetChipRow({
   label,
   unit,
   ariaLabel,
+  customLabel,
   value,
   options,
   min,
@@ -567,6 +583,7 @@ function PresetChipRow({
   label: string
   unit: string
   ariaLabel: string
+  customLabel: string
   value: number
   options: readonly number[]
   min: number
@@ -575,18 +592,19 @@ function PresetChipRow({
 }) {
   return (
     <div className="flex items-center gap-3">
-      <span className="w-10 shrink-0 text-right text-[12px] font-medium text-muted-foreground">
+      <span className="settings-control-label w-14 shrink-0 text-right text-muted-foreground">
         {label}
       </span>
       <PresetChipGroup
         ariaLabel={ariaLabel}
+        customLabel={customLabel}
         value={value}
         options={options}
         min={min}
         max={max}
         onChange={onChange}
       />
-      <span className="shrink-0 text-[11px] text-muted-foreground">{unit}</span>
+      <span className="settings-caption shrink-0 text-muted-foreground">{unit}</span>
     </div>
   )
 }
@@ -607,7 +625,7 @@ function SchedulePresetCard({
   return (
     <div className="overflow-hidden rounded-xl bg-white shadow-[0_0_0_0.5px_rgba(0,0,0,0.06),0_1px_2px_rgba(0,0,0,0.04)]">
       <div className="flex items-center justify-between gap-4 border-b border-black/[0.06] px-4 py-3">
-        <p className="text-[13px] font-medium text-foreground">{label}</p>
+        <p className="settings-group-title text-foreground">{label}</p>
         <Switch checked={checked} onCheckedChange={onCheckedChange} aria-label={switchLabel} />
       </div>
       <div
@@ -624,7 +642,7 @@ function SchedulePresetCard({
 
 function SectionLabel({ children }: { children: ReactNode }) {
   return (
-    <h3 className="mb-1.5 px-1 text-[12px] font-medium text-muted-foreground">{children}</h3>
+    <h3 className="settings-section-title mb-2 px-1 text-muted-foreground">{children}</h3>
   )
 }
 
@@ -646,11 +664,11 @@ function SettingsRow({
   children: ReactNode
 }) {
   return (
-    <div className="flex min-h-[42px] items-center gap-4 px-4 py-2">
+    <div className="flex min-h-[46px] items-center gap-4 px-4 py-2.5">
       <div className="min-w-0 flex-1">
-        <p className="text-[13px] text-foreground">{label}</p>
+        <p className="settings-row-title text-foreground">{label}</p>
         {detail ? (
-          <p className="mt-0.5 text-[11px] leading-4 text-muted-foreground">{detail}</p>
+          <p className="settings-detail mt-0.5 text-muted-foreground">{detail}</p>
         ) : null}
       </div>
       <div className="flex w-[200px] shrink-0 items-center justify-end gap-2">{children}</div>
@@ -670,12 +688,12 @@ function SettingsLinkRow({
   return (
     <button
       type="button"
-      className="flex min-h-[52px] w-full items-center gap-4 px-4 py-2.5 text-left transition-colors hover:bg-black/[0.025] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-ring"
+      className="flex min-h-[56px] w-full items-center gap-4 px-4 py-2.5 text-left transition-colors hover:bg-black/[0.025] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-inset focus-visible:ring-ring"
       onClick={onClick}
     >
       <div className="min-w-0 flex-1">
-        <p className="text-[13px] text-foreground">{label}</p>
-        <p className="mt-0.5 truncate text-[11px] leading-4 text-muted-foreground">{detail}</p>
+        <p className="settings-link-title text-foreground">{label}</p>
+        <p className="settings-detail mt-0.5 truncate text-muted-foreground">{detail}</p>
       </div>
       <ChevronRight className="h-4 w-4 shrink-0 text-muted-foreground/70" aria-hidden="true" />
     </button>
@@ -712,9 +730,9 @@ function RhythmProfilePicker({
               role="radio"
               aria-checked={active}
               className={cn(
-                'min-h-8 rounded-md px-2 py-1.5 text-[12px] font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring',
+                'min-h-8 rounded-md px-2 py-1.5 text-[13px] font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring',
                 active
-                  ? 'bg-white text-foreground shadow-[0_1px_2px_rgba(0,0,0,0.06),0_0_0_0.5px_rgba(0,0,0,0.04)]'
+                  ? 'bg-white font-semibold text-foreground shadow-[0_1px_2px_rgba(0,0,0,0.06),0_0_0_0.5px_rgba(0,0,0,0.04)]'
                   : 'text-muted-foreground hover:text-foreground',
               )}
               onClick={() => onChange(option.value)}
@@ -725,7 +743,7 @@ function RhythmProfilePicker({
         })}
       </div>
       {value === 'custom' ? (
-        <p className="mt-2 text-[11px] font-medium text-foreground">{customLabel}</p>
+        <p className="settings-detail mt-2 font-medium text-foreground">{customLabel}</p>
       ) : null}
     </div>
   )
@@ -1725,9 +1743,9 @@ function App() {
                     customLabel={t(language, 'ui.rhythmProfileCustom')}
                     onChange={(next) => updateFormPatch(rhythmProfilePatch(next))}
                   />
-                  <p className="mt-3 text-[12px] leading-5 text-muted-foreground">{rhythmSummary}</p>
+                  <p className="settings-summary mt-3 text-muted-foreground">{rhythmSummary}</p>
                   {rhythmProfile === 'custom' ? (
-                    <p className="mt-1.5 text-[11px] leading-4 text-muted-foreground">
+                    <p className="settings-detail mt-1.5 text-muted-foreground">
                       {t(language, 'ui.customRhythmNotice')}
                     </p>
                   ) : null}
@@ -1843,7 +1861,7 @@ function App() {
             />
             <div>
               <SectionLabel>{t(language, 'ui.breakSounds')}</SectionLabel>
-              <p className="mb-2 px-1 text-[11.5px] leading-relaxed text-muted-foreground">
+              <p className="settings-detail mb-2 px-1 text-muted-foreground">
                 {t(language, 'ui.breakSoundsHint')}
               </p>
               <SettingsCard>
@@ -2032,11 +2050,11 @@ function App() {
                     <div className="rounded-[16px] border border-white/70 bg-white/70 px-3 py-3">
                       <div className="flex items-start justify-between gap-3">
                         <div className="min-w-0">
-                          <p className="truncate text-[12px] font-medium text-foreground">
+                          <p className="truncate text-[13px] font-semibold leading-5 text-foreground">
                             {form.breakCustomBackdropLabel ??
                               t(language, 'ui.customWallpaperEmpty')}
                           </p>
-                          <p className="mt-1 text-[11px] leading-4 text-muted-foreground">
+                          <p className="settings-detail mt-1 text-muted-foreground">
                             {form.breakCustomBackdropDataUrl
                               ? t(language, 'ui.customWallpaperReady')
                               : t(language, 'ui.customWallpaperEmptyHint')}
@@ -2063,7 +2081,7 @@ function App() {
                               className="h-full w-full object-contain"
                             />
                           ) : (
-                            <p className="px-4 text-center text-[11px] leading-4 text-muted-foreground">
+                            <p className="settings-detail px-4 text-center text-muted-foreground">
                               {t(language, 'ui.customWallpaperEmptyHint')}
                             </p>
                           )}
@@ -2320,7 +2338,7 @@ function App() {
                     </div>
                   )}
                   {/* Manual textarea */}
-                  <p className="text-[11px] text-muted-foreground">{t(language, 'ui.appExclusionsManualHint')}</p>
+                  <p className="settings-detail text-muted-foreground">{t(language, 'ui.appExclusionsManualHint')}</p>
                   <Textarea
                     rows={3}
                     value={form.appExclusionCommands}
@@ -2403,6 +2421,7 @@ function App() {
                 label={t(language, 'ui.interval')}
                 unit={t(language, 'ui.suffix.minutes')}
                 ariaLabel={`${t(language, 'ui.microbreaks')} ${t(language, 'ui.interval')}`}
+                customLabel={t(language, 'ui.customValue')}
                 value={form.microbreakIntervalMinutes}
                 options={MICROBREAK_INTERVAL_PRESETS}
                 min={1}
@@ -2413,6 +2432,7 @@ function App() {
                 label={t(language, 'ui.durationLabel')}
                 unit={t(language, 'ui.suffix.secondsLong')}
                 ariaLabel={`${t(language, 'ui.microbreaks')} ${t(language, 'ui.durationLabel')}`}
+                customLabel={t(language, 'ui.customValue')}
                 value={form.microbreakDurationSeconds}
                 options={MICROBREAK_DURATION_PRESETS}
                 min={5}
@@ -2429,18 +2449,26 @@ function App() {
             >
               <PresetChipRow
                 label={t(language, 'ui.every')}
-                unit={t(language, 'ui.suffix.cycles')}
+                unit={t(language, 'ui.suffix.reminderCycles')}
                 ariaLabel={`${t(language, 'ui.longBreaks')} ${t(language, 'ui.every')}`}
+                customLabel={t(language, 'ui.customValue')}
                 value={form.longBreakEvery}
                 options={LONGBREAK_EVERY_PRESETS}
                 min={1}
                 max={12}
                 onChange={(value) => updateForm('longBreakEvery', value)}
               />
+              <p className="settings-caption pl-[68px] text-muted-foreground">
+                {t(language, 'ui.fullBreakCadenceHint', {
+                  minutes: longBreakIntervalMinutes,
+                  cycles: form.longBreakEvery,
+                })}
+              </p>
               <PresetChipRow
                 label={t(language, 'ui.durationLabel')}
                 unit={t(language, 'ui.suffix.minutes')}
                 ariaLabel={`${t(language, 'ui.longBreaks')} ${t(language, 'ui.durationLabel')}`}
+                customLabel={t(language, 'ui.customValue')}
                 value={form.longBreakDurationMinutes}
                 options={LONGBREAK_DURATION_PRESETS}
                 min={1}
@@ -2472,7 +2500,7 @@ function App() {
             </button>
           ) : null}
         </div>
-        <h1 className="text-center text-[14px] font-semibold text-foreground">
+        <h1 className="settings-page-title text-center text-foreground">
           {routeTitles[settingsRoute]}
         </h1>
         <div className="flex h-8 items-center justify-end" aria-live="polite">

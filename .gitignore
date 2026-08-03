@@ -15,24 +15,5 @@ scripts/__pycache__/
 repo/
 flatpak-node-generator.py
 
-# Root-level locale translation scratch files
-/_*.json
-/build_*.py
-/en_*.json
-/en_*.txt
-/fix_*.py
-/gen_*.py
-/generate_*translations.py
-/hi_mini.py
-/si_gen.py
-/source_*.txt
-/south_asian_*.json
-/translate_*.py
-/*_data.json
-/*_done.json
-/*_long.json
-/*_mini.json
-/*_out.json
-/*_part.json
-/*_trans.json
-/*_translations.json
+# Local-only translation experiments and generated intermediates
+/scratch/locale-translations/

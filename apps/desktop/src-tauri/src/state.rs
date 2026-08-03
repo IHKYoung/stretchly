@@ -70,6 +70,7 @@ pub struct DesktopSnapshot {
     pub next_break_kind: Option<BreakKind>,
     pub next_break_due_ms: Option<u64>,
     pub next_break_in_ms: Option<u64>,
+    pub next_break_wait_remaining_ms: Option<u64>,
     pub current_break: Option<CurrentBreakSnapshot>,
     pub pause_until_ms: Option<u64>,
     pub paused_indefinitely: bool,
@@ -183,6 +184,14 @@ impl PauzaState {
             .map(|due| due.saturating_sub(now))
             .filter(|remaining| *remaining > 0);
 
+        let next_break_wait_remaining_ms = if runtime.blocking_reason(now).is_none() {
+            runtime
+                .waiting_for_opportunity_kind(now)
+                .and_then(|kind| runtime.current_smart_wait_remaining_ms(kind, now))
+        } else {
+            None
+        };
+
         let current_break = runtime
             .current_break
             .as_ref()
@@ -202,6 +211,7 @@ impl PauzaState {
             next_break_kind: runtime.next_break_kind,
             next_break_due_ms: runtime.next_break_due_ms,
             next_break_in_ms,
+            next_break_wait_remaining_ms,
             current_break,
             pause_until_ms: runtime.paused_until_ms,
             paused_indefinitely: runtime.paused_indefinitely,

@@ -39,6 +39,7 @@ Pauza 当前的可运行资产分为两层：`apps/desktop` 负责桌面端产�
 - `break-ideas/registry.generated.json`：前台 break prompt 使用的独立 ideas registry；上游真源是 `break-ideas/messages/*.json` 与 `break-ideas/registry.json`，其中 `official / legacy` 只是数据标签，不参与代码硬编码。
 - `PauzaState.current_break`：Tauri 端当前 break 生命周期真源，决定 `manualAwaiting`、`canPostpone`、`canSkip` 与窗口关闭策略。
 - `RuntimeState.next_break_wait_started_ms`：Tauri 端低打断投递状态机的关键运行时字段，用来标记“已到点但先等空档”；实际等待规则现为内置的 per-kind 固定阈值 + 最大等待。
+- `DesktopSnapshot.next_break_wait_remaining_ms`：由 Tauri 运行时根据上述起点和 per-kind 最大等待派生；只在提醒已到点、正在智能等待且没有其他 blocker 时存在。tray / 前台不得从 `next_break_in_ms` 自行推算该等待进度。
 - `RuntimeState.delivery_block_started_ms`：记录 pause/focus/DND/app exclusion 这类 delivery blocker 的进入时间；解除阻塞时会把 due / notification / waiting timer 一并平移，确保 blocker 只冻结投递、不重置节奏。
 - `RuntimeState.heads_up_kind(now)`：根据 `next_break_due_ms` 与当前 break 的 lead time 派生出 due 前的 heads-up 阶段；它是设置页运行态和 tray 文本的主信号，不再把 pre-break 能见性完全绑定到一次性系统通知。
 - `DesktopSnapshot`：Tauri 前台唯一可读模型，避免前台自行拼装运行时状态。
@@ -51,7 +52,7 @@ Pauza 当前的可运行资产分为两层：`apps/desktop` 负责桌面端产�
 - Tauri 宿主能力：当前已覆盖设置持久化、调度、tray、global shortcut、notification、autostart、主窗口生命周期、break prompt、skip/reset/pause/focus actions，以及基于 `sysinfo + 系统命令` 的 idle / DND / app exclusion 轻量迁移。
 - 当前默认 break delivery 已不再是“固定时间一定打断”，而是以 `reminder_mode` 决定：`smart` 下当用户仍处于连续输入/操作中时，Pauza 会先把 break 标记为 due，并按 break kind 使用固定阈值寻找空档；若一直没有空档，则在最大等待后直接开始。当前内置策略是：
   - 微休息：到点后要求连续空闲 `8s`；若等待满 `90s` 仍没有空档，则直接开始。
-  - 休息：到点后要求连续空闲 `12s`；若等待满 `180s` 仍没有空档，则直接开始。
+  - 完整休息：到点后要求连续空闲 `12s`；若等待满 `180s` 仍没有空档，则直接开始。
   - `forced` 下则到点直接严格开始 break。
 - due 前如果开启了对应 break 的提前提示，Pauza 还会进入一个短暂的 heads-up 阶段：设置页状态、tray 菜单与 tooltip 会先显示“即将开始 / Up next”；系统通知仍可作为辅助，但不再是唯一有效出口。通知投递失败时，`engine.rs` 会输出日志而不是静默吞掉。
 

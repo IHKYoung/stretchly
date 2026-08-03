@@ -23,4 +23,10 @@ describe('Desktop settings navigation', () => {
     expect(appSource).not.toContain("| 'details'")
     expect(appSource).not.toContain("case 'details'")
   })
+
+  it('shows a custom-value affordance instead of echoing an active preset', () => {
+    expect(appSource).toContain("value={isPreset && !customEditing ? '' : draft}")
+    expect(appSource).toContain('placeholder={customLabel}')
+    expect(appSource).toContain("t(language, 'ui.fullBreakCadenceHint'")
+  })
 })

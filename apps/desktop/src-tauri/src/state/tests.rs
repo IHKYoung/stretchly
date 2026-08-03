@@ -402,6 +402,27 @@ fn snapshot_status_reflects_waiting_for_opportunity() {
 }
 
 #[test]
+fn snapshot_exposes_backend_smart_wait_countdown() {
+    let state = PauzaState::default();
+    let started_at = now_ms();
+    {
+        let mut runtime = state.runtime.lock().expect("state lock poisoned");
+        runtime.settings = settings();
+        runtime.schedule_specific_break(BreakKind::Microbreak, started_at, started_at);
+    }
+
+    let _ = state.tick(started_at, 0, false, None);
+    let snapshot = state.snapshot("test".into(), "0.0.0".into(), false);
+    let remaining = snapshot
+        .next_break_wait_remaining_ms
+        .expect("smart wait countdown available");
+
+    assert!(snapshot.next_break_in_ms.is_none());
+    assert!(remaining <= MICROBREAK_SMART_MAX_WAIT_MS);
+    assert!(remaining > MICROBREAK_SMART_MAX_WAIT_MS.saturating_sub(5_000));
+}
+
+#[test]
 fn snapshot_status_reflects_pre_break_heads_up() {
     let state = PauzaState::default();
     let scheduled_from = now_ms();
