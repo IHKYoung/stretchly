@@ -6,7 +6,7 @@
 - Level: moderate
 - Lane: deep
 - Execution Profile: single-task
-- Status: IN_PROGRESS
+- Status: DONE
 
 ## Links
 - Plan (daily): ../../plans/2026-08-03.md
@@ -37,3 +37,4 @@
 ## Notes
 - 用户已明确授权发布安装包并让官网可下载。
 - 删除部署、Release 或 tag 不在本任务授权范围内。
+- 生产下载已在 deployment `5728041914` 回验；primary 与 fallback 均为 `v0.1.5`。

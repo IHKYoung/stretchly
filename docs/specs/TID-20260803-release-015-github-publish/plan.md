@@ -6,7 +6,7 @@
 - Level: complex
 - Lane: deep
 - Execution Profile: merge-gate
-- Status: IN_PROGRESS
+- Status: DONE
 
 ## Requirement Brief
 - Goal restatement: 把当前已完成且版本真源统一为 `0.1.5` 的工作树构建为签名、公证的 Apple Silicon DMG，发布到 `IHKYoung/Pauza` GitHub Release，并验证官网可以下载。
@@ -74,13 +74,13 @@
 ## Task Breakdown & Definition of Done (DoD)
 - [x] Task-1: 收口发布元数据与任务文档
   - DoD: README、CHANGELOG、release notes、interaction/rollback/test contract 与版本真源一致。
-- [ ] Task-2: 提交并推送可构建源码快照
+- [x] Task-2: 提交并推送可构建源码快照
   - DoD: 门禁通过，提交审计闭环，`origin/baseline` 仅快进更新。
-- [ ] Task-3: 构建和验证 macOS Apple Silicon 安装包
+- [x] Task-3: 构建和验证 macOS Apple Silicon 安装包
   - DoD: app/DMG 的架构、版本、签名、公证、Gatekeeper、装载和 SHA-256 有证据。
-- [ ] Task-4: 创建并回验 GitHub Release
+- [x] Task-4: 创建并回验 GitHub Release
   - DoD: `v0.1.5` tag 与 Release 存在，远端下载 hash 等于本地 hash。
-- [ ] Task-5: 更新并验证官网下载
+- [x] Task-5: 更新并验证官网下载
   - DoD: latest 与固定回退都解析到 v0.1.5，生产下载链路可达，无关站点改动未提交。
 
 ## Evidence Plan (UI / E2E)

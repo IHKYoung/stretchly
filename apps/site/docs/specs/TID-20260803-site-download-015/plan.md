@@ -6,7 +6,7 @@
 - Level: moderate
 - Lane: deep
 - Execution Profile: single-task
-- Status: IN_PROGRESS
+- Status: DONE
 
 ## Requirement Brief
 - Goal restatement: 将官网下载按钮的固定回退从 `v0.1.4` 更新到 `v0.1.5`，并验证 latest 和 pinned 两条生产路径都可下载同一 DMG。
@@ -75,7 +75,7 @@
 ## Task Breakdown & Definition of Done (DoD)
 - [x] Task-1: 更新 pinned 下载目标和说明
   - DoD: 两份 URL 一致为 v0.1.5，README/CHANGELOG/任务文档同步。
-- [ ] Task-2: 验证、提交、推送和生产回验
+- [x] Task-2: 验证、提交、推送和生产回验
   - DoD: 静态/interaction/workflow gates 通过，提交无混入，生产 latest/fallback 可达。
 
 ## Evidence Plan (UI / E2E)

@@ -6,7 +6,7 @@
 - Level: complex
 - Lane: deep
 - Execution Profile: merge-gate
-- Status: IN_PROGRESS
+- Status: DONE
 
 ## Links
 - Plan (daily): ../../plans/2026-08-03.md
@@ -38,3 +38,4 @@
 ## Notes
 - 用户已在 2026-08-03 明确要求“打包一版发布到官网进行下载，GitHub release 管理”，构成此次外部发布授权。
 - 删除远端 tag、Release 或资产、强推、改写历史均不在授权范围内。
+- `v0.1.5` Release 与官网生产下载已经完成现实回验；最终 asset SHA-256 为 `558a96dceb4eddf025e5891a38d16ff1b70e5be67efec563c01c460e09364fff`。
